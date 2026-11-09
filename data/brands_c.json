@@ -1,0 +1,210 @@
+{
+  "group": "合资及台系",
+  "brands": [
+    {
+      "id": "wuyang-honda",
+      "name": "五羊本田",
+      "nameEn": "WUYANG HONDA",
+      "company": "五羊-本田摩托（广州）有限公司（广汽集团与本田技研工业株式会社合资）",
+      "category": "合资品牌",
+      "website": "https://www.wuyang-honda.com/",
+      "logoUrl": null,
+      "models": [],
+      "uncertain": [],
+      "sources": [
+        "https://www.wuyang-honda.com/home/sy/rysy",
+        "https://www.wuyang-honda.com/home/cpzs/ryj/qsj/detail-1353.shtml",
+        "https://www.honda.com.cn/motorcycle.html?type=list",
+        "https://m.58moto.com/brand/44"
+      ],
+      "note": "官网「燃油车」车型列表（wuyang-honda.com/home/sy/rysy）在售车型排量为100~190ml：NWZ150/NWT150/NWG150/NWF150/PCX160(160ml)/CB190X(184ml)/NSP(184ml)/CGX150等，最大仅190cc级，无≥250cc合资在售车型，models留空。honda.com.cn摩托车全领域列表中，标注「五羊本田」的车型均为125/150/190cc；CBR400R、CB400F、NSS350、NSS750等≥300cc车型标注为「Honda Dream」「Honda DreamWing」，属进口/本田中国渠道，按任务分工由进口组负责，此处不重复收录。官网header未见独立logo的img src，logoUrl记null。"
+    },
+    {
+      "id": "sundiro-honda",
+      "name": "新大洲本田",
+      "nameEn": "SUNDIRO HONDA",
+      "company": "新大洲本田摩托有限公司（新大洲股权投资有限公司、本田技研工业株式会社、本田技研工业(中国)投资有限公司出资，中日双方各占50%）",
+      "category": "合资品牌",
+      "website": "https://www.honda-sundiro.com/",
+      "logoUrl": null,
+      "models": [],
+      "uncertain": [],
+      "sources": [
+        "https://www.honda-sundiro.com/index.html",
+        "https://www.honda-sundiro.com/enindex/about/about_job_detail/id/96.html",
+        "https://www.honda.com.cn/motorcycle.html?type=list",
+        "http://12365.ce.cn/wcrd2026/96561.html"
+      ],
+      "note": "官网首页车型筛选仅设50CC/110CC/125CC/150CC/190CC五档，在售车型（NS150GX、NS150LA、NS150XC、NS150ES、NS125系列、CB190TR、CBF190R、CBF150系列、SquareX125、Cross Cub等）全部≤190cc，无≥250cc合资在售车型，models留空。中国经济网/企业资料提到太仓工厂产品线含300cc、350cc及NSS350、CM300、CL300、CB400X/F、CBR300R等，但honda.com.cn将NSS350等标注为「Honda Dream」渠道（整车挂HONDA标、本田中国销售体系），按任务分工属进口/本田渠道，由另一组负责，不重复收录。官网header未见独立logo的img src，logoUrl记null。"
+    },
+    {
+      "id": "haojue-suzuki",
+      "name": "豪爵铃木",
+      "nameEn": "HAOJUE SUZUKI",
+      "company": "常州豪爵铃木摩托车有限公司（大长江集团/豪爵与铃木株式会社合资；铃木日本官网标注GSX250R制造事业者为常州豪爵铃木摩托车有限公司）",
+      "category": "合资品牌",
+      "website": "https://www.haojue.com/",
+      "logoUrl": "https://cdn.haojue.com/bocweb//web/img/logo.png?v=v49",
+      "models": [
+        {"name": "DL250（含DL250-A无三箱/DL250-C三箱）", "cc": 250, "type": "拉力ADV", "price": "19880~20980元", "source": "https://www.haojue.com/products.html"},
+        {"name": "GSX250R（含GSX250R-A/GSX250R-F）", "cc": 250, "type": "仿赛", "price": "18980~19980元", "source": "https://www.haojue.com/products.html"}
+      ],
+      "uncertain": [
+        {"name": "骊驰GW250-A", "cc": 250, "type": "街车", "price": "18980~20680元", "source": "https://www.58moto.com/article/1811/12555490.html", "reason": "2026年已停产（摩托范报道：官方客服在社区回复已停产，末代价18980元），豪爵官网现行products.html与官方商城均已不再列出，不计入在售"},
+        {"name": "TR300 Plus（城市版/旅行版）", "cc": 300, "type": "巡航", "price": "21980~24980元", "source": "https://www.haojue.com/products.html", "reason": "官网在售且≥250cc，但挂豪爵HAOJUE自主品牌标（非SUZUKI合资线），按任务「与豪爵自主品牌区分，只管铃木合资线」的要求不计入主列表"},
+        {"name": "TVL350（旅行者350）", "cc": 350, "type": "踏板", "price": "28980元起", "source": "https://www.haojue.com/products.html", "reason": "官网在售、339cc单缸水冷踏板，属豪爵HAOJUE自主品牌线，按任务分工不计入主列表"},
+        {"name": "GSX-8R", "cc": 776, "type": "仿赛", "price": "99800元", "source": "https://www.haojue.com/GSX8R/canshu.html", "reason": "豪爵官网产品页与官方商城在售，776cm³并列双缸、指导价99800元；但铃木中国suzuki-china.com/moto/gsx-8r.html亦列该车型，属铃木中国引进的进口大贸渠道，按任务分工由进口组负责，不重复收录"}
+      ],
+      "sources": [
+        "https://www.haojue.com/products.html",
+        "https://www.haojue.com/products/compare_data.html?id=130",
+        "https://www.haojue.com/GSX8R/canshu.html",
+        "https://shop.haojue.com/list.html?cat_id=1",
+        "https://www.58moto.com/article/1811/12555490.html",
+        "https://www.suzuki-china.com/moto/gsx-8r.html",
+        "https://www1.suzuki.co.jp/motor/lineup/gsx250rrlzm6"
+      ],
+      "note": "以豪爵官网products.html「产品世界」现行在售列表为准，只收挂SUZUKI标、常州豪爵铃木合资生产且在售的250平台车型，同系列不同版本（-A/-C、-A/-F）合并为主型号。官网参数页compare_data.html?id=130明确DL250排量248mL（GW250平台），按官方标称250cc级收录（与用户「DL250、GSX250R等250cc要收录」及同组brands_b.json记250的口径一致），精确排量248ml已在来源中可核。官网另有TR300 Plus、TVL350（豪爵自主品牌标）、GSX-8R（铃木中国进口渠道）、GW250（已停产）均列入uncertain、未计入models。官方售价为「官方建议零售价」，划线原价未采用。logoUrl为官网header img src原样（含bocweb//web双斜杠）。"
+    },
+    {
+      "id": "qingqi-suzuki",
+      "name": "济南铃木（轻骑铃木）",
+      "nameEn": "JINAN QINGQI SUZUKI",
+      "company": "济南轻骑铃木摩托车有限公司（济南轻骑与铃木株式会社合资；地址济南市高新技术开发区孙村片区科创路1999号）",
+      "category": "合资品牌",
+      "website": "https://www.qssuzuki.com.cn/",
+      "logoUrl": null,
+      "models": [],
+      "uncertain": [
+        {"name": "极客飒250 GIXXER 250 / GIXXER SF250（GSX250FR）", "cc": 250, "type": "街车/仿赛", "price": null, "source": "https://www.58moto.com/article/3747/12270688.html", "reason": "249ml单缸油冷，工信部第407批公示由济南轻骑铃木申报生产，2026年定档8月引进、10月21日开放预订（购车抽奖活动至12月15日）；截至2026-11-09官方仍未公布最终售价与完整配置、未见正式上市交付，故不计入在售。日本市场2026款3月5日已上市，街车版/仿赛版为同平台两版本，按主型号合并为一条"}
+      ],
+      "sources": [
+        "https://www.qssuzuki.com.cn/",
+        "https://www.58moto.com/article/3747/12270688.html",
+        "https://m.58moto.com/news/12067483",
+        "https://www.58moto.com/article/3671/12230922.html",
+        "https://app.myzaker.com/news/article.php?pk=6ad995f0b15ec07f4c512ffc",
+        "https://www.qibook.com/company-wiki-s/jinanqingqilingmumotuocheyouxiangongsi-c5295b97.html"
+      ],
+      "note": "官网域名由企业年报披露网址与官方《QS150-6使用说明书》PDF内页网址交叉确认为 qssuzuki.com.cn。济南铃木渠道在售车型为UY125、US125、UY125X、极客飒GIXXER155、QS150/QS125等125~150cc级，无≥250cc正式在售车型，models留空。极客飒250（249ml，官方标称250cc级）已过工信部公示并开放预订，但截至调研日未公布售价、未正式上市，按「宁可少列，不可虚构」列入uncertain。官网header未抓到独立logo的img src，logoUrl记null。"
+    },
+    {
+      "id": "jianshe-yamaha",
+      "name": "建设雅马哈",
+      "nameEn": "CHONGQING JIANSHE YAMAHA",
+      "company": "重庆建设·雅马哈摩托车有限公司（重庆建设与雅马哈发动机株式会社合资）",
+      "category": "合资品牌",
+      "website": "https://www.jym.com.cn/",
+      "logoUrl": null,
+      "models": [
+        {"name": "飞致YS250（飞致双碟版，国四）", "cc": 250, "type": "街车", "price": null, "source": "https://www.jym.com.cn/product/detail_qs_ys250_sta4.html"}
+      ],
+      "uncertain": [
+        {"name": "飞致YS250（公安/警用版）", "cc": 250, "type": "街车", "price": null, "source": "https://www.jym.com.cn/product/detail_ga_ys250.html", "reason": "官网「公安车」分类下另有飞致YS250警用版（detail_ga_ys250.html），带警灯/警笛、公安白涂装、排放标准国三，非民用零售车型，不单独计入，与民用国四版合并为主型号一条"},
+        {"name": "飞致YS250民用版在售状态", "cc": 250, "type": "街车", "price": null, "source": "https://motor.xcar.com.cn/m154/", "reason": "爱卡摩托车标「在产在售」、牛摩网标「在产」，但敬慕百科等资料称该车已停产且为国三标准；建设雅马哈官网「骑士车」列表现行列有「飞致双碟版YS250」且链接带_sta4（国四）后缀，故按官网现行在售计入models，第三方停产说法并存，状态存疑"}
+      ],
+      "sources": [
+        "https://www.jym.com.cn/",
+        "https://www.jym.com.cn/product/",
+        "https://www.jym.com.cn/product/detail_qs_ys250_sta4.html",
+        "https://www.jym.com.cn/product/detail_ga_ys250.html",
+        "https://www.jym.com.cn/product/public-security-vehicle.html",
+        "https://motor.xcar.com.cn/m154/"
+      ],
+      "note": "官网产品中心「骑士车」页现行列有「飞致双碟版YS250」（detail_qs_ys250_sta4.html，_sta4为国四版）；官网同系列参数页detail_ga_ys250.html标总排气量249cm³、单缸风冷、最大功率14.6kW，按官方标称250cc级收录（精确249ml）。官网未标注指导价，price记null。官网其余在售骑士车/踏板/弯梁均为125~150cc（YBR150Z、GT150 FAZER、飞致YS150、YS125、XTZ125等），均<250cc已排除；MXU/ATV类不在摩托车范围。官网header未抓到独立logo的img src，logoUrl记null。"
+    },
+    {
+      "id": "kymco",
+      "name": "光阳",
+      "nameEn": "KYMCO",
+      "company": "常州光阳摩托车有限公司（台湾光阳工业股份有限公司KYMCO在华投资）",
+      "category": "台系/外资在华",
+      "website": "https://www.kymco.com.cn/",
+      "logoUrl": "https://ckmco-video.oss-cn-shanghai.aliyuncs.com/2021/img/logo.png",
+      "models": [
+        {"name": "赛艇S250", "cc": 250, "type": "踏板", "price": "23500元起", "source": "https://www.kymco.com.cn/join.html"},
+        {"name": "赛艇250（含2025款）", "cc": 250, "type": "踏板", "price": "20800元", "source": "https://www.kymco.com.cn/join.html"},
+        {"name": "赛艇ST250（含豪华版/纪念版）", "cc": 250, "type": "踏板", "price": "21999~26999元", "source": "https://www.kymco.com.cn/join.html"},
+        {"name": "赛艇CT250（含2025款）", "cc": 250, "type": "踏板", "price": "19980元", "source": "https://www.kymco.com.cn/join.html"},
+        {"name": "赛艇S350（含黑武士）", "cc": 350, "type": "踏板", "price": "31980~34980元", "source": "https://www.kymco.com.cn/join.html"},
+        {"name": "赛艇X350尊享版", "cc": 350, "type": "踏板", "price": "33980元", "source": "https://www.kymco.com.cn/join.html"},
+        {"name": "AK550（含AK550 II代/AK575 PREMIUM）", "cc": 550, "type": "踏板", "price": "88800~89800元", "source": "https://www.kymco.com.cn/join.html"}
+      ],
+      "uncertain": [
+        {"name": "赛艇S400（Xciting S400）", "cc": 400, "type": "踏板", "price": "46800元", "source": "https://www.kymco.com.cn/news_details4.html", "reason": "仅见于2021年前后的官网新闻页news_details4.html（售价46800元），官网现行在售价目表join.html未列出，是否仍在国内在售存疑"},
+        {"name": "KRIDER 400", "cc": 400, "type": "街车", "price": "40980元", "source": "https://www.kymco.com.cn/news_details4.html", "reason": "仅见于官网新闻页news_details4.html（售价40980元），现行join.html价目表未列出，在售状态存疑"},
+        {"name": "赛艇CT300 / 赛艇300 / People 250", "cc": null, "type": "踏板", "price": null, "source": "https://www.kymco.com.cn/news_details4.html", "reason": "只在官网警用车/历史新闻页出现（CT300ABS警用车「暂无报价」），现行民用价目表join.html未收录，不计入在售"}
+      ],
+      "sources": [
+        "https://www.kymco.com.cn/join.html",
+        "https://www.kymco.com.cn/?app",
+        "https://www.kymco.com.cn/news_details4.html",
+        "https://www.kymco.com.cn/news_details1.html?id=233",
+        "https://m.58moto.com/garage/parameter/20566",
+        "https://www.58moto.com/article/2/12592605.html",
+        "http://mp.weixin.qq.com/s?__biz=MjM5MDE1NjY5NQ==&mid=2652552928&idx=1&sn=3c326347f3075c64aa41ace22faeb5fc"
+      ],
+      "note": "型号与官方售价全部取自常州光阳官网现行「招商/全系家族」价目表join.html（含2026款ST250豪华版、赛艇250 2025、赛艇CT250 2025等）。同系列版本按主型号合并：ST250豪华版/纪念版合并、S350黑武士并入S350、AK550/AK550 II代/AK575 PREMIUM合并为AK550系列；赛艇S250、赛艇250、ST250、CT250为官网独立车型名且各自有独立售价，故分列。250系列精确排量：ST250为246.3ml（官网news_details1.html?id=233，摩托范参数页标「排量(cc)250/精确排量246.3」）、CT250为249.1ml、S250为246ml；S350/X350精确320.6ml；AK550为550cc水冷双缸（官网文字）。cc按官方标称整数（250/350/550）记录，与同组brands_b.json口径一致。全部为踏板类别。logoUrl取自官网header img.wnav-logo的src。"
+    },
+    {
+      "id": "sym",
+      "name": "三阳",
+      "nameEn": "SYM",
+      "company": "厦门厦杏摩托有限公司（台湾三阳工业股份有限公司SYM在华合资；摩托范参数页与欧盟型式认证均标注厂家为XIAMEN XIASHING MOTORCYCLE Co., Ltd.）",
+      "category": "台系/外资在华",
+      "website": "https://www.xsmt.com/",
+      "logoUrl": "https://www.xsmt.com/public/images/logo.png",
+      "models": [
+        {"name": "CRUISYM 400 巡弋400（含25款/26款旗舰版）", "cc": 400, "type": "踏板", "price": "36980元", "source": "https://www.xsmt.com/product/show-13055.html"},
+        {"name": "JOYRIDE 300 行者300（25款）", "cc": 300, "type": "踏板", "price": "23980元", "source": "https://www.xsmt.com/product/param/show-8887.html"},
+        {"name": "Jepardo 300 猎豹300", "cc": 300, "type": "踏板", "price": "24980元", "source": "https://www.xsmt.com/product/show-24067.html"},
+        {"name": "HUSKY ADV 300 哈士奇（含26款旗舰款/弯道版）", "cc": 300, "type": "踏板", "price": "24980~26980元", "source": "https://www.xsmt.com/product/show-4357.html"}
+      ],
+      "uncertain": [
+        {"name": "CRUISYM 250", "cc": 250, "type": "踏板", "price": null, "source": "https://www.xsmt.com/product/show-8961.html", "reason": "官网首页现行在售列表中列有该车型，但官网车型页为设计理念文案、未在官方渠道核实到排量数值与售价，按「不确定null/宁可少列」暂不计入models，待复核精确排量是否≥250cc"},
+        {"name": "cruisym GT", "cc": null, "type": "踏板", "price": null, "source": "https://www.xsmt.com/product/show-4401.html", "reason": "官网首页在售列表中列有该车型，但未核实到排量与售价（台湾版CRUISYM为278.3cc，大陆版cruisym GT排量未确认），不纳入models"},
+        {"name": "SHEX（25款）", "cc": null, "type": "踏板", "price": null, "source": "https://www.xsmt.com/product/show-8886.html", "reason": "官网首页在售列表中列有该车型，但排量未核实，可能<250cc，不纳入models"},
+        {"name": "CRUISYM 300（原装进口）", "cc": 300, "type": "踏板", "price": null, "source": "https://xsmt.com/product/show-3840.html", "reason": "官网有独立车型详情页（标注原装进口、通勤休旅跨界），但现行首页在售产品列表已不再列出，疑已由国产CRUISYM400/300系列取代，在售状态存疑"}
+      ],
+      "sources": [
+        "https://www.xsmt.com/",
+        "https://www.xsmt.com/product/param/show-8887.html",
+        "https://www.xsmt.com/product/show-13055.html",
+        "https://www.xsmt.com/product/show-8851.html",
+        "https://www.xsmt.com/product/show-24067.html",
+        "https://www.xsmt.com/product/show-4357.html",
+        "https://www.58moto.com/article/3671/12265577.html",
+        "https://m.58moto.com/garage/parameter/20825",
+        "https://m.58moto.com/garage/parameter/21859",
+        "https://m.58moto.com/news/12609081",
+        "https://www.sym-global.com/cruisym400"
+      ],
+      "note": "在售型号名以厦杏三阳官网首页产品家族列表为准。排量核实：官网参数页param/show-8887.html明确JOYRIDE300「排气量(ml)278.3」；官网CRUISYM400(26款)旗舰版页明确「399.3CC」；摩托范参数页确认HUSKY ADV300精确278.3cc、JOYRIDE300精确278.3cc、CRUISYM400精确399.3cc；摩托范报道Jepardo300为278cc。cc按官方标称整数（300/400）记录，与同组brands_b.json口径一致。售价为摩托范报道的官方指导价（巡弋400统一零售价36980元、行者300指导价23980元、猎豹300上市价24980元、哈士奇2026款弯道版24980元/2023款26980元），三阳中国官网本身未标价。年款/版本合并：CRUISYM400的25款与26款旗舰版合并为一条，HUSKY ADV 300的26款旗舰款/弯道版合并为一条。全部为踏板类别。logoUrl由官网header img src（/public/images/logo.png）补全为绝对URL。"
+    },
+    {
+      "id": "peugeot-motocycles",
+      "name": "标致摩托",
+      "nameEn": "PEUGEOT MOTOCYCLES",
+      "company": "法国Peugeot Motocycles（标致摩托）；中国官网peugeot-motocycles.com.cn运营、XP400以CKD方式在国内组装销售，在华合资/总代理主体未核实",
+      "category": "台系/外资在华",
+      "website": "https://www.peugeot-motocycles.com.cn/",
+      "logoUrl": "https://www.peugeot-motocycles.com.cn/application/portal/view/public/images/logo.png",
+      "models": [
+        {"name": "XP400（含ALLURE/GT/PRO版本）", "cc": 400, "type": "踏板", "price": "42800~45800元", "source": "https://www.peugeot-motocycles.com.cn/"},
+        {"name": "PEUGEOT METROPOLIS（Metropolis 400 倒三轮）", "cc": 400, "type": "踏板", "price": null, "source": "https://www.peugeot-motocycles.com.cn/"}
+      ],
+      "uncertain": [
+        {"name": "PEUGEOT METROPOLIS 排量与售价", "cc": 400, "type": "踏板", "price": null, "source": "https://tsight.io/articles/19072035?lang=zh", "reason": "官网首页明确在售（曜岩黑/冰雪白两色）但未标排量与售价；399cc系据与XP400同源的PowerMotion 400动力平台推断、第三方资料标Metropolis 400价28800~32800元，未在官方渠道直接核实，故price记null、cc按型号标称400记录"}
+      ],
+      "sources": [
+        "https://www.peugeot-motocycles.com.cn/",
+        "https://www.58moto.com/article/7885/12622162.html",
+        "https://www.58moto.com/article/8155/12578869.html",
+        "https://m.58moto.com/news/12611299",
+        "http://mp.weixin.qq.com/s?__biz=MzA3MDM2ODk4Nw==&mid=2652089930&idx=1&sn=9bbd118cda4e19030c9053fadd41bf55",
+        "https://tsight.io/articles/19072035?lang=zh"
+      ],
+      "note": "标致摩托中国官网现行车型列表中≥250cc在售的为XP400系列（399cc单缸水冷四气门PowerMotion发动机，官网首页「XP400 GT陨星灰 车型售价￥45,800」，摩托范/官方公众号确认ALLURE版42800元、GT版45800元，另有XP400 PRO/ALLURE/GT等版本，按主型号合并为一条）与倒三轮PEUGEOT METROPOLIS（官网首页列曜岩黑/冰雪白在售，售价未标）。PULSION 211（211cc）、DJANGO系列、SPEEDFIGHT 4+、DJANGO 50、STREETZONE 50均<250cc，已严格排除。XP400精确排量399cc，cc按型号标称400记录。logoUrl取自官网header img.big_logo的src并补全为绝对URL。"
+    }
+  ]
+}

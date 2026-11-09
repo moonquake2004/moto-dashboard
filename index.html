@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>国内 250cc+ 摩托车厂商品牌全景看板</title>
+<style>
+:root{
+  --bg:#f4f6f9; --card:#ffffff; --ink:#16202e; --muted:#6b7a8d; --faint:#93a1b2;
+  --line:#e4e9f0; --line2:#eef2f6; --accent:#e2562a;
+  --c-dom:#e2562a; --c-jv:#2f6fed; --c-imp:#7b4fd8;
+  --shadow:0 1px 2px rgba(20,35,60,.04),0 6px 20px rgba(20,35,60,.05);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);overflow-x:hidden;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1440px;margin:0 auto;padding:0 24px}
+/* grid/flex 子项默认 min-width:auto 会被长文本撑开导致窄屏横向溢出 */
+.kpi,.mcard,.wall-item,.bcard,.chart,.panel,.search,select,.bar-row,.binfo{min-width:0}
+.hero h1,.hero .sub,.hero-badges span,.bname,.mcard .m-note{overflow-wrap:anywhere}
+.hero-badges span{max-width:100%}
+h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-.01em}
+
+/* ---------- header ---------- */
+.hero{background:linear-gradient(135deg,#17283d 0%,#223b57 55%,#2c4a68 100%);color:#fff;padding:34px 0 30px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-90px;top:-110px;width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(226,86,42,.24),transparent 65%)}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#9fb6cd;font-weight:600}
+.hero h1{font-size:30px;margin:8px 0 8px;line-height:1.3}
+.hero .sub{color:#c3d2e2;font-size:13.5px;max-width:860px}
+.hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.hero-badges span{font-size:12px;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.16);
+  padding:4px 10px;border-radius:20px;color:#e6eef6}
+
+/* ---------- kpi ---------- */
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:-22px;position:relative;z-index:2}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 16px;box-shadow:var(--shadow)}
+.kpi .k-label{font-size:11.5px;color:var(--muted);font-weight:600}
+.kpi .k-val{font-size:25px;font-weight:750;line-height:1.25;margin-top:3px;font-variant-numeric:tabular-nums}
+.kpi .k-val small{font-size:12px;font-weight:600;color:var(--muted);margin-left:3px}
+.kpi .k-note{font-size:11px;color:var(--faint);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kpi .up{color:#d33f2a;font-weight:700;font-size:12px;margin-left:5px}
+
+/* ---------- section ---------- */
+section{margin-top:30px}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.sec-head h2{font-size:18px}
+.sec-head .desc{font-size:12px;color:var(--muted)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+
+/* market */
+.market-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:14px}
+.market-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.mcard{padding:14px 16px;border:1px solid var(--line2);border-radius:10px;background:#fbfcfe}
+.mcard .m-label{font-size:11.5px;color:var(--muted);font-weight:600}
+.mcard .m-val{font-size:22px;font-weight:750;font-variant-numeric:tabular-nums;margin-top:2px}
+.mcard .m-val small{font-size:12px;color:var(--muted);font-weight:600;margin-left:3px}
+.mcard .m-delta{display:inline-block;font-size:11.5px;font-weight:700;color:#d33f2a;background:#fdeeea;padding:1px 7px;border-radius:10px;margin-left:6px}
+.mcard .m-note{font-size:11px;color:var(--faint);margin-top:3px}
+.leaders{padding:16px 18px}
+.leaders h3{font-size:13px;margin-bottom:10px}
+.lead-row{margin-bottom:12px}
+.lead-row .t{font-size:11.5px;color:var(--muted);font-weight:600;margin-bottom:5px}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chips span{font-size:11.5px;background:#eef3f9;color:#2c4a68;border:1px solid #dde7f2;padding:2px 8px;border-radius:6px;font-weight:600}
+.src-note{font-size:11px;color:var(--faint);margin-top:6px;line-height:1.5}
+
+/* charts */
+.charts{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.chart{padding:16px 18px}
+.chart h3{font-size:13px;margin-bottom:3px}
+.chart .cs{font-size:11px;color:var(--faint);margin-bottom:14px}
+.bar-row{display:grid;grid-template-columns:104px 1fr 42px;align-items:center;gap:9px;margin-bottom:9px}
+.bar-row .bl{font-size:11.5px;color:var(--muted);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-track{height:9px;background:#eef2f6;border-radius:6px;overflow:hidden}
+.bar-fill{height:100%;border-radius:6px;background:var(--accent)}
+.bar-row .bv{font-size:11.5px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--ink)}
+
+/* logo wall */
+.wall{padding:16px 18px 18px}
+.wall-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(146px,1fr));gap:9px}
+.wall-item{border:1px solid var(--line2);border-radius:9px;background:#fbfcfe;padding:10px 8px;text-align:center;cursor:pointer;
+  transition:transform .15s,box-shadow .15s,border-color .15s}
+.wall-item:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(20,35,60,.10);border-color:#cfd9e6}
+.wall-logo{height:44px;display:flex;align-items:center;justify-content:center;background:#f4f6f8;border-radius:6px;overflow:hidden;margin-bottom:8px}
+.wall-logo.dark{background:#1d2939}
+.wall-logo img{max-width:88%;max-height:34px;object-fit:contain;display:block}
+.wall-fallback{font-size:12.5px;font-weight:750;color:#3d4d61;letter-spacing:.02em;line-height:1.15;padding:0 3px}
+.wall-logo.dark .wall-fallback{color:#e7edf5}
+.wall-name{font-size:12px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wall-meta{font-size:10.5px;color:var(--faint);margin-top:1px}
+.dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:middle}
+.dot.dom{background:var(--c-dom)} .dot.jv{background:var(--c-jv)} .dot.imp{background:var(--c-imp)}
+
+/* filter bar */
+.filters{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);
+  border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:12px 14px;margin-top:30px}
+.f-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.search{flex:1;min-width:220px;position:relative}
+.search input{width:100%;height:36px;border:1px solid var(--line);border-radius:8px;padding:0 12px 0 34px;
+  font-size:13px;outline:none;background:#fafbfd;color:var(--ink);font-family:inherit}
+.search input:focus{border-color:#a9bdd6;background:#fff}
+.search .ico{position:absolute;left:11px;top:8px;color:var(--faint);font-size:14px}
+select{height:36px;border:1px solid var(--line);border-radius:8px;background:#fafbfd;padding:0 28px 0 10px;
+  font-size:12.5px;color:var(--ink);font-family:inherit;outline:none;cursor:pointer}
+.tabs{display:flex;gap:5px;flex-wrap:wrap;margin-top:10px}
+.tab{font-size:12.5px;font-weight:650;padding:6px 13px;border-radius:7px;border:1px solid var(--line);
+  background:#fafbfd;color:var(--muted);cursor:pointer;transition:.15s}
+.tab:hover{border-color:#c8d4e3;color:var(--ink)}
+.tab.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.f-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:10px;flex-wrap:wrap}
+.result-count{font-size:12px;color:var(--muted)}
+.result-count b{color:var(--accent);font-size:13px}
+.mini-btn{font-size:11.5px;padding:5px 11px;border:1px solid var(--line);background:#fff;border-radius:6px;
+  cursor:pointer;color:var(--muted);font-family:inherit}
+.mini-btn:hover{border-color:#c8d4e3;color:var(--ink)}
+
+/* brand groups */
+.grp{margin-top:26px}
+.grp-head{display:flex;align-items:center;gap:9px;margin-bottom:12px;padding-left:2px}
+.grp-head .bar{width:4px;height:19px;border-radius:3px}
+.grp-head h3{font-size:16px}
+.grp-head .cnt{font-size:11.5px;color:var(--muted);background:#eaf0f6;padding:2px 9px;border-radius:10px;font-weight:600}
+.brand-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:start}
+.bcard{background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);overflow:hidden}
+.bcard.flash{outline:2px solid var(--accent);outline-offset:2px}
+.bhead{display:flex;gap:12px;align-items:flex-start;padding:14px 15px 12px;border-bottom:1px solid var(--line2)}
+.blogo{width:76px;height:56px;flex:none;display:flex;align-items:center;justify-content:center;
+  background:#f4f6f8;border:1px solid var(--line2);border-radius:8px;overflow:hidden}
+.blogo.dark{background:#1d2939;border-color:#1d2939}
+.blogo img{max-width:88%;max-height:44px;object-fit:contain;display:block}
+.blogo .fb{font-size:12px;font-weight:750;color:#3d4d61;text-align:center;line-height:1.2;padding:3px}
+.blogo.dark .fb{color:#e7edf5}
+.binfo{min-width:0;flex:1}
+.bname{display:flex;align-items:baseline;gap:7px;flex-wrap:wrap}
+.bname strong{font-size:16px;letter-spacing:-.01em}
+.bname .en{font-size:11.5px;color:var(--faint);font-weight:650;letter-spacing:.03em}
+.bcompany{font-size:11.5px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.btags{display:flex;gap:5px;flex-wrap:wrap;margin-top:6px}
+.tag{font-size:10.5px;font-weight:650;padding:2px 7px;border-radius:5px;border:1px solid var(--line);color:var(--muted);background:#fafbfd}
+.tag.cat-dom{color:var(--c-dom);border-color:#f7d5c8;background:#fdf2ee}
+.tag.cat-jv{color:var(--c-jv);border-color:#cfddfa;background:#eff5ff}
+.tag.cat-imp{color:var(--c-imp);border-color:#ded0f6;background:#f6f1fe}
+.bcount{font-size:11px;font-weight:700;color:var(--ink);background:#eef3f9;border-radius:7px;padding:4px 8px;white-space:nowrap;flex:none}
+.blinks{display:flex;gap:8px;margin-top:7px;flex-wrap:wrap}
+.blinks a{font-size:11px;color:var(--c-jv);border-bottom:1px dashed #b9cdf0}
+.blinks a:hover{color:var(--accent);border-color:var(--accent)}
+
+/* model table */
+.mtable{padding:0 15px 12px}
+.mrow{display:grid;grid-template-columns:minmax(110px,1.5fr) 62px 74px minmax(76px,1fr) 20px;
+  gap:8px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line2);font-size:12.5px}
+.mrow:last-child{border-bottom:none}
+.mrow .mn{font-weight:650;color:var(--ink);word-break:break-word;line-height:1.35}
+.mrow .cc{font-variant-numeric:tabular-nums;font-size:11.5px;color:#41546b;font-weight:650}
+.mrow .cc small{font-size:9.5px;color:var(--faint);font-weight:500}
+.mrow .mt{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mrow .mp{font-size:11.5px;color:#a4531f;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-variant-numeric:tabular-nums}
+.mrow .mp.na{color:var(--faint)}
+.mrow .ms{text-align:right}
+.mrow .ms a{font-size:12px;color:#a9b8c8}
+.mrow .ms a:hover{color:var(--c-jv)}
+.mrow .ms span{color:#d6dee7;font-size:11px}
+.mhead{display:grid;grid-template-columns:minmax(110px,1.5fr) 62px 74px minmax(76px,1fr) 20px;
+  gap:8px;padding:7px 0 5px;font-size:10.5px;color:var(--faint);font-weight:700;letter-spacing:.04em;border-bottom:1px solid var(--line)}
+.bnote{font-size:11px;color:var(--muted);background:#fafbfd;border-top:1px solid var(--line2);padding:9px 15px;line-height:1.5}
+.bnote b{color:var(--ink)}
+.empty-models{padding:16px 15px 18px;font-size:12px;color:var(--muted)}
+.empty-models .em-title{font-weight:700;color:var(--ink);margin-bottom:4px}
+.collapse-btn{width:100%;border:none;border-top:1px solid var(--line2);background:#fafbfd;padding:7px;
+  font-size:11.5px;color:var(--muted);cursor:pointer;font-family:inherit}
+.collapse-btn:hover{background:#f2f6fa;color:var(--ink)}
+.bcard.collapsed .mtable,.bcard.collapsed .bnote{display:none}
+
+/* footer */
+.footer{margin:36px 0 40px}
+.foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fbox{padding:16px 18px}
+.fbox h3{font-size:13px;margin-bottom:9px}
+.fbox ul{margin:0;padding-left:17px;font-size:12px;color:var(--muted);line-height:1.8}
+.fbox p{font-size:12px;color:var(--muted);margin:0 0 8px;line-height:1.7}
+.missing-logos{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.missing-logos span{font-size:11px;background:#f2f5f9;border:1px solid var(--line);color:var(--muted);padding:2px 8px;border-radius:5px}
+.disclaimer{font-size:11.5px;color:var(--faint);text-align:center;padding:18px 10px 0;line-height:1.7}
+
+/* responsive */
+@media (max-width:1200px){
+  .kpis{grid-template-columns:repeat(3,1fr)}
+  .charts{grid-template-columns:1fr 1fr}
+  .market-grid{grid-template-columns:1fr}
+  .brand-grid{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .wrap{padding:0 14px}
+  .hero{padding:26px 0 30px}
+  .hero h1{font-size:22px}
+  .hero .sub{font-size:12.5px}
+  .kpis{grid-template-columns:repeat(2,1fr);gap:9px;margin-top:-18px}
+  .kpi{padding:11px 12px}
+  .kpi .k-val{font-size:20px}
+  .charts{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .market-cards{grid-template-columns:repeat(2,1fr)}
+  .wall-grid{grid-template-columns:repeat(auto-fill,minmax(108px,1fr));gap:7px}
+  .wall-item{padding:8px 5px}
+  .filters{padding:10px}
+  .search{min-width:100%}
+  select{flex:1;min-width:calc(50% - 5px)}
+  .brand-grid{grid-template-columns:1fr}
+  .bhead{padding:12px;gap:9px}
+  .blogo{width:62px;height:50px}
+  .bname strong{font-size:15px}
+  .mtable{padding:0 12px 10px}
+  .mhead{display:none}
+  .mrow{grid-template-columns:1fr auto auto;gap:4px 8px;padding:8px 0}
+  .mrow .mn{grid-column:1;grid-row:1;font-size:13px}
+  .mrow .cc{grid-column:2;grid-row:1;text-align:right}
+  .mrow .mt{grid-column:3;grid-row:1;text-align:right}
+  .mrow .mp{grid-column:1 / 3;grid-row:2;font-size:11px}
+  .mrow .ms{grid-column:3;grid-row:2}
+  .sec-head h2{font-size:16px}
+}
+
+/* ===== 窄屏横向溢出修复：grid 轨道统一改为 minmax(0,1fr) ===== */
+.bar-track,.mrow .mn,.mrow .mp{min-width:0}
+.kpis{grid-template-columns:repeat(6,minmax(0,1fr))}
+.market-grid{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}
+.market-cards,.foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.charts{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:1200px){
+  .kpis{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .charts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .market-grid,.brand-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:760px){
+  .kpis,.market-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .charts,.foot-grid,.brand-grid{grid-template-columns:minmax(0,1fr)}
+  .mtable .mrow{grid-template-columns:minmax(0,1fr) auto auto}
+  .wall-grid{grid-template-columns:repeat(auto-fill,minmax(100px,1fr))}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="eyebrow">China Motorcycle Market · 250cc+ Brand Map</div>
+    <h1>国内 250cc 以上摩托车厂商品牌全景看板</h1>
+    <div class="sub">覆盖中国市场在售的国产自主、合资/台系、进口大贸三大圈层厂商，逐一列出各品牌旗下全部 ≥250cc 在售型号，并附品牌官方 Logo。数据以各品牌中国官网车型页为准，禁止虚构。</div>
+    <div class="hero-badges">
+      <span id="hUpdated">数据截至 —</span>
+      <span id="hScope">口径 —</span>
+      <span>型号逐条附核实来源</span>
+      <span>官方 Logo 本地化</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="kpis" id="kpis"></div>
+
+  <section>
+    <div class="sec-head">
+      <h2>市场大盘 · 2025 年</h2>
+      <div class="desc">权威行业口径，用于理解品牌格局</div>
+    </div>
+    <div class="market-grid">
+      <div class="market-cards" id="marketCards"></div>
+      <div class="panel leaders">
+        <h3>销量领先企业</h3>
+        <div id="leaders"></div>
+        <div class="src-note" id="marketSrc"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>收录车型分布</h2>
+      <div class="desc">基于本看板收录的 <b id="chartTotal">—</b> 个在售型号统计</div>
+    </div>
+    <div class="charts">
+      <div class="panel chart"><h3>排量段分布</h3><div class="cs">按官方标称排量（cc）分段</div><div id="chartBucket"></div></div>
+      <div class="panel chart"><h3>车型类别分布</h3><div class="cs">仿赛 / 街车 / 巡航 / ADV / 踏板等</div><div id="chartType"></div></div>
+      <div class="panel chart"><h3>品牌圈层分布</h3><div class="cs">各圈层收录的在售型号数量</div><div id="chartCat"></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>品牌 Logo 墙</h2>
+      <div class="desc">点击可跳转到该品牌详情 · 未获取到官方 Logo 的以品牌标准字显示</div>
+    </div>
+    <div class="panel wall"><div class="wall-grid" id="wall"></div></div>
+  </section>
+
+  <div class="filters">
+    <div class="f-row">
+      <div class="search"><span class="ico">⌕</span><input id="q" type="search" placeholder="搜索品牌 / 集团 / 型号名，例如「450SR」「无极」「Ninja」" autocomplete="off"></div>
+      <select id="fBucket"><option value="">全部排量段</option></select>
+      <select id="fType"><option value="">全部车型类别</option></select>
+    </div>
+    <div class="tabs" id="tabs"></div>
+    <div class="f-foot">
+      <div class="result-count" id="resultCount"></div>
+      <div style="display:flex;gap:6px">
+        <button class="mini-btn" id="toggleAll">全部收起</button>
+        <button class="mini-btn" id="resetAll">重置筛选</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="brandGroups"></div>
+
+  <section class="footer">
+    <div class="foot-grid">
+      <div class="panel fbox">
+        <h3>数据口径与原则</h3>
+        <ul id="principles"></ul>
+        <p style="margin-top:10px"><b>数据来源：</b><span id="sources"></span></p>
+      </div>
+      <div class="panel fbox">
+        <h3>完整性说明</h3>
+        <p id="integrity"></p>
+        <p><b>未获取到官方 Logo 的品牌（页面以品牌标准字兜底）：</b></p>
+        <div class="missing-logos" id="missingLogos"></div>
+        <p style="margin-top:10px"><b>当前无 ≥250cc 在售车型的品牌：</b><span id="emptyBrands"></span></p>
+      </div>
+    </div>
+    <div class="disclaimer">本看板为市场信息整理，车型与价格以品牌官方最新公示为准；官方指导价未公布或未能核实的统一记为「—」，不做估算。数据截至 <span id="footDate">—</span>。</div>
+  </section>
+</div>
+
+<script src="data/dashboard.js"></script>
+<script>
+(function(){
+  var D = window.MOTO_DATA;
+  if(!D){document.body.innerHTML='<div style="padding:40px;font-family:sans-serif">数据文件 data/dashboard.js 未加载，请确认文件存在。</div>';return;}
+  var CATS = ["国产自主","合资及台系","进口大贸"];
+  var CAT_KEY = {"国产自主":"dom","合资及台系":"jv","进口大贸":"imp"};
+  var CAT_COLOR = {"国产自主":"var(--c-dom)","合资及台系":"var(--c-jv)","进口大贸":"var(--c-imp)"};
+  var BUCKETS = ["250-399cc","400-699cc","700-999cc","1000cc以上","未标注"];
+  var state = {q:"",cat:"全部",bucket:"",type:"",collapsed:false};
+  var $ = function(id){return document.getElementById(id)};
+  var esc = function(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})};
+  var num = function(n){return (n||0).toLocaleString('zh-CN')};
+
+  /* header + KPI */
+  $("hUpdated").textContent = "数据截至 " + D.meta.updated;
+  $("hScope").textContent = D.meta.scope;
+  $("footDate").textContent = D.meta.updated;
+  var s = D.stats;
+  var kpis = [
+    ["收录品牌", s.brandCount, "个", "国产自主 / 合资台系 / 进口大贸"],
+    ["在售型号", s.modelCount, "个", "≥250cc，逐条附核实来源"],
+    ["官方 Logo", s.logoCount, "张", "本地化存储，占比 "+Math.round(s.logoCount/s.brandCount*100)+"%"],
+    [D.market.items[0].label, D.market.items[0].value, D.market.items[0].unit, "2025年 · 同比 +25.87%"],
+    [D.market.items[1].label, D.market.items[1].value, D.market.items[1].unit, "2025年 · 同比 +107.56%"],
+    ["内销 CR3", D.market.items[3].value, D.market.items[3].unit, "春风 / 钱江 / 隆鑫"]
+  ];
+  $("kpis").innerHTML = kpis.map(function(k){
+    return '<div class="kpi"><div class="k-label">'+esc(k[0])+'</div><div class="k-val">'+esc(k[1])+'<small>'+esc(k[2])+'</small></div><div class="k-note">'+esc(k[3])+'</div></div>';
+  }).join("");
+
+  /* market */
+  $("marketCards").innerHTML = D.market.items.map(function(it){
+    return '<div class="mcard"><div class="m-label">'+esc(it.label)+'</div><div class="m-val">'+esc(it.value)+
+      '<small>'+esc(it.unit)+'</small>'+(it.delta?'<span class="m-delta">'+esc(it.delta)+'</span>':'')+
+      '</div><div class="m-note">'+esc(it.note)+'</div></div>';
+  }).join("");
+  var lead = function(title,arr){return '<div class="lead-row"><div class="t">'+esc(title)+'</div><div class="chips">'+
+    arr.map(function(x,i){return '<span>'+(i+1)+'. '+esc(x)+'</span>'}).join("")+'</div></div>'};
+  $("leaders").innerHTML = lead("2025 年 250cc 以上销量前五企业",D.market.leaders250)+
+    lead("2025 年 500cc 以上销量前五企业",D.market.leaders500);
+  $("marketSrc").textContent = "来源：" + D.market.leadersSource + "；" + D.market.source;
+
+  /* charts */
+  function bars(el,obj,order,colors){
+    var max = Math.max.apply(null,Object.keys(obj).map(function(k){return obj[k]}).concat([1]));
+    var keys = order || Object.keys(obj).sort(function(a,b){return obj[b]-obj[a]});
+    $(el).innerHTML = keys.filter(function(k){return obj[k]!=null}).map(function(k){
+      var v=obj[k]||0, c=(colors&&colors[k])||"var(--accent)";
+      return '<div class="bar-row"><div class="bl" title="'+esc(k)+'">'+esc(k)+'</div>'+
+        '<div class="bar-track"><div class="bar-fill" style="width:'+(v/max*100).toFixed(1)+'%;background:'+c+'"></div></div>'+
+        '<div class="bv">'+num(v)+'</div></div>';
+    }).join("");
+  }
+  $("chartTotal").textContent = num(s.modelCount);
+  bars("chartBucket",s.byBucket,BUCKETS);
+  bars("chartType",s.byType);
+  bars("chartCat",s.byCategoryModels,CATS,CAT_COLOR);
+
+  /* logo wall */
+  function logoHTML(b,cls){
+    var box = cls + (b.logoDark?" dark":"");
+    if(b.logo.file){
+      return '<div class="'+box+'"><img src="'+esc(b.logo.file)+'" alt="'+esc(b.name)+' Logo" loading="lazy" onerror="this.parentNode.innerHTML=\'<div class=&quot;wall-fallback&quot;>'+esc(b.nameEn||b.name)+'</div>\'"></div>';
+    }
+    return '<div class="'+box+'"><div class="wall-fallback">'+esc(b.nameEn||b.name)+'</div></div>';
+  }
+  $("wall").innerHTML = D.brands.map(function(b){
+    return '<div class="wall-item" data-jump="'+esc(b.id)+'" title="'+esc(b.name)+' · '+b.modelCount+' 个在售型号">'+
+      logoHTML(b,"wall-logo")+'<div class="wall-name">'+esc(b.name)+'</div>'+
+      '<div class="wall-meta"><span class="dot '+CAT_KEY[b.category]+'"></span>'+b.modelCount+' 款</div></div>';
+  }).join("");
+
+  /* filters */
+  var tabDefs = ["全部"].concat(CATS);
+  $("tabs").innerHTML = tabDefs.map(function(c){
+    var n = c==="全部" ? s.brandCount : (s.byCategory[c]||0);
+    return '<button class="tab'+(state.cat===c?" on":"")+'" data-cat="'+esc(c)+'">'+esc(c)+' '+n+'</button>';
+  }).join("");
+  BUCKETS.forEach(function(b){var o=document.createElement("option");o.value=b;o.textContent=b+"（"+(s.byBucket[b]||0)+"）";$("fBucket").appendChild(o)});
+  Object.keys(s.byType).sort(function(a,b){return s.byType[b]-s.byType[a]}).forEach(function(t){
+    var o=document.createElement("option");o.value=t;o.textContent=t+"（"+s.byType[t]+"）";$("fType").appendChild(o)});
+
+  /* brand cards */
+  function modelRow(m){
+    var cc = m.cc!=null ? m.cc+'<small>cc</small>' : '—';
+    var price = m.price ? esc(m.price) : '<span class="na">—</span>';
+    var src = m.source ? '<a href="'+esc(m.source)+'" target="_blank" rel="noopener" title="查看核实来源">↗</a>' : '<span>·</span>';
+    return '<div class="mrow"><div class="mn">'+esc(m.name)+'</div><div class="cc">'+cc+'</div>'+
+      '<div class="mt">'+esc(m.type)+'</div><div class="mp'+(m.price?'':' na')+'">'+price+'</div><div class="ms">'+src+'</div></div>';
+  }
+  function brandCard(b,models,matchedBrand){
+    var catCls = "cat-"+CAT_KEY[b.category];
+    var logoBox = '<div class="blogo'+(b.logoDark?" dark":"")+'">'+
+      (b.logo.file ? '<img src="'+esc(b.logo.file)+'" alt="'+esc(b.name)+' Logo" loading="lazy" onerror="this.parentNode.innerHTML=\'<div class=&quot;fb&quot;>'+esc(b.nameEn||b.name)+'</div>\'">'
+                   : '<div class="fb">'+esc(b.nameEn||b.name)+'</div>')+'</div>';
+    var links = (b.website?'<a href="'+esc(b.website)+'" target="_blank" rel="noopener">品牌官网 ↗</a>':'')+
+      (b.logo.source?'<a href="'+esc(b.logo.source)+'" target="_blank" rel="noopener">Logo 来源 ↗</a>':'');
+    var head = '<div class="bhead">'+logoBox+'<div class="binfo">'+
+      '<div class="bname"><strong>'+esc(b.name)+'</strong><span class="en">'+esc(b.nameEn)+'</span></div>'+
+      '<div class="bcompany" title="'+esc(b.company)+'">'+esc(b.company||"—")+'</div>'+
+      '<div class="btags"><span class="tag '+catCls+'">'+esc(b.subCategory||b.category)+'</span>'+
+      (b.logo.file?'':'<span class="tag">Logo 未获取</span>')+
+      (b.uncertain.length?'<span class="tag" title="另有存疑型号未纳入正式清单">'+b.uncertain.length+' 条存疑未纳入</span>':'')+
+      '</div>'+(links?'<div class="blinks">'+links+'</div>':'')+'</div>'+
+      '<div class="bcount">'+models.length+' 款</div></div>';
+
+    var body;
+    if(models.length){
+      body = '<div class="mtable"><div class="mhead"><div>型号</div><div>排量</div><div>类别</div><div>官方指导价</div><div></div></div>'+
+        models.map(modelRow).join("")+'</div>';
+    }else if(b.modelCount===0){
+      body = '<div class="empty-models"><div class="em-title">当前在中国市场无 ≥250cc 在售车型</div>'+
+        esc(b.note||"经官网与车型库核查，该品牌暂无符合口径的在售型号。")+'</div>';
+    }else{
+      body = '<div class="empty-models"><div class="em-title">该筛选条件下无匹配型号</div>该品牌共 '+b.modelCount+' 款在售型号，可清除筛选条件查看全部。</div>';
+    }
+    var note = b.note && models.length ? '<div class="bnote"><b>说明：</b>'+esc(b.note)+'</div>' : '';
+    return '<div class="bcard'+(state.collapsed?" collapsed":"")+'" id="b-'+esc(b.id)+'">'+head+body+note+
+      '<button class="collapse-btn" data-collapse="'+esc(b.id)+'">收起型号清单 ▴</button></div>';
+  }
+
+  function matchBrand(b,q){
+    if(!q) return false;
+    return [b.name,b.nameEn,b.company,b.group].join(" ").toLowerCase().indexOf(q)>=0;
+  }
+  function render(){
+    var q = state.q.trim().toLowerCase();
+    var shownBrands=0, shownModels=0;
+    var html = CATS.map(function(cat){
+      if(state.cat!=="全部" && state.cat!==cat) return "";
+      var items = D.brands.filter(function(b){return b.category===cat}).map(function(b){
+        var bm = matchBrand(b,q);
+        var models = b.models.filter(function(m){
+          if(state.bucket && m.bucket!==state.bucket) return false;
+          if(state.type && m.type!==state.type) return false;
+          if(q && !bm){
+            return (m.name+" "+(m.type||"")).toLowerCase().indexOf(q)>=0;
+          }
+          return true;
+        });
+        if((q||state.bucket||state.type) && models.length===0 && !(q&&bm)) return null;
+        if(state.bucket||state.type){ if(models.length===0) return null; }
+        return {b:b,models:models,bm:bm};
+      }).filter(Boolean);
+      if(!items.length) return "";
+      shownBrands += items.length;
+      items.forEach(function(x){shownModels += x.models.length});
+      return '<div class="grp"><div class="grp-head"><div class="bar" style="background:'+CAT_COLOR[cat]+'"></div>'+
+        '<h3>'+esc(cat)+'</h3><span class="cnt">'+items.length+' 个品牌 · '+items.reduce(function(a,x){return a+x.models.length},0)+' 款</span></div>'+
+        '<div class="brand-grid">'+items.map(function(x){return brandCard(x.b,x.models,x.bm)}).join("")+'</div></div>';
+    }).join("");
+    $("brandGroups").innerHTML = html || '<div class="panel" style="padding:36px;text-align:center;color:var(--muted)">没有符合条件的品牌或型号，试试清空搜索或重置筛选。</div>';
+    $("resultCount").innerHTML = '显示 <b>'+shownBrands+'</b> 个品牌 · <b>'+shownModels+'</b> 个型号'+
+      (q||state.bucket||state.type||state.cat!=="全部" ? '　<span style="color:var(--faint)">（已筛选，全库 '+s.brandCount+' 品牌 / '+s.modelCount+' 型号）</span>' : '');
+    $("toggleAll").textContent = state.collapsed ? "全部展开" : "全部收起";
+  }
+
+  /* events */
+  $("q").addEventListener("input",function(e){state.q=e.target.value;render()});
+  $("fBucket").addEventListener("change",function(e){state.bucket=e.target.value;render()});
+  $("fType").addEventListener("change",function(e){state.type=e.target.value;render()});
+  $("tabs").addEventListener("click",function(e){
+    var t=e.target.closest(".tab"); if(!t) return;
+    state.cat=t.dataset.cat;
+    Array.prototype.forEach.call($("tabs").children,function(x){x.classList.toggle("on",x===t)});
+    render();
+  });
+  $("toggleAll").addEventListener("click",function(){
+    state.collapsed=!state.collapsed;
+    Array.prototype.forEach.call(document.querySelectorAll(".bcard"),function(c){c.classList.toggle("collapsed",state.collapsed)});
+    Array.prototype.forEach.call(document.querySelectorAll(".collapse-btn"),function(b){
+      b.textContent = state.collapsed ? "展开型号清单 ▾" : "收起型号清单 ▴";
+    });
+    this.textContent = state.collapsed ? "全部展开" : "全部收起";
+  });
+  $("resetAll").addEventListener("click",function(){
+    state={q:"",cat:"全部",bucket:"",type:"",collapsed:false};
+    $("q").value="";$("fBucket").value="";$("fType").value="";
+    Array.prototype.forEach.call($("tabs").children,function(x){x.classList.toggle("on",x.dataset.cat==="全部")});
+    render();
+  });
+  document.addEventListener("click",function(e){
+    var c=e.target.closest("[data-collapse]");
+    if(c){var card=c.closest(".bcard");card.classList.toggle("collapsed");
+      c.textContent=card.classList.contains("collapsed")?"展开型号清单 ▾":"收起型号清单 ▴";return;}
+    var w=e.target.closest("[data-jump]");
+    if(w){
+      var id=w.dataset.jump;
+      // 跳转前清除筛选，保证目标卡片可见
+      if(state.q||state.bucket||state.type||state.cat!=="全部"){
+        state={q:"",cat:"全部",bucket:"",type:"",collapsed:state.collapsed};
+        $("q").value="";$("fBucket").value="";$("fType").value="";
+        Array.prototype.forEach.call($("tabs").children,function(x){x.classList.toggle("on",x.dataset.cat==="全部")});
+        render();
+      }
+      var target=$("b-"+id);
+      if(target){target.scrollIntoView({behavior:"smooth",block:"center"});
+        target.classList.add("flash");setTimeout(function(){target.classList.remove("flash")},1600);}
+    }
+  });
+
+  /* footer */
+  $("principles").innerHTML = D.meta.principles.map(function(x){return "<li>"+esc(x)+"</li>"}).join("");
+  $("sources").textContent = D.meta.sources.join("；");
+  $("integrity").textContent = "共收录 "+s.brandCount+" 个品牌、"+s.modelCount+" 个 ≥250cc 在售型号；"+
+    s.logoCount+" 个品牌已获取官方 Logo 并本地化，" + s.logoMissing + " 个因官网为 SPA / 反爬 / 无中国官网而未获取到官方图形标识。所有型号均在品牌官网或权威车型库核实，存疑型号不进入正式清单。";
+  $("missingLogos").innerHTML = D.brands.filter(function(b){return !b.logo.file}).map(function(b){return "<span>"+esc(b.name)+"</span>"}).join("");
+  var empties = D.brands.filter(function(b){return b.modelCount===0}).map(function(b){return b.name});
+  $("emptyBrands").textContent = empties.length ? empties.join("、")+"（共 "+empties.length+" 个，均已在卡片中说明原因）" : "无";
+
+  render();
+})();
+</script>
+</body>
+</html>
