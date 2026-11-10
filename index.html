@@ -423,6 +423,23 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
   .sec-head h2{font-size:16px}
   .race-sign{font-size:11px;letter-spacing:.12em}
 }
+
+/* ============ 手机端筛选栏：可折叠紧凑条 ============ */
+.f-compact{display:none}
+@media (max-width:760px){
+  .filters{padding:0}
+  .f-body{padding:10px}
+  .f-compact{display:flex;align-items:center;gap:8px;width:100%;height:46px;padding:0 12px;
+    background:#fff;border:0;font-family:inherit;cursor:pointer;text-align:left}
+  .filters:not(.is-collapsed) .f-compact{border-bottom:1px solid var(--line2)}
+  .fc-ico{font-size:18px;color:var(--race);flex:none;line-height:1}
+  .fc-text{flex:1;min-width:0;font-size:12.5px;color:var(--muted);
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .fc-count{font-family:var(--cond);font-size:14px;color:var(--carbon);background:#F1F2F4;
+    padding:2px 8px;border-radius:2px;white-space:nowrap;flex:none;letter-spacing:.03em}
+  .fc-arrow{color:var(--race);font-size:12px;flex:none}
+  .filters.is-collapsed .f-body{display:none}
+}
 </style>
 </head>
 <body>
@@ -480,18 +497,26 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
     <div class="panel wall"><div class="wall-grid" id="wall"></div></div>
   </section>
 
-  <div class="filters">
-    <div class="f-row">
-      <div class="search"><span class="ico">⌕</span><input id="q" type="search" placeholder="搜索品牌 / 集团 / 型号名，例如「450SR」「无极」「Ninja」" autocomplete="off"></div>
-      <select id="fBucket"><option value="">全部排量段</option></select>
-      <select id="fType"><option value="">全部车型类别</option></select>
-    </div>
-    <div class="tabs" id="tabs"></div>
-    <div class="f-foot">
-      <div class="result-count" id="resultCount"></div>
-      <div style="display:flex;gap:6px">
-        <button class="mini-btn" id="toggleAll">全部收起</button>
-        <button class="mini-btn" id="resetAll">重置筛选</button>
+  <div class="filters" id="filters">
+    <button class="f-compact" id="fCompact" type="button" aria-expanded="false">
+      <span class="fc-ico">⌕</span>
+      <span class="fc-text" id="fcText">搜索品牌 / 集团 / 型号名</span>
+      <span class="fc-count" id="fcCount">—</span>
+      <span class="fc-arrow" id="fcArrow">▾</span>
+    </button>
+    <div class="f-body">
+      <div class="f-row">
+        <div class="search"><span class="ico">⌕</span><input id="q" type="search" placeholder="搜索品牌 / 集团 / 型号名，例如「450SR」「无极」「Ninja」" autocomplete="off"></div>
+        <select id="fBucket"><option value="">全部排量段</option></select>
+        <select id="fType"><option value="">全部车型类别</option></select>
+      </div>
+      <div class="tabs" id="tabs"></div>
+      <div class="f-foot">
+        <div class="result-count" id="resultCount"></div>
+        <div style="display:flex;gap:6px">
+          <button class="mini-btn" id="toggleAll">全部收起</button>
+          <button class="mini-btn" id="resetAll">重置筛选</button>
+        </div>
       </div>
     </div>
   </div>
@@ -535,6 +560,21 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
     return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})};
   var num = function(n){return (n||0).toLocaleString('zh-CN')};
   var pad = function(n){return n<10 ? '0'+n : String(n)};
+  /* 手机端筛选栏折叠 */
+  var lastCounts = {b:0,m:0};
+  var filtersEl = $("filters"), fCompact = $("fCompact");
+  var isMobile = function(){return window.matchMedia("(max-width:760px)").matches};
+  function setCollapsed(v){
+    if(!isMobile()){filtersEl.classList.remove("is-collapsed");return;}
+    filtersEl.classList.toggle("is-collapsed",v);
+    fCompact.setAttribute("aria-expanded", v?"false":"true");
+    $("fcArrow").textContent = v ? "▾" : "▴";
+  }
+  function updateCompact(){
+    var q=state.q.trim();
+    $("fcText").textContent = q ? ("搜索："+q) : "搜索品牌 / 集团 / 型号名";
+    $("fcCount").textContent = lastCounts.b+" / "+lastCounts.m;
+  }
 
   /* header + KPI */
   $("hUpdated").textContent = "数据截至 " + D.meta.updated;
@@ -681,9 +721,39 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
     $("resultCount").innerHTML = '显示 <b>'+shownBrands+'</b> 个品牌 · <b>'+shownModels+'</b> 个型号'+
       (q||state.bucket||state.type||state.cat!=="全部" ? '　<span style="color:var(--faint)">（已筛选，全库 '+s.brandCount+' 品牌 / '+s.modelCount+' 型号）</span>' : '');
     $("toggleAll").textContent = state.collapsed ? "全部展开" : "全部收起";
+    lastCounts.b = shownBrands; lastCounts.m = shownModels;
+    updateCompact();
   }
 
   /* events */
+  /* 手机端：默认收起筛选栏，用完自动隐藏，避免常驻占屏 */
+  fCompact.addEventListener("click",function(e){
+    e.stopPropagation();
+    var was=filtersEl.classList.contains("is-collapsed");
+    setCollapsed(!was);
+    if(was){setTimeout(function(){$("q").focus();},60);}
+  });
+  $("q").addEventListener("keydown",function(e){
+    if(e.key==="Enter"){this.blur();setCollapsed(true);}
+  });
+  $("q").addEventListener("blur",function(){
+    setTimeout(function(){
+      if(!filtersEl.contains(document.activeElement)) setCollapsed(true);
+    },350);
+  });
+  var lastScrollY=window.scrollY;
+  window.addEventListener("scroll",function(){
+    if(!isMobile()) return;
+    var y=window.scrollY;
+    if(Math.abs(y-lastScrollY)>70){
+      lastScrollY=y;
+      if(filtersEl.contains(document.activeElement)) document.activeElement.blur();
+      setCollapsed(true);
+    }
+  },{passive:true});
+  window.addEventListener("resize",function(){setCollapsed(isMobile());});
+  setCollapsed(isMobile());
+
   $("q").addEventListener("input",function(e){state.q=e.target.value;render()});
   $("fBucket").addEventListener("change",function(e){state.bucket=e.target.value;render()});
   $("fType").addEventListener("change",function(e){state.type=e.target.value;render()});
@@ -706,8 +776,10 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
     $("q").value="";$("fBucket").value="";$("fType").value="";
     Array.prototype.forEach.call($("tabs").children,function(x){x.classList.toggle("on",x.dataset.cat==="全部")});
     render();
+    setCollapsed(true);
   });
   document.addEventListener("click",function(e){
+    if(isMobile() && !filtersEl.contains(e.target)) setCollapsed(true);
     var c=e.target.closest("[data-collapse]");
     if(c){var card=c.closest(".bcard");card.classList.toggle("collapsed");
       c.textContent=card.classList.contains("collapsed")?"展开型号清单 ▾":"收起型号清单 ▴";return;}
