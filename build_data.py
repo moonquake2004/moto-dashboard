@@ -23,6 +23,12 @@ GROUP_TO_CATEGORY = {
 # 会导致「国产自主」被判为未知而排到最后。
 CATEGORY_ORDER = {"国产自主": 0, "合资及台系": 1, "进口大贸": 2}
 
+# 部分品牌没有本主体的独立消费品牌 Logo，用的是集团/旗下品牌标识，需在页面标注
+LOGO_NOTES = {
+    "daye": "展示的是旗下启典 KIDEN 品牌标识；广东大冶为企业主体，无独立消费品牌图形标。",
+    "loncin": "隆鑫通用 LONCIN 企业标识；其中大排量两轮整车业务在 VOGE 无极品牌下。",
+}
+
 
 def bucket(cc):
     if not isinstance(cc, int):
@@ -69,6 +75,7 @@ def main():
                     "file": lg.get("file") if lg.get("status") == "ok" else None,
                     "status": lg.get("status", "missing"),
                     "source": lg.get("source") or None,
+                    "note": LOGO_NOTES.get(bid),
                 },
                 "logoDark": bid in DARK_LOGO_IDS and lg.get("status") == "ok",
                 "models": models,

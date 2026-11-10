@@ -67,16 +67,16 @@
     "status": "ok"
   },
   "loncin": {
-    "file": null,
-    "source": null,
-    "status": "missing",
-    "reason": "官网/预置候选(第三方演示站qiniu.mfdemo.cn)的logo实为VOGE无极标志；隆鑫官网采用VOGE/LONCIN双核战略，未取得LONCIN品牌官方Logo"
+    "file": "assets/logos/loncin.webp",
+    "source": "https://qiniu.mfdemo.cn/longxin/img/home/foot-logo.webp",
+    "status": "ok",
+    "reason": "隆鑫通用官网 loncinindustries.com 页脚官方 Logo（橙色图形+隆鑫通用+LONCIN 深色字标），为 LONCIN 企业标识而非 VOGE 无极；qiniu.mfdemo.cn/longxin 为该官网自用图片域名。选用深色字页脚版（白底可读），官网 header 另有 1539x336 高清白字标需深色底"
   },
   "jialing": {
-    "file": null,
-    "source": null,
-    "status": "missing",
-    "reason": "品牌数据无官网地址，也无官方Logo直链；58moto品牌页为反爬挑战页"
+    "file": "assets/logos/jialing.gif",
+    "source": "https://www.cnpp100.com/uploads/allimg/c180429/1524b213032020-414F.gif",
+    "status": "ok",
+    "reason": "嘉陵 JIALING 官方品牌标志（蓝色椭圆图形+嘉陵工业+JIALING 字标，白底清晰）；来源为品牌100网品牌页收录的官方 Logo 图。jialing.com.cn 官网本环境不可达，moto188 嘉陵工业企业站 header 为「中国兵器+嘉陵工业」组合横幅，按要求未采用"
   },
   "shineray": {
     "file": "assets/logos/shineray.png",
@@ -87,31 +87,31 @@
     "file": null,
     "source": null,
     "status": "missing",
-    "reason": "品牌数据无官网地址，也无官方Logo直链"
+    "reason": "本轮未找到可确认为纯品牌 Logo 的图片，按规则标 missing 不凑数。已试：ICP 备案官网 changjiang750.cn（HTTP/HTTPS/www/裸域 4 变体）均连接失败；百度百科/搜狗百科词条页（curl 返回百度安全验证 403，WebFetch 转译丢失 img/og:image URL，搜狗百科仅 988B 空页）；百度图片 acjson 与搜狗图片 API 均返回 forbid；58moto 品牌页仍为 JS 反爬挑战页；百度爱采购车标图鉴 503；爱卡试驾文章无直链图片。长江 750 的 Logo 主要出现在油箱车型照上，不符合纯 Logo 要求"
   },
   "souo": {
-    "file": null,
-    "source": null,
-    "status": "missing",
-    "reason": "官网解析仅得到实验室整车照片(brand.jpg)，非品牌Logo"
+    "file": "assets/logos/souo.png",
+    "source": "https://www.souomoto.com/img/home/logo_b.png",
+    "status": "ok",
+    "reason": "长城灵魂官网 souomoto.com 的官方品牌 Logo（SOUO 长城灵魂字标），从 header_footer.js 中 .h_logo 定位到 img/home/logo_b.png 黑色字版；透明底黑字，浅色卡片可读。官网另有 logo_w.png 白色字标需深色底"
   },
   "xiangshuai": {
-    "file": null,
-    "source": null,
-    "status": "missing",
-    "reason": "品牌数据无官网地址，也无官方Logo直链"
+    "file": "assets/logos/xiangshuai.jpg",
+    "source": "https://mmbiz.qpic.cn/mmbiz_jpg/AKQqaINmY63Jj0wZJq1HA1WfXHiaGeJokMiaG2eBmJZILjFQIOnxjJY1wJTPzP9ktwrJB0YCJFicHZ48X9OvDfDUA/640?wx_fmt=jpeg",
+    "status": "ok",
+    "reason": "香帅重机官方盾形车标（XIANGSHUAI / HAN YANG 1890 字样+两斧一钳汉阳兵工厂厂徽图形），取自介绍该车标的微信公众号文章配图，为纯品牌 Logo 非车型照/海报；满版深色底浅色图形。注：品牌 2025 年升级为 Marshal 香帅机车，本图为升级前官方标志；官网 xiangshuaimotor.cn 本环境不可达"
   },
   "tuxing": {
     "file": null,
     "source": null,
     "status": "missing",
-    "reason": "品牌数据无官网地址，也无官方Logo直链"
+    "reason": "土星动力为企业主体，未找到可确认为纯企业 Logo 的官方图片，按规则标 missing 不凑数。已试：百度百科词条(403 安全验证；WebFetch 转译亦无头图)、百度百科移动版(连接失败)、BOSS直聘企业页(反爬「请稍候」页)、品牌网/买购网/企知道企业信息页(仅收录旗下「奔达」品牌 Logo，非土星动力企业标识)、奔达官网 bendamotor.cn/about 页脚(仅「杭州土星动力科技有限公司」文字与抖音/微信/邮箱/电话 UI 图标，均非 Logo)。未用奔达 BENDA Logo 或美国 GM 土星(Saturn)车标冒充"
   },
   "daye": {
-    "file": null,
-    "source": null,
-    "status": "missing",
-    "reason": "品牌数据无官网地址，也无官方Logo直链"
+    "file": "assets/logos/daye.png",
+    "source": "http://m.kiden.cn/images/shmall/logo_new.png",
+    "status": "ok",
+    "reason": "启典 KIDEN 官方品牌字标(深灰 KIDEN+启典 字样，透明底 278x39)，取自启典官网移动站 m.kiden.cn 的 images/shmall/logo_new.png；启典为广东大冶旗下品牌，按本轮要求可以旗下品牌 Logo 代表企业主体。注：此非「广东大冶」企业行政标识；官网 www.kiden.cn/CH/Home/Default.aspx 另有导航 Logo(images/150150.jpg)。豪江 tayomotor.com/images/logo.png 与升仕 ZONTES 图标(ZTicon.png)均不符合本品牌口径，未采用"
   },
   "wuyang-honda": {
     "file": "assets/logos/wuyang-honda.png",
@@ -133,13 +133,13 @@
     "file": null,
     "source": null,
     "status": "missing",
-    "reason": "官网 qssuzuki.com.cn（HTTPS/HTTP/index.html）均返回雷池 SafeLine WAF 挑战页(HTTP 468)；常见 Logo 路径猜测全被拦截。本轮 2 次抓取未取得官方 Logo"
+    "reason": "官网 qssuzuki.com.cn 全站(含 /favicon.ico、/logo.png、/images/logo.png、/templates/、/static/ 等静态路径，www/裸域/http/m. 子域，Baiduspider UA)均返回雷池 SafeLine WAF 挑战页(HTTP 468)，静态资源绕行失败。百度百科/360百科/搜狗百科(403 安全验证或连接失败)，其词条概述图经 bkimg.cdn.bcebos.com 直链下载后确认是厂区/摩托车照片而非 Logo；搜狗微信文章缩略图均为车型照与活动海报；铃木中国 suzuki-china.com 首页无合资公司标识；58moto 首页为百度 WAF JS 挑战页。未以与 suzuki 条目重复的通用 SUZUKI 标凑数，如实标 missing"
   },
   "jianshe-yamaha": {
     "file": null,
     "source": null,
     "status": "missing",
-    "reason": "官网 jym.com.cn 及 /product/、http 变体均返回阿里云 WAF JS 挑战页(acw_sc__v2)；常见静态 Logo 直链猜测均为 404/挑战页。本轮 2 次抓取未取得官方 Logo"
+    "reason": "官网 jym.com.cn 全站(含 /favicon.ico、/logo.png、/images/logo.png、/templates/、/static/ 等静态路径，http 变体，Baiduspider UA)均返回阿里云 WAF JS 挑战页(acw_sc__v2)，雅马哈中国 yamaha-motor.com.cn 亦为同一挑战页。百度百科/360百科(403 或连接失败)，词条配图经 bkimg.cdn.bcebos.com 直链下载确认为摩托车车型照；搜狗微信文章缩略图均为车型照/海报；58moto 为 WAF 挑战页；cqsxzx.com 图文页 403。未取得「建设·雅马哈」联合标官方图片，如实标 missing"
   },
   "kymco": {
     "file": "assets/logos/kymco.png",

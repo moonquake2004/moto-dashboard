@@ -21,8 +21,8 @@
   "stats": {
     "brandCount": 44,
     "modelCount": 368,
-    "logoCount": 35,
-    "logoMissing": 9,
+    "logoCount": 40,
+    "logoMissing": 4,
     "byCategory": {
       "国产自主": 21,
       "合资及台系": 8,
@@ -114,7 +114,8 @@
       "logo": {
         "file": "assets/logos/qjmotor.png",
         "status": "ok",
-        "source": "https://www.qjmotor.com/img/logo.png"
+        "source": "https://www.qjmotor.com/img/logo.png",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -386,7 +387,8 @@
       "logo": {
         "file": "assets/logos/zontes.png",
         "status": "ok",
-        "source": "https://www.zontes.com/App_Themes/ZontesSkin/images/ZontesLogo.png"
+        "source": "https://www.zontes.com/App_Themes/ZontesSkin/images/ZontesLogo.png",
+        "note": null
       },
       "logoDark": true,
       "models": [
@@ -597,9 +599,10 @@
       "group": "国产新锐及其他",
       "website": null,
       "logo": {
-        "file": null,
-        "status": "missing",
-        "source": null
+        "file": "assets/logos/xiangshuai.jpg",
+        "status": "ok",
+        "source": "https://mmbiz.qpic.cn/mmbiz_jpg/AKQqaINmY63Jj0wZJq1HA1WfXHiaGeJokMiaG2eBmJZILjFQIOnxjJY1wJTPzP9ktwrJB0YCJFicHZ48X9OvDfDUA/640?wx_fmt=jpeg",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -804,7 +807,8 @@
       "logo": {
         "file": "assets/logos/cfmoto.svg",
         "status": "ok",
-        "source": "https://cn.cfmoto.com/icons/logo.svg"
+        "source": "https://cn.cfmoto.com/icons/logo.svg",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -980,7 +984,8 @@
       "logo": {
         "file": "assets/logos/kove.png",
         "status": "ok",
-        "source": "https://cn.kovemoto.com/uploadfile/202308/5590280a3bd2.png"
+        "source": "https://cn.kovemoto.com/uploadfile/202308/5590280a3bd2.png",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -1161,7 +1166,8 @@
       "logo": {
         "file": "assets/logos/voge.webp",
         "status": "ok",
-        "source": "https://qiniu.mfdemo.cn/longxin/img/home/home2-logo.webp"
+        "source": "https://qiniu.mfdemo.cn/longxin/img/home/home2-logo.webp",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -1384,7 +1390,8 @@
       "logo": {
         "file": "assets/logos/cyclone.png",
         "status": "ok",
-        "source": "https://www.cyclonemoto.com/_nuxt/img/logo.d190ded.png"
+        "source": "https://www.cyclonemoto.com/_nuxt/img/logo.d190ded.png",
+        "note": null
       },
       "logoDark": true,
       "models": [
@@ -1569,7 +1576,8 @@
       "logo": {
         "file": "assets/logos/benda.png",
         "status": "ok",
-        "source": "https://www.bendamotor.cn/output/0402223918.png?3e7ec8937362b05718ee3f95f79051f0"
+        "source": "https://www.bendamotor.cn/output/0402223918.png?3e7ec8937362b05718ee3f95f79051f0",
+        "note": null
       },
       "logoDark": true,
       "models": [
@@ -1718,7 +1726,8 @@
       "logo": {
         "file": "assets/logos/lifan.png",
         "status": "ok",
-        "source": "https://motor.lifan.com/skin/default/images/logo4.png"
+        "source": "https://motor.lifan.com/skin/default/images/logo4.png",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -1835,7 +1844,8 @@
       "logo": {
         "file": "assets/logos/benelli.svg",
         "status": "ok",
-        "source": "https://www.benelli.com/brand/horizontal-logo-black.svg"
+        "source": "https://www.benelli.com/brand/horizontal-logo-black.svg",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -1978,7 +1988,8 @@
       "logo": {
         "file": "assets/logos/dayang.png",
         "status": "ok",
-        "source": "https://www.dayangmotorcycle.com/templates/default/images/logo.png"
+        "source": "https://www.dayangmotorcycle.com/templates/default/images/logo.png",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -2038,7 +2049,8 @@
       "logo": {
         "file": "assets/logos/zxmoto.svg",
         "status": "ok",
-        "source": "https://www.zxmoto.com/static/default/images/logo.svg"
+        "source": "https://www.zxmoto.com/static/default/images/logo.svg",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -2125,7 +2137,8 @@
       "logo": {
         "file": "assets/logos/shineray.png",
         "status": "ok",
-        "source": "https://shineraymotor.com.cn/static/web/images/di_logo.png"
+        "source": "https://shineraymotor.com.cn/static/web/images/di_logo.png",
+        "note": null
       },
       "logoDark": true,
       "models": [
@@ -2219,7 +2232,8 @@
       "logo": {
         "file": null,
         "status": "missing",
-        "source": null
+        "source": null,
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -2296,7 +2310,8 @@
       "logo": {
         "file": "assets/logos/zongshen.png",
         "status": "ok",
-        "source": "https://zonsenmotor.com/_nuxt/img/logo.da4d79c.png"
+        "source": "https://zonsenmotor.com/_nuxt/img/logo.da4d79c.png",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -2362,9 +2377,10 @@
       "group": "国产新锐及其他",
       "website": null,
       "logo": {
-        "file": null,
-        "status": "missing",
-        "source": null
+        "file": "assets/logos/jialing.gif",
+        "status": "ok",
+        "source": "https://www.cnpp100.com/uploads/allimg/c180429/1524b213032020-414F.gif",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -2425,7 +2441,8 @@
       "logo": {
         "file": "assets/logos/haojue.png",
         "status": "ok",
-        "source": "https://cdn.haojue.com/bocweb/web/img/logo.png?v=v49"
+        "source": "https://cdn.haojue.com/bocweb/web/img/logo.png?v=v49",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -2478,9 +2495,10 @@
       "group": "国产新锐及其他",
       "website": "https://www.souomoto.com/",
       "logo": {
-        "file": null,
-        "status": "missing",
-        "source": null
+        "file": "assets/logos/souo.png",
+        "status": "ok",
+        "source": "https://www.souomoto.com/img/home/logo_b.png",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -2523,7 +2541,8 @@
       "logo": {
         "file": null,
         "status": "missing",
-        "source": null
+        "source": null,
+        "note": null
       },
       "logoDark": false,
       "models": [],
@@ -2548,9 +2567,10 @@
       "group": "国产新锐及其他",
       "website": null,
       "logo": {
-        "file": null,
-        "status": "missing",
-        "source": null
+        "file": "assets/logos/daye.png",
+        "status": "ok",
+        "source": "http://m.kiden.cn/images/shmall/logo_new.png",
+        "note": "展示的是旗下启典 KIDEN 品牌标识；广东大冶为企业主体，无独立消费品牌图形标。"
       },
       "logoDark": false,
       "models": [],
@@ -2591,9 +2611,10 @@
       "group": "国产新锐及其他",
       "website": "https://www.loncinindustries.com/",
       "logo": {
-        "file": null,
-        "status": "missing",
-        "source": null
+        "file": "assets/logos/loncin.webp",
+        "status": "ok",
+        "source": "https://qiniu.mfdemo.cn/longxin/img/home/foot-logo.webp",
+        "note": "隆鑫通用 LONCIN 企业标识；其中大排量两轮整车业务在 VOGE 无极品牌下。"
       },
       "logoDark": false,
       "models": [],
@@ -2618,7 +2639,8 @@
       "logo": {
         "file": "assets/logos/kymco.png",
         "status": "ok",
-        "source": "https://ckmco-video.oss-cn-shanghai.aliyuncs.com/2021/img/logo.png"
+        "source": "https://ckmco-video.oss-cn-shanghai.aliyuncs.com/2021/img/logo.png",
+        "note": null
       },
       "logoDark": true,
       "models": [
@@ -2729,7 +2751,8 @@
       "logo": {
         "file": "assets/logos/sym.png",
         "status": "ok",
-        "source": "https://www.xsmt.com/public/images/logo.png"
+        "source": "https://www.xsmt.com/public/images/logo.png",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -2828,7 +2851,8 @@
       "logo": {
         "file": "assets/logos/peugeot-motocycles.png",
         "status": "ok",
-        "source": "https://www.peugeot-motocycles.com.cn/application/portal/view/public/images/logo.png"
+        "source": "https://www.peugeot-motocycles.com.cn/application/portal/view/public/images/logo.png",
+        "note": null
       },
       "logoDark": true,
       "models": [
@@ -2882,7 +2906,8 @@
       "logo": {
         "file": "assets/logos/haojue-suzuki.png",
         "status": "ok",
-        "source": "https://cdn.haojue.com/bocweb//web/img/logo.png?v=v49"
+        "source": "https://cdn.haojue.com/bocweb//web/img/logo.png?v=v49",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -2961,7 +2986,8 @@
       "logo": {
         "file": null,
         "status": "missing",
-        "source": null
+        "source": null,
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -3015,7 +3041,8 @@
       "logo": {
         "file": "assets/logos/wuyang-honda.png",
         "status": "ok",
-        "source": "https://www.wuyang-honda.com/favicon.ico"
+        "source": "https://www.wuyang-honda.com/favicon.ico",
+        "note": null
       },
       "logoDark": false,
       "models": [],
@@ -3041,7 +3068,8 @@
       "logo": {
         "file": "assets/logos/sundiro-honda.png",
         "status": "ok",
-        "source": "https://www.honda-sundiro.com/assets/frontend/uploads/ico.ico"
+        "source": "https://www.honda-sundiro.com/assets/frontend/uploads/ico.ico",
+        "note": null
       },
       "logoDark": false,
       "models": [],
@@ -3067,7 +3095,8 @@
       "logo": {
         "file": null,
         "status": "missing",
-        "source": null
+        "source": null,
+        "note": null
       },
       "logoDark": false,
       "models": [],
@@ -3104,7 +3133,8 @@
       "logo": {
         "file": "assets/logos/kawasaki.jpg",
         "status": "ok",
-        "source": "https://kmsh-origin.kawasaki-motors.cn/Content/Images/kawasaki-logo_global_preview_r02.jpg"
+        "source": "https://kmsh-origin.kawasaki-motors.cn/Content/Images/kawasaki-logo_global_preview_r02.jpg",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -3328,7 +3358,8 @@
       "logo": {
         "file": "assets/logos/triumph.svg",
         "status": "ok",
-        "source": "https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto:eco/sitecoremedialibrary/media-library/misc/misc-images/logo.svg?la=zh-CN&hash=227B012653665ECA979625C513D88A727C3C7362"
+        "source": "https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto:eco/sitecoremedialibrary/media-library/misc/misc-images/logo.svg?la=zh-CN&hash=227B012653665ECA979625C513D88A727C3C7362",
+        "note": null
       },
       "logoDark": true,
       "models": [
@@ -3531,7 +3562,8 @@
       "logo": {
         "file": "assets/logos/honda.svg",
         "status": "ok",
-        "source": "https://www.honda.com.cn/static/home/images/logo.svg"
+        "source": "https://www.honda.com.cn/static/home/images/logo.svg",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -3732,7 +3764,8 @@
       "logo": {
         "file": "assets/logos/bmw.svg",
         "status": "ok",
-        "source": "https://www.bmw-motorrad.com.cn/content/dam/bmwmotorradnsc/common/mnm/graphics/bmw_motorrad_logo.svg.asset.1672301077293.svg"
+        "source": "https://www.bmw-motorrad.com.cn/content/dam/bmwmotorradnsc/common/mnm/graphics/bmw_motorrad_logo.svg.asset.1672301077293.svg",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -3923,7 +3956,8 @@
       "logo": {
         "file": "assets/logos/ducati.png",
         "status": "ok",
-        "source": "https://api.ducatichina.cn/uploads/ducati_id_c2bf9f8484.png"
+        "source": "https://api.ducatichina.cn/uploads/ducati_id_c2bf9f8484.png",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -4076,7 +4110,8 @@
       "logo": {
         "file": "assets/logos/yamaha.png",
         "status": "ok",
-        "source": "https://global.yamaha-motor.com/shared/favicon/apple-touch-icon-180x180.png"
+        "source": "https://global.yamaha-motor.com/shared/favicon/apple-touch-icon-180x180.png",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -4219,7 +4254,8 @@
       "logo": {
         "file": "assets/logos/harley-davidson.png",
         "status": "ok",
-        "source": "https://www.harley-davidson.cn/dam/content/dam/h-d/images/logo/Harley-Davidson-Logo-2026-2-RGB-BW-260225.png"
+        "source": "https://www.harley-davidson.cn/dam/content/dam/h-d/images/logo/Harley-Davidson-Logo-2026-2-RGB-BW-260225.png",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -4347,7 +4383,8 @@
       "logo": {
         "file": "assets/logos/ktm.jpg",
         "status": "ok",
-        "source": "https://www.ktm.com/content/dam/websites/ktm-com/language-masters/en/logo/37860_KTM_LogoPodium_orange_RGB.jpg"
+        "source": "https://www.ktm.com/content/dam/websites/ktm-com/language-masters/en/logo/37860_KTM_LogoPodium_orange_RGB.jpg",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -4462,7 +4499,8 @@
       "logo": {
         "file": "assets/logos/indian.png",
         "status": "ok",
-        "source": "https://www.indianmotorcycle.cn/images/logo.png"
+        "source": "https://www.indianmotorcycle.cn/images/logo.png",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -4556,7 +4594,8 @@
       "logo": {
         "file": "assets/logos/mv-agusta.svg",
         "status": "ok",
-        "source": "https://www.mvagusta.com/images/logo/logo-main.svg"
+        "source": "https://www.mvagusta.com/images/logo/logo-main.svg",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -4643,7 +4682,8 @@
       "logo": {
         "file": "assets/logos/aprilia.webp",
         "status": "ok",
-        "source": "http://www.aprilia.cn/static/aprilia/uploadfiles/image/ApriliaWhite.png"
+        "source": "http://www.aprilia.cn/static/aprilia/uploadfiles/image/ApriliaWhite.png",
+        "note": null
       },
       "logoDark": true,
       "models": [
@@ -4731,7 +4771,8 @@
       "logo": {
         "file": "assets/logos/suzuki.png",
         "status": "ok",
-        "source": "http://www.suzuki-china.com/img/logo.png"
+        "source": "http://www.suzuki-china.com/img/logo.png",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -4815,7 +4856,8 @@
       "logo": {
         "file": "assets/logos/piaggio-vespa.webp",
         "status": "ok",
-        "source": "https://www.vespa.cn/static/upload/2024/02/07/202402079564.webp"
+        "source": "https://www.vespa.cn/static/upload/2024/02/07/202402079564.webp",
+        "note": null
       },
       "logoDark": true,
       "models": [
@@ -4884,7 +4926,8 @@
       "logo": {
         "file": "assets/logos/husqvarna.png",
         "status": "ok",
-        "source": "https://www.husqvarna-motorcycles.com/content/dam/websites/husqvarna-motorcycles-com/language-masters/en/logo/Husqvarna_Logo_1048x1048.png"
+        "source": "https://www.husqvarna-motorcycles.com/content/dam/websites/husqvarna-motorcycles-com/language-masters/en/logo/Husqvarna_Logo_1048x1048.png",
+        "note": null
       },
       "logoDark": false,
       "models": [
@@ -4923,7 +4966,8 @@
       "logo": {
         "file": "assets/logos/royal-enfield.webp",
         "status": "ok",
-        "source": "https://www.royalenfield.com/content/dam/RE-Platform-Revamp/re-revamp-commons/logo.webp"
+        "source": "https://www.royalenfield.com/content/dam/RE-Platform-Revamp/re-revamp-commons/logo.webp",
+        "note": null
       },
       "logoDark": false,
       "models": [],

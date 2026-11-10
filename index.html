@@ -358,6 +358,7 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
 .bname strong{font-weight:800}
 .bname .en{color:#8A929C;font-family:var(--cond);font-size:13px;letter-spacing:.06em}
 .tag{border-radius:2px;font-weight:700}
+.tag.logo-note{color:#8A6A20;border-color:#E8D6A8;background:#FFF9E8;cursor:help}
 .bcount{background:var(--carbon);color:#fff;border-radius:2px;font-family:var(--cond);
   font-size:16px;font-weight:400;letter-spacing:.03em;padding:3px 9px;border-bottom:2px solid var(--race)}
 .blinks a{color:var(--race);border-bottom-color:#F3B7B2}
@@ -626,6 +627,7 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
       '<div class="bcompany" title="'+esc(b.company)+'">'+esc(b.company||"—")+'</div>'+
       '<div class="btags"><span class="tag '+catCls+'">'+esc(b.subCategory||b.category)+'</span>'+
       (b.logo.file?'':'<span class="tag">Logo 未获取</span>')+
+      (b.logo.note?'<span class="tag logo-note" title="'+esc(b.logo.note)+'">Logo 说明 ⓘ</span>':'')+
       (b.uncertain.length?'<span class="tag" title="另有存疑型号未纳入正式清单">'+b.uncertain.length+' 条存疑未纳入</span>':'')+
       '</div>'+(links?'<div class="blinks">'+links+'</div>':'')+'</div>'+
       '<div class="bcount">'+models.length+' 款</div></div>';
