@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "国内250cc以上摩托车厂商品牌看板",
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "scope": "中国市场在售 · 排量 ≥250cc · 各品牌官网/官方渠道当前在售车型",
     "principles": [
       "只收录可在品牌中国官网、官方商城或权威车型库（摩托范/懂车帝）核实的在售车型，不虚构型号",
@@ -20,36 +20,38 @@
   },
   "stats": {
     "brandCount": 44,
-    "modelCount": 368,
-    "logoCount": 40,
-    "logoMissing": 4,
+    "modelCount": 439,
+    "logoCount": 41,
+    "logoMissing": 3,
     "byCategory": {
       "国产自主": 21,
       "合资及台系": 8,
       "进口大贸": 15
     },
     "byCategoryModels": {
-      "国产自主": 182,
-      "合资及台系": 16,
-      "进口大贸": 170
+      "国产自主": 200,
+      "合资及台系": 21,
+      "进口大贸": 218
     },
     "byBucket": {
-      "250-399cc": 106,
-      "400-699cc": 92,
-      "700-999cc": 98,
+      "250-399cc": 131,
+      "400-699cc": 118,
+      "700-999cc": 105,
       "未标注": 6,
-      "1000cc以上": 66
+      "1000cc以上": 79
     },
     "byType": {
-      "仿赛": 52,
-      "巡航": 76,
-      "拉力ADV": 55,
-      "街车": 65,
-      "复古": 33,
-      "踏板": 50,
-      "旅行": 24,
-      "越野": 6,
-      "边三轮": 7
+      "仿赛": 58,
+      "巡航": 93,
+      "拉力ADV": 61,
+      "街车": 77,
+      "复古": 43,
+      "踏板": 55,
+      "旅行": 30,
+      "越野": 11,
+      "边三轮": 7,
+      "倒三轮": 2,
+      "其他": 2
     }
   },
   "market": {
@@ -318,9 +320,17 @@
           "price": "25999元",
           "source": "https://www.lianglunshijie.com/brand/607/",
           "bucket": "250-399cc"
+        },
+        {
+          "name": "SRT450",
+          "cc": 450,
+          "type": "拉力ADV",
+          "price": "27980元",
+          "source": "https://www.58moto.com/article/114/12524891.html",
+          "bucket": "400-699cc"
         }
       ],
-      "modelCount": 25,
+      "modelCount": 26,
       "uncertain": [
         {
           "name": "SRT450",
@@ -757,9 +767,17 @@
           "price": "33980~43800元",
           "source": "https://www.58moto.com/brand/A-466.html",
           "bucket": "未标注"
+        },
+        {
+          "name": "YES418",
+          "cc": 385,
+          "type": "巡航",
+          "price": "19980元起",
+          "source": "https://www.58moto.com/article/3679/11595523.html",
+          "bucket": "250-399cc"
         }
       ],
-      "modelCount": 19,
+      "modelCount": 20,
       "uncertain": [
         {
           "name": "暴龙 / 街皇 / APEX / 鲨鱼正三轮 / 攀爬者600",
@@ -794,6 +812,204 @@
         "https://m.58moto.com/news/12081178"
       ],
       "note": "香帅机车(MARSHAL)为广东建雅摩托车科技有限公司旗下国产巡航品牌，型号与指导价以摩托范品牌页brand/A-466在售报价为准。Joy按排量拆为Joy250(精确248cc)/Joy315(精确298cc)；YES软尾含255(249cc)/415/418(385cc)多排量版本，按主型号合并、cc记null；硬汉宽胎未核实排量记null。旅行者525实际494cc、突破800为800cc，由摩托范官方号上市图文核实。未核实到香帅品牌官网，website/logoUrl记null，未编造。其余「暂无报价」车型不混入models。"
+    },
+    {
+      "id": "kove",
+      "name": "凯越",
+      "nameEn": "KOVE",
+      "company": "西藏凯越实业有限公司（珠峰凯越机车）",
+      "category": "国产自主",
+      "subCategory": "国产自主",
+      "group": "国产新锐及其他",
+      "website": "https://cn.kovemoto.com/",
+      "logo": {
+        "file": "assets/logos/kove.png",
+        "status": "ok",
+        "source": "https://cn.kovemoto.com/uploadfile/202308/5590280a3bd2.png",
+        "note": null
+      },
+      "logoDark": false,
+      "models": [
+        {
+          "name": "250RR",
+          "cc": 250,
+          "type": "仿赛",
+          "price": "18880元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3514",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "321RR",
+          "cc": 321,
+          "type": "仿赛",
+          "price": "25980元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3206",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "321RR-S",
+          "cc": 321,
+          "type": "仿赛",
+          "price": "27980元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3183",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "321R",
+          "cc": 321,
+          "type": "街车",
+          "price": "24880元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3205",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "321新玩家",
+          "cc": 321,
+          "type": "街车",
+          "price": "22980元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3241",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "350RR",
+          "cc": 350,
+          "type": "仿赛",
+          "price": "23980元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3525",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "450RR",
+          "cc": 450,
+          "type": "仿赛",
+          "price": "29980~35800元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3244",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "450新玩家",
+          "cc": 450,
+          "type": "仿赛",
+          "price": "29980元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3520",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "450R",
+          "cc": 450,
+          "type": "街车",
+          "price": "28800元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3516",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "450RALLY（民用版）",
+          "cc": 450,
+          "type": "越野",
+          "price": "43800元起",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3195",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "MX250",
+          "cc": 250,
+          "type": "越野",
+          "price": "26980元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3240",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "525X",
+          "cc": 494,
+          "type": "拉力ADV",
+          "price": "33900~36900元",
+          "source": "https://cn.kovemoto.com/index.php?s=product&c=search&catid=2",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "525F",
+          "cc": 494,
+          "type": "复古",
+          "price": "33980元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3215",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "625V",
+          "cc": 625,
+          "type": "巡航",
+          "price": "24980元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3524",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "800X",
+          "cc": 799,
+          "type": "拉力ADV",
+          "price": "45800~46800元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3246",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "800 RALLY",
+          "cc": 799,
+          "type": "越野",
+          "price": "49800元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3521",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "625X",
+          "cc": 581,
+          "type": "拉力ADV",
+          "price": "31777元",
+          "source": "https://m.58moto.com/brand/206",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "650RR",
+          "cc": 650,
+          "type": "仿赛",
+          "price": "33977元",
+          "source": "https://m.58moto.com/brand/206",
+          "bucket": "400-699cc"
+        }
+      ],
+      "modelCount": 18,
+      "uncertain": [
+        {
+          "name": "625X",
+          "cc": 625,
+          "type": "拉力ADV",
+          "price": "31777~35777元",
+          "source": "https://www.58moto.com/merchant/car/312805",
+          "reason": "摩托范经销商在售页有报价，但凯越中文官网现行产品页未列，是否为在售独立型号存疑"
+        },
+        {
+          "name": "650RR",
+          "cc": 650,
+          "type": "仿赛",
+          "price": "33977元",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/261279",
+          "reason": "摩托范经销商在售页有报价，凯越中文官网未列，存疑"
+        },
+        {
+          "name": "800X RALLY CN4/E5+ / 800X TOURING",
+          "cc": 799,
+          "type": "拉力ADV",
+          "price": null,
+          "source": "http://kovemoto.com/index.php?c=show&id=87",
+          "reason": "仅见于KOVE国际站(kovemoto.com)出口车型页，国内官网未列，未核实国内在售"
+        }
+      ],
+      "sources": [
+        "https://cn.kovemoto.com/",
+        "https://cn.kovemoto.com/index.php?s=product&c=search&s_type=product",
+        "https://cn.kovemoto.com/index.php?s=product&c=search&catid=2",
+        "https://www.58moto.com/merchant/car/312805",
+        "https://www.lianglunshijie.com/brand/471/motor.html"
+      ],
+      "note": "型号与售价以凯越中文官网(cn.kovemoto.com)产品总页/首页为准，321系列老款价格由两轮视界车型库补充。已按主型号合并版本：450RR含标准版/性能版/曼岛，800X含旅行版，525X含经典版/单摇臂版。525X/800X官网参数页明确494cc/799cc，其余cc为官方标称系列整数。重要区分：凯越KOVE（西藏珠峰凯越实业）与张雪机车ZXMOTO是两家不同公司；张雪为凯越前联合创始人，2024年离职创办张雪机车。凯越官网自身另有MX250越野车型（售价26980元，摩托范可查），与张雪机车EICMA 2025展出的MX250不是同一在售产品，本条按凯越官网收录。"
     },
     {
       "id": "cfmoto",
@@ -971,188 +1187,6 @@
         "https://www.cfmoto.com/compare?vehicleSlugs=450SR-S,450SR,675SR-R"
       ],
       "note": "型号清单以春风官网 motorcycle.html 全车型页（SR/CL/NK/MT/TR-G 系列）为准，价格以官网车型页与摩托范品牌在售页 brand/18 交叉核实。已按主型号合并版本：450SR 含标准版/天蝎排气版/450SR-S 单摇臂版，500SR 含 VOOM/电子离合版/电子油门版，450CL-C 含单座版/AMT，250SR 含单摇臂版/250SR-FUN，800MT 含探险版。SC/PAPIO 系列（125AURA、150AURA、150SC、XO狒狒）与 150SC-F 均 <250cc 已排除。cc 为官方标称排量整数（如 450SR 实际 449.5cc、250SR 实际 249.2cc、675SR-R 实际 674.2cc、800NK 实际 799cc、1000MT-X 实际 946.2cc）。800MT-ES、1250TR-G 官网在售但未查到官方指导价，price 记 null。Logo 取自官网 JSON-LD Organization.logo 与 header img src /icons/logo.svg。"
-    },
-    {
-      "id": "kove",
-      "name": "凯越",
-      "nameEn": "KOVE",
-      "company": "西藏凯越实业有限公司（珠峰凯越机车）",
-      "category": "国产自主",
-      "subCategory": "国产自主",
-      "group": "国产新锐及其他",
-      "website": "https://cn.kovemoto.com/",
-      "logo": {
-        "file": "assets/logos/kove.png",
-        "status": "ok",
-        "source": "https://cn.kovemoto.com/uploadfile/202308/5590280a3bd2.png",
-        "note": null
-      },
-      "logoDark": false,
-      "models": [
-        {
-          "name": "250RR",
-          "cc": 250,
-          "type": "仿赛",
-          "price": "18880元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3514",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "321RR",
-          "cc": 321,
-          "type": "仿赛",
-          "price": "25980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3206",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "321RR-S",
-          "cc": 321,
-          "type": "仿赛",
-          "price": "27980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3183",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "321R",
-          "cc": 321,
-          "type": "街车",
-          "price": "24880元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3205",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "321新玩家",
-          "cc": 321,
-          "type": "街车",
-          "price": "22980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3241",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "350RR",
-          "cc": 350,
-          "type": "仿赛",
-          "price": "23980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3525",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "450RR",
-          "cc": 450,
-          "type": "仿赛",
-          "price": "29980~35800元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3244",
-          "bucket": "400-699cc"
-        },
-        {
-          "name": "450新玩家",
-          "cc": 450,
-          "type": "仿赛",
-          "price": "29980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3520",
-          "bucket": "400-699cc"
-        },
-        {
-          "name": "450R",
-          "cc": 450,
-          "type": "街车",
-          "price": "28800元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3516",
-          "bucket": "400-699cc"
-        },
-        {
-          "name": "450RALLY（民用版）",
-          "cc": 450,
-          "type": "越野",
-          "price": "43800元起",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3195",
-          "bucket": "400-699cc"
-        },
-        {
-          "name": "MX250",
-          "cc": 250,
-          "type": "越野",
-          "price": "26980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3240",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "525X",
-          "cc": 494,
-          "type": "拉力ADV",
-          "price": "33900~36900元",
-          "source": "https://cn.kovemoto.com/index.php?s=product&c=search&catid=2",
-          "bucket": "400-699cc"
-        },
-        {
-          "name": "525F",
-          "cc": 494,
-          "type": "复古",
-          "price": "33980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3215",
-          "bucket": "400-699cc"
-        },
-        {
-          "name": "625V",
-          "cc": 625,
-          "type": "巡航",
-          "price": "24980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3524",
-          "bucket": "400-699cc"
-        },
-        {
-          "name": "800X",
-          "cc": 799,
-          "type": "拉力ADV",
-          "price": "45800~46800元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3246",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "800 RALLY",
-          "cc": 799,
-          "type": "越野",
-          "price": "49800元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3521",
-          "bucket": "700-999cc"
-        }
-      ],
-      "modelCount": 16,
-      "uncertain": [
-        {
-          "name": "625X",
-          "cc": 625,
-          "type": "拉力ADV",
-          "price": "31777~35777元",
-          "source": "https://www.58moto.com/merchant/car/312805",
-          "reason": "摩托范经销商在售页有报价，但凯越中文官网现行产品页未列，是否为在售独立型号存疑"
-        },
-        {
-          "name": "650RR",
-          "cc": 650,
-          "type": "仿赛",
-          "price": "33977元",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/261279",
-          "reason": "摩托范经销商在售页有报价，凯越中文官网未列，存疑"
-        },
-        {
-          "name": "800X RALLY CN4/E5+ / 800X TOURING",
-          "cc": 799,
-          "type": "拉力ADV",
-          "price": null,
-          "source": "http://kovemoto.com/index.php?c=show&id=87",
-          "reason": "仅见于KOVE国际站(kovemoto.com)出口车型页，国内官网未列，未核实国内在售"
-        }
-      ],
-      "sources": [
-        "https://cn.kovemoto.com/",
-        "https://cn.kovemoto.com/index.php?s=product&c=search&s_type=product",
-        "https://cn.kovemoto.com/index.php?s=product&c=search&catid=2",
-        "https://www.58moto.com/merchant/car/312805",
-        "https://www.lianglunshijie.com/brand/471/motor.html"
-      ],
-      "note": "型号与售价以凯越中文官网(cn.kovemoto.com)产品总页/首页为准，321系列老款价格由两轮视界车型库补充。已按主型号合并版本：450RR含标准版/性能版/曼岛，800X含旅行版，525X含经典版/单摇臂版。525X/800X官网参数页明确494cc/799cc，其余cc为官方标称系列整数。重要区分：凯越KOVE（西藏珠峰凯越实业）与张雪机车ZXMOTO是两家不同公司；张雪为凯越前联合创始人，2024年离职创办张雪机车。凯越官网自身另有MX250越野车型（售价26980元，摩托范可查），与张雪机车EICMA 2025展出的MX250不是同一在售产品，本条按凯越官网收录。"
     },
     {
       "id": "voge",
@@ -1668,9 +1702,25 @@
           "price": "26900元",
           "source": "https://www.bendamotor.cn/Product3/24",
           "bucket": "400-699cc"
+        },
+        {
+          "name": "灰石250CVT",
+          "cc": 249,
+          "type": "巡航",
+          "price": "18980元",
+          "source": "https://www.bendamotor.cn/Seek/page/9",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "黑旗500",
+          "cc": 496,
+          "type": "巡航",
+          "price": "33800元",
+          "source": "https://www.bendamotor.cn/Seek/page/9",
+          "bucket": "400-699cc"
         }
       ],
-      "modelCount": 11,
+      "modelCount": 13,
       "uncertain": [
         {
           "name": "金吉拉300",
@@ -1802,9 +1852,17 @@
           "price": "29980~32980元",
           "source": "https://www.58moto.com/merchant/car/265147?id=17",
           "bucket": "400-699cc"
+        },
+        {
+          "name": "K19",
+          "cc": 250,
+          "type": "巡航",
+          "price": "13980元",
+          "source": "https://www.58moto.com/merchant/car/265147?id=17",
+          "bucket": "250-399cc"
         }
       ],
-      "modelCount": 9,
+      "modelCount": 10,
       "uncertain": [
         {
           "name": "KPT450 (LF500)",
@@ -1977,6 +2035,367 @@
       "note": "在售清单与指导价以摩托范贝纳利品牌页 brand/45「在售」标签及经销商报价页 276724 为准；国际官网 benelli.com 用于品牌与 Logo 核实。benelli.cn 与钱江官网的 Benelli 中国线本次未抓取成功，故未作为车型来源。已排除摩托范「代售系列」中的钱江 900、QJMOTOR 骁800+（非贝纳利自有车型）。边界车型 BKX250 实际 249.2cc、哈伦252 实际 249cc（标称 250/252），按「250cc 整要收录」规则纳入，cc 记标称整数。TRK502、幼狮500、502C、752S、龙卷风系列等老款未出现在 2026 在售页，放 uncertain 未混入正式 models。Logo 取自官网 header img src /brand/horizontal-logo-black.svg。"
     },
     {
+      "id": "zxmoto",
+      "name": "张雪机车",
+      "nameEn": "ZXMOTO",
+      "company": "重庆张雪机车工业有限公司",
+      "category": "国产自主",
+      "subCategory": "国产自主",
+      "group": "国产新锐及其他",
+      "website": "https://www.zxmoto.com/",
+      "logo": {
+        "file": "assets/logos/zxmoto.svg",
+        "status": "ok",
+        "source": "https://www.zxmoto.com/static/default/images/logo.svg",
+        "note": null
+      },
+      "logoDark": false,
+      "models": [
+        {
+          "name": "500F",
+          "cc": 470,
+          "type": "街车",
+          "price": "29980元",
+          "source": "https://www.zxmoto.com/products/57.html",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "500F 27款",
+          "cc": 470,
+          "type": "街车",
+          "price": "30580元",
+          "source": "https://www.zxmoto.com/products/309.html",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "500RR",
+          "cc": 470,
+          "type": "仿赛",
+          "price": "29980~33680元",
+          "source": "https://www.zxmoto.com/products/56.html",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "600V",
+          "cc": 578,
+          "type": "巡航",
+          "price": "27980元",
+          "source": "https://www.zxmoto.com/products/306.html",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "820RR",
+          "cc": 819,
+          "type": "仿赛",
+          "price": "43800元",
+          "source": "https://www.zxmoto.com/products/58.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "820RR-RS",
+          "cc": 819,
+          "type": "仿赛",
+          "price": "138000元",
+          "source": "https://www.zxmoto.com/products/313.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "820RR-RC",
+          "cc": 819,
+          "type": "仿赛",
+          "price": "128000元",
+          "source": "https://www.zxmoto.com/products/315.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "820X",
+          "cc": 819,
+          "type": "拉力ADV",
+          "price": "57800元",
+          "source": "https://www.zxmoto.com/products/311.html",
+          "bucket": "700-999cc"
+        }
+      ],
+      "modelCount": 8,
+      "uncertain": [
+        {
+          "name": "MX250 / MX450 / 450 Rally / 820R / 820ADV",
+          "cc": null,
+          "type": null,
+          "price": null,
+          "source": "https://www.zxmoto.com//index.php?c=show&id=59",
+          "reason": "仅EICMA 2025米兰展亮相，官方图文称「上市日期指日可待」，中国官网在售产品页未列、无国内售价，不纳入在售models"
+        }
+      ],
+      "sources": [
+        "https://cqzxmoto.com/",
+        "https://www.zxmoto.com/products/56.html",
+        "https://www.zxmoto.com/products/57.html",
+        "https://www.zxmoto.com/products/58.html",
+        "https://www.zxmoto.com/products/306.html",
+        "https://www.zxmoto.com/products/309.html",
+        "https://www.zxmoto.com/products/311.html",
+        "https://www.zxmoto.com/products/313.html",
+        "https://www.zxmoto.com/products/315.html",
+        "https://www.cqzxmoto.com/about/",
+        "https://www.zxmoto.com//index.php?c=show&id=59"
+      ],
+      "note": "张雪机车成立于2024年，创始人张雪为凯越前联合创始人；与凯越KOVE是两家公司，勿混淆。在售型号以中国官网(cqzxmoto.com，跳转zxmoto.com)产品页为准：820RR官网参数明确「精确排量818.8cc」记819cc、售价43800元；500RR官网售价29980元(双摇臂)/33680元(单摇臂)；500F官网称「平滑的470cc直列四缸」、售价29980元；820X售价57800元，官网参数页未单列精确排量，按820系列三缸819cc平台记。用户提示中的MX250经核实仅在EICMA 2025展出、未在中国官网在售页列出，且凯越官网另有同名MX250车型，故放uncertain不混入models。2026-11-10经用户指出与官网「摩托车系列」页逐项核对，补全此前遗漏/误归uncertain的四个型号：600V(578cc V2巡航/RMB 27980)、500F 27款(470cc街车/RMB 30580)、820RR-RS(819cc仿赛/RMB 138000)、820RR-RC(819cc仿赛/RMB 128000)；现8个在售型号与官网一致。"
+    },
+    {
+      "id": "changjiang",
+      "name": "长江摩托",
+      "nameEn": "CHANGJIANG",
+      "company": "",
+      "category": "国产自主",
+      "subCategory": "国产自主",
+      "group": "国产新锐及其他",
+      "website": null,
+      "logo": {
+        "file": "assets/logos/changjiang.png",
+        "status": "ok",
+        "source": "https://changjiang-europe.com/wp-content/uploads/2024/05/cropped-logo-changjiang2023.png",
+        "note": null
+      },
+      "logoDark": false,
+      "models": [
+        {
+          "name": "长江750 CJ750",
+          "cc": 650,
+          "type": "边三轮",
+          "price": "53800~63800元",
+          "source": "https://www.lianglunshijie.com/brand/58",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "CJ700",
+          "cc": 700,
+          "type": "边三轮",
+          "price": "38880~66800元",
+          "source": "https://www.lianglunshijie.com/brand/58",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "CJ650",
+          "cc": 650,
+          "type": "边三轮",
+          "price": "39800~60800元",
+          "source": "https://www.lianglunshijie.com/brand/58",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "衛士V750",
+          "cc": 750,
+          "type": "边三轮",
+          "price": "68888~77777元",
+          "source": "https://www.autohome.com.cn/news/202412/1296517.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "Bobbie 400",
+          "cc": 400,
+          "type": "巡航",
+          "price": "28800元",
+          "source": "https://www.58moto.com/brand/H-296.html",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "Bobbie 700",
+          "cc": 700,
+          "type": "巡航",
+          "price": "38880元",
+          "source": "https://www.58moto.com/brand/H-296.html",
+          "bucket": "700-999cc"
+        }
+      ],
+      "modelCount": 6,
+      "uncertain": [
+        {
+          "name": "长江750 CJ750 实际排量",
+          "cc": null,
+          "type": "边三轮",
+          "price": null,
+          "source": "https://m.sohu.com/a/242756923_608091",
+          "reason": "复活版长江750型号名含750，实际搭载春风650cc并列双缸发动机（型号名为历史系列名），本条cc按实际650cc记并在此说明"
+        },
+        {
+          "name": "Bobbie 400 II (两轮版)",
+          "cc": 400,
+          "type": "巡航",
+          "price": "28800~30800元",
+          "source": "https://www.58moto.com/brand/H-296.html",
+          "reason": "Bobbie系列两轮巡航版，与已收录Bobbie 400(28800)为同系年款/配置差异，是否作为独立型号待定"
+        },
+        {
+          "name": "Bobbie II 450S",
+          "cc": 450,
+          "type": "巡航",
+          "price": "30980~32980元",
+          "source": "https://www.58moto.com/brand/H-296.html",
+          "reason": "Bobbie 450 系列在售，未作为独立型号收录，待定"
+        },
+        {
+          "name": "Bobbie III 450S",
+          "cc": 450,
+          "type": "巡航",
+          "price": "38888~43880元",
+          "source": "https://www.58moto.com/brand/H-296.html",
+          "reason": "Bobbie 450 高配在售，未收录，待定"
+        },
+        {
+          "name": "Bobbie 400 III (边三轮版)",
+          "cc": 400,
+          "type": "边三轮",
+          "price": "42800~44300元",
+          "source": "https://www.58moto.com/brand/H-296.html",
+          "reason": "带边斗版本，与两轮Bobbie 400区分，待定"
+        },
+        {
+          "name": "Bobbie ll 700i",
+          "cc": 700,
+          "type": "巡航",
+          "price": "38880~41880元",
+          "source": "https://www.58moto.com/brand/H-296.html",
+          "reason": "与已收录Bobbie 700(38880)同系，待定"
+        },
+        {
+          "name": "Bobbie III 700i",
+          "cc": 700,
+          "type": "巡航",
+          "price": "47777~62880元",
+          "source": "https://www.lianglunshijie.com/brand/58/",
+          "reason": "Bobbie 700 高配/定制版，未收录，待定"
+        },
+        {
+          "name": "Bobbie 650 III",
+          "cc": 650,
+          "type": "巡航",
+          "price": "53800~55800元",
+          "source": "https://www.58moto.com/brand/H-296.html",
+          "reason": "Bobbie 650 在售，未收录，待定"
+        },
+        {
+          "name": "CJ 650 两轮版",
+          "cc": 650,
+          "type": "巡航",
+          "price": "39800~40800元",
+          "source": "https://www.58moto.com/brand/H-296.html",
+          "reason": "CJ650 两轮版（非边三轮），与已收录边三轮CJ650区分，待定"
+        }
+      ],
+      "sources": [
+        "https://www.lianglunshijie.com/brand/58",
+        "https://www.autohome.com.cn/news/202412/1296517.html",
+        "https://m.sohu.com/a/242756923_608091",
+        "https://m.pcauto.com.cn/baike/723046",
+        "https://www.pcauto.com.cn/ask/4261964.html"
+      ],
+      "note": "长江摩托以CJ750边三轮(侉子)闻名，复活版车型与衛士V750均为≥250cc。型号与指导价以两轮视界车型库brand/58、汽车之家/懂车帝公开上市报道核实：衛士V750创世版68888元、匠心定制版77777元（横置V缸750cc）；CJ750系列5.38万~6.38万元。未核实到长江品牌现行官网与企业主体，company/website/logoUrl均记null，未编造。CJ750复活版实际为650cc并列双缸但型号名沿用CJ750，cc按实际650记并说明。其余未核实官网的老款放uncertain。"
+    },
+    {
+      "id": "shineray",
+      "name": "鑫源",
+      "nameEn": "SHINERAY",
+      "company": "重庆鑫源摩托车股份有限公司",
+      "category": "国产自主",
+      "subCategory": "国产自主",
+      "group": "国产新锐及其他",
+      "website": "https://shineraymotor.com.cn/",
+      "logo": {
+        "file": "assets/logos/shineray.png",
+        "status": "ok",
+        "source": "https://shineraymotor.com.cn/static/web/images/di_logo.png",
+        "note": null
+      },
+      "logoDark": true,
+      "models": [
+        {
+          "name": "525X",
+          "cc": 494,
+          "type": "拉力ADV",
+          "price": "26999元起",
+          "source": "https://www.shineraymotor.com.cn/product/detail/73",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "骓1200",
+          "cc": 1200,
+          "type": "巡航",
+          "price": null,
+          "source": "https://www.shineraymotor.com.cn/product/detail/76",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "龙卷风520 梦想版",
+          "cc": null,
+          "type": "边三轮",
+          "price": null,
+          "source": "https://www.shineraymotor.com.cn/product/detail/78",
+          "bucket": "未标注"
+        },
+        {
+          "name": "飓风525",
+          "cc": null,
+          "type": "边三轮",
+          "price": null,
+          "source": "https://www.shineraymotor.com.cn/product/detail/77",
+          "bucket": "未标注"
+        },
+        {
+          "name": "X-Tricker魔术师",
+          "cc": 250,
+          "type": "越野",
+          "price": "9680元",
+          "source": "https://www.58moto.com/good/5783/configuration.html",
+          "bucket": "250-399cc"
+        }
+      ],
+      "modelCount": 5,
+      "uncertain": [
+        {
+          "name": "魔术师（250）",
+          "cc": null,
+          "type": "越野",
+          "price": null,
+          "source": "https://www.shineraymotor.com.cn/product/detail/75",
+          "reason": "鑫源官网越野分类列有「魔术师」，但未标排量；两轮视界记为XY250GY-15，疑似223cc级<250cc，是否达门槛存疑"
+        },
+        {
+          "name": "锋刃525",
+          "cc": 525,
+          "type": "街车",
+          "price": null,
+          "source": "https://www.lianglunshijie.com/brand/38/index.html",
+          "reason": "两轮视界报道2025年上市，鑫源官网现行产品分类页未列，国内在售状态未核实"
+        },
+        {
+          "name": "255XT / 骓1200滑翔版",
+          "cc": null,
+          "type": null,
+          "price": null,
+          "source": "http://mp.weixin.qq.com/s?__biz=MjM5MjUxNDMwMA==&mid=2654946232&idx=1&sn=49ed72f76d44c37406a6b556793128e4",
+          "reason": "2026摩博会首秀/亮相车型，官方图文称上市时间待定，无售价，不纳入在售"
+        },
+        {
+          "name": "周末风XY400B-4A / 自由风XY500B-A / SIXDAYS 500 / 棍王XY400-6A / RAMS440",
+          "cc": null,
+          "type": null,
+          "price": "19800~52000元",
+          "source": "https://www.lianglunshijie.com/brand/yuan38/index.html",
+          "reason": "两轮视界有报价的2021-2023年老款，鑫源官网现行4个产品分类页均未收录，是否仍在售存疑"
+        }
+      ],
+      "sources": [
+        "https://shineraymotor.com.cn/",
+        "https://www.shineraymotor.com.cn/product/1",
+        "https://www.shineraymotor.com.cn/product/2",
+        "https://www.shineraymotor.com.cn/product/4",
+        "https://www.shineraymotor.com.cn/product/5",
+        "https://www.lianglunshijie.com/brand/yuan38/index.html"
+      ],
+      "note": "型号以鑫源中国官网(shineraymotor.com.cn)产品分类页为准：巡航(/product/1)列爱豆200CR、骓1200；ADV(/product/2)列525X；边三轮(/product/5)列龙卷风520梦想版、飓风525；越野(/product/4)列魔术师。官网明确525X为494CC、售价26999元起。爱豆200CR(200cc)<250cc已排除。骓1200、龙卷风520、飓风525官网未给精确排量与指导价，cc/price按规则记null，不编造。骓1200两轮视界尊享版曾报51800元，因年份与版本不明未采用。"
+    },
+    {
       "id": "dayang",
       "name": "大阳",
       "nameEn": "DAYANG",
@@ -2036,267 +2455,6 @@
         "https://m.58moto.com/news/12090612?share=1"
       ],
       "note": "型号以大阳官网「全部车型」页为准，≥250cc共4款：跨骑车TCV450，踏板车V锐250T、ADV250、ADV350；其余DY150/125/110/90、天昴200、VRS/VRF/VRX/VRJ150等均<250cc已排除。价格由摩托范品牌页brand/220与官方上市图文交叉核实：2025款ADV350+官方25980元，2026款TCV450标准版19380/豪华版19980元。cc按官方标称整数（ADV350实际333.4cc、TCV450实际438cc），V锐250T/ADV250按标称250cc收录。ADV150/VRX150/VRJ150等不计入。"
-    },
-    {
-      "id": "zxmoto",
-      "name": "张雪机车",
-      "nameEn": "ZXMOTO",
-      "company": "重庆张雪机车工业有限公司",
-      "category": "国产自主",
-      "subCategory": "国产自主",
-      "group": "国产新锐及其他",
-      "website": "https://www.zxmoto.com/",
-      "logo": {
-        "file": "assets/logos/zxmoto.svg",
-        "status": "ok",
-        "source": "https://www.zxmoto.com/static/default/images/logo.svg",
-        "note": null
-      },
-      "logoDark": false,
-      "models": [
-        {
-          "name": "500RR",
-          "cc": 470,
-          "type": "仿赛",
-          "price": "29980~33680元",
-          "source": "https://www.zxmoto.com/products/56.html",
-          "bucket": "400-699cc"
-        },
-        {
-          "name": "500F",
-          "cc": 470,
-          "type": "街车",
-          "price": "29980元",
-          "source": "https://www.zxmoto.com/products/57.html",
-          "bucket": "400-699cc"
-        },
-        {
-          "name": "820RR",
-          "cc": 819,
-          "type": "仿赛",
-          "price": "43800元",
-          "source": "https://www.zxmoto.com/products/58.html",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "820X",
-          "cc": 819,
-          "type": "拉力ADV",
-          "price": "57800元",
-          "source": "https://www.zxmoto.com/products/311.html",
-          "bucket": "700-999cc"
-        }
-      ],
-      "modelCount": 4,
-      "uncertain": [
-        {
-          "name": "600V",
-          "cc": null,
-          "type": "巡航",
-          "price": null,
-          "source": "https://cqzxmoto.com/",
-          "reason": "中国官网首页列为车型条目，但描述仍为「描述1/描述2」占位文案，未核实到正式上市、排量与售价"
-        },
-        {
-          "name": "MX250 / MX450 / 450 Rally / 820R / 820ADV",
-          "cc": null,
-          "type": null,
-          "price": null,
-          "source": "https://www.zxmoto.com//index.php?c=show&id=59",
-          "reason": "仅EICMA 2025米兰展亮相，官方图文称「上市日期指日可待」，中国官网在售产品页未列、无国内售价，不纳入在售models"
-        },
-        {
-          "name": "500F 27款",
-          "cc": 470,
-          "type": "街车",
-          "price": null,
-          "source": "https://www.zxmoto.com/products/309.html",
-          "reason": "官网另列的500F年款版本，按「年款不算独立型号」已合并入500F"
-        }
-      ],
-      "sources": [
-        "https://cqzxmoto.com/",
-        "https://www.zxmoto.com/products/56.html",
-        "https://www.zxmoto.com/products/57.html",
-        "https://www.zxmoto.com/products/58.html",
-        "https://www.zxmoto.com/products/311.html",
-        "https://www.cqzxmoto.com/about/",
-        "https://www.zxmoto.com//index.php?c=show&id=59"
-      ],
-      "note": "张雪机车成立于2024年，创始人张雪为凯越前联合创始人；与凯越KOVE是两家公司，勿混淆。在售型号以中国官网(cqzxmoto.com，跳转zxmoto.com)产品页为准：820RR官网参数明确「精确排量818.8cc」记819cc、售价43800元；500RR官网售价29980元(双摇臂)/33680元(单摇臂)；500F官网称「平滑的470cc直列四缸」、售价29980元；820X售价57800元，官网参数页未单列精确排量，按820系列三缸819cc平台记。用户提示中的MX250经核实仅在EICMA 2025展出、未在中国官网在售页列出，且凯越官网另有同名MX250车型，故放uncertain不混入models。"
-    },
-    {
-      "id": "shineray",
-      "name": "鑫源",
-      "nameEn": "SHINERAY",
-      "company": "重庆鑫源摩托车股份有限公司",
-      "category": "国产自主",
-      "subCategory": "国产自主",
-      "group": "国产新锐及其他",
-      "website": "https://shineraymotor.com.cn/",
-      "logo": {
-        "file": "assets/logos/shineray.png",
-        "status": "ok",
-        "source": "https://shineraymotor.com.cn/static/web/images/di_logo.png",
-        "note": null
-      },
-      "logoDark": true,
-      "models": [
-        {
-          "name": "525X",
-          "cc": 494,
-          "type": "拉力ADV",
-          "price": "26999元起",
-          "source": "https://www.shineraymotor.com.cn/product/detail/73",
-          "bucket": "400-699cc"
-        },
-        {
-          "name": "骓1200",
-          "cc": 1200,
-          "type": "巡航",
-          "price": null,
-          "source": "https://www.shineraymotor.com.cn/product/detail/76",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "龙卷风520 梦想版",
-          "cc": null,
-          "type": "边三轮",
-          "price": null,
-          "source": "https://www.shineraymotor.com.cn/product/detail/78",
-          "bucket": "未标注"
-        },
-        {
-          "name": "飓风525",
-          "cc": null,
-          "type": "边三轮",
-          "price": null,
-          "source": "https://www.shineraymotor.com.cn/product/detail/77",
-          "bucket": "未标注"
-        }
-      ],
-      "modelCount": 4,
-      "uncertain": [
-        {
-          "name": "魔术师（250）",
-          "cc": null,
-          "type": "越野",
-          "price": null,
-          "source": "https://www.shineraymotor.com.cn/product/detail/75",
-          "reason": "鑫源官网越野分类列有「魔术师」，但未标排量；两轮视界记为XY250GY-15，疑似223cc级<250cc，是否达门槛存疑"
-        },
-        {
-          "name": "锋刃525",
-          "cc": 525,
-          "type": "街车",
-          "price": null,
-          "source": "https://www.lianglunshijie.com/brand/38/index.html",
-          "reason": "两轮视界报道2025年上市，鑫源官网现行产品分类页未列，国内在售状态未核实"
-        },
-        {
-          "name": "255XT / 骓1200滑翔版",
-          "cc": null,
-          "type": null,
-          "price": null,
-          "source": "http://mp.weixin.qq.com/s?__biz=MjM5MjUxNDMwMA==&mid=2654946232&idx=1&sn=49ed72f76d44c37406a6b556793128e4",
-          "reason": "2026摩博会首秀/亮相车型，官方图文称上市时间待定，无售价，不纳入在售"
-        },
-        {
-          "name": "周末风XY400B-4A / 自由风XY500B-A / SIXDAYS 500 / 棍王XY400-6A / RAMS440",
-          "cc": null,
-          "type": null,
-          "price": "19800~52000元",
-          "source": "https://www.lianglunshijie.com/brand/yuan38/index.html",
-          "reason": "两轮视界有报价的2021-2023年老款，鑫源官网现行4个产品分类页均未收录，是否仍在售存疑"
-        }
-      ],
-      "sources": [
-        "https://shineraymotor.com.cn/",
-        "https://www.shineraymotor.com.cn/product/1",
-        "https://www.shineraymotor.com.cn/product/2",
-        "https://www.shineraymotor.com.cn/product/4",
-        "https://www.shineraymotor.com.cn/product/5",
-        "https://www.lianglunshijie.com/brand/yuan38/index.html"
-      ],
-      "note": "型号以鑫源中国官网(shineraymotor.com.cn)产品分类页为准：巡航(/product/1)列爱豆200CR、骓1200；ADV(/product/2)列525X；边三轮(/product/5)列龙卷风520梦想版、飓风525；越野(/product/4)列魔术师。官网明确525X为494CC、售价26999元起。爱豆200CR(200cc)<250cc已排除。骓1200、龙卷风520、飓风525官网未给精确排量与指导价，cc/price按规则记null，不编造。骓1200两轮视界尊享版曾报51800元，因年份与版本不明未采用。"
-    },
-    {
-      "id": "changjiang",
-      "name": "长江摩托",
-      "nameEn": "CHANGJIANG",
-      "company": "",
-      "category": "国产自主",
-      "subCategory": "国产自主",
-      "group": "国产新锐及其他",
-      "website": null,
-      "logo": {
-        "file": null,
-        "status": "missing",
-        "source": null,
-        "note": null
-      },
-      "logoDark": false,
-      "models": [
-        {
-          "name": "长江750 CJ750",
-          "cc": 650,
-          "type": "边三轮",
-          "price": "53800~63800元",
-          "source": "https://www.lianglunshijie.com/brand/58",
-          "bucket": "400-699cc"
-        },
-        {
-          "name": "CJ700",
-          "cc": 700,
-          "type": "边三轮",
-          "price": "38880~66800元",
-          "source": "https://www.lianglunshijie.com/brand/58",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "CJ650",
-          "cc": 650,
-          "type": "边三轮",
-          "price": "39800~60800元",
-          "source": "https://www.lianglunshijie.com/brand/58",
-          "bucket": "400-699cc"
-        },
-        {
-          "name": "衛士V750",
-          "cc": 750,
-          "type": "边三轮",
-          "price": "68888~77777元",
-          "source": "https://www.autohome.com.cn/news/202412/1296517.html",
-          "bucket": "700-999cc"
-        }
-      ],
-      "modelCount": 4,
-      "uncertain": [
-        {
-          "name": "长江750 CJ750 实际排量",
-          "cc": null,
-          "type": "边三轮",
-          "price": null,
-          "source": "https://m.sohu.com/a/242756923_608091",
-          "reason": "复活版长江750型号名含750，实际搭载春风650cc并列双缸发动机（型号名为历史系列名），本条cc按实际650cc记并在此说明"
-        },
-        {
-          "name": "Bobbie 400 II / Bobbie III 450 / CJ400B 等",
-          "cc": null,
-          "type": null,
-          "price": "29657~43175元",
-          "source": "https://www.lianglunshijie.com/brand/58",
-          "reason": "两轮视界品牌页有报价，但未核实品牌官网与当前在售状态，且未明确是否≥250cc，不混入models"
-        }
-      ],
-      "sources": [
-        "https://www.lianglunshijie.com/brand/58",
-        "https://www.autohome.com.cn/news/202412/1296517.html",
-        "https://m.sohu.com/a/242756923_608091",
-        "https://m.pcauto.com.cn/baike/723046",
-        "https://www.pcauto.com.cn/ask/4261964.html"
-      ],
-      "note": "长江摩托以CJ750边三轮(侉子)闻名，复活版车型与衛士V750均为≥250cc。型号与指导价以两轮视界车型库brand/58、汽车之家/懂车帝公开上市报道核实：衛士V750创世版68888元、匠心定制版77777元（横置V缸750cc）；CJ750系列5.38万~6.38万元。未核实到长江品牌现行官网与企业主体，company/website/logoUrl均记null，未编造。CJ750复活版实际为650cc并列双缸但型号名沿用CJ750，cc按实际650记并说明。其余未核实官网的老款放uncertain。"
     },
     {
       "id": "zongshen",
@@ -2366,6 +2524,127 @@
         "https://zonsenmotor.com/"
       ],
       "note": "本条仅含宗申自主线，按要求不含赛科龙(CYCLONE)。宗申自主品牌在国内以小排量通勤/弯梁/踏板为主，≥250cc仅250X越野、250R/M250R街车等标称250cc车型，未核实到>250cc的宗申自主品牌在售两轮车型。250X搭载PR250单缸油冷、排量249cc（摩托范图文），按标称250收录；其余250系列精确排量存疑，见uncertain。Yami/野米/优米/魔方/小熊/猎鹰150ADV/200SC等<250cc均已排除。"
+    },
+    {
+      "id": "daye",
+      "name": "广东大冶",
+      "nameEn": "Guangdong Tayo Motorcycle Technology Co., Ltd.",
+      "company": "广东大冶摩托车技术有限公司",
+      "category": "国产自主",
+      "subCategory": "国产自主",
+      "group": "国产新锐及其他",
+      "website": null,
+      "logo": {
+        "file": "assets/logos/daye.png",
+        "status": "ok",
+        "source": "http://m.kiden.cn/images/shmall/logo_new.png",
+        "note": "展示的是旗下启典 KIDEN 品牌标识；广东大冶为企业主体，无独立消费品牌图形标。"
+      },
+      "logoDark": false,
+      "models": [
+        {
+          "name": "启典 ZT250-R",
+          "cc": 249,
+          "type": "街车",
+          "price": null,
+          "source": "https://www.kiden.cn/ch/products/ModelsDetailed.aspx?Cid=2EDE22E721F7BC97",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "启典 KD250-V",
+          "cc": 250,
+          "type": "复古",
+          "price": null,
+          "source": "https://www.58moto.com/good/12500/configuration.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "启典 KD250-Z",
+          "cc": 250,
+          "type": "街车",
+          "price": null,
+          "source": "https://www.17vin.com/gonggao/213096/KD250Z.html",
+          "bucket": "250-399cc"
+        }
+      ],
+      "modelCount": 3,
+      "uncertain": [
+        {
+          "name": "启典 KD250-V / KD250-Z",
+          "cc": null,
+          "type": "复古",
+          "price": "9599~9799元",
+          "source": "https://www.58moto.com/good/12500.html",
+          "reason": "型号名标称250，但搭载TBF250单缸风冷发动机实际排量约230cc（<250cc），按门槛排除"
+        },
+        {
+          "name": "豪江 250 系列",
+          "cc": null,
+          "type": "街车",
+          "price": "9680元",
+          "source": "https://www.bear-bar.com/wenda/4472873.html",
+          "reason": "标称250、实际约230cc（<250cc），按门槛排除"
+        }
+      ],
+      "sources": [
+        "https://cn.auto-che.com/v/zt/zt250-s-271-shengshi.html",
+        "http://mp.weixin.qq.com/s?__biz=MzI3MzEzMTMyMQ==&mid=2649079565&idx=2&sn=1c729658c1acc73db938245587ce0c2d",
+        "https://www.58moto.com/good/12500.html",
+        "https://www1.cfi.cn/p20260418000467.html"
+      ],
+      "note": "广东大冶是升仕ZONTES母公司。除升仕外确有独立品牌：工信部公告数据库(cn.auto-che.com)列其生产品牌为豪江(Haojiang)、启典(Qidian)、升仕(Shengshi)、中裕(Zhongyu)、夏朋(Xiapeng)；升仕官方公众号图文亦称大冶「手里握着升仕、启典、豪江三个自主品牌」。但经核实，启典KD250-V/KD250-Z、豪江250等车型实际排量约230cc（<250cc），不符合本看板≥250cc门槛；未核实到除升仕外其它独立品牌在中国市场在售的≥250cc车型，故models为空，不编造。升仕品牌车型已在zontes条目完整列出，此处不重复。母公司独立官网与Logo未核实到，website/logoUrl记null。注：同一份隆鑫通用2025年报亦将「广东大冶」列入500cc以上销量前五企业，与升仕703系列(699cc)对应。"
+    },
+    {
+      "id": "souo",
+      "name": "长城灵魂",
+      "nameEn": "SOUO",
+      "company": "长城汽车股份有限公司（旗下第六大品牌）",
+      "category": "国产自主",
+      "subCategory": "国产自主",
+      "group": "国产新锐及其他",
+      "website": "https://www.souomoto.com/",
+      "logo": {
+        "file": "assets/logos/souo.png",
+        "status": "ok",
+        "source": "https://www.souomoto.com/img/home/logo_b.png",
+        "note": null
+      },
+      "logoDark": false,
+      "models": [
+        {
+          "name": "S2000",
+          "cc": 2000,
+          "type": "旅行",
+          "price": "21.88~23.88万元",
+          "source": "https://www.souomoto.com/car_config.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "S2000CL",
+          "cc": 2000,
+          "type": "巡航",
+          "price": "18.98~21.88万元",
+          "source": "https://souomoto.com/car_config-s20000-cl.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "S2000C",
+          "cc": 2000,
+          "type": "巡航",
+          "price": "168800元起",
+          "source": "https://www.souomoto.com/",
+          "bucket": "1000cc以上"
+        }
+      ],
+      "modelCount": 3,
+      "uncertain": [],
+      "sources": [
+        "https://www.souomoto.com/",
+        "https://www.souomoto.com/car_config.html",
+        "https://souomoto.com/car_config-s20000-cl.html",
+        "https://souomoto.com/news_detail_251027.html"
+      ],
+      "note": "官网配置表明确水平对置8缸、排量2000cc（精确1999cc）。已按主型号合并版本：S2000含ST两箱版21.88万/GL三箱版23.88万/Founder创始人版28.88万/墨砚版/国藏版；S2000CL含骑士版18.98万/臻藏版21.88万/S2000C单座版16.88万起与双座版16.98万起。S2000GL腾云瑞狮定制彩绘版66.88万元为全球唯一限量定制，属版本不单列。官网首页logo由CSS/JS渲染，未抓到img src直链，logoUrl记null。"
     },
     {
       "id": "jialing",
@@ -2486,50 +2765,6 @@
       "note": "严格只收豪爵自主品牌。官网「产品世界」中排量 ≥250cc 的自主车型仅 TR300 与 TVL350 两条主型号：TR300 已合并 Plus 城市版（¥21980）/旅行版（¥23280），TVL350（旅行者）已合并扶手版（¥28980）/箱杠版（¥29980）。TR300 实际 298cc、TVL350 实际 339cc，cc 记标称整数。明确排除：①豪爵铃木合资车型 GSX-8R、DL250-C/A、GSX250R-F/A（按任务要求不属豪爵自主）；②已确认停售的 DR300、XCR300、DR250（摩托范 /brand/201/unsale 标注「停售」，并有「豪爵DR300彻底停售」「XCR300 停售」报道）；③所有 <250cc 的 125/150 车系。GW300J 公务车放 uncertain。Logo 取自官网 header img src，规范化双斜杠后为 https://cdn.haojue.com/bocweb/web/img/logo.png?v=v49。豪爵自主大排量在售型号确实仅 2 款，非漏查。"
     },
     {
-      "id": "souo",
-      "name": "长城灵魂",
-      "nameEn": "SOUO",
-      "company": "长城汽车股份有限公司（旗下第六大品牌）",
-      "category": "国产自主",
-      "subCategory": "国产自主",
-      "group": "国产新锐及其他",
-      "website": "https://www.souomoto.com/",
-      "logo": {
-        "file": "assets/logos/souo.png",
-        "status": "ok",
-        "source": "https://www.souomoto.com/img/home/logo_b.png",
-        "note": null
-      },
-      "logoDark": false,
-      "models": [
-        {
-          "name": "S2000",
-          "cc": 2000,
-          "type": "旅行",
-          "price": "21.88~23.88万元",
-          "source": "https://www.souomoto.com/car_config.html",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "S2000CL",
-          "cc": 2000,
-          "type": "巡航",
-          "price": "18.98~21.88万元",
-          "source": "https://souomoto.com/car_config-s20000-cl.html",
-          "bucket": "1000cc以上"
-        }
-      ],
-      "modelCount": 2,
-      "uncertain": [],
-      "sources": [
-        "https://www.souomoto.com/",
-        "https://www.souomoto.com/car_config.html",
-        "https://souomoto.com/car_config-s20000-cl.html",
-        "https://souomoto.com/news_detail_251027.html"
-      ],
-      "note": "官网配置表明确水平对置8缸、排量2000cc（精确1999cc）。已按主型号合并版本：S2000含ST两箱版21.88万/GL三箱版23.88万/Founder创始人版28.88万/墨砚版/国藏版；S2000CL含骑士版18.98万/臻藏版21.88万/S2000C单座版16.88万起与双座版16.98万起。S2000GL腾云瑞狮定制彩绘版66.88万元为全球唯一限量定制，属版本不单列。官网首页logo由CSS/JS渲染，未抓到img src直链，logoUrl记null。"
-    },
-    {
       "id": "tuxing",
       "name": "土星动力",
       "nameEn": "",
@@ -2558,50 +2793,6 @@
       "note": "未核实到「土星动力」作为独立整车品牌销售的车型，models为空，不编造。隆鑫通用2025年年度报告（上交所公告，2026-04-18）披露：2025年中国250cc以上大排量摩托车销量前五企业依次为春风动力、隆鑫通用、钱江摩托、土星动力、宗申集团。经核实，「土星动力」即杭州土星动力科技有限公司，是奔达BENDA品牌的生产企业主体（奔达公告型号BD250-15A的生产企业亦为该公司），榜单按企业主体口径统计，并非独立品牌；其≥250cc车型即奔达全系，已在benda条目完整列出，为避免重复计数本条models为空。企业独立官网与Logo未核实到，website/logoUrl/nameEn记null。"
     },
     {
-      "id": "daye",
-      "name": "广东大冶",
-      "nameEn": "Guangdong Tayo Motorcycle Technology Co., Ltd.",
-      "company": "广东大冶摩托车技术有限公司",
-      "category": "国产自主",
-      "subCategory": "国产自主",
-      "group": "国产新锐及其他",
-      "website": null,
-      "logo": {
-        "file": "assets/logos/daye.png",
-        "status": "ok",
-        "source": "http://m.kiden.cn/images/shmall/logo_new.png",
-        "note": "展示的是旗下启典 KIDEN 品牌标识；广东大冶为企业主体，无独立消费品牌图形标。"
-      },
-      "logoDark": false,
-      "models": [],
-      "modelCount": 0,
-      "uncertain": [
-        {
-          "name": "启典 KD250-V / KD250-Z",
-          "cc": null,
-          "type": "复古",
-          "price": "9599~9799元",
-          "source": "https://www.58moto.com/good/12500.html",
-          "reason": "型号名标称250，但搭载TBF250单缸风冷发动机实际排量约230cc（<250cc），按门槛排除"
-        },
-        {
-          "name": "豪江 250 系列",
-          "cc": null,
-          "type": "街车",
-          "price": "9680元",
-          "source": "https://www.bear-bar.com/wenda/4472873.html",
-          "reason": "标称250、实际约230cc（<250cc），按门槛排除"
-        }
-      ],
-      "sources": [
-        "https://cn.auto-che.com/v/zt/zt250-s-271-shengshi.html",
-        "http://mp.weixin.qq.com/s?__biz=MzI3MzEzMTMyMQ==&mid=2649079565&idx=2&sn=1c729658c1acc73db938245587ce0c2d",
-        "https://www.58moto.com/good/12500.html",
-        "https://www1.cfi.cn/p20260418000467.html"
-      ],
-      "note": "广东大冶是升仕ZONTES母公司。除升仕外确有独立品牌：工信部公告数据库(cn.auto-che.com)列其生产品牌为豪江(Haojiang)、启典(Qidian)、升仕(Shengshi)、中裕(Zhongyu)、夏朋(Xiapeng)；升仕官方公众号图文亦称大冶「手里握着升仕、启典、豪江三个自主品牌」。但经核实，启典KD250-V/KD250-Z、豪江250等车型实际排量约230cc（<250cc），不符合本看板≥250cc门槛；未核实到除升仕外其它独立品牌在中国市场在售的≥250cc车型，故models为空，不编造。升仕品牌车型已在zontes条目完整列出，此处不重复。母公司独立官网与Logo未核实到，website/logoUrl记null。注：同一份隆鑫通用2025年报亦将「广东大冶」列入500cc以上销量前五企业，与升仕703系列(699cc)对应。"
-    },
-    {
       "id": "loncin",
       "name": "隆鑫",
       "nameEn": "LONCIN",
@@ -2625,7 +2816,139 @@
         "https://cn.auto-che.com/b/loncin/motorcycle.html",
         "https://www1.cfi.cn/p20260418000467.html"
       ],
-      "note": "未核实到LONCIN自主品牌在中国市场在售的≥250cc两轮摩托车，models为空。原因：隆鑫通用官网明确「VOGE无极」与「LONCIN隆鑫」双核战略，两轮中大排量整车业务与国内460+家形象店均归于VOGE无极品牌（已由看板其它条目覆盖），LONCIN品牌主要面向全地形车、发动机及出口小排量车型；工信部公告库可查的LONCIN两轮车型如LX250GS-2(226cc)、LX250-20(223cc)均<250cc，不符合门槛。为不编造型号，本条不列车型。"
+      "note": "隆鑫通用动力消费摩托车品牌已统一为 VOGE 无极（已单列 15 款）。经核查，LONCIN 本品牌当前在中国市场无独立在售的 ≥250cc 两轮摩托车（历史 LX650/CR9 已于 2019 年停产停售，现主推全地形车 ATV），故本表为 0 款。"
+    },
+    {
+      "id": "sym",
+      "name": "三阳",
+      "nameEn": "SYM",
+      "company": "厦门厦杏摩托有限公司（台湾三阳工业股份有限公司SYM在华合资；摩托范参数页与欧盟型式认证均标注厂家为XIAMEN XIASHING MOTORCYCLE Co., Ltd.）",
+      "category": "合资及台系",
+      "subCategory": "台系/外资在华",
+      "group": "合资及台系",
+      "website": "https://www.xsmt.com/",
+      "logo": {
+        "file": "assets/logos/sym.png",
+        "status": "ok",
+        "source": "https://www.xsmt.com/public/images/logo.png",
+        "note": null
+      },
+      "logoDark": false,
+      "models": [
+        {
+          "name": "CRUISYM 400 巡弋400（含25款/26款旗舰版）",
+          "cc": 400,
+          "type": "踏板",
+          "price": "36980元",
+          "source": "https://www.xsmt.com/product/show-13055.html",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "JOYRIDE 300 行者300（25款）",
+          "cc": 300,
+          "type": "踏板",
+          "price": "23980元",
+          "source": "https://www.xsmt.com/product/param/show-8887.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "Jepardo 300 猎豹300",
+          "cc": 300,
+          "type": "踏板",
+          "price": "24980元",
+          "source": "https://www.xsmt.com/product/show-24067.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "HUSKY ADV 300 哈士奇（含26款旗舰款/弯道版）",
+          "cc": 300,
+          "type": "踏板",
+          "price": "24980~26980元",
+          "source": "https://www.xsmt.com/product/show-4357.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "CRUISYM 250 (巡弋250)",
+          "cc": 249,
+          "type": "踏板",
+          "price": "21980元",
+          "source": "https://www.xsmt.com/product/show-24036.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "剑齿虎 ADXTG 400",
+          "cc": 399,
+          "type": "踏板",
+          "price": "46980元",
+          "source": "https://www.58moto.com/article/114/12505983.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "Joymax Z 300",
+          "cc": 278,
+          "type": "踏板",
+          "price": "25980元",
+          "source": "https://m.58moto.com/brand/245",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "MaxSym 400",
+          "cc": 399,
+          "type": "踏板",
+          "price": "52800元",
+          "source": "https://www.lianglunshijie.com/motor/Maxsym400TCS24020/index.html",
+          "bucket": "250-399cc"
+        }
+      ],
+      "modelCount": 8,
+      "uncertain": [
+        {
+          "name": "CRUISYM 250",
+          "cc": 250,
+          "type": "踏板",
+          "price": null,
+          "source": "https://www.xsmt.com/product/show-8961.html",
+          "reason": "官网首页现行在售列表中列有该车型，但官网车型页为设计理念文案、未在官方渠道核实到排量数值与售价，按「不确定null/宁可少列」暂不计入models，待复核精确排量是否≥250cc"
+        },
+        {
+          "name": "cruisym GT",
+          "cc": null,
+          "type": "踏板",
+          "price": null,
+          "source": "https://www.xsmt.com/product/show-4401.html",
+          "reason": "官网首页在售列表中列有该车型，但未核实到排量与售价（台湾版CRUISYM为278.3cc，大陆版cruisym GT排量未确认），不纳入models"
+        },
+        {
+          "name": "SHEX（25款）",
+          "cc": null,
+          "type": "踏板",
+          "price": null,
+          "source": "https://www.xsmt.com/product/show-8886.html",
+          "reason": "官网首页在售列表中列有该车型，但排量未核实，可能<250cc，不纳入models"
+        },
+        {
+          "name": "CRUISYM 300（原装进口）",
+          "cc": 300,
+          "type": "踏板",
+          "price": null,
+          "source": "https://xsmt.com/product/show-3840.html",
+          "reason": "官网有独立车型详情页（标注原装进口、通勤休旅跨界），但现行首页在售产品列表已不再列出，疑已由国产CRUISYM400/300系列取代，在售状态存疑"
+        }
+      ],
+      "sources": [
+        "https://www.xsmt.com/",
+        "https://www.xsmt.com/product/param/show-8887.html",
+        "https://www.xsmt.com/product/show-13055.html",
+        "https://www.xsmt.com/product/show-8851.html",
+        "https://www.xsmt.com/product/show-24067.html",
+        "https://www.xsmt.com/product/show-4357.html",
+        "https://www.58moto.com/article/3671/12265577.html",
+        "https://m.58moto.com/garage/parameter/20825",
+        "https://m.58moto.com/garage/parameter/21859",
+        "https://m.58moto.com/news/12609081",
+        "https://www.sym-global.com/cruisym400"
+      ],
+      "note": "在售型号名以厦杏三阳官网首页产品家族列表为准。排量核实：官网参数页param/show-8887.html明确JOYRIDE300「排气量(ml)278.3」；官网CRUISYM400(26款)旗舰版页明确「399.3CC」；摩托范参数页确认HUSKY ADV300精确278.3cc、JOYRIDE300精确278.3cc、CRUISYM400精确399.3cc；摩托范报道Jepardo300为278cc。cc按官方标称整数（300/400）记录，与同组brands_b.json口径一致。售价为摩托范报道的官方指导价（巡弋400统一零售价36980元、行者300指导价23980元、猎豹300上市价24980元、哈士奇2026款弯道版24980元/2023款26980元），三阳中国官网本身未标价。年款/版本合并：CRUISYM400的25款与26款旗舰版合并为一条，HUSKY ADV 300的26款旗舰款/弯道版合并为一条。全部为踏板类别。logoUrl由官网header img src（/public/images/logo.png）补全为绝对URL。"
     },
     {
       "id": "kymco",
@@ -2699,9 +3022,17 @@
           "price": "88800~89800元",
           "source": "https://www.kymco.com.cn/join.html",
           "bucket": "400-699cc"
+        },
+        {
+          "name": "CV3",
+          "cc": 550,
+          "type": "倒三轮",
+          "price": "27800~29800元",
+          "source": "https://www.kymco.com.cn/product_details_cv3.html",
+          "bucket": "400-699cc"
         }
       ],
-      "modelCount": 7,
+      "modelCount": 8,
       "uncertain": [
         {
           "name": "赛艇S400（Xciting S400）",
@@ -2738,106 +3069,6 @@
         "http://mp.weixin.qq.com/s?__biz=MjM5MDE1NjY5NQ==&mid=2652552928&idx=1&sn=3c326347f3075c64aa41ace22faeb5fc"
       ],
       "note": "型号与官方售价全部取自常州光阳官网现行「招商/全系家族」价目表join.html（含2026款ST250豪华版、赛艇250 2025、赛艇CT250 2025等）。同系列版本按主型号合并：ST250豪华版/纪念版合并、S350黑武士并入S350、AK550/AK550 II代/AK575 PREMIUM合并为AK550系列；赛艇S250、赛艇250、ST250、CT250为官网独立车型名且各自有独立售价，故分列。250系列精确排量：ST250为246.3ml（官网news_details1.html?id=233，摩托范参数页标「排量(cc)250/精确排量246.3」）、CT250为249.1ml、S250为246ml；S350/X350精确320.6ml；AK550为550cc水冷双缸（官网文字）。cc按官方标称整数（250/350/550）记录，与同组brands_b.json口径一致。全部为踏板类别。logoUrl取自官网header img.wnav-logo的src。"
-    },
-    {
-      "id": "sym",
-      "name": "三阳",
-      "nameEn": "SYM",
-      "company": "厦门厦杏摩托有限公司（台湾三阳工业股份有限公司SYM在华合资；摩托范参数页与欧盟型式认证均标注厂家为XIAMEN XIASHING MOTORCYCLE Co., Ltd.）",
-      "category": "合资及台系",
-      "subCategory": "台系/外资在华",
-      "group": "合资及台系",
-      "website": "https://www.xsmt.com/",
-      "logo": {
-        "file": "assets/logos/sym.png",
-        "status": "ok",
-        "source": "https://www.xsmt.com/public/images/logo.png",
-        "note": null
-      },
-      "logoDark": false,
-      "models": [
-        {
-          "name": "CRUISYM 400 巡弋400（含25款/26款旗舰版）",
-          "cc": 400,
-          "type": "踏板",
-          "price": "36980元",
-          "source": "https://www.xsmt.com/product/show-13055.html",
-          "bucket": "400-699cc"
-        },
-        {
-          "name": "JOYRIDE 300 行者300（25款）",
-          "cc": 300,
-          "type": "踏板",
-          "price": "23980元",
-          "source": "https://www.xsmt.com/product/param/show-8887.html",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "Jepardo 300 猎豹300",
-          "cc": 300,
-          "type": "踏板",
-          "price": "24980元",
-          "source": "https://www.xsmt.com/product/show-24067.html",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "HUSKY ADV 300 哈士奇（含26款旗舰款/弯道版）",
-          "cc": 300,
-          "type": "踏板",
-          "price": "24980~26980元",
-          "source": "https://www.xsmt.com/product/show-4357.html",
-          "bucket": "250-399cc"
-        }
-      ],
-      "modelCount": 4,
-      "uncertain": [
-        {
-          "name": "CRUISYM 250",
-          "cc": 250,
-          "type": "踏板",
-          "price": null,
-          "source": "https://www.xsmt.com/product/show-8961.html",
-          "reason": "官网首页现行在售列表中列有该车型，但官网车型页为设计理念文案、未在官方渠道核实到排量数值与售价，按「不确定null/宁可少列」暂不计入models，待复核精确排量是否≥250cc"
-        },
-        {
-          "name": "cruisym GT",
-          "cc": null,
-          "type": "踏板",
-          "price": null,
-          "source": "https://www.xsmt.com/product/show-4401.html",
-          "reason": "官网首页在售列表中列有该车型，但未核实到排量与售价（台湾版CRUISYM为278.3cc，大陆版cruisym GT排量未确认），不纳入models"
-        },
-        {
-          "name": "SHEX（25款）",
-          "cc": null,
-          "type": "踏板",
-          "price": null,
-          "source": "https://www.xsmt.com/product/show-8886.html",
-          "reason": "官网首页在售列表中列有该车型，但排量未核实，可能<250cc，不纳入models"
-        },
-        {
-          "name": "CRUISYM 300（原装进口）",
-          "cc": 300,
-          "type": "踏板",
-          "price": null,
-          "source": "https://xsmt.com/product/show-3840.html",
-          "reason": "官网有独立车型详情页（标注原装进口、通勤休旅跨界），但现行首页在售产品列表已不再列出，疑已由国产CRUISYM400/300系列取代，在售状态存疑"
-        }
-      ],
-      "sources": [
-        "https://www.xsmt.com/",
-        "https://www.xsmt.com/product/param/show-8887.html",
-        "https://www.xsmt.com/product/show-13055.html",
-        "https://www.xsmt.com/product/show-8851.html",
-        "https://www.xsmt.com/product/show-24067.html",
-        "https://www.xsmt.com/product/show-4357.html",
-        "https://www.58moto.com/article/3671/12265577.html",
-        "https://m.58moto.com/garage/parameter/20825",
-        "https://m.58moto.com/garage/parameter/21859",
-        "https://m.58moto.com/news/12609081",
-        "https://www.sym-global.com/cruisym400"
-      ],
-      "note": "在售型号名以厦杏三阳官网首页产品家族列表为准。排量核实：官网参数页param/show-8887.html明确JOYRIDE300「排气量(ml)278.3」；官网CRUISYM400(26款)旗舰版页明确「399.3CC」；摩托范参数页确认HUSKY ADV300精确278.3cc、JOYRIDE300精确278.3cc、CRUISYM400精确399.3cc；摩托范报道Jepardo300为278cc。cc按官方标称整数（300/400）记录，与同组brands_b.json口径一致。售价为摩托范报道的官方指导价（巡弋400统一零售价36980元、行者300指导价23980元、猎豹300上市价24980元、哈士奇2026款弯道版24980元/2023款26980元），三阳中国官网本身未标价。年款/版本合并：CRUISYM400的25款与26款旗舰版合并为一条，HUSKY ADV 300的26款旗舰款/弯道版合并为一条。全部为踏板类别。logoUrl由官网header img src（/public/images/logo.png）补全为绝对URL。"
     },
     {
       "id": "peugeot-motocycles",
@@ -3329,9 +3560,33 @@
           "price": "189200元",
           "source": "https://www.kawasaki-motors.cn/kawasaki_wechat/wx/",
           "bucket": "1000cc以上"
+        },
+        {
+          "name": "NINJA ZX-4RR",
+          "cc": 399,
+          "type": "仿赛",
+          "price": "76800元",
+          "source": "https://www.kawasaki-motors.cn/",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "ELIMINATOR 500",
+          "cc": 451,
+          "type": "巡航",
+          "price": "46800元",
+          "source": "https://www.toutiao.com/a7363478304919192118",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "NINJA ZX-6R",
+          "cc": 636,
+          "type": "仿赛",
+          "price": "109800元",
+          "source": "https://m.toutiao.com/zixun/7534126582110177280",
+          "bucket": "400-699cc"
         }
       ],
-      "modelCount": 24,
+      "modelCount": 27,
       "uncertain": [
         "官网主站「产品一览」仍列 NINJA 400 / Z400 / Z1000 / VERSYS 1000 等上一代车型，官方微信子站(kawasaki_wechat/wx/)另列 2026 款 Z1100 / NINJA 500 / Z500 / VERSYS 1100 / NINJA 1100SX SE；两处均为川崎中国官方页面，均收录，年款换代状态存疑",
         "ZX-4R/ZX-4RR、Z900/Z900 SE/50TH、Z650RS 50TH、Z900RS 50TH、NINJA H2 SX SE、Z H2 SE、NINJA 500 SE 等 SE/纪念版/周年版按规则合并入主型号",
@@ -3345,6 +3600,432 @@
         "https://www.58moto.com/article/0/12651607.html"
       ],
       "note": "型号与「建议零售价」全部取自川崎中国官网头部「产品一览」导航及首页「旗下车型」列表（服务端渲染 HTML 可直接解析，逐条核对）。cc 为各车系官方标称排量，官网导航页未逐一列出。logoUrl 为官网 og/品牌 logo 图直链。"
+    },
+    {
+      "id": "bmw",
+      "name": "宝马",
+      "nameEn": "BMW MOTORRAD",
+      "company": "宝马（中国）汽车贸易有限公司（BMW Motorrad 中国）",
+      "category": "进口大贸",
+      "subCategory": "进口大贸",
+      "group": "进口大贸",
+      "website": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+      "logo": {
+        "file": "assets/logos/bmw.svg",
+        "status": "ok",
+        "source": "https://www.bmw-motorrad.com.cn/content/dam/bmwmotorradnsc/common/mnm/graphics/bmw_motorrad_logo.svg.asset.1672301077293.svg",
+        "note": null
+      },
+      "logoDark": false,
+      "models": [
+        {
+          "name": "R 1300 GS",
+          "cc": 1300,
+          "type": "拉力ADV",
+          "price": "235900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "R 1300 GS Adventure",
+          "cc": 1300,
+          "type": "拉力ADV",
+          "price": "273900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "F 900 GS",
+          "cc": 895,
+          "type": "拉力ADV",
+          "price": "125900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "F 900 GS Adventure",
+          "cc": 895,
+          "type": "拉力ADV",
+          "price": "149900元",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "F 800 GS",
+          "cc": 895,
+          "type": "拉力ADV",
+          "price": "99900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "K 1600 GTL",
+          "cc": 1649,
+          "type": "旅行",
+          "price": "423900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "R 1300 RT",
+          "cc": 1300,
+          "type": "旅行",
+          "price": "319900元",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "R 12",
+          "cc": 1170,
+          "type": "巡航",
+          "price": "137900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "R 12 nineT",
+          "cc": 1170,
+          "type": "复古",
+          "price": "189900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "R 12 S",
+          "cc": 1170,
+          "type": "复古",
+          "price": "219900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "R 12 G/S",
+          "cc": 1170,
+          "type": "复古",
+          "price": "179900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "R 18",
+          "cc": 1802,
+          "type": "巡航",
+          "price": "159900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "G 310 R",
+          "cc": 313,
+          "type": "街车",
+          "price": "49900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "F 900 R",
+          "cc": 895,
+          "type": "街车",
+          "price": "118900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "S 1000 R",
+          "cc": 999,
+          "type": "街车",
+          "price": "199900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "S 1000 RR",
+          "cc": 999,
+          "type": "仿赛",
+          "price": "231900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "M 1000 R",
+          "cc": 999,
+          "type": "街车",
+          "price": "239900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "M 1000 XR",
+          "cc": 999,
+          "type": "旅行",
+          "price": "250900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "C 400 X",
+          "cc": 350,
+          "type": "踏板",
+          "price": "61900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "C 400 GT",
+          "cc": 350,
+          "type": "踏板",
+          "price": "81900元起",
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "G 310 GS",
+          "cc": 310,
+          "type": "拉力ADV",
+          "price": "52900~53900元",
+          "source": "https://www.58moto.com/good/5621.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "F 900 XR",
+          "cc": 895,
+          "type": "旅行",
+          "price": "126900~139900元",
+          "source": "https://m.58moto.com/brand/24",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "S 1000 XR",
+          "cc": 1000,
+          "type": "旅行",
+          "price": "233900~269900元",
+          "source": "https://www.58moto.com/good/5522/configuration.html",
+          "bucket": "1000cc以上"
+        }
+      ],
+      "modelCount": 23,
+      "uncertain": [
+        "R 18 造梦者/拳击手/传承者/泰坦/游侠/洲际旅行家等版本按规则合并为 R 18 主型号，价格取最低 159900 元",
+        "CE 02 为电动摩托车、无排量，排除",
+        "cc 为 BMW 各系列官方标称排量，车型总览页仅列型号名与价格、未逐一列出排量；如需逐车型参数页核验见 sources",
+        "bmw-motorrad.cn 无法访问（curl 000），实际中国官网为 bmw-motorrad.com.cn；百度百科所引 S 1000 RR 249900 元与官网现行 231900 元起不同，采用官网价"
+      ],
+      "sources": [
+        "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
+        "https://www.bmw-motorrad.com.cn/zh/home.html",
+        "https://motor-digitalprod2.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+      ],
+      "note": "型号与「建议零售价」全部取自 BMW Motorrad 中国官网「全部车型」总览页（按探险/旅行/继承者/街车/运动/M/都市出行系列逐条列出），该页说明「本页所示的价格为 BMW 摩托车公布的建议零售价」。全部在售燃油车型排量均 ≥250cc（最低 G 310 R 313cc、C 400 350cc）。logoUrl 为官网 header BMW Motorrad logo SVG 直链。"
+    },
+    {
+      "id": "honda",
+      "name": "本田",
+      "nameEn": "HONDA",
+      "company": "本田摩托车销售（上海）有限公司 / 本田技研工业（中国）投资有限公司（Honda DreamWing / Honda Dream 进口渠道）",
+      "category": "进口大贸",
+      "subCategory": "进口大贸",
+      "group": "进口大贸",
+      "website": "https://www.honda.com.cn/motorcycle.html",
+      "logo": {
+        "file": "assets/logos/honda.svg",
+        "status": "ok",
+        "source": "https://www.honda.com.cn/static/home/images/logo.svg",
+        "note": null
+      },
+      "logoDark": false,
+      "models": [
+        {
+          "name": "CB500 SUPER FOUR",
+          "cc": null,
+          "type": "复古",
+          "price": "42980~43480元",
+          "source": "https://www.honda.com.cn/motorcycle.html",
+          "bucket": "未标注"
+        },
+        {
+          "name": "CBR500R FOUR",
+          "cc": null,
+          "type": "仿赛",
+          "price": null,
+          "source": "https://www.honda.com.cn/motorcycle.html",
+          "bucket": "未标注"
+        },
+        {
+          "name": "CBR650R",
+          "cc": 649,
+          "type": "仿赛",
+          "price": "82800元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "CB650R",
+          "cc": 649,
+          "type": "街车",
+          "price": "76800元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "CB750",
+          "cc": 755,
+          "type": "街车",
+          "price": "68800元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "CB1000 SP Honda HORNET",
+          "cc": 1000,
+          "type": "街车",
+          "price": "128800元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "CB1300",
+          "cc": 1284,
+          "type": "复古",
+          "price": "152800~175800元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "CBR400R",
+          "cc": 399,
+          "type": "仿赛",
+          "price": "30980元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "CB400F",
+          "cc": 399,
+          "type": "街车",
+          "price": "27980元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "NX400",
+          "cc": 399,
+          "type": "拉力ADV",
+          "price": "29980~35980元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "NC750X",
+          "cc": 745,
+          "type": "拉力ADV",
+          "price": "91800元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "XL750 TRANSALP",
+          "cc": 755,
+          "type": "拉力ADV",
+          "price": "88800元",
+          "source": "https://www.honda.com.cn/motorcycle.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "CRF1100L Africa Twin",
+          "cc": 1084,
+          "type": "拉力ADV",
+          "price": "150800~185800元",
+          "source": "https://www.honda-motorcycles.com.cn/",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "CM500",
+          "cc": 471,
+          "type": "巡航",
+          "price": "59800元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "CM1100",
+          "cc": 1084,
+          "type": "巡航",
+          "price": "122800元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "NT1100",
+          "cc": 1084,
+          "type": "旅行",
+          "price": "153800元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "NSS350",
+          "cc": 330,
+          "type": "踏板",
+          "price": "40880元",
+          "source": "https://www.honda.com.cn/motorcycle.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "ADV350",
+          "cc": 330,
+          "type": "踏板",
+          "price": "42380元",
+          "source": "https://www.honda.com.cn/motorcycle.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "NSS750",
+          "cc": 745,
+          "type": "踏板",
+          "price": "126800元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "X-ADV",
+          "cc": 745,
+          "type": "踏板",
+          "price": "129800元",
+          "source": "https://www.honda.com.cn/motorcycle.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "GL1800 Gold Wing",
+          "cc": 1833,
+          "type": "旅行",
+          "price": "342800~408800元",
+          "source": "https://www.honda.com.cn/motorcycle.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "CL500",
+          "cc": 471,
+          "type": "复古",
+          "price": "58800元",
+          "source": "https://m.58moto.com/news/10692442?share=1",
+          "bucket": "400-699cc"
+        }
+      ],
+      "modelCount": 22,
+      "uncertain": [
+        "CM300(286cc)、CL300、CL500、CB500F、CB500X、CBR500R、CB1000R、CB1100 等在摩托范本田在售页有报价，但未出现在 honda.com.cn 当前「全部车型」列表，按宁可少列未计入",
+        "CBR400R / CB400F / NX400 属 Honda Dream 渠道（挂 HONDA 标、本田中国销售体系），由五羊本田代工但不在五羊/新大洲合资品牌官网在售列表中；合资组已在 brands_c.json 说明并移交本组，故在此收录",
+        "CB500 SUPER FOUR / CBR500R FOUR 为 2026 新四缸车型，官网静态页未公示精确排量，cc 记 null；GL1800 Gold Wing Tour 50周年纪念版并入主型号"
+      ],
+      "sources": [
+        "https://www.honda.com.cn/motorcycle.html",
+        "https://www.honda.com.cn/motorcycle.html?type=list",
+        "https://www.honda-dreamwing.com.cn/",
+        "https://www.honda-motorcycles.com.cn/",
+        "https://m.58moto.com/brand/470",
+        "https://www.58moto.com/merchant/car/296036?id=211"
+      ],
+      "note": "型号名单以 honda.com.cn/motorcycle.html 首页「推荐车型」+ ?type=list「全部车型」为准（两处均为本田中国官网现行在售阵容），并按分类归入仿赛/街车/巡航/复古/拉力ADV/踏板/旅行；官网车型详情页「建议零售价」为 JS 动态加载、静态页未公示，故价格取摩托范本田进口在售车型指导价（m.58moto.com/brand/470 与 58moto 经销商在售页 id=211），已在 uncertain 中标注。logoUrl 为 honda.com.cn header img src；DreamWing 站另有 header logo https://www.honda-dreamwing.com.cn/static/images/head/logo.png。PCX160、NSS350 以外的 125/150/190cc 及弯梁车型（CB190TR、GL150U、LD125、LEAD125、Cross Cub、Wave 等）<250cc 全部排除。"
     },
     {
       "id": "triumph",
@@ -3551,398 +4232,173 @@
       "note": "型号取自凯旋中国官网「最新车型」与各系列页（ROADSTERS / ADVENTURE / MODERN CLASSICS / Rocket 3 / SPORT），在售状态与指导价以摩托范凯旋品牌在售页（含 2026 款 Speed 400、Thruxton 400、Tracker 400、Trident 800 等新车）核实。全部在售型号排量 ≥250cc（最低 400 系列 398cc）。logoUrl 为官网 header logo.svg 直链。"
     },
     {
-      "id": "honda",
-      "name": "本田",
-      "nameEn": "HONDA",
-      "company": "本田摩托车销售（上海）有限公司 / 本田技研工业（中国）投资有限公司（Honda DreamWing / Honda Dream 进口渠道）",
+      "id": "harley-davidson",
+      "name": "哈雷戴维森",
+      "nameEn": "HARLEY-DAVIDSON",
+      "company": "哈雷戴维森（上海）商贸有限公司 / Harley-Davidson, Inc.",
       "category": "进口大贸",
       "subCategory": "进口大贸",
       "group": "进口大贸",
-      "website": "https://www.honda.com.cn/motorcycle.html",
+      "website": "https://www.harley-davidson.cn/",
       "logo": {
-        "file": "assets/logos/honda.svg",
+        "file": "assets/logos/harley-davidson.png",
         "status": "ok",
-        "source": "https://www.honda.com.cn/static/home/images/logo.svg",
+        "source": "https://www.harley-davidson.cn/dam/content/dam/h-d/images/logo/Harley-Davidson-Logo-2026-2-RGB-BW-260225.png",
         "note": null
       },
       "logoDark": false,
       "models": [
         {
-          "name": "CB500 SUPER FOUR",
-          "cc": null,
-          "type": "复古",
-          "price": "42980~43480元",
-          "source": "https://www.honda.com.cn/motorcycle.html",
-          "bucket": "未标注"
+          "name": "Street Glide®",
+          "cc": 1923,
+          "type": "旅行",
+          "price": "368800元起",
+          "source": "http://harley-davidson.cn/",
+          "bucket": "1000cc以上"
         },
         {
-          "name": "CBR500R FOUR",
-          "cc": null,
-          "type": "仿赛",
+          "name": "Road Glide®",
+          "cc": 1923,
+          "type": "旅行",
+          "price": "418800元起",
+          "source": "http://harley-davidson.cn/",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "CVO™ Street Glide®",
+          "cc": 1923,
+          "type": "旅行",
+          "price": "518800元起",
+          "source": "http://harley-davidson.cn/",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "CVO™ Road Glide® ST",
+          "cc": 1923,
+          "type": "旅行",
+          "price": "528800元起",
+          "source": "http://harley-davidson.cn/",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "Street Bob®",
+          "cc": 1923,
+          "type": "巡航",
           "price": null,
-          "source": "https://www.honda.com.cn/motorcycle.html",
-          "bucket": "未标注"
-        },
-        {
-          "name": "CBR650R",
-          "cc": 649,
-          "type": "仿赛",
-          "price": "82800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
-          "bucket": "400-699cc"
-        },
-        {
-          "name": "CB650R",
-          "cc": 649,
-          "type": "街车",
-          "price": "76800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
-          "bucket": "400-699cc"
-        },
-        {
-          "name": "CB750",
-          "cc": 755,
-          "type": "街车",
-          "price": "68800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "CB1000 SP Honda HORNET",
-          "cc": 1000,
-          "type": "街车",
-          "price": "128800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "source": "http://harley-davidson.cn/",
           "bucket": "1000cc以上"
         },
         {
-          "name": "CB1300",
-          "cc": 1284,
-          "type": "复古",
-          "price": "152800~175800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "CBR400R",
-          "cc": 399,
-          "type": "仿赛",
-          "price": "30980元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "CB400F",
-          "cc": 399,
-          "type": "街车",
-          "price": "27980元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "NX400",
-          "cc": 399,
-          "type": "拉力ADV",
-          "price": "29980~35980元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "NC750X",
-          "cc": 745,
-          "type": "拉力ADV",
-          "price": "91800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "XL750 TRANSALP",
-          "cc": 755,
-          "type": "拉力ADV",
-          "price": "88800元",
-          "source": "https://www.honda.com.cn/motorcycle.html",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "CRF1100L Africa Twin",
-          "cc": 1084,
-          "type": "拉力ADV",
-          "price": "150800~185800元",
-          "source": "https://www.honda-motorcycles.com.cn/",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "CM500",
-          "cc": 471,
+          "name": "Low Rider® S",
+          "cc": 1923,
           "type": "巡航",
-          "price": "59800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
-          "bucket": "400-699cc"
+          "price": "175800元起",
+          "source": "http://harley-davidson.cn/",
+          "bucket": "1000cc以上"
         },
         {
-          "name": "CM1100",
-          "cc": 1084,
+          "name": "Breakout®",
+          "cc": 1923,
           "type": "巡航",
-          "price": "122800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "price": "225800元起",
+          "source": "http://harley-davidson.cn/",
           "bucket": "1000cc以上"
         },
         {
-          "name": "NT1100",
-          "cc": 1084,
-          "type": "旅行",
-          "price": "153800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "name": "Fat Boy®",
+          "cc": 1923,
+          "type": "巡航",
+          "price": "255800元起",
+          "source": "http://harley-davidson.cn/",
           "bucket": "1000cc以上"
         },
         {
-          "name": "NSS350",
-          "cc": 330,
-          "type": "踏板",
-          "price": "40880元",
-          "source": "https://www.honda.com.cn/motorcycle.html",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "ADV350",
-          "cc": 330,
-          "type": "踏板",
-          "price": "42380元",
-          "source": "https://www.honda.com.cn/motorcycle.html",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "NSS750",
-          "cc": 745,
-          "type": "踏板",
-          "price": "126800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "name": "Nightster™",
+          "cc": 975,
+          "type": "巡航",
+          "price": "75800元起",
+          "source": "http://harley-davidson.cn/",
           "bucket": "700-999cc"
         },
         {
-          "name": "X-ADV",
-          "cc": 745,
-          "type": "踏板",
-          "price": "129800元",
-          "source": "https://www.honda.com.cn/motorcycle.html",
-          "bucket": "700-999cc"
+          "name": "Sportster® S",
+          "cc": 1250,
+          "type": "巡航",
+          "price": "105800元起",
+          "source": "http://harley-davidson.cn/",
+          "bucket": "1000cc以上"
         },
         {
-          "name": "GL1800 Gold Wing",
-          "cc": 1833,
+          "name": "Road Glide® 3",
+          "cc": 1923,
+          "type": "巡航",
+          "price": "648800元起",
+          "source": "http://harley-davidson.cn/",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "Street Glide® 3 Limited",
+          "cc": 1923,
+          "type": "巡航",
+          "price": "668800元起",
+          "source": "http://harley-davidson.cn/",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "Street Glide® Limited",
+          "cc": 1923,
           "type": "旅行",
-          "price": "342800~408800元",
-          "source": "https://www.honda.com.cn/motorcycle.html",
+          "price": "429800元",
+          "source": "https://harley-davidson.cn/cn/zh/motorcycles/index.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "Road Glide® Limited",
+          "cc": 1923,
+          "type": "旅行",
+          "price": "449800元",
+          "source": "https://harley-davidson.cn/cn/zh/motorcycles/index.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "CVO™ Street Glide® ST",
+          "cc": 1977,
+          "type": "旅行",
+          "price": "518800元",
+          "source": "https://harley-davidson.cn/cn/zh/motorcycles/index.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "CVO™ Street Glide® Limited",
+          "cc": 1977,
+          "type": "旅行",
+          "price": "538800元",
+          "source": "https://harley-davidson.cn/cn/zh/motorcycles/index.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "CVO™ Street Glide® 3 Limited",
+          "cc": 1977,
+          "type": "倒三轮",
+          "price": null,
+          "source": "https://harley-davidson.cn/cn/zh/motorcycles/cvo.html",
           "bucket": "1000cc以上"
         }
       ],
-      "modelCount": 21,
+      "modelCount": 17,
       "uncertain": [
-        "CM300(286cc)、CL300、CL500、CB500F、CB500X、CBR500R、CB1000R、CB1100 等在摩托范本田在售页有报价，但未出现在 honda.com.cn 当前「全部车型」列表，按宁可少列未计入",
-        "CBR400R / CB400F / NX400 属 Honda Dream 渠道（挂 HONDA 标、本田中国销售体系），由五羊本田代工但不在五羊/新大洲合资品牌官网在售列表中；合资组已在 brands_c.json 说明并移交本组，故在此收录",
-        "CB500 SUPER FOUR / CBR500R FOUR 为 2026 新四缸车型，官网静态页未公示精确排量，cc 记 null；GL1800 Gold Wing Tour 50周年纪念版并入主型号"
+        "Pan America™ 1250 Special 官网明确标注「此款车型中国市场暂不销售」，未收录",
+        "CVO™ Street Glide® ST / Limited、CVO™ Street Glide® 3 Limited、Street Bob® 官网显示「起售价 敬请期待」，价格记 null 或按合并规则并入主型号",
+        "各车型 cc 为 Milwaukee-Eight 117(1923cc) 与 Revolution Max 975T/1250 官方标称排量，官网车型列表页仅列型号名与起售价、未逐一列出排量",
+        "harley-davidson.com.cn 无法访问（curl 000），实际中国官网为 harley-davidson.cn / www.harley-davidson.cn；Street Glide® Limited、Road Glide® Limited、Fat Boy 等 Limited/特别版按合并规则并入主型号"
       ],
       "sources": [
-        "https://www.honda.com.cn/motorcycle.html",
-        "https://www.honda.com.cn/motorcycle.html?type=list",
-        "https://www.honda-dreamwing.com.cn/",
-        "https://www.honda-motorcycles.com.cn/",
-        "https://m.58moto.com/brand/470",
-        "https://www.58moto.com/merchant/car/296036?id=211"
+        "http://harley-davidson.cn/",
+        "https://www.harley-davidson.cn/cn/zh/motorcycles/index.html",
+        "https://www.harley-davidson.cn/cn/zh/",
+        "https://baike.baidu.com/view/9566585.htm"
       ],
-      "note": "型号名单以 honda.com.cn/motorcycle.html 首页「推荐车型」+ ?type=list「全部车型」为准（两处均为本田中国官网现行在售阵容），并按分类归入仿赛/街车/巡航/复古/拉力ADV/踏板/旅行；官网车型详情页「建议零售价」为 JS 动态加载、静态页未公示，故价格取摩托范本田进口在售车型指导价（m.58moto.com/brand/470 与 58moto 经销商在售页 id=211），已在 uncertain 中标注。logoUrl 为 honda.com.cn header img src；DreamWing 站另有 header logo https://www.honda-dreamwing.com.cn/static/images/head/logo.png。PCX160、NSS350 以外的 125/150/190cc 及弯梁车型（CB190TR、GL150U、LD125、LEAD125、Cross Cub、Wave 等）<250cc 全部排除。"
-    },
-    {
-      "id": "bmw",
-      "name": "宝马",
-      "nameEn": "BMW MOTORRAD",
-      "company": "宝马（中国）汽车贸易有限公司（BMW Motorrad 中国）",
-      "category": "进口大贸",
-      "subCategory": "进口大贸",
-      "group": "进口大贸",
-      "website": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-      "logo": {
-        "file": "assets/logos/bmw.svg",
-        "status": "ok",
-        "source": "https://www.bmw-motorrad.com.cn/content/dam/bmwmotorradnsc/common/mnm/graphics/bmw_motorrad_logo.svg.asset.1672301077293.svg",
-        "note": null
-      },
-      "logoDark": false,
-      "models": [
-        {
-          "name": "R 1300 GS",
-          "cc": 1300,
-          "type": "拉力ADV",
-          "price": "235900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "R 1300 GS Adventure",
-          "cc": 1300,
-          "type": "拉力ADV",
-          "price": "273900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "F 900 GS",
-          "cc": 895,
-          "type": "拉力ADV",
-          "price": "125900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "F 900 GS Adventure",
-          "cc": 895,
-          "type": "拉力ADV",
-          "price": "149900元",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "F 800 GS",
-          "cc": 895,
-          "type": "拉力ADV",
-          "price": "99900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "K 1600 GTL",
-          "cc": 1649,
-          "type": "旅行",
-          "price": "423900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "R 1300 RT",
-          "cc": 1300,
-          "type": "旅行",
-          "price": "319900元",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "R 12",
-          "cc": 1170,
-          "type": "巡航",
-          "price": "137900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "R 12 nineT",
-          "cc": 1170,
-          "type": "复古",
-          "price": "189900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "R 12 S",
-          "cc": 1170,
-          "type": "复古",
-          "price": "219900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "R 12 G/S",
-          "cc": 1170,
-          "type": "复古",
-          "price": "179900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "R 18",
-          "cc": 1802,
-          "type": "巡航",
-          "price": "159900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "G 310 R",
-          "cc": 313,
-          "type": "街车",
-          "price": "49900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "F 900 R",
-          "cc": 895,
-          "type": "街车",
-          "price": "118900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "S 1000 R",
-          "cc": 999,
-          "type": "街车",
-          "price": "199900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "S 1000 RR",
-          "cc": 999,
-          "type": "仿赛",
-          "price": "231900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "M 1000 R",
-          "cc": 999,
-          "type": "街车",
-          "price": "239900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "M 1000 XR",
-          "cc": 999,
-          "type": "旅行",
-          "price": "250900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "C 400 X",
-          "cc": 350,
-          "type": "踏板",
-          "price": "61900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "250-399cc"
-        },
-        {
-          "name": "C 400 GT",
-          "cc": 350,
-          "type": "踏板",
-          "price": "81900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-          "bucket": "250-399cc"
-        }
-      ],
-      "modelCount": 20,
-      "uncertain": [
-        "R 18 造梦者/拳击手/传承者/泰坦/游侠/洲际旅行家等版本按规则合并为 R 18 主型号，价格取最低 159900 元",
-        "CE 02 为电动摩托车、无排量，排除",
-        "cc 为 BMW 各系列官方标称排量，车型总览页仅列型号名与价格、未逐一列出排量；如需逐车型参数页核验见 sources",
-        "bmw-motorrad.cn 无法访问（curl 000），实际中国官网为 bmw-motorrad.com.cn；百度百科所引 S 1000 RR 249900 元与官网现行 231900 元起不同，采用官网价"
-      ],
-      "sources": [
-        "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
-        "https://www.bmw-motorrad.com.cn/zh/home.html",
-        "https://motor-digitalprod2.bmw-motorrad.com.cn/zh/models/modeloverview.html"
-      ],
-      "note": "型号与「建议零售价」全部取自 BMW Motorrad 中国官网「全部车型」总览页（按探险/旅行/继承者/街车/运动/M/都市出行系列逐条列出），该页说明「本页所示的价格为 BMW 摩托车公布的建议零售价」。全部在售燃油车型排量均 ≥250cc（最低 G 310 R 313cc、C 400 350cc）。logoUrl 为官网 header BMW Motorrad logo SVG 直链。"
+      "note": "型号与「起售价」全部取自哈雷戴维森中国官网 2026 年款摩托车选购页（旅行车系 / 巡航车系 / 三轮车系 / 运动车系逐条列出）。全部在售燃油车型排量 ≥250cc（最低 Nightster 975cc）。logoUrl 为官网 header logo img src。百度百科 2026 年款价目表与官网一致，用于交叉核对。"
     },
     {
       "id": "ducati",
@@ -4080,9 +4536,17 @@
           "price": "107900元",
           "source": "https://m.58moto.com/brand/251",
           "bucket": "400-699cc"
+        },
+        {
+          "name": "Hypermotard 698 Mono",
+          "cc": 659,
+          "type": "其他",
+          "price": null,
+          "source": "https://m.lianglunshijie.com/htmlry/cpkd/146547.html",
+          "bucket": "400-699cc"
         }
       ],
-      "modelCount": 15,
+      "modelCount": 16,
       "uncertain": [
         "官网首页「杜卡迪最新车型」另列 Panigale V4 R、New Multistrada V4 Rally(238000元起)、Multistrada V4 RS、DIAVEL V4 RS、Superleggera V4 Centenario、New Panigale V4 Lamborghini 等特别版/限量版，按合并规则未单列",
         "Panigale V2/V2S(138900/158900元)、Streetfighter V2/V2S、Multistrada V2/V2S、Panigale V4/V4S 等 S 版按规则合并为主型号，价格取区间下限",
@@ -4226,9 +4690,17 @@
           "price": "258000元",
           "source": "https://m.58moto.com/brand/208",
           "bucket": "700-999cc"
+        },
+        {
+          "name": "MT-09 SP",
+          "cc": 890,
+          "type": "街车",
+          "price": "139800元",
+          "source": "https://www.yamaha-motor.com.cn/mc/products/mt-09sp/",
+          "bucket": "700-999cc"
         }
       ],
-      "modelCount": 14,
+      "modelCount": 15,
       "uncertain": [
         "YZF-R1M(299800元)、YZF-R1/R9 70周年纪念版、MT-09SP、MT-10SP、XMAX TECH MAX / TECH MAX+ / 25周年纪念版、TMAX 560 TECH MAX 25周年纪念版、NMAX TECH MAX 等版本/纪念版按规则合并入主型号，未单列",
         "TRACER 9GT+ / TENERE 700 / XS 900 R / NIKEN GT 型号名取自官网产品一览，指导价取自摩托范雅马哈品牌在售页（官网该几款未公示静态价）",
@@ -4243,133 +4715,279 @@
       "note": "型号与官方建议零售价主要取自雅马哈中国官网「产品一览」页（R/MAX/MT 系列各车型页均列「官方建议零售价」）；官网有 JS 反爬挑战，直接 curl 返回加密页，故用 WebFetch 渲染取得官网原文，并用摩托范品牌在售页交叉核对。YZF-R3(321cc)、MT-03(321cc)、XMAX 300(292cc) 按 ≥250cc 收录。官网 header logo 为 CSS/JS 注入，未抓到 img src，logoUrl 记 null。"
     },
     {
-      "id": "harley-davidson",
-      "name": "哈雷戴维森",
-      "nameEn": "HARLEY-DAVIDSON",
-      "company": "哈雷戴维森（上海）商贸有限公司 / Harley-Davidson, Inc.",
+      "id": "royal-enfield",
+      "name": "皇家恩菲尔德",
+      "nameEn": "ROYAL ENFIELD",
+      "company": "Royal Enfield（印度 Eicher Motors 旗下）",
       "category": "进口大贸",
       "subCategory": "进口大贸",
       "group": "进口大贸",
-      "website": "https://www.harley-davidson.cn/",
+      "website": "https://www.royalenfield.com/",
       "logo": {
-        "file": "assets/logos/harley-davidson.png",
+        "file": "assets/logos/royal-enfield.webp",
         "status": "ok",
-        "source": "https://www.harley-davidson.cn/dam/content/dam/h-d/images/logo/Harley-Davidson-Logo-2026-2-RGB-BW-260225.png",
+        "source": "https://www.royalenfield.com/content/dam/RE-Platform-Revamp/re-revamp-commons/logo.webp",
         "note": null
       },
       "logoDark": false,
       "models": [
         {
-          "name": "Street Glide®",
-          "cc": 1923,
-          "type": "旅行",
-          "price": "368800元起",
-          "source": "http://harley-davidson.cn/",
-          "bucket": "1000cc以上"
+          "name": "Classic 350",
+          "cc": 349,
+          "type": "复古",
+          "price": null,
+          "source": "https://www.royalenfield.com/",
+          "bucket": "250-399cc"
         },
         {
-          "name": "Road Glide®",
-          "cc": 1923,
-          "type": "旅行",
-          "price": "418800元起",
-          "source": "http://harley-davidson.cn/",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "CVO™ Street Glide®",
-          "cc": 1923,
-          "type": "旅行",
-          "price": "518800元起",
-          "source": "http://harley-davidson.cn/",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "CVO™ Road Glide® ST",
-          "cc": 1923,
-          "type": "旅行",
-          "price": "528800元起",
-          "source": "http://harley-davidson.cn/",
-          "bucket": "1000cc以上"
-        },
-        {
-          "name": "Street Bob®",
-          "cc": 1923,
+          "name": "Meteor 350",
+          "cc": 349,
           "type": "巡航",
           "price": null,
-          "source": "http://harley-davidson.cn/",
-          "bucket": "1000cc以上"
+          "source": "https://www.royalenfield.com/",
+          "bucket": "250-399cc"
         },
         {
-          "name": "Low Rider® S",
-          "cc": 1923,
+          "name": "Hunter 350",
+          "cc": 349,
+          "type": "街车",
+          "price": null,
+          "source": "https://www.royalenfield.com/",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "Bullet 350",
+          "cc": 349,
+          "type": "复古",
+          "price": null,
+          "source": "https://www.royalenfield.com/",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "Goan Classic 350",
+          "cc": 349,
+          "type": "复古",
+          "price": null,
+          "source": "https://www.royalenfield.com/",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "Himalayan 450",
+          "cc": 452,
+          "type": "拉力ADV",
+          "price": null,
+          "source": "https://www.royalenfield.com/",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "Guerrilla 450",
+          "cc": 452,
+          "type": "街车",
+          "price": null,
+          "source": "https://www.royalenfield.com/",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "Interceptor 650",
+          "cc": 648,
+          "type": "街车",
+          "price": null,
+          "source": "https://www.royalenfield.com/",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "Continental GT 650",
+          "cc": 648,
+          "type": "复古",
+          "price": null,
+          "source": "https://www.royalenfield.com/",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "Super Meteor 650",
+          "cc": 648,
           "type": "巡航",
-          "price": "175800元起",
-          "source": "http://harley-davidson.cn/",
-          "bucket": "1000cc以上"
+          "price": null,
+          "source": "https://www.royalenfield.com/",
+          "bucket": "400-699cc"
         },
         {
-          "name": "Breakout®",
-          "cc": 1923,
+          "name": "Shotgun 650",
+          "cc": 648,
           "type": "巡航",
-          "price": "225800元起",
-          "source": "http://harley-davidson.cn/",
-          "bucket": "1000cc以上"
+          "price": null,
+          "source": "https://www.royalenfield.com/",
+          "bucket": "400-699cc"
         },
         {
-          "name": "Fat Boy®",
-          "cc": 1923,
-          "type": "巡航",
-          "price": "255800元起",
-          "source": "http://harley-davidson.cn/",
-          "bucket": "1000cc以上"
+          "name": "Bear 650",
+          "cc": 648,
+          "type": "复古",
+          "price": null,
+          "source": "https://www.royalenfield.com/",
+          "bucket": "400-699cc"
         },
         {
-          "name": "Nightster™",
-          "cc": 975,
-          "type": "巡航",
-          "price": "75800元起",
-          "source": "http://harley-davidson.cn/",
-          "bucket": "700-999cc"
+          "name": "Classic 650",
+          "cc": 648,
+          "type": "复古",
+          "price": null,
+          "source": "https://www.royalenfield.com/",
+          "bucket": "400-699cc"
         },
         {
-          "name": "Sportster® S",
+          "name": "Bullet 650",
+          "cc": 648,
+          "type": "复古",
+          "price": null,
+          "source": "https://www.royalenfield.com/",
+          "bucket": "400-699cc"
+        }
+      ],
+      "modelCount": 14,
+      "uncertain": [],
+      "sources": [
+        "https://www.royalenfield.com/",
+        "https://post.smzdm.com/p/am9x6x6v/",
+        "https://new.qq.com/rain/a/20261103A0000800",
+        "https://www.lianglunshijie.com/brand/KTM302/"
+      ],
+      "note": "皇家恩菲尔德(Royal Enfield)截至2026-11尚未以官方大贸身份正式进入中国大陆市场，仅在台湾地区由太古汽车于2025-12引进（官方指导价为新台币NTD，非人民币）。大陆市场可见车辆多为平行进口(小贸)，无统一官方人民币指导价，故本表14款价格均以「—」(null)占位，不作估算。下列型号为RE全球在售真实车系；是否保留本品牌（平行进口在售）由看板维护者决定。"
+    },
+    {
+      "id": "indian",
+      "name": "印第安",
+      "nameEn": "INDIAN MOTORCYCLE",
+      "company": "印第安摩托中国 / Polaris Inc.（北极星工业）",
+      "category": "进口大贸",
+      "subCategory": "进口大贸",
+      "group": "进口大贸",
+      "website": "https://www.indianmotorcycle.cn/",
+      "logo": {
+        "file": "assets/logos/indian.png",
+        "status": "ok",
+        "source": "https://www.indianmotorcycle.cn/images/logo.png",
+        "note": null
+      },
+      "logoDark": false,
+      "models": [
+        {
+          "name": "SCOUT CLASSIC",
           "cc": 1250,
           "type": "巡航",
-          "price": "105800元起",
-          "source": "http://harley-davidson.cn/",
+          "price": "148800元起",
+          "source": "https://www.indianmotorcycle.cn/car-classification.html",
           "bucket": "1000cc以上"
         },
         {
-          "name": "Road Glide® 3",
-          "cc": 1923,
+          "name": "SCOUT BOBBER",
+          "cc": 1250,
           "type": "巡航",
-          "price": "648800元起",
-          "source": "http://harley-davidson.cn/",
+          "price": "148800元",
+          "source": "https://www.indianmotorcycle.cn/car-classification.html",
           "bucket": "1000cc以上"
         },
         {
-          "name": "Street Glide® 3 Limited",
-          "cc": 1923,
+          "name": "101 SCOUT",
+          "cc": 1250,
           "type": "巡航",
-          "price": "668800元起",
-          "source": "http://harley-davidson.cn/",
+          "price": "188800元",
+          "source": "https://www.indianmotorcycle.cn/car-classification.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "SPORT SCOUT",
+          "cc": 1250,
+          "type": "巡航",
+          "price": "148800元",
+          "source": "https://www.indianmotorcycle.cn/car-classification.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "SPRINGFIELD",
+          "cc": 1890,
+          "type": "旅行",
+          "price": "329800元",
+          "source": "https://www.indianmotorcycle.cn/car-classification.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "ROADMASTER",
+          "cc": 1890,
+          "type": "旅行",
+          "price": "468000元起",
+          "source": "https://www.indianmotorcycle.cn/car-classification.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "CHALLENGER",
+          "cc": 1768,
+          "type": "旅行",
+          "price": "408000元",
+          "source": "https://www.indianmotorcycle.cn/car-classification.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "PURSUIT",
+          "cc": 1768,
+          "type": "旅行",
+          "price": "488000元",
+          "source": "https://www.indianmotorcycle.cn/car-classification.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "CHIEF",
+          "cc": 1890,
+          "type": "巡航",
+          "price": "199800元",
+          "source": "https://www.indianmotorcycle.cn/",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "CHIEF DARK HORSE",
+          "cc": 1890,
+          "type": "巡航",
+          "price": "246800元",
+          "source": "https://m.autohome.com.cn/motorbike/series/10000193",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "CHIEF BOBBER DARK HORSE",
+          "cc": 1890,
+          "type": "巡航",
+          "price": "256800元",
+          "source": "https://m.autohome.com.cn/motorbike/series/10000193",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "SUPER CHIEF",
+          "cc": 1890,
+          "type": "巡航",
+          "price": "269800元",
+          "source": "https://m.autohome.com.cn/motorbike/series/10000193",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "SPORT CHIEF",
+          "cc": 1890,
+          "type": "巡航",
+          "price": "256800元",
+          "source": "https://m.autohome.com.cn/motorbike/series/10000193",
           "bucket": "1000cc以上"
         }
       ],
-      "modelCount": 12,
+      "modelCount": 13,
       "uncertain": [
-        "Pan America™ 1250 Special 官网明确标注「此款车型中国市场暂不销售」，未收录",
-        "CVO™ Street Glide® ST / Limited、CVO™ Street Glide® 3 Limited、Street Bob® 官网显示「起售价 敬请期待」，价格记 null 或按合并规则并入主型号",
-        "各车型 cc 为 Milwaukee-Eight 117(1923cc) 与 Revolution Max 975T/1250 官方标称排量，官网车型列表页仅列型号名与起售价、未逐一列出排量",
-        "harley-davidson.com.cn 无法访问（curl 000），实际中国官网为 harley-davidson.cn / www.harley-davidson.cn；Street Glide® Limited、Road Glide® Limited、Fat Boy 等 Limited/特别版按合并规则并入主型号"
+        "官网车型列表页仅列车型名与起售价，未列排量；cc 为 Indian Thunderstroke 116(1890cc)、PowerPlus(1768cc)、SpeedPlus 1250 官方标称排量",
+        "SPRINGFIELD DARK HORSE、ROADMASTER LIMITED/ELITE、CHALLENGER DARK HORSE/LIMITED、PURSUIT DARK HORSE 等版本按规则合并入主型号",
+        "摩托范另列 FTR 1200(159800~189800元)、Chief、Chieftain、Vintage、Scout 等有指导价车型，但印第安中国官网「车型列表」当前未列，按宁可少列未计入"
       ],
       "sources": [
-        "http://harley-davidson.cn/",
-        "https://www.harley-davidson.cn/cn/zh/motorcycles/index.html",
-        "https://www.harley-davidson.cn/cn/zh/",
-        "https://baike.baidu.com/view/9566585.htm"
+        "https://www.indianmotorcycle.cn/car-classification.html",
+        "https://www.indianmotorcycle.cn/",
+        "https://www.58moto.com/brand/Y-279.html"
       ],
-      "note": "型号与「起售价」全部取自哈雷戴维森中国官网 2026 年款摩托车选购页（旅行车系 / 巡航车系 / 三轮车系 / 运动车系逐条列出）。全部在售燃油车型排量 ≥250cc（最低 Nightster 975cc）。logoUrl 为官网 header logo img src。百度百科 2026 年款价目表与官网一致，用于交叉核对。"
+      "note": "型号与价格逐条取自印第安摩托中国官网「车型列表」页（SCOUT / SPRINGFIELD / ROADMASTER / CHALLENGER / PURSUIT 车系，均标 2025 年款与 ¥ 起售价）。全部在售车型排量 ≥250cc。logoUrl 为官网 header img src。"
     },
     {
       "id": "ktm",
@@ -4467,9 +5085,25 @@
           "price": "219800元起",
           "source": "https://www.58moto.com/brand/H-254.html",
           "bucket": "1000cc以上"
+        },
+        {
+          "name": "250 Duke",
+          "cc": 249,
+          "type": "街车",
+          "price": "34980元",
+          "source": "https://www.ktm.com/zh-cn/models/naked-bike/250-duke-2022.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "390 Adventure",
+          "cc": 373,
+          "type": "拉力ADV",
+          "price": "53800元",
+          "source": "https://www.ktm.com/zh-cn/models/travel/ktm-390-adventure2021.html",
+          "bucket": "250-399cc"
         }
       ],
-      "modelCount": 10,
+      "modelCount": 12,
       "uncertain": [
         "KTM 中国无独立官网车型/价目页：ktmchina.cn 实为无关「汽车服务网」站点，ktm.com 为全球站仅列车型不列中国建议零售价；按任务要求改用摩托范 KTMR2R 品牌在售页核实",
         "790 Duke 2025 款官方指导价 69800 元，2026/2027 款摩托范报道降至 59800 元，本表采用现行 59800 元",
@@ -4488,99 +5122,233 @@
       "note": "任务指定「ktm.com 中国 / KTM China」，但中国大陆无可用的官方车型价目页，故按任务允许用摩托范（58moto）KTMR2R 品牌在售页核实，仅收录该页有明确指导价且排量 ≥250cc 的公路车型。全球站 ktm.com 与摩托范交叉核对型号名。未抓到官网 header logo 的 img src，logoUrl 记 null。"
     },
     {
-      "id": "indian",
-      "name": "印第安",
-      "nameEn": "INDIAN MOTORCYCLE",
-      "company": "印第安摩托中国 / Polaris Inc.（北极星工业）",
+      "id": "husqvarna",
+      "name": "胡斯瓦纳",
+      "nameEn": "HUSQVARNA",
+      "company": "Husqvarna Motorcycles GmbH（KTM/Pierer Mobility 集团）/ 中国大陆由 KTMR2R 渠道引进",
       "category": "进口大贸",
       "subCategory": "进口大贸",
       "group": "进口大贸",
-      "website": "https://www.indianmotorcycle.cn/",
+      "website": "https://www.husqvarna-motorcycles.com/",
       "logo": {
-        "file": "assets/logos/indian.png",
+        "file": "assets/logos/husqvarna.png",
         "status": "ok",
-        "source": "https://www.indianmotorcycle.cn/images/logo.png",
+        "source": "https://www.husqvarna-motorcycles.com/content/dam/websites/husqvarna-motorcycles-com/language-masters/en/logo/Husqvarna_Logo_1048x1048.png",
         "note": null
       },
       "logoDark": false,
       "models": [
         {
-          "name": "SCOUT CLASSIC",
-          "cc": 1250,
-          "type": "巡航",
-          "price": "148800元起",
-          "source": "https://www.indianmotorcycle.cn/car-classification.html",
-          "bucket": "1000cc以上"
+          "name": "Norden 901",
+          "cc": 889,
+          "type": "拉力ADV",
+          "price": "126800元",
+          "source": "https://m.58moto.com/brand/312",
+          "bucket": "700-999cc"
         },
         {
-          "name": "SCOUT BOBBER",
-          "cc": 1250,
-          "type": "巡航",
-          "price": "148800元",
-          "source": "https://www.indianmotorcycle.cn/car-classification.html",
-          "bucket": "1000cc以上"
+          "name": "Svartpilen 401",
+          "cc": 373,
+          "type": "街车",
+          "price": null,
+          "source": "https://www.husqvarna-motorcycles.com/en-cn/models/naked/svartpilen/svartpilen-401-2021.html",
+          "bucket": "250-399cc"
         },
         {
-          "name": "101 SCOUT",
-          "cc": 1250,
-          "type": "巡航",
-          "price": "188800元",
-          "source": "https://www.indianmotorcycle.cn/car-classification.html",
-          "bucket": "1000cc以上"
+          "name": "Vitpilen 401",
+          "cc": 373,
+          "type": "街车",
+          "price": null,
+          "source": "https://www.husqvarna-motorcycles.com/en-cn/models/naked/vitpilen/vitpilen-401-2021.html",
+          "bucket": "250-399cc"
         },
         {
-          "name": "SPORT SCOUT",
-          "cc": 1250,
-          "type": "巡航",
-          "price": "148800元",
-          "source": "https://www.indianmotorcycle.cn/car-classification.html",
-          "bucket": "1000cc以上"
+          "name": "Svartpilen 801",
+          "cc": 799,
+          "type": "街车",
+          "price": null,
+          "source": "https://www.husqvarna-motorcycles.com/en-cn/models/naked.html",
+          "bucket": "700-999cc"
         },
         {
-          "name": "SPRINGFIELD",
-          "cc": 1890,
-          "type": "旅行",
-          "price": "329800元",
-          "source": "https://www.indianmotorcycle.cn/car-classification.html",
-          "bucket": "1000cc以上"
+          "name": "Vitpilen 801",
+          "cc": 799,
+          "type": "街车",
+          "price": null,
+          "source": "https://www.husqvarna-motorcycles.com/en-cn/news/vitpilen-801-from-husqvarna-mobility-.html",
+          "bucket": "700-999cc"
         },
         {
-          "name": "ROADMASTER",
-          "cc": 1890,
-          "type": "旅行",
-          "price": "468000元起",
-          "source": "https://www.indianmotorcycle.cn/car-classification.html",
-          "bucket": "1000cc以上"
+          "name": "701 Enduro",
+          "cc": 693,
+          "type": "拉力ADV",
+          "price": null,
+          "source": "https://www.husqvarna-motorcycles.com/en-cn/news/701-enduro-701-supermoto-2026.html",
+          "bucket": "400-699cc"
         },
         {
-          "name": "CHALLENGER",
-          "cc": 1768,
-          "type": "旅行",
-          "price": "408000元",
-          "source": "https://www.indianmotorcycle.cn/car-classification.html",
-          "bucket": "1000cc以上"
+          "name": "701 Supermoto",
+          "cc": 693,
+          "type": "其他",
+          "price": null,
+          "source": "https://www.husqvarna-motorcycles.com/en-cn/models/supermoto/701-supermoto-2026.html",
+          "bucket": "400-699cc"
         },
         {
-          "name": "PURSUIT",
-          "cc": 1768,
-          "type": "旅行",
-          "price": "488000元",
-          "source": "https://www.indianmotorcycle.cn/car-classification.html",
-          "bucket": "1000cc以上"
+          "name": "TE 250",
+          "cc": 249,
+          "type": "越野",
+          "price": null,
+          "source": "https://www.husqvarna-motorcycles.com/en-cn/models/enduro/2-stroke/te-250-2023.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "TE 300",
+          "cc": 293,
+          "type": "越野",
+          "price": null,
+          "source": "https://www.husqvarna-motorcycles.com/en-cn/models/enduro/2-stroke/te-300-2027.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "FE 250",
+          "cc": 250,
+          "type": "越野",
+          "price": null,
+          "source": "https://www.husqvarna-motorcycles.com/en-cn/models/enduro/4-stroke/fe-250-2023.html",
+          "bucket": "250-399cc"
+        },
+        {
+          "name": "FS 450",
+          "cc": 450,
+          "type": "越野",
+          "price": null,
+          "source": "https://www.husqvarna-motorcycles.com/en-cn/models/supermoto.html",
+          "bucket": "400-699cc"
         }
       ],
-      "modelCount": 8,
+      "modelCount": 11,
       "uncertain": [
-        "官网车型列表页仅列车型名与起售价，未列排量；cc 为 Indian Thunderstroke 116(1890cc)、PowerPlus(1768cc)、SpeedPlus 1250 官方标称排量",
-        "SPRINGFIELD DARK HORSE、ROADMASTER LIMITED/ELITE、CHALLENGER DARK HORSE/LIMITED、PURSUIT DARK HORSE 等版本按规则合并入主型号",
-        "摩托范另列 FTR 1200(159800~189800元)、Chief、Chieftain、Vintage、Scout 等有指导价车型，但印第安中国官网「车型列表」当前未列，按宁可少列未计入"
+        "未找到 Husqvarna 中国独立官网车型/价目页；按任务要求改用摩托范 HUSQVARNA 品牌在售页核实",
+        "该在售页仅 Norden 901(126800元)、TE 250(86000元)、FE 250(88980元)、TC 65(51500元) 四款有指导价；TE 250 / FE 250 为 249cc（<250cc）、TC 65 为 65cc，均排除",
+        "黑箭 Svartpilen 401 / 白箭 Vitpilen 401(398cc)、Vitpilen 801 / Svartpilen 801 等在摩托范显示「暂无报价」，按未公示在售价处理，未计入 models",
+        "Norden 901 早年上市价 139800 元、2025 远征版报道 126800 元，采用摩托范现行指导价"
       ],
       "sources": [
-        "https://www.indianmotorcycle.cn/car-classification.html",
-        "https://www.indianmotorcycle.cn/",
-        "https://www.58moto.com/brand/Y-279.html"
+        "https://www.husqvarna-motorcycles.com/",
+        "https://m.58moto.com/brand/312",
+        "https://www.58moto.com/brand/H-312.html"
       ],
-      "note": "型号与价格逐条取自印第安摩托中国官网「车型列表」页（SCOUT / SPRINGFIELD / ROADMASTER / CHALLENGER / PURSUIT 车系，均标 2025 年款与 ¥ 起售价）。全部在售车型排量 ≥250cc。logoUrl 为官网 header img src。"
+      "note": "胡斯瓦纳在中国大陆无可用的官方车型价目页，按任务允许用摩托范(58moto) HUSQVARNA 品牌在售页核实，仅 1 款排量 ≥250cc 且有明确指导价的在售车型（Norden 901，889cc）。其余有报价车型均 <250cc 或无报价，宁可少列未编造。logoUrl 为 husqvarna-motorcycles.com 官网 logo 图片直链。"
+    },
+    {
+      "id": "suzuki",
+      "name": "铃木",
+      "nameEn": "SUZUKI",
+      "company": "铃木（中国）投资有限公司",
+      "category": "进口大贸",
+      "subCategory": "进口大贸",
+      "group": "进口大贸",
+      "website": "http://www.suzuki-china.com/",
+      "logo": {
+        "file": "assets/logos/suzuki.png",
+        "status": "ok",
+        "source": "http://www.suzuki-china.com/img/logo.png",
+        "note": null
+      },
+      "logoDark": false,
+      "models": [
+        {
+          "name": "GSX-8R",
+          "cc": 776,
+          "type": "仿赛",
+          "price": "89800元",
+          "source": "http://www.suzuki-china.com/moto/gsx-8r.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "GSX-8S",
+          "cc": 776,
+          "type": "街车",
+          "price": "89800元",
+          "source": "http://www.suzuki-china.com/moto/gsx-8s.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "GSX-8T",
+          "cc": 776,
+          "type": "复古",
+          "price": "95800元",
+          "source": "http://www.suzuki-china.com/moto/gsx-8t.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "V-STROM 800",
+          "cc": 776,
+          "type": "拉力ADV",
+          "price": "91800元",
+          "source": "http://www.suzuki-china.com/moto/vstrom800.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "V-STROM 800DE",
+          "cc": 776,
+          "type": "拉力ADV",
+          "price": "95800元",
+          "source": "http://www.suzuki-china.com/moto/vstrom800de.html",
+          "bucket": "700-999cc"
+        },
+        {
+          "name": "V-STROM 1050DE",
+          "cc": 1037,
+          "type": "拉力ADV",
+          "price": "119800元",
+          "source": "http://www.suzuki-china.com/moto/vstrom1050de.html",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "Hayabusa 隼 GSX1300R",
+          "cc": 1340,
+          "type": "仿赛",
+          "price": null,
+          "source": "https://www.lianglunshijie.com/brand/299/",
+          "bucket": "1000cc以上"
+        },
+        {
+          "name": "Burgman 400 汉堡人",
+          "cc": 400,
+          "type": "踏板",
+          "price": "48000元",
+          "source": "https://www.lianglunshijie.com/brand/299/",
+          "bucket": "400-699cc"
+        },
+        {
+          "name": "SV650X",
+          "cc": 645,
+          "type": "复古",
+          "price": "85800元",
+          "source": "https://www.lianglunshijie.com/brand/299/",
+          "bucket": "400-699cc"
+        }
+      ],
+      "modelCount": 9,
+      "uncertain": [
+        "官网首页另有 /moto/vstrom650abs-vstrom650xtabs.html 与 /moto/vstrom1050abs-vstrom1050xtabs.html 链接，实测打开为 404，未收录",
+        "V-STROM 1050DE 官方页明确注明「中国市场只引入销售 V-STROM1050DE 版本，普通版未引进销售」",
+        "懂车帝 2025 报道 GSX-8S 由 99800 降至 89800 元、V-STROM 800DE 由 119800 降至 105800 元；本表以铃木中国官网现行「建议零售价」为准",
+        "豪爵铃木 GSX250R / DL250 / GW250 及济南铃木合资线由另一组负责，未收录"
+      ],
+      "sources": [
+        "http://www.suzuki-china.com/",
+        "http://www.suzuki-china.com/moto/gsx-8r.html",
+        "http://www.suzuki-china.com/moto/gsx-8s.html",
+        "http://www.suzuki-china.com/moto/gsx-8t.html",
+        "http://www.suzuki-china.com/moto/vstrom800.html",
+        "http://www.suzuki-china.com/moto/vstrom800de.html",
+        "http://www.suzuki-china.com/moto/vstrom1050de.html",
+        "https://www.haojue.com/news/info/387.html"
+      ],
+      "note": "6 款车型均取自铃木（中国）投资有限公司官网 /moto/ 车型详情页，逐页抓取到「建议零售价」与排量参数（GSX-8R/GSX-8T 页明确 776cm³）。GSX-8T 为 2026 新复古车型（27年款）。官网 header 未见独立 logo 的 img src，logoUrl 记 null。豪爵官网新闻页亦公示 GSX-8R 建议零售价 99800 元（上市价），已由官网现行价覆盖。"
     },
     {
       "id": "mv-agusta",
@@ -4760,91 +5528,6 @@
       "note": "型号取自 Aprilia 中国大陆官网（www.aprilia.cn）「可选车系」及首页 RS457 / Tuareg 660 车型展示；官网未公示全系静态价目，型号与指导价以摩托范阿普利亚品牌在售页（含经销商在售页）核实。全部收录型号排量 ≥250cc（最低 RS 457 457cc）。logoUrl 为官网 header <figure class=logo> 内 img src。"
     },
     {
-      "id": "suzuki",
-      "name": "铃木",
-      "nameEn": "SUZUKI",
-      "company": "铃木（中国）投资有限公司",
-      "category": "进口大贸",
-      "subCategory": "进口大贸",
-      "group": "进口大贸",
-      "website": "http://www.suzuki-china.com/",
-      "logo": {
-        "file": "assets/logos/suzuki.png",
-        "status": "ok",
-        "source": "http://www.suzuki-china.com/img/logo.png",
-        "note": null
-      },
-      "logoDark": false,
-      "models": [
-        {
-          "name": "GSX-8R",
-          "cc": 776,
-          "type": "仿赛",
-          "price": "89800元",
-          "source": "http://www.suzuki-china.com/moto/gsx-8r.html",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "GSX-8S",
-          "cc": 776,
-          "type": "街车",
-          "price": "89800元",
-          "source": "http://www.suzuki-china.com/moto/gsx-8s.html",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "GSX-8T",
-          "cc": 776,
-          "type": "复古",
-          "price": "95800元",
-          "source": "http://www.suzuki-china.com/moto/gsx-8t.html",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "V-STROM 800",
-          "cc": 776,
-          "type": "拉力ADV",
-          "price": "91800元",
-          "source": "http://www.suzuki-china.com/moto/vstrom800.html",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "V-STROM 800DE",
-          "cc": 776,
-          "type": "拉力ADV",
-          "price": "95800元",
-          "source": "http://www.suzuki-china.com/moto/vstrom800de.html",
-          "bucket": "700-999cc"
-        },
-        {
-          "name": "V-STROM 1050DE",
-          "cc": 1037,
-          "type": "拉力ADV",
-          "price": "119800元",
-          "source": "http://www.suzuki-china.com/moto/vstrom1050de.html",
-          "bucket": "1000cc以上"
-        }
-      ],
-      "modelCount": 6,
-      "uncertain": [
-        "官网首页另有 /moto/vstrom650abs-vstrom650xtabs.html 与 /moto/vstrom1050abs-vstrom1050xtabs.html 链接，实测打开为 404，未收录",
-        "V-STROM 1050DE 官方页明确注明「中国市场只引入销售 V-STROM1050DE 版本，普通版未引进销售」",
-        "懂车帝 2025 报道 GSX-8S 由 99800 降至 89800 元、V-STROM 800DE 由 119800 降至 105800 元；本表以铃木中国官网现行「建议零售价」为准",
-        "豪爵铃木 GSX250R / DL250 / GW250 及济南铃木合资线由另一组负责，未收录"
-      ],
-      "sources": [
-        "http://www.suzuki-china.com/",
-        "http://www.suzuki-china.com/moto/gsx-8r.html",
-        "http://www.suzuki-china.com/moto/gsx-8s.html",
-        "http://www.suzuki-china.com/moto/gsx-8t.html",
-        "http://www.suzuki-china.com/moto/vstrom800.html",
-        "http://www.suzuki-china.com/moto/vstrom800de.html",
-        "http://www.suzuki-china.com/moto/vstrom1050de.html",
-        "https://www.haojue.com/news/info/387.html"
-      ],
-      "note": "6 款车型均取自铃木（中国）投资有限公司官网 /moto/ 车型详情页，逐页抓取到「建议零售价」与排量参数（GSX-8R/GSX-8T 页明确 776cm³）。GSX-8T 为 2026 新复古车型（27年款）。官网 header 未见独立 logo 的 img src，logoUrl 记 null。豪爵官网新闻页亦公示 GSX-8R 建议零售价 99800 元（上市价），已由官网现行价覆盖。"
-    },
-    {
       "id": "piaggio-vespa",
       "name": "比亚乔 / Vespa",
       "nameEn": "PIAGGIO / VESPA",
@@ -4913,73 +5596,6 @@
         "https://www.piaggio.cn/"
       ],
       "note": "型号与「建议零售价」逐页取自 Vespa 中国大陆官网(vespa.cn) 车系详情页（GTS 300 / GTV 300 / GTS 310 / GTV 310），GTS 310 页面明确标 310cc、300 系列为 278cc HPE 发动机。Piaggio 中国官网仅 Medley 在售且 <250cc，故该品牌条目下仅收录 Vespa ≥250cc 踏板。logoUrl 为官网 header <figure class=logo> 内 img src。"
-    },
-    {
-      "id": "husqvarna",
-      "name": "胡斯瓦纳",
-      "nameEn": "HUSQVARNA",
-      "company": "Husqvarna Motorcycles GmbH（KTM/Pierer Mobility 集团）/ 中国大陆由 KTMR2R 渠道引进",
-      "category": "进口大贸",
-      "subCategory": "进口大贸",
-      "group": "进口大贸",
-      "website": "https://www.husqvarna-motorcycles.com/",
-      "logo": {
-        "file": "assets/logos/husqvarna.png",
-        "status": "ok",
-        "source": "https://www.husqvarna-motorcycles.com/content/dam/websites/husqvarna-motorcycles-com/language-masters/en/logo/Husqvarna_Logo_1048x1048.png",
-        "note": null
-      },
-      "logoDark": false,
-      "models": [
-        {
-          "name": "Norden 901",
-          "cc": 889,
-          "type": "拉力ADV",
-          "price": "126800元",
-          "source": "https://m.58moto.com/brand/312",
-          "bucket": "700-999cc"
-        }
-      ],
-      "modelCount": 1,
-      "uncertain": [
-        "未找到 Husqvarna 中国独立官网车型/价目页；按任务要求改用摩托范 HUSQVARNA 品牌在售页核实",
-        "该在售页仅 Norden 901(126800元)、TE 250(86000元)、FE 250(88980元)、TC 65(51500元) 四款有指导价；TE 250 / FE 250 为 249cc（<250cc）、TC 65 为 65cc，均排除",
-        "黑箭 Svartpilen 401 / 白箭 Vitpilen 401(398cc)、Vitpilen 801 / Svartpilen 801 等在摩托范显示「暂无报价」，按未公示在售价处理，未计入 models",
-        "Norden 901 早年上市价 139800 元、2025 远征版报道 126800 元，采用摩托范现行指导价"
-      ],
-      "sources": [
-        "https://www.husqvarna-motorcycles.com/",
-        "https://m.58moto.com/brand/312",
-        "https://www.58moto.com/brand/H-312.html"
-      ],
-      "note": "胡斯瓦纳在中国大陆无可用的官方车型价目页，按任务允许用摩托范(58moto) HUSQVARNA 品牌在售页核实，仅 1 款排量 ≥250cc 且有明确指导价的在售车型（Norden 901，889cc）。其余有报价车型均 <250cc 或无报价，宁可少列未编造。logoUrl 为 husqvarna-motorcycles.com 官网 logo 图片直链。"
-    },
-    {
-      "id": "royal-enfield",
-      "name": "皇家恩菲尔德",
-      "nameEn": "ROYAL ENFIELD",
-      "company": "Royal Enfield（印度 Eicher Motors 旗下）",
-      "category": "进口大贸",
-      "subCategory": "进口大贸",
-      "group": "进口大贸",
-      "website": "https://www.royalenfield.com/",
-      "logo": {
-        "file": "assets/logos/royal-enfield.webp",
-        "status": "ok",
-        "source": "https://www.royalenfield.com/content/dam/RE-Platform-Revamp/re-revamp-commons/logo.webp",
-        "note": null
-      },
-      "logoDark": false,
-      "models": [],
-      "modelCount": 0,
-      "uncertain": [],
-      "sources": [
-        "https://www.royalenfield.com/",
-        "https://post.smzdm.com/p/am9x6x6v/",
-        "https://new.qq.com/rain/a/20261103A0000800",
-        "https://www.lianglunshijie.com/brand/KTM302/"
-      ],
-      "note": "截至 2026-11-09，皇家恩菲尔德在中国大陆无官方销售渠道、无中国官网车型价目页：什么值得买 2026 年专题明确「截至目前，皇家恩菲尔德在中国大陆依然没有官方销售渠道」；腾讯网 2026-11-03《下一个有可能进入国内的大贸品牌，皇家菲尔德 Royal Enfield》明确「如今欧系一线品牌，还没进入国内的就仅有英国的皇家菲尔德 Royal Enfield」。台湾地区由太古汽车集团代理（新竹/新北旗舰店、2026 台北车展），不属中国大陆官方在售。royalenfield.com.cn 抓取失败（curl 000）。fasterwheeler / bikersbuddy 等境外聚合站标注的 China Price 为非官方推算价，不作为核实依据。按任务「仍查不到就 models 空数组 + note 说明原因，绝不编造型号」，models 留空。"
     }
   ]
 }

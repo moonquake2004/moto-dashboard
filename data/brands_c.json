@@ -46,14 +46,54 @@
       "website": "https://www.haojue.com/",
       "logoUrl": "https://cdn.haojue.com/bocweb//web/img/logo.png?v=v49",
       "models": [
-        {"name": "DL250（含DL250-A无三箱/DL250-C三箱）", "cc": 250, "type": "拉力ADV", "price": "19880~20980元", "source": "https://www.haojue.com/products.html"},
-        {"name": "GSX250R（含GSX250R-A/GSX250R-F）", "cc": 250, "type": "仿赛", "price": "18980~19980元", "source": "https://www.haojue.com/products.html"}
+        {
+          "name": "DL250（含DL250-A无三箱/DL250-C三箱）",
+          "cc": 250,
+          "type": "拉力ADV",
+          "price": "19880~20980元",
+          "source": "https://www.haojue.com/products.html"
+        },
+        {
+          "name": "GSX250R（含GSX250R-A/GSX250R-F）",
+          "cc": 250,
+          "type": "仿赛",
+          "price": "18980~19980元",
+          "source": "https://www.haojue.com/products.html"
+        }
       ],
       "uncertain": [
-        {"name": "骊驰GW250-A", "cc": 250, "type": "街车", "price": "18980~20680元", "source": "https://www.58moto.com/article/1811/12555490.html", "reason": "2026年已停产（摩托范报道：官方客服在社区回复已停产，末代价18980元），豪爵官网现行products.html与官方商城均已不再列出，不计入在售"},
-        {"name": "TR300 Plus（城市版/旅行版）", "cc": 300, "type": "巡航", "price": "21980~24980元", "source": "https://www.haojue.com/products.html", "reason": "官网在售且≥250cc，但挂豪爵HAOJUE自主品牌标（非SUZUKI合资线），按任务「与豪爵自主品牌区分，只管铃木合资线」的要求不计入主列表"},
-        {"name": "TVL350（旅行者350）", "cc": 350, "type": "踏板", "price": "28980元起", "source": "https://www.haojue.com/products.html", "reason": "官网在售、339cc单缸水冷踏板，属豪爵HAOJUE自主品牌线，按任务分工不计入主列表"},
-        {"name": "GSX-8R", "cc": 776, "type": "仿赛", "price": "99800元", "source": "https://www.haojue.com/GSX8R/canshu.html", "reason": "豪爵官网产品页与官方商城在售，776cm³并列双缸、指导价99800元；但铃木中国suzuki-china.com/moto/gsx-8r.html亦列该车型，属铃木中国引进的进口大贸渠道，按任务分工由进口组负责，不重复收录"}
+        {
+          "name": "骊驰GW250-A",
+          "cc": 250,
+          "type": "街车",
+          "price": "18980~20680元",
+          "source": "https://www.58moto.com/article/1811/12555490.html",
+          "reason": "2026年已停产（摩托范报道：官方客服在社区回复已停产，末代价18980元），豪爵官网现行products.html与官方商城均已不再列出，不计入在售"
+        },
+        {
+          "name": "TR300 Plus（城市版/旅行版）",
+          "cc": 300,
+          "type": "巡航",
+          "price": "21980~24980元",
+          "source": "https://www.haojue.com/products.html",
+          "reason": "官网在售且≥250cc，但挂豪爵HAOJUE自主品牌标（非SUZUKI合资线），按任务「与豪爵自主品牌区分，只管铃木合资线」的要求不计入主列表"
+        },
+        {
+          "name": "TVL350（旅行者350）",
+          "cc": 350,
+          "type": "踏板",
+          "price": "28980元起",
+          "source": "https://www.haojue.com/products.html",
+          "reason": "官网在售、339cc单缸水冷踏板，属豪爵HAOJUE自主品牌线，按任务分工不计入主列表"
+        },
+        {
+          "name": "GSX-8R",
+          "cc": 776,
+          "type": "仿赛",
+          "price": "99800元",
+          "source": "https://www.haojue.com/GSX8R/canshu.html",
+          "reason": "豪爵官网产品页与官方商城在售，776cm³并列双缸、指导价99800元；但铃木中国suzuki-china.com/moto/gsx-8r.html亦列该车型，属铃木中国引进的进口大贸渠道，按任务分工由进口组负责，不重复收录"
+        }
       ],
       "sources": [
         "https://www.haojue.com/products.html",
@@ -76,7 +116,14 @@
       "logoUrl": null,
       "models": [],
       "uncertain": [
-        {"name": "极客飒250 GIXXER 250 / GIXXER SF250（GSX250FR）", "cc": 250, "type": "街车/仿赛", "price": null, "source": "https://www.58moto.com/article/3747/12270688.html", "reason": "249ml单缸油冷，工信部第407批公示由济南轻骑铃木申报生产，2026年定档8月引进、10月21日开放预订（购车抽奖活动至12月15日）；截至2026-11-09官方仍未公布最终售价与完整配置、未见正式上市交付，故不计入在售。日本市场2026款3月5日已上市，街车版/仿赛版为同平台两版本，按主型号合并为一条"}
+        {
+          "name": "极客飒250 GIXXER 250 / GIXXER SF250（GSX250FR）",
+          "cc": 250,
+          "type": "街车/仿赛",
+          "price": null,
+          "source": "https://www.58moto.com/article/3747/12270688.html",
+          "reason": "249ml单缸油冷，工信部第407批公示由济南轻骑铃木申报生产，2026年定档8月引进、10月21日开放预订（购车抽奖活动至12月15日）；截至2026-11-09官方仍未公布最终售价与完整配置、未见正式上市交付，故不计入在售。日本市场2026款3月5日已上市，街车版/仿赛版为同平台两版本，按主型号合并为一条"
+        }
       ],
       "sources": [
         "https://www.qssuzuki.com.cn/",
@@ -97,11 +144,31 @@
       "website": "https://www.jym.com.cn/",
       "logoUrl": null,
       "models": [
-        {"name": "飞致YS250（飞致双碟版，国四）", "cc": 250, "type": "街车", "price": null, "source": "https://www.jym.com.cn/product/detail_qs_ys250_sta4.html"}
+        {
+          "name": "飞致YS250（飞致双碟版，国四）",
+          "cc": 250,
+          "type": "街车",
+          "price": null,
+          "source": "https://www.jym.com.cn/product/detail_qs_ys250_sta4.html"
+        }
       ],
       "uncertain": [
-        {"name": "飞致YS250（公安/警用版）", "cc": 250, "type": "街车", "price": null, "source": "https://www.jym.com.cn/product/detail_ga_ys250.html", "reason": "官网「公安车」分类下另有飞致YS250警用版（detail_ga_ys250.html），带警灯/警笛、公安白涂装、排放标准国三，非民用零售车型，不单独计入，与民用国四版合并为主型号一条"},
-        {"name": "飞致YS250民用版在售状态", "cc": 250, "type": "街车", "price": null, "source": "https://motor.xcar.com.cn/m154/", "reason": "爱卡摩托车标「在产在售」、牛摩网标「在产」，但敬慕百科等资料称该车已停产且为国三标准；建设雅马哈官网「骑士车」列表现行列有「飞致双碟版YS250」且链接带_sta4（国四）后缀，故按官网现行在售计入models，第三方停产说法并存，状态存疑"}
+        {
+          "name": "飞致YS250（公安/警用版）",
+          "cc": 250,
+          "type": "街车",
+          "price": null,
+          "source": "https://www.jym.com.cn/product/detail_ga_ys250.html",
+          "reason": "官网「公安车」分类下另有飞致YS250警用版（detail_ga_ys250.html），带警灯/警笛、公安白涂装、排放标准国三，非民用零售车型，不单独计入，与民用国四版合并为主型号一条"
+        },
+        {
+          "name": "飞致YS250民用版在售状态",
+          "cc": 250,
+          "type": "街车",
+          "price": null,
+          "source": "https://motor.xcar.com.cn/m154/",
+          "reason": "爱卡摩托车标「在产在售」、牛摩网标「在产」，但敬慕百科等资料称该车已停产且为国三标准；建设雅马哈官网「骑士车」列表现行列有「飞致双碟版YS250」且链接带_sta4（国四）后缀，故按官网现行在售计入models，第三方停产说法并存，状态存疑"
+        }
       ],
       "sources": [
         "https://www.jym.com.cn/",
@@ -122,18 +189,88 @@
       "website": "https://www.kymco.com.cn/",
       "logoUrl": "https://ckmco-video.oss-cn-shanghai.aliyuncs.com/2021/img/logo.png",
       "models": [
-        {"name": "赛艇S250", "cc": 250, "type": "踏板", "price": "23500元起", "source": "https://www.kymco.com.cn/join.html"},
-        {"name": "赛艇250（含2025款）", "cc": 250, "type": "踏板", "price": "20800元", "source": "https://www.kymco.com.cn/join.html"},
-        {"name": "赛艇ST250（含豪华版/纪念版）", "cc": 250, "type": "踏板", "price": "21999~26999元", "source": "https://www.kymco.com.cn/join.html"},
-        {"name": "赛艇CT250（含2025款）", "cc": 250, "type": "踏板", "price": "19980元", "source": "https://www.kymco.com.cn/join.html"},
-        {"name": "赛艇S350（含黑武士）", "cc": 350, "type": "踏板", "price": "31980~34980元", "source": "https://www.kymco.com.cn/join.html"},
-        {"name": "赛艇X350尊享版", "cc": 350, "type": "踏板", "price": "33980元", "source": "https://www.kymco.com.cn/join.html"},
-        {"name": "AK550（含AK550 II代/AK575 PREMIUM）", "cc": 550, "type": "踏板", "price": "88800~89800元", "source": "https://www.kymco.com.cn/join.html"}
+        {
+          "name": "赛艇S250",
+          "cc": 250,
+          "type": "踏板",
+          "price": "23500元起",
+          "source": "https://www.kymco.com.cn/join.html"
+        },
+        {
+          "name": "赛艇250（含2025款）",
+          "cc": 250,
+          "type": "踏板",
+          "price": "20800元",
+          "source": "https://www.kymco.com.cn/join.html"
+        },
+        {
+          "name": "赛艇ST250（含豪华版/纪念版）",
+          "cc": 250,
+          "type": "踏板",
+          "price": "21999~26999元",
+          "source": "https://www.kymco.com.cn/join.html"
+        },
+        {
+          "name": "赛艇CT250（含2025款）",
+          "cc": 250,
+          "type": "踏板",
+          "price": "19980元",
+          "source": "https://www.kymco.com.cn/join.html"
+        },
+        {
+          "name": "赛艇S350（含黑武士）",
+          "cc": 350,
+          "type": "踏板",
+          "price": "31980~34980元",
+          "source": "https://www.kymco.com.cn/join.html"
+        },
+        {
+          "name": "赛艇X350尊享版",
+          "cc": 350,
+          "type": "踏板",
+          "price": "33980元",
+          "source": "https://www.kymco.com.cn/join.html"
+        },
+        {
+          "name": "AK550（含AK550 II代/AK575 PREMIUM）",
+          "cc": 550,
+          "type": "踏板",
+          "price": "88800~89800元",
+          "source": "https://www.kymco.com.cn/join.html"
+        },
+        {
+          "name": "CV3",
+          "cc": 550,
+          "type": "倒三轮",
+          "price": "27800~29800元",
+          "source": "https://www.kymco.com.cn/product_details_cv3.html"
+        }
       ],
       "uncertain": [
-        {"name": "赛艇S400（Xciting S400）", "cc": 400, "type": "踏板", "price": "46800元", "source": "https://www.kymco.com.cn/news_details4.html", "reason": "仅见于2021年前后的官网新闻页news_details4.html（售价46800元），官网现行在售价目表join.html未列出，是否仍在国内在售存疑"},
-        {"name": "KRIDER 400", "cc": 400, "type": "街车", "price": "40980元", "source": "https://www.kymco.com.cn/news_details4.html", "reason": "仅见于官网新闻页news_details4.html（售价40980元），现行join.html价目表未列出，在售状态存疑"},
-        {"name": "赛艇CT300 / 赛艇300 / People 250", "cc": null, "type": "踏板", "price": null, "source": "https://www.kymco.com.cn/news_details4.html", "reason": "只在官网警用车/历史新闻页出现（CT300ABS警用车「暂无报价」），现行民用价目表join.html未收录，不计入在售"}
+        {
+          "name": "赛艇S400（Xciting S400）",
+          "cc": 400,
+          "type": "踏板",
+          "price": "46800元",
+          "source": "https://www.kymco.com.cn/news_details4.html",
+          "reason": "仅见于2021年前后的官网新闻页news_details4.html（售价46800元），官网现行在售价目表join.html未列出，是否仍在国内在售存疑"
+        },
+        {
+          "name": "KRIDER 400",
+          "cc": 400,
+          "type": "街车",
+          "price": "40980元",
+          "source": "https://www.kymco.com.cn/news_details4.html",
+          "reason": "仅见于官网新闻页news_details4.html（售价40980元），现行join.html价目表未列出，在售状态存疑"
+        },
+        {
+          "name": "赛艇CT300 / 赛艇300 / People 250",
+          "cc": null,
+          "type": "踏板",
+          "price": null,
+          "source": "https://www.kymco.com.cn/news_details4.html",
+          "reason": "只在官网警用车/历史新闻页出现（CT300ABS警用车「暂无报价」），现行民用价目表join.html未收录，不计入在售"
+        }
       ],
       "sources": [
         "https://www.kymco.com.cn/join.html",
@@ -155,16 +292,96 @@
       "website": "https://www.xsmt.com/",
       "logoUrl": "https://www.xsmt.com/public/images/logo.png",
       "models": [
-        {"name": "CRUISYM 400 巡弋400（含25款/26款旗舰版）", "cc": 400, "type": "踏板", "price": "36980元", "source": "https://www.xsmt.com/product/show-13055.html"},
-        {"name": "JOYRIDE 300 行者300（25款）", "cc": 300, "type": "踏板", "price": "23980元", "source": "https://www.xsmt.com/product/param/show-8887.html"},
-        {"name": "Jepardo 300 猎豹300", "cc": 300, "type": "踏板", "price": "24980元", "source": "https://www.xsmt.com/product/show-24067.html"},
-        {"name": "HUSKY ADV 300 哈士奇（含26款旗舰款/弯道版）", "cc": 300, "type": "踏板", "price": "24980~26980元", "source": "https://www.xsmt.com/product/show-4357.html"}
+        {
+          "name": "CRUISYM 400 巡弋400（含25款/26款旗舰版）",
+          "cc": 400,
+          "type": "踏板",
+          "price": "36980元",
+          "source": "https://www.xsmt.com/product/show-13055.html"
+        },
+        {
+          "name": "JOYRIDE 300 行者300（25款）",
+          "cc": 300,
+          "type": "踏板",
+          "price": "23980元",
+          "source": "https://www.xsmt.com/product/param/show-8887.html"
+        },
+        {
+          "name": "Jepardo 300 猎豹300",
+          "cc": 300,
+          "type": "踏板",
+          "price": "24980元",
+          "source": "https://www.xsmt.com/product/show-24067.html"
+        },
+        {
+          "name": "HUSKY ADV 300 哈士奇（含26款旗舰款/弯道版）",
+          "cc": 300,
+          "type": "踏板",
+          "price": "24980~26980元",
+          "source": "https://www.xsmt.com/product/show-4357.html"
+        },
+        {
+          "name": "CRUISYM 250 (巡弋250)",
+          "cc": 249,
+          "type": "踏板",
+          "price": "21980元",
+          "source": "https://www.xsmt.com/product/show-24036.html"
+        },
+        {
+          "name": "剑齿虎 ADXTG 400",
+          "cc": 399,
+          "type": "踏板",
+          "price": "46980元",
+          "source": "https://www.58moto.com/article/114/12505983.html"
+        },
+        {
+          "name": "Joymax Z 300",
+          "cc": 278,
+          "type": "踏板",
+          "price": "25980元",
+          "source": "https://m.58moto.com/brand/245"
+        },
+        {
+          "name": "MaxSym 400",
+          "cc": 399,
+          "type": "踏板",
+          "price": "52800元",
+          "source": "https://www.lianglunshijie.com/motor/Maxsym400TCS24020/index.html"
+        }
       ],
       "uncertain": [
-        {"name": "CRUISYM 250", "cc": 250, "type": "踏板", "price": null, "source": "https://www.xsmt.com/product/show-8961.html", "reason": "官网首页现行在售列表中列有该车型，但官网车型页为设计理念文案、未在官方渠道核实到排量数值与售价，按「不确定null/宁可少列」暂不计入models，待复核精确排量是否≥250cc"},
-        {"name": "cruisym GT", "cc": null, "type": "踏板", "price": null, "source": "https://www.xsmt.com/product/show-4401.html", "reason": "官网首页在售列表中列有该车型，但未核实到排量与售价（台湾版CRUISYM为278.3cc，大陆版cruisym GT排量未确认），不纳入models"},
-        {"name": "SHEX（25款）", "cc": null, "type": "踏板", "price": null, "source": "https://www.xsmt.com/product/show-8886.html", "reason": "官网首页在售列表中列有该车型，但排量未核实，可能<250cc，不纳入models"},
-        {"name": "CRUISYM 300（原装进口）", "cc": 300, "type": "踏板", "price": null, "source": "https://xsmt.com/product/show-3840.html", "reason": "官网有独立车型详情页（标注原装进口、通勤休旅跨界），但现行首页在售产品列表已不再列出，疑已由国产CRUISYM400/300系列取代，在售状态存疑"}
+        {
+          "name": "CRUISYM 250",
+          "cc": 250,
+          "type": "踏板",
+          "price": null,
+          "source": "https://www.xsmt.com/product/show-8961.html",
+          "reason": "官网首页现行在售列表中列有该车型，但官网车型页为设计理念文案、未在官方渠道核实到排量数值与售价，按「不确定null/宁可少列」暂不计入models，待复核精确排量是否≥250cc"
+        },
+        {
+          "name": "cruisym GT",
+          "cc": null,
+          "type": "踏板",
+          "price": null,
+          "source": "https://www.xsmt.com/product/show-4401.html",
+          "reason": "官网首页在售列表中列有该车型，但未核实到排量与售价（台湾版CRUISYM为278.3cc，大陆版cruisym GT排量未确认），不纳入models"
+        },
+        {
+          "name": "SHEX（25款）",
+          "cc": null,
+          "type": "踏板",
+          "price": null,
+          "source": "https://www.xsmt.com/product/show-8886.html",
+          "reason": "官网首页在售列表中列有该车型，但排量未核实，可能<250cc，不纳入models"
+        },
+        {
+          "name": "CRUISYM 300（原装进口）",
+          "cc": 300,
+          "type": "踏板",
+          "price": null,
+          "source": "https://xsmt.com/product/show-3840.html",
+          "reason": "官网有独立车型详情页（标注原装进口、通勤休旅跨界），但现行首页在售产品列表已不再列出，疑已由国产CRUISYM400/300系列取代，在售状态存疑"
+        }
       ],
       "sources": [
         "https://www.xsmt.com/",
@@ -190,11 +407,30 @@
       "website": "https://www.peugeot-motocycles.com.cn/",
       "logoUrl": "https://www.peugeot-motocycles.com.cn/application/portal/view/public/images/logo.png",
       "models": [
-        {"name": "XP400（含ALLURE/GT/PRO版本）", "cc": 400, "type": "踏板", "price": "42800~45800元", "source": "https://www.peugeot-motocycles.com.cn/"},
-        {"name": "PEUGEOT METROPOLIS（Metropolis 400 倒三轮）", "cc": 400, "type": "踏板", "price": null, "source": "https://www.peugeot-motocycles.com.cn/"}
+        {
+          "name": "XP400（含ALLURE/GT/PRO版本）",
+          "cc": 400,
+          "type": "踏板",
+          "price": "42800~45800元",
+          "source": "https://www.peugeot-motocycles.com.cn/"
+        },
+        {
+          "name": "PEUGEOT METROPOLIS（Metropolis 400 倒三轮）",
+          "cc": 400,
+          "type": "踏板",
+          "price": null,
+          "source": "https://www.peugeot-motocycles.com.cn/"
+        }
       ],
       "uncertain": [
-        {"name": "PEUGEOT METROPOLIS 排量与售价", "cc": 400, "type": "踏板", "price": null, "source": "https://tsight.io/articles/19072035?lang=zh", "reason": "官网首页明确在售（曜岩黑/冰雪白两色）但未标排量与售价；399cc系据与XP400同源的PowerMotion 400动力平台推断、第三方资料标Metropolis 400价28800~32800元，未在官方渠道直接核实，故price记null、cc按型号标称400记录"}
+        {
+          "name": "PEUGEOT METROPOLIS 排量与售价",
+          "cc": 400,
+          "type": "踏板",
+          "price": null,
+          "source": "https://tsight.io/articles/19072035?lang=zh",
+          "reason": "官网首页明确在售（曜岩黑/冰雪白两色）但未标排量与售价；399cc系据与XP400同源的PowerMotion 400动力平台推断、第三方资料标Metropolis 400价28800~32800元，未在官方渠道直接核实，故price记null、cc按型号标称400记录"
+        }
       ],
       "sources": [
         "https://www.peugeot-motocycles.com.cn/",

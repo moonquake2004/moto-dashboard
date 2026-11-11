@@ -84,10 +84,10 @@
     "status": "ok"
   },
   "changjiang": {
-    "file": null,
-    "source": null,
-    "status": "missing",
-    "reason": "本轮未找到可确认为纯品牌 Logo 的图片，按规则标 missing 不凑数。已试：ICP 备案官网 changjiang750.cn（HTTP/HTTPS/www/裸域 4 变体）均连接失败；百度百科/搜狗百科词条页（curl 返回百度安全验证 403，WebFetch 转译丢失 img/og:image URL，搜狗百科仅 988B 空页）；百度图片 acjson 与搜狗图片 API 均返回 forbid；58moto 品牌页仍为 JS 反爬挑战页；百度爱采购车标图鉴 503；爱卡试驾文章无直链图片。长江 750 的 Logo 主要出现在油箱车型照上，不符合纯 Logo 要求"
+    "file": "assets/logos/changjiang.png",
+    "source": "https://changjiang-europe.com/wp-content/uploads/2024/05/cropped-logo-changjiang2023.png",
+    "status": "ok",
+    "note": "长江(CHANGJIANG)品牌字标；主域名changjiangmotor.com当前502，改取官方欧洲品牌站同款Logo（同品牌标识）"
   },
   "souo": {
     "file": "assets/logos/souo.png",
@@ -105,7 +105,7 @@
     "file": null,
     "source": null,
     "status": "missing",
-    "reason": "土星动力为企业主体，未找到可确认为纯企业 Logo 的官方图片，按规则标 missing 不凑数。已试：百度百科词条(403 安全验证；WebFetch 转译亦无头图)、百度百科移动版(连接失败)、BOSS直聘企业页(反爬「请稍候」页)、品牌网/买购网/企知道企业信息页(仅收录旗下「奔达」品牌 Logo，非土星动力企业标识)、奔达官网 bendamotor.cn/about 页脚(仅「杭州土星动力科技有限公司」文字与抖音/微信/邮箱/电话 UI 图标，均非 Logo)。未用奔达 BENDA Logo 或美国 GM 土星(Saturn)车标冒充"
+    "reason": "土星动力为奔达BENDA母公司，自身无独立在售两轮消费品牌Logo（奔达已单列收录），无独立官方Logo可抓"
   },
   "daye": {
     "file": "assets/logos/daye.png",
@@ -133,13 +133,13 @@
     "file": null,
     "source": null,
     "status": "missing",
-    "reason": "官网 qssuzuki.com.cn 全站(含 /favicon.ico、/logo.png、/images/logo.png、/templates/、/static/ 等静态路径，www/裸域/http/m. 子域，Baiduspider UA)均返回雷池 SafeLine WAF 挑战页(HTTP 468)，静态资源绕行失败。百度百科/360百科/搜狗百科(403 安全验证或连接失败)，其词条概述图经 bkimg.cdn.bcebos.com 直链下载后确认是厂区/摩托车照片而非 Logo；搜狗微信文章缩略图均为车型照与活动海报；铃木中国 suzuki-china.com 首页无合资公司标识；58moto 首页为百度 WAF JS 挑战页。未以与 suzuki 条目重复的通用 SUZUKI 标凑数，如实标 missing"
+    "reason": "官网 qssuzuki.com.cn/en.qssuzuki.com.cn 启用长亭WAF(HTTP 468)，本环境无法抓取；轻骑铃木标识以SUZUKI S标为主，官方Logo直链待用户本地网络获取"
   },
   "jianshe-yamaha": {
     "file": null,
     "source": null,
     "status": "missing",
-    "reason": "官网 jym.com.cn 全站(含 /favicon.ico、/logo.png、/images/logo.png、/templates/、/static/ 等静态路径，http 变体，Baiduspider UA)均返回阿里云 WAF JS 挑战页(acw_sc__v2)，雅马哈中国 yamaha-motor.com.cn 亦为同一挑战页。百度百科/360百科(403 或连接失败)，词条配图经 bkimg.cdn.bcebos.com 直链下载确认为摩托车车型照；搜狗微信文章缩略图均为车型照/海报；58moto 为 WAF 挑战页；cqsxzx.com 图文页 403。未取得「建设·雅马哈」联合标官方图片，如实标 missing"
+    "reason": "官网 jym.com.cn 启用阿里云WAF(JS挑战)，本环境curl/第三方Logo服务均无法抓取；需从用户浏览器或本地网络获取 /images/logo.gif"
   },
   "kymco": {
     "file": "assets/logos/kymco.png",

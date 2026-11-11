@@ -186,6 +186,8 @@ select{height:36px;border:1px solid var(--line);border-radius:8px;background:#fa
 .missing-logos{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
 .missing-logos span{font-size:11px;background:#f2f5f9;border:1px solid var(--line);color:var(--muted);padding:2px 8px;border-radius:5px}
 .disclaimer{font-size:11.5px;color:var(--faint);text-align:center;padding:18px 10px 0;line-height:1.7}
+.made-by{font-size:11px;color:var(--faint);text-align:center;padding:14px 10px 4px;letter-spacing:.05em}
+.made-by b{color:var(--accent)}
 
 /* responsive */
 @media (max-width:1200px){
@@ -449,7 +451,6 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
   <div class="wrap">
     <div class="eyebrow">CHINA MOTO MARKET · 250CC+ GRID</div>
     <h1>国内 250cc 以上摩托车厂商品牌全景看板</h1>
-    <div class="sub">覆盖中国市场在售的国产自主、合资/台系、进口大贸三大圈层厂商，逐一列出各品牌旗下全部 ≥250cc 在售型号，并附品牌官方 Logo。数据以各品牌中国官网车型页为准，禁止虚构。</div>
     <div class="hero-badges">
       <span id="hUpdated">数据截至 —</span>
       <span id="hScope">口径 —</span>
@@ -544,6 +545,7 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
 
 <div class="checker sm"></div>
 <div class="race-sign">DATA VERIFIED · <span id="footSign">—</span></div>
+<div class="made-by">制作 by <b>waterfly</b><span id="visitCount"></span></div>
 
 <script src="data/dashboard.js"></script>
 <script>
@@ -809,6 +811,19 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
   $("emptyBrands").textContent = empties.length ? empties.join("、")+"（共 "+empties.length+" 个，均已在卡片中说明原因）" : "无";
 
   render();
+
+  /* 访客统计上报 + 计数器 */
+  var STATS_API = "";  // ← 部署后端后填入，例如 https://你的后端域名（末尾不带 /）
+  if(STATS_API){
+    try{
+      fetch(STATS_API+"/api/visit",{method:"POST",headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({path:location.pathname})}).catch(function(){});
+      fetch(STATS_API+"/api/stats").then(function(r){return r.json()}).then(function(d){
+        var el=document.getElementById("visitCount");
+        if(el && d && typeof d.uv_all==="number"){ el.textContent=" · 已有 "+d.uv_all+" 位访客"; }
+      }).catch(function(){});
+    }catch(e){}
+  }
 })();
 </script>
 </body>

@@ -10,24 +10,132 @@
       "website": "https://cn.cfmoto.com/",
       "logoUrl": "https://cn.cfmoto.com/icons/logo.svg",
       "models": [
-        {"name": "250SR", "cc": 250, "type": "仿赛", "price": "15980元起", "source": "https://m.58moto.com/brand/18"},
-        {"name": "450SR", "cc": 450, "type": "仿赛", "price": "23980元起", "source": "https://cn.cfmoto.com/motorcycles/450SR"},
-        {"name": "500SR", "cc": 500, "type": "仿赛", "price": "28580元起", "source": "https://m.58moto.com/brand/18"},
-        {"name": "675SR-R", "cc": 675, "type": "仿赛", "price": "39580元", "source": "https://m.58moto.com/brand/18"},
-        {"name": "750SR-S", "cc": 750, "type": "仿赛", "price": "44980元", "source": "https://m.58moto.com/brand/18"},
-        {"name": "250CL-C", "cc": 250, "type": "巡航", "price": "14980元", "source": "https://cn.cfmoto.com/motorcycles/250CL-C"},
-        {"name": "450CL-C", "cc": 450, "type": "巡航", "price": "21980元起", "source": "https://m.58moto.com/brand/18"},
-        {"name": "550CL-C", "cc": 550, "type": "巡航", "price": "25080元", "source": "https://m.58moto.com/brand/18"},
-        {"name": "450NK", "cc": 450, "type": "街车", "price": "23880元", "source": "https://cn.cfmoto.com/motorcycles/450NK"},
-        {"name": "675NK", "cc": 675, "type": "街车", "price": "35980元", "source": "https://m.58moto.com/brand/18"},
-        {"name": "800NK", "cc": 800, "type": "街车", "price": "42580元", "source": "https://m.58moto.com/brand/18"},
-        {"name": "450MT", "cc": 450, "type": "拉力ADV", "price": "30580元起", "source": "https://m.58moto.com/brand/18"},
-        {"name": "700MT", "cc": 700, "type": "拉力ADV", "price": "29980元起", "source": "https://m.58moto.com/brand/18"},
-        {"name": "800MT", "cc": 800, "type": "拉力ADV", "price": "53980元", "source": "https://cn.cfmoto.com/motorcycles/800mt-explore"},
-        {"name": "800MT-X", "cc": 800, "type": "拉力ADV", "price": "53680元", "source": "https://m.58moto.com/brand/18"},
-        {"name": "800MT-ES", "cc": 800, "type": "拉力ADV", "price": null, "source": "https://www.cfmoto.com/motorcycle.html"},
-        {"name": "1000MT-X", "cc": 1000, "type": "拉力ADV", "price": "59680元", "source": "https://m.58moto.com/brand/18"},
-        {"name": "1250TR-G", "cc": 1250, "type": "旅行", "price": null, "source": "https://www.cfmoto.com/motorcycle.html"}
+        {
+          "name": "250SR",
+          "cc": 250,
+          "type": "仿赛",
+          "price": "15980元起",
+          "source": "https://m.58moto.com/brand/18"
+        },
+        {
+          "name": "450SR",
+          "cc": 450,
+          "type": "仿赛",
+          "price": "23980元起",
+          "source": "https://cn.cfmoto.com/motorcycles/450SR"
+        },
+        {
+          "name": "500SR",
+          "cc": 500,
+          "type": "仿赛",
+          "price": "28580元起",
+          "source": "https://m.58moto.com/brand/18"
+        },
+        {
+          "name": "675SR-R",
+          "cc": 675,
+          "type": "仿赛",
+          "price": "39580元",
+          "source": "https://m.58moto.com/brand/18"
+        },
+        {
+          "name": "750SR-S",
+          "cc": 750,
+          "type": "仿赛",
+          "price": "44980元",
+          "source": "https://m.58moto.com/brand/18"
+        },
+        {
+          "name": "250CL-C",
+          "cc": 250,
+          "type": "巡航",
+          "price": "14980元",
+          "source": "https://cn.cfmoto.com/motorcycles/250CL-C"
+        },
+        {
+          "name": "450CL-C",
+          "cc": 450,
+          "type": "巡航",
+          "price": "21980元起",
+          "source": "https://m.58moto.com/brand/18"
+        },
+        {
+          "name": "550CL-C",
+          "cc": 550,
+          "type": "巡航",
+          "price": "25080元",
+          "source": "https://m.58moto.com/brand/18"
+        },
+        {
+          "name": "450NK",
+          "cc": 450,
+          "type": "街车",
+          "price": "23880元",
+          "source": "https://cn.cfmoto.com/motorcycles/450NK"
+        },
+        {
+          "name": "675NK",
+          "cc": 675,
+          "type": "街车",
+          "price": "35980元",
+          "source": "https://m.58moto.com/brand/18"
+        },
+        {
+          "name": "800NK",
+          "cc": 800,
+          "type": "街车",
+          "price": "42580元",
+          "source": "https://m.58moto.com/brand/18"
+        },
+        {
+          "name": "450MT",
+          "cc": 450,
+          "type": "拉力ADV",
+          "price": "30580元起",
+          "source": "https://m.58moto.com/brand/18"
+        },
+        {
+          "name": "700MT",
+          "cc": 700,
+          "type": "拉力ADV",
+          "price": "29980元起",
+          "source": "https://m.58moto.com/brand/18"
+        },
+        {
+          "name": "800MT",
+          "cc": 800,
+          "type": "拉力ADV",
+          "price": "53980元",
+          "source": "https://cn.cfmoto.com/motorcycles/800mt-explore"
+        },
+        {
+          "name": "800MT-X",
+          "cc": 800,
+          "type": "拉力ADV",
+          "price": "53680元",
+          "source": "https://m.58moto.com/brand/18"
+        },
+        {
+          "name": "800MT-ES",
+          "cc": 800,
+          "type": "拉力ADV",
+          "price": null,
+          "source": "https://www.cfmoto.com/motorcycle.html"
+        },
+        {
+          "name": "1000MT-X",
+          "cc": 1000,
+          "type": "拉力ADV",
+          "price": "59680元",
+          "source": "https://m.58moto.com/brand/18"
+        },
+        {
+          "name": "1250TR-G",
+          "cc": 1250,
+          "type": "旅行",
+          "price": null,
+          "source": "https://www.cfmoto.com/motorcycle.html"
+        }
       ],
       "uncertain": [],
       "sources": [
@@ -52,32 +160,185 @@
       "website": "https://vogemotor.com/",
       "logoUrl": null,
       "models": [
-        {"name": "250RR", "cc": 250, "type": "仿赛", "price": "15499元", "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"},
-        {"name": "RR500S", "cc": 500, "type": "仿赛", "price": "28980元起", "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"},
-        {"name": "RR660S", "cc": 660, "type": "仿赛", "price": "35980元", "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"},
-        {"name": "CU250", "cc": 250, "type": "巡航", "price": "16480元起", "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"},
-        {"name": "CU525", "cc": 525, "type": "巡航", "price": "21980元起", "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"},
-        {"name": "CU530", "cc": 530, "type": "巡航", "price": "21980元起", "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"},
-        {"name": "CU625", "cc": 625, "type": "巡航", "price": "25980元起", "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"},
-        {"name": "DS500X", "cc": 500, "type": "拉力ADV", "price": "26999元起", "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"},
-        {"name": "DS525", "cc": 525, "type": "拉力ADV", "price": "31766元起", "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"},
-        {"name": "DS625X", "cc": 625, "type": "拉力ADV", "price": "31980元起", "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"},
-        {"name": "DS800X", "cc": 800, "type": "拉力ADV", "price": "39980元起", "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"},
-        {"name": "DS900X", "cc": 900, "type": "拉力ADV", "price": "54980元起", "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"},
-        {"name": "SR250GT", "cc": 250, "type": "踏板", "price": "15980元起", "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"},
-        {"name": "SR4 Max", "cc": 350, "type": "踏板", "price": "29999元起", "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"},
-        {"name": "SR450X", "cc": 450, "type": "踏板", "price": "34980元", "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"}
+        {
+          "name": "250RR",
+          "cc": 250,
+          "type": "仿赛",
+          "price": "15499元",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+        },
+        {
+          "name": "RR500S",
+          "cc": 500,
+          "type": "仿赛",
+          "price": "28980元起",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+        },
+        {
+          "name": "RR660S",
+          "cc": 660,
+          "type": "仿赛",
+          "price": "35980元",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+        },
+        {
+          "name": "CU250",
+          "cc": 250,
+          "type": "巡航",
+          "price": "16480元起",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+        },
+        {
+          "name": "CU525",
+          "cc": 525,
+          "type": "巡航",
+          "price": "21980元起",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+        },
+        {
+          "name": "CU530",
+          "cc": 530,
+          "type": "巡航",
+          "price": "21980元起",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+        },
+        {
+          "name": "CU625",
+          "cc": 625,
+          "type": "巡航",
+          "price": "25980元起",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+        },
+        {
+          "name": "DS500X",
+          "cc": 500,
+          "type": "拉力ADV",
+          "price": "26999元起",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+        },
+        {
+          "name": "DS525",
+          "cc": 525,
+          "type": "拉力ADV",
+          "price": "31766元起",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+        },
+        {
+          "name": "DS625X",
+          "cc": 625,
+          "type": "拉力ADV",
+          "price": "31980元起",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+        },
+        {
+          "name": "DS800X",
+          "cc": 800,
+          "type": "拉力ADV",
+          "price": "39980元起",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+        },
+        {
+          "name": "DS900X",
+          "cc": 900,
+          "type": "拉力ADV",
+          "price": "54980元起",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+        },
+        {
+          "name": "SR250GT",
+          "cc": 250,
+          "type": "踏板",
+          "price": "15980元起",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+        },
+        {
+          "name": "SR4 Max",
+          "cc": 350,
+          "type": "踏板",
+          "price": "29999元起",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+        },
+        {
+          "name": "SR450X",
+          "cc": 450,
+          "type": "踏板",
+          "price": "34980元",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+        }
       ],
       "uncertain": [
-        {"name": "300AC", "cc": 300, "type": "复古", "price": null, "source": "https://baike.baidu.com/item/无极 机车", "reason": "见于百度百科六大系列与历史车型库，摩托范 2026 在售车型页未收录，无法确认当前在售状态"},
-        {"name": "350AC", "cc": 350, "type": "复古", "price": "26680元", "source": "https://www.lianglunshijie.com/brand/wuji480/", "reason": "两轮视界列 2022 款，摩托范 2026 在售页未收录，疑已停售"},
-        {"name": "AC525", "cc": 525, "type": "复古", "price": null, "source": "https://baike.baidu.com/item/无极 机车", "reason": "复古先锋系列旗舰，见百科/行业稿，未在 2026 在售车型库核实到"},
-        {"name": "300R", "cc": 300, "type": "街车", "price": null, "source": "https://baike.baidu.com/item/无极 机车", "reason": "街道运动系列，见百科，未在 2026 在售车型库核实到"},
-        {"name": "525R", "cc": 525, "type": "街车", "price": "30980元", "source": "https://www.lianglunshijie.com/brand/wuji480/", "reason": "两轮视界列 2022 款，摩托范 2026 在售页未收录"},
-        {"name": "Q250", "cc": 250, "type": "复古", "price": null, "source": "https://baike.baidu.com/item/无极 机车", "reason": "复古先锋系列，见百科，排量与在售状态未逐一核实"},
-        {"name": "500AC", "cc": 500, "type": "复古", "price": "34980元", "source": "https://www.lianglunshijie.com/brand/wuji480/", "reason": "两轮视界列 2021 款，未在 2026 在售车型库核实到"},
-        {"name": "500DS", "cc": 500, "type": "拉力ADV", "price": "33580元", "source": "https://www.lianglunshijie.com/brand/wuji480/", "reason": "两轮视界列 2022 款经典版，未在 2026 在售车型库核实到"},
-        {"name": "650DS", "cc": 650, "type": "拉力ADV", "price": null, "source": "https://baike.baidu.com/item/无极 机车", "reason": "冒险休旅系列老款，未在 2026 在售车型库核实到"}
+        {
+          "name": "300AC",
+          "cc": 300,
+          "type": "复古",
+          "price": null,
+          "source": "https://baike.baidu.com/item/无极 机车",
+          "reason": "见于百度百科六大系列与历史车型库，摩托范 2026 在售车型页未收录，无法确认当前在售状态"
+        },
+        {
+          "name": "350AC",
+          "cc": 350,
+          "type": "复古",
+          "price": "26680元",
+          "source": "https://www.lianglunshijie.com/brand/wuji480/",
+          "reason": "两轮视界列 2022 款，摩托范 2026 在售页未收录，疑已停售"
+        },
+        {
+          "name": "AC525",
+          "cc": 525,
+          "type": "复古",
+          "price": null,
+          "source": "https://baike.baidu.com/item/无极 机车",
+          "reason": "复古先锋系列旗舰，见百科/行业稿，未在 2026 在售车型库核实到"
+        },
+        {
+          "name": "300R",
+          "cc": 300,
+          "type": "街车",
+          "price": null,
+          "source": "https://baike.baidu.com/item/无极 机车",
+          "reason": "街道运动系列，见百科，未在 2026 在售车型库核实到"
+        },
+        {
+          "name": "525R",
+          "cc": 525,
+          "type": "街车",
+          "price": "30980元",
+          "source": "https://www.lianglunshijie.com/brand/wuji480/",
+          "reason": "两轮视界列 2022 款，摩托范 2026 在售页未收录"
+        },
+        {
+          "name": "Q250",
+          "cc": 250,
+          "type": "复古",
+          "price": null,
+          "source": "https://baike.baidu.com/item/无极 机车",
+          "reason": "复古先锋系列，见百科，排量与在售状态未逐一核实"
+        },
+        {
+          "name": "500AC",
+          "cc": 500,
+          "type": "复古",
+          "price": "34980元",
+          "source": "https://www.lianglunshijie.com/brand/wuji480/",
+          "reason": "两轮视界列 2021 款，未在 2026 在售车型库核实到"
+        },
+        {
+          "name": "500DS",
+          "cc": 500,
+          "type": "拉力ADV",
+          "price": "33580元",
+          "source": "https://www.lianglunshijie.com/brand/wuji480/",
+          "reason": "两轮视界列 2022 款经典版，未在 2026 在售车型库核实到"
+        },
+        {
+          "name": "650DS",
+          "cc": 650,
+          "type": "拉力ADV",
+          "price": null,
+          "source": "https://baike.baidu.com/item/无极 机车",
+          "reason": "冒险休旅系列老款，未在 2026 在售车型库核实到"
+        }
       ],
       "sources": [
         "https://vogemotor.com/",
@@ -99,38 +360,230 @@
       "website": "https://www.qjmotor.com/",
       "logoUrl": "https://www.qjmotor.com/img/logo.png",
       "models": [
-        {"name": "赛250", "cc": 250, "type": "仿赛", "price": "15999元", "source": "https://m.58moto.com/brand/449"},
-        {"name": "赛421", "cc": 421, "type": "仿赛", "price": "28999元起", "source": "https://m.58moto.com/brand/449"},
-        {"name": "赛450", "cc": 450, "type": "仿赛", "price": "26999元", "source": "https://m.58moto.com/brand/449"},
-        {"name": "赛550", "cc": 550, "type": "仿赛", "price": "24999元", "source": "https://m.58moto.com/brand/449"},
-        {"name": "赛600", "cc": 600, "type": "仿赛", "price": "29999元起", "source": "https://m.58moto.com/brand/449"},
-        {"name": "赛800", "cc": 800, "type": "仿赛", "price": "42999元起", "source": "https://m.58moto.com/brand/449"},
-        {"name": "赛921", "cc": 921, "type": "仿赛", "price": "69999元", "source": "https://m.58moto.com/brand/449"},
-        {"name": "Super921", "cc": 921, "type": "仿赛", "price": "69999元", "source": "https://m.58moto.com/brand/449"},
-        {"name": "闪250", "cc": 250, "type": "巡航", "price": "16999元起", "source": "https://www.58moto.com/merchant/car/300187?id=449"},
-        {"name": "闪300", "cc": 300, "type": "巡航", "price": "20999元起", "source": "https://m.58moto.com/brand/449"},
-        {"name": "闪350", "cc": 350, "type": "巡航", "price": null, "source": "https://www.qjmotor.com/"},
-        {"name": "闪400", "cc": 400, "type": "巡航", "price": "19999元起", "source": "https://m.58moto.com/brand/449"},
-        {"name": "闪600", "cc": 600, "type": "巡航", "price": "24999元起", "source": "https://m.58moto.com/brand/449"},
-        {"name": "骁600", "cc": 600, "type": "拉力ADV", "price": "29999元起", "source": "https://www.58moto.com/merchant/car/300187?id=449"},
-        {"name": "骁650", "cc": 650, "type": "拉力ADV", "price": null, "source": "https://www.qjmotor.com/"},
-        {"name": "骁700S", "cc": 700, "type": "拉力ADV", "price": null, "source": "https://www.qjmotor.com/"},
-        {"name": "骁800", "cc": 800, "type": "拉力ADV", "price": null, "source": "https://www.qjmotor.com/"},
-        {"name": "追550", "cc": 550, "type": "街车", "price": "26999元", "source": "https://www.58moto.com/merchant/car/300187?id=449"},
-        {"name": "追600", "cc": 600, "type": "街车", "price": "36999元", "source": "https://www.58moto.com/merchant/car/300187?id=449"},
-        {"name": "追800", "cc": 800, "type": "街车", "price": null, "source": "https://www.qjmotor.com/"},
-        {"name": "追900", "cc": 900, "type": "街车", "price": "44999元", "source": "https://www.58moto.com/merchant/car/300187?id=449"},
-        {"name": "追921", "cc": 921, "type": "街车", "price": "66999元", "source": "https://www.58moto.com/merchant/car/300187?id=449"},
-        {"name": "逸550", "cc": 550, "type": "复古", "price": null, "source": "https://www.qjmotor.com/"},
-        {"name": "鸿250", "cc": 250, "type": "踏板", "price": "15999元起", "source": "https://m.58moto.com/brand/449"},
-        {"name": "鸿350GS", "cc": 350, "type": "踏板", "price": "25999元", "source": "https://www.lianglunshijie.com/brand/607/"}
+        {
+          "name": "赛250",
+          "cc": 250,
+          "type": "仿赛",
+          "price": "15999元",
+          "source": "https://m.58moto.com/brand/449"
+        },
+        {
+          "name": "赛421",
+          "cc": 421,
+          "type": "仿赛",
+          "price": "28999元起",
+          "source": "https://m.58moto.com/brand/449"
+        },
+        {
+          "name": "赛450",
+          "cc": 450,
+          "type": "仿赛",
+          "price": "26999元",
+          "source": "https://m.58moto.com/brand/449"
+        },
+        {
+          "name": "赛550",
+          "cc": 550,
+          "type": "仿赛",
+          "price": "24999元",
+          "source": "https://m.58moto.com/brand/449"
+        },
+        {
+          "name": "赛600",
+          "cc": 600,
+          "type": "仿赛",
+          "price": "29999元起",
+          "source": "https://m.58moto.com/brand/449"
+        },
+        {
+          "name": "赛800",
+          "cc": 800,
+          "type": "仿赛",
+          "price": "42999元起",
+          "source": "https://m.58moto.com/brand/449"
+        },
+        {
+          "name": "赛921",
+          "cc": 921,
+          "type": "仿赛",
+          "price": "69999元",
+          "source": "https://m.58moto.com/brand/449"
+        },
+        {
+          "name": "Super921",
+          "cc": 921,
+          "type": "仿赛",
+          "price": "69999元",
+          "source": "https://m.58moto.com/brand/449"
+        },
+        {
+          "name": "闪250",
+          "cc": 250,
+          "type": "巡航",
+          "price": "16999元起",
+          "source": "https://www.58moto.com/merchant/car/300187?id=449"
+        },
+        {
+          "name": "闪300",
+          "cc": 300,
+          "type": "巡航",
+          "price": "20999元起",
+          "source": "https://m.58moto.com/brand/449"
+        },
+        {
+          "name": "闪350",
+          "cc": 350,
+          "type": "巡航",
+          "price": null,
+          "source": "https://www.qjmotor.com/"
+        },
+        {
+          "name": "闪400",
+          "cc": 400,
+          "type": "巡航",
+          "price": "19999元起",
+          "source": "https://m.58moto.com/brand/449"
+        },
+        {
+          "name": "闪600",
+          "cc": 600,
+          "type": "巡航",
+          "price": "24999元起",
+          "source": "https://m.58moto.com/brand/449"
+        },
+        {
+          "name": "骁600",
+          "cc": 600,
+          "type": "拉力ADV",
+          "price": "29999元起",
+          "source": "https://www.58moto.com/merchant/car/300187?id=449"
+        },
+        {
+          "name": "骁650",
+          "cc": 650,
+          "type": "拉力ADV",
+          "price": null,
+          "source": "https://www.qjmotor.com/"
+        },
+        {
+          "name": "骁700S",
+          "cc": 700,
+          "type": "拉力ADV",
+          "price": null,
+          "source": "https://www.qjmotor.com/"
+        },
+        {
+          "name": "骁800",
+          "cc": 800,
+          "type": "拉力ADV",
+          "price": null,
+          "source": "https://www.qjmotor.com/"
+        },
+        {
+          "name": "追550",
+          "cc": 550,
+          "type": "街车",
+          "price": "26999元",
+          "source": "https://www.58moto.com/merchant/car/300187?id=449"
+        },
+        {
+          "name": "追600",
+          "cc": 600,
+          "type": "街车",
+          "price": "36999元",
+          "source": "https://www.58moto.com/merchant/car/300187?id=449"
+        },
+        {
+          "name": "追800",
+          "cc": 800,
+          "type": "街车",
+          "price": null,
+          "source": "https://www.qjmotor.com/"
+        },
+        {
+          "name": "追900",
+          "cc": 900,
+          "type": "街车",
+          "price": "44999元",
+          "source": "https://www.58moto.com/merchant/car/300187?id=449"
+        },
+        {
+          "name": "追921",
+          "cc": 921,
+          "type": "街车",
+          "price": "66999元",
+          "source": "https://www.58moto.com/merchant/car/300187?id=449"
+        },
+        {
+          "name": "逸550",
+          "cc": 550,
+          "type": "复古",
+          "price": null,
+          "source": "https://www.qjmotor.com/"
+        },
+        {
+          "name": "鸿250",
+          "cc": 250,
+          "type": "踏板",
+          "price": "15999元起",
+          "source": "https://m.58moto.com/brand/449"
+        },
+        {
+          "name": "鸿350GS",
+          "cc": 350,
+          "type": "踏板",
+          "price": "25999元",
+          "source": "https://www.lianglunshijie.com/brand/607/"
+        },
+        {
+          "name": "SRT450",
+          "cc": 450,
+          "type": "拉力ADV",
+          "price": "27980元",
+          "source": "https://www.58moto.com/article/114/12524891.html"
+        }
       ],
       "uncertain": [
-        {"name": "SRT450", "cc": 450, "type": "拉力ADV", "price": "27980元起", "source": "https://www.58moto.com/merchant/car/300187?id=449", "reason": "摩托范有指导价且钱江双11促销稿提及，但 QJMOTOR 官网车型列表未列该型号，系列归属/在售状态待确认"},
-        {"name": "闪500+", "cc": 500, "type": "巡航", "price": "38999元", "source": "https://www.58moto.com/merchant/car/300187?id=449", "reason": "摩托范列在售报价，QJMOTOR 官网车型列表未列，待确认"},
-        {"name": "Dragster 459 Twin", "cc": 459, "type": "巡航", "price": "43999元", "source": "https://www.58moto.com/merchant/car/300187?id=449", "reason": "摩托范有报价但官网未列，疑为出口/海外命名车型，待确认"},
-        {"name": "Dragster 700 Twin", "cc": 700, "type": "巡航", "price": "49999元起", "source": "https://www.58moto.com/merchant/car/300187?id=449", "reason": "摩托范有报价但官网未列，疑为出口/海外命名车型，待确认"},
-        {"name": "OAO / OAO+ / OMO 系列", "cc": null, "type": "踏板", "price": "16999元起", "source": "https://www.qjmotor.com/", "reason": "官网将其列于阳光迪诺/壹米等小排量踏板区，未核实到排量 ≥250cc 依据，按规则排除"}
+        {
+          "name": "SRT450",
+          "cc": 450,
+          "type": "拉力ADV",
+          "price": "27980元起",
+          "source": "https://www.58moto.com/merchant/car/300187?id=449",
+          "reason": "摩托范有指导价且钱江双11促销稿提及，但 QJMOTOR 官网车型列表未列该型号，系列归属/在售状态待确认"
+        },
+        {
+          "name": "闪500+",
+          "cc": 500,
+          "type": "巡航",
+          "price": "38999元",
+          "source": "https://www.58moto.com/merchant/car/300187?id=449",
+          "reason": "摩托范列在售报价，QJMOTOR 官网车型列表未列，待确认"
+        },
+        {
+          "name": "Dragster 459 Twin",
+          "cc": 459,
+          "type": "巡航",
+          "price": "43999元",
+          "source": "https://www.58moto.com/merchant/car/300187?id=449",
+          "reason": "摩托范有报价但官网未列，疑为出口/海外命名车型，待确认"
+        },
+        {
+          "name": "Dragster 700 Twin",
+          "cc": 700,
+          "type": "巡航",
+          "price": "49999元起",
+          "source": "https://www.58moto.com/merchant/car/300187?id=449",
+          "reason": "摩托范有报价但官网未列，疑为出口/海外命名车型，待确认"
+        },
+        {
+          "name": "OAO / OAO+ / OMO 系列",
+          "cc": null,
+          "type": "踏板",
+          "price": "16999元起",
+          "source": "https://www.qjmotor.com/",
+          "reason": "官网将其列于阳光迪诺/壹米等小排量踏板区，未核实到排量 ≥250cc 依据，按规则排除"
+        }
       ],
       "sources": [
         "https://www.qjmotor.com/",
@@ -153,22 +606,111 @@
       "website": "https://www.benelli.com/",
       "logoUrl": "https://www.benelli.com/brand/horizontal-logo-black.svg",
       "models": [
-        {"name": "BKX250", "cc": 250, "type": "越野", "price": "15980元起", "source": "https://m.58moto.com/brand/45"},
-        {"name": "TRK552", "cc": 552, "type": "拉力ADV", "price": "29880元起", "source": "https://m.58moto.com/brand/45"},
-        {"name": "TRK702", "cc": 702, "type": "拉力ADV", "price": "36800元起", "source": "https://m.58moto.com/brand/45"},
-        {"name": "TRK902", "cc": 902, "type": "拉力ADV", "price": "44800元起", "source": "https://m.58moto.com/brand/45"},
-        {"name": "TNT600i", "cc": 600, "type": "街车", "price": "37800元", "source": "https://m.58moto.com/brand/45"},
-        {"name": "902S", "cc": 900, "type": "街车", "price": "39800元", "source": "https://m.58moto.com/brand/45"},
-        {"name": "哈伦252", "cc": 250, "type": "巡航", "price": "17800元", "source": "https://m.58moto.com/brand/45"},
-        {"name": "哈伦402", "cc": 400, "type": "巡航", "price": "19800元", "source": "https://m.58moto.com/brand/45"},
-        {"name": "幼狮 Leoncino 800", "cc": 800, "type": "复古", "price": "39800元", "source": "https://m.58moto.com/brand/45"}
+        {
+          "name": "BKX250",
+          "cc": 250,
+          "type": "越野",
+          "price": "15980元起",
+          "source": "https://m.58moto.com/brand/45"
+        },
+        {
+          "name": "TRK552",
+          "cc": 552,
+          "type": "拉力ADV",
+          "price": "29880元起",
+          "source": "https://m.58moto.com/brand/45"
+        },
+        {
+          "name": "TRK702",
+          "cc": 702,
+          "type": "拉力ADV",
+          "price": "36800元起",
+          "source": "https://m.58moto.com/brand/45"
+        },
+        {
+          "name": "TRK902",
+          "cc": 902,
+          "type": "拉力ADV",
+          "price": "44800元起",
+          "source": "https://m.58moto.com/brand/45"
+        },
+        {
+          "name": "TNT600i",
+          "cc": 600,
+          "type": "街车",
+          "price": "37800元",
+          "source": "https://m.58moto.com/brand/45"
+        },
+        {
+          "name": "902S",
+          "cc": 900,
+          "type": "街车",
+          "price": "39800元",
+          "source": "https://m.58moto.com/brand/45"
+        },
+        {
+          "name": "哈伦252",
+          "cc": 250,
+          "type": "巡航",
+          "price": "17800元",
+          "source": "https://m.58moto.com/brand/45"
+        },
+        {
+          "name": "哈伦402",
+          "cc": 400,
+          "type": "巡航",
+          "price": "19800元",
+          "source": "https://m.58moto.com/brand/45"
+        },
+        {
+          "name": "幼狮 Leoncino 800",
+          "cc": 800,
+          "type": "复古",
+          "price": "39800元",
+          "source": "https://m.58moto.com/brand/45"
+        }
       ],
       "uncertain": [
-        {"name": "TRK502 / TRK502X", "cc": 500, "type": "拉力ADV", "price": null, "source": "https://www.lianglunshijie.com/brand/295/", "reason": "历史主力车型，未出现在摩托范 2026 在售列表，疑已由 TRK552 取代，停售状态未逐一核实"},
-        {"name": "幼狮 Leoncino 500", "cc": 500, "type": "复古", "price": "34800元", "source": "https://www.lianglunshijie.com/brand/295/", "reason": "两轮视界/国际站在列，摩托范 2026 在售页未收录"},
-        {"name": "502C", "cc": 500, "type": "巡航", "price": null, "source": "https://fasterwheeler.com/cn/bikes/benelli/", "reason": "海外价格库列有，中国 2026 在售状态未核实"},
-        {"name": "752S", "cc": 750, "type": "街车", "price": null, "source": "https://fasterwheeler.com/cn/bikes/benelli/", "reason": "海外价格库列有，中国 2026 在售状态未核实"},
-        {"name": "龙卷风 Tornado 552R / 302R", "cc": 550, "type": "仿赛", "price": "32800元", "source": "https://www.lianglunshijie.com/brand/295/", "reason": "两轮视界列有促销信息，摩托范 2026 在售页未收录"}
+        {
+          "name": "TRK502 / TRK502X",
+          "cc": 500,
+          "type": "拉力ADV",
+          "price": null,
+          "source": "https://www.lianglunshijie.com/brand/295/",
+          "reason": "历史主力车型，未出现在摩托范 2026 在售列表，疑已由 TRK552 取代，停售状态未逐一核实"
+        },
+        {
+          "name": "幼狮 Leoncino 500",
+          "cc": 500,
+          "type": "复古",
+          "price": "34800元",
+          "source": "https://www.lianglunshijie.com/brand/295/",
+          "reason": "两轮视界/国际站在列，摩托范 2026 在售页未收录"
+        },
+        {
+          "name": "502C",
+          "cc": 500,
+          "type": "巡航",
+          "price": null,
+          "source": "https://fasterwheeler.com/cn/bikes/benelli/",
+          "reason": "海外价格库列有，中国 2026 在售状态未核实"
+        },
+        {
+          "name": "752S",
+          "cc": 750,
+          "type": "街车",
+          "price": null,
+          "source": "https://fasterwheeler.com/cn/bikes/benelli/",
+          "reason": "海外价格库列有，中国 2026 在售状态未核实"
+        },
+        {
+          "name": "龙卷风 Tornado 552R / 302R",
+          "cc": 550,
+          "type": "仿赛",
+          "price": "32800元",
+          "source": "https://www.lianglunshijie.com/brand/295/",
+          "reason": "两轮视界列有促销信息，摩托范 2026 在售页未收录"
+        }
       ],
       "sources": [
         "https://www.benelli.com/",
@@ -190,27 +732,146 @@
       "website": "https://www.cyclonemoto.com/",
       "logoUrl": "https://www.cyclonemoto.com/_nuxt/img/logo.d190ded.png",
       "models": [
-        {"name": "RC250", "cc": 250, "type": "仿赛", "price": "15988元", "source": "https://m.58moto.com/brand/382"},
-        {"name": "RT250", "cc": 250, "type": "踏板", "price": "14999元起", "source": "https://m.58moto.com/brand/382"},
-        {"name": "RT250E", "cc": 250, "type": "踏板", "price": "14999元起", "source": "https://m.58moto.com/brand/382"},
-        {"name": "RT2", "cc": 250, "type": "踏板", "price": "15988元起", "source": "https://m.58moto.com/brand/382"},
-        {"name": "睿途 RT3", "cc": 250, "type": "踏板", "price": "17999元起", "source": "https://m.58moto.com/brand/382"},
-        {"name": "RT5", "cc": 250, "type": "踏板", "price": "21988元起", "source": "https://m.58moto.com/brand/382"},
-        {"name": "RT450", "cc": 450, "type": "踏板", "price": "32980元", "source": "https://m.58moto.com/brand/382"},
-        {"name": "AQS250", "cc": 250, "type": "巡航", "price": "15999元起", "source": "https://m.58moto.com/brand/382"},
-        {"name": "AQS401", "cc": 400, "type": "巡航", "price": "21988元起", "source": "https://m.58moto.com/brand/382"},
-        {"name": "AQS600", "cc": 600, "type": "巡航", "price": "23988元", "source": "https://m.58moto.com/brand/382"},
-        {"name": "RA600", "cc": 600, "type": "巡航", "price": "23988元起", "source": "https://m.58moto.com/brand/382"},
-        {"name": "RA1000", "cc": 1000, "type": "巡航", "price": "45988元", "source": "https://m.58moto.com/brand/382"},
-        {"name": "RX250", "cc": 250, "type": "拉力ADV", "price": "14988元起", "source": "https://m.58moto.com/brand/382"},
-        {"name": "RX600", "cc": 600, "type": "拉力ADV", "price": "27988元起", "source": "https://m.58moto.com/brand/382"}
+        {
+          "name": "RC250",
+          "cc": 250,
+          "type": "仿赛",
+          "price": "15988元",
+          "source": "https://m.58moto.com/brand/382"
+        },
+        {
+          "name": "RT250",
+          "cc": 250,
+          "type": "踏板",
+          "price": "14999元起",
+          "source": "https://m.58moto.com/brand/382"
+        },
+        {
+          "name": "RT250E",
+          "cc": 250,
+          "type": "踏板",
+          "price": "14999元起",
+          "source": "https://m.58moto.com/brand/382"
+        },
+        {
+          "name": "RT2",
+          "cc": 250,
+          "type": "踏板",
+          "price": "15988元起",
+          "source": "https://m.58moto.com/brand/382"
+        },
+        {
+          "name": "睿途 RT3",
+          "cc": 250,
+          "type": "踏板",
+          "price": "17999元起",
+          "source": "https://m.58moto.com/brand/382"
+        },
+        {
+          "name": "RT5",
+          "cc": 250,
+          "type": "踏板",
+          "price": "21988元起",
+          "source": "https://m.58moto.com/brand/382"
+        },
+        {
+          "name": "RT450",
+          "cc": 450,
+          "type": "踏板",
+          "price": "32980元",
+          "source": "https://m.58moto.com/brand/382"
+        },
+        {
+          "name": "AQS250",
+          "cc": 250,
+          "type": "巡航",
+          "price": "15999元起",
+          "source": "https://m.58moto.com/brand/382"
+        },
+        {
+          "name": "AQS401",
+          "cc": 400,
+          "type": "巡航",
+          "price": "21988元起",
+          "source": "https://m.58moto.com/brand/382"
+        },
+        {
+          "name": "AQS600",
+          "cc": 600,
+          "type": "巡航",
+          "price": "23988元",
+          "source": "https://m.58moto.com/brand/382"
+        },
+        {
+          "name": "RA600",
+          "cc": 600,
+          "type": "巡航",
+          "price": "23988元起",
+          "source": "https://m.58moto.com/brand/382"
+        },
+        {
+          "name": "RA1000",
+          "cc": 1000,
+          "type": "巡航",
+          "price": "45988元",
+          "source": "https://m.58moto.com/brand/382"
+        },
+        {
+          "name": "RX250",
+          "cc": 250,
+          "type": "拉力ADV",
+          "price": "14988元起",
+          "source": "https://m.58moto.com/brand/382"
+        },
+        {
+          "name": "RX600",
+          "cc": 600,
+          "type": "拉力ADV",
+          "price": "27988元起",
+          "source": "https://m.58moto.com/brand/382"
+        }
       ],
       "uncertain": [
-        {"name": "RC600", "cc": 600, "type": "仿赛", "price": null, "source": "https://www.cyclonemoto.com/", "reason": "赛科龙官网仍展示，但摩托范 brand/382/unsale 标注为「停售」，2026 中国零售在售状态存疑"},
-        {"name": "RX401", "cc": 400, "type": "拉力ADV", "price": null, "source": "https://www.cyclonemoto.com/", "reason": "官网展示，摩托范标注「停售」，存疑"},
-        {"name": "RX650", "cc": 650, "type": "拉力ADV", "price": null, "source": "https://www.cyclonemoto.com/", "reason": "官网英文/中文站展示，摩托范 2026 在售页未列，存疑"},
-        {"name": "AQS628", "cc": 628, "type": "巡航", "price": null, "source": "https://m.58moto.com/brand/382", "reason": "摩托范标注「即将上市、暂无报价」，尚未正式在售"},
-        {"name": "RX628", "cc": 628, "type": "拉力ADV", "price": null, "source": "https://m.58moto.com/brand/382", "reason": "摩托范标注「即将上市、暂无报价」，尚未正式在售"}
+        {
+          "name": "RC600",
+          "cc": 600,
+          "type": "仿赛",
+          "price": null,
+          "source": "https://www.cyclonemoto.com/",
+          "reason": "赛科龙官网仍展示，但摩托范 brand/382/unsale 标注为「停售」，2026 中国零售在售状态存疑"
+        },
+        {
+          "name": "RX401",
+          "cc": 400,
+          "type": "拉力ADV",
+          "price": null,
+          "source": "https://www.cyclonemoto.com/",
+          "reason": "官网展示，摩托范标注「停售」，存疑"
+        },
+        {
+          "name": "RX650",
+          "cc": 650,
+          "type": "拉力ADV",
+          "price": null,
+          "source": "https://www.cyclonemoto.com/",
+          "reason": "官网英文/中文站展示，摩托范 2026 在售页未列，存疑"
+        },
+        {
+          "name": "AQS628",
+          "cc": 628,
+          "type": "巡航",
+          "price": null,
+          "source": "https://m.58moto.com/brand/382",
+          "reason": "摩托范标注「即将上市、暂无报价」，尚未正式在售"
+        },
+        {
+          "name": "RX628",
+          "cc": 628,
+          "type": "拉力ADV",
+          "price": null,
+          "source": "https://m.58moto.com/brand/382",
+          "reason": "摩托范标注「即将上市、暂无报价」，尚未正式在售"
+        }
       ],
       "sources": [
         "https://www.cyclonemoto.com/",
@@ -234,11 +895,30 @@
       "website": "https://www.haojue.com/",
       "logoUrl": "https://cdn.haojue.com/bocweb/web/img/logo.png?v=v49",
       "models": [
-        {"name": "TR300", "cc": 300, "type": "巡航", "price": "21980元起", "source": "https://www.haojue.com/TR300/jiage.html"},
-        {"name": "TVL350", "cc": 350, "type": "踏板", "price": "28980元起", "source": "https://www.haojue.com/TVL350/canshu.html"}
+        {
+          "name": "TR300",
+          "cc": 300,
+          "type": "巡航",
+          "price": "21980元起",
+          "source": "https://www.haojue.com/TR300/jiage.html"
+        },
+        {
+          "name": "TVL350",
+          "cc": 350,
+          "type": "踏板",
+          "price": "28980元起",
+          "source": "https://www.haojue.com/TVL350/canshu.html"
+        }
       ],
       "uncertain": [
-        {"name": "GW300J", "cc": 300, "type": "旅行", "price": "48180元起", "source": "https://haojue.com/products/", "reason": "官网列于「公务车」分类，属警用/公务采购渠道而非民用零售，是否计入民用看板存疑，未纳入正式 models"}
+        {
+          "name": "GW300J",
+          "cc": 300,
+          "type": "旅行",
+          "price": "48180元起",
+          "source": "https://haojue.com/products/",
+          "reason": "官网列于「公务车」分类，属警用/公务采购渠道而非民用零售，是否计入民用看板存疑，未纳入正式 models"
+        }
       ],
       "sources": [
         "https://haojue.com/products/",

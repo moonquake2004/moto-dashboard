@@ -97,7 +97,7 @@ def main():
         return 5
     print("TREE_OK: %s" % new_tree["sha"][:8], flush=True)
 
-    msg = "style: Race Day 赛道日视觉改版 + 补齐官方 Logo 至 40 张"
+    msg = "feat: 品牌型号补至439款/41张官方Logo；自建访问统计后端(Flask+SQLite)；修正RE未官方入华口径；删除hero副标题；changjiang Bobbie变体标uncertain"
     st, commit = api("POST", "/repos/%s/git/commits" % REPO, {
         "message": msg, "tree": new_tree["sha"], "parents": [base_sha],
         "author": {"name": "moonquake2004", "email": "moonquake2004@users.noreply.github.com"},
