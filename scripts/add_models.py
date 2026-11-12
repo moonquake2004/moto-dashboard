@@ -2,8 +2,10 @@
 """方案A：批量补已确认的型号缺口（P0+P1），跳过已有重复项。"""
 import json, os
 
-BASE = os.path.dirname(os.path.abspath(__file__))
-DATA = os.path.join(BASE, "data")
+from _jsonio import save as _save_json
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA = os.path.join(ROOT, "data")
 
 # 追加清单：brand_id -> [ {name, cc, type, price(str|None), source} ]
 ADD = {
@@ -124,7 +126,7 @@ def main():
             if added:
                 total_added += added
                 print(f"  +{added} {bid} (now {len(b['models'])})")
-        json.dump(doc, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        _save_json(path, doc)
     print("TOTAL ADDED:", total_added)
 
 

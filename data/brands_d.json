@@ -12,14 +12,14 @@
       "models": [
         {
           "name": "CB500 SUPER FOUR",
-          "cc": null,
+          "cc": 502,
           "type": "复古",
           "price": "42980~43480元",
           "source": "https://www.honda.com.cn/motorcycle.html"
         },
         {
           "name": "CBR500R FOUR",
-          "cc": null,
+          "cc": 502,
           "type": "仿赛",
           "price": null,
           "source": "https://www.honda.com.cn/motorcycle.html"

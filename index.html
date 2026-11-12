@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>国内 250cc+ 摩托车厂商品牌全景看板</title>
+<meta name="description" content="收录中国市场在售的 250cc 以上摩托车品牌与在售车型，逐条附核实来源、官方指导价与排量参数；未核实的参数一律留空，不做估算。">
+<meta name="theme-color" content="#E1251B">
+<meta property="og:type" content="website">
+<meta property="og:title" content="国内 250cc+ 摩托车厂商品牌全景看板">
+<meta property="og:description" content="中国市场在售 250cc 以上摩托车的品牌、车型、官方指导价与核实来源。">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <style>
 :root{
   --bg:#f4f6f9; --card:#ffffff; --ink:#16202e; --muted:#6b7a8d; --faint:#93a1b2;
@@ -97,7 +103,7 @@ section{margin-top:30px}
 .dot.dom{background:var(--c-dom)} .dot.jv{background:var(--c-jv)} .dot.imp{background:var(--c-imp)}
 
 /* filter bar */
-.filters{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);
+.filters{position:sticky;top:0;z-index:20;background:#fff;
   border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:12px 14px;margin-top:30px}
 .f-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .search{flex:1;min-width:220px;position:relative}
@@ -247,7 +253,8 @@ select{height:36px;border:1px solid var(--line);border-radius:8px;background:#fa
 
 /* ==================== RACE DAY 视觉层 ==================== */
 :root{
-  --bg:#F1F2F4;--card:#FFFFFF;--ink:#17191D;--muted:#666E7A;--faint:#98A0AA;
+  --bg:#F1F2F4;--card:#FFFFFF;--ink:#17191D;--muted:#666E7A;--faint:#6E7783;
+  /* --faint 原来 #98A0AA 对白底只有 2.6:1，10px 小字不达 AA；提到 4.5:1 以上 */
   --line:#E1E4E9;--line2:#EDF0F3;--accent:#E1251B;--race:#E1251B;--race2:#B4160E;
   --carbon:#1B1E23;--c-dom:#E1251B;--c-jv:#1F6FEB;--c-imp:#6D3BD1;
   --shadow:0 1px 2px rgba(20,24,32,.05),0 8px 22px rgba(20,24,32,.06);
@@ -442,6 +449,17 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
   .fc-arrow{color:var(--race);font-size:12px;flex:none}
   .filters.is-collapsed .f-body{display:none}
 }
+
+/* ===== 修正层：手机端型号预览截断 / 平行进口标记 / 键盘焦点 ===== */
+.mtable.clip .mrow.extra{display:none}
+.more-btn{width:100%;border:0;border-top:1px dashed var(--line);background:#fff;padding:8px;
+  font-family:inherit;font-size:11.5px;font-weight:700;letter-spacing:.02em;color:var(--race);cursor:pointer}
+.more-btn:hover{background:#FFF6F5}
+.bcard.collapsed .more-btn{display:none}
+.tag.tag-parallel{color:#8A6A20;border-color:#E8D6A8;background:#FFF9E8;cursor:help}
+.wall-item:focus-visible,.more-btn:focus-visible,.tab:focus-visible,
+.mini-btn:focus-visible,.collapse-btn:focus-visible,.f-compact:focus-visible{
+  outline:2px solid var(--race);outline-offset:2px}
 </style>
 </head>
 <body>
@@ -507,14 +525,16 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
     </button>
     <div class="f-body">
       <div class="f-row">
-        <div class="search"><span class="ico">⌕</span><input id="q" type="search" placeholder="搜索品牌 / 集团 / 型号名，例如「450SR」「无极」「Ninja」" autocomplete="off"></div>
-        <select id="fBucket"><option value="">全部排量段</option></select>
-        <select id="fType"><option value="">全部车型类别</option></select>
+        <div class="search"><span class="ico" aria-hidden="true">⌕</span><input id="q" type="search" aria-label="搜索品牌、集团或型号名" placeholder="搜索品牌 / 集团 / 型号名，支持空格分隔多个词，例如「春风 450」" autocomplete="off"></div>
+        <select id="fBucket" aria-label="按排量段筛选"><option value="">全部排量段</option></select>
+        <select id="fType" aria-label="按车型类别筛选"><option value="">全部车型类别</option></select>
+        <select id="fPrice" aria-label="按价格区间筛选"><option value="">全部价格</option></select>
       </div>
       <div class="tabs" id="tabs"></div>
       <div class="f-foot">
         <div class="result-count" id="resultCount"></div>
         <div style="display:flex;gap:6px">
+          <button class="mini-btn" id="sortPrice" aria-label="切换价格排序">价格排序 ⇅</button>
           <button class="mini-btn" id="toggleAll">全部收起</button>
           <button class="mini-btn" id="resetAll">重置筛选</button>
         </div>
@@ -555,13 +575,26 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
   var CATS = ["国产自主","合资及台系","进口大贸"];
   var CAT_KEY = {"国产自主":"dom","合资及台系":"jv","进口大贸":"imp"};
   var CAT_COLOR = {"国产自主":"#E1251B","合资及台系":"#1F6FEB","进口大贸":"#6D3BD1"};
-  var BUCKETS = ["250-399cc","400-699cc","700-999cc","1000cc以上","未标注"];
-  var state = {q:"",cat:"全部",bucket:"",type:"",collapsed:false};
+  var state = {q:"",cat:"全部",bucket:"",type:"",price:"",sort:"",collapsed:false};
   var $ = function(id){return document.getElementById(id)};
   var esc = function(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){
     return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})};
   var num = function(n){return (n||0).toLocaleString('zh-CN')};
   var pad = function(n){return n<10 ? '0'+n : String(n)};
+  /* 搜索分词：空格分隔，全部命中才算命中（支持「春风 450」这类多词查询） */
+  var tokenize = function(q){return q.trim().toLowerCase().split(/\s+/).filter(function(x){return x})};
+  var hitAll = function(hay,toks){for(var i=0;i<toks.length;i++){if(hay.indexOf(toks[i])<0)return false}return true};
+  var brandHay = function(b){return [b.name,b.nameEn,b.company,b.group,b.subCategory,b.category].join(" ").toLowerCase()};
+  /* Logo 加载失败兜底：走捕获阶段的 error 事件，不把字符串拼进 onerror 属性（原来品牌名带单引号会让兜底失效） */
+  document.addEventListener("error",function(e){
+    var t=e.target;
+    if(!t||t.tagName!=="IMG"||!t.getAttribute("data-fb"))return;
+    var box=t.parentNode; if(!box)return;
+    var fb=document.createElement("div");
+    fb.className=t.getAttribute("data-fbcls")||"wall-fallback";
+    fb.textContent=t.getAttribute("data-fb");
+    box.innerHTML=""; box.appendChild(fb);
+  },true);
   /* 手机端筛选栏折叠 */
   var lastCounts = {b:0,m:0};
   var filtersEl = $("filters"), fCompact = $("fCompact");
@@ -583,14 +616,54 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
   $("hScope").textContent = D.meta.scope;
   $("footDate").textContent = D.meta.updated;
   var s = D.stats;
+  /* 排量段从数据里取，避免出现「未标注」这种空档位（数据已无该段） */
+  var BUCKETS = ["250-399cc","400-699cc","700-999cc","1000cc以上"].filter(function(b){return s.byBucket[b]});
+  BUCKETS.forEach(function(b){
+    var o=document.createElement("option");o.value=b;o.textContent=b+"（"+s.byBucket[b]+"）";$("fBucket").appendChild(o);
+  });
+
+  /* 价格区间：用结构化后的 priceMin/Max 筛（统一折算成元），保留原 price 文本做展示 */
+  var PRICE_RANGES = [
+    {v:"lt1", t:"1 万元以下", lo:null,  hi:10000},
+    {v:"1-2", t:"1–2 万元",   lo:10000, hi:20000},
+    {v:"2-3", t:"2–3 万元",   lo:20000, hi:30000},
+    {v:"3-5", t:"3–5 万元",   lo:30000, hi:50000},
+    {v:"gte5", t:"5 万元以上", lo:50000, hi:null},
+    {v:"none", t:"价格未公布"}
+  ];
+  function matchesPrice(m,v){
+    if(!v) return true;
+    if(v==="none") return m.priceMin==null;
+    if(m.priceMin==null) return false;
+    for(var i=0;i<PRICE_RANGES.length;i++){
+      var r=PRICE_RANGES[i];
+      if(r.v===v) return (r.lo==null||m.priceMin>=r.lo)&&(r.hi==null||m.priceMin<r.hi);
+    }
+    return true;
+  }
+  function priceCount(v){
+    var n=0;
+    D.brands.forEach(function(b){b.models.forEach(function(m){if(matchesPrice(m,v)) n++})});
+    return n;
+  }
+  PRICE_RANGES.forEach(function(r){
+    var o=document.createElement("option");
+    o.value=r.v; o.textContent=r.t+"（"+priceCount(r.v)+"）";
+    $("fPrice").appendChild(o);
+  });
+  var SORT_LABEL = {"":"价格排序 ⇅","asc":"价格 ↑","desc":"价格 ↓"};
   $("footSign").textContent = s.brandCount+" BRANDS / "+s.modelCount+" MODELS / "+s.logoCount+" OFFICIAL LOGOS · "+D.meta.updated;
+  /* 大盘数字全部从 D.market 读，避免和数据脱钩 */
+  var mk = D.market.items;
+  var mkNote = function(it){return (it.note||"")+(it.delta?" · 同比 "+it.delta:"")};
+  var brandNote = (s.brandCountWithModels!=null?s.brandCountWithModels:s.brandCount)+" 个有 ≥250cc 在售车型";
   var kpis = [
-    ["收录品牌", s.brandCount, "个", "国产自主 / 合资台系 / 进口大贸"],
+    ["收录品牌", s.brandCount, "个", brandNote],
     ["在售型号", s.modelCount, "个", "≥250cc，逐条附核实来源"],
     ["官方 Logo", s.logoCount, "张", "本地化存储，占比 "+Math.round(s.logoCount/s.brandCount*100)+"%"],
-    [D.market.items[0].label, D.market.items[0].value, D.market.items[0].unit, "2025年 · 同比 +25.87%"],
-    [D.market.items[1].label, D.market.items[1].value, D.market.items[1].unit, "2025年 · 同比 +107.56%"],
-    ["内销 CR3", D.market.items[3].value, D.market.items[3].unit, "春风 / 钱江 / 隆鑫"]
+    [mk[0].label, mk[0].value, mk[0].unit, mkNote(mk[0])],
+    [mk[1].label, mk[1].value, mk[1].unit, mkNote(mk[1])],
+    [mk[3].label, mk[3].value, mk[3].unit, mkNote(mk[3])]
   ];
   $("kpis").innerHTML = kpis.map(function(k){
     return '<div class="kpi"><div class="k-label">'+esc(k[0])+'</div><div class="k-val">'+esc(k[1])+'<small>'+esc(k[2])+'</small></div><div class="k-note">'+esc(k[3])+'</div></div>';
@@ -625,16 +698,17 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
   bars("chartCat",s.byCategoryModels,CATS,CAT_COLOR);
 
   /* logo wall */
-  function logoHTML(b,cls){
+  function logoHTML(b,cls,fbCls){
     var box = cls + (b.logoDark?" dark":"");
     if(b.logo.file){
-      return '<div class="'+box+'"><img src="'+esc(b.logo.file)+'" alt="'+esc(b.name)+' Logo" loading="lazy" onerror="this.parentNode.innerHTML=\'<div class=&quot;wall-fallback&quot;>'+esc(b.nameEn||b.name)+'</div>\'"></div>';
+      return '<div class="'+box+'"><img src="'+esc(b.logo.file)+'" alt="'+esc(b.name)+' Logo" loading="lazy" data-fb="'+esc(b.nameEn||b.name)+'" data-fbcls="'+fbCls+'"></div>';
     }
-    return '<div class="'+box+'"><div class="wall-fallback">'+esc(b.nameEn||b.name)+'</div></div>';
+    return '<div class="'+box+'"><div class="'+fbCls+'">'+esc(b.nameEn||b.name)+'</div></div>';
   }
   $("wall").innerHTML = D.brands.map(function(b,i){
-    return '<div class="wall-item" data-no="'+pad(i+1)+'" data-jump="'+esc(b.id)+'" title="'+esc(b.name)+' · '+b.modelCount+' 个在售型号">'+
-      logoHTML(b,"wall-logo")+'<div class="wall-name">'+esc(b.name)+'</div>'+
+    return '<div class="wall-item" data-no="'+pad(i+1)+'" data-jump="'+esc(b.id)+'" role="button" tabindex="0"'+
+      ' aria-label="'+esc(b.name)+'，'+b.modelCount+' 个在售型号，查看详情" title="'+esc(b.name)+' · '+b.modelCount+' 个在售型号">'+
+      logoHTML(b,"wall-logo","wall-fallback")+'<div class="wall-name">'+esc(b.name)+'</div>'+
       '<div class="wall-meta"><span class="dot '+CAT_KEY[b.category]+'"></span>'+b.modelCount+' 款</div></div>';
   }).join("");
 
@@ -644,40 +718,41 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
     var n = c==="全部" ? s.brandCount : (s.byCategory[c]||0);
     return '<button class="tab'+(state.cat===c?" on":"")+'" data-cat="'+esc(c)+'">'+esc(c)+' '+n+'</button>';
   }).join("");
-  BUCKETS.forEach(function(b){var o=document.createElement("option");o.value=b;o.textContent=b+"（"+(s.byBucket[b]||0)+"）";$("fBucket").appendChild(o)});
   Object.keys(s.byType).sort(function(a,b){return s.byType[b]-s.byType[a]}).forEach(function(t){
     var o=document.createElement("option");o.value=t;o.textContent=t+"（"+s.byType[t]+"）";$("fType").appendChild(o)});
 
   /* brand cards */
-  function modelRow(m,i){
+  var MOBILE_PREVIEW = 4;   /* 手机端每张卡默认显示的型号行数，其余折叠 */
+  function modelRow(m,i,extra){
     var cc = m.cc!=null ? m.cc+'<small>cc</small>' : '—';
     var price = m.price ? esc(m.price) : '<span class="na">—</span>';
-    var src = m.source ? '<a href="'+esc(m.source)+'" target="_blank" rel="noopener" title="查看核实来源">↗</a>' : '<span>·</span>';
-    return '<div class="mrow"><div class="mn"><span class="gno">'+pad(i+1)+'</span>'+esc(m.name)+'</div><div class="cc">'+cc+'</div>'+
+    var src = m.source ? '<a href="'+esc(m.source)+'" target="_blank" rel="noopener noreferrer" title="查看核实来源">↗</a>' : '<span>·</span>';
+    return '<div class="mrow'+(extra?" extra":"")+'"><div class="mn"><span class="gno">'+pad(i+1)+'</span>'+esc(m.name)+'</div><div class="cc">'+cc+'</div>'+
       '<div class="mt">'+esc(m.type)+'</div><div class="mp'+(m.price?'':' na')+'">'+price+'</div><div class="ms">'+src+'</div></div>';
   }
-  function brandCard(b,models,matchedBrand){
+  function brandCard(b,models,matchedBrand,mobile){
     var catCls = "cat-"+CAT_KEY[b.category];
     var noTxt = pad(D.brands.indexOf(b)+1);
-    var logoBox = '<div class="blogo'+(b.logoDark?" dark":"")+'">'+
-      (b.logo.file ? '<img src="'+esc(b.logo.file)+'" alt="'+esc(b.name)+' Logo" loading="lazy" onerror="this.parentNode.innerHTML=\'<div class=&quot;fb&quot;>'+esc(b.nameEn||b.name)+'</div>\'">'
-                   : '<div class="fb">'+esc(b.nameEn||b.name)+'</div>')+'</div>';
-    var links = (b.website?'<a href="'+esc(b.website)+'" target="_blank" rel="noopener">品牌官网 ↗</a>':'')+
-      (b.logo.source?'<a href="'+esc(b.logo.source)+'" target="_blank" rel="noopener">Logo 来源 ↗</a>':'');
+    var logoBox = logoHTML(b,"blogo","fb");
+    var links = (b.website?'<a href="'+esc(b.website)+'" target="_blank" rel="noopener noreferrer">品牌官网 ↗</a>':'')+
+      (b.logo.source?'<a href="'+esc(b.logo.source)+'" target="_blank" rel="noopener noreferrer">Logo 来源 ↗</a>':'');
     var head = '<div class="bhead">'+logoBox+'<div class="binfo">'+
       '<div class="bname"><span class="bno">'+noTxt+'</span><strong>'+esc(b.name)+'</strong><span class="en">'+esc(b.nameEn)+'</span></div>'+
       '<div class="bcompany" title="'+esc(b.company)+'">'+esc(b.company||"—")+'</div>'+
       '<div class="btags"><span class="tag '+catCls+'">'+esc(b.subCategory||b.category)+'</span>'+
+      (b.marketStatus==="parallel"?'<span class="tag tag-parallel" title="非官方大贸渠道在售，不计入统计口径">平行进口 · 未计入统计</span>':'')+
       (b.logo.file?'':'<span class="tag">Logo 未获取</span>')+
       (b.logo.note?'<span class="tag logo-note" title="'+esc(b.logo.note)+'">Logo 说明 ⓘ</span>':'')+
       (b.uncertain.length?'<span class="tag" title="另有存疑型号未纳入正式清单">'+b.uncertain.length+' 条存疑未纳入</span>':'')+
       '</div>'+(links?'<div class="blinks">'+links+'</div>':'')+'</div>'+
       '<div class="bcount">'+models.length+' 款</div></div>';
 
-    var body;
+    var body, clip = false;
     if(models.length){
-      body = '<div class="mtable"><div class="mhead"><div>型号</div><div>排量</div><div>类别</div><div>官方指导价</div><div></div></div>'+
-        models.map(modelRow).join("")+'</div>';
+      clip = mobile && models.length > MOBILE_PREVIEW+2;
+      body = '<div class="mtable'+(clip?" clip":"")+'"><div class="mhead"><div>型号</div><div>排量</div><div>类别</div><div>官方指导价</div><div></div></div>'+
+        models.map(function(m,i){return modelRow(m,i,clip&&i>=MOBILE_PREVIEW)}).join("")+'</div>'+
+        (clip?'<button class="more-btn" data-more="1">展开全部 '+models.length+' 款 ▾</button>':'');
     }else if(b.modelCount===0){
       body = '<div class="empty-models"><div class="em-title">当前在中国市场无 ≥250cc 在售车型</div>'+
         esc(b.note||"经官网与车型库核查，该品牌暂无符合口径的在售型号。")+'</div>';
@@ -686,42 +761,81 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
     }
     var note = b.note && models.length ? '<div class="bnote"><b>说明：</b>'+esc(b.note)+'</div>' : '';
     return '<div class="bcard'+(state.collapsed?" collapsed":"")+'" data-cat="'+CAT_KEY[b.category]+'" id="b-'+esc(b.id)+'">'+head+body+note+
-      '<button class="collapse-btn" data-collapse="'+esc(b.id)+'">收起型号清单 ▴</button></div>';
+      '<button class="collapse-btn" data-collapse="'+esc(b.id)+'">'+(state.collapsed?"展开型号清单 ▾":"收起型号清单 ▴")+'</button></div>';
   }
 
-  function matchBrand(b,q){
-    if(!q) return false;
-    return [b.name,b.nameEn,b.company,b.group].join(" ").toLowerCase().indexOf(q)>=0;
-  }
+  /* 搜索：多关键词 AND。命中的品牌词用于选品牌，剩下没命中的词继续过滤型号，
+     所以「春风 450」= 春风品牌下含 450 的型号 */
   function render(){
-    var q = state.q.trim().toLowerCase();
-    var shownBrands=0, shownModels=0;
-    var html = CATS.map(function(cat){
-      if(state.cat!=="全部" && state.cat!==cat) return "";
-      var items = D.brands.filter(function(b){return b.category===cat}).map(function(b){
-        var bm = matchBrand(b,q);
-        var models = b.models.filter(function(m){
-          if(state.bucket && m.bucket!==state.bucket) return false;
-          if(state.type && m.type!==state.type) return false;
-          if(q && !bm){
-            return (m.name+" "+(m.type||"")).toLowerCase().indexOf(q)>=0;
-          }
+    var toks = tokenize(state.q);
+    var filtered = toks.length>0 || state.bucket || state.type || state.price;
+    var mobile = isMobile();
+    var shownBrands=0, shownModels=0, shownParallel=0;
+
+    function buildItems(pred){
+      return D.brands.filter(pred).map(function(b){
+        var all=false, part=false, miss=[];
+        if(toks.length){
+          var bh = brandHay(b);
+          var hit=[], bad=[];
+          toks.forEach(function(t){(bh.indexOf(t)>=0?hit:bad).push(t)});
+          all = bad.length===0;
+          part = hit.length>0;
+          miss = bad;
+        }
+        var restToks = all ? [] : (part ? miss : toks);
+        var models = b.models.filter(function(x){
+          if(state.bucket && x.bucket!==state.bucket) return false;
+          if(state.type && x.type!==state.type) return false;
+          if(!matchesPrice(x,state.price)) return false;
+          if(restToks.length) return hitAll((x.name+" "+(x.type||"")).toLowerCase(), restToks);
           return true;
         });
-        if((q||state.bucket||state.type) && models.length===0 && !(q&&bm)) return null;
-        if(state.bucket||state.type){ if(models.length===0) return null; }
-        return {b:b,models:models,bm:bm};
-      }).filter(Boolean);
+        if(state.sort){
+          var dir = state.sort==="asc"?1:-1;
+          models.sort(function(a,b){
+            var A=a.priceMin, B=b.priceMin;
+            if(A==null && B==null) return 0;
+            if(A==null) return 1;      /* 未公布价格的一律排最后，升序降序都一样 */
+            if(B==null) return -1;
+            return dir*(A-B);
+          });
+        }
+        return {b:b, models:models, bm:part};
+      }).filter(function(x){
+        if(!filtered) return true;
+        if(x.models.length) return true;
+        if(state.bucket||state.type) return false;
+        return toks.length>0 && x.bm;   /* 品牌名命中但本身无在售车型，仍展示说明卡 */
+      });
+    }
+
+    function groupHTML(title, items, color, isParallel){
       if(!items.length) return "";
-      shownBrands += items.length;
-      items.forEach(function(x){shownModels += x.models.length});
-      return '<div class="grp"><div class="grp-head"><div class="bar" style="background:'+CAT_COLOR[cat]+'"></div>'+
-        '<h3>'+esc(cat)+'</h3><span class="cnt">'+items.length+' 个品牌 · '+items.reduce(function(a,x){return a+x.models.length},0)+' 款</span></div>'+
-        '<div class="brand-grid">'+items.map(function(x){return brandCard(x.b,x.models,x.bm)}).join("")+'</div></div>';
+      var cnt = items.reduce(function(a,x){return a+x.models.length},0);
+      shownBrands += items.length; shownModels += cnt;
+      if(isParallel) shownParallel += cnt;
+      return '<div class="grp"><div class="grp-head"><div class="bar" style="background:'+color+'"></div>'+
+        '<h3>'+esc(title)+'</h3><span class="cnt">'+items.length+' 个品牌 · '+cnt+' 款'+(isParallel?" · 未计入统计":"")+'</span></div>'+
+        '<div class="brand-grid">'+items.map(function(x){return brandCard(x.b,x.models,x.bm,mobile)}).join("")+'</div></div>';
+    }
+
+    var html = CATS.map(function(cat){
+      if(state.cat!=="全部" && state.cat!==cat) return "";
+      return groupHTML(cat, buildItems(function(b){return b.category===cat && b.marketStatus!=="parallel"}),
+        CAT_COLOR[cat], false);
     }).join("");
+
+    /* 平行进口单列一组，避免它的 14 款混进「在售」统计 */
+    if(state.cat==="全部" || state.cat==="进口大贸"){
+      html += groupHTML("平行进口 · 未官方入华",
+        buildItems(function(b){return b.marketStatus==="parallel"}), "#8A6A20", true);
+    }
+
     $("brandGroups").innerHTML = html || '<div class="panel" style="padding:36px;text-align:center;color:var(--muted)">没有符合条件的品牌或型号，试试清空搜索或重置筛选。</div>';
     $("resultCount").innerHTML = '显示 <b>'+shownBrands+'</b> 个品牌 · <b>'+shownModels+'</b> 个型号'+
-      (q||state.bucket||state.type||state.cat!=="全部" ? '　<span style="color:var(--faint)">（已筛选，全库 '+s.brandCount+' 品牌 / '+s.modelCount+' 型号）</span>' : '');
+      (shownParallel?'<span style="color:var(--faint)">（含 '+shownParallel+' 款平行进口，未计入统计）</span>':'')+
+      (filtered||state.cat!=="全部" ? '　<span style="color:var(--faint)">（已筛选，全库 '+s.brandCount+' 品牌 / '+(s.modelCountAll||s.modelCount)+' 型号）</span>' : '');
     $("toggleAll").textContent = state.collapsed ? "全部展开" : "全部收起";
     lastCounts.b = shownBrands; lastCounts.m = shownModels;
     updateCompact();
@@ -753,12 +867,28 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
       setCollapsed(true);
     }
   },{passive:true});
-  window.addEventListener("resize",function(){setCollapsed(isMobile());});
+  /* 只在真正跨断点时处理：手机上键盘弹起 / 地址栏收起 / 旋转屏幕都会触发 resize，
+     原来无条件收起会把正在输入的搜索框直接隐藏掉 */
+  var lastMobile = isMobile();
+  window.addEventListener("resize",function(){
+    var m=isMobile();
+    if(m===lastMobile) return;
+    lastMobile=m;
+    setCollapsed(m);
+    render();
+  });
   setCollapsed(isMobile());
 
   $("q").addEventListener("input",function(e){state.q=e.target.value;render()});
   $("fBucket").addEventListener("change",function(e){state.bucket=e.target.value;render()});
   $("fType").addEventListener("change",function(e){state.type=e.target.value;render()});
+  $("fPrice").addEventListener("change",function(e){state.price=e.target.value;render()});
+  /* 三态循环：默认 → 价格升序 → 价格降序 → 默认 */
+  $("sortPrice").addEventListener("click",function(){
+    state.sort = state.sort==="" ? "asc" : (state.sort==="asc" ? "desc" : "");
+    this.textContent = SORT_LABEL[state.sort];
+    render();
+  });
   $("tabs").addEventListener("click",function(e){
     var t=e.target.closest(".tab"); if(!t) return;
     state.cat=t.dataset.cat;
@@ -774,23 +904,47 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
     this.textContent = state.collapsed ? "全部展开" : "全部收起";
   });
   $("resetAll").addEventListener("click",function(){
-    state={q:"",cat:"全部",bucket:"",type:"",collapsed:false};
+    state={q:"",cat:"全部",bucket:"",type:"",price:"",sort:"",collapsed:false};
+    $("fPrice").value="";$("sortPrice").textContent=SORT_LABEL[""];
     $("q").value="";$("fBucket").value="";$("fType").value="";
     Array.prototype.forEach.call($("tabs").children,function(x){x.classList.toggle("on",x.dataset.cat==="全部")});
     render();
     setCollapsed(true);
   });
+  /* 单卡收起/展开后，同步全局状态与按钮文案，避免搜索一次又全部弹开 */
+  function syncCollapseState(){
+    var cards=document.querySelectorAll(".bcard"), all=cards.length>0;
+    Array.prototype.forEach.call(cards,function(c){if(!c.classList.contains("collapsed")) all=false});
+    state.collapsed=all;
+    $("toggleAll").textContent = all ? "全部展开" : "全部收起";
+  }
+  $("wall").addEventListener("keydown",function(e){
+    if(e.key!=="Enter"&&e.key!==" ") return;
+    var t=e.target.closest("[data-jump]"); if(!t) return;
+    e.preventDefault(); t.click();
+  });
   document.addEventListener("click",function(e){
     if(isMobile() && !filtersEl.contains(e.target)) setCollapsed(true);
+    var more=e.target.closest("[data-more]");
+    if(more){
+      var tb=more.parentNode.querySelector(".mtable");
+      if(tb){
+        var clipped=tb.classList.toggle("clip");
+        more.textContent = clipped ? ("展开全部 "+tb.querySelectorAll(".mrow").length+" 款 ▾") : "收起 ▴";
+      }
+      return;
+    }
     var c=e.target.closest("[data-collapse]");
     if(c){var card=c.closest(".bcard");card.classList.toggle("collapsed");
-      c.textContent=card.classList.contains("collapsed")?"展开型号清单 ▾":"收起型号清单 ▴";return;}
+      c.textContent=card.classList.contains("collapsed")?"展开型号清单 ▾":"收起型号清单 ▴";
+      syncCollapseState();return;}
     var w=e.target.closest("[data-jump]");
     if(w){
       var id=w.dataset.jump;
       // 跳转前清除筛选，保证目标卡片可见
       if(state.q||state.bucket||state.type||state.cat!=="全部"){
-        state={q:"",cat:"全部",bucket:"",type:"",collapsed:state.collapsed};
+        state={q:"",cat:"全部",bucket:"",type:"",price:"",sort:state.sort,collapsed:state.collapsed};
+        $("fPrice").value="";
         $("q").value="";$("fBucket").value="";$("fType").value="";
         Array.prototype.forEach.call($("tabs").children,function(x){x.classList.toggle("on",x.dataset.cat==="全部")});
         render();
@@ -804,7 +958,9 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
   /* footer */
   $("principles").innerHTML = D.meta.principles.map(function(x){return "<li>"+esc(x)+"</li>"}).join("");
   $("sources").textContent = D.meta.sources.join("；");
-  $("integrity").textContent = "共收录 "+s.brandCount+" 个品牌、"+s.modelCount+" 个 ≥250cc 在售型号；"+
+  $("integrity").textContent = "共收录 "+s.brandCount+" 个品牌，其中 "+(s.brandCountWithModels!=null?s.brandCountWithModels:s.brandCount)+
+    " 个有 ≥250cc 在售车型、共 "+s.modelCount+" 款；"+
+    (s.parallelModelCount?"另有 "+s.parallelModelCount+" 款属平行进口（未以官方大贸身份入华），单列展示但不计入上述统计；":"")+
     s.logoCount+" 个品牌已获取官方 Logo 并本地化，" + s.logoMissing + " 个因官网为 SPA / 反爬 / 无中国官网而未获取到官方图形标识。所有型号均在品牌官网或权威车型库核实，存疑型号不进入正式清单。";
   $("missingLogos").innerHTML = D.brands.filter(function(b){return !b.logo.file}).map(function(b){return "<span>"+esc(b.name)+"</span>"}).join("");
   var empties = D.brands.filter(function(b){return b.modelCount===0}).map(function(b){return b.name});

@@ -4,7 +4,10 @@
 """
 import json, glob, os
 
-DATA = os.path.join(os.path.dirname(__file__), "data")
+from _jsonio import save as _save_json
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA = os.path.join(ROOT, "data")
 
 # 待补型号（来源已核实）
 ADD = {
@@ -77,7 +80,7 @@ for bid, models in ADD.items():
         have.add(m["name"].strip().lower())
         added += 1
         total_added += 1
-    json.dump(doc, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    _save_json(path, doc)
     print(f"  +{added} {bid} (现 {len(brand['models'])}) -> {os.path.basename(path)}")
 
 # loncin 维持 0，加说明
@@ -86,7 +89,7 @@ if brand:
     brand["note"] = ("隆鑫通用动力消费摩托车品牌已统一为 VOGE 无极（已单列 15 款）。"
                      "经核查，LONCIN 本品牌当前在中国市场无独立在售的 ≥250cc 两轮摩托车"
                      "（历史 LX650/CR9 已于 2019 年停产停售，现主推全地形车 ATV），故本表为 0 款。")
-    json.dump(doc, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    _save_json(path, doc)
     print("  loncin note set (维持 0 款)")
 
 print(f"\n合计新增: {total_added} 款")

@@ -1,6 +1,11 @@
+# Python
 __pycache__/
 *.pyc
-_probe/
-*.log
-.DS_Store
+
+# 统计后端本地数据
 stats.db
+stats.db-wal
+stats.db-shm
+
+# 采集临时产物
+assets/_probe/

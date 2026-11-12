@@ -2,11 +2,14 @@
 """仅通过 api.github.com 发布本地快照（github.com 不可达时的备用通道）。
 
 用法：
-    GITHUB_TOKEN=<PAT> python assets/publish_api.py
+    GITHUB_TOKEN=<PAT> COMMIT_MSG="feat: ..." python assets/publish_api.py
 或：
     echo <PAT> | python assets/publish_api.py
 
 Token 只在内存中使用，不写入任何文件、不写入 git 配置。
+
+注意：本脚本是「用本地文件整棵替换远端树」，本地不存在的远端文件会被删掉。
+默认会在删除前中止，确认要删请加 ALLOW_DELETE=1。
 """
 import os
 import sys
@@ -73,6 +76,18 @@ def main():
     base_sha = ref["object"]["sha"]
     print("REMOTE_BASE: %s" % base_sha[:8], flush=True)
 
+    # 整树替换前先确认不会误删远端独有的文件
+    st, remote = api("GET", "/repos/%s/git/trees/%s?recursive=1" % (REPO, base_sha), token=token)
+    if st == 200:
+        remote_paths = {t["path"] for t in remote.get("tree", []) if t.get("type") == "blob"}
+        missing = sorted(remote_paths - set(paths))
+        if missing and os.environ.get("ALLOW_DELETE", "") != "1":
+            print("ABORT: 本地缺少以下远端文件，整树替换会把它们删掉（确认删除请设 ALLOW_DELETE=1）：")
+            for m in missing[:20]:
+                print("   -", m)
+            print("   ... 共 %d 个" % len(missing))
+            return 8
+
     tree = []
     for i, rel in enumerate(paths, 1):
         full = os.path.join(ROOT, rel)
@@ -97,7 +112,7 @@ def main():
         return 5
     print("TREE_OK: %s" % new_tree["sha"][:8], flush=True)
 
-    msg = "feat: 品牌型号补至439款/41张官方Logo；自建访问统计后端(Flask+SQLite)；修正RE未官方入华口径；删除hero副标题；changjiang Bobbie变体标uncertain"
+    msg = os.environ.get("COMMIT_MSG") or "chore: sync dashboard snapshot"
     st, commit = api("POST", "/repos/%s/git/commits" % REPO, {
         "message": msg, "tree": new_tree["sha"], "parents": [base_sha],
         "author": {"name": "moonquake2004", "email": "moonquake2004@users.noreply.github.com"},

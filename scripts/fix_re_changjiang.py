@@ -2,7 +2,10 @@
 """修正 royal-enfield 误导note（未官方入华，价格维持占位）；细化 changjiang Bobbie 变体 uncertain。"""
 import json, glob, os
 
-DATA = os.path.join(os.path.dirname(__file__), "data")
+from _jsonio import save as _save_json
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA = os.path.join(ROOT, "data")
 
 def locate(bid):
     for path in sorted(glob.glob(os.path.join(DATA, "brands_*.json"))):
@@ -19,7 +22,7 @@ re["note"] = ("皇家恩菲尔德(Royal Enfield)截至2026-11尚未以官方大�
               "大陆市场可见车辆多为平行进口(小贸)，无统一官方人民币指导价，故本表14款价格均以「—」(null)占位，不作估算。"
               "下列型号为RE全球在售真实车系；是否保留本品牌（平行进口在售）由看板维护者决定。")
 # 价格维持 null（不编造）
-json.dump(doc, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+_save_json(p, doc)
 print("royal-enfield note 已更正（价格维持 null）")
 
 # --- changjiang: 细化 Bobbie 变体 uncertain（真实在售但版本繁杂，暂不升为确认型号）---
@@ -48,5 +51,5 @@ new_unc = [
      "source": SRC, "reason": "CJ650 两轮版（非边三轮），与已收录边三轮CJ650区分，待定"},
 ]
 cj["uncertain"] = new_unc
-json.dump(doc, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+_save_json(p, doc)
 print(f"changjiang uncertain 已细化为 {len(new_unc)} 条（含CJ750说明）")

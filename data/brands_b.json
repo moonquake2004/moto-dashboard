@@ -896,14 +896,14 @@
         },
         {
           "name": "龙卷风520 梦想版",
-          "cc": null,
+          "cc": 494,
           "type": "边三轮",
           "price": null,
           "source": "https://www.shineraymotor.com.cn/product/detail/78"
         },
         {
           "name": "飓风525",
-          "cc": null,
+          "cc": 494,
           "type": "边三轮",
           "price": null,
           "source": "https://www.shineraymotor.com.cn/product/detail/77"
@@ -1160,7 +1160,7 @@
         },
         {
           "name": "YES 软尾",
-          "cc": null,
+          "cc": 400,
           "type": "巡航",
           "price": "16680~22980元",
           "source": "https://www.58moto.com/brand/A-466.html"
@@ -1272,7 +1272,7 @@
         },
         {
           "name": "硬汉 宽胎",
-          "cc": null,
+          "cc": 800,
           "type": "巡航",
           "price": "33980~43800元",
           "source": "https://www.58moto.com/brand/A-466.html"

@@ -23,14 +23,29 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 看板为纯静态资源，无需构建；整理成 _site 后直接发布。
-      # .nojekyll 一并带上，避免 GitHub Pages 用 Jekyll 处理而丢文件。
+      # 发布前先跑一遍数据校验：缺 cc、价格解析不了、型号重名、来源缺失都会让构建失败
+      - name: Validate data
+        run: python3 build_data.py --check
+
+      # 只发布站点真正需要的文件：index.html / 仪表数据 / 官方 Logo。
+      # 原始调研 JSON（brands_*.json）、dashboard.json 和采集脚本不再随站点公开。
       - name: Prepare static site
         run: |
-          mkdir -p _site
+          set -e
+          mkdir -p _site/data _site/assets
           cp index.html .nojekyll _site/
-          cp -r data assets _site/
-          ls -lh _site
+          cp assets/favicon.svg _site/assets/
+          cp -r assets/logos _site/assets/logos
+          cp data/dashboard.js _site/data/
+
+          # GitHub Pages 静态资源有 10 分钟 CDN 缓存，给数据文件带上版本号，
+          # 否则数据更新后访客可能仍看到旧版本。
+          VER=$(date -u +%Y%m%d%H%M)
+          sed -i "s|src=\"data/dashboard.js\"|src=\"data/dashboard.js?v=$VER\"|" _site/index.html
+          grep -o 'data/dashboard.js?v=[0-9]*' _site/index.html
+
+          du -sh _site
+          find _site -type f | sort
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
