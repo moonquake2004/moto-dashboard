@@ -26,7 +26,7 @@ a{color:inherit;text-decoration:none}
 .wrap{max-width:1440px;margin:0 auto;padding:0 24px}
 /* grid/flex 子项默认 min-width:auto 会被长文本撑开导致窄屏横向溢出 */
 .kpi,.mcard,.wall-item,.bcard,.chart,.panel,.search,select,.bar-row,.binfo{min-width:0}
-.hero h1,.hero .sub,.hero-badges span,.bname,.mcard .m-note{overflow-wrap:anywhere}
+.hero h1,.hero-badges span,.bname,.mcard .m-note{overflow-wrap:anywhere}
 .hero-badges span{max-width:100%}
 h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-.01em}
 
@@ -37,7 +37,6 @@ h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-.01em}
 .hero .wrap{position:relative;z-index:1}
 .eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#9fb6cd;font-weight:600}
 .hero h1{font-size:30px;margin:8px 0 8px;line-height:1.3}
-.hero .sub{color:#c3d2e2;font-size:13.5px;max-width:860px}
 .hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .hero-badges span{font-size:12px;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.16);
   padding:4px 10px;border-radius:20px;color:#e6eef6}
@@ -49,7 +48,6 @@ h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-.01em}
 .kpi .k-val{font-size:25px;font-weight:750;line-height:1.25;margin-top:3px;font-variant-numeric:tabular-nums}
 .kpi .k-val small{font-size:12px;font-weight:600;color:var(--muted);margin-left:3px}
 .kpi .k-note{font-size:11px;color:var(--faint);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.kpi .up{color:#d33f2a;font-weight:700;font-size:12px;margin-left:5px}
 
 /* ---------- section ---------- */
 section{margin-top:30px}
@@ -170,11 +168,14 @@ select{height:36px;border:1px solid var(--line);border-radius:8px;background:#fa
 .mrow .ms{text-align:right}
 .mrow .ms a{font-size:12px;color:#a9b8c8}
 .mrow .ms a:hover{color:var(--c-jv)}
-.mrow .ms span{color:#d6dee7;font-size:11px}
 .mhead{display:grid;grid-template-columns:minmax(110px,1.5fr) 62px 74px minmax(76px,1fr) 20px;
   gap:8px;padding:7px 0 5px;font-size:10.5px;color:var(--faint);font-weight:700;letter-spacing:.04em;border-bottom:1px solid var(--line)}
-.bnote{font-size:11px;color:var(--muted);background:#fafbfd;border-top:1px solid var(--line2);padding:9px 15px;line-height:1.5}
-.bnote b{color:var(--ink)}
+.bnote{font-size:11px;color:var(--muted);background:#FAFBFC;border-top:1px solid var(--line2);padding:9px 15px;line-height:1.5}
+.bnote summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:5px;font-weight:600;color:var(--ink);user-select:none}
+.bnote summary::-webkit-details-marker{display:none}
+.bnote summary::before{content:"＋";color:#E1251B;font-weight:800}
+.bnote[open] summary::before{content:"－"}
+.bnote .bn-body{margin-top:6px;color:var(--muted);font-size:11.5px;line-height:1.65}
 .empty-models{padding:16px 15px 18px;font-size:12px;color:var(--muted)}
 .empty-models .em-title{font-weight:700;color:var(--ink);margin-bottom:4px}
 .collapse-btn{width:100%;border:none;border-top:1px solid var(--line2);background:#fafbfd;padding:7px;
@@ -206,7 +207,6 @@ select{height:36px;border:1px solid var(--line);border-radius:8px;background:#fa
   .wrap{padding:0 14px}
   .hero{padding:26px 0 30px}
   .hero h1{font-size:22px}
-  .hero .sub{font-size:12.5px}
   .kpis{grid-template-columns:repeat(2,1fr);gap:9px;margin-top:-18px}
   .kpi{padding:11px 12px}
   .kpi .k-val{font-size:20px}
@@ -279,7 +279,6 @@ h1,h2,h3,h4{letter-spacing:-.015em}
 .eyebrow:before{content:"";display:inline-block;width:16px;height:8px;margin-right:9px;vertical-align:middle;
   background:conic-gradient(#1B1E23 25%,#fff 0 50%,#1B1E23 0 75%,#fff 0) 0 0/8px 8px}
 .hero h1{font-size:32px;font-weight:800;color:#17191D;line-height:1.25}
-.hero .sub{color:#4C5560;font-size:13.5px;max-width:800px}
 .hero-badges span{background:#fff;border:1px solid #DFE3E8;border-left:3px solid var(--race);
   border-radius:0;color:#3A424C;font-size:11.5px;letter-spacing:.02em;padding:4px 10px}
 
@@ -296,7 +295,6 @@ h1,h2,h3,h4{letter-spacing:-.015em}
   color:var(--carbon);letter-spacing:.01em}
 .kpi .k-val small{font-family:var(--cond);font-size:14px;color:var(--race);font-weight:400;margin-left:4px}
 .kpi .k-note{font-size:10.5px;color:var(--faint)}
-.kpi .up{color:var(--race);font-family:var(--cond)}
 
 /* 区块与面板 */
 .sec-head h2{position:relative;padding-left:14px;font-weight:800}
@@ -388,7 +386,6 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
 .mrow .ms a{color:#AEB6BF}
 .mrow .ms a:hover{color:var(--race)}
 .mhead{font-family:var(--cond);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#9AA2AC}
-.bnote{background:#FAFBFC;border-top:1px solid var(--line2)}
 .collapse-btn{background:#F7F8FA;font-weight:700;letter-spacing:.03em;color:#7C8591}
 .collapse-btn:hover{background:#FFF1F0;color:var(--race)}
 
@@ -409,7 +406,6 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
   .hero:after{display:none}
   .hero:before{width:4px;background:repeating-linear-gradient(115deg,var(--race) 0 7px,#fff 7px 14px)}
   .hero h1{font-size:22px}
-  .hero .sub{font-size:12.5px}
   .kpis,.market-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:-16px}
   .kpi{padding:10px 12px}
   .kpi .k-val{font-size:26px}
@@ -458,7 +454,7 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
 .bcard.collapsed .more-btn{display:none}
 .tag.tag-parallel{color:#8A6A20;border-color:#E8D6A8;background:#FFF9E8;cursor:help}
 .wall-item:focus-visible,.more-btn:focus-visible,.tab:focus-visible,
-.mini-btn:focus-visible,.collapse-btn:focus-visible,.f-compact:focus-visible{
+.mini-btn:focus-visible,.collapse-btn:focus-visible,.f-compact:focus-visible,.bnote summary:focus-visible{
   outline:2px solid var(--race);outline-offset:2px}
 </style>
 </head>
@@ -759,7 +755,9 @@ select{border-radius:2px;background:#F7F8FA;border-color:#DDE1E6}
     }else{
       body = '<div class="empty-models"><div class="em-title">该筛选条件下无匹配型号</div>该品牌共 '+b.modelCount+' 款在售型号，可清除筛选条件查看全部。</div>';
     }
-    var note = b.note && models.length ? '<div class="bnote"><b>说明：</b>'+esc(b.note)+'</div>' : '';
+    /* 说明是调研过程的记录，默认折叠，想看的人再展开 */
+    var note = b.note && models.length
+      ? '<details class="bnote"><summary>数据依据 · 说明</summary><div class="bn-body">'+esc(b.note)+'</div></details>' : '';
     return '<div class="bcard'+(state.collapsed?" collapsed":"")+'" data-cat="'+CAT_KEY[b.category]+'" id="b-'+esc(b.id)+'">'+head+body+note+
       '<button class="collapse-btn" data-collapse="'+esc(b.id)+'">'+(state.collapsed?"展开型号清单 ▾":"收起型号清单 ▴")+'</button></div>';
   }

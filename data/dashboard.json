@@ -21,8 +21,8 @@
   "stats": {
     "brandCount": 44,
     "brandCountWithModels": 38,
-    "modelCount": 425,
-    "modelCountAll": 439,
+    "modelCount": 424,
+    "modelCountAll": 438,
     "parallelBrandCount": 1,
     "parallelModelCount": 14,
     "logoCount": 41,
@@ -33,19 +33,19 @@
       "进口大贸": 15
     },
     "byCategoryModels": {
-      "国产自主": 200,
+      "国产自主": 199,
       "合资及台系": 21,
       "进口大贸": 204
     },
     "byBucket": {
       "250-399cc": 126,
-      "400-699cc": 114,
+      "400-699cc": 113,
       "700-999cc": 106,
       "1000cc以上": 79
     },
     "byType": {
       "仿赛": 58,
-      "巡航": 90,
+      "巡航": 89,
       "拉力ADV": 60,
       "街车": 74,
       "复古": 36,
@@ -835,18 +835,6 @@
           "bucket": "250-399cc"
         },
         {
-          "name": "YES 软尾",
-          "cc": 400,
-          "type": "巡航",
-          "price": "16680~22980元",
-          "priceMin": 16680,
-          "priceMax": 22980,
-          "priceFrom": false,
-          "priceUnit": "元",
-          "source": "https://www.58moto.com/brand/A-466.html",
-          "bucket": "400-699cc"
-        },
-        {
           "name": "苍云 300",
           "cc": 300,
           "type": "巡航",
@@ -1051,7 +1039,7 @@
           "bucket": "250-399cc"
         }
       ],
-      "modelCount": 20,
+      "modelCount": 19,
       "uncertain": [
         {
           "name": "暴龙 / 街皇 / APEX / 鲨鱼正三轮 / 攀爬者600",
@@ -1085,7 +1073,7 @@
         "https://www.58moto.com/article/1712/10158697.html",
         "https://m.58moto.com/news/12081178"
       ],
-      "note": "香帅机车(MARSHAL)为广东建雅摩托车科技有限公司旗下国产巡航品牌，型号与指导价以摩托范品牌页brand/A-466在售报价为准。Joy按排量拆为Joy250(精确248cc)/Joy315(精确298cc)；YES软尾含255(249cc)/415/418(385cc)多排量版本，按主型号合并、cc记null；硬汉宽胎未核实排量记null。旅行者525实际494cc、突破800为800cc，由摩托范官方号上市图文核实。未核实到香帅品牌官网，website/logoUrl记null，未编造。其余「暂无报价」车型不混入models。"
+      "note": "香帅机车(MARSHAL)为广东建雅摩托车科技有限公司旗下国产巡航品牌，型号与指导价以摩托范品牌页brand/A-466在售报价为准。Joy按排量拆为Joy250(精确248cc)/Joy315(精确298cc)；YES软尾系列只保留YES418一条主型号(实际排量385cc、19980元起)，同系列YES255为249cc低于本看板≥250cc口径故不收录，原先「YES 软尾」系列合并行与YES418重复且价格区间混入了249cc版本，已删除；硬汉宽胎经摩托范配置页(排量800cc、精确800cc)核实。旅行者525实际494cc、突破800为800cc，由摩托范官方号上市图文核实。未核实到香帅品牌官网，website/logoUrl记null，未编造。其余「暂无报价」车型不混入models。"
     },
     {
       "id": "kove",
