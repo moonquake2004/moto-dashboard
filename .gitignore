@@ -9,3 +9,6 @@ stats.db-shm
 
 # 采集临时产物
 assets/_probe/
+
+# Pages 构建产物
+_site/
