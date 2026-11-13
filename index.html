@@ -897,10 +897,15 @@ $("marketSrc").textContent="来源："+mk.leadersSource+"；"+mk.source;
   var sumP=rows.reduce(function(a,r){return a+r.prod},0),sumS=rows.reduce(function(a,r){return a+r.sales},0);
   var peak=rows.slice().sort(function(a,b){return b.sales-a.sales})[0];
   $("trendSub").textContent="口径：排量 250ml 以上（不含 250ml）燃油摩托车 · "+first.month+" — "+last.month+"（"+rows.length+" 个月，商会逐月发布）";
+  /* 与 2025 全年官方口径（95.23 万辆）比完成度：商会 2025 年 5/6 月两篇原稿数字重复，月度序列不跨年拼接，只在这里给年度参照 */
+  var annual2025=parseFloat(String((mk.items[0]||{}).value||"").replace(/[^\d.]/g,""));
+  var ratio=annual2025>0?(sumS/annual2025*100):null;
   $("trendKpis").innerHTML='<div class="tk"><b>'+sumS.toFixed(2)+'</b><span>累计销量 万辆</span></div>'+
     '<div class="tk"><b>'+last.sales.toFixed(2)+'</b><span>'+parseInt(last.month.slice(5))+' 月销量 · 同比 <span class="'+(last.yoySales>0?"pos":"neg")+'">'+(last.yoySales>0?"+":"")+last.yoySales.toFixed(2)+'%</span></span></div>'+
-    '<div class="tk"><b>'+parseInt(peak.month.slice(5))+' 月</b><span>峰值月 '+peak.sales.toFixed(2)+' 万辆</span></div>';
-  $("trendSrc").textContent="来源：中国摩托车商会《月度摩托车行业运行报告》逐月稿（"+first.month+"—"+last.month+"）· 每格数字可点回原文核对，抓取脚本 scripts/fetch_monthly.py · 抓取于 "+M.lastFetched;
+    '<div class="tk"><b>'+parseInt(peak.month.slice(5))+' 月</b><span>峰值月 '+peak.sales.toFixed(2)+' 万辆</span></div>'+
+    (ratio?'<div class="tk"><b>'+ratio.toFixed(1)+'%</b><span>已达 2025 全年 '+annual2025.toFixed(2)+' 万辆的</span></div>':'');
+  $("trendSrc").textContent="来源：中国摩托车商会《月度摩托车行业运行报告》逐月稿（"+first.month+"—"+last.month+"），每格数字对应一篇原稿，抓取脚本 scripts/fetch_monthly.py，抓取于 "+M.lastFetched+"。"+
+    (annual2025?'2025 全年 250cc+ 销量 '+annual2025.toFixed(2)+' 万辆（商会年度口径、同比 +25.87%）；2025 年 5/6 月两篇月度稿数字重复且环比互相矛盾，故月度序列只画 2026，年度对比放在右上角。':'');
 })();
 
 /* SECTION: charts */

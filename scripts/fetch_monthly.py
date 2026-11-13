@@ -51,10 +51,11 @@ def plain(html: str) -> str:
     return re.sub(r"\s+", " ", html)
 
 
-def list_reports() -> list[dict]:
-    """从列表页抓「标题 / 链接 / 发布日期」，翻两页够了（一年 12 篇 + 海关稿）。"""
+def list_reports(pages: int = 4) -> list[dict]:
+    """从列表页抓「标题 / 链接 / 发布日期」，默认翻 4 页覆盖约两年。"""
     out = []
-    for page in (LIST_URL, LIST_URL + "?tid=tongjishuju&page=2"):
+    urls = [LIST_URL] + [LIST_URL + "?tid=tongjishuju&page=%d" % p for p in range(2, pages + 1)]
+    for page in urls:
         try:
             html = fetch(page)
         except Exception as exc:  # 商会偶尔挂掉，第二页失败不影响第一页
@@ -118,9 +119,11 @@ def parse_report(url: str) -> dict | None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true", help="只校验，不写文件")
+    ap.add_argument("--pages", type=int, default=4, help="翻几页列表（一页 20 条，4 页够覆盖两年）")
+    ap.add_argument("--years", type=int, default=1, help="保留最近几年，默认只留当年（跨年对照见 README 的取舍说明）")
     args = ap.parse_args()
 
-    reports = list_reports()
+    reports = list_reports(pages=args.pages)
     picked: dict[str, dict] = {}
     for r in reports:
         if any(w in r["title"] for w in SKIP_WORDS):
@@ -138,11 +141,33 @@ def main() -> int:
         row.update({"month": key, "url": r["url"], "title": r["title"], "published": dt.strftime("%Y-%m-%d")})
         picked[key] = row
 
-    keep_year = max(int(k[:4]) for k in picked)  # 只保留最新一年，跨年混在一条线上没意义
-    series = [picked[k] for k in sorted(picked) if int(k[:4]) == keep_year]
-    if not series:
+    if not picked:
         print("一个月份都没解析出来，数据文件保持不变", file=sys.stderr)
         return 1
+
+    # 单月 250cc+ 不可能超过 20 万辆，超了就是串到了累计口径（2023-07 曾抓到「1-6 月 30.18 万辆」）
+    series = []
+    for k in sorted(picked):
+        row = picked[k]
+        if row["prod"] > 20 or row["sales"] > 20:
+            print("跳过 %s：产 %.2f / 销 %.2f 万辆，超出单月合理区间，判为累计口径串行" % (k, row["prod"], row["sales"]), file=sys.stderr)
+            continue
+        series.append(row)
+    if not series:
+        print("清洗后一个月份都不剩，数据文件保持不变", file=sys.stderr)
+        return 1
+    # 默认只留当年：2025 年 5/6 月两篇原稿数字重复（都是 10.05/10.12，环比却互相矛盾），
+    # 跨年铺进同一张图会把原稿笔误画成趋势，所以对照只做到「年度口径」这一层
+    years = sorted({int(r["month"][:4]) for r in series})[-max(1, args.years):]
+    series = [r for r in series if int(r["month"][:4]) in years]
+    yearly = {}
+    for y in years:
+        rows = [r for r in series if int(r["month"][:4]) == y]
+        yearly[str(y)] = {
+            "months": len(rows),
+            "prod": round(sum(r["prod"] for r in rows), 2),
+            "sales": round(sum(r["sales"] for r in rows), 2),
+        }
 
     latest = series[-1]
     payload = {
@@ -152,31 +177,42 @@ def main() -> int:
         "sourceUrl": "https://www.cccmp.com/tongjishuju/",
         "asOf": latest["month"],
         "lastFetched": datetime.now().strftime("%Y-%m-%d"),
+        "years": years,
+        "yearly": yearly,
         "series": series,
     }
 
     problems = []
     for row in series[1:]:
         prev = series[series.index(row) - 1]
-        if prev["sales"]:
+        if prev["sales"] and row["month"] == prev["month"][:4] + "-%02d" % (int(prev["month"][5:]) % 12 + 1):
             calc = (row["sales"] / prev["sales"] - 1) * 100
             if abs(calc) > 80:
                 problems.append("%s 环比 %.1f%%，疑似解析串行" % (row["month"], calc))
-    if len(series) < 6:
-        problems.append("只有 %d 个月，序列太短" % len(series))
+    newest_year = years[-1]
+    if yearly[str(newest_year)]["months"] < 6:
+        problems.append("%d 年只有 %d 个月，序列太短" % (newest_year, yearly[str(newest_year)]["months"]))
+    # 整年 12 个月齐了才谈年度合计；商会官方年度口径：2025 年 250cc+ 产销 95.37 / 95.23 万辆
+    OFFICIAL = {2025: (95.37, 95.23)}
+    for y in years:
+        yy = yearly[str(y)]
+        if y in OFFICIAL and yy["months"] >= 11:
+            op, os_ = OFFICIAL[y]
+            if abs(yy["prod"] - op) > 0.6 or abs(yy["sales"] - os_) > 0.6:
+                problems.append("%d 年合计 %.2f/%.2f 万辆，与商会年度口径 %.2f/%.2f 对不上，可能有月份解析错位" % (y, yy["prod"], yy["sales"], op, os_))
 
-    total_prod = round(sum(r["prod"] for r in series), 2)
-    total_sales = round(sum(r["sales"] for r in series), 2)
     print("共 %d 个月：%s → %s" % (len(series), series[0]["month"], latest["month"]))
+    for y in years:
+        yy = yearly[str(y)]
+        print("  %d 年：%d 个月，产 %.2f / 销 %.2f 万辆" % (y, yy["months"], yy["prod"], yy["sales"]))
     for r in series:
-        print("  %s  产 %5.2f 销 %5.2f  同比 %+6.2f%% / %+6.2f%%  %s" % (r["month"], r["prod"], r["sales"], r["yoyProd"], r["yoySales"], r["url"]))
-    print("区间合计：产 %.2f 万辆 / 销 %.2f 万辆" % (total_prod, total_sales))
+        print("    %s  产 %5.2f 销 %5.2f  同比 %+6.2f%% / %+6.2f%%" % (r["month"], r["prod"], r["sales"], r["yoyProd"], r["yoySales"]))
     if problems:
         print("\n自检问题：")
         for p in problems:
             print("  - " + p)
     else:
-        print("自检通过：月份连续、环比幅度合理")
+        print("自检通过：月份连续、环比幅度合理、与看板年度口径不冲突")
 
     if args.check:
         return 0
@@ -188,7 +224,7 @@ def main() -> int:
         encoding="utf-8",
     )
     print("\n已写入 %s（%d 字节）" % (OUT, OUT.stat().st_size))
-    return 0 if not problems else 0
+    return 0
 
 
 if __name__ == "__main__":

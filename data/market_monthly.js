@@ -6,6 +6,16 @@ window.MOTO_MONTHLY = {
  "sourceUrl": "https://www.cccmp.com/tongjishuju/",
  "asOf": "2026-09",
  "lastFetched": "2026-11-13",
+ "years": [
+  2026
+ ],
+ "yearly": {
+  "2026": {
+   "months": 9,
+   "prod": 84.84,
+   "sales": 84.91
+  }
+ },
  "series": [
   {
    "prod": 6.56,
