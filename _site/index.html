@@ -168,6 +168,10 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .chart h3{font-size:13.5px;margin:0 0 2px;font-weight:800}
 .chart .cs{font-size:11px;color:var(--faint);margin-bottom:14px}
 .bar-row{display:grid;grid-template-columns:86px minmax(0,1fr) 40px;align-items:center;gap:9px;margin-bottom:9px}
+/* 条形数少的图面板里有大片空白：让条形在面板内均匀铺开 */
+.panel.chart{display:flex;flex-direction:column}
+#chartBucket,#chartType,#chartCat{flex:1;display:flex;flex-direction:column;justify-content:space-around}
+#chartBucket .bar-row,#chartType .bar-row,#chartCat .bar-row{margin-bottom:0}
 .bar-row .bl{font-size:11.5px;color:var(--muted);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bar-track{height:10px;background:var(--surface2);border-radius:6px;overflow:hidden}
 .bar-fill{height:100%;border-radius:6px;width:0;transition:width .8s cubic-bezier(.2,.7,.2,1)}
@@ -384,6 +388,60 @@ table.cmp a.more:hover{color:var(--accent)}
   color:var(--ink);text-decoration:none;font-weight:700}
 .bi:hover{border-color:var(--accent);color:var(--accent)}
 .bi i{font-style:normal;color:var(--faint);margin-left:4px;font-weight:400}
+/* 月度产销趋势：零依赖 SVG，产量灰蓝、销量橙 */
+.panel.trend{margin-top:12px}
+.trend-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+.trend-head h3{margin:0 0 3px}
+.trend-head .cs{margin:0}
+.trend-kpis{display:flex;gap:18px;flex-wrap:wrap}
+.trend-kpis .tk{text-align:right}
+.trend-kpis .tk b{display:block;font-size:19px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.2}
+.trend-kpis .tk span{font-size:10.5px;color:var(--faint)}
+.trend-kpis .tk b.pos{color:var(--ok, #2FD6A3)}
+.trend-kpis .tk b.neg{color:var(--warn,#FF6B6B)}
+.trend-body{position:relative}
+.trend-body svg{display:block;width:100%;height:auto}
+.trend-body .bar-g{fill:rgba(77,159,255,.55);stroke:rgba(77,159,255,.9);stroke-width:1;cursor:default}
+.trend-body .bar-s{fill:rgba(255,74,31,.78);stroke:rgba(255,74,31,1);stroke-width:1;cursor:default}
+.trend-body .ax{stroke:var(--line);stroke-width:1}
+.trend-body .gx{stroke:var(--line2);stroke-width:1;stroke-dasharray:3 4;opacity:.55}
+.trend-body .lbl{fill:var(--faint);font-size:10px}
+.trend-body .vl{fill:var(--ink);font-size:10.5px;font-weight:700;font-variant-numeric:tabular-nums}
+.trend-note{display:flex;gap:16px;margin-top:6px;flex-wrap:wrap}
+.trend-note i{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:5px;vertical-align:middle}
+
+/* 类别图块导航 */
+.tn-wrap{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:13px 15px}
+.tn-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:10px}
+.tn-head h3{margin:0;font-size:13px}
+.tn-head span{font-size:11px;color:var(--faint)}
+.tn-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:8px}
+.tn{border:1px solid var(--line);background:var(--surface2);border-radius:10px;padding:9px 10px;cursor:pointer;
+  display:flex;align-items:center;gap:9px;font-family:inherit;text-align:left;transition:.14s;color:var(--ink)}
+.tn:hover{border-color:var(--accent);transform:translateY(-1px)}
+.tn.on{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--surface2))}
+.tn .ic{width:24px;height:24px;flex:none;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:800;color:#fff;background:var(--tc,var(--accent))}
+.tn .tx{min-width:0}
+.tn .tt{display:block;font-size:12px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tn .tc{display:block;font-size:10.5px;color:var(--faint);font-variant-numeric:tabular-nums}
+/* 悬浮信息层：矩阵格 / 榜上品牌 / 条形图 */
+#tip{position:fixed;z-index:95;pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .12s,transform .12s;
+  max-width:min(320px,86vw);background:color-mix(in srgb,var(--surface2) 96%,transparent);border:1px solid var(--line2);
+  border-radius:10px;padding:9px 11px;box-shadow:0 12px 30px rgba(0,0,0,.35);font-size:11.5px;line-height:1.65;color:var(--ink)}
+#tip.show{opacity:1;transform:translateY(0)}
+#tip .th{font-weight:800;font-size:12px;margin-bottom:3px}
+#tip .tb{color:var(--muted)}
+#tip .tb b{color:var(--accent);font-weight:800}
+#tip .trow{display:flex;justify-content:space-between;gap:10px}
+#tip .trow span:last-child{color:var(--faint);font-variant-numeric:tabular-nums}
+/* 矩阵合计行 */
+table.mx tr.tot th.rowh{color:var(--accent)}
+table.mx td.tot,table.mx th.tot{color:var(--accent);font-weight:800;background:color-mix(in srgb,var(--accent) 9%,var(--surface2));
+  cursor:pointer}
+table.mx td.tot:hover{outline:1px solid var(--accent);outline-offset:-1px}
+table.mx th.rt[data-type]{cursor:pointer}
+table.mx th.rt[data-type]:hover{color:var(--ink)}
 /* SECTION: drawer */
 .scrim{position:fixed;inset:0;background:var(--scrim);z-index:60;opacity:0;pointer-events:none;transition:opacity .25s}
 .scrim.show{opacity:1;pointer-events:auto}
@@ -532,6 +590,14 @@ table.cmp a.more:hover{color:var(--accent)}
       <div class="panel leaders"><h3>250cc 以上销量前五企业</h3><div id="leaders250"></div></div>
       <div class="panel leaders"><h3>500cc 以上销量前五企业</h3><div id="leaders500"></div><div class="src-note" id="marketSrc"></div></div>
     </div>
+    <div class="panel trend reveal" id="trendPanel">
+      <div class="trend-head">
+        <div><h3>250cc+ 月度产销趋势</h3><div class="cs" id="trendSub">—</div></div>
+        <div class="trend-kpis" id="trendKpis"></div>
+      </div>
+      <div class="trend-body" id="trendChart"></div>
+      <div class="src-note" id="trendSrc"></div>
+    </div>
   </div>
 </section>
 
@@ -543,6 +609,10 @@ table.cmp a.more:hover{color:var(--accent)}
       <div class="panel chart"><h3>排量段分布</h3><div class="cs">按官方标称排量（cc）分段</div><div id="chartBucket"></div></div>
       <div class="panel chart"><h3>车型类别分布</h3><div class="cs">仿赛 / 街车 / 巡航 / ADV / 踏板等</div><div id="chartType"></div></div>
       <div class="panel chart"><h3>品牌圈层分布</h3><div class="cs">各圈层收录的在售型号数量</div><div id="chartCat"></div><div class="chart-tip">点击任意条形 → 在型号浏览器中查看对应型号</div></div>
+    </div>
+    <div class="tn-wrap reveal">
+      <div class="tn-head"><h3>按车身类别直达</h3><span>数字为该类别在售型号数 · 点一下直接筛到型号浏览器</span></div>
+      <div class="tn-grid" id="typeNav"></div>
     </div>
   </div>
 </section>
@@ -631,6 +701,7 @@ table.cmp a.more:hover{color:var(--accent)}
   <button class="cb-go" id="cmpGo" type="button" disabled>开始对比</button>
   <button class="cb-x" id="cmpClear" type="button" aria-label="清空对比">✕</button>
 </div>
+<div id="tip" role="tooltip" aria-hidden="true"></div>
 <div class="cmp-modal" id="cmpModal" role="dialog" aria-modal="true" aria-label="车型参数对比">
   <div class="cm-scrim" id="cmpScrim"></div>
   <div class="cm-box">
@@ -661,7 +732,8 @@ table.cmp a.more:hover{color:var(--accent)}
 <button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
 
 <!-- SECTION: data -->
-<script src="data/dashboard.js?v=202611130847"></script>
+<script src="data/dashboard.js?v=202611130915"></script>
+<script src="data/market_monthly.js?v=202611130915"></script>
 <script>
 /* Logo 走本地文件，从 brands[].logo.file 汇总成 id -> 路径 */
 window.LOGO_URLS = (function(){
@@ -709,6 +781,38 @@ $("themeBtn").addEventListener("click",function(){applyTheme(document.documentEl
 var toastTimer=null;
 function toast(msg){var t=$("toast");t.textContent=msg;t.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(function(){t.classList.remove("show")},1800)}
 
+/* SECTION: tooltip —— 一个信息层管所有 data-tip 元素（矩阵格 / 榜上品牌 / 条形图 / 类别图块） */
+var tipEl=null,tipTimer=null;
+function tipShow(html,x,y){
+  if(!tipEl)tipEl=$("tip");
+  tipEl.innerHTML=html;tipEl.classList.add("show");tipEl.setAttribute("aria-hidden","false");
+  try{tipMove(x,y)}catch(e){}
+}
+function tipMove(x,y){
+  if(!tipEl)return;
+  var w=tipEl.offsetWidth,h=tipEl.offsetHeight;
+  var left=Math.min(x+14,innerWidth-w-10),top=y+16;
+  if(top+h>innerHeight-8)top=y-h-14;
+  tipEl.style.left=Math.max(8,left)+"px";tipEl.style.top=Math.max(8,top)+"px";
+}
+function tipHide(){if(tipEl)tipEl.classList.remove("show")}
+document.addEventListener("mouseover",function(e){
+  var el=e.target.closest?e.target.closest("[data-tip]"):null;
+  if(!el)return;
+  clearTimeout(tipTimer);
+  tipTimer=setTimeout(function(){tipShow(el.dataset.tip,e.clientX,e.clientY)},60);
+});
+document.addEventListener("mousemove",function(e){
+  if(!tipEl||!tipEl.classList.contains("show"))return;
+  if(!(e.target.closest&&e.target.closest("[data-tip]"))){tipHide();return}
+  tipMove(e.clientX,e.clientY);
+});
+document.addEventListener("mouseout",function(e){
+  var el=e.target.closest?e.target.closest("[data-tip]"):null;
+  if(el&&!(e.relatedTarget&&el.contains(e.relatedTarget))){clearTimeout(tipTimer);tipHide()}
+});
+window.addEventListener("scroll",tipHide,{passive:true});
+
 /* SECTION: logo helper */
 function fillLogo(box,b,fbClass){
   box.innerHTML="";
@@ -753,6 +857,52 @@ $("leaders250").innerHTML=leadRows(mk.leaders250);
 $("leaders500").innerHTML=leadRows(mk.leaders500);
 $("marketSrc").textContent="来源："+mk.leadersSource+"；"+mk.source;
 
+/* 月度产销趋势：数据来自 data/market_monthly.js（scripts/fetch_monthly.py 抓商会月度稿生成） */
+(function buildTrend(){
+  var M=window.MOTO_MONTHLY,panel=$("trendPanel");
+  if(!M||!M.series||!M.series.length){if(panel)panel.style.display="none";return}
+  var rows=M.series;
+  var max=Math.max.apply(null,rows.map(function(r){return Math.max(r.prod,r.sales)}))||1;
+  max=Math.ceil(max*1.18);
+  var W=760,H=230,padL=34,padR=8,padT=22,padB=26;
+  var iw=W-padL-padR,ih=H-padT-padB;
+  var step=iw/rows.length,barW=Math.min(20,step*0.3);
+  var y=function(v){return padT+ih-(v/max)*ih};
+  var grid=[];
+  for(var g=0;g<=max;g+=Math.max(2,Math.ceil(max/5))){
+    grid.push('<line class="gx" x1="'+padL+'" x2="'+(W-padR)+'" y1="'+y(g)+'" y2="'+y(g)+'"/>'+
+      '<text class="lbl" x="'+(padL-6)+'" y="'+(y(g)+3)+'" text-anchor="end">'+g+'</text>');
+  }
+  var marks=rows.map(function(r,i){
+    var cx=padL+step*(i+0.5);
+    var xg=cx-barW-2,xs=cx+2;
+    var tip='<div class=\'th\'>2026 年 '+parseInt(r.month.slice(5))+' 月</div>'+
+      '<div class=\'trow\'><span>产量</span><span>'+r.prod.toFixed(2)+' 万辆</span></div>'+
+      '<div class=\'trow\'><span>销量</span><span>'+r.sales.toFixed(2)+' 万辆</span></div>'+
+      '<div class=\'trow\'><span>同比</span><span>产 '+(r.yoyProd>0?"+":"")+r.yoyProd.toFixed(2)+'% · 销 '+(r.yoySales>0?"+":"")+r.yoySales.toFixed(2)+'%</span></div>';
+    return '<g data-tip="'+esc(tip)+'">'+
+      '<rect class="hit" x="'+(cx-step/2)+'" y="'+padT+'" width="'+step+'" height="'+ih+'" fill="transparent"/>'+
+      '<rect class="bar-g" x="'+xg+'" y="'+y(r.prod)+'" width="'+barW+'" height="'+Math.max(1,(r.prod/max)*ih)+'"/>'+
+      '<rect class="bar-s" x="'+xs+'" y="'+y(r.sales)+'" width="'+barW+'" height="'+Math.max(1,(r.sales/max)*ih)+'"/>'+
+      (i===rows.length-1?'<text class="vl" x="'+cx+'" y="'+(y(r.sales)-5)+'" text-anchor="middle">'+r.sales.toFixed(2)+'</text>':'')+
+      '<text class="lbl" x="'+cx+'" y="'+(H-8)+'" text-anchor="middle">'+(parseInt(r.month.slice(5)))+'月</text>'+
+      '</g>';
+  }).join("");
+  $("trendChart").innerHTML='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="2026 年 1-'+rows.length+' 月 250cc+ 产量与销量">'+
+    grid.join("")+marks+'<line class="ax" x1="'+padL+'" x2="'+(W-padR)+'" y1="'+(padT+ih)+'" y2="'+(padT+ih)+'"/>'+
+    '<line class="ax" x1="'+padL+'" x2="'+padL+'" y1="'+padT+'" y2="'+(padT+ih)+'"/></svg>'+
+    '<div class="trend-note"><span><i style="background:#4D9FFF"></i>产量</span><span><i style="background:#FF4A1F"></i>销量</span>'+
+    '<span style="color:var(--faint)">单位：万辆 · 悬停看当月同比</span></div>';
+  var first=rows[0],last=rows[rows.length-1];
+  var sumP=rows.reduce(function(a,r){return a+r.prod},0),sumS=rows.reduce(function(a,r){return a+r.sales},0);
+  var peak=rows.slice().sort(function(a,b){return b.sales-a.sales})[0];
+  $("trendSub").textContent="口径：排量 250ml 以上（不含 250ml）燃油摩托车 · "+first.month+" — "+last.month+"（"+rows.length+" 个月，商会逐月发布）";
+  $("trendKpis").innerHTML='<div class="tk"><b>'+sumS.toFixed(2)+'</b><span>累计销量 万辆</span></div>'+
+    '<div class="tk"><b>'+last.sales.toFixed(2)+'</b><span>'+parseInt(last.month.slice(5))+' 月销量 · 同比 <span class="'+(last.yoySales>0?"pos":"neg")+'">'+(last.yoySales>0?"+":"")+last.yoySales.toFixed(2)+'%</span></span></div>'+
+    '<div class="tk"><b>'+parseInt(peak.month.slice(5))+' 月</b><span>峰值月 '+peak.sales.toFixed(2)+' 万辆</span></div>';
+  $("trendSrc").textContent="来源：中国摩托车商会《月度摩托车行业运行报告》逐月稿（"+first.month+"—"+last.month+"）· 每格数字可点回原文核对，抓取脚本 scripts/fetch_monthly.py · 抓取于 "+M.lastFetched;
+})();
+
 /* SECTION: charts */
 function bars(elId,obj,order,colors,kind){
   var max=Math.max.apply(null,Object.keys(obj).map(function(k){return obj[k]}).concat([1]));
@@ -767,6 +917,7 @@ bars("chartBucket",s.byBucket,BUCKETS,BUCKET_COLOR,"bucket");
 bars("chartType",s.byType,null,TYPE_COLOR,"type");
 bars("chartCat",s.byCategoryModels,CATS,CAT_COLOR,"cat");
 $("chartTotal").textContent=s.modelCount;
+
 function animateBars(root){
   (root||document).querySelectorAll(".bar-fill").forEach(function(f){
     requestAnimationFrame(function(){requestAnimationFrame(function(){f.style.width=f.dataset.w+"%"})});
@@ -935,10 +1086,24 @@ function rankOf(pred,n){
   out.sort(function(x,y){return y.n-x.n||x.name.localeCompare(y.name,"zh")});
   return out.slice(0,n);
 }
+function fmtWan(v){return (v/10000).toFixed(2)+" 万"}
 function rkButtons(list,kind,key){
   if(!list.length)return '<span style="font-size:11px;color:var(--faint)">—</span>';
   return list.map(function(x,i){
-    return '<button class="rk p'+(i+1)+'" data-kind="'+kind+'" data-key="'+esc(key)+'" type="button" title="按 '+esc(key)+' 筛到「'+esc(x.name)+'」">'+
+    /* 悬浮信息层：这个品牌在该类别/价格档里到底有哪几款、什么价 */
+    var b=brandById[x.id],models=b?b.models.filter(function(m){
+      return kind==="type"?m.type===key:inPrice(m,RANGE_BY_KEY[key]);
+    }):[];
+    var prices=models.map(function(m){return m.priceMin}).filter(function(n){return n!=null});
+    var lo=prices.length?Math.min.apply(null,prices):null;
+    var hi=prices.length?Math.max.apply(null,prices):null;
+    var priceTxt=prices.length?(lo===hi?fmtWan(lo):fmtWan(lo)+"–"+fmtWan(hi)):"价格未公布";
+    var names=models.slice(0,3).map(function(m){return m.name+(m.cc?" "+m.cc+"cc":"")}).join("、");
+    var tip='<div class=\'th\'>'+esc(x.name)+' · '+esc(key)+'</div>'+
+      '<div class=\'tb\'><b>'+x.n+'</b> 款 · 起售价 '+esc(priceTxt)+'</div>'+
+      (models.length>3?'<div class=\'tb\'>'+esc(names)+' 等</div>':'<div class=\'tb\'>'+esc(names)+'</div>')+
+      '<div class=\'tb\' style=\'color:var(--faint)\'>点一下按此筛选</div>';
+    return '<button class="rk p'+(i+1)+'" data-kind="'+kind+'" data-key="'+esc(key)+'" type="button" data-tip="'+esc(tip)+'">'+
       '<span class="no">'+(i+1)+'</span><span class="rk-name">'+esc(x.name)+'</span><span class="cnt">'+x.n+'</span></button>';
   }).join("");
 }
@@ -953,6 +1118,26 @@ function rkButtons(list,kind,key){
       rkButtons(rankOf(function(m){return inPrice(m,r)},5),"price",r.k)+'</div></div>';
   }).join("");
 })();
+/* 类别图块导航：11 个车身类别铺成网格，点一下直接筛到型号浏览器 */
+/* 类别图块导航：11 个车身类别铺成网格，点一下直接筛到型号浏览器 */
+(function buildTypeNav(){
+  var el=$("typeNav");if(!el)return;
+  el.innerHTML=TYPES_ORDER.map(function(t){
+    var c=(s.byType||{})[t]||0;
+    return '<button class="tn" data-tn="'+esc(t)+'" type="button" style="--tc:'+(TYPE_COLOR[t]||"#8892A4")+'" data-tip="<div class=\'th\'>'+esc(t)+'</div><div class=\'tb\'><b>'+c+'</b> 款在售车型</div>">'+
+      '<span class="ic">'+esc(t.slice(0,1))+'</span><span class="tx"><span class="tt">'+esc(t)+'</span><span class="tc">'+c+' 款</span></span></button>';
+  }).join("");
+  el.addEventListener("click",function(e){
+    var b=e.target.closest("[data-tn]");if(!b)return;
+    var t=b.dataset.tn;
+    if(state.type===t){state.type=""}else{state.type=t}
+    state.officialOnly=true;syncControls();render();
+    el.querySelectorAll(".tn").forEach(function(x){x.classList.toggle("on",x.dataset.tn===state.type)});
+    $("explorer").scrollIntoView({behavior:"smooth"});
+    toast(state.type?"已按「"+t+"」筛选":"已取消类别筛选");
+  });
+})();
+
 document.addEventListener("click",function(e){
   var b=e.target.closest(".rk");if(!b)return;
   if(b.dataset.kind==="type")state.type=b.dataset.key;
@@ -963,36 +1148,76 @@ document.addEventListener("click",function(e){
 });
 (function buildMatrix(){
   var el=$("matrix");if(!el)return;
-  var data={},maxC=1;
+  var data={},tops={},colSum={},maxC=1;
+  PRICE_RANGES.forEach(function(r){colSum[r.k]=0});
   TYPES_ORDER.forEach(function(t){
-    data[t]={};
+    data[t]={};tops[t]={};
     PRICE_RANGES.forEach(function(r){
-      var c=0;
+      var rows=[];
       OFFICIAL_BRANDS.forEach(function(b){
-        c+=b.models.filter(function(m){return m.type===t&&inPrice(m,r)}).length;
+        var c=b.models.filter(function(m){return m.type===t&&inPrice(m,r)}).length;
+        if(c)rows.push({name:b.name,n:c});
       });
-      data[t][r.k]=c;if(c>maxC)maxC=c;
+      var total=rows.reduce(function(a,x){return a+x.n},0);
+      data[t][r.k]=total;colSum[r.k]+=total;if(total>maxC)maxC=total;
+      rows.sort(function(x,y){return y.n-x.n||x.name.localeCompare(y.name,"zh")});
+      tops[t][r.k]={n:rows.length,top:rows.slice(0,3)};
     });
   });
+  var grand=PRICE_RANGES.reduce(function(a,r){return a+colSum[r.k]},0);
   var head='<tr><th class="rowh">类别＼价格</th>'+
     PRICE_RANGES.map(function(r){return '<th>'+esc(r.label)+'</th>'}).join("")+'<th class="rt">合计</th></tr>';
   var body=TYPES_ORDER.map(function(t){
     var tot=PRICE_RANGES.reduce(function(a,r){return a+data[t][r.k]},0);
+    var rowTip='<div class=\'th\'>'+esc(t)+' · 全部价格档</div><div class=\'tb\'><b>'+tot+'</b> 款 · 占全库 '+(tot/s.modelCount*100).toFixed(1)+'%</div><div class=\'tb\' style=\'color:var(--faint)\'>点一下只看这个类别</div>';
     return '<tr><th class="rowh">'+esc(t)+'</th>'+PRICE_RANGES.map(function(r){
       var c=data[t][r.k];
       if(!c)return '<td class="z">·</td>';
       var a=(0.10+0.36*(c/maxC)).toFixed(2);
-      return '<td data-type="'+esc(t)+'" data-price="'+r.k+'" style="background:rgba(255,74,31,'+a+')" title="'+esc(t)+' · '+esc(r.label)+'：'+c+' 款">'+c+'</td>';
-    }).join("")+'<th class="rt">'+tot+'</th></tr>';
+      var meta=tops[t][r.k];
+      var tip='<div class=\'th\'>'+esc(t)+' · '+esc(r.label)+'</div>'+
+        '<div class=\'tb\'><b>'+c+'</b> 款 · '+meta.n+' 个品牌</div>'+
+        meta.top.map(function(x){return '<div class=\'trow\'><span>'+esc(x.name)+'</span><span>'+x.n+' 款</span></div>'}).join("")+
+        '<div class=\'tb\' style=\'color:var(--faint);margin-top:4px\'>点一下按此组合筛选</div>';
+      return '<td data-type="'+esc(t)+'" data-price="'+r.k+'" style="background:rgba(255,74,31,'+a+')" data-tip="'+esc(tip)+'">'+c+'</td>';
+    }).join("")+'<th class="rt" data-type="'+esc(t)+'" data-tip="'+esc(rowTip)+'">'+tot+'</th></tr>';
   }).join("");
-  el.innerHTML='<div class="mx-wrap"><table class="mx">'+head+body+'</table></div>'+
-    '<div class="mx-legend">按 '+s.modelCount+' 款在售车型统计，不含 '+s.parallelModelCount+' 款平行进口；行合计 = 该类别型号数，列合计即价格档分布。点任意非空格子 → 型号浏览器按该类别 + 该价格档筛选。</div>';
+  var foot='<tr class="tot"><th class="rowh">合计</th>'+
+    PRICE_RANGES.map(function(r){
+      var c=colSum[r.k];
+      var priceTxt=c?((r.k==="none"?"价格未公布档":"该价格档")+'共 '+c+' 款，占全库 '+(c/s.modelCount*100).toFixed(1)+'%'):'该价格档暂无车型';
+      var tip='<div class=\'th\'>'+esc(r.label)+'</div><div class=\'tb\'><b>'+c+'</b> 款'+(c?' · 占全库 '+(c/s.modelCount*100).toFixed(1)+'%':'')+'</div><div class=\'tb\' style=\'color:var(--faint)\'>点一下只看这个价格档</div>';
+      return '<td class="tot" data-price="'+r.k+'" data-tip="'+esc(tip)+'">'+(c||"·")+'</td>';
+    }).join("")+'<th class="tot" data-all="1" data-tip="'+esc('<div class=\'th\'>全库合计</div><div class=\'tb\'><b>'+grand+'</b> 款 · '+TYPES_ORDER.length+' 个类别 × 6 个价格档</div><div class=\'tb\' style=\'color:var(--faint)\'>点一下清空类别与价格筛选</div>')+'">'+grand+'</th></tr>';
+  el.innerHTML='<div class="mx-wrap"><table class="mx">'+head+body+foot+'</table></div>'+
+    '<div class="mx-legend">按 '+s.modelCount+' 款在售车型统计，不含 '+s.parallelModelCount+' 款平行进口；行合计 = 该类别型号数，末行合计 = 各价格档型号数，右下角 = 全库 '+s.modelCount+'。悬停看该格由哪些品牌撑起来；点格子 → 类别 + 价格档，点行合计 → 只看类别，点列合计 → 只看价格档。</div>';
   el.addEventListener("click",function(e){
-    var td=e.target.closest("td[data-type]");if(!td)return;
-    state.type=td.dataset.type;state.price=td.dataset.price;state.officialOnly=true;
-    syncControls();render();
-    $("explorer").scrollIntoView({behavior:"smooth"});
-    toast("已按「"+td.dataset.type+" · "+((RANGE_BY_KEY[td.dataset.price]||{}).label||"")+"」筛选");
+    var all=e.target.closest("[data-all]");
+    if(all){
+      state.type="";state.price="";state.officialOnly=true;syncControls();render();
+      $("explorer").scrollIntoView({behavior:"smooth"});toast("已清空类别与价格筛选");return;
+    }
+    var td=e.target.closest("td[data-type]");
+    if(td){
+      state.type=td.dataset.type;state.price=td.dataset.price;state.officialOnly=true;
+      syncControls();render();
+      $("explorer").scrollIntoView({behavior:"smooth"});
+      toast("已按「"+td.dataset.type+" · "+((RANGE_BY_KEY[td.dataset.price]||{}).label||"")+"」筛选");return;
+    }
+    var rowTot=e.target.closest("th.rt[data-type]");
+    if(rowTot){
+      state.type=rowTot.dataset.type;state.price="";state.officialOnly=true;
+      syncControls();render();
+      $("explorer").scrollIntoView({behavior:"smooth"});
+      toast("已按「"+rowTot.dataset.type+"」筛选（全部价格档）");return;
+    }
+    var colTot=e.target.closest("td.tot[data-price]");
+    if(colTot){
+      state.price=colTot.dataset.price;state.type="";state.officialOnly=true;
+      syncControls();render();
+      $("explorer").scrollIntoView({behavior:"smooth"});
+      toast("已按「"+((RANGE_BY_KEY[colTot.dataset.price]||{}).label||"")+"」筛选");
+    }
   });
 })();
 
