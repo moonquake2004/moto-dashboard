@@ -27,25 +27,19 @@ jobs:
       - name: Validate data
         run: python3 build_data.py --check
 
-      # 只发布站点真正需要的文件：index.html / 仪表数据 / 官方 Logo。
-      # 原始调研 JSON（brands_*.json）、dashboard.json 和采集脚本不再随站点公开。
+      # 组装 _site：index.html（注入数据版本号）/ 仪表数据 / 官方 Logo /
+      # 44 个独立品牌页 / sitemap.xml / robots.txt。
+      # 原始调研 JSON（brands_*.json）、dashboard.json 和采集脚本不随站点公开。
+      # 这一步原来是一段 shell，加品牌页之后收进 build_site.py，本地可复现：
+      #   python3 build_site.py
       - name: Prepare static site
         run: |
           set -e
-          mkdir -p _site/data _site/assets
-          cp index.html .nojekyll _site/
-          cp assets/favicon.svg _site/assets/
-          cp -r assets/logos _site/assets/logos
-          cp data/dashboard.js _site/data/
-
-          # GitHub Pages 静态资源有 10 分钟 CDN 缓存，给数据文件带上版本号，
-          # 否则数据更新后访客可能仍看到旧版本。
-          VER=$(date -u +%Y%m%d%H%M)
-          sed -i "s|src=\"data/dashboard.js\"|src=\"data/dashboard.js?v=$VER\"|" _site/index.html
+          python3 build_site.py
+          test -f _site/index.html
+          test -f _site/sitemap.xml
+          test -d _site/brand && test "$(ls _site/brand | wc -l)" -ge 40
           grep -o 'data/dashboard.js?v=[0-9]*' _site/index.html
-
-          du -sh _site
-          find _site -type f | sort
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

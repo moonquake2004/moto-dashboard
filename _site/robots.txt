@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moonquake2004.github.io/moto-dashboard/sitemap.xml

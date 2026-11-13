@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>国内 250cc+ 摩托车厂商品牌全景看板</title>
+<meta name="description" content="收录中国市场在售的 250cc 以上摩托车品牌与在售车型，逐条附核实来源、官方指导价与排量参数；未核实的参数一律留空，不做估算。">
+<meta property="og:title" content="国内 250cc+ 摩托车厂商品牌全景看板">
+<meta property="og:description" content="44 个品牌 / 424 款在售车型，逐条附核实来源与官方指导价。">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://moonquake2004.github.io/moto-dashboard/">
+<meta property="og:url" content="https://moonquake2004.github.io/moto-dashboard/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebSite","name":"国内 250cc+ 摩托车品牌全景看板","alternateName":"MOTO GRID",
+  "url":"https://moonquake2004.github.io/moto-dashboard/",
+  "description":"收录中国市场在售的 250cc 以上摩托车品牌与在售车型，逐条附核实来源、官方指导价与排量参数。",
+  "inLanguage":"zh-CN"},
+ {"@type":"Dataset","name":"中国 250cc+ 摩托车品牌与在售车型数据","alternateName":"MOTO GRID Dataset",
+  "description":"44 个品牌 / 424 款 ≥250cc 在售车型（另 14 款平行进口单列），含官方指导价、排量、车身类别、圈层归属与逐条核实来源。",
+  "url":"https://moonquake2004.github.io/moto-dashboard/",
+  "keywords":["摩托车","250cc","车型库","官方指导价","中国市场","品牌看板"],
+  "spatialCoverage":{"@type":"Place","name":"中国"},
+  "temporalCoverage":"2025-2026",
+  "isAccessibleForFree":true,
+  "creator":{"@type":"Organization","name":"MOTO GRID","url":"https://github.com/moonquake2004/moto-dashboard"},
+  "variableMeasured":["官方指导价","排量（cc）","车身类别","品牌圈层","在售状态"]}
+]}
+</script>
+<style>
+/* SECTION: theme */
+:root{
+  --bg:#0B0D11; --bg2:#0E1116; --surface:#141922; --surface2:#1B212D; --overlay:#222A38;
+  --line:#242C3A; --line2:#2F3949;
+  --ink:#EDF1F7; --muted:#9AA5B5; --faint:#69748A;
+  --accent:#FF4A1F; --accent-soft:rgba(255,74,31,.13);
+  --blue:#4D9FFF; --amber:#FFB224; --mint:#2FD6A3; --red:#FF5C5C;
+  --dom:#FF4A1F; --jv:#4D9FFF; --imp:#B78CFF;
+  --logo-bg:#F2F4F7; --scrim:rgba(4,6,10,.62);
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+  --nav-h:60px;
+}
+[data-theme="light"]{
+  --bg:#F3F5F8; --bg2:#ECEFF4; --surface:#FFFFFF; --surface2:#F6F8FB; --overlay:#FFFFFF;
+  --line:#E2E7EF; --line2:#D3DAE6;
+  --ink:#151A22; --muted:#5A6577; --faint:#8B95A7;
+  --accent:#E83A0E; --accent-soft:rgba(232,58,14,.10);
+  --blue:#1F6FEB; --amber:#C77700; --mint:#0E9F77; --red:#D64545;
+  --dom:#E83A0E; --jv:#1F6FEB; --imp:#7B4FD8;
+  --logo-bg:#FFFFFF; --scrim:rgba(15,20,30,.4);
+  --shadow:0 8px 24px rgba(20,30,50,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+/* SECTION: scrollbar */
+*{scrollbar-width:thin;scrollbar-color:var(--line2) transparent}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:var(--bg2)}
+::-webkit-scrollbar-thumb{background:var(--line2);border-radius:6px;border:2px solid var(--bg2)}
+::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+.wrap{max-width:1280px;margin:0 auto;padding:0 22px}
+section{scroll-margin-top:calc(var(--nav-h) + 16px)}
+.num{font-variant-numeric:tabular-nums}
+/* SECTION: nav */
+.nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:50;
+  background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line)}
+.nav-in{max-width:1280px;margin:0 auto;height:100%;padding:0 22px;display:flex;align-items:center;gap:18px}
+.brandmark{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:.02em;flex:none}
+.brandmark .flag{width:22px;height:14px;flex:none;
+  background:conic-gradient(var(--ink) 25%,transparent 0 50%,var(--ink) 0 75%,transparent 0) 0 0/7px 7px;
+  border:1px solid var(--line2)}
+.brandmark small{color:var(--accent);font-weight:800;font-size:11px;letter-spacing:.14em}
+.nav-links{display:flex;gap:4px;margin-left:8px;min-width:0}
+.nav-links a{font-size:13px;color:var(--muted);padding:7px 12px;border-radius:8px;white-space:nowrap;transition:.15s}
+.nav-links a:hover{color:var(--ink);background:var(--surface)}
+.nav-links a.on{color:var(--ink);background:var(--surface);box-shadow:inset 0 -2px 0 var(--accent)}
+.nav-act{margin-left:auto;display:flex;gap:8px;flex:none}
+.icon-btn{width:38px;height:38px;border-radius:9px;border:1px solid var(--line);background:var(--surface);
+  color:var(--muted);cursor:pointer;font-size:15px;display:inline-flex;align-items:center;justify-content:center;transition:.15s}
+.icon-btn:hover{color:var(--ink);border-color:var(--line2)}
+/* SECTION: hero */
+.hero{position:relative;padding:calc(var(--nav-h) + 54px) 0 46px;overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 85% -10%,rgba(255,74,31,.16),transparent 60%),
+    radial-gradient(700px 380px at 8% 0%,rgba(77,159,255,.12),transparent 55%),
+    linear-gradient(180deg,var(--bg2),var(--bg))}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background:repeating-linear-gradient(115deg,transparent 0 46px,rgba(255,255,255,.014) 46px 48px)}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;
+  background:conic-gradient(var(--ink) 25%,transparent 0 50%,var(--ink) 0 75%,transparent 0) 0 0/10px 10px;opacity:.14}
+.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:40px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:700;letter-spacing:.22em;color:var(--accent);text-transform:uppercase}
+.eyebrow:before{content:"";width:20px;height:2px;background:var(--accent)}
+.hero h1{font-size:clamp(28px,4.2vw,46px);line-height:1.18;margin:14px 0 12px;font-weight:850;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .sub{color:var(--muted);font-size:14.5px;max-width:560px;margin:0 0 22px}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 20px;border-radius:10px;
+  font-size:13.5px;font-weight:700;cursor:pointer;border:1px solid transparent;transition:.18s}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 6px 20px rgba(255,74,31,.3)}
+.btn-primary:hover{transform:translateY(-1px);filter:brightness(1.06)}
+.btn-ghost{background:var(--surface);border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--line2)}
+.hero-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.pill{font-size:11.5px;color:var(--muted);border:1px solid var(--line);background:var(--surface);
+  padding:4px 11px;border-radius:20px}
+.pill b{color:var(--ink)}
+/* telemetry panel */
+.telemetry{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.telemetry .t-head{display:flex;align-items:center;justify-content:space-between;padding:13px 18px;border-bottom:1px solid var(--line)}
+.t-head .t-title{font-size:11px;font-weight:800;letter-spacing:.18em;color:var(--faint)}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--mint);font-weight:700}
+.live i{width:7px;height:7px;border-radius:50%;background:var(--mint);animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.kpi-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.kpi{padding:16px 18px;border-bottom:1px solid var(--line);min-width:0}
+.kpi:nth-child(odd){border-right:1px solid var(--line)}
+.kpi:nth-child(n+3){border-bottom:none}
+.kpi .k-label{font-size:11px;color:var(--faint);font-weight:700;letter-spacing:.06em}
+.kpi .k-val{font-size:30px;font-weight:850;line-height:1.15;margin-top:2px;letter-spacing:-.01em}
+.kpi .k-val small{font-size:12px;color:var(--muted);font-weight:600;margin-left:3px}
+.kpi .k-note{font-size:11px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kpi.hot .k-val{color:var(--accent)}
+/* SECTION: sections common */
+.sec{padding:44px 0 6px}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.sec-head h2{font-size:21px;font-weight:800;margin:0;display:flex;align-items:center;gap:10px}
+.sec-head h2:before{content:"";width:5px;height:20px;border-radius:3px;background:var(--accent)}
+.sec-head .desc{font-size:12.5px;color:var(--muted)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.reveal.in{opacity:1;transform:none}
+/* SECTION: market */
+.market-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.mcard{padding:16px 18px;position:relative;overflow:hidden}
+.mcard:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent)}
+.mcard:nth-child(2):before{background:var(--amber)}
+.mcard:nth-child(3):before{background:var(--blue)}
+.mcard:nth-child(4):before{background:var(--mint)}
+.mcard .m-label{font-size:11.5px;color:var(--muted);font-weight:700}
+.mcard .m-val{font-size:27px;font-weight:850;margin-top:3px;letter-spacing:-.01em}
+.mcard .m-val small{font-size:12px;color:var(--muted);font-weight:600;margin-left:3px}
+.m-delta{display:inline-block;font-size:11px;font-weight:800;color:var(--mint);background:rgba(47,214,163,.12);
+  padding:1px 8px;border-radius:10px;margin-left:7px;vertical-align:middle}
+.mcard .m-note{font-size:11px;color:var(--faint);margin-top:4px}
+.leaders-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;margin-top:12px}
+.leaders{padding:16px 18px}
+.leaders h3{font-size:13px;margin:0 0 12px;font-weight:800}
+.lead-row{display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px dashed var(--line);font-size:13px}
+.lead-row:last-child{border-bottom:none}
+.lead-rank{width:22px;height:22px;flex:none;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;
+  font-size:11.5px;font-weight:800;background:var(--surface2);color:var(--muted)}
+.lead-row:first-child .lead-rank{background:var(--accent);color:#fff}
+.lead-row:nth-child(2) .lead-rank{background:var(--accent-soft);color:var(--accent)}
+.src-note{font-size:11px;color:var(--faint);margin-top:10px;line-height:1.6}
+/* SECTION: charts */
+.charts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr) minmax(0,1fr);gap:12px}
+.chart{padding:16px 18px}
+.chart h3{font-size:13.5px;margin:0 0 2px;font-weight:800}
+.chart .cs{font-size:11px;color:var(--faint);margin-bottom:14px}
+.bar-row{display:grid;grid-template-columns:86px minmax(0,1fr) 40px;align-items:center;gap:9px;margin-bottom:9px}
+.bar-row .bl{font-size:11.5px;color:var(--muted);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-track{height:10px;background:var(--surface2);border-radius:6px;overflow:hidden}
+.bar-fill{height:100%;border-radius:6px;width:0;transition:width .8s cubic-bezier(.2,.7,.2,1)}
+.bar-row .bv{font-size:12px;font-weight:800;text-align:right}
+.chart-tip{font-size:11px;color:var(--faint);margin-top:10px}
+/* SECTION: garage */
+.garage-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:10px}
+.g-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 10px 10px;
+  text-align:center;cursor:pointer;transition:transform .16s,box-shadow .16s,border-color .16s;position:relative;min-width:0}
+.g-card:hover{transform:translateY(-3px);border-color:var(--line2);box-shadow:var(--shadow)}
+.g-card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.g-logo{height:52px;border-radius:8px;background:var(--logo-bg);display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:9px}
+.g-logo img{max-width:86%;max-height:40px;object-fit:contain;display:block}
+.g-logo.dark{background:#1C222D}
+.g-fb{font-size:12px;font-weight:800;color:#3A4353;letter-spacing:.02em;line-height:1.2;padding:0 4px}
+.g-logo.dark .g-fb{color:#E7EDF5}
+.g-name{font-size:12.5px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.g-meta{font-size:10.5px;color:var(--faint);margin-top:2px;display:flex;align-items:center;justify-content:center;gap:5px}
+.dot{display:inline-block;width:7px;height:7px;border-radius:2px;transform:skewX(-14deg)}
+.g-fav{position:absolute;top:7px;right:7px;width:26px;height:26px;border-radius:7px;border:none;background:transparent;
+  color:var(--faint);cursor:pointer;font-size:14px;line-height:1;opacity:0;transition:.15s}
+.g-card:hover .g-fav,.g-card.faved .g-fav{opacity:1}
+.g-card.faved .g-fav{color:var(--amber)}
+/* SECTION: explorer */
+.explorer-bar{position:sticky;top:var(--nav-h);z-index:30;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:1px solid var(--line);border-radius:14px;padding:13px 14px;margin-bottom:16px;box-shadow:var(--shadow)}
+.f-row{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.search{flex:1;min-width:220px;position:relative}
+.search input{width:100%;height:42px;border:1px solid var(--line);border-radius:10px;padding:0 12px 0 36px;
+  font-size:16px;background:var(--surface);color:var(--ink);outline:none;font-family:inherit}
+.search input:focus{border-color:var(--accent)}
+.search .ico{position:absolute;left:12px;top:11px;color:var(--faint);font-size:15px;pointer-events:none}
+select{height:42px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);
+  padding:0 10px;font-size:13px;outline:none;cursor:pointer;font-family:inherit;max-width:100%}
+.chips-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;align-items:center}
+.chip-tab{font-size:12.5px;font-weight:700;padding:7px 14px;border-radius:9px;border:1px solid var(--line);
+  background:var(--surface);color:var(--muted);cursor:pointer;transition:.15s}
+.chip-tab:hover{color:var(--ink);border-color:var(--line2)}
+.chip-tab.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.chip-tab.on.cat-dom{background:var(--dom);border-color:var(--dom);color:#fff}
+.chip-tab.on.cat-jv{background:var(--jv);border-color:var(--jv);color:#fff}
+.chip-tab.on.cat-imp{background:var(--imp);border-color:var(--imp);color:#fff}
+.chip-tab.on.cat-fav{background:var(--amber);border-color:var(--amber);color:#1A1205}
+.f-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px}
+.result-line{font-size:12.5px;color:var(--muted)}
+.result-line b{color:var(--accent);font-size:14px}
+.active-tags{display:flex;gap:6px;flex-wrap:wrap}
+.a-tag{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;background:var(--accent-soft);color:var(--accent);
+  border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);padding:3px 6px 3px 10px;border-radius:16px;font-weight:700}
+.a-tag button{border:none;background:transparent;color:inherit;cursor:pointer;font-size:13px;line-height:1;padding:0 2px}
+.link-btn{border:none;background:transparent;color:var(--muted);font-size:12px;cursor:pointer;text-decoration:underline dotted}
+.link-btn:hover{color:var(--accent)}
+.view-toggle{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.view-toggle button{border:none;background:var(--surface);color:var(--muted);padding:8px 13px;font-size:12px;font-weight:700;cursor:pointer}
+.view-toggle button.on{background:var(--ink);color:var(--bg)}
+/* brand list cards */
+.brand-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.b-card{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:14px 15px;cursor:pointer;
+  display:flex;gap:13px;align-items:flex-start;transition:.16s;min-width:0;position:relative}
+.b-card:hover{border-color:var(--line2);box-shadow:var(--shadow);transform:translateY(-2px)}
+.b-card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.b-card:before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:3px;border-radius:3px;background:var(--cat-c,var(--accent))}
+.b-logo{width:64px;height:50px;flex:none;border-radius:8px;background:var(--logo-bg);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.b-logo.dark{background:#1C222D}
+.b-logo img{max-width:86%;max-height:38px;object-fit:contain}
+.b-logo .g-fb{font-size:10.5px}
+.b-info{min-width:0;flex:1}
+.b-name{display:flex;align-items:baseline;gap:7px;flex-wrap:wrap}
+.b-name strong{font-size:15px;font-weight:800}
+.b-name .en{font-size:11px;color:var(--faint);font-weight:700;letter-spacing:.04em}
+.b-company{font-size:11.5px;color:var(--muted);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.b-tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:7px}
+.tag{font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:6px;border:1px solid var(--line);color:var(--muted);background:var(--surface2)}
+.tag.cat{color:var(--cat-c,var(--accent));border-color:color-mix(in srgb,var(--cat-c,var(--accent)) 40%,transparent);
+  background:color-mix(in srgb,var(--cat-c,var(--accent)) 10%,transparent)}
+.b-count{flex:none;text-align:right}
+.b-count b{display:block;font-size:21px;font-weight:850;line-height:1.1}
+.b-count span{font-size:10.5px;color:var(--faint)}
+.b-fav{position:absolute;top:9px;right:9px;width:28px;height:28px;border-radius:7px;border:none;background:transparent;
+  color:var(--faint);cursor:pointer;font-size:14px;opacity:0;transition:.15s}
+.b-card:hover .b-fav,.b-card.faved .b-fav{opacity:1}
+.b-card.faved .b-fav{color:var(--amber)}
+.b-count{margin-right:20px}
+/* model table */
+.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:13px;background:var(--surface)}
+table.models{width:100%;border-collapse:collapse;font-size:12.5px;min-width:640px}
+table.models th{position:sticky;top:0;background:var(--surface2);color:var(--faint);font-size:10.5px;letter-spacing:.08em;
+  text-transform:uppercase;text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+table.models td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:middle}
+table.models tr:last-child td{border-bottom:none}
+table.models tbody tr{transition:background .12s}
+table.models tbody tr:hover{background:var(--surface2)}
+.t-brand{display:flex;align-items:center;gap:7px;cursor:pointer;font-weight:700;white-space:nowrap}
+.t-brand .dot{flex:none}
+.t-brand:hover{color:var(--accent)}
+.t-name{font-weight:700}
+.t-cc{font-weight:700;white-space:nowrap}
+.t-cc small{color:var(--faint);font-weight:500}
+.t-price{color:var(--amber);font-weight:700;white-space:nowrap}
+.t-price.na{color:var(--faint);font-weight:400}
+.t-src{color:var(--faint);font-size:13px}
+.t-src:hover{color:var(--accent)}
+mark{background:var(--accent-soft);color:var(--accent);border-radius:3px;padding:0 1px}
+.empty{padding:48px 20px;text-align:center;color:var(--muted)}
+.empty .e-ico{font-size:30px;margin-bottom:8px}
+.empty b{color:var(--ink)}
+/* SECTION: rank & matrix */
+.rk-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rk-card{padding:16px 18px}
+.rk-card h3{font-size:13.5px;margin:0 0 3px}
+.rk-card .cs{font-size:11px;color:var(--faint);margin-bottom:10px}
+.rk-row{display:flex;align-items:center;gap:9px;padding:6px 0;border-top:1px solid var(--line)}
+.rk-row:first-child{border-top:none}
+.rk-key{flex:none;width:76px;font-size:11.5px;color:var(--muted);font-weight:700}
+.rk-list{display:flex;gap:5px;flex-wrap:wrap;flex:1;min-width:0}
+.rk{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;padding:3px 8px 3px 4px;border:1px solid var(--line);
+  border-radius:999px;background:var(--surface2);color:var(--ink);cursor:pointer;transition:.15s;max-width:100%;font-family:inherit}
+.rk:hover{border-color:var(--accent);color:var(--accent)}
+.rk .no{width:15px;height:15px;flex:none;border-radius:4px;display:inline-flex;align-items:center;justify-content:center;
+  font-size:9.5px;font-weight:800;background:var(--line2);color:var(--muted)}
+.rk.p1 .no{background:var(--accent);color:#fff}
+.rk.p2 .no{background:var(--amber);color:#1A1205}
+.rk.p3 .no{background:var(--mint);color:#06231B}
+.rk.p4 .no,.rk.p5 .no{background:var(--line2);color:var(--muted)}
+.rk .cnt{color:var(--muted);font-variant-numeric:tabular-nums;font-size:11px}
+.rk-name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:88px}
+.mx-wrap{overflow-x:auto}
+table.mx{border-collapse:separate;border-spacing:3px;width:100%;font-size:11.5px;margin-top:2px}
+table.mx th{font-size:10.5px;font-weight:700;color:var(--muted);text-align:center;padding:5px 6px;white-space:nowrap;
+  background:none;border:none}
+table.mx th.rowh{text-align:left;color:var(--ink);font-size:11.5px;width:80px}
+table.mx th.rt{color:var(--accent);font-size:12px;font-weight:800}
+table.mx td{text-align:center;padding:7px 6px;border-radius:6px;cursor:pointer;font-variant-numeric:tabular-nums;
+  color:var(--ink);font-weight:700;background:var(--surface2);transition:.12s}
+table.mx td.z{color:var(--faint);font-weight:400;opacity:.5;cursor:default}
+table.mx td:hover{outline:1px solid var(--accent);outline-offset:-1px}
+.mx-legend{font-size:11px;color:var(--faint);margin-top:8px;line-height:1.6}
+.sug{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:10px}
+.sug .s-btn{font-size:12px;padding:7px 13px;border-radius:9px;border:1px solid var(--line);background:var(--surface);
+  color:var(--ink);cursor:pointer;font-family:inherit}
+.sug .s-btn:hover{border-color:var(--accent);color:var(--accent)}
+.ch-lbl{font-size:11px;color:var(--faint);font-weight:800;letter-spacing:.04em;margin-right:2px}
+.price-row .chip-tab{padding:6px 11px}
+.price-row .chip-tab .cnt{color:var(--faint);font-size:11px;margin-left:5px;font-variant-numeric:tabular-nums}
+.price-row .chip-tab.on .cnt{color:rgba(255,255,255,.78)}
+@media (max-width:760px){.rk-grid{grid-template-columns:1fr}}
+/* SECTION: compare & az —— 型号对比、A-Z 品牌索引、型号表固定表头 */
+.table-scroll{max-height:74vh}
+table.models th{position:sticky;top:0;z-index:2}
+table.models th.c-cmp,table.models td.c-cmp{position:sticky;left:0;z-index:1;background:var(--surface);width:38px;padding:9px 6px}
+table.models th.c-brand{position:sticky;left:38px;z-index:2;background:var(--surface2)}
+table.models td.c-brand{position:sticky;left:38px;z-index:1;background:var(--surface);box-shadow:1px 0 0 var(--line)}
+table.models th.c-cmp{background:var(--surface2);z-index:3}
+table.models tbody tr:hover td.c-brand{background:var(--surface2)}
+.cmp-box{width:19px;height:19px;border-radius:5px;border:1px solid var(--line2);background:var(--surface2);
+  color:var(--muted);cursor:pointer;font-size:11px;line-height:1;padding:0;font-family:inherit;display:inline-flex;
+  align-items:center;justify-content:center;transition:.13s}
+.cmp-box:hover{border-color:var(--accent);color:var(--accent)}
+.cmp-box.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.cmp-bar{position:fixed;left:50%;transform:translateX(-50%) translateY(140%);bottom:16px;z-index:70;display:flex;align-items:center;
+  gap:10px;max-width:min(760px,94vw);background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);border:1px solid var(--line2);border-radius:13px;padding:10px 12px;box-shadow:var(--shadow);
+  transition:transform .28s cubic-bezier(.2,.8,.2,1)}
+.cmp-bar.show{transform:translateX(-50%) translateY(0)}
+.cmp-bar .cb-lab{font-size:11px;color:var(--faint);font-weight:800;letter-spacing:.04em;flex:none}
+.cmp-bar .cb-list{display:flex;gap:6px;flex-wrap:wrap;flex:1;min-width:0}
+.cmp-chip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;padding:4px 6px 4px 9px;border-radius:8px;
+  background:var(--surface2);border:1px solid var(--line2);max-width:190px}
+.cmp-chip span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cmp-chip button{border:none;background:transparent;color:var(--faint);cursor:pointer;font-size:12px;line-height:1;padding:0}
+.cmp-chip button:hover{color:var(--accent)}
+.cmp-bar .cb-go{flex:none;border:none;border-radius:9px;background:var(--accent);color:#fff;font-weight:800;font-size:12.5px;
+  padding:9px 15px;cursor:pointer;font-family:inherit}
+.cmp-bar .cb-go:disabled{opacity:.45;cursor:not-allowed}
+.cmp-bar .cb-x{flex:none;border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:9px;
+  font-size:12px;padding:8px 11px;cursor:pointer;font-family:inherit}
+body.cmp-on{padding-bottom:92px}
+.cmp-modal{position:fixed;inset:0;z-index:80;display:none;align-items:center;justify-content:center;padding:16px}
+.cmp-modal.show{display:flex}
+.cmp-modal .cm-scrim{position:absolute;inset:0;background:rgba(4,6,10,.66);backdrop-filter:blur(3px)}
+.cmp-modal .cm-box{position:relative;background:var(--bg);border:1px solid var(--line2);border-radius:16px;
+  width:min(1080px,100%);max-height:88vh;overflow:auto;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.cm-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;border-bottom:1px solid var(--line);
+  position:sticky;top:0;background:var(--bg);z-index:2}
+.cm-head h3{margin:0;font-size:15px}
+.cm-head .cm-x{border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:9px;
+  padding:7px 12px;font-size:12px;cursor:pointer;font-family:inherit}
+.cm-head .cm-x:hover{color:var(--accent);border-color:var(--accent)}
+table.cmp{width:100%;border-collapse:collapse;font-size:12.5px;min-width:560px}
+table.cmp th,table.cmp td{padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+table.cmp thead th{background:var(--surface2);font-size:11px}
+table.cmp .rowh{color:var(--faint);font-weight:700;font-size:11px;background:var(--surface);white-space:nowrap;width:88px;
+  position:sticky;left:0;z-index:1}
+table.cmp .cn{font-size:14px;font-weight:800}
+table.cmp .csub{font-size:11px;color:var(--faint);display:block;margin-top:2px}
+table.cmp .best{color:var(--mint);font-weight:800}
+table.cmp .best-tag{display:inline-block;font-size:9.5px;font-weight:800;color:#06231B;background:var(--mint);
+  border-radius:4px;padding:1px 5px;margin-left:5px;vertical-align:1px}
+table.cmp a.more{color:var(--faint);font-size:11px;text-decoration:none}
+table.cmp a.more:hover{color:var(--accent)}
+.cm-foot{padding:12px 16px;font-size:11px;color:var(--faint)}
+.az-row{display:flex;gap:4px;flex-wrap:wrap;align-items:center;margin:0 0 14px}
+.az{min-width:26px;height:26px;padding:0 6px;border-radius:7px;border:1px solid var(--line);background:var(--surface);
+  color:var(--muted);font-size:11.5px;font-weight:800;cursor:pointer;font-family:inherit}
+.az:hover{color:var(--ink);border-color:var(--line2)}
+.az.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.az.off{opacity:.34;cursor:default}
+.az-lab{font-size:11px;color:var(--faint);font-weight:800;letter-spacing:.04em;margin-right:4px}
+/* SECTION: drawer */
+.scrim{position:fixed;inset:0;background:var(--scrim);z-index:60;opacity:0;pointer-events:none;transition:opacity .25s}
+.scrim.show{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(500px,100vw);z-index:70;background:var(--bg2);
+  border-left:1px solid var(--line);transform:translateX(102%);transition:transform .3s cubic-bezier(.2,.8,.2,1);
+  display:flex;flex-direction:column;box-shadow:-20px 0 60px rgba(0,0,0,.3)}
+.drawer.show{transform:none}
+.d-head{padding:18px 20px 14px;border-bottom:1px solid var(--line);position:relative;flex:none}
+.d-close{position:absolute;top:14px;right:14px}
+.d-top{display:flex;gap:13px;align-items:center;padding-right:40px}
+.d-logo{width:72px;height:56px;flex:none;border-radius:9px;background:var(--logo-bg);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.d-logo.dark{background:#1C222D}
+.d-logo img{max-width:86%;max-height:42px;object-fit:contain}
+.d-title{min-width:0}
+.d-title h3{margin:0;font-size:19px;font-weight:850;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.d-title .en{font-size:12px;color:var(--faint);font-weight:700;letter-spacing:.05em}
+.d-title .co{font-size:12px;color:var(--muted);margin-top:2px}
+.d-badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.d-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.d-links a{font-size:12px;font-weight:700;color:var(--blue);border:1px solid var(--line);border-radius:8px;padding:6px 12px;background:var(--surface)}
+.d-links a:hover{border-color:var(--blue)}
+.d-fav{border:1px solid var(--line);border-radius:8px;padding:6px 12px;background:var(--surface);font-size:12px;font-weight:700;color:var(--muted);cursor:pointer}
+.d-fav.on{color:var(--amber);border-color:color-mix(in srgb,var(--amber) 45%,transparent)}
+.d-stats{display:flex;gap:0;border-bottom:1px solid var(--line);flex:none}
+.d-stat{flex:1;padding:11px 8px;text-align:center;border-right:1px solid var(--line);min-width:0}
+.d-stat:last-child{border-right:none}
+.d-stat b{display:block;font-size:18px;font-weight:850}
+.d-stat span{font-size:10.5px;color:var(--faint)}
+.d-body{overflow-y:auto;padding:16px 20px 26px;flex:1}
+.d-sec-title{font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--faint);margin:18px 0 9px;text-transform:uppercase}
+.d-sec-title:first-child{margin-top:0}
+.d-model{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 10px;padding:9px 11px;border:1px solid var(--line);
+  border-radius:10px;margin-bottom:7px;background:var(--surface);align-items:center}
+.d-model .dm-name{font-weight:750;font-size:13px;min-width:0;overflow-wrap:anywhere}
+.d-model .dm-price{font-size:12.5px;font-weight:800;color:var(--amber);white-space:nowrap}
+.d-model .dm-price.na{color:var(--faint);font-weight:400}
+.d-model .dm-meta{grid-column:1/-1;display:flex;gap:8px;align-items:center;font-size:11px;color:var(--muted)}
+.d-model .dm-meta .tag{font-size:10px}
+.d-model .dm-src{margin-left:auto;color:var(--faint)}
+.d-model .dm-src:hover{color:var(--accent)}
+.d-note{font-size:12px;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--blue);
+  border-radius:9px;padding:10px 13px;line-height:1.7}
+.d-unc{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin-bottom:7px;overflow:hidden}
+.d-unc summary{cursor:pointer;padding:9px 12px;font-size:12.5px;font-weight:700;list-style:none;display:flex;gap:8px;align-items:center}
+.d-unc summary::-webkit-details-marker{display:none}
+.d-unc summary:before{content:"▸";color:var(--amber);transition:.15s}
+.d-unc[open] summary:before{transform:rotate(90deg)}
+.d-unc .u-body{padding:0 12px 10px;font-size:11.5px;color:var(--muted);line-height:1.7}
+.d-unc .u-reason{color:var(--amber)}
+/* SECTION: footer */
+.foot-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.fbox{padding:18px 20px}
+.fbox h3{font-size:13.5px;margin:0 0 10px;font-weight:800}
+.fbox ul{margin:0;padding-left:18px;font-size:12px;color:var(--muted);line-height:1.9}
+.fbox p{font-size:12px;color:var(--muted);margin:0 0 8px;line-height:1.7}
+.disclaimer{font-size:11.5px;color:var(--faint);text-align:center;padding:26px 10px 8px;line-height:1.8}
+.made-by{font-size:11px;color:var(--faint);text-align:center;padding:6px 10px 34px;letter-spacing:.06em}
+.made-by b{color:var(--accent)}
+/* SECTION: toast & top */
+.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);z-index:90;
+  background:var(--overlay);color:var(--ink);border:1px solid var(--line2);border-radius:10px;
+  padding:10px 18px;font-size:12.5px;font-weight:600;opacity:0;pointer-events:none;transition:.25s;box-shadow:var(--shadow)}
+.toast.show{opacity:1;transform:translateX(-50%)}
+.to-top{position:fixed;right:22px;bottom:24px;z-index:55;width:42px;height:42px;border-radius:11px;
+  border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;font-size:16px;
+  opacity:0;pointer-events:none;transition:.2s;box-shadow:var(--shadow)}
+.to-top.show{opacity:1;pointer-events:auto}
+.to-top:hover{color:var(--accent);border-color:var(--accent)}
+/* SECTION: responsive */
+@media (max-width:1080px){
+  .hero-in{grid-template-columns:minmax(0,1fr)}
+  .charts{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .market-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  .wrap{padding:0 14px}
+  .nav-links{display:none}
+  .hero{padding-top:calc(var(--nav-h) + 34px)}
+  .brand-list{grid-template-columns:minmax(0,1fr)}
+  .charts{grid-template-columns:minmax(0,1fr)}
+  .leaders-grid,.foot-grid{grid-template-columns:minmax(0,1fr)}
+  .garage-grid{grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}
+  .explorer-bar{padding:10px}
+  .search{min-width:100%}
+  select{flex:1;min-width:calc(50% - 5px);font-size:16px}
+  .drawer{width:100vw}
+  .kpi .k-val{font-size:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<!-- SECTION: nav -->
+<header class="nav">
+  <div class="nav-in">
+    <div class="brandmark"><span class="flag"></span>MOTO GRID <small>250CC+</small></div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#market" data-sec="market">市场大盘</a>
+      <a href="#charts" data-sec="charts">车型分布</a>
+      <a href="#rank" data-sec="rank">品牌榜</a>
+      <a href="#garage" data-sec="garage">品牌车库</a>
+      <a href="#explorer" data-sec="explorer">型号浏览器</a>
+      <a href="#about" data-sec="about">数据口径</a>
+    </nav>
+    <div class="nav-act">
+      <button class="icon-btn" id="favNavBtn" title="查看收藏的品牌" aria-label="查看收藏的品牌">★</button>
+      <button class="icon-btn" id="themeBtn" title="切换深浅色主题" aria-label="切换深浅色主题">☾</button>
+    </div>
+  </div>
+</header>
+
+<!-- SECTION: hero -->
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <div>
+      <span class="eyebrow">China Moto Market · 250cc+ Grid</span>
+      <h1>国内 <em>250cc+</em> 摩托车<br>品牌全景看板</h1>
+      <p class="sub" id="heroSub">中国市场在售 · 排量 ≥250cc · 型号逐条附核实来源 · 官方 Logo 本地化</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#explorer">进入型号浏览器 →</a>
+        <a class="btn btn-ghost" href="#garage">品牌车库</a>
+      </div>
+      <div class="hero-meta">
+        <span class="pill">数据截至 <b id="heroDate">—</b></span>
+        <span class="pill"><b id="heroBrands">—</b> 个品牌</span>
+        <span class="pill"><b id="heroModels">—</b> 个在售型号</span>
+        <span class="pill"><b id="heroLogos">—</b> 张官方 Logo</span>
+      </div>
+    </div>
+    <div class="telemetry reveal">
+      <div class="t-head"><span class="t-title">MARKET TELEMETRY · <span id="tYear">—</span></span><span class="live"><i></i>官方口径</span></div>
+      <div class="kpi-grid" id="heroKpis"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: market -->
+<section class="sec" id="market">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>市场大盘 · <span id="marketYear">—</span> 年</h2><div class="desc">权威行业口径，用于理解品牌格局</div></div>
+    <div class="market-grid reveal" id="marketCards"></div>
+    <div class="leaders-grid reveal">
+      <div class="panel leaders"><h3>250cc 以上销量前五企业</h3><div id="leaders250"></div></div>
+      <div class="panel leaders"><h3>500cc 以上销量前五企业</h3><div id="leaders500"></div><div class="src-note" id="marketSrc"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: charts -->
+<section class="sec" id="charts">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>收录车型分布</h2><div class="desc">基于本看板收录的 <b id="chartTotal">—</b> 个在售型号统计 · 点击条形可筛选</div></div>
+    <div class="charts reveal">
+      <div class="panel chart"><h3>排量段分布</h3><div class="cs">按官方标称排量（cc）分段</div><div id="chartBucket"></div></div>
+      <div class="panel chart"><h3>车型类别分布</h3><div class="cs">仿赛 / 街车 / 巡航 / ADV / 踏板等</div><div id="chartType"></div></div>
+      <div class="panel chart"><h3>品牌圈层分布</h3><div class="cs">各圈层收录的在售型号数量</div><div id="chartCat"></div><div class="chart-tip">点击任意条形 → 在型号浏览器中查看对应型号</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: rank -->
+<section class="sec" id="rank">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>结构洞察 · 品牌榜</h2><div class="desc">按 <b>424</b> 款在售车型聚合（不含平行进口）· 点任意品牌或格子即筛选</div></div>
+    <div class="rk-grid reveal">
+      <div class="panel rk-card"><h3>各车身类别 · 型号数 TOP3 品牌</h3><div class="cs">谁在这个类别里铺得最密</div><div id="rankType"></div></div>
+      <div class="panel rk-card"><h3>各价格带 · 型号数 TOP5 品牌</h3><div class="cs">谁的价格带覆盖最宽</div><div id="rankPrice"></div></div>
+    </div>
+    <div class="panel rk-card reveal" style="margin-top:14px">
+      <h3>类别 × 价格档 分布矩阵</h3>
+      <div class="cs">行是车身类别、列是六档价格，数字为该格型号数；底色越深越集中，点格子直接筛</div>
+      <div id="matrix"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: garage -->
+<section class="sec" id="garage">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>品牌车库</h2><div class="desc" id="garageDesc">点击卡片查看品牌详情 · ☆ 收藏到本地</div></div>
+    <div class="az-row reveal" id="azRow" role="group" aria-label="按英文名首字母筛选品牌"></div>
+    <div class="garage-grid reveal" id="garageGrid"></div>
+  </div>
+</section>
+
+<!-- SECTION: explorer -->
+<section class="sec" id="explorer">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>型号浏览器</h2><div class="desc">搜索 · 筛选 · 排序 · 双视图，逐条可查核实来源</div></div>
+    <div class="explorer-bar">
+      <div class="f-row">
+        <div class="search"><span class="ico">⌕</span><input id="q" type="search" placeholder="搜索品牌 / 型号，空格分隔多个词，如「春风 450」" autocomplete="off" aria-label="搜索品牌或型号"></div>
+        <select id="fBucket" aria-label="排量段筛选"></select>
+        <select id="fType" aria-label="车型类别筛选"></select>
+        <select id="fSort" aria-label="排序方式">
+          <option value="default">排序 · 品牌顺序</option>
+          <option value="count">型号数 多→少</option>
+          <option value="price-asc">价格 低→高</option>
+          <option value="price-desc">价格 高→低</option>
+          <option value="cc-asc">排量 小→大</option>
+          <option value="cc-desc">排量 大→小</option>
+          <option value="name">名称 A→Z</option>
+        </select>
+        <div class="view-toggle" role="group" aria-label="视图切换">
+          <button id="viewBrands" class="on" type="button">品牌</button>
+          <button id="viewModels" type="button">型号表</button>
+        </div>
+      </div>
+      <div class="chips-row price-row" id="priceChips" role="group" aria-label="价格区间筛选"></div>
+      <div class="chips-row" id="catChips"></div>
+      <div class="f-foot">
+        <div class="result-line" id="resultLine"></div>
+        <div class="active-tags" id="activeTags"></div>
+        <button class="link-btn" id="resetBtn" type="button">重置全部筛选</button>
+      </div>
+    </div>
+    <div id="explorerBody"></div>
+  </div>
+</section>
+
+<!-- SECTION: about -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>数据口径与完整性</h2></div>
+    <div class="foot-grid reveal">
+      <div class="panel fbox"><h3>收录原则</h3><ul id="principles"></ul><p style="margin-top:10px"><b>数据来源：</b><span id="sources"></span></p></div>
+      <div class="panel fbox"><h3>完整性说明</h3><p id="integrity"></p><p><b>未获取到官方 Logo 的品牌（以品牌标准字兜底）：</b><span id="missingLogos"></span></p><p><b>当前无 ≥250cc 在售车型的品牌：</b><span id="emptyBrands"></span></p></div>
+    </div>
+    <div class="disclaimer">本看板为市场信息整理，车型与价格以品牌官方最新公示为准；官方指导价未公布或未能核实的统一记为「—」，不做估算。数据截至 <span id="footDate">—</span>。</div>
+    <div class="made-by">DATA VERIFIED · 制作 by <b>waterfly</b> · UI REDESIGN</div>
+  </div>
+</section>
+
+<!-- SECTION: compare -->
+<div class="cmp-bar" id="cmpBar" role="region" aria-label="待对比车型">
+  <span class="cb-lab">对比</span>
+  <div class="cb-list" id="cmpList"></div>
+  <button class="cb-go" id="cmpGo" type="button" disabled>开始对比</button>
+  <button class="cb-x" id="cmpClear" type="button" aria-label="清空对比">✕</button>
+</div>
+<div class="cmp-modal" id="cmpModal" role="dialog" aria-modal="true" aria-label="车型参数对比">
+  <div class="cm-scrim" id="cmpScrim"></div>
+  <div class="cm-box">
+    <div class="cm-head"><h3>车型参数对比</h3><button class="cm-x" id="cmpClose" type="button">关闭 (ESC)</button></div>
+    <div id="cmpBody"></div>
+    <div class="cm-foot">价格与参数均来自各品牌官方渠道，逐条可核实；绿色标记为该行最优值（最低价 / 最大排量）。</div>
+  </div>
+</div>
+
+<!-- SECTION: drawer -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="品牌详情">
+  <div class="d-head">
+    <button class="icon-btn d-close" id="drawerClose" aria-label="关闭详情">✕</button>
+    <div class="d-top">
+      <div class="d-logo" id="dLogo"></div>
+      <div class="d-title"><h3><span id="dName"></span><span class="en" id="dNameEn"></span></h3><div class="co" id="dCompany"></div></div>
+    </div>
+    <div class="d-badges" id="dBadges"></div>
+    <div class="d-links" id="dLinks"></div>
+  </div>
+  <div class="d-stats" id="dStats"></div>
+  <div class="d-body" id="dBody"></div>
+</aside>
+
+<!-- SECTION: toast & top -->
+<div class="toast" id="toast" role="status"></div>
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<!-- SECTION: data -->
+<script src="data/dashboard.js?v=202611130839"></script>
+<script>
+/* Logo 走本地文件，从 brands[].logo.file 汇总成 id -> 路径 */
+window.LOGO_URLS = (function(){
+  var m={},d=window.MOTO_DATA||{};
+  (d.brands||[]).forEach(function(b){ if(b.logo&&b.logo.file) m[b.id]=b.logo.file; });
+  return m;
+})();
+if(!window.MOTO_DATA||!window.MOTO_DATA.brands){
+  document.addEventListener("DOMContentLoaded",function(){
+    document.body.insertAdjacentHTML("afterbegin",
+      '<div style="margin:16px;padding:16px 18px;border:1px solid #63302a;background:#2a1413;color:#ffb1a5;font:14px/1.7 -apple-system,sans-serif;border-radius:10px">'+
+      '数据文件 data/dashboard.js 未加载，页面无法渲染。请确认 data/dashboard.js 存在，或刷新重试。</div>');
+  });
+}
+</script>
+<!-- SECTION: app -->
+<script>
+(function(){
+"use strict";
+var D = window.MOTO_DATA, LOGO = window.LOGO_URLS || {};
+var CATS = ["国产自主","合资及台系","进口大贸"];
+var CAT_KEY = {"国产自主":"dom","合资及台系":"jv","进口大贸":"imp"};
+var CAT_COLOR = {"国产自主":"var(--dom)","合资及台系":"var(--jv)","进口大贸":"var(--imp)"};
+var BUCKETS = ["250-399cc","400-699cc","700-999cc","1000cc以上","未标注"];
+var BUCKET_COLOR = ["#FF4A1F","#FFB224","#2FD6A3","#4D9FFF","#B78CFF"];
+var TYPE_COLOR = {"巡航":"#FF4A1F","街车":"#4D9FFF","拉力ADV":"#2FD6A3","仿赛":"#FF5C5C","踏板":"#FFB224","复古":"#B78CFF","旅行":"#59C2E6","越野":"#8BD450","边三轮":"#F2789F","倒三轮":"#C9A26B","其他":"#9AA5B5"};
+var $ = function(id){return document.getElementById(id)};
+var esc = function(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})};
+var pad = function(n){return n<10?"0"+n:String(n)};
+var brandById = {}; D.brands.forEach(function(b){brandById[b.id]=b});
+var store = {
+  get:function(k,d){try{var v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},
+  set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+};
+var state = {q:"",cat:"全部",bucket:"",type:"",price:"",officialOnly:false,sort:"default",view:"brands",favs:store.get("moto-favs",[]),az:"",cmp:[]};
+var isFav = function(id){return state.favs.indexOf(id)>=0};
+
+/* SECTION: theme */
+var theme = store.get("moto-theme", null) || (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light":"dark");
+function applyTheme(t){document.documentElement.dataset.theme=t;$("themeBtn").textContent=t==="dark"?"☾":"☀";store.set("moto-theme",t)}
+applyTheme(theme);
+$("themeBtn").addEventListener("click",function(){applyTheme(document.documentElement.dataset.theme==="dark"?"light":"dark")});
+
+/* SECTION: toast */
+var toastTimer=null;
+function toast(msg){var t=$("toast");t.textContent=msg;t.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(function(){t.classList.remove("show")},1800)}
+
+/* SECTION: logo helper */
+function fillLogo(box,b,fbClass){
+  box.innerHTML="";
+  var url=LOGO[b.id];
+  if(url){
+    var img=document.createElement("img");
+    img.loading="lazy";img.alt=b.name+" Logo";img.src=url;
+    img.addEventListener("error",function(){box.innerHTML="";var d=document.createElement("div");d.className=fbClass;d.textContent=b.nameEn||b.name;box.appendChild(d)});
+    box.appendChild(img);
+  }else{
+    var d=document.createElement("div");d.className=fbClass;d.textContent=b.nameEn||b.name;box.appendChild(d);
+  }
+  box.classList.toggle("dark",!!b.logoDark);
+}
+
+/* SECTION: hero */
+var s=D.stats, mk=D.market;
+$("heroDate").textContent=D.meta.updated;
+$("heroBrands").textContent=s.brandCount;
+$("heroModels").textContent=s.modelCount;
+$("heroLogos").textContent=s.logoCount;
+$("heroSub").textContent=D.meta.scope+" · 型号逐条附核实来源";
+$("tYear").textContent=mk.year;
+$("marketYear").textContent=mk.year;
+$("footDate").textContent=D.meta.updated;
+var heroKpis=[
+  {label:"收录品牌",val:s.brandCount,unit:"个",note:"国产 / 合资台系 / 进口大贸"},
+  {label:"在售型号",val:s.modelCount,unit:"个",note:"≥250cc · 逐条附来源"},
+  {label:"250cc+ 销量",val:mk.items[0].value,unit:mk.items[0].unit,note:"2025 全年 · 同比 "+mk.items[0].delta,hot:true},
+  {label:"500cc+ 销量",val:mk.items[1].value,unit:mk.items[1].unit,note:"增长最快 · 同比 "+mk.items[1].delta,hot:true}
+];
+$("heroKpis").innerHTML=heroKpis.map(function(k){
+  return '<div class="kpi'+(k.hot?" hot":"")+'"><div class="k-label">'+esc(k.label)+'</div><div class="k-val num">'+esc(k.val)+'<small>'+esc(k.unit)+'</small></div><div class="k-note">'+esc(k.note)+'</div></div>';
+}).join("");
+
+/* SECTION: market */
+$("marketCards").innerHTML=mk.items.map(function(it){
+  return '<div class="panel mcard"><div class="m-label">'+esc(it.label)+'</div><div class="m-val num">'+esc(it.value)+'<small>'+esc(it.unit)+'</small>'+(it.delta?'<span class="m-delta">'+esc(it.delta)+'</span>':'')+'</div><div class="m-note">'+esc(it.note)+'</div></div>';
+}).join("");
+function leadRows(arr){return arr.map(function(x,i){return '<div class="lead-row"><span class="lead-rank num">'+(i+1)+'</span><span>'+esc(x)+'</span></div>'}).join("")}
+$("leaders250").innerHTML=leadRows(mk.leaders250);
+$("leaders500").innerHTML=leadRows(mk.leaders500);
+$("marketSrc").textContent="来源："+mk.leadersSource+"；"+mk.source;
+
+/* SECTION: charts */
+function bars(elId,obj,order,colors,kind){
+  var max=Math.max.apply(null,Object.keys(obj).map(function(k){return obj[k]}).concat([1]));
+  var keys=order||Object.keys(obj).sort(function(a,b){return obj[b]-obj[a]});
+  $(elId).innerHTML=keys.filter(function(k){return obj[k]!=null}).map(function(k){
+    var v=obj[k]||0,c=(colors&&(colors[k]||colors[keys.indexOf(k)]))||"var(--accent)";
+    if(Array.isArray(colors))c=colors[keys.indexOf(k)]||"var(--accent)";
+    return '<div class="bar-row" role="button" tabindex="0" data-kind="'+kind+'" data-key="'+esc(k)+'" title="点击筛选 '+esc(k)+'"><div class="bl">'+esc(k)+'</div><div class="bar-track"><div class="bar-fill" data-w="'+(v/max*100).toFixed(1)+'" style="background:'+c+'"></div></div><div class="bv num">'+v+'</div></div>';
+  }).join("");
+}
+bars("chartBucket",s.byBucket,BUCKETS,BUCKET_COLOR,"bucket");
+bars("chartType",s.byType,null,TYPE_COLOR,"type");
+bars("chartCat",s.byCategoryModels,CATS,CAT_COLOR,"cat");
+$("chartTotal").textContent=s.modelCount;
+function animateBars(root){
+  (root||document).querySelectorAll(".bar-fill").forEach(function(f){
+    requestAnimationFrame(function(){requestAnimationFrame(function(){f.style.width=f.dataset.w+"%"})});
+  });
+}
+document.addEventListener("click",function(e){
+  var row=e.target.closest(".bar-row");if(!row)return;
+  var kind=row.dataset.kind,key=row.dataset.key;
+  if(kind==="bucket"){state.bucket=key;state.officialOnly=true}
+  else if(kind==="type"){state.type=key;state.officialOnly=true}
+  else if(kind==="cat"){state.cat=key;state.officialOnly=true}
+  syncControls();render();
+  $("explorer").scrollIntoView({behavior:"smooth"});
+  toast("已按「"+key+"」筛选");
+});
+document.addEventListener("keydown",function(e){
+  if(e.key==="Enter"&&e.target.classList&&e.target.classList.contains("bar-row"))e.target.click();
+});
+
+/* SECTION: garage */
+function garageCard(b){
+  var el=document.createElement("div");
+  el.className="g-card"+(isFav(b.id)?" faved":"");
+  el.tabIndex=0;el.setAttribute("role","button");el.dataset.id=b.id;
+  el.innerHTML='<button class="g-fav" aria-label="收藏品牌">'+(isFav(b.id)?"★":"☆")+'</button><div class="g-logo"></div><div class="g-name"></div><div class="g-meta"><span class="dot" style="background:'+CAT_COLOR[b.category]+'"></span><span class="g-cnt"></span></div>';
+  el.querySelector(".g-name").textContent=b.name;
+  el.querySelector(".g-cnt").textContent=b.modelCount+" 款在售";
+  fillLogo(el.querySelector(".g-logo"),b,"g-fb");
+  el.querySelector(".g-fav").addEventListener("click",function(e){e.stopPropagation();toggleFav(b.id)});
+  el.addEventListener("click",function(){openDrawer(b.id)});
+  el.addEventListener("keydown",function(e){if(e.key==="Enter")openDrawer(b.id)});
+  return el;
+}
+var AZ_LETTERS="ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+function azLetter(b){
+  var c=(b.nameEn||"").toUpperCase().charAt(0);
+  return /[A-Z]/.test(c)?c:"#";
+}
+function renderGarage(){
+  var grid=$("garageGrid");grid.innerHTML="";
+  var frag=document.createDocumentFragment();
+  D.brands.filter(function(b){return !state.az||azLetter(b)===state.az}).forEach(function(b){frag.appendChild(garageCard(b))});
+  grid.appendChild(frag);
+}
+function renderAz(){
+  var counts={};
+  D.brands.forEach(function(b){var l=azLetter(b);counts[l]=(counts[l]||0)+1});
+  var keys=Object.keys(counts).sort();
+  var html='<span class="az-lab">按英文名</span><button class="az'+(state.az?"":" on")+'" data-az="" type="button">全部 '+D.brands.length+'</button>'+
+    keys.map(function(l){
+      return '<button class="az'+(state.az===l?" on":"")+'" data-az="'+l+'" type="button" title="'+l+' 开头的 '+counts[l]+' 个品牌">'+l+'</button>';
+    }).join("");
+  $("azRow").innerHTML=html;
+}
+$("azRow").addEventListener("click",function(e){
+  var b=e.target.closest("[data-az]");if(!b)return;
+  state.az=(b.dataset.az===state.az)?"":b.dataset.az;
+  renderAz();renderGarage();
+  if(state.az)toast("已筛出 "+state.az+" 开头的品牌");
+});
+renderAz();renderGarage();
+
+/* SECTION: favorites */
+function toggleFav(id){
+  var i=state.favs.indexOf(id);
+  if(i>=0){state.favs.splice(i,1);toast("已取消收藏「"+brandById[id].name+"」")}
+  else{state.favs.push(id);toast("已收藏「"+brandById[id].name+"」")}
+  store.set("moto-favs",state.favs);
+  refreshFavUI();
+  if(state.cat==="收藏")render();
+}
+function refreshFavUI(){
+  document.querySelectorAll(".g-card").forEach(function(c){
+    var on=isFav(c.dataset.id);c.classList.toggle("faved",on);
+    c.querySelector(".g-fav").textContent=on?"★":"☆";
+  });
+  document.querySelectorAll(".b-card").forEach(function(c){
+    var on=isFav(c.dataset.id);c.classList.toggle("faved",on);
+    var f=c.querySelector(".b-fav");if(f)f.textContent=on?"★":"☆";
+  });
+  var df=$("dFav");
+  if(df&&df.dataset.id){var on=isFav(df.dataset.id);df.classList.toggle("on",on);df.textContent=on?"★ 已收藏":"☆ 收藏品牌"}
+  var favChip=document.querySelector('.chip-tab[data-cat="收藏"]');
+  if(favChip)favChip.textContent="★ 收藏 "+state.favs.length;
+}
+$("favNavBtn").addEventListener("click",function(){
+  state.cat="收藏";syncControls();render();
+  $("explorer").scrollIntoView({behavior:"smooth"});
+});
+
+/* SECTION: explorer filters */
+var bucketSel=$("fBucket"),typeSel=$("fType");
+bucketSel.innerHTML='<option value="">全部排量段</option>'+Object.keys(s.byBucket||{}).filter(function(k){return (s.byBucket[k]||0)>0}).map(function(b){return '<option value="'+esc(b)+'">'+esc(b)+'（'+(s.byBucket[b]||0)+'）</option>'}).join("");
+typeSel.innerHTML='<option value="">全部车型类别</option>'+Object.keys(s.byType||{}).sort(function(a,b){return s.byType[b]-s.byType[a]}).map(function(t){return '<option value="'+esc(t)+'">'+esc(t)+'（'+s.byType[t]+'）</option>'}).join("");
+
+/* 价格档位：priceMin/priceMax 已归一为「元」，按区间交集判定；未公布单列 */
+var PRICE_RANGES=[
+  {k:"lt1",label:"1 万元以下",lo:0,hi:10000},
+  {k:"1-2",label:"1–2 万元",lo:10000,hi:20000},
+  {k:"2-3",label:"2–3 万元",lo:20000,hi:30000},
+  {k:"3-5",label:"3–5 万元",lo:30000,hi:50000},
+  {k:"gte5",label:"5 万元以上",lo:50000,hi:Infinity},
+  {k:"none",label:"价格未公布"}
+];
+var RANGE_BY_KEY={};PRICE_RANGES.forEach(function(r){RANGE_BY_KEY[r.k]=r});
+function inPrice(m,r){
+  /* 按起售价（priceMin）落档：跨档车型不重复计数，六档相加正好等于总型号数 */
+  if(!r)return true;
+  if(r.k==="none")return !m.price;
+  if(!m.price||m.priceMin==null)return false;
+  if(r.hi===Infinity)return m.priceMin>=r.lo;
+  return m.priceMin>=r.lo&&m.priceMin<r.hi;
+}
+var priceCounts={},allModels=[];
+D.brands.forEach(function(b){b.models.forEach(function(m){allModels.push(m)})});
+PRICE_RANGES.forEach(function(r){priceCounts[r.k]=allModels.filter(function(m){return inPrice(m,r)}).length});
+var priceChips=$("priceChips");
+priceChips.innerHTML='<span class="ch-lbl">价格</span>'+
+  '<button class="chip-tab" data-price="" type="button">全部<span class="cnt">'+allModels.length+'</span></button>'+
+  PRICE_RANGES.map(function(r){return '<button class="chip-tab" data-price="'+r.k+'" type="button">'+esc(r.label)+'<span class="cnt">'+priceCounts[r.k]+'</span></button>'}).join("");
+priceChips.addEventListener("click",function(e){
+  var b=e.target.closest("[data-price]");if(!b)return;
+  state.price=(b.dataset.price===state.price)?"":b.dataset.price;
+  syncControls();render();
+});
+
+var chipDefs=[{k:"全部",cls:""},{k:"国产自主",cls:"cat-dom"},{k:"合资及台系",cls:"cat-jv"},{k:"进口大贸",cls:"cat-imp"},{k:"收藏",cls:"cat-fav"}];
+$("catChips").innerHTML=chipDefs.map(function(c){
+  var n=c.k==="全部"?s.brandCount:(c.k==="收藏"?state.favs.length:(s.byCategory[c.k]||0));
+  var label=c.k==="收藏"?"★ 收藏 "+n:esc(c.k)+" "+n;
+  return '<button class="chip-tab '+c.cls+'" data-cat="'+esc(c.k)+'" type="button">'+label+'</button>';
+}).join("");
+$("catChips").addEventListener("click",function(e){
+  var t=e.target.closest(".chip-tab");if(!t)return;
+  state.cat=t.dataset.cat;syncControls();render();
+});
+function syncControls(){
+  $("q").value=state.q;bucketSel.value=state.bucket;typeSel.value=state.type;$("fSort").value=state.sort;
+  priceChips.querySelectorAll("[data-price]").forEach(function(x){x.classList.toggle("on",(x.dataset.price||"")===state.price)});
+  $("catChips").querySelectorAll(".chip-tab").forEach(function(x){x.classList.toggle("on",x.dataset.cat===state.cat)});
+  $("viewBrands").classList.toggle("on",state.view==="brands");
+  $("viewModels").classList.toggle("on",state.view==="models");
+}
+var qTimer=null;
+$("q").addEventListener("input",function(e){clearTimeout(qTimer);var v=e.target.value;qTimer=setTimeout(function(){state.q=v;render()},120)});
+bucketSel.addEventListener("change",function(e){state.bucket=e.target.value;render()});
+typeSel.addEventListener("change",function(e){state.type=e.target.value;render()});
+$("fSort").addEventListener("change",function(e){state.sort=e.target.value;render()});
+$("viewBrands").addEventListener("click",function(){state.view="brands";syncControls();render()});
+$("viewModels").addEventListener("click",function(){state.view="models";syncControls();render()});
+$("resetBtn").addEventListener("click",function(){
+  state.q="";state.cat="全部";state.bucket="";state.type="";state.price="";state.officialOnly=false;state.sort="default";
+  syncControls();render();toast("已重置全部筛选");
+});
+
+/* SECTION: rank & matrix —— 类别 TOP3 / 价格带 TOP5 / 类别×价格 矩阵，全部按统计口径（424 款）聚合 */
+var OFFICIAL_BRANDS=D.brands.filter(function(b){return b.marketStatus!=="parallel"});
+var TYPES_ORDER=Object.keys(s.byType||{}).sort(function(a,b){return (s.byType[b]||0)-(s.byType[a]||0)});
+var BANDS=PRICE_RANGES.filter(function(r){return r.k!=="none"});
+function rankOf(pred,n){
+  var out=[];
+  OFFICIAL_BRANDS.forEach(function(b){
+    var c=b.models.filter(pred).length;
+    if(c)out.push({id:b.id,name:b.name,n:c});
+  });
+  out.sort(function(x,y){return y.n-x.n||x.name.localeCompare(y.name,"zh")});
+  return out.slice(0,n);
+}
+function rkButtons(list,kind,key){
+  if(!list.length)return '<span style="font-size:11px;color:var(--faint)">—</span>';
+  return list.map(function(x,i){
+    return '<button class="rk p'+(i+1)+'" data-kind="'+kind+'" data-key="'+esc(key)+'" type="button" title="按 '+esc(key)+' 筛到「'+esc(x.name)+'」">'+
+      '<span class="no">'+(i+1)+'</span><span class="rk-name">'+esc(x.name)+'</span><span class="cnt">'+x.n+'</span></button>';
+  }).join("");
+}
+(function buildRank(){
+  var tEl=$("rankType"),pEl=$("rankPrice");
+  if(tEl)tEl.innerHTML=TYPES_ORDER.map(function(t){
+    return '<div class="rk-row"><div class="rk-key">'+esc(t)+'</div><div class="rk-list">'+
+      rkButtons(rankOf(function(m){return m.type===t},3),"type",t)+'</div></div>';
+  }).join("");
+  if(pEl)pEl.innerHTML=BANDS.map(function(r){
+    return '<div class="rk-row"><div class="rk-key">'+esc(r.label)+'</div><div class="rk-list">'+
+      rkButtons(rankOf(function(m){return inPrice(m,r)},5),"price",r.k)+'</div></div>';
+  }).join("");
+})();
+document.addEventListener("click",function(e){
+  var b=e.target.closest(".rk");if(!b)return;
+  if(b.dataset.kind==="type")state.type=b.dataset.key;
+  else if(b.dataset.kind==="price")state.price=b.dataset.key;
+  state.officialOnly=true;syncControls();render();
+  $("explorer").scrollIntoView({behavior:"smooth"});
+  toast("已按「"+(b.dataset.kind==="type"?b.dataset.key:((RANGE_BY_KEY[b.dataset.key]||{}).label||""))+"」筛选");
+});
+(function buildMatrix(){
+  var el=$("matrix");if(!el)return;
+  var data={},maxC=1;
+  TYPES_ORDER.forEach(function(t){
+    data[t]={};
+    PRICE_RANGES.forEach(function(r){
+      var c=0;
+      OFFICIAL_BRANDS.forEach(function(b){
+        c+=b.models.filter(function(m){return m.type===t&&inPrice(m,r)}).length;
+      });
+      data[t][r.k]=c;if(c>maxC)maxC=c;
+    });
+  });
+  var head='<tr><th class="rowh">类别＼价格</th>'+
+    PRICE_RANGES.map(function(r){return '<th>'+esc(r.label)+'</th>'}).join("")+'<th class="rt">合计</th></tr>';
+  var body=TYPES_ORDER.map(function(t){
+    var tot=PRICE_RANGES.reduce(function(a,r){return a+data[t][r.k]},0);
+    return '<tr><th class="rowh">'+esc(t)+'</th>'+PRICE_RANGES.map(function(r){
+      var c=data[t][r.k];
+      if(!c)return '<td class="z">·</td>';
+      var a=(0.10+0.36*(c/maxC)).toFixed(2);
+      return '<td data-type="'+esc(t)+'" data-price="'+r.k+'" style="background:rgba(255,74,31,'+a+')" title="'+esc(t)+' · '+esc(r.label)+'：'+c+' 款">'+c+'</td>';
+    }).join("")+'<th class="rt">'+tot+'</th></tr>';
+  }).join("");
+  el.innerHTML='<div class="mx-wrap"><table class="mx">'+head+body+'</table></div>'+
+    '<div class="mx-legend">按 '+s.modelCount+' 款在售车型统计，不含 '+s.parallelModelCount+' 款平行进口；行合计 = 该类别型号数，列合计即价格档分布。点任意非空格子 → 型号浏览器按该类别 + 该价格档筛选。</div>';
+  el.addEventListener("click",function(e){
+    var td=e.target.closest("td[data-type]");if(!td)return;
+    state.type=td.dataset.type;state.price=td.dataset.price;state.officialOnly=true;
+    syncControls();render();
+    $("explorer").scrollIntoView({behavior:"smooth"});
+    toast("已按「"+td.dataset.type+" · "+((RANGE_BY_KEY[td.dataset.price]||{}).label||"")+"」筛选");
+  });
+})();
+
+/* SECTION: matching —— 空格分隔多关键词 AND：命中品牌词的用于选品牌，剩余的继续过滤型号 */
+function tokenize(q){return String(q||"").trim().toLowerCase().split(/\s+/).filter(Boolean)}
+function matchBrand(b,t){return [b.name,b.nameEn,b.company,b.group,b.subCategory||""].join(" ").toLowerCase().indexOf(t)>=0}
+function matchModel(m,t){return (m.name+" "+(m.type||"")).toLowerCase().indexOf(t)>=0}
+function brandPass(b){
+  if(state.cat==="收藏")return isFav(b.id);
+  if(state.cat!=="全部"&&b.category!==state.cat)return false;
+  return true;
+}
+function modelsOf(b,rest){
+  return b.models.filter(function(m){
+    if(state.bucket&&m.bucket!==state.bucket)return false;
+    if(state.type&&m.type!==state.type)return false;
+    if(state.price&&!inPrice(m,RANGE_BY_KEY[state.price]))return false;
+    for(var i=0;i<rest.length;i++){if(!matchModel(m,rest[i]))return false}
+    return true;
+  });
+}
+function hl(text,q){
+  var t=String(text==null?"":text);
+  if(!q)return esc(t);
+  var idx=t.toLowerCase().indexOf(q);
+  if(idx<0)return esc(t);
+  return esc(t.slice(0,idx))+"<mark>"+esc(t.slice(idx,idx+q.length))+"</mark>"+esc(t.slice(idx+q.length));
+}
+function hlAll(text,toks){
+  var t=String(text==null?"":text);
+  if(!toks||!toks.length)return esc(t);
+  var low=t.toLowerCase(),hits=[];
+  toks.forEach(function(q){
+    var from=0,i;
+    while((i=low.indexOf(q,from))>=0){hits.push([i,i+q.length]);from=i+q.length}
+  });
+  if(!hits.length)return esc(t);
+  hits.sort(function(a,b){return a[0]-b[0]||b[1]-a[1]});
+  var merged=[hits[0]];
+  for(var k=1;k<hits.length;k++){
+    var cur=merged[merged.length-1],z=hits[k];
+    if(z[0]<=cur[1])cur[1]=Math.max(cur[1],z[1]);else merged.push(z);
+  }
+  var out="",pos=0;
+  merged.forEach(function(m){out+=esc(t.slice(pos,m[0]))+"<mark>"+esc(t.slice(m[0],m[1]))+"</mark>";pos=m[1]});
+  return out+esc(t.slice(pos));
+}
+function priceVal(m){return m.priceMin!=null?m.priceMin:null}
+
+/* SECTION: render */
+function computeItems(){
+  var toks=tokenize(state.q);
+  var hasFilter=!!state.bucket||!!state.type||!!state.price;
+  var items=[];
+  D.brands.forEach(function(b){
+    if(state.officialOnly&&b.marketStatus==="parallel")return;
+    if(!brandPass(b))return;
+    var rest=[];toks.forEach(function(t){if(!matchBrand(b,t))rest.push(t)});
+    var models=modelsOf(b,rest);
+    /* 有词没被品牌吃下 → 必须落到型号上；词全被品牌吃下 → 只受下拉筛选约束 */
+    if(rest.length&&models.length===0)return;
+    if(!rest.length&&hasFilter&&models.length===0)return;
+    items.push({b:b,models:models});
+  });
+  return {toks:toks,items:items,shownModels:items.reduce(function(a,x){return a+x.models.length},0)};
+}
+function render(){
+  var r=computeItems(),toks=r.toks,items=r.items,shownModels=r.shownModels;
+  var hasFilter=!!state.bucket||!!state.type||!!state.price;
+  if(state.view==="brands"){
+    if(state.sort==="count")items.sort(function(a,b){return b.models.length-a.models.length});
+    else if(state.sort==="name")items.sort(function(a,b){return a.b.name.localeCompare(b.b.name,"zh")});
+    else if(state.sort==="price-asc"||state.sort==="price-desc"){
+      var dir=state.sort==="price-asc"?1:-1;
+      var minP=function(x){var v=x.models.map(priceVal).filter(function(n){return n!=null});return v.length?Math.min.apply(null,v):Infinity};
+      items.sort(function(a,b){return dir*(minP(a)-minP(b))});
+    }else if(state.sort==="cc-asc"||state.sort==="cc-desc"){
+      var dir2=state.sort==="cc-asc"?1:-1;
+      var maxC=function(x){var v=x.models.map(function(m){return m.cc}).filter(function(n){return n!=null});return v.length?Math.max.apply(null,v):-1};
+      items.sort(function(a,b){return dir2*(maxC(a)-maxC(b))});
+    }
+    renderBrands(items,toks);
+  }else{
+    renderModels(items,toks);
+  }
+  var filtered=!!(toks.length||hasFilter||state.cat!=="全部"||state.officialOnly);
+  var par=state.officialOnly?0:(s.parallelModelCount||0);
+  $("resultLine").innerHTML='显示 <b>'+items.length+'</b> 个品牌 · <b>'+shownModels+'</b> 个型号'+
+    (par?' <span style="color:var(--faint)">（含 '+par+' 款平行进口，不计入统计口径）</span>':'')+
+    (filtered?' <span style="color:var(--faint)">（全库 '+s.brandCount+' 品牌 / '+(s.modelCountAll||s.modelCount)+' 型号）</span>':'');
+  renderActiveTags(toks);
+}
+function renderActiveTags(toks){
+  var tags=[];
+  if(toks.length)tags.push({k:"q",label:"搜索："+state.q.trim()});
+  if(state.cat!=="全部")tags.push({k:"cat",label:state.cat==="收藏"?"★ 收藏":state.cat});
+  if(state.bucket)tags.push({k:"bucket",label:state.bucket});
+  if(state.type)tags.push({k:"type",label:state.type});
+  if(state.price)tags.push({k:"price",label:(RANGE_BY_KEY[state.price]||{}).label||state.price});
+  if(state.officialOnly)tags.push({k:"officialOnly",label:"仅统计口径（不含平行进口）"});
+  $("activeTags").innerHTML=tags.map(function(t){return '<span class="a-tag">'+esc(t.label)+'<button data-clear="'+t.k+'" aria-label="移除筛选">✕</button></span>'}).join("");
+}
+$("activeTags").addEventListener("click",function(e){
+  var btn=e.target.closest("[data-clear]");if(!btn)return;
+  var k=btn.dataset.clear;
+  if(k==="q")state.q="";else if(k==="cat")state.cat="全部";else if(k==="bucket")state.bucket="";
+  else if(k==="type")state.type="";else if(k==="price")state.price="";
+  else if(k==="officialOnly")state.officialOnly=false;
+  syncControls();render();
+});
+/* 空结果时给"放宽哪一条能出几台车"，用现有数据实时算，不给假建议 */
+function countWith(patch){
+  var old={};Object.keys(patch).forEach(function(k){old[k]=state[k];state[k]=patch[k]});
+  var r=computeItems();
+  Object.keys(patch).forEach(function(k){state[k]=old[k]});
+  return {brands:r.items.length,models:r.shownModels};
+}
+function emptyCard(kind,unit){
+  var acts=[];
+  if(state.q)acts.push({k:"q",label:"清空搜索「"+state.q.trim()+"」"});
+  if(state.price)acts.push({k:"price",label:"去掉价格档「"+((RANGE_BY_KEY[state.price]||{}).label||"")+"」"});
+  if(state.type)acts.push({k:"type",label:"去掉类别「"+state.type+"」"});
+  if(state.bucket)acts.push({k:"bucket",label:"去掉排量段「"+state.bucket+"」"});
+  if(state.officialOnly)acts.push({k:"officialOnly",label:"把平行进口也放进来"});
+  var patches={q:{q:""},price:{price:""},type:{type:""},bucket:{bucket:""},officialOnly:{officialOnly:false}};
+  var btns=acts.map(function(a){
+    var n=countWith(patches[a.k]);
+    if(!n.brands)return "";
+    return '<button class="s-btn" data-act="'+a.k+'" type="button">'+esc(a.label)+' → '+n.brands+' 个品牌 · '+n.models+' '+unit+'</button>';
+  }).join("");
+  return '<div class="panel empty"><div class="e-ico">⌕</div><b>没有符合条件的'+kind+'</b>'+
+    '<div style="font-size:12px;margin-top:8px">放宽其中任意一条就能看到结果：</div>'+
+    '<div class="sug">'+btns+'<button class="s-btn" data-act="reset" type="button">重置全部筛选</button></div></div>';
+}
+document.addEventListener("click",function(e){
+  var b=e.target.closest("[data-act]");if(!b)return;
+  var k=b.dataset.act;
+  if(k==="reset"){state.q="";state.cat="全部";state.bucket="";state.type="";state.price="";state.officialOnly=false;state.sort="default"}
+  else if(k==="q")state.q="";
+  else if(k==="price")state.price="";
+  else if(k==="type")state.type="";
+  else if(k==="bucket")state.bucket="";
+  else if(k==="officialOnly")state.officialOnly=false;
+  syncControls();render();
+});
+function renderBrands(items,toks){
+  var body=$("explorerBody");
+  if(!items.length){body.innerHTML=emptyCard("品牌","型号");return}
+  body.innerHTML='<div class="brand-list">'+items.map(function(x){
+    var b=x.b;
+    return '<div class="b-card'+(isFav(b.id)?" faved":"")+'" tabindex="0" role="button" data-id="'+esc(b.id)+'" style="--cat-c:'+CAT_COLOR[b.category]+'">'+
+      '<button class="b-fav" aria-label="收藏品牌">'+(isFav(b.id)?"★":"☆")+'</button>'+
+      '<div class="b-logo"></div><div class="b-info"><div class="b-name"><strong>'+hlAll(b.name,toks)+'</strong><span class="en">'+esc(b.nameEn)+'</span></div>'+
+      '<div class="b-company">'+esc(b.company||"—")+'</div><div class="b-tags"><span class="tag cat">'+esc(b.subCategory||b.category)+'</span>'+
+      (b.marketStatus==="parallel"?'<span class="tag">平行进口 · 未计入统计</span>':'')+
+      (b.models.length?'':'<span class="tag">暂无 ≥250cc 在售</span>')+
+      (b.uncertain.length?'<span class="tag">'+b.uncertain.length+' 条存疑未纳入</span>':'')+
+      '</div></div><div class="b-count"><b class="num">'+x.models.length+'</b><span>/ '+b.modelCount+' 款</span></div></div>';
+  }).join("")+'</div>';
+  body.querySelectorAll(".b-card").forEach(function(card){
+    var b=brandById[card.dataset.id];
+    fillLogo(card.querySelector(".b-logo"),b,"g-fb");
+    card.querySelector(".b-fav").addEventListener("click",function(e){e.stopPropagation();toggleFav(b.id)});
+    card.addEventListener("click",function(){openDrawer(b.id)});
+    card.addEventListener("keydown",function(e){if(e.key==="Enter")openDrawer(b.id)});
+  });
+}
+function renderModels(items,toks){
+  var body=$("explorerBody");
+  var rows=[];
+  items.forEach(function(x){x.models.forEach(function(m,i){rows.push({b:x.b,m:m,mi:i})})});
+  if(state.sort==="price-asc")rows.sort(function(a,b){var x=priceVal(a.m),y=priceVal(b.m);return (x==null?Infinity:x)-(y==null?Infinity:y)});
+  else if(state.sort==="price-desc")rows.sort(function(a,b){var x=priceVal(a.m),y=priceVal(b.m);return (y==null?-1:y)-(x==null?-1:x)});
+  else if(state.sort==="cc-asc")rows.sort(function(a,b){return (a.m.cc||0)-(b.m.cc||0)});
+  else if(state.sort==="cc-desc")rows.sort(function(a,b){return (b.m.cc||0)-(a.m.cc||0)});
+  else if(state.sort==="name")rows.sort(function(a,b){return a.m.name.localeCompare(b.m.name,"zh")});
+  else if(state.sort==="count"){
+    var cnt={};items.forEach(function(x){cnt[x.b.id]=x.models.length});
+    rows.sort(function(a,b){return cnt[b.b.id]-cnt[a.b.id]});
+  }
+  if(!rows.length){body.innerHTML=emptyCard("型号","型号");return}
+  body.innerHTML='<div class="table-scroll"><table class="models"><thead><tr><th class="c-cmp" aria-label="加入对比"></th><th class="c-brand">品牌</th><th>型号</th><th>排量</th><th>类别</th><th>官方指导价</th><th>来源</th></tr></thead><tbody>'+
+    rows.map(function(r){
+      var m=r.m,b=r.b,k=b.id+"/"+r.mi;
+      return '<tr><td class="c-cmp"><button class="cmp-box'+(cmpHas(k)?" on":"")+'" data-cmp="'+esc(k)+'" type="button" aria-pressed="'+(cmpHas(k)?"true":"false")+'" title="加入对比">'+(cmpHas(k)?"✓":"+")+'</button></td>'+
+        '<td class="c-brand"><span class="t-brand" data-id="'+esc(b.id)+'"><span class="dot" style="background:'+CAT_COLOR[b.category]+'"></span>'+esc(b.name)+'</span></td>'+
+        '<td class="t-name">'+hlAll(m.name,toks)+'</td>'+
+        '<td class="t-cc num">'+(m.cc!=null?m.cc+'<small> cc</small>':'—')+'</td>'+
+        '<td>'+esc(m.type)+'</td>'+
+        '<td class="t-price num'+(m.price?'':' na')+'">'+(m.price?esc(m.price):'—')+'</td>'+
+        '<td>'+(m.source?'<a class="t-src" href="'+esc(m.source)+'" target="_blank" rel="noopener" title="查看核实来源">↗</a>':'<span style="color:var(--faint)">·</span>')+'</td></tr>';
+    }).join("")+'</tbody></table></div>';
+  body.querySelectorAll(".t-brand").forEach(function(el){el.addEventListener("click",function(){openDrawer(el.dataset.id)})});
+}
+
+/* SECTION: compare —— 型号对比：勾 2–3 款并排看参数，最优值标绿 */
+function cmpKey(bid,mi){return bid+"/"+mi}
+function cmpHas(k){
+  for(var i=0;i<state.cmp.length;i++)if(cmpKey(state.cmp[i].b,state.cmp[i].m)===k)return true;
+  return false;
+}
+function cmpItems(){
+  return state.cmp.map(function(c){
+    var b=brandById[c.b];
+    return {b:b,m:(b&&b.models[c.m])||null,mi:c.m};
+  }).filter(function(x){return x.b&&x.m});
+}
+function renderCmpBar(){
+  var items=cmpItems(),bar=$("cmpBar");
+  $("cmpList").innerHTML=items.map(function(x){
+    return '<span class="cmp-chip"><span>'+esc(x.b.name)+' '+esc(x.m.name)+'</span>'+
+      '<button data-cmpx="'+esc(cmpKey(x.b.id,x.mi))+'" type="button" aria-label="移出对比">✕</button></span>';
+  }).join("");
+  document.body.classList.toggle("cmp-on",items.length>0);
+  $("cmpGo").disabled=items.length<2;
+  $("cmpGo").textContent=items.length<2?"再选 "+(2-items.length)+" 款":"开始对比 ("+items.length+")";
+  bar.classList.toggle("show",items.length>0);
+}
+function syncCmpBoxes(){
+  document.querySelectorAll("[data-cmp]").forEach(function(el){
+    var on=cmpHas(el.dataset.cmp);
+    el.classList.toggle("on",on);el.textContent=on?"✓":"+";el.setAttribute("aria-pressed",on?"true":"false");
+  });
+}
+function toggleCmp(k){
+  var items=state.cmp;
+  var hit=-1,i;
+  for(i=0;i<items.length;i++)if(cmpKey(items[i].b,items[i].m)===k){hit=i;break}
+  if(hit>=0){items.splice(hit,1)}
+  else{
+    if(items.length>=3){toast("一次最多对比 3 款车型");return}
+    items.push({b:k.split("/")[0],m:+k.split("/")[1]});
+  }
+  syncCmpBoxes();renderCmpBar();
+  if(items.length===1)toast("已加入对比，再选一款即可并排比较");
+}
+document.addEventListener("click",function(e){
+  var box=e.target.closest("[data-cmp]");
+  if(box){toggleCmp(box.dataset.cmp);return}
+  var rm=e.target.closest("[data-cmpx]");
+  if(rm){
+    e.preventDefault();
+    var k=rm.dataset.cmpx,arr=state.cmp,i;
+    for(i=0;i<arr.length;i++)if(cmpKey(arr[i].b,arr[i].m)===k)break;
+    if(i<arr.length)arr.splice(i,1);
+    syncCmpBoxes();renderCmpBar();
+    if($("cmpModal").classList.contains("show")){
+      if(arr.length>=2)openCompare();else closeCompare();
+    }
+  }
+});
+$("cmpClear").addEventListener("click",function(){
+  state.cmp=[];syncCmpBoxes();renderCmpBar();
+});
+/* 价格档位：与筛选用的六档同一套边界，避免「筛选说 1–2 万、对比说 2–3 万」 */
+function bandOf(m){
+  var v=priceVal(m);if(v==null)return "价格未公布";
+  for(var i=0;i<PRICE_RANGES.length;i++){
+    var r=PRICE_RANGES[i];if(r.k==="none")continue;
+    if(v>=r.lo&&(r.hi===Infinity||v<r.hi))return r.label;
+  }
+  return "价格未公布";
+}
+function openCompare(){
+  var items=cmpItems();
+  if(items.length<2){toast("至少选 2 款车型才能对比");return}
+  var prices=items.map(function(x){return priceVal(x.m)}).filter(function(n){return n!=null});
+  var minP=prices.length?Math.min.apply(null,prices):null;
+  var modal=$("cmpModal");
+  if(!modal.classList.contains("show"))modal.classList.add("show");
+  document.body.style.overflow="hidden";
+  var nameRow='<tr><th class="rowh">车型</th>'+items.map(function(x){
+    return '<th><span class="cn">'+esc(x.m.name)+'</span><span class="csub">'+esc(x.b.name)+' · '+esc(x.m.type||"")+'</span></th>';
+  }).join("")+'</tr>';
+  var rPrice='<tr><td class="rowh">官方指导价</td>'+items.map(function(x){
+    var v=priceVal(x.m);
+    var lowest=v!=null&&v===minP;
+    var uniq=lowest&&items.filter(function(y){return priceVal(y.m)===v}).length===1;
+    return '<td class="'+(lowest?"best":"")+'">'+
+      (v!=null?'<span style="color:var(--amber);font-weight:800;font-variant-numeric:tabular-nums">'+esc(x.m.price)+'</span>':'<span style="color:var(--faint)">未公布</span>')+
+      (uniq?'<span class="best-tag">最低价</span>':'')+'</td>';
+  }).join("")+'</tr>';
+  var rFrom='<tr><td class="rowh">价格性质</td>'+items.map(function(x){
+    return '<td>'+(x.m.priceFrom?'起售价（最低配）':'官方指导价')+'</td>';
+  }).join("")+'</tr>';
+  var ccVals=items.map(function(x){return x.m.cc}).filter(function(n){return n!=null});
+  var maxC=ccVals.length?Math.max.apply(null,ccVals):null;
+  var rCc='<tr><td class="rowh">排量</td>'+items.map(function(x){
+    var v=x.m.cc;
+    var uniq=v!=null&&v===maxC&&items.filter(function(y){return y.m.cc===v}).length===1;
+    return '<td class="'+(uniq?"best":"")+'">'+(v!=null?'<span style="font-variant-numeric:tabular-nums">'+v+'</span> cc':'—')+
+      (uniq?'<span class="best-tag">最大</span>':'')+'</td>';
+  }).join("")+'</tr>';
+  var rType='<tr><td class="rowh">车身类别</td>'+items.map(function(x){return '<td>'+esc(x.m.type||"—")+'</td>'}).join("")+'</tr>';
+  var rBand='<tr><td class="rowh">价格档位</td>'+items.map(function(x){return '<td>'+esc(bandOf(x.m))+'</td>'}).join("")+'</tr>';
+  var rChan='<tr><td class="rowh">渠道口径</td>'+items.map(function(x){
+    return '<td>'+(x.b.marketStatus==="parallel"?'平行进口 · 未计入统计':'官方渠道')+'</td>';
+  }).join("")+'</tr>';
+  var rCat='<tr><td class="rowh">品牌圈层</td>'+items.map(function(x){
+    return '<td>'+esc(x.b.subCategory||x.b.category)+
+      (x.b.company?'<span class="csub">'+esc(x.b.company)+'</span>':'')+'</td>';
+  }).join("")+'</tr>';
+  var rSrc='<tr><td class="rowh">核实来源</td>'+items.map(function(x){
+    return '<td>'+(x.m.source?'<a class="more" href="'+esc(x.m.source)+'" target="_blank" rel="noopener">来源 ↗</a>':'<span style="color:var(--faint)">·</span>')+
+      ' · <a class="more" href="brand/'+esc(x.b.id)+'.html">品牌页 ↗</a>'+
+      ' · <a class="more" href="#" data-cmpx="'+esc(cmpKey(x.b.id,x.mi))+'">移出</a></td>';
+  }).join("")+'</tr>';
+  $("cmpBody").innerHTML='<table class="cmp"><thead>'+nameRow+'</thead><tbody>'+
+    rPrice+rFrom+rCc+rType+rBand+rChan+rCat+rSrc+'</tbody></table>';
+}
+function closeCompare(){var m=$("cmpModal");m.classList.remove("show");document.body.style.overflow=""}
+$("cmpGo").addEventListener("click",openCompare);
+$("cmpClose").addEventListener("click",closeCompare);
+$("cmpScrim").addEventListener("click",closeCompare);
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&$("cmpModal").classList.contains("show"))closeCompare()});
+
+/* SECTION: drawer */
+function uncRow(u){
+  /* 数据里存疑条目有两种形态：{name,cc,type,price,reason,source} 和整段说明字符串 */
+  if(typeof u==="string")return '<details class="d-unc"><summary>口径说明</summary><div class="u-body"><div class="u-reason">'+esc(u)+'</div></div></details>';
+  return '<details class="d-unc"><summary>'+esc(u.name)+(u.cc!=null?' · '+u.cc+'cc':'')+'</summary><div class="u-body">'+
+    (u.type?'<span class="tag">'+esc(u.type)+'</span> ':'')+
+    (u.price?'<div>参考价：'+esc(u.price)+'</div>':'')+
+    (u.reason?'<div class="u-reason">'+esc(u.reason)+'</div>':'')+
+    (u.source?'<div><a href="'+esc(u.source)+'" target="_blank" rel="noopener" style="color:var(--blue)">来源 ↗</a></div>':'')+
+    '</div></details>';
+}
+var lastFocus=null;
+function openDrawer(id){
+  var b=brandById[id];if(!b)return;
+  lastFocus=document.activeElement;
+  $("dName").textContent=b.name;$("dNameEn").textContent=b.nameEn;$("dCompany").textContent=b.company||"—";
+  fillLogo($("dLogo"),b,"g-fb");
+  $("dBadges").innerHTML='<span class="tag cat" style="--cat-c:'+CAT_COLOR[b.category]+'">'+esc(b.category)+'</span>'+
+    ((b.subCategory&&b.subCategory!==b.category)?'<span class="tag">'+esc(b.subCategory)+'</span>':(b.group?'<span class="tag">'+esc(b.group)+'</span>':''))+
+    (b.marketStatus==="parallel"?'<span class="tag">平行进口 · 未计入统计</span>':'')+
+    (b.logo.file?'':'<span class="tag">Logo 未获取</span>')+
+    (b.logo.note?'<span class="tag" title="'+esc(b.logo.note)+'">Logo 说明 ⓘ</span>':'');
+  var links="";
+  if(b.website)links+='<a href="'+esc(b.website)+'" target="_blank" rel="noopener">品牌官网 ↗</a>';
+  links+='<a href="brand/'+esc(b.id)+'.html">完整品牌页 ↗</a>';
+  if(b.logo.source)links+='<a href="'+esc(b.logo.source)+'" target="_blank" rel="noopener">Logo 来源 ↗</a>';
+  links+='<button class="d-fav'+(isFav(b.id)?" on":"")+'" id="dFav" data-id="'+esc(b.id)+'">'+(isFav(b.id)?"★ 已收藏":"☆ 收藏品牌")+'</button>';
+  $("dLinks").innerHTML=links;
+  $("dFav").addEventListener("click",function(){toggleFav(b.id)});
+  var prices=b.models.map(priceVal).filter(function(n){return n!=null});
+  var ccs=b.models.map(function(m){return m.cc}).filter(function(n){return n!=null});
+  var priceTxt=prices.length?(Math.min.apply(null,prices)===Math.max.apply(null,prices)?Math.min.apply(null,prices)+" 元":Math.min.apply(null,prices)+"–"+Math.max.apply(null,prices)+" 元"):"—";
+  var ccTxt=ccs.length?Math.min.apply(null,ccs)+"–"+Math.max.apply(null,ccs)+" cc":"—";
+  $("dStats").innerHTML='<div class="d-stat"><b class="num">'+b.modelCount+'</b><span>在售型号</span></div>'+
+    '<div class="d-stat"><b class="num" style="font-size:13px;line-height:2">'+esc(ccTxt)+'</b><span>排量区间</span></div>'+
+    '<div class="d-stat"><b class="num" style="font-size:13px;line-height:2">'+esc(priceTxt)+'</b><span>指导价区间</span></div>'+
+    '<div class="d-stat"><b class="num">'+b.uncertain.length+'</b><span>存疑未纳入</span></div>';
+  var html='<div class="d-sec-title">型号清单 · '+b.modelCount+'</div>';
+  if(b.models.length){
+    html+=b.models.map(function(m,i){
+      return '<div class="d-model"><div class="dm-name">'+pad(i+1)+' · '+esc(m.name)+'</div>'+
+        '<div class="dm-price num'+(m.price?'':' na')+'">'+(m.price?esc(m.price):'—')+'</div>'+
+        '<div class="dm-meta"><span class="tag">'+esc(m.type)+'</span><span>'+(m.cc!=null?m.cc+' cc':'排量未标注')+'</span>'+
+        (m.source?'<a class="dm-src" href="'+esc(m.source)+'" target="_blank" rel="noopener">核实来源 ↗</a>':'')+'</div></div>';
+    }).join("");
+  }else{
+    html+='<div class="d-note">'+esc(b.note||"经官网与车型库核查，该品牌当前在中国市场暂无符合口径的 ≥250cc 在售型号。")+'</div>';
+  }
+  if(b.note&&b.models.length)html+='<details class="d-unc"><summary>数据依据 · 说明</summary><div class="u-body d-note">'+esc(b.note)+'</div></details>';
+  if(b.uncertain.length){
+    html+='<div class="d-sec-title">存疑条目 · 未纳入正式清单（'+b.uncertain.length+'）</div>';
+    html+=b.uncertain.map(uncRow).join("");
+  }
+  $("dBody").innerHTML=html;
+  $("dBody").scrollTop=0;
+  $("scrim").classList.add("show");$("drawer").classList.add("show");
+  document.body.style.overflow="hidden";
+  $("drawerClose").focus();
+}
+function closeDrawer(){
+  $("scrim").classList.remove("show");$("drawer").classList.remove("show");
+  document.body.style.overflow="";
+  if(lastFocus&&lastFocus.focus)lastFocus.focus();
+}
+$("drawerClose").addEventListener("click",closeDrawer);
+$("scrim").addEventListener("click",closeDrawer);
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&$("drawer").classList.contains("show"))closeDrawer()});
+
+/* SECTION: footer */
+$("garageDesc").textContent=s.brandCount+" 个品牌 · 点击卡片查看品牌详情 · ☆ 收藏到本地";
+$("principles").innerHTML=D.meta.principles.map(function(x){return "<li>"+esc(x)+"</li>"}).join("");
+$("sources").textContent=D.meta.sources.join("；");
+$("integrity").textContent="共收录 "+s.brandCount+" 个品牌、"+s.modelCount+" 个 ≥250cc 在售型号；"+s.logoCount+" 个品牌已获取官方 Logo，"+s.logoMissing+" 个以品牌标准字兜底。所有型号均在品牌官网或权威车型库核实，存疑型号不进入正式清单。";
+$("missingLogos").textContent=D.brands.filter(function(b){return !b.logo.file}).map(function(b){return b.name}).join("、")||"无";
+var empties=D.brands.filter(function(b){return b.modelCount===0}).map(function(b){return b.name});
+$("emptyBrands").textContent=empties.length?empties.join("、")+"（共 "+empties.length+" 个，均已在详情中说明原因）":"无";
+
+/* SECTION: nav state & reveal & top */
+var secIds=["market","charts","garage","explorer","about"];
+function updateNav(){
+  var pos=window.scrollY+90,current="";
+  secIds.forEach(function(id){var el=$(id);if(el&&el.offsetTop<=pos)current=id});
+  document.querySelectorAll(".nav-links a").forEach(function(a){a.classList.toggle("on",a.dataset.sec===current)});
+  $("toTop").classList.toggle("show",window.scrollY>600);
+}
+window.addEventListener("scroll",updateNav,{passive:true});
+$("toTop").addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})});
+if("IntersectionObserver" in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target);
+    if(en.target.querySelector(".bar-fill"))animateBars(en.target)}})},{threshold:.12});
+  document.querySelectorAll(".reveal").forEach(function(el){io.observe(el)});
+}else{
+  document.querySelectorAll(".reveal").forEach(function(el){el.classList.add("in")});
+  animateBars(document);
+}
+syncControls();render();refreshFavUI();updateNav();
+})();
+</script>
+</body>
+</html>
