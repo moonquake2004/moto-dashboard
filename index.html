@@ -377,6 +377,13 @@ table.cmp a.more:hover{color:var(--accent)}
 .az.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
 .az.off{opacity:.34;cursor:default}
 .az-lab{font-size:11px;color:var(--faint);font-weight:800;letter-spacing:.04em;margin-right:4px}
+.brand-index{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:14px 16px}
+.brand-index h3{margin:0 0 10px;font-size:13px}
+.bi-list{display:flex;flex-wrap:wrap;gap:6px}
+.bi{font-size:11.5px;padding:4px 9px;border-radius:7px;border:1px solid var(--line);background:var(--surface2);
+  color:var(--ink);text-decoration:none;font-weight:700}
+.bi:hover{border-color:var(--accent);color:var(--accent)}
+.bi i{font-style:normal;color:var(--faint);margin-left:4px;font-weight:400}
 /* SECTION: drawer */
 .scrim{position:fixed;inset:0;background:var(--scrim);z-index:60;opacity:0;pointer-events:none;transition:opacity .25s}
 .scrim.show{opacity:1;pointer-events:auto}
@@ -607,6 +614,10 @@ table.cmp a.more:hover{color:var(--accent)}
     <div class="foot-grid reveal">
       <div class="panel fbox"><h3>收录原则</h3><ul id="principles"></ul><p style="margin-top:10px"><b>数据来源：</b><span id="sources"></span></p></div>
       <div class="panel fbox"><h3>完整性说明</h3><p id="integrity"></p><p><b>未获取到官方 Logo 的品牌（以品牌标准字兜底）：</b><span id="missingLogos"></span></p><p><b>当前无 ≥250cc 在售车型的品牌：</b><span id="emptyBrands"></span></p></div>
+    </div>
+    <div class="brand-index reveal">
+      <h3>全部品牌独立页（44 个）</h3>
+      <div class="bi-list"><!--BRAND_INDEX--></div>
     </div>
     <div class="disclaimer">本看板为市场信息整理，车型与价格以品牌官方最新公示为准；官方指导价未公布或未能核实的统一记为「—」，不做估算。数据截至 <span id="footDate">—</span>。</div>
     <div class="made-by">DATA VERIFIED · 制作 by <b>waterfly</b> · UI REDESIGN</div>
