@@ -345,6 +345,7 @@ def build(out_dir, ver=None):
     idx = INDEX.read_text(encoding="utf-8")
     idx2 = idx.replace('src="data/dashboard.js"', 'src="data/dashboard.js?v=%s"' % ver)
     idx2 = idx2.replace('src="data/market_monthly.js"', 'src="data/market_monthly.js?v=%s"' % ver)
+    idx2 = idx2.replace('src="data/specs.js"', 'src="data/specs.js?v=%s"' % ver)
     # 静态品牌索引：44 个内链，既是站内目录也是给搜索引擎的入口（JS 生成的卡片抓不到）
     links = "".join(
         '<a class="bi" href="brand/%s.html">%s<i>%d</i></a>' % (esc(b["id"]), esc(b["name"]), b["modelCount"])
@@ -353,6 +354,8 @@ def build(out_dir, ver=None):
     idx2 = idx2.replace("<!--BRAND_INDEX-->", links)
     if 'data/dashboard.js?v=' not in idx2:
         sys.exit("index.html 里没找到 data/dashboard.js 的 script 标签，发布中止")
+    if 'data/specs.js?v=' not in idx2:
+        sys.exit("index.html 里没找到 data/specs.js 的 script 标签，发布中止")
     if 'data/market_monthly.js?v=' not in idx2:
         sys.exit("index.html 里没找到 data/market_monthly.js 的 script 标签，发布中止")
     # 月度序列是手抓落库的，序列太短或字段缺失都会让首页趋势面板变空白，构建时先拦一道
@@ -367,6 +370,7 @@ def build(out_dir, ver=None):
 
     shutil.copy(ROOT / "data" / "dashboard.js", out / "data" / "dashboard.js")
     shutil.copy(ROOT / "data" / "market_monthly.js", out / "data" / "market_monthly.js")
+    shutil.copy(ROOT / "data" / "specs.js", out / "data" / "specs.js")
     shutil.copy(ROOT / "assets" / "favicon.svg", out / "assets" / "favicon.svg")
     for f in (ROOT / "assets" / "logos").glob("*"):
         if f.is_file():

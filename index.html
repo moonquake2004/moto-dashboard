@@ -375,6 +375,15 @@ table.cmp .best-tag{display:inline-block;font-size:9.5px;font-weight:800;color:#
   border-radius:4px;padding:1px 5px;margin-left:5px;vertical-align:1px}
 table.cmp a.more{color:var(--faint);font-size:11px;text-decoration:none}
 table.cmp a.more:hover{color:var(--accent)}
+table.cmp tr.grp td{background:var(--surface2);color:var(--muted);font-size:11px;font-weight:800;
+  letter-spacing:.06em;padding:7px 14px;border-bottom:1px solid var(--line);position:sticky;left:0}
+table.cmp td.spec{font-size:12px;line-height:1.55;color:var(--ink)}
+table.cmp td.spec.na{color:var(--faint)}
+table.cmp .spec-sub{display:block;font-size:10.5px;color:var(--faint);margin-top:1px}
+.cm-specbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:10px 16px;border-bottom:1px solid var(--line);
+  font-size:11px;color:var(--faint);background:var(--surface)}
+.cm-specbar b{color:var(--ink);font-size:11.5px}
+.cm-specbar .dot{width:5px;height:5px;border-radius:50%;background:var(--mint);display:inline-block;margin-right:5px}
 .cm-foot{padding:12px 16px;font-size:11px;color:var(--faint)}
 .az-row{display:flex;gap:4px;flex-wrap:wrap;align-items:center;margin:0 0 14px}
 .az{min-width:26px;height:26px;padding:0 6px;border-radius:7px;border:1px solid var(--line);background:var(--surface);
@@ -790,8 +799,9 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
   <div class="cm-scrim" id="cmpScrim"></div>
   <div class="cm-box">
     <div class="cm-head"><h3>车型参数对比</h3><button class="cm-x" id="cmpClose" type="button">关闭 (ESC)</button></div>
+    <div class="cm-specbar" id="cmpSpecBar"></div>
     <div id="cmpBody"></div>
-    <div class="cm-foot">价格与参数均来自各品牌官方渠道，逐条可核实；绿色标记为该行最优值（最低价 / 最大排量）。</div>
+    <div class="cm-foot">价格与参数均来自品牌官方渠道或权威车型库，逐条可核实；绿色标记为该行最优值（最低价 / 最大功率 / 最轻整备质量等）。参数未收录的车型显示「—」，不做估算填充。</div>
   </div>
 </div>
 
@@ -818,6 +828,7 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
 <!-- SECTION: data -->
 <script src="data/dashboard.js"></script>
 <script src="data/market_monthly.js"></script>
+<script src="data/specs.js"></script>
 <script>
 /* Logo 走本地文件，从 brands[].logo.file 汇总成 id -> 路径 */
 window.LOGO_URLS = (function(){
@@ -1850,9 +1861,95 @@ function bandOf(m){
   }
   return "价格未公布";
 }
+/* SECTION: specs —— 机型技术参数：四组明细 + 最优值高亮 + 缺项显示「—」 */
+var SPEC_GROUPS=[
+  {g:"动力 / 传动",rows:[
+    {k:"kw",l:"最大功率",u:"kW",best:"max",sub:"kwRpm",subPre:"@"},
+    {k:"nm",l:"最大扭矩",u:"N·m",best:"max",sub:"nmRpm",subPre:"@"},
+    {k:"pw",l:"推重比",u:"kW/100kg",best:"max",digits:2,calc:function(s){return (s.kw&&s.weight)?(s.kw/s.weight*100):null}},
+    {k:"cyl",l:"气缸数"},{k:"cmp",l:"压缩比"},{k:"cool",l:"冷却方式"},
+    {k:"gear",l:"变速器"},{k:"clutch",l:"离合器"},{k:"drive",l:"传动方式"}
+  ]},
+  {g:"尺寸 / 重量",rows:[
+    {k:"lwh",l:"长×宽×高",u:"mm"},
+    {k:"seat",l:"座高",u:"mm"},
+    {k:"wb",l:"轴距",u:"mm"},
+    {k:"tank",l:"油箱容量",u:"L",best:"max"},
+    {k:"weight",l:"整备质量",u:"kg",best:"min"},
+    {k:"clearance",l:"最小离地间隙",u:"mm"},
+    {k:"frame",l:"车架"}
+  ]},
+  {g:"底盘 / 制动",rows:[
+    {k:"suspF",l:"前悬挂"},{k:"suspR",l:"后悬挂"},
+    {k:"brkF",l:"前制动"},{k:"brkR",l:"后制动"},
+    {k:"tireF",l:"前轮胎"},{k:"tireR",l:"后轮胎"}
+  ]},
+  {g:"电控 / 配置",rows:[
+    {k:"abs",l:"ABS"},{k:"tcs",l:"牵引力控制"},{k:"qs",l:"快速换挡"},
+    {k:"cruise",l:"定速巡航"},{k:"tpms",l:"胎压监测"},
+    {k:"keyless",l:"无钥匙启动"},{k:"dash",l:"仪表"}
+  ]}
+];
+function specOf(bname,mname){
+  var S=window.MOTO_SPECS;
+  if(!S||!S.models)return null;
+  return S.models[bname+"|"+mname]||null;
+}
+function specVal(s,row){
+  if(!s)return null;
+  if(row.calc){var v=row.calc(s);return (v==null||isNaN(v))?null:v}
+  var v=s[row.k];
+  if(v===undefined||v===null||v==="—"||v==="-")return null;
+  return v;
+}
+function specCell(s,row,bestVal,tieCount){
+  var v=specVal(s,row);
+  if(v==null)return '<td class="spec na">—</td>';
+  var isBest=bestVal!=null&&row.best&&v===bestVal&&tieCount===1;
+  var txt=typeof v==="number"
+    ? (row.digits!=null?v.toFixed(row.digits):v)+(row.u?' '+row.u:'')
+    : esc(String(v))+(row.u?' '+row.u:'');
+  var sub="";
+  if(row.sub&&s[row.sub]!=null)sub='<span class="spec-sub">'+row.subPre+s[row.sub]+' rpm</span>';
+  return '<td class="spec'+(isBest?" best":"")+'">'+txt+sub+(isBest?'<span class="best-tag">最优</span>':'')+'</td>';
+}
+function compareSpecHTML(items){
+  var specs=items.map(function(x){return specOf(x.b.name,x.m.name)});
+  var have=specs.filter(function(s){return s}).length;
+  var html="";
+  if(!have){
+    html='<tr class="grp"><td colspan="'+(items.length+1)+'">技术参数 · 这些车型尚未收录参数（参数按批补录，见数据质量面板）</td></tr>';
+    return html;
+  }
+  SPEC_GROUPS.forEach(function(grp){
+    html+='<tr class="grp"><td colspan="'+(items.length+1)+'">'+grp.g+'</td></tr>';
+    grp.rows.forEach(function(row){
+      var vals=specs.map(function(s){return specVal(s,row)});
+      var nums=vals.filter(function(v){return typeof v==="number"});
+      var bestVal=null;
+      if(nums.length>1&&row.best){
+        bestVal=row.best==="max"?Math.max.apply(null,nums):Math.min.apply(null,nums);
+        if(nums.filter(function(n){return n===bestVal}).length!==1)bestVal=null;
+      }
+      html+='<tr><td class="rowh">'+esc(row.l)+'</td>'+
+        specs.map(function(s){return specCell(s,row,bestVal,1)}).join("")+'</tr>';
+    });
+  });
+  return html;
+}
+function renderSpecBar(items){
+  var bar=$("cmpSpecBar");if(!bar)return;
+  var specs=items.map(function(x){return specOf(x.b.name,x.m.name)});
+  var have=specs.filter(function(s){return s}).length;
+  var S=window.MOTO_SPECS;
+  var totalModels=(S&&S.meta&&S.meta.totalModels)||0;
+  var covered=S&&S.models?Object.keys(S.models).length:0;
+  bar.innerHTML='<span><i class="dot"></i>本次对比 <b>'+have+'/'+items.length+'</b> 款有技术参数</span>'+
+    '<span>全站参数覆盖 <b>'+covered+'/'+totalModels+'</b> 款</span>'+
+    (have?'<span>来源：'+(S&&S.meta?esc(S.meta.source):"车型库")+' · 逐款参数配置页</span>':'<span>这些车型的参数还没抓，先看口径信息</span>');
+}
 function openCompare(){
-  var items=cmpItems();
-  if(items.length<2){toast("至少选 2 款车型才能对比");return}
+  var items=cmpItems();  if(items.length<2){toast("至少选 2 款车型才能对比");return}
   var prices=items.map(function(x){return priceVal(x.m)}).filter(function(n){return n!=null});
   var minP=prices.length?Math.min.apply(null,prices):null;
   var modal=$("cmpModal");
@@ -1890,12 +1987,16 @@ function openCompare(){
       (x.b.company?'<span class="csub">'+esc(x.b.company)+'</span>':'')+'</td>';
   }).join("")+'</tr>';
   var rSrc='<tr><td class="rowh">核实来源</td>'+items.map(function(x){
+    var s=specOf(x.b.name,x.m.name);
+    var sp=s&&s.src?'<a class="more" href="'+esc(s.src)+'" target="_blank" rel="noopener">参数 ↗</a>':'';
     return '<td>'+(x.m.source?'<a class="more" href="'+esc(x.m.source)+'" target="_blank" rel="noopener">来源 ↗</a>':'<span style="color:var(--faint)">·</span>')+
+      (sp?' · '+sp:'')+
       ' · <a class="more" href="brand/'+esc(x.b.id)+'.html">品牌页 ↗</a>'+
       ' · <a class="more" href="#" data-cmpx="'+esc(cmpKey(x.b.id,x.mi))+'">移出</a></td>';
   }).join("")+'</tr>';
+  renderSpecBar(items);
   $("cmpBody").innerHTML='<table class="cmp"><thead>'+nameRow+'</thead><tbody>'+
-    rPrice+rFrom+rCc+rType+rBand+rChan+rCat+rSrc+'</tbody></table>';
+    rPrice+rFrom+rCc+rType+compareSpecHTML(items)+rBand+rChan+rCat+rSrc+'</tbody></table>';
 }
 function closeCompare(){var m=$("cmpModal");m.classList.remove("show");document.body.style.overflow=""}
 $("cmpGo").addEventListener("click",openCompare);
@@ -1996,12 +2097,13 @@ $("missingLogos").textContent=D.brands.filter(function(b){return !b.logo.file}).
     {v:unc,l:"存疑条目未纳入正式清单",x:"来源冲突或仅有单一渠道佐证的型号/参数，记在品牌抽屉与品牌页里",warn:unc>0},
     {v:srcRate.toFixed(1)+"%",l:"型号来源覆盖率",x:noSource?("仍有 "+noSource+" 个型号缺来源链接"):"每个型号都带可点回原文的来源",warn:noSource>0},
     {v:logoOk+"/"+D.brands.length,l:"官方 Logo 覆盖",x:"缺失的用品牌标准字兜底，不拿近似字标冒充"},
+    {v:(window.MOTO_SPECS&&window.MOTO_SPECS.models?Object.keys(window.MOTO_SPECS.models).length:0)+"/"+all.length,l:"技术参数覆盖",x:"功率 / 扭矩 / 整备 / 座高 / 油箱 / 悬挂 / 制动 / 电控 等分组参数，按车型逐款补录；未收录的显示「—」"},
     {v:s.parallelModelCount+" 款",l:"平行进口（"+parBrands+" 个品牌）",x:"单列展示、不计入统计口径，价格参考海外官网"}
   ];
   el.innerHTML=items.map(function(it){
     return '<div class="q-item'+(it.warn?" warn":"")+'"><div class="qv">'+esc(String(it.v))+'<small></small></div><div class="ql">'+esc(it.l)+'</div><div class="qx">'+esc(it.x)+'</div></div>';
   }).join("");
-  $("qualityNote").textContent="这五个数字是全站所有「不完整」的地方：没有价格的 "+noPrice+" 款、存疑的 "+unc+" 条、平行进口的 "+s.parallelModelCount+" 款型号，都单独标了出处；宁可显示缺口，也不做估算填充。";
+  $("qualityNote").textContent="这些数字是全站所有「不完整」的地方：没有价格的 "+noPrice+" 款、存疑的 "+unc+" 条、平行进口的 "+s.parallelModelCount+" 款型号，都单独标了出处；宁可显示缺口，也不做估算填充。";
 })();
 var empties=D.brands.filter(function(b){return b.modelCount===0}).map(function(b){return b.name});
 $("emptyBrands").textContent=empties.length?empties.join("、")+"（共 "+empties.length+" 个，均已在详情中说明原因）":"无";
