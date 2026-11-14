@@ -247,6 +247,25 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", cruise: "标配", tpms: "标配", keyless: "标配",
       dash: "6.75 寸 TFT 全彩液晶屏",
       src: "https://www.58moto.com/good/21312/configuration.html"
+    },
+    "赛科龙|AQS401": {
+      variant: "2027款 AQS401 AMT版", price: "21,988",
+      kw: 34, kwRpm: 9500, nm: 37, nmRpm: 8000, cc: 400, cyl: "双缸 直列",
+      cool: "水冷", gear: "AMT 7 速自动挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      lwh: "2175x845x1145", seat: 720, wb: 1480, tank: 17, weight: 185, clearance: 140,
+      suspF: "正置式", suspR: "边置式双减震",
+      tireF: "120/80-17", tireR: "150/60-17",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶仪表",
+      src: "https://www.58moto.com/good/21327/configuration.html"
+    },
+    "无极|DS525": {
+      variant: "2025款 DS525X 公路征途版", price: "31,766",
+      kw: 41, kwRpm: 9000, nm: 50.5, nmRpm: 7500, cc: 500, cyl: "双缸 直列", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架",
+      lwh: "2265x940x1360", seat: 810, wb: 1450, tank: 18, weight: 216, clearance: 200,
+      src: "https://www.58moto.com/good/20040/configuration.html"
     }
   }
 };
