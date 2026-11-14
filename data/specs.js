@@ -184,6 +184,69 @@ window.MOTO_SPECS = {
       suspF: "φ37mm 倒置减震", suspR: "中置单减",
       tireF: "110/70-R17", tireR: "150/60-R17",
       src: "https://www.58moto.com/good/20536/configuration.html"
+    },
+    "钱江|赛450": {
+      variant: "2025款 赛450 AMT版", price: "26,999",
+      kw: 39, kwRpm: 9500, nm: 43, nmRpm: 8000, cc: 450, cyl: "双缸 直列", cmp: "11.5:1",
+      cool: "水冷", gear: "AMT 6 速自动挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管编织车架",
+      lwh: "2030x750x1150", seat: 785, wb: 1380, tank: 14.8, weight: 173,
+      suspF: "Marzocchi 倒置式前叉", suspR: "中置多连杆 · 预载多段可调",
+      brkF: "φ300mm 双碟 · 日清卡钳", brkR: "φ240mm 单碟",
+      tireF: "110/70-R17", tireR: "150/60-R17",
+      abs: "标配前后", tcs: "标配可关闭", qs: "无", cruise: "无", tpms: "标配",
+      dash: "5 寸 TFT 仪表",
+      src: "https://www.58moto.com/good/20234/configuration.html"
+    },
+    "无极|CU525": {
+      variant: "2026款 CU525 链条版", price: "21,980",
+      kw: 39.6, kwRpm: 8500, nm: 50.5, nmRpm: 7000, cc: 500, cyl: "双缸 直列", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管编织车架",
+      lwh: "2225x845x1105", seat: 710, wb: 1480, tank: 15, weight: 178, clearance: 160,
+      suspF: "φ41mm 倒置减震", suspR: "边置式双减震",
+      brkF: "φ310mm 单碟 · 对向四活塞径向卡钳（西互）", brkR: "φ240mm 单碟单活塞（西互）",
+      tireF: "130/90-16", tireR: "150/80-16",
+      abs: "标配前后", tcs: "标配可关闭", qs: "无", cruise: "无", tpms: "无",
+      keyless: "无", dash: "LED 全彩仪表",
+      src: "https://www.58moto.com/good/20489/configuration.html"
+    },
+    "本田|CBR650R": {
+      variant: "2024款 CBR650R E-Clutch", price: "82,800",
+      kw: 56, kwRpm: 9000, nm: 60, nmRpm: 8000, cc: 650, cyl: "四缸 直列", cmp: "11.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合（E-Clutch 电子离合）", drive: "链条传动",
+      lwh: "2130x750x1145", seat: 810, wb: 1450, tank: 15.4, weight: 212, clearance: 130,
+      suspF: "Showa SFF-BP 倒置式", suspR: "中置单筒",
+      brkF: "双 310mm 浮动碟 · 辐射式对向卡钳", brkR: "240mm 单碟 · 单活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后", tcs: "标配可关闭", qs: "无", cruise: "无", tpms: "无",
+      keyless: "无", dash: "全数字液晶仪表",
+      src: "https://www.58moto.com/good/6938/configuration.html"
+    },
+    "赛科龙|RT5": {
+      variant: "2026款 RT5 智途版", price: "21,988",
+      kw: 19.5, kwRpm: 8000, nm: 24.5, nmRpm: 6500, cc: 250, cyl: "单缸", cool: "水冷",
+      gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "高强度龙骨车架",
+      lwh: "2205x767x1395", seat: 755, wb: 1545, tank: 18, weight: 190, clearance: 155,
+      suspF: "正置式前减震", suspR: "弹簧式后减震",
+      brkF: "盘式", brkR: "盘式",
+      tireF: "120/70-15", tireR: "140/60-14",
+      abs: "标配前后",
+      src: "https://www.58moto.com/good/21660/configuration.html"
+    },
+    "升仕|368D": {
+      variant: "2026款 368D 全新升级版", price: "28,800",
+      kw: 28.5, kwRpm: 7500, nm: 40, nmRpm: 6000, cc: 368, cyl: "单缸", cmp: "11.8:1",
+      cool: "水冷+油冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "钢管车架",
+      lwh: "2025x805x1190", seat: 760, wb: 1405, tank: 12, weight: 165, clearance: 150,
+      suspF: "玛卓科 φ41mm 倒置式（压缩/回弹多段可调）", suspR: "边置式双减震（预载 5 段可调）",
+      brkF: "西互对向四活塞辐射式卡钳", brkR: "碟刹",
+      tireF: "120/70-15", tireR: "140/70-14",
+      abs: "标配前后", tcs: "标配", cruise: "标配", tpms: "标配", keyless: "标配",
+      dash: "6.75 寸 TFT 全彩液晶屏",
+      src: "https://www.58moto.com/good/21312/configuration.html"
     }
   }
 };
