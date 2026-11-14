@@ -166,6 +166,24 @@ window.MOTO_SPECS = {
       suspF: "KYB 倒置式 φ41mm（内置气囊 · 压缩/回弹可调）",
       suspR: "KYB 中置单减（内置气囊 · 压缩/回弹可调）",
       src: "https://www.58moto.com/good/21533/configuration.html"
+    },
+    "无极|SR250GT": {
+      variant: "2026款 SR250GT Ⅱ代 Play版", price: "15,980",
+      kw: 20.5, kwRpm: 8500, nm: 24.5, nmRpm: 6250, cc: 250, cyl: "单缸", cmp: "11.5:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "钢管编织车架",
+      lwh: "2100x795x1390", seat: 770, wb: 1525, tank: 15, weight: 168,
+      src: "https://www.58moto.com/good/20509/configuration.html"
+    },
+    "春风|450NK": {
+      variant: "2026款 450NK", price: "23,880",
+      kw: 38, kwRpm: 9500, nm: 40, nmRpm: 7750, cc: 450, cyl: "双缸 直列", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管编织式车架",
+      lwh: "2000x810x1130", seat: 795, wb: 1370, tank: 14, weight: 165,
+      suspF: "φ37mm 倒置减震", suspR: "中置单减",
+      tireF: "110/70-R17", tireR: "150/60-R17",
+      src: "https://www.58moto.com/good/20536/configuration.html"
     }
   }
 };
