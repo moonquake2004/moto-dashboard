@@ -110,6 +110,62 @@ window.MOTO_SPECS = {
       tireF: "120/70-15", tireR: "140/70-14",
       abs: "标配前后", tcs: "标配",
       src: "https://www.58moto.com/good/21727/configuration.html"
+    },
+    "无极|CU625": {
+      variant: "2026款 CU625 自动挡", price: "27,980",
+      kw: 45, kwRpm: 8500, nm: 61, nmRpm: 5500, cc: 600, cyl: "双缸 V型", cmp: "12:1",
+      cool: "水冷", gear: "AMT 6 速自动挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "钢管摇篮式车架",
+      lwh: "2315x860x1105", seat: 710, wb: 1525, tank: 16, weight: 215, clearance: 165,
+      suspF: "倒置式", suspR: "边置式双减震",
+      tireF: "130/90-R16", tireR: "150/80-R16",
+      src: "https://www.58moto.com/good/21527/configuration.html"
+    },
+    "春风|800NK": {
+      variant: "2025款 800NK", price: "42,580",
+      kw: 74, kwRpm: 9000, nm: 81, nmRpm: 8000, cc: 800, cyl: "双缸 直列", cmp: "12.7:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2146x818x1120", seat: 795, wb: 1468, tank: 15, weight: 186,
+      suspF: "KYB 倒置式 · 多段可调", suspR: "KYB 中置单减 · 多段可调",
+      brkF: "φ320mm 双碟 · 辐射式卡钳（西互）", brkR: "φ260mm 单碟（西互）",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后", tcs: "标配", qs: "标配双向", cruise: "标配",
+      src: "https://www.58moto.com/good/20308/configuration.html"
+    },
+    "春风|450CL-C": {
+      variant: "2026款 450CL-C", price: "21,980",
+      kw: 30, kwRpm: 8000, nm: 42, nmRpm: 6250, cc: 450, cyl: "双缸 直列", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "钢管编织车架",
+      lwh: "2205x805x1110", seat: 705, wb: 1485, tank: 12, weight: 181, clearance: 160,
+      suspF: "倒置式（行程 130mm）", suspR: "中置单减（行程 96mm）",
+      brkF: "φ320mm 单碟 · 四活塞卡钳", brkR: "φ220mm 单碟 · 单活塞卡钳",
+      tireF: "130/90-R16", tireR: "150/80-R16",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无",
+      src: "https://www.58moto.com/good/20571/configuration.html"
+    },
+    "赛科龙|AQS250": {
+      variant: "2026款 AQS250 手动挡", price: "15,999",
+      kw: 20.5, kwRpm: 9000, nm: 23.6, nmRpm: 7000, cc: 250, cyl: "双缸 V型",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "高强度钢摇篮式车架",
+      lwh: "2230x820x1090", seat: 720, wb: 1460, tank: 16.5, weight: 175, clearance: 170,
+      suspF: "倒置式（行程 130mm）", suspR: "边置式双减震（行程 72mm）",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/80-16", tireR: "150/80-15",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无",
+      keyless: "无", dash: "液晶仪表",
+      src: "https://www.58moto.com/good/22728/configuration.html"
+    },
+    "春风|675NK": {
+      variant: "2025款 675NK", price: "35,980",
+      kw: 70, kwRpm: 11000, nm: 70, nmRpm: 8250, cc: 675, cyl: "三缸 直列", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架",
+      lwh: "2020x849x1155", seat: 810, wb: 1400, tank: 15, weight: 189, clearance: 140,
+      suspF: "KYB 倒置式 φ41mm（内置气囊 · 压缩/回弹可调）",
+      suspR: "KYB 中置单减（内置气囊 · 压缩/回弹可调）",
+      src: "https://www.58moto.com/good/21533/configuration.html"
     }
   }
 };
