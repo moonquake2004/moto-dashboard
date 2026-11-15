@@ -1536,6 +1536,18 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "液晶屏",
       src: "https://www.58moto.com/good/18619/configuration.html"
+    },
+    "香帅机车|苍云 300": {
+      variant: "2023款 苍云 300Max", price: "21,980",
+      kw: 21.5, kwRpm: 8500, nm: 27.8, nmRpm: 6500, cc: 300, cyl: "双缸 直列 SOHC 两气门", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "双翼梁一体式钢管编织车架",
+      lwh: "2213x840x1200", seat: 698, wb: 1505, tank: 14, weight: 188, clearance: 186,
+      brkF: "双活塞卡钳", brkR: "单活塞浮动卡钳",
+      tireF: "130/90-16", tireR: "150/80-16",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 液晶显示屏（USB 充电 / 不可调风挡）",
+      src: "https://www.58moto.com/good/20443/configuration.html"
     }
   }
 };
