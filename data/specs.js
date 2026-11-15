@@ -2599,6 +2599,32 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS）", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "指针式仪表 + LCD 多功能显示屏（电子油门 / 挡位显示）",
       src: "https://www.58moto.com/good/6406/configuration.html"
+    },
+    "凯旋|SPEED TWIN 900": {
+      variant: "2025款 Speed Twin 900", price: "87,900",
+      kw: 47.8, kwRpm: 7500, nm: 80, nmRpm: 3800, cc: 900, cyl: "双缸 直列 SOHC 四气门（84.6x80）", cmp: "11:1",
+      cool: "水冷", gear: "国际5挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管摇篮结构车架（双边铝制摇臂）",
+      seat: 780, wb: 1435, tank: 12, weight: 216,
+      suspF: "Marzocchi φ43mm 倒置筒式多片阀控前叉 · 行程 120mm", suspR: "边置式双减震（外置气囊 / 预载多段可调）· 行程 116mm",
+      brkF: "单 320mm 浮动盘 · 四活塞径向卡钳", brkR: "单 255mm 盘 · Nissin 双活塞浮动卡钳",
+      tireF: "100/90-18", tireR: "150/70-R17",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "选配", tpms: "选配", keyless: "无",
+      dash: "LCD 多功能仪表带彩色 TFT（电子油门 / 挡位显示 / USB）",
+      src: "https://www.58moto.com/good/20498/configuration.html"
+    },
+    "凯旋|BONNEVILLE T100": {
+      variant: "2026款 Bonneville T100", price: "95,900",
+      kw: 47.8, kwRpm: 7400, nm: 80, nmRpm: 3750, cc: 900, cyl: "双缸 直列 SOHC 四气门（84.6x80）", cmp: "11:1",
+      cool: "水冷", gear: "国际5挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管结构双摇篮车架（双边钢管摇臂）",
+      lwh: "1890x780x1100", seat: 790, wb: 1450, tank: 14.5, weight: 228,
+      suspF: "φ41mm KYB 前叉 · 行程 120mm", suspR: "双 KYB 后避震（预载可调）· 后轮行程 120mm",
+      brkF: "单 310mm 浮动盘 · Brembo 双活塞卡钳", brkR: "单 255mm 盘 · Nissin 双活塞浮动卡钳",
+      tireF: "100/90-18（铝合金辐条轮）", tireR: "150/70-R17",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "指针 + LCD 液晶复合仪表",
+      src: "https://www.58moto.com/good/6373/configuration.html"
     }
   }
 };
