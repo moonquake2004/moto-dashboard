@@ -1270,6 +1270,34 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "标配双向", cruise: "标配", tpms: "无",
       keyless: "无", dash: "5 寸 TFT 彩色显示屏（街道/运动/自定义/竞技/赛道1/赛道2 6 模式）",
       src: "https://www.58moto.com/good/5562/configuration.html"
+    },
+    "无极|CU530": {
+      variant: "2026款 CU530 标准版", price: "21,980",
+      kw: 41, kwRpm: 8500, nm: 52.8, nmRpm: 6500, cc: 500, cyl: "双缸 直列 DOHC", cmp: "11.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "钢管编织车架",
+      lwh: "2225x845x1110", seat: 710, wb: 1480, tank: 15, weight: 195, clearance: 160,
+      suspF: "φ41mm 倒置前叉",
+      suspR: "边置式双减震（预载多段可调）",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "130/90-16", tireR: "150/80-16",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶仪表（标配 T-BOX）",
+      src: "https://www.58moto.com/good/22747/configuration.html"
+    },
+    "凯越|625X": {
+      variant: "2026款 625X 标准版", price: "31,777",
+      kw: 47, kwRpm: 8500, nm: 57, nmRpm: 7000, cc: 600, cyl: "双缸 直列 DOHC", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "一体式车架（铝合金双摇臂）",
+      lwh: "2290x935x1395", seat: 820, wb: 1495, tank: 21.5, weight: 218, clearance: 205,
+      suspF: "KYB φ43mm 倒置（压缩/回弹多段可调）· 行程 180mm",
+      suspR: "KYB 中置单减震（压缩/回弹多段可调）· 行程 230mm",
+      brkF: "双浮动碟 · 对向四活塞卡钳", brkR: "单碟 · 单活塞卡钳",
+      tireF: "110/80-R19", tireR: "150/70-R17",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "标配",
+      keyless: "标配", dash: "6.75 寸 TFT 曲面屏（角度可调 / 蓝牙 + 导航投屏 / 后向雷达）",
+      src: "https://www.58moto.com/good/21829/configuration.html"
     }
   }
 };
