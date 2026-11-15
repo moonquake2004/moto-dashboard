@@ -2741,6 +2741,31 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配（可关）", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "LCD 液晶（挡位显示）",
       src: "https://www.58moto.com/good/21074/configuration.html"
+    },
+    "凯旋|THRUXTON 400": {
+      variant: "2026款 Thruxton 400 幻影黑/铝缎银", price: "33,900",
+      kw: 30.89, kwRpm: 9000, nm: 37.5, nmRpm: 7500, cc: 398, cyl: "单缸 DOHC 四气门（89x64）", cmp: "12:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架（铝合金双摇臂）",
+      seat: 795, wb: 1376, tank: 13, weight: 176,
+      suspF: "φ43mm 倒置式前叉 · 行程 135mm", suspR: "中置式单减震（预载多段可调）· 行程 130mm",
+      brkF: "单 φ300mm 盘 · 四活塞径向卡钳", brkR: "单 φ230mm 盘 · 单活塞浮动卡钳",
+      tireF: "110/70-R17（倍耐力 恶魔4）", tireR: "150/60-R17（倍耐力 恶魔4）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "指针式仪表 + 多功能 LCD 屏（电子油门）",
+      src: "https://www.58moto.com/good/22847/configuration.html"
+    },
+    "本田|CBR400R": {
+      variant: "2025款 CBR400R", price: "30,980",
+      kw: 33, kwRpm: 9000, nm: 37, nmRpm: 7500, cc: 399, cyl: "双缸 直列 DOHC 四气门（67x56.6）", cmp: "11:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2080x765x1145", seat: 789, wb: 1416, tank: 16.1, weight: 194, clearance: 130,
+      suspF: "φ41mm 倒立式前叉", suspR: "中置多连杆后减震（预载可调）",
+      brkF: "双盘式", brkR: "单盘式",
+      tireF: "120/70-ZR17（CST）", tireR: "160/60-ZR17（CST）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "5 寸全彩 TFT（双拉线油门 / 挡位显示 / 风挡 / 双闪）",
+      src: "https://www.58moto.com/good/19718/configuration.html"
     }
   }
 };
