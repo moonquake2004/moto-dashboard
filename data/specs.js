@@ -2267,6 +2267,32 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS）", tcs: "无", qs: "无", cruise: "标配", tpms: "无", keyless: "无",
       dash: "双圆表 + LCD（电子油门 / 定速巡航）",
       src: "https://www.58moto.com/good/6375/configuration.html"
+    },
+    "雅马哈|YZF-R1": {
+      variant: "2026款 YZF-R1", price: "229,800",
+      kw: 147.1, kwRpm: 13500, nm: 113.3, nmRpm: 11500, cc: 998, cyl: "四缸 直列 DOHC 四气门（十字曲轴）", cmp: "13:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金 Deltabox 车架",
+      lwh: "2055x690x1165", seat: 855, wb: 1405, tank: 17, weight: 201, clearance: 130,
+      suspF: "KYB 倒置式前叉", suspR: "中置式多连杆减震",
+      brkF: "双 320mm 制动盘 · Brembo 卡钳", brkR: "单碟 · 单活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "190/55-ZR17（普利司通）",
+      abs: "标配前后", tcs: "标配", qs: "标配", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 全彩仪表（电子油门 / 挡位）",
+      src: "https://www.58moto.com/good/15713/configuration.html"
+    },
+    "哈雷戴维森|Low Rider® S": {
+      variant: "2026款 Low Rider S", price: "175,800",
+      kw: 85, kwRpm: 5020, nm: 174, nmRpm: 4000, cc: 1923, cyl: "V型双缸 风冷 Milwaukee-Eight 117", cmp: "10.3:1",
+      cool: "风冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "皮带传动",
+      frame: "低碳钢管式车架（冲压式 X 型横梁后摇臂）",
+      lwh: "2360x890x1205", seat: 715, wb: 1615, tank: 18.9, weight: 304, clearance: 145,
+      suspF: "φ43mm 单筒倒立前叉（铝制三角轧头/三刚性系数弹簧）", suspR: "高置单筒减震器",
+      brkF: "双碟 · 四活塞固定卡钳",
+      tireF: "110/90-B19", tireR: "180/70-B16（米其林 Scorcher 31）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "4 英寸模拟转速表 + LCD（挡位显示）",
+      src: "https://www.58moto.com/good/18640/configuration.html"
     }
   }
 };
