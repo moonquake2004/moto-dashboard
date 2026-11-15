@@ -3066,5 +3066,19 @@ window.MOTO_SPECS = {
       dash: "电子仪表（电子油门 / 转向阻尼器 / 挡位显示 / 风挡 / 双闪 / 前倾角24.5° 拖曳距103mm）",
       src: "https://www.58moto.com/good/5767/configuration.html"
     }
+,
+    "川崎|ELIMINATOR 500": {
+      variant: "2026款 Eliminator 500 SE", price: "42,800",
+      kw: 38.3, kwRpm: 10000, nm: 42.6, nmRpm: 7500, cc: 451, cyl: "双缸 直列 DOHC 四气门（70x58.6）", cmp: "11.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "高强度钢管网格式车架",
+      lwh: "2250x785x1140", seat: 735, wb: 1520, tank: 13, weight: 177, clearance: 150,
+      suspF: "φ41mm 套筒式前叉", suspR: "双侧后避震",
+      brkF: "单 φ310mm 盘 · 双活塞卡钳", brkR: "单 φ240mm 盘 · 单活塞卡钳",
+      tireF: "130/70-18（真空胎）", tireR: "150/80-16（真空胎）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "手机连接 / 挡位显示 / USB / 双闪（前倾角30° 拖曳距121mm）",
+      src: "https://www.58moto.com/good/21289/configuration.html"
+    }
   }
 };
