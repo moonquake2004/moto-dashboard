@@ -1921,6 +1921,13 @@ function compareSpecHTML(items){
     html='<tr class="grp"><td colspan="'+(items.length+1)+'">技术参数 · 这些车型尚未收录参数（参数按批补录，见数据质量面板）</td></tr>';
     return html;
   }
+  html+='<tr class="grp"><td colspan="'+(items.length+1)+'">参数口径</td></tr>';
+  html+='<tr><td class="rowh">参数所属版本</td>'+specs.map(function(s){
+    if(!s)return '<td class="spec na">—</td>';
+    var v=s.variant||"未标注版本";
+    var p=(s.price!=null&&s.price!=="")?'<span class="spec-sub">该版本指导价 '+esc(String(s.price))+' 元</span>':'';
+    return '<td class="spec">'+esc(v)+p+'</td>';
+  }).join("")+'</tr>';
   SPEC_GROUPS.forEach(function(grp){
     html+='<tr class="grp"><td colspan="'+(items.length+1)+'">'+grp.g+'</td></tr>';
     grp.rows.forEach(function(row){
