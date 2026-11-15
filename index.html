@@ -539,6 +539,15 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
 .d-model .dm-meta .tag{font-size:10px}
 .d-model .dm-src{margin-left:auto;color:var(--faint)}
 .d-model .dm-src:hover{color:var(--accent)}
+.d-model.act{cursor:pointer;transition:.15s}
+.d-model.act:hover,.d-model.act:focus-visible{border-color:var(--accent);outline:none}
+.d-model .dm-more{margin-left:auto;font-size:10.5px;color:var(--faint);border:1px solid var(--line);border-radius:6px;padding:1px 6px;white-space:nowrap}
+.d-model.act .dm-more{color:var(--accent);border-color:var(--line2)}
+.t-name.act{cursor:pointer}
+.t-name.act:hover,.t-name.act:focus-visible{color:var(--accent);text-decoration:underline;outline:none}
+#modelModal .cm-box{width:min(760px,100%)}
+#modelModal table.cmp{min-width:0}
+#modelModal table.cmp .rowh{width:104px;position:static}
 .d-note{font-size:12px;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--blue);
   border-radius:9px;padding:10px 13px;line-height:1.7}
 .d-unc{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin-bottom:7px;overflow:hidden}
@@ -802,6 +811,16 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
     <div class="cm-specbar" id="cmpSpecBar"></div>
     <div id="cmpBody"></div>
     <div class="cm-foot">价格与参数均来自品牌官方渠道或权威车型库，逐条可核实；绿色标记为该行最优值（最低价 / 最大功率 / 最轻整备质量等）。参数未收录的车型显示「—」，不做估算填充。</div>
+  </div>
+</div>
+
+<div class="cmp-modal" id="modelModal" role="dialog" aria-modal="true" aria-label="单款车型技术参数">
+  <div class="cm-scrim" id="mmScrim"></div>
+  <div class="cm-box">
+    <div class="cm-head"><h3 id="mmTitle">车型技术参数</h3><button class="cm-x" id="mmClose" type="button">关闭 (ESC)</button></div>
+    <div class="cm-specbar" id="mmBar"></div>
+    <div id="mmBody"></div>
+    <div class="cm-foot" id="mmFoot"></div>
   </div>
 </div>
 
@@ -1784,13 +1803,17 @@ function renderModels(items,toks){
       var m=r.m,b=r.b,k=b.id+"/"+r.mi;
       return '<tr><td class="c-cmp"><button class="cmp-box'+(cmpHas(k)?" on":"")+'" data-cmp="'+esc(k)+'" type="button" aria-pressed="'+(cmpHas(k)?"true":"false")+'" title="加入对比">'+(cmpHas(k)?"✓":"+")+'</button></td>'+
         '<td class="c-brand"><span class="t-brand" data-id="'+esc(b.id)+'"><span class="dot" style="background:'+CAT_COLOR[b.category]+'"></span>'+esc(b.name)+'</span></td>'+
-        '<td class="t-name">'+hlAll(m.name,toks)+'</td>'+
+        '<td class="t-name act" role="button" tabindex="0" data-bid="'+esc(b.id)+'" data-mi="'+r.mi+'">'+hlAll(m.name,toks)+'</td>'+
         '<td class="t-cc num">'+(m.cc!=null?m.cc+'<small> cc</small>':'—')+'</td>'+
         '<td>'+esc(m.type)+'</td>'+
         '<td class="t-price num'+(m.price?'':' na')+'">'+(m.price?esc(m.price):'—')+'</td>'+
         '<td>'+(m.source?'<a class="t-src" href="'+esc(m.source)+'" target="_blank" rel="noopener" title="查看核实来源">↗</a>':'<span style="color:var(--faint)">·</span>')+'</td></tr>';
     }).join("")+'</tbody></table></div>';
   body.querySelectorAll(".t-brand").forEach(function(el){el.addEventListener("click",function(){openDrawer(el.dataset.id)})});
+  body.querySelectorAll(".t-name[data-bid]").forEach(function(el){
+    el.addEventListener("click",function(){openModelSpec(el.dataset.bid,+el.dataset.mi)});
+    el.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();openModelSpec(el.dataset.bid,+el.dataset.mi)}});
+  });
 }
 
 /* SECTION: compare —— 型号对比：勾 2–3 款并排看参数，最优值标绿 */
@@ -2007,9 +2030,69 @@ function openCompare(){
 }
 function closeCompare(){var m=$("cmpModal");m.classList.remove("show");document.body.style.overflow=""}
 $("cmpGo").addEventListener("click",openCompare);
+
+/* 单款车型参数弹层：从品牌抽屉 / 型号浏览器点车型直接看全表 */
+function modelSpecHTML(b,m,s){
+  var html='<table class="cmp"><tbody>';
+  html+='<tr class="grp"><td colspan="2">车型信息</td></tr>';
+  html+='<tr><td class="rowh">品牌 / 型号</td><td class="spec">'+esc(b.name)+' · '+esc(m.name)+
+    '<span class="spec-sub">'+esc(m.type||"—")+' · '+(m.cc!=null?m.cc+' cc':'排量未标注')+'</span></td></tr>';
+  html+='<tr><td class="rowh">官方指导价</td><td class="spec">'+
+    (m.price?esc(m.price)+'<span class="spec-sub">'+(m.priceFrom?'起售价（最低配）':'官方指导价')+'</span>':'<span style="color:var(--faint)">未公布</span>')+'</td></tr>';
+  if(s){
+    html+='<tr class="grp"><td colspan="2">参数口径</td></tr>';
+    html+='<tr><td class="rowh">参数所属版本</td><td class="spec">'+esc(s.variant||"未标注版本")+
+      ((s.price!=null&&s.price!=="")?'<span class="spec-sub">该版本指导价 '+esc(String(s.price))+' 元</span>':'')+'</td></tr>';
+    SPEC_GROUPS.forEach(function(grp){
+      html+='<tr class="grp"><td colspan="2">'+esc(grp.g)+'</td></tr>';
+      grp.rows.forEach(function(row){
+        html+='<tr><td class="rowh">'+esc(row.l)+'</td>'+specCell(s,row,null,1)+'</tr>';
+      });
+    });
+  }else{
+    var S=window.MOTO_SPECS,total=(S&&S.meta&&S.meta.totalModels)||0,cov=S&&S.models?Object.keys(S.models).length:0;
+    html+='<tr class="grp"><td colspan="2">技术参数</td></tr>';
+    html+='<tr><td class="rowh">收录状态</td><td class="spec na">该车型参数尚未收录（全站已补 '+cov+'/'+total+
+      ' 款，按批推进）；可先用「加入对比」与其他车型比口径信息，或点下方来源看原厂参数页。</td></tr>';
+  }
+  html+='</tbody></table>';
+  return html;
+}
+var mmLastFocus=null;
+function openModelSpec(bid,mi){
+  var b=brandById[bid];if(!b)return;
+  var m=b.models[mi];if(!m)return;
+  mmLastFocus=document.activeElement;
+  var s=specOf(b.name,m.name),S=window.MOTO_SPECS;
+  var cov=S&&S.models?Object.keys(S.models).length:0,total=(S&&S.meta&&S.meta.totalModels)||0;
+  $("mmTitle").textContent=b.name+" · "+m.name;
+  $("mmBar").innerHTML=(s?'<span><i class="dot"></i>参数版本：<b>'+esc(s.variant||"未标注")+'</b></span>':'<span><i class="dot"></i>该车型参数尚未收录</span>')+
+    '<span>全站参数覆盖 <b>'+cov+'/'+total+'</b> 款</span>'+
+    '<span>来源：'+esc((S&&S.meta&&S.meta.source)||"车型库")+'</span>';
+  $("mmBody").innerHTML=modelSpecHTML(b,m,s);
+  var foot=[];
+  if(s&&s.src)foot.push('<a class="more" href="'+esc(s.src)+'" target="_blank" rel="noopener">摩托范参数页 ↗</a>');
+  if(m.source)foot.push('<a class="more" href="'+esc(m.source)+'" target="_blank" rel="noopener">核实来源 ↗</a>');
+  foot.push('<a class="more" href="brand/'+esc(b.id)+'.html">品牌页 ↗</a>');
+  foot.push('<a class="more" href="#" id="mmAdd" data-cmp="'+esc(cmpKey(b.id,mi))+'">'+(cmpHas(cmpKey(b.id,mi))?'✓ 已在对比中':'+ 加入对比')+'</a>');
+  $("mmFoot").innerHTML=foot.join(' · ');
+  $("mmAdd").addEventListener("click",function(e){
+    e.preventDefault();
+    var k=this.dataset.cmp;
+    if(!cmpHas(k)){if(state.cmp.length>=3){toast("最多同时对比 3 款");return}
+      state.cmp.push({b:b.id,m:mi});renderCmpBar();this.textContent="✓ 已在对比中";toast("已加入对比："+b.name+" "+m.name)}
+  });
+  $("modelModal").classList.add("show");
+  document.body.style.overflow="hidden";
+  $("mmClose").focus();
+}
+function closeModelSpec(){ $("modelModal").classList.remove("show"); document.body.style.overflow=""; if(mmLastFocus&&mmLastFocus.focus)mmLastFocus.focus(); }
+$("mmClose").addEventListener("click",closeModelSpec);
+$("mmScrim").addEventListener("click",closeModelSpec);
+
 $("cmpClose").addEventListener("click",closeCompare);
 $("cmpScrim").addEventListener("click",closeCompare);
-document.addEventListener("keydown",function(e){if(e.key==="Escape"&&$("cmpModal").classList.contains("show"))closeCompare()});
+document.addEventListener("keydown",function(e){if(e.key!=="Escape")return;if($("modelModal").classList.contains("show")){closeModelSpec();return}if($("cmpModal").classList.contains("show"))closeCompare()});
 
 /* SECTION: drawer */
 function uncRow(u){
@@ -2051,9 +2134,11 @@ function openDrawer(id){
   var html='<div class="d-sec-title">型号清单 · '+b.modelCount+'</div>';
   if(b.models.length){
     html+=b.models.map(function(m,i){
-      return '<div class="d-model"><div class="dm-name">'+pad(i+1)+' · '+esc(m.name)+'</div>'+
+      var hasSpec=!!specOf(b.name,m.name);
+      return '<div class="d-model act" role="button" tabindex="0" data-bid="'+esc(b.id)+'" data-mi="'+i+'"><div class="dm-name">'+pad(i+1)+' · '+esc(m.name)+'</div>'+
         '<div class="dm-price num'+(m.price?'':' na')+'">'+(m.price?esc(m.price):'—')+'</div>'+
         '<div class="dm-meta"><span class="tag">'+esc(m.type)+'</span><span>'+(m.cc!=null?m.cc+' cc':'排量未标注')+'</span>'+
+        '<span class="dm-more">'+(hasSpec?'参数 →':'参数待补')+'</span>'+
         (m.source?'<a class="dm-src" href="'+esc(m.source)+'" target="_blank" rel="noopener">核实来源 ↗</a>':'')+'</div></div>';
     }).join("");
   }else{
@@ -2066,6 +2151,10 @@ function openDrawer(id){
   }
   $("dBody").innerHTML=html;
   $("dBody").scrollTop=0;
+  $("dBody").querySelectorAll(".d-model").forEach(function(el){
+    el.addEventListener("click",function(e){if(e.target.closest("a"))return;openModelSpec(el.dataset.bid,+el.dataset.mi)});
+    el.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();openModelSpec(el.dataset.bid,+el.dataset.mi)}});
+  });
   $("scrim").classList.add("show");$("drawer").classList.add("show");
   document.body.style.overflow="hidden";
   $("drawerClose").focus();
