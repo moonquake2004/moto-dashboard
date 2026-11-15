@@ -2955,5 +2955,32 @@ window.MOTO_SPECS = {
       dash: "TFT 液晶（双拉线油门 / 手机连接 / 导航投屏 / 挡位显示 / USB / 双闪 / T-BOX）",
       src: "https://www.58moto.com/good/20644/configuration.html"
     }
+,
+    "钱江|赛600": {
+      variant: "2027款 赛600", price: "34,999",
+      kw: 74.5, kwRpm: 11500, nm: 68, nmRpm: 9000, cc: 680, cyl: "四缸 直列 DOHC 四气门（67x48.2 · 冲压进气）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "双翼梁环抱车架 + 铝合金双摇臂",
+      lwh: "2085x770x1150", seat: 815, wb: 1450, tank: 16, weight: 206,
+      suspF: "Marzocchi φ41mm 倒置前叉（预载可调）", suspR: "Marzocchi 中置单减震（预载多段可调）",
+      brkF: "双 φ320mm 碟（Sunstar）· Brembo 四活塞", brkR: "单 φ260mm 碟 · Brembo 卡钳",
+      tireF: "120/70-ZR17（玛吉斯）", tireR: "180/55-ZR17（玛吉斯）",
+      abs: "标配前后（弯道 ABS / 可关闭）", tcs: "标配可关闭", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "无",
+      dash: "TFT 仪表（电子油门 / 标准·运动·弹射·雨天模式 / 导航投屏 / 手机连接 / 转向阻尼器 / USB / 行车记录仪单前 / 风挡）",
+      src: "https://www.58moto.com/good/18712/configuration.html"
+    },
+    "钱江|闪250": {
+      variant: "2026款 闪250V", price: "16,999",
+      kw: 20.7, kwRpm: 9000, nm: 23.5, nmRpm: 8000, cc: 249, cyl: "双缸 V型 SOHC 每缸四气门（58x47.2）", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "钢管摇篮车架 + 双摇臂",
+      lwh: "2110x840x1080", seat: 700, wb: 1400, tank: 13.5, weight: 164, clearance: 160,
+      suspF: "QJMOTOR 倒置前减震", suspR: "QJMOTOR 双弹簧式后减震",
+      brkF: "单 φ280mm 碟 · 四活塞卡钳", brkR: "单 φ240mm 碟 · 单活塞卡钳",
+      tireF: "120/80-16（正新 真空胎）", tireR: "150/80-15（正新 真空胎）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "彩色 LCD 仪表（双拉线油门 / 挡位显示 / USB / 双闪）",
+      src: "https://www.58moto.com/good/20238/configuration.html"
+    }
   }
 };
