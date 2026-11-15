@@ -1186,6 +1186,20 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "无", cruise: "标配", tpms: "标配",
       keyless: "标配", dash: "4 英寸多功能触控显示屏（道路/雨天/运动模式）",
       src: "https://www.58moto.com/good/3515/configuration.html"
+    },
+    "香帅机车|苍云 500": {
+      variant: "2023款 苍云 500Max", price: "30,800",
+      kw: 41.9, kwRpm: 9000, nm: 50.5, nmRpm: 7500, cc: 500, cyl: "双缸 直列 DOHC", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "双翼梁一体式钢管编织车架",
+      lwh: "2210x830x1125", seat: 698, wb: 1480, tank: 14, weight: 202, clearance: 160,
+      suspF: "正置渝安减震 · 行程 130mm",
+      suspR: "三级弹簧阻尼气囊后减震",
+      brkF: "对向四活塞卡钳", brkR: "对向双活塞卡钳",
+      tireF: "130/90-16", tireR: "150/80-16",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 液晶显示屏",
+      src: "https://www.58moto.com/good/20107/configuration.html"
     }
   }
 };
