@@ -2179,6 +2179,45 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
       dash: "7 寸 TFT（蓝牙 + 导航投屏 / USB / 加热手把·前座垫 / 行车记录仪 / T-BOX）",
       src: "https://www.58moto.com/good/20508/configuration.html"
+    },
+    "川崎|NINJA ZX-6R": {
+      variant: "2026款 NINJA ZX-6R", price: "109,800",
+      kw: 95.2, kwRpm: 13000, nm: 69, nmRpm: 11000, cc: 636, cyl: "四缸 直列 DOHC 四气门（冲压进气）", cmp: "12.9:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "铝制双翼梁车架",
+      lwh: "2025x710x1105", seat: 830, wb: 1400, tank: 17, weight: 198, clearance: 130,
+      suspF: "41mm SFF-BP 倒置前叉（回弹/压缩/预载可调）", suspR: "Uni-Trak 多连杆背负式（压缩/回弹/预载可调）",
+      brkF: "双半浮动 310mm 制动盘 · 径向对置四活塞整体式卡钳", brkR: "单 220mm 花瓣盘 · 单活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17（倍耐力）",
+      abs: "标配前后", tcs: "标配", qs: "仅升挡", cruise: "无", tpms: "无", keyless: "无",
+      dash: "4.3 寸全彩 TFT（蓝牙连接 / 挡位显示 / 不可调风挡）",
+      src: "https://www.58moto.com/good/5180/configuration.html"
+    },
+    "川崎|Z900": {
+      variant: "2026款 Z900", price: "89,800",
+      kw: 86.3, kwRpm: 9500, nm: 95, nmRpm: 7700, cc: 948, cyl: "四缸 直列 DOHC 四气门", cmp: "11.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "高强度钢管网格式车架",
+      lwh: "2065x830x1075", seat: 810, wb: 1450, tank: 17, weight: 213, clearance: 145,
+      suspF: "φ41mm 倒置前叉（预载/回弹多段可调）", suspR: "中置式多连杆减震",
+      brkF: "双 φ300mm 半浮动盘 · 径向四活塞卡钳", brkR: "单 φ250mm 制动盘 · 单活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17（邓禄普 Sportmax Q5A）",
+      abs: "标配前后", tcs: "标配", qs: "双向", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "5 寸全数字 TFT（蓝牙 / 挡位 / IMU）",
+      src: "https://www.58moto.com/good/5628/configuration.html"
+    },
+    "川崎|NINJA 500": {
+      variant: "2024款 Ninja 500", price: "39,800",
+      kw: 38.3, kwRpm: 10000, nm: 42.6, nmRpm: 7500, cc: 451, cyl: "双缸 直列 DOHC 四气门", cmp: "11.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "高强度钢管网格式车架",
+      lwh: "1995x730x1120", seat: 785, wb: 1375, tank: 14, weight: 171, clearance: 145,
+      suspF: "φ41mm 正置前叉", suspR: "后减震（预载多段可调）· 双摇臂",
+      brkF: "单 φ310mm 半浮动盘 · 单向平衡双活塞卡钳", brkR: "单 φ220mm 盘 · 双活塞卡钳",
+      tireF: "110/70-R17", tireR: "150/60-R17（邓禄普）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "全液晶仪表（蓝牙 / 挡位 / 风挡标配）",
+      src: "https://www.58moto.com/good/21029/configuration.html"
     }
   }
 };
