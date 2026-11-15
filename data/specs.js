@@ -350,15 +350,6 @@ window.MOTO_SPECS = {
       tireF: "120/70-15", tireR: "140/70-14",
       src: "https://www.58moto.com/good/21315/configuration.html"
     },
-    "川崎|NINJA 650": {
-      variant: "2026款 Ninja 650", price: "69,800",
-      kw: 45.5, kwRpm: 7200, nm: 62.1, nmRpm: 6700, cc: 650, cyl: "双缸 直列", cmp: "10.8:1",
-      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
-      frame: "高强度钢管网格式车架",
-      lwh: "2115x740x1145", seat: 790, wb: 1410, tank: 15, weight: 193, clearance: 130,
-      suspF: "φ41mm 套筒式前叉", suspR: "中置多连杆减震",
-      src: "https://www.58moto.com/good/4863/configuration.html"
-    },
     "本田|XL750 TRANSALP": {
       variant: "2024款 XL750 Transalp", price: "88,800",
       kw: 51, nm: 69, cc: 750, cyl: "双缸 直列", cool: "水冷",
