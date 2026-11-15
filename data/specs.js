@@ -1398,6 +1398,31 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配",
       keyless: "标配", dash: "TFT 全彩液晶仪表（蓝牙 + 导航投屏 / 电动无级可调风挡 / 运动·节油模式）",
       src: "https://www.58moto.com/good/20084/configuration.html"
+    },
+    "升仕|350VX": {
+      variant: "2022款 350VX", price: "24,800",
+      kw: 29, kwRpm: 9500, nm: 32.8, nmRpm: 7500, cc: 350, cyl: "单缸 DOHC 四气门", cmp: "12.3:1",
+      cool: "水冷 + 油冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架",
+      lwh: "2080x860x1315", seat: 765, wb: 1430, tank: 15, weight: 198, clearance: 170,
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配",
+      keyless: "标配", dash: "TFT 彩色显示屏（蓝牙 + 导航投屏 / 电动 2 段可调风挡）",
+      src: "https://www.58moto.com/good/20047/configuration.html"
+    },
+    "升仕|250S": {
+      variant: "2017款 250S 升级版", price: "17,800",
+      kw: 18, kwRpm: 8000, nm: 23, nmRpm: 6500, cc: 250, cyl: "单缸 DOHC 四气门", cmp: "10.4:1",
+      cool: "油冷", clutch: "湿式多片式", drive: "链条传动",
+      frame: "摇篮式车架",
+      lwh: "1976x773x1052", seat: 780, wb: 1384, tank: 13, weight: 154, clearance: 188,
+      suspF: "倒置双减", suspR: "中置单减",
+      brkF: "单盘 · 双活塞卡钳", brkR: "盘式 · 单活塞卡钳",
+      tireF: "110/70-R17", tireR: "150/55-R17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "电子仪表",
+      src: "https://www.58moto.com/good/5600/configuration.html"
     }
   }
 };
