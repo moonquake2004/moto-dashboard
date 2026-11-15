@@ -2664,6 +2664,31 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "LCD 液晶仪表",
       src: "https://www.58moto.com/good/5823/configuration.html"
+    },
+    "凯旋|BONNEVILLE BOBBER": {
+      variant: "2026款 Bonneville Bobber", price: "128,900",
+      kw: 57.5, kwRpm: 6100, nm: 106, nmRpm: 4000, cc: 1200, cyl: "双缸 直列 SOHC 四气门（97.6x80）", cmp: "10:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "钢管摇篮结构车架（双边钢管摇臂）",
+      seat: 690, wb: 1500, tank: 14, weight: 251,
+      suspF: "Showa φ47mm 前叉（筒式多片阀控阻尼）· 行程 90mm", suspR: "单 KYB 减震 + 连杆机构 · 行程 77mm",
+      brkF: "双 310mm 盘 · Brembo 双活塞浮动卡钳", brkR: "单 255mm 盘 · Nissin 单活塞浮动卡钳",
+      tireF: "MT90-B16（铝合金辐条轮）", tireR: "150/80-R16",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 液晶（带挡位显示）",
+      src: "https://www.58moto.com/good/6370/configuration.html"
+    },
+    "凯旋|TIGER 1200": {
+      variant: "2026款 Tiger 1200 Alpine Edition", price: "159,900",
+      kw: 110.4, kwRpm: 9000, nm: 130, nmRpm: 7000, cc: 1160, cyl: "三缸 直列 DOHC 四气门（90x60.8）", cmp: "13.2:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "轴传动",
+      frame: "钢管车架 + 铝合金后副车架（双边 Tri-Link 铝摇臂）",
+      seat: "850-870", wb: 1560, tank: 20, weight: 247, clearance: 187,
+      suspF: "Showa φ49mm 倒置（预载/压缩/回弹多段可调）· 行程 200mm", suspR: "Showa 中置多连杆（预载/压缩/回弹多段可调）· 行程 200mm",
+      tireF: "120/70-R19", tireR: "150/70-R18",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "标配", tpms: "标配", keyless: "标配",
+      dash: "7 寸 TFT 全彩（电子悬挂 / 3 年不限里程质保）",
+      src: "https://www.58moto.com/good/15545/configuration.html"
     }
   }
 };
