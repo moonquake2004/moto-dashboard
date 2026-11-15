@@ -1763,6 +1763,19 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
       dash: "7 英寸全彩 TFT（导航投屏 / USB / 前后行车记录仪 / 后向毫米波雷达盲区监测 / 手机互联）",
       src: "https://www.58moto.com/good/22650/configuration.html"
+    },
+    "光阳|赛艇CT250（含2025款）": {
+      variant: "2025款 赛艇 CT250", price: "19,980",
+      kw: 16, kwRpm: 7500, nm: 22, nmRpm: 6500, cc: 250, cyl: "单缸 SOHC 两气门", cool: "水冷",
+      gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "双层环抱式车架",
+      lwh: "2197x798x1319", seat: 780, wb: 1508, tank: 10.5, weight: 194, clearance: 145,
+      suspF: "正置式", suspR: "边置式双减 · 预载 5 段可调",
+      brkF: "单碟 · 三活塞卡钳", brkR: "单碟 · 双活塞卡钳",
+      tireF: "120/70-13", tireR: "150/70-13",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "LCD 液晶 + 机械指针（USB 充电 / 前置行车记录仪 / 不可调风挡）",
+      src: "https://www.58moto.com/good/6694/configuration.html"
     }
   }
 };
