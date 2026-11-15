@@ -2459,6 +2459,45 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "LCD 液晶仪表（风挡可调 / 21L 大油箱）",
       src: "https://www.58moto.com/good/5188/configuration.html"
+    },
+    "宝马|F 800 GS": {
+      variant: "2025款 F 800 GS 舒适版", price: "99,900",
+      kw: 64, kwRpm: 6750, nm: 91, nmRpm: 6750, cc: 895, cyl: "双缸 直列（86x77）", cmp: "13.1:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "采用外壳结构的钢桥框架",
+      lwh: "2241x910x1230", seat: 815, tank: 15, weight: 227,
+      suspF: "正置式前叉 · 行程 170mm", suspR: "中置式单减震（预载/回弹阻尼可调）· 行程 170mm",
+      brkF: "液压双盘 · 双活塞浮动卡钳（浮动盘）", brkR: "液压单盘 · 单活塞浮动卡钳（固定盘）",
+      tireF: "110/80-R19（普利司通）", tireR: "150/70-R17（普利司通）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "6.5 寸 TFT（3 年不限里程质保）",
+      src: "https://www.58moto.com/good/5564/configuration.html"
+    },
+    "宝马|C 400 X": {
+      variant: "2025款 C 400 X 舒适版", price: "61,900",
+      kw: 25, kwRpm: 7500, nm: 35, nmRpm: 6000, cc: 350, cyl: "单缸 SOHC 四气门（80x69.6）", cmp: "11.5:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "钢桥框架",
+      lwh: "2200x780x1310", seat: 775, wb: 1565, tank: 12.8, weight: 206,
+      suspF: "φ43mm 伸缩式前叉", suspR: "两个直接铰接的减震支柱（弹簧预压力可调）",
+      brkF: "双 265mm 盘 · 四活塞固定卡钳", brkR: "单 265mm 盘 · 单活塞卡钳",
+      tireF: "120/70-15（倍耐力）", tireR: "150/70-14",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "6.5 寸 TFT 液晶（三年不限里程质保）",
+      src: "https://www.58moto.com/good/6538/configuration.html"
+    },
+    "宝马|C 400 GT": {
+      variant: "2025款 C 400 GT 舒适版", price: "81,900",
+      kw: 25, kwRpm: 7500, nm: 35, nmRpm: 6000, cc: 350, cyl: "单缸 SOHC 四气门（80x69.6）", cmp: "11.5:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "钢桥框架",
+      lwh: "2200x785x1390", seat: 765, wb: 1565, tank: 12.8, weight: 214,
+      suspF: "φ43mm 伸缩式前叉", suspR: "带螺栓拧紧辅助摆臂的发动机摇臂",
+      brkF: "双 265mm 盘 · 四活塞固定卡钳", brkR: "单 265mm 盘 · 单活塞卡钳",
+      tireF: "120/70-ZR15", tireR: "150/70-ZR14",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "10.25 寸 TFT 液晶（三年不限里程质保）",
+      src: "https://www.58moto.com/good/6538/configuration.html"
     }
   }
 };
