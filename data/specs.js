@@ -1586,6 +1586,19 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "LCD 液晶显示屏",
       src: "https://www.58moto.com/good/6903/configuration.html"
-    }
+    },
+    "力帆|KPV350": {
+      variant: "2023款 KPV350 智享版", price: "24,999",
+      kw: 25.5, kwRpm: 7500, nm: 35.5, nmRpm: 6000, cc: 350, cyl: "单缸 四气门", cool: "水冷",
+      gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "高刚性一体式车架",
+      lwh: "2160x810x1370", seat: 775, wb: 1520, tank: 15, weight: 186, clearance: 168,
+      suspR: "预载可调气囊减震",
+      brkF: "碟刹（西互）", brkR: "碟刹",
+      tireF: "120/70-15", tireR: "140/70-14",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "标配",
+      dash: "TFT 彩色显示屏（蓝牙 + 导航投屏 / 手动多段可调风挡 / 1080P 行车记录仪）",
+      src: "https://www.58moto.com/good/20371/configuration.html"
+    },
   }
 };
