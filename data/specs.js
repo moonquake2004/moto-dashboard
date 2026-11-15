@@ -1093,6 +1093,32 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
       dash: "LCD 液晶仪表",
       src: "https://www.58moto.com/good/18786/configuration.html"
+    },
+    "哈雷戴维森|Nightster™": {
+      variant: "2026款 Nightster", price: "75,800",
+      kw: 68, kwRpm: 7500, nm: 97, nmRpm: 5750, cc: 975, cyl: "V型双缸（Revolution® Max 975T）",
+      cmp: "12:1", cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "承载式高强度低合金钢管格架车架（冲压式 X 型横梁摇臂）",
+      lwh: "2250x840x1105", seat: 705, wb: 1545, tank: 11.7, weight: 220, clearance: 110,
+      suspF: "SHOWA φ41mm 传统型双弯阀门前叉", suspR: "双外侧减震（无连杆，预载可调）",
+      brkF: "轴向安装四活塞卡钳", brkR: "浮动式单活塞卡钳",
+      tireF: "100/90-19 57H", tireR: "150/80-B16 77H",
+      abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "无", cruise: "无", tpms: "标配",
+      keyless: "无", dash: "4 英寸 LCD（公路/雨天/运动 + 2 自定义模式）",
+      src: "https://www.58moto.com/good/20111/configuration.html"
+    },
+    "川崎|NINJA 400": {
+      variant: "2024款 Ninja 400 金属火花黑", price: "49,800",
+      kw: 35, kwRpm: 10000, nm: 37, nmRpm: 8000, cc: 400, cyl: "双缸 直列", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "高强度钢管网格式车架",
+      lwh: "1990x710x1120", seat: 785, wb: 1370, tank: 14, weight: 168, clearance: 140,
+      suspF: "φ41mm 套筒式前叉", suspR: "Uni Trak 多连杆（多段预载可调）",
+      brkF: "φ310mm 半浮动单碟 · 单向双活塞", brkR: "φ220mm 单碟 · 单向双活塞（日信）",
+      tireF: "110/70-R17", tireR: "150/60-R17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "指针 + 数码负显 LCD",
+      src: "https://www.58moto.com/good/5696/configuration.html"
     }
   }
 };
