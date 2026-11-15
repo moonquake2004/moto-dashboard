@@ -2549,6 +2549,32 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "LCD 多功能液晶（挡位显示 / 不可调风挡）",
       src: "https://www.58moto.com/good/19705/configuration.html"
+    },
+    "铃木|V-STROM 1050DE": {
+      variant: "2026款 V-Strom 1050 DE", price: "139,800",
+      kw: 79, kwRpm: 8500, nm: 100, nmRpm: 6000, cc: 1037, cyl: "双缸 V型 90° DOHC 四气门（100x66）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金环抱式车架",
+      lwh: "2390x960x1505", seat: 850, wb: 1595, tank: 20, weight: 252, clearance: 190,
+      suspF: "倒置伸缩式前叉（螺旋弹簧 / 油阻尼）", suspR: "连杆式后减震（螺旋弹簧 / 油阻尼）",
+      brkF: "双碟 · Tokico 四活塞卡钳", brkR: "单碟 · Nissin 双活塞卡钳",
+      tireF: "90/90-21（铝合金辐条轮）", tireR: "150/70-R17（邓禄普）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "5 寸彩色 TFT（电子油门 / 加热手把 / USB+DC12V）",
+      src: "https://www.58moto.com/good/18394/configuration.html"
+    },
+    "本田|CB1300": {
+      variant: "2023款 CB1300 Super Bol D'or", price: "160,800",
+      kw: 76, kwRpm: 7750, nm: 108, nmRpm: 6250, cc: 1284, cyl: "四缸 直列 DOHC 四气门（78x67.2）", cmp: "9.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "双骨干摇篮式车架",
+      lwh: "2200x825x1205", seat: 780, wb: 1520, tank: 21.1, weight: 273, clearance: 130,
+      suspF: "伸缩式前叉", suspR: "后摇臂式（单减震）",
+      brkF: "油压式双碟刹", brkR: "油压式单碟刹（256mm）",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17（普利司通 BATTLAX）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "机械指针 + 液晶（3 种骑行模式 / 加热手把 / 风挡）",
+      src: "https://www.58moto.com/good/5742/configuration.html"
     }
   }
 };
