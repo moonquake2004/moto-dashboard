@@ -2625,6 +2625,32 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "指针 + LCD 液晶复合仪表",
       src: "https://www.58moto.com/good/6373/configuration.html"
+    },
+    "凯旋|DAYTONA 660": {
+      variant: "2026款 Daytona 660", price: "78,900",
+      kw: 70, kwRpm: 11250, nm: 69, nmRpm: 8250, cc: 660, cyl: "三缸 直列 DOHC 四气门（74.04x51.1）", cmp: "12.05:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "管状钢周边车架（双边钢制摇臂）",
+      seat: 810, wb: 1425.6, tank: 14, weight: 201,
+      suspF: "Showa SFF-BP φ41mm 倒置（压缩/回弹多段可调）· 行程 110mm", suspR: "Showa monoshock RSU（预载可调）· 行程 130mm",
+      brkF: "双 310mm 浮动盘 · 四活塞径向卡钳", brkR: "单 220mm 固定盘 · 单活塞滑动卡钳",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17（象牌 M9RR）",
+      abs: "标配前后", tcs: "标配", qs: "快排（2026 款新增）", cruise: "无", tpms: "无", keyless: "无",
+      dash: "彩色 TFT（电子油门 / 挡位显示 / 风挡）",
+      src: "https://www.58moto.com/good/21078/configuration.html"
+    },
+    "凯旋|ROCKET 3": {
+      variant: "2027款 Rocket 3 Storm R", price: "225,900",
+      kw: 134, kwRpm: 7000, nm: 225, nmRpm: 4000, cc: 2458, cyl: "三缸 直列 DOHC 四气门（110.2x85.9）", cmp: "10.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "轴传动",
+      frame: "全铝合金车架（单边铸铝摇臂）",
+      seat: 773, wb: 1677, tank: 18, weight: 317,
+      suspF: "Showa φ47mm 双边倒置（压缩/回弹可调）· 行程 120mm", suspR: "Showa 背负式单减（全可调 / 分离式液压预载）· 行程 107mm",
+      brkF: "双 320mm 盘 · Brembo Stylema M4.30 四活塞辐射卡钳", brkR: "单 300mm 盘 · Brembo M4.32 四活塞卡钳",
+      tireF: "150/80-R17", tireR: "240/50-R16",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 彩色液晶（0-100km/h 官方 2.73s）",
+      src: "https://www.58moto.com/good/17789/configuration.html"
     }
   }
 };
