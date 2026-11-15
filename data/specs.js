@@ -2408,6 +2408,28 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
       dash: "液晶仪表（USB）",
       src: "https://www.58moto.com/good/17367/configuration.html"
+    },
+    "印第安|SCOUT CLASSIC": {
+      variant: "2025款 侦察兵 经典版-精英版 Scout Classic", price: "148,800",
+      nm: 109.2, nmRpm: 6300, cc: 1250, cyl: "双缸 V型 DOHC 四气门（N76）", cmp: "10.7:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "皮带传动",
+      lwh: "2318x910x1096", seat: 654, wb: 1562, tank: 13, weight: 252,
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "TFT 全彩仪表",
+      src: "https://www.58moto.com/good/5567/configuration.html"
+    },
+    "MV 奥古斯塔|Dragster 800": {
+      variant: "2021款 Dragster 800 Rosso", price: "218,000",
+      kw: 81, kwRpm: 11500, nm: 83, nmRpm: 7600, cc: 798, cyl: "三缸 直列 每缸四气门", cmp: "12.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "高强度钢管编织车架（铝合金后摇臂）",
+      seat: 845, wb: 1400, tank: 16.5, weight: 168,
+      suspF: "Marzocchi 倒置伸缩式液压前叉（回弹/压缩阻尼可调）",
+      suspR: "Sachs 渐进式后单减震（回弹/压缩阻尼可调）",
+      brkF: "双碟 · 径向卡钳", brkR: "单碟 · 双活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "200/50-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      src: "https://www.58moto.com/good/5830/configuration.html"
     }
   }
 };
