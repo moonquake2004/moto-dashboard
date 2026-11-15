@@ -314,6 +314,50 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "5 英寸 TFT 全彩液晶仪表",
       src: "https://www.58moto.com/good/20569/configuration.html"
+    },
+    "赛科龙|RA600": {
+      variant: "2025款 RA600 摩登版", price: "23,988",
+      kw: 43.5, kwRpm: 8500, nm: 55, nmRpm: 6500, cc: 560, cyl: "双缸 直列",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      lwh: "2190x855x1115", seat: 750, wb: 1510, tank: 14.5, weight: 198, clearance: 150,
+      suspF: "正置式", suspR: "中置式单减震",
+      brkF: "碟刹 · 西互卡钳", brkR: "碟刹 · 西互卡钳",
+      tireF: "130/90-R16", tireR: "150/80-R16",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶仪表",
+      src: "https://www.58moto.com/good/21323/configuration.html"
+    },
+    "升仕|368E": {
+      variant: "2026款 368E 全新升级版", price: "30,800",
+      kw: 28.5, kwRpm: 7500, nm: 40, nmRpm: 6000, cc: 368, cyl: "单缸", cmp: "11.8:1",
+      cool: "水冷+油冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "钢管车架",
+      lwh: "2200x815x1395", seat: 770, wb: 1570, tank: 17, weight: 186, clearance: 150,
+      suspF: "玛卓科 φ41mm 倒置式（压缩/回弹多段可调）", suspR: "边置式双减震（预载 5 段可调）",
+      brkF: "西互对向四活塞辐射式卡钳", brkR: "碟刹",
+      tireF: "120/70-15", tireR: "140/70-14",
+      abs: "标配前后", tcs: "标配", cruise: "标配", tpms: "标配", keyless: "标配",
+      dash: "6.75 寸 TFT 全彩液晶屏",
+      src: "https://www.58moto.com/good/21313/configuration.html"
+    },
+    "升仕|368M": {
+      variant: "2026款 368M 全新升级版", price: "28,800",
+      kw: 28.5, kwRpm: 7500, nm: 40, nmRpm: 6000, cc: 368, cyl: "单缸", cmp: "11.8:1",
+      cool: "水冷+油冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "钢管车架",
+      lwh: "2025x805x1185", seat: 760, wb: 1405, tank: 12, weight: 165, clearance: 150,
+      suspF: "玛卓科 φ41mm 倒置式（压缩/回弹多段可调）", suspR: "边置式双减震（预载 5 段可调）",
+      tireF: "120/70-15", tireR: "140/70-14",
+      src: "https://www.58moto.com/good/21315/configuration.html"
+    },
+    "川崎|NINJA 650": {
+      variant: "2026款 Ninja 650", price: "69,800",
+      kw: 45.5, kwRpm: 7200, nm: 62.1, nmRpm: 6700, cc: 650, cyl: "双缸 直列", cmp: "10.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "高强度钢管网格式车架",
+      lwh: "2115x740x1145", seat: 790, wb: 1410, tank: 15, weight: 193, clearance: 130,
+      suspF: "φ41mm 套筒式前叉", suspR: "中置多连杆减震",
+      src: "https://www.58moto.com/good/4863/configuration.html"
     }
   }
 };
