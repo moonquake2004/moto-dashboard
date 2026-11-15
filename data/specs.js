@@ -1938,6 +1938,32 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
       dash: "7 寸 TFT（蓝牙 + 导航投屏 / 加热手把·前座垫 / USB+DC12V / 不可调风挡）",
       src: "https://www.58moto.com/good/20992/configuration.html"
+    },
+    "钱江|闪600": {
+      variant: "2026款 闪600 V4", price: "29,999",
+      kw: 50, kwRpm: 10500, nm: 54, nmRpm: 8000, cc: 560, cyl: "四缸 V型 DOHC",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "摇篮式车架（双摇臂）",
+      lwh: "2280x820x1115", seat: 720, wb: 1580, tank: 16, weight: 218,
+      suspF: "Marzocchi 倒置", suspR: "Marzocchi 弹管阻尼",
+      brkF: "φ300mm 双盘 · 径向四活塞卡钳", brkR: "φ260mm 单盘 · 单活塞浮动卡钳",
+      tireF: "130/90-16", tireR: "180/65-16（正新）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "3.6 寸 TFT 圆形仪表（蓝牙 + 导航投屏 / USB / 运动·普通模式）",
+      src: "https://www.58moto.com/good/20551/configuration.html"
+    },
+    "钱江|闪300": {
+      variant: "2026款 闪300 AMT 4.0版", price: "20,999",
+      kw: 22.6, kwRpm: 9000, nm: 26, nmRpm: 7000, cc: 300, cyl: "双缸 V型 SOHC 四气门", cmp: "11.8:1",
+      cool: "水冷", gear: "AMT 6 速自动挡（M/D 模式）", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "钢管摇篮式车架（钢管摇臂）",
+      lwh: "2110x840x1080", seat: 700, wb: 1400, tank: 13.5, weight: 168,
+      suspF: "倒置式", suspR: "边置式双减震",
+      brkF: "φ280mm 单盘 · 四活塞卡钳", brkR: "φ240mm 单盘 · 单活塞卡钳",
+      tireF: "120/80-16", tireR: "150/80-15（正新）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "彩段 LCD 仪表",
+      src: "https://www.58moto.com/good/19561/configuration.html"
     }
   }
 };
