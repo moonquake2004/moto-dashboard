@@ -1901,6 +1901,43 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", keyless: "无",
       dash: "3.6 英寸圆形 TFT 彩色仪表（蓝牙 + 导航投屏 / 挡位显示 / OTA）",
       src: "https://www.58moto.com/good/22787/configuration.html"
+    },
+    "升仕|350R": {
+      variant: "2022款 350R", price: "21,800",
+      kw: 29, kwRpm: 9500, nm: 32.8, nmRpm: 7500, cc: 350, cyl: "单缸 DOHC 四气门", cmp: "12.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架",
+      lwh: "2010x795x1120", seat: 795, wb: 1380, tank: 15, weight: 180, clearance: 150,
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配", keyless: "标配",
+      dash: "TFT 全彩液晶仪表（蓝牙 + 导航投屏 / USB / 运动·节油模式）",
+      src: "https://www.58moto.com/good/20086/configuration.html"
+    },
+    "钱江|追600": {
+      variant: "2025款 追600RS 圆灯版", price: "36,999",
+      kw: 74.5, kwRpm: 11500, nm: 68, nmRpm: 9000, cc: 680, cyl: "四缸 直列 DOHC", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "双翼梁车架（铝合金双摇臂）",
+      lwh: "2085x805x1110", seat: 815, wb: 1450, tank: 17.5, weight: 201,
+      suspF: "Marzocchi 倒置（预载/压缩/回弹多段可调）", suspR: "Marzocchi 中置单减（预载/压缩/回弹多段可调）",
+      brkF: "φ320mm 双碟 SUNSTAR · Brembo 对向四活塞", brkR: "φ260mm 单碟 · Brembo 对向双活塞",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17（玛吉斯）",
+      abs: "标配前后", tcs: "标配", qs: "仅升挡", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "5 寸 TFT（蓝牙 + 导航投屏 / 运动·标准模式 / T-BOX / 边撑熄火）",
+      src: "https://www.58moto.com/good/18639/configuration.html"
+    },
+    "钱江|骁600": {
+      variant: "2025款 骁600 公路版", price: "29,999",
+      kw: 45, kwRpm: 8500, nm: 55.5, nmRpm: 5500, cc: 560, cyl: "双缸 直列 DOHC", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2210x800x1380", seat: 820, wb: 1480, tank: 20.5, weight: 198, clearance: 205,
+      suspF: "马祖奇倒置可调", suspR: "液压阻尼式（铝合金摆臂）",
+      brkF: "φ320mm 双碟 · Brembo 四活塞", brkR: "φ260mm 单碟 · Brembo 单活塞",
+      tireF: "110/80-R19", tireR: "150/70-R17（玛吉斯）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "7 寸 TFT（蓝牙 + 导航投屏 / 加热手把·前座垫 / USB+DC12V / 不可调风挡）",
+      src: "https://www.58moto.com/good/20992/configuration.html"
     }
   }
 };
