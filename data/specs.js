@@ -817,20 +817,6 @@ window.MOTO_SPECS = {
       keyless: "无", dash: "5 英寸全彩 TFT 仪表（5 种骑行模式 + 6 轴 IMU）",
       src: "https://www.58moto.com/good/21621/configuration.html"
     },
-    "春风|750SR-S": {
-      variant: "2025款 750SR-S", price: "44,980",
-      kw: 82, kwRpm: 10250, nm: 80, nmRpm: 9000, cc: 750, cyl: "四缸 直列 冲压进气", cmp: "12.3:1",
-      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
-      frame: "钢管编织车架（铝合金单摇臂）",
-      lwh: "2039x745x1133", seat: 805, wb: 1419, tank: 17, weight: 213, clearance: 150,
-      suspF: "KYB φ43mm 倒置式（预载/压缩/回弹可调）",
-      suspR: "KYB 中置多连杆 + 外置气囊（预载/压缩/回弹可调）",
-      brkF: "φ320mm 双碟 · Brembo 对向四活塞", brkR: "φ240mm 单碟 · Brembo 双活塞",
-      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
-      abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "标配（仅升挡）", cruise: "无",
-      tpms: "标配", keyless: "标配", dash: "6.2 英寸 TFT 仪表（导航投屏 + OTA）",
-      src: "https://www.58moto.com/good/21728/configuration.html"
-    },
     "春风|250CL-C": {
       variant: "2026款 250CL-C", price: "14,980",
       kw: 18.5, kwRpm: 9800, nm: 20.5, nmRpm: 7000, cc: 250, cyl: "单缸", cmp: "11.3:1",
@@ -843,19 +829,6 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "机械指针 + 液晶仪表",
       src: "https://www.58moto.com/good/21095/configuration.html"
-    },
-    "春风|550CL-C": {
-      variant: "2026款 550CL-C", price: "25,880",
-      kw: 39, kwRpm: 9000, nm: 51, nmRpm: 6000, cc: 550, cyl: "双缸 直列", cmp: "12.5:1",
-      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
-      frame: "钢管编织车架（钢管双边后平叉）",
-      lwh: "2212x866x1120", seat: 710, wb: 1520, tank: 14, weight: 195, clearance: 160,
-      suspF: "倒置式前减 · 行程 130mm", suspR: "中置式单减 · 行程 100mm",
-      brkF: "φ320mm 单碟 · 四活塞卡钳（西互）", brkR: "φ240mm 单碟 · 单活塞卡钳（西互）",
-      tireF: "130/90-16", tireR: "150/80-16",
-      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
-      dash: "3.6 英寸圆形 TFT 彩色仪表（导航投屏 + OTA）",
-      src: "https://www.58moto.com/good/22787/configuration.html"
     },
     "春风|700MT": {
       variant: "2025款 700MT 标准版", price: "29,980",
@@ -1889,6 +1862,45 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS）", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "标配",
       dash: "12.3 英寸 LTPS 高清屏（导航投屏 / 电子油门 / 加热手把·前后座垫 / 电动无级风挡带记忆 / 转向阻尼器 / 四种模式 / 坡道辅助 / 盲区监测 · 变道辅助 · 后碰撞预警）",
       src: "https://www.58moto.com/good/18731/configuration.html"
+    },
+    "春风|800MT": {
+      variant: "2026款 800MT-ES", price: "53,980",
+      kw: 70, kwRpm: 9000, nm: 77, nmRpm: 7500, cc: 800, cyl: "双缸 直列 DOHC", cmp: "12.7:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架（铝合金后摇臂）",
+      lwh: "2231x849x1322", seat: 825, wb: 1531, tank: 19, weight: 234, clearance: 190,
+      suspF: "倒置式（电子悬挂 · 标配）", suspR: "中置式单减震（电子悬挂）",
+      brkF: "φ320mm 西互双碟 · 辐射卡钳", brkR: "φ260mm 西互单碟 · 浮动卡钳",
+      tireF: "110/80-ZR19", tireR: "150/70-ZR17（米其林 Anakee Adventure）",
+      abs: "标配前后（弯道 ABS · 可关闭）", tcs: "标配", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "无",
+      dash: "8 寸犀灵智能交互中枢（导航投屏 / 电子油门 / 加热手把·前座垫 / 手动无级风挡 / 转向阻尼器 / 毫米波雷达 RDS / 四种模式 / 辅助灯 / 自动大灯 / OTA）",
+      src: "https://www.58moto.com/good/18760/configuration.html"
+    },
+    "春风|1000MT-X": {
+      variant: "2026款 1000MT-X 标准版", price: "59,680",
+      kw: 83, kwRpm: 8500, nm: 105, nmRpm: 6250, cc: 1000, cyl: "双缸 直列 DOHC", cmp: "13.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "20 铬钼钢超轻车架",
+      lwh: "2280x936x1395", seat: 830, wb: 1525, tank: 22.5, weight: 219, clearance: 200,
+      suspF: "KYB 倒置 φ48mm · 190mm（预载/压缩/回弹多段可调）", suspR: "KYB 中置单减 · 190mm（预载/压缩/回弹多段可调）",
+      brkF: "φ320mm 双碟 · Brembo 四活塞辐射卡钳", brkR: "φ260mm 单碟 · Brembo 单活塞浮动卡钳",
+      tireF: "90/90-21", tireR: "150/70-R18（倍耐力 STR）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配 可关闭", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "无",
+      dash: "8 英寸 TFT 触屏（4 段角度可调 / 导航投屏 / 电子油门 / 加热手把·前座垫 / 手动多段可调风挡 / 转向阻尼器 / 五种模式 / USB / OTA / 6 轴 IMU）",
+      src: "https://www.58moto.com/good/22466/configuration.html"
+    },
+    "春风|550CL-C": {
+      variant: "2026款 550CL-C", price: "25,880",
+      kw: 39, kwRpm: 9000, nm: 51, nmRpm: 6000, cc: 550, cyl: "双缸 直列 DOHC", cmp: "12.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "钢管编织车架（钢管双边后平叉）",
+      lwh: "2212x866x1120", seat: 710, wb: 1520, tank: 14, weight: 195, clearance: 160,
+      suspF: "倒置式 · 130mm", suspR: "中置式单减震 · 100mm",
+      brkF: "φ320mm 单碟 · 四活塞（西互）", brkR: "φ240mm 单碟 · 单活塞（西互）",
+      tireF: "130/90-16 M/C", tireR: "150/80-16 M/C（CST）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", keyless: "无",
+      dash: "3.6 英寸圆形 TFT 彩色仪表（蓝牙 + 导航投屏 / 挡位显示 / OTA）",
+      src: "https://www.58moto.com/good/22787/configuration.html"
     }
   }
 };
