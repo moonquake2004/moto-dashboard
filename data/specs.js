@@ -1702,6 +1702,29 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
       dash: "TFT 仪表（USB 充电）",
       src: "https://www.58moto.com/good/21096/configuration.html"
+    },
+    "光阳|CV3": {
+      variant: "2021款 CV3", price: "暂无报价",
+      kw: 39.5, kwRpm: 7500, nm: 54, nmRpm: 5750, cc: 550, cyl: "双缸 直列", cool: "水冷",
+      clutch: "干式离心式离合", drive: "皮带传动",
+      lwh: "2140x960x1580", wb: 1580, tank: 12.5, weight: 282, clearance: 140,
+      suspR: "多连杆中置减震",
+      brkF: "双活塞卡钳", brkR: "单活塞卡钳",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "全液晶仪表",
+      src: "https://www.58moto.com/good/18407/configuration.html"
+    },
+    "三阳|JOYRIDE 300 行者300（25款）": {
+      variant: "2025款 行者 Joyride300", price: "23,980",
+      kw: 19, kwRpm: 8000, nm: 26, nmRpm: 6000, cc: 300, cyl: "单缸 SOHC 四气门", cool: "水冷",
+      gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      lwh: "2215x765x1380", seat: 770, wb: 1490, tank: 11.5, weight: 186, clearance: 145,
+      suspR: "后减预载 5 段可调",
+      brkF: "φ260mm 碟刹", brkR: "φ240mm 碟刹",
+      tireF: "120/70-15", tireR: "140/70-14",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "彩色液晶仪表（USB 充电 / 侧支架熄火）",
+      src: "https://www.58moto.com/good/21859/configuration.html"
     }
   }
 };
