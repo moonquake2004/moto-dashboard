@@ -2242,6 +2242,31 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "负显 LCD 仪表",
       src: "https://www.58moto.com/good/20382/configuration.html"
+    },
+    "铃木|GSX-8S": {
+      variant: "2024款 GSX-8S", price: "89,800",
+      kw: 60, kwRpm: 8500, nm: 76, nmRpm: 6800, cc: 776, cyl: "双缸 直列 DOHC 四气门", cmp: "12.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2115x775x1105", seat: 810, wb: 1465, tank: 14, weight: 202, clearance: 145,
+      suspF: "倒置伸缩式（螺旋弹簧/油阻尼）", suspR: "连杆式单减震（螺旋弹簧/油阻尼）",
+      brkF: "双盘 · NISSIN 径向安装四活塞卡钳", brkR: "单盘 · NISSIN 单活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 仪表（挡位显示）",
+      src: "https://www.58moto.com/good/20979/configuration.html"
+    },
+    "凯旋|BONNEVILLE T120": {
+      variant: "2026款 Bonneville T120", price: "118,900",
+      kw: 58.8, kwRpm: 6550, nm: 105, nmRpm: 3500, cc: 1200, cyl: "双缸 直列 SOHC 四气门", cmp: "10:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管摇篮结构车架（双边钢管摇臂）",
+      seat: 790, wb: 1450, tank: 14.5, weight: 236,
+      suspF: "φ41mm KYB 筒式多片阀控前叉 · 行程 120mm", suspR: "双 KYB 后避震（预载可调）· 行程 120mm",
+      brkF: "双 310mm 制动盘 · Brembo 双活塞浮动卡钳", brkR: "单 255mm 制动盘 · Nissin 双活塞浮动卡钳",
+      tireF: "100/90-18（铝合金辐条轮）", tireR: "150/70-R17",
+      abs: "标配前后（弯道 ABS）", tcs: "无", qs: "无", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "双圆表 + LCD（电子油门 / 定速巡航）",
+      src: "https://www.58moto.com/good/6375/configuration.html"
     }
   }
 };
