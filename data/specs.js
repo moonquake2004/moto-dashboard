@@ -1548,6 +1548,19 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "LCD 液晶显示屏（USB 充电 / 不可调风挡）",
       src: "https://www.58moto.com/good/20443/configuration.html"
+    },
+    "香帅机车|旅行者800S": {
+      variant: "2022款 旅行者 800S", price: "61,800",
+      kw: 45, kwRpm: 7000, nm: 72, nmRpm: 5500, cc: 800, cyl: "V型双缸 每缸四气门", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "皮带传动",
+      frame: "双摇篮车架",
+      lwh: "2495x960x1300", seat: 720, wb: 1600, tank: 20, weight: 332, clearance: 130,
+      suspF: "油压阻尼减震", suspR: "油压阻尼减震",
+      brkF: "φ320mm 双浮动碟", brkR: "φ260mm 单碟",
+      tireF: "140/70-ZR17", tireR: "200/50-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "7 寸 TFT 液晶显示屏（加热手把标配 / 不可调风挡）",
+      src: "https://www.58moto.com/good/20069/configuration.html"
     }
   }
 };
