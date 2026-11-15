@@ -399,6 +399,49 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "标配双向", cruise: "无", tpms: "标配",
       keyless: "标配", dash: "6.75 寸 TFT 全彩液晶屏",
       src: "https://www.58moto.com/good/21360/configuration.html"
+    },
+    "本田|X-ADV": {
+      variant: "2026款 X-ADV 750", price: "129,800",
+      kw: 43.1, kwRpm: 6750, nm: 69, nmRpm: 4750, cc: 750, cyl: "双缸 直列", cmp: "10.7:1",
+      cool: "水冷", gear: "DCT 6 速自动挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "钻石菱形编织车架",
+      lwh: "2200x940x1380", seat: 790, wb: 1580, tank: 13.2, weight: 237, clearance: 135,
+      suspF: "Showa φ41mm 倒置式 · 行程 150mm（预载/压缩/回弹可调）",
+      suspR: "中置多连杆 · 行程 150mm（预载可调）",
+      brkF: "φ296mm 双碟 · 辐射式卡钳", brkR: "φ240mm 单碟",
+      tireF: "120/70-R17", tireR: "160/60-R15",
+      abs: "标配前后",
+      src: "https://www.58moto.com/good/5743/configuration.html"
+    },
+    "本田|NT1100": {
+      variant: "2026款 NT1100", price: "153,800",
+      kw: 73, kwRpm: 7500, nm: 107, nmRpm: 5250, cc: 1100, cyl: "双缸 直列", cmp: "10.5:1",
+      cool: "水冷", gear: "DCT 6 速自动挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "半双摇篮式钢管车架",
+      lwh: "2240x860x1510", seat: 820, wb: 1535, tank: 20.4, weight: 248, clearance: 175,
+      suspF: "φ43mm Showa SFF-BP 可调倒置前叉 · 行程 134mm",
+      src: "https://www.58moto.com/good/19929/configuration.html"
+    },
+    "本田|CM300": {
+      variant: "2026款 CM300 智享版", price: "20,980",
+      kw: 20.4, kwRpm: 8000, nm: 25.1, nmRpm: 7500, cc: 300, cyl: "单缸", cmp: "10.7:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2206x841x1107", seat: 690, wb: 1490, tank: 11.2, weight: 170, clearance: 149,
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "130/90-16", tireR: "150/80-16",
+      abs: "标配前后", tcs: "无",
+      src: "https://www.58moto.com/good/13998/configuration.html"
+    },
+    "赛科龙|AQS600": {
+      variant: "2026款 AQS600", price: "23,988",
+      kw: 43.5, kwRpm: 8500, nm: 55, cc: 560, cyl: "双缸 直列", cool: "水冷",
+      gear: "AMT 6 速自动挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "摇篮车架",
+      lwh: "2247x875x1125", seat: 735, wb: 1510, tank: 14.5, weight: 205, clearance: 140,
+      suspF: "倒置式", suspR: "中置式单减震",
+      tireF: "130/90-16", tireR: "150/80-16",
+      abs: "标配前后", tcs: "标配", tpms: "无", keyless: "无", dash: "LCD 仪表",
+      src: "https://www.58moto.com/good/22873/configuration.html"
     }
   }
 };
