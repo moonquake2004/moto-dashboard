@@ -1524,6 +1524,18 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "TFT 仪表",
       src: "https://www.58moto.com/good/21389/configuration.html"
+    },
+    "香帅机车|御龙 JSX700i": {
+      variant: "2021款 御龙 JSX700i 链条版", price: "43,800",
+      kw: 36, kwRpm: 7000, nm: 56, nmRpm: 5500, cc: 700, cyl: "V型双缸 SOHC", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      lwh: "2360x830x1070", seat: 720, wb: 1600, tank: 22, weight: 260, clearance: 137,
+      suspF: "可调倒置式前减", suspR: "可调液压式后减",
+      brkF: "双碟刹", brkR: "碟刹",
+      tireF: "140/75-ZR17", tireR: "200/55-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶屏",
+      src: "https://www.58moto.com/good/18619/configuration.html"
     }
   }
 };
