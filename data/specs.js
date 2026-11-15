@@ -586,6 +586,67 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "彩色液晶仪表",
       src: "https://www.58moto.com/good/21425/configuration.html"
+    },
+    "凯越|350RR": {
+      variant: "2025款 350RR 赫雷兹 征服版", price: "23,980",
+      kw: 35, kwRpm: 11500, nm: 32.2, nmRpm: 9000, cc: 350, cyl: "双缸 直列", cmp: "12.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钻石菱形一体式车架（铝合金单摇臂）",
+      lwh: "2000x745x1100", seat: 790, wb: 1370, tank: 15, weight: 151,
+      suspF: "φ37mm 倒置式（渝安）· 压缩/回弹可调", suspR: "中置式单减震（渝安）· 预载/压缩/回弹可调",
+      brkF: "φ320mm 浮动盘 · 布雷博对置四活塞", brkR: "φ240mm 单盘 · 双活塞浮动卡钳",
+      tireF: "110/70-R17", tireR: "150/60-R17",
+      abs: "标配前后（弯道 ABS 标配、可关闭）", tcs: "标配", qs: "标配（仅升挡）",
+      cruise: "无", tpms: "无", keyless: "无", dash: "TFT 仪表（支持导航投屏）",
+      src: "https://www.58moto.com/good/21136/configuration.html"
+    },
+    "钱江|赛250": {
+      variant: "2026款 赛250 Mini版", price: "15,999",
+      kw: 20.5, kwRpm: 9500, nm: 22.5, nmRpm: 7250, cc: 250, cyl: "单缸", cmp: "11.2:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架",
+      lwh: "2010x750x1125", seat: 760, wb: 1360, tank: 12.5, weight: 159, clearance: 120,
+      suspF: "倒置式前减震", suspR: "液压弹簧式后减震",
+      tireF: "110/70-R17", tireR: "140/60-R17",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      src: "https://www.58moto.com/good/19634/configuration.html"
+    },
+    "雅马哈|TMAX TECH MAX": {
+      variant: "2026款 TMAX 560 Tech Max", price: "140,800",
+      kw: 35, kwRpm: 7000, nm: 54, nmRpm: 5250, cc: 560, cyl: "双缸 直列", cmp: "10.9:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "湿式多片离合", drive: "皮带传动",
+      frame: "轻量化铝合金双横梁车架",
+      lwh: "2195x780x1345", seat: 800, wb: 1575, tank: 15.4, weight: 221, clearance: 135,
+      brkF: "φ267mm 双碟刹", brkR: "φ282mm 单碟刹",
+      tireF: "120/70-R15", tireR: "160/60-R15",
+      abs: "标配前后", tcs: "标配", cruise: "标配", qs: "无", tpms: "无", keyless: "无",
+      src: "https://www.58moto.com/good/5651/configuration.html"
+    },
+    "雅马哈|TENERE 700": {
+      variant: "2025款 T700S", price: "109,800",
+      kw: 54, kwRpm: 9000, nm: 68, nmRpm: 6500, cc: 700, cyl: "双缸 直列", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "双摇篮钢管车架",
+      lwh: "2370x935x1455", seat: 870, wb: 1595, tank: 16, weight: 208, clearance: 240,
+      suspF: "倒置伸缩叉 · 行程 210mm", suspR: "连杆式中置减震 · 行程 200mm",
+      brkF: "φ282mm 双碟盘", brkR: "φ245mm 单碟盘",
+      tireF: "90/90-R21", tireR: "150/70-R18",
+      abs: "标配前后（可关闭）", tcs: "标配（可关闭）", qs: "无", cruise: "无", tpms: "无",
+      keyless: "无", dash: "6.3 英寸纵向 TFT 仪表",
+      src: "https://www.58moto.com/good/15746/configuration.html"
+    },
+    "杜卡迪|Desert X": {
+      variant: "2023款 Desert X", price: "129,000",
+      kw: 80.8, kwRpm: 9250, nm: 92, nmRpm: 6500, cc: 950, cyl: "双缸 L型", cmp: "—",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "Trellis 钢管编织车架（铝制双边摇臂）",
+      seat: 835, tank: 21, clearance: 250,
+      suspF: "KYB φ46mm 倒立式 · 行程 230mm（全可调）", suspR: "KYB 减震 · 行程 220mm（全可调）",
+      brkF: "φ320mm 双碟盘 · Brembo M50 径向单体卡钳", brkR: "φ265mm 碟盘 · 双活塞卡钳",
+      tireF: "90/90-21", tireR: "150/70-18",
+      abs: "标配前后（可关闭，弯道 ABS 标配）", tcs: "标配", qs: "无", cruise: "标配",
+      tpms: "无", keyless: "无", dash: "5 英寸 TFT 彩色仪表",
+      src: "https://www.58moto.com/good/19910/configuration.html"
     }
   }
 };
