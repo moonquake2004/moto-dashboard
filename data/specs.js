@@ -1812,6 +1812,31 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
       dash: "机械指针 + 液晶仪表（USB 充电 / 手动 2 段可调风挡）",
       src: "https://www.58moto.com/good/5282/configuration.html"
+    },
+    "光阳|赛艇S250": {
+      variant: "2024款 赛艇 S250", price: "23,500",
+      kw: 17.2, kwRpm: 7500, nm: 23.6, nmRpm: 6000, cc: 250, cyl: "单缸 SOHC 四气门", cmp: "10.8:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "双层环抱式车架",
+      lwh: "2172x785x1145", seat: 785, wb: 1550, tank: 13, weight: 192, clearance: 135,
+      suspF: "φ37mm 正立式前叉", suspR: "双枪 · 预载 5 段可调",
+      brkF: "φ260mm 碟盘 · 三活塞卡钳", brkR: "φ240mm 碟盘 · 双活塞卡钳",
+      tireF: "120/80-14", tireR: "150/70-13",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "TFT 仪表（蓝牙 + 导航投屏 / USB 充电 / 不可调风挡）",
+      src: "https://www.58moto.com/good/19965/configuration.html"
+    },
+    "三阳|CRUISYM 250 (巡弋250)": {
+      variant: "2026款 巡弋 Cruisym250", price: "21,980",
+      kw: 18.1, kwRpm: 8000, nm: 24, nmRpm: 6000, cc: 250, cyl: "单缸 SOHC 四气门", cool: "水冷",
+      gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      lwh: "2170x770x1400", seat: 755, wb: 1535, tank: 12, weight: 191, clearance: 128,
+      suspF: "正置式", suspR: "边置式双减震 · 预载 5 段可调",
+      brkF: "φ260mm 碟刹", brkR: "φ240mm 碟刹",
+      tireF: "120/70-14", tireR: "140/60-13",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "7 寸全彩 TFT（蓝牙 + 导航投屏 / USB / 行车记录仪 / 手机互联 / 风挡标配）",
+      src: "https://www.58moto.com/good/22104/configuration.html"
     }
   }
 };
