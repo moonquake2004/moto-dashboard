@@ -2334,6 +2334,30 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS / 可关闭）", tcs: "标配", qs: "无", cruise: "标配", tpms: "标配", keyless: "无",
       dash: "7 寸 TFT（电子油门 / 定速巡航 / 导航投屏）",
       src: "https://www.58moto.com/good/18580/configuration.html"
+    },
+    "杜卡迪|Panigale V2": {
+      variant: "2025款 Panigale V2", price: "138,900",
+      kw: 88, kwRpm: 10750, nm: 93.3, nmRpm: 8250, cc: 890, cyl: "双缸 V型 DOHC 四气门", cmp: "12.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "单体铝合金车架（铝合金双摇臂）",
+      seat: 837, tank: 15, weight: 179,
+      suspF: "Marzocchi φ43mm 倒置前叉", suspR: "KYB monoshock 单筒后减震",
+      brkF: "双 φ320mm 半浮动盘 · Brembo Monobloc M50 径向卡钳", brkR: "单 φ245mm 盘 · 双活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "190/55-ZR17（倍耐力 Diablo Rosso IV）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "标配", cruise: "无", tpms: "无", keyless: "无",
+      dash: "4.3 寸 TFT 全彩（电子油门 / 多骑行模式）",
+      src: "https://www.58moto.com/good/5733/configuration.html"
+    },
+    "哈雷戴维森|Street Glide®": {
+      variant: "2026款 大道滑翔 Street Glide 镀铬饰面", price: "368,800",
+      kw: 78, kwRpm: 5020, nm: 175, nmRpm: 3750, cc: 1923, cyl: "V型双缸 风冷 Milwaukee-Eight 117", cmp: "10.3:1",
+      cool: "风冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "两件式冲压焊接主车架 + 螺栓固定式后车架",
+      lwh: "2410x975x1350", seat: 715, wb: 1625, tank: 22.7, weight: 368, clearance: 140,
+      tireF: "130/60-B19",
+      abs: "标配前后", tcs: "标配", cruise: "标配", tpms: "标配", keyless: "标配",
+      dash: "12.3 寸 TFT 触控屏（Skyline OS / 导航）",
+      src: "https://www.58moto.com/good/5780/configuration.html"
     }
   }
 };
