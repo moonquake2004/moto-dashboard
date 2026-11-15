@@ -790,6 +790,32 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "标配双向", cruise: "标配（ACC 自适应）",
       tpms: "标配", keyless: "标配", dash: "6.5 英寸 TFT 彩色仪表（支持导航投屏）",
       src: "https://www.58moto.com/good/5765/configuration.html"
+    },
+    "川崎|Z900RS": {
+      variant: "2026款 Z900RS Black Ball 特别版", price: "119,800",
+      kw: 80.5, kwRpm: 8800, nm: 95.5, nmRpm: 7700, cc: 950, cyl: "四缸 直列", cmp: "10.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "高强度钢管网格式车架",
+      lwh: "2100x815x1135", seat: 810, wb: 1465, tank: 17, weight: 216, clearance: 135,
+      suspF: "φ41mm 倒置前叉（预载/压缩/回弹可调）", suspR: "水平中置多连杆（预载/回弹可调）",
+      brkF: "φ300mm 半浮动双碟 · 对向四活塞辐射卡钳", brkR: "φ250mm 单碟",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "组合仪表",
+      src: "https://www.58moto.com/good/5625/configuration.html"
+    },
+    "雅马哈|YZF-R9": {
+      variant: "2026款 YZF-R9", price: "139,800",
+      kw: 87.5, kwRpm: 10000, nm: 93, nmRpm: 7000, cc: 900, cyl: "三缸 直列", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "铝合金 Deltabox 车架",
+      lwh: "2070x705x1180", seat: 830, wb: 1420, tank: 14, weight: 195, clearance: 140,
+      suspF: "KYB φ43mm 倒置式前叉", suspR: "KYB 中置多连杆减震",
+      brkF: "φ320mm 双碟 · Brembo 径向卡钳",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后（后轮可关闭）", tcs: "标配", qs: "标配双向", cruise: "无", tpms: "无",
+      keyless: "无", dash: "5 英寸全彩 TFT 仪表（5 种骑行模式 + 6 轴 IMU）",
+      src: "https://www.58moto.com/good/21621/configuration.html"
     }
   }
 };
