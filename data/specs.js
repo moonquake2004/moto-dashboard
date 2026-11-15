@@ -737,6 +737,59 @@ window.MOTO_SPECS = {
       abs: "标配前后（6 轴 IMU）", tcs: "标配", qs: "无", cruise: "标配", tpms: "无",
       keyless: "无", dash: "LCD 仪表",
       src: "https://www.58moto.com/good/22355/configuration.html"
+    },
+    "川崎|Z H2": {
+      variant: "2021款 Z H2", price: "239,000",
+      kw: 147.1, kwRpm: 11000, nm: 137, nmRpm: 8500, cc: 1000, cyl: "四缸 直列 机械增压", cmp: "11.2:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "网格式高拉力钢车架",
+      lwh: "2085x810x1130", seat: 830, wb: 1455, tank: 19, weight: 240, clearance: 140,
+      suspF: "φ43mm 倒置式（SFF-BP，压缩/回弹/预载可调）",
+      suspR: "New Uni Trak 中置（带气瓶，回弹/预载可调）",
+      brkF: "φ320mm 双碟 · Brembo M4.32 辐射四活塞", brkR: "φ260mm 单碟 · 单活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "190/55-ZR17",
+      abs: "标配前后", tcs: "标配", qs: "标配双向", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "TFT 全彩仪表",
+      src: "https://www.58moto.com/good/18302/configuration.html"
+    },
+    "凯越|450RALLY（民用版）": {
+      variant: "2026款 450Rally",
+      kw: 40, kwRpm: 9000, nm: 45, nmRpm: 7000, cc: 450, cyl: "单缸", cmp: "13:1",
+      cool: "水冷+油冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "高强度钢双翼梁车架",
+      lwh: "2253x865x1395", seat: 960, wb: 1496, tank: 16, weight: 141, clearance: 290,
+      suspF: "渝安倒置式（压缩/回弹可调）", suspR: "渝安中置多连杆（外置气囊，压缩/回弹可调）",
+      brkF: "单浮动盘 · 双活塞浮动卡钳（泰斯克）", brkR: "单盘 · 单活塞浮动卡钳（泰斯克）",
+      tireF: "90/90-21", tireR: "140/80-18",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      src: "https://www.58moto.com/good/18722/configuration.html"
+    },
+    "凯越|MX250": {
+      variant: "2023款 MX250 场地版", price: "26,980",
+      kw: 25, nm: 24, cc: 250, cyl: "单缸",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "HC700 高强度钢车架",
+      lwh: "2168x805x1265", seat: 960, wb: 1490, tank: 6, weight: 108, clearance: 310,
+      suspF: "渝安倒置式 · 行程 305mm（压缩/回弹多段可调）",
+      suspR: "渝安外置气囊 · 行程 134mm（压缩/回弹多段可调）",
+      brkF: "单盘 · TAISKO 双活塞卡钳", brkR: "单盘 · 单活塞卡钳",
+      tireF: "80/100-21", tireR: "100/90-19",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      src: "https://www.58moto.com/good/19891/configuration.html"
+    },
+    "川崎|NINJA H2 SX": {
+      variant: "2024款 Ninja H2 SX SE", price: "328,800",
+      kw: 154.1, kwRpm: 11000, nm: 137.3, nmRpm: 8500, cc: 1000, cyl: "四缸 直列 机械增压", cmp: "11.2:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "网格式高拉力钢车架（单侧摇臂）",
+      lwh: "2175x790x1260", seat: 835, wb: 1480, tank: 19, weight: 264, clearance: 130,
+      suspF: "φ43mm 倒置前叉（回弹/压缩/预载可调）",
+      suspR: "New Uni Trak + BFRC lite 气瓶 · KECS 电子悬挂",
+      brkF: "φ320mm 半浮动双碟 · 辐射对向四活塞", brkR: "φ250mm 单碟 · 双活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "190/55-ZR17",
+      abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "标配双向", cruise: "标配（ACC 自适应）",
+      tpms: "标配", keyless: "标配", dash: "6.5 英寸 TFT 彩色仪表（支持导航投屏）",
+      src: "https://www.58moto.com/good/5765/configuration.html"
     }
   }
 };
