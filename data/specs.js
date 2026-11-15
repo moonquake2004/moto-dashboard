@@ -2941,5 +2941,19 @@ window.MOTO_SPECS = {
       dash: "4.3 寸 TFT（电子油门 / 公路·湿地模式 / 挡位显示 / USB / 双闪 / 自动大灯）",
       src: "https://www.58moto.com/good/7094/configuration.html"
     }
+,
+    "钱江|追550": {
+      variant: "2024款 追550", price: "26,999",
+      kw: 45, kwRpm: 8500, nm: 55, nmRpm: 6000, cc: 549, cyl: "双缸 直列 DOHC 四气门",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢制海鸥摇臂",
+      lwh: "2090x865x1165", seat: 810, wb: 1420, tank: 15, weight: 180, clearance: 160,
+      suspF: "Marzocchi 液力阻尼式前叉", suspR: "液压弹簧式后减震",
+      brkF: "Brembo φ320 双碟", brkR: "Brembo φ260 单碟",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "TFT 液晶（双拉线油门 / 手机连接 / 导航投屏 / 挡位显示 / USB / 双闪 / T-BOX）",
+      src: "https://www.58moto.com/good/20644/configuration.html"
+    }
   }
 };
