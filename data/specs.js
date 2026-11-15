@@ -893,6 +893,45 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "TFT 仪表",
       src: "https://www.58moto.com/good/22278/configuration.html"
+    },
+    "张雪机车|500RR": {
+      variant: "2026款 500RR 双摇臂版", price: "29,980",
+      kw: 62, kwRpm: 13500, nm: 46, nmRpm: 11500, cc: 500, cyl: "四缸 直列 冲压进气", cmp: "12.9:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "一体式钢管编织车架（钢制双摇臂）",
+      lwh: "2005x705x1125", seat: 795, wb: 1395, tank: 15, weight: 170,
+      suspF: "φ41mm 倒置式（压缩/回弹可调）", suspR: "中置单减 + 外置气囊（预载/回弹可调）",
+      brkF: "φ320mm 双浮动盘 · 四活塞对置卡钳（泰斯克）", brkR: "φ220mm 单碟 · 单活塞浮动卡钳",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "标配双向", cruise: "标配", tpms: "无",
+      keyless: "无", dash: "TFT 仪表（导航投屏 + T-BOX）",
+      src: "https://www.58moto.com/good/21468/configuration.html"
+    },
+    "KTM|1290 Super Adventure": {
+      variant: "2023款 1290 Super Adventure S", price: "161,800",
+      kw: 118, kwRpm: 9000, nm: 138, nmRpm: 6500, cc: 1301, cyl: "双缸 V型 75°", cmp: "13.1:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合（液压）", drive: "链条传动",
+      frame: "铬钼钢管式立体车架",
+      seat: 849, wb: 1557, tank: 23, weight: 227, clearance: 223,
+      suspF: "WP 半主动悬挂 USD φ48mm · 行程 200mm", suspR: "WP 半主动单筒 · 行程 200mm",
+      brkF: "φ320mm 双碟 · Brembo 四活塞辐射卡钳", brkR: "φ267mm 单碟 · Brembo 双活塞卡钳",
+      tireF: "120/70-R19", tireR: "170/60-R17",
+      abs: "标配前后（弯道 ABS + 可关闭）", tcs: "标配", qs: "选配", cruise: "无",
+      tpms: "无", keyless: "标配", dash: "7 英寸 TFT 仪表（电子悬挂）",
+      src: "https://www.58moto.com/good/5626/configuration.html"
+    },
+    "KTM|890 Adventure": {
+      variant: "2023款 890 Adventure R", price: "129,800",
+      kw: 77, nm: 100, cc: 889, cyl: "双缸 直列", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铬钼钢车架（发动机作为受力元件，粉末涂层）",
+      seat: 880, tank: 20, weight: 200, clearance: 263,
+      suspF: "WP XPLOR 分体式前叉 φ48mm · 行程 240mm",
+      suspR: "WP XPLOR PDS 减震 · 行程 240mm",
+      brkF: "φ320mm 制动盘", brkR: "φ260mm 制动盘",
+      abs: "标配前后（弯道 ABS + 可关闭）", tcs: "标配", qs: "选配双向", cruise: "选配",
+      tpms: "无", keyless: "无", dash: "5 英寸 TFT 显示屏",
+      src: "https://www.58moto.com/good/18750/configuration.html"
     }
   }
 };
