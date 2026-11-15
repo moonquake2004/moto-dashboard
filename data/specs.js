@@ -2885,5 +2885,33 @@ window.MOTO_SPECS = {
       dash: "5 寸 TFT 彩色屏（电子油门 / 挡位显示 / USB）",
       src: "https://www.58moto.com/good/20568/configuration.html"
     }
+,
+    "杜卡迪|Streetfighter V4": {
+      variant: "2026款 Street Fighter V4", price: "191,900",
+      kw: 157.4, kwRpm: 13500, nm: 120, nmRpm: 11250, cc: 1103, cyl: "四缸 V型 DOHC 四气门（81x53.5）", cmp: "14:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合（液压）", drive: "链条传动",
+      frame: "铝合金车架（铝合金双摇臂）",
+      seat: 845, wb: 1496, tank: 16, weight: 191,
+      suspF: "Showa BPF φ43mm 倒置式前叉（预载多段可调）· 行程 125mm", suspR: "Sachs 中置多连杆减震（预载多段可调）· 行程 130mm",
+      brkF: "双 φ330mm 半浮动盘 · Brembo 径向四活塞卡钳", brkR: "单 φ245mm 盘 · 双活塞卡钳",
+      tireF: "120/70-ZR17（倍耐力 Diablo Rosso 4）", tireR: "200/60-ZR17（倍耐力 Diablo Rosso 4）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "双向快排", cruise: "无", tpms: "无", keyless: "无",
+      dash: "6.9 寸 TFT（电子油门 / 转向阻尼器 / CBS）",
+      src: "https://www.58moto.com/good/18346/configuration.html"
+    }
+,
+    "杜卡迪|SuperSport 950": {
+      variant: "2024款 Supersport 杜卡迪红", price: "128,700",
+      kw: 81, kwRpm: 9000, nm: 93, nmRpm: 6500, cc: 937, cyl: "双缸 V型 DOHC 每缸四气门（94x67.5）", cmp: "12.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合（液压）", drive: "链条传动",
+      frame: "Trellis 管式钢制编织车架（铝合金单摇臂）",
+      seat: 810, wb: 1480, tank: 15.5, weight: 205,
+      suspF: "Marzocchi 43mm USD 全可调前叉", suspR: "Sachs 单筒避震（阻尼与预载可调）· 铝合金单摇臂",
+      brkF: "双 320mm 半浮动盘 · Brembo M4.32 单体辐射式四活塞卡钳", brkR: "单 245mm 盘 · 2 活塞卡钳",
+      tireF: "120/70-ZR17（倍耐力 Angel ST）", tireR: "180/55-ZR17（倍耐力 Angel ST）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 彩色液晶（电子油门）",
+      src: "https://www.58moto.com/good/5774/configuration.html"
+    }
   }
 };
