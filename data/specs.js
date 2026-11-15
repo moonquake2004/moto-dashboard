@@ -1738,6 +1738,31 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
       dash: "液晶仪表 + 机械指针（USB 充电 / 标配行车记录仪 / 不可调风挡）",
       src: "https://www.58moto.com/good/5526/configuration.html"
+    },
+    "光阳|赛艇ST250（含豪华版/纪念版）": {
+      variant: "2026款 赛艇 ST250 豪华版", price: "21,999",
+      kw: 17.2, kwRpm: 7500, nm: 23.6, nmRpm: 6000, cc: 250, cyl: "单缸 SOHC 四气门", cmp: "10.8:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "双层环抱式车架",
+      lwh: "2130x755x1360", seat: 770, wb: 1525, tank: 10.5, weight: 183, clearance: 130,
+      suspF: "正置式", suspR: "边置式双减 · 预载多段可调",
+      brkF: "φ260mm 碟刹 · 双活塞", brkR: "碟刹",
+      tireF: "120/70-13", tireR: "140/70-13",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "高清仪表（USB 充电 / 风挡标配）",
+      src: "https://www.58moto.com/good/20566/configuration.html"
+    },
+    "三阳|Jepardo 300 猎豹300": {
+      variant: "2026款 猎豹 Jepardo 300", price: "24,980",
+      kw: 19, kwRpm: 8000, nm: 26, nmRpm: 6000, cc: 300, cyl: "单缸 SOHC 四气门", cool: "水冷",
+      gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      lwh: "2200x770x1360", seat: 755, wb: 1535, tank: 12, weight: 193, clearance: 130,
+      suspF: "正置式", suspR: "边置式双减震",
+      brkF: "φ260mm 碟刹", brkR: "φ240mm 碟刹",
+      tireF: "120/70-14", tireR: "140/60-13",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "7 英寸全彩 TFT（导航投屏 / USB / 前后行车记录仪 / 后向毫米波雷达盲区监测 / 手机互联）",
+      src: "https://www.58moto.com/good/22650/configuration.html"
     }
   }
 };
