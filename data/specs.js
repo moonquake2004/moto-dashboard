@@ -1052,6 +1052,47 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS + 可关闭）", tcs: "标配", qs: "标配双向", cruise: "无",
       tpms: "无", keyless: "无", dash: "5 英寸全彩 TFT（导航投屏 + 5 种骑行模式）",
       src: "https://www.58moto.com/good/6417/configuration.html"
+    },
+    "阿普利亚|RS 660": {
+      variant: "2023款 RS 660", price: "119,900",
+      kw: 73.5, kwRpm: 10500, nm: 67, nmRpm: 8500, cc: 660, cyl: "双缸 直列", cmp: "13.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "可调节复合结构铝合金双翼梁车架（非对称铝制摇臂）",
+      lwh: "1995x745x1150", seat: 820, wb: 1370, tank: 15, weight: 183,
+      suspF: "KYB φ41mm 倒置前叉 · 行程 120mm",
+      suspR: "单避震（预载/长度/回弹可调）· 行程 130mm",
+      brkF: "φ320mm 双碟 · Brembo 径向四活塞", brkR: "φ220mm 单碟 · Brembo 双活塞",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后（弯道 ABS 标配）", tcs: "标配（含 AWC 防翘头/AEB 引擎制动）",
+      qs: "标配双向", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "TFT 彩色仪表（6 轴 IMU + 5 种骑行模式）",
+      src: "https://www.58moto.com/good/6595/configuration.html"
+    },
+    "本田|NSS750": {
+      variant: "2025款 NSS750", price: "126,800",
+      kw: 43.1, kwRpm: 6750, nm: 69, nmRpm: 4750, cc: 750, cyl: "双缸 直列 OHC", cmp: "10.7:1",
+      cool: "水冷", gear: "DCT 6 速自动挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "钻石型钢管车架（铝制 HPDC 后摇臂）",
+      lwh: "2200x790x1370", seat: 790, wb: 1580, tank: 13.2, weight: 236, clearance: 135,
+      suspF: "φ41mm 倒立式前叉 · 行程 120mm", suspR: "Monoshock 减震 · 行程 120mm",
+      brkF: "φ310mm 双碟 · 径向四活塞", brkR: "φ240mm 单碟 · 双活塞",
+      tireF: "120/70-R17", tireR: "160/60-R15",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "标配", tpms: "无", keyless: "标配",
+      dash: "5 英寸 TFT 仪表（3 种骑行模式）",
+      src: "https://www.58moto.com/good/5915/configuration.html"
+    },
+    "光阳|赛艇S350（含黑武士）": {
+      variant: "2025款 赛艇 S350 黑武士版", price: "31,980",
+      kw: 21.2, kwRpm: 7500, nm: 28.6, nmRpm: 5000, cc: 350, cyl: "单缸 SOHC 四气门",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "双层环抱式车架",
+      lwh: "2170x785x1145", seat: 785, wb: 1550, tank: 13, weight: 192, clearance: 135,
+      suspF: "φ37mm 潜望式减震", suspR: "五段可调减震",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/80-14", tireR: "150/70-13",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "LCD 液晶仪表",
+      src: "https://www.58moto.com/good/18786/configuration.html"
     }
   }
 };
