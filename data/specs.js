@@ -2575,6 +2575,30 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "标配", tpms: "无", keyless: "无",
       dash: "机械指针 + 液晶（3 种骑行模式 / 加热手把 / 风挡）",
       src: "https://www.58moto.com/good/5742/configuration.html"
+    },
+    "凯旋|TRIDENT 800": {
+      variant: "2026款 Trident 800", price: "79,900",
+      kw: 84.6, kwRpm: 10750, nm: 84, nmRpm: 8500, cc: 798, cyl: "三缸 直列 DOHC 四气门",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      seat: 810, wb: 1402, weight: 198,
+      suspF: "Showa SFF-BP φ41mm 倒置（压缩/回弹多段可调）", suspR: "Showa 中置单减震（预载/回弹多段可调）",
+      brkF: "双 310mm 碟 · 四活塞径向卡钳", brkR: "单 220mm 盘 · 单活塞卡钳",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "双向快排", cruise: "无", tpms: "无", keyless: "无",
+      dash: "3.5 寸圆形 TFT（蓝牙 / 挡位显示 / 6 轴 IMU / 公路·运动·雨天模式）",
+      src: "https://www.58moto.com/good/22475/configuration.html"
+    },
+    "凯旋|SCRAMBLER 900": {
+      variant: "2026款 Scrambler 900", price: "98,900",
+      kw: 47.8, kwRpm: 7250, nm: 80, nmRpm: 3250, cc: 900, cyl: "双缸 直列 SOHC 四气门（84.6x80）", cmp: "11.0:1",
+      cool: "水冷", gear: "国际5挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "钢管摇篮结构车架（铝合金摇臂）",
+      seat: 790, wb: 1445, tank: 12, weight: 223,
+      suspF: "φ41mm KYB 筒式多片阀控前叉 · 行程 120mm", suspR: "双后避震（预载可调）· 后轮行程 120mm",
+      brkF: "单 310mm 浮动盘 · Brembo 四活塞对向卡钳", brkR: "单 255mm 盘 · Nissin 双活塞浮动卡钳",
+      tireF: "100/90-19（铝合金辐条轮）", tireR: "150/70-R17",
+      abs: "标配前后（弯道 ABS）", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "指针式仪表 + LCD 多功能显示屏（电子油门 / 挡位显示）",
+      src: "https://www.58moto.com/good/6406/configuration.html"
     }
   }
 };
