@@ -2651,6 +2651,19 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "TFT 彩色液晶（0-100km/h 官方 2.73s）",
       src: "https://www.58moto.com/good/17789/configuration.html"
+    },
+    "哈雷戴维森|Breakout®": {
+      variant: "2026款 Breakout", price: "225,800",
+      kw: 77, kwRpm: 4800, nm: 168, nmRpm: 3000, cc: 1923, cyl: "双缸 V型 风冷 Milwaukee-Eight 117（103.5x114.3）", cmp: "10.3:1",
+      cool: "风冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "皮带传动",
+      frame: "低碳钢管式车架（冲压式 X 型横梁摇臂）",
+      lwh: "2375x940x1125", seat: 665, wb: 1695, tank: 18.9, weight: 309, clearance: 115,
+      suspF: "φ49mm 伸缩式双弯阀前叉（双刚性系数弹簧）", suspR: "隐藏式自由活塞螺簧单减震 · 行程 43mm（液压预载免工具调节）",
+      brkF: "四活塞固定卡钳", brkR: "双活塞浮动卡钳",
+      tireF: "130/60-B21（米其林 Scorcher 11）", tireR: "240/40-R18（米其林 Scorcher 11）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 液晶仪表",
+      src: "https://www.58moto.com/good/5823/configuration.html"
     }
   }
 };
