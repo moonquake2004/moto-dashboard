@@ -1990,6 +1990,31 @@ window.MOTO_SPECS = {
       abs: "标配前后（可关闭）", tcs: "标配 可关闭", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
       dash: "5 英寸 TFT 竖屏（蓝牙 + 导航投屏 / USB / 加热手把·前座垫 / 手动多段可调风挡 / 辅助灯 / T-BOX）",
       src: "https://www.58moto.com/good/22120/configuration.html"
+    },
+    "凯越|650RR": {
+      variant: "2026款 650RR 标准版", price: "33,977",
+      kw: 91, kwRpm: 13000, nm: 69, nmRpm: 11000, cc: 650, cyl: "四缸 直列 DOHC 冲压进气", cmp: "12.9:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "双翼梁车架（铝合金双摇臂）",
+      lwh: "2080x705x1145", seat: 810, wb: 1408, tank: 17, weight: 188, clearance: 130,
+      suspF: "渝安倒置（压缩/回弹多段可调）", suspR: "渝安中置多连杆（压缩/回弹多段可调）",
+      brkF: "双浮动碟 · 对置四活塞卡钳（泰斯克）", brkR: "单碟 · 单活塞卡钳（泰斯克）",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17（正新）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "仅升挡", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "6 寸 TFT（Motoplay / 蓝牙 + 导航投屏 / 6 轴 IMU / 后向毫米波 + 盲区监测 / 前后行车记录仪 / 转向阻尼器 / 五段模式 / 弹射起步 / 电控可变阀门排气 / T-BOX）",
+      src: "https://www.58moto.com/good/22242/configuration.html"
+    },
+    "凯越|321RR-S": {
+      variant: "2023款 321RR-S", price: "28,180",
+      kw: 30.5, kwRpm: 11000, nm: 29, nmRpm: 9000, cc: 320, cyl: "双缸 直列 DOHC", cmp: "11.2:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "1975x743x1100", seat: 790, wb: 1370, tank: 13, weight: 151, clearance: 135,
+      suspF: "(渝安) φ41mm 倒置・阻尼可调", suspR: "(渝安) 预载阻尼可调・外置气囊 52mm 行程",
+      brkF: "320mm 单碟浮动盘 · 对置四活塞（Brembo）", brkR: "240mm 单碟 · 双活塞",
+      tireF: "110/70-R17", tireR: "150/60-R17（正新 S3）",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "仅升挡", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 仪表（蓝牙 + 导航投屏 / USB / 运动·经济·弹射起步模式）",
+      src: "https://www.58moto.com/good/19823/configuration.html"
     }
   }
 };
