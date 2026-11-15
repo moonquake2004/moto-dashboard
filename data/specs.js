@@ -1144,6 +1144,48 @@ window.MOTO_SPECS = {
       abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "无",
       keyless: "无", dash: "智能数码仪表（蓝牙连接）",
       src: "https://www.58moto.com/good/20922/configuration.html"
+    },
+    "凯旋|TRIDENT 660": {
+      variant: "2026款 Trident 660 雪峰白", price: "49,900",
+      kw: 70, kwRpm: 11250, nm: 68, nmRpm: 8250, cc: 660, cyl: "三缸 直列", cmp: "11.95:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架（双面钢摇臂）",
+      seat: 810, wb: 1401, tank: 14, weight: 195,
+      suspF: "Showa SFF-BP φ41mm 倒置 · 行程 120mm",
+      suspR: "Showa 中置多连杆 · 行程 130mm",
+      brkF: "φ310mm 双碟（Nissin 双活塞滑动卡钳）", brkR: "φ255mm 单碟",
+      tireF: "120/70-R17", tireR: "180/55-R17",
+      abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "标配双向", cruise: "标配",
+      tpms: "无", keyless: "无", dash: "LCD + TFT 彩色屏（3 种模式 + 6 轴 IMU）",
+      src: "https://www.58moto.com/good/18703/configuration.html"
+    },
+    "光阳|AK550（含AK550 II代/AK575 PREMIUM）": {
+      variant: "2023款 AK550 II", price: "89,800",
+      kw: 39, nm: 52, nmRpm: 6000, cc: 550, cyl: "双缸 直列 DOHC",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "湿式多片离合", drive: "皮带传动",
+      frame: "铝合金车架",
+      lwh: "2190x940x1360", seat: 785, wb: 1580, tank: 14, weight: 239, clearance: 140,
+      suspF: "倒叉式前悬吊", suspR: "水平拖曳臂后悬吊",
+      brkF: "φ270mm 双碟 · Brembo 卡钳", brkR: "φ260mm 单碟",
+      tireF: "120/70-R15", tireR: "160/60-R15",
+      abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "无", cruise: "标配", tpms: "标配",
+      keyless: "标配", dash: "LED 液晶 + TFT（导航投屏 + 电动无级风挡 + 加热手把）",
+      src: "https://www.58moto.com/good/16952/configuration.html"
+    },
+    "哈雷戴维森|Street Bob®": {
+      variant: "2025款 Street Bob 辐条轮 台球灰", price: "191,800",
+      kw: 68, kwRpm: 5020, nm: 156, nmRpm: 2750, cc: 1923,
+      cyl: "V型双缸 风冷（Milwaukee-Eight® 117 Classic）", cmp: "10.3:1", cool: "风冷",
+      gear: "国际6挡", clutch: "湿式多片离合", drive: "皮带传动",
+      frame: "低碳钢管式车架（冲压式 X 型横梁摇臂）",
+      seat: 680, wb: 1630, tank: 13.2, weight: 293, clearance: 125,
+      suspF: "φ49mm 伸缩式双弯阀门前叉（双刚性系数弹簧）",
+      suspR: "单减震（凸轮式预载调节）",
+      brkF: "四活塞固定卡钳 · 双悬浮刹车盘", brkR: "双活塞浮动卡钳",
+      tireF: "100/90-B19", tireR: "150/80-B16",
+      abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "无", cruise: "标配", tpms: "标配",
+      keyless: "标配", dash: "4 英寸多功能触控显示屏（道路/雨天/运动模式）",
+      src: "https://www.58moto.com/good/3515/configuration.html"
     }
   }
 };
