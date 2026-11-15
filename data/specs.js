@@ -3023,5 +3023,18 @@ window.MOTO_SPECS = {
       dash: "TFT 仪表（电子油门 / 转向阻尼器 / 挡位显示 / 电加热手把 / 前座加热 / 行车记录仪 / 双闪）",
       src: "https://www.58moto.com/good/22122/configuration.html"
     }
+,
+    "本田|CRF1100L Africa Twin": {
+      variant: "2026款 CRF1100L Africa Twin MT", price: "150,800",
+      kw: 73, kwRpm: 7500, nm: 107, nmRpm: 5250, cc: 1084, cyl: "双缸 直列 OHC 四气门（92x81.5）", cmp: "10.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "半双摇篮车架 + 辐条轮",
+      lwh: "2330x960x1485", seat: "850/870", wb: 1575, tank: 18.8, weight: 231, clearance: 250,
+      brkF: "液压盘式", brkR: "液压盘式",
+      tireF: "90/90-21（真空胎 · 铝辐条）", tireR: "150/70-R18（真空胎 · 铝辐条）",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "6.5 寸 TFT 彩色触控屏（电子油门 / 手机连接 / 导航投屏 / 挡位显示）",
+      src: "https://www.58moto.com/good/5555/configuration.html"
+    }
   }
 };
