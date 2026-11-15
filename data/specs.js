@@ -545,6 +545,47 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "无", cruise: "无", tpms: "标配",
       keyless: "标配", dash: "TFT 仪表",
       src: "https://www.58moto.com/good/19881/configuration.html"
+    },
+    "杜卡迪|Multistrada V2": {
+      variant: "2025款 Multistrada V2", price: "137,900",
+      kw: 83, kwRpm: 9000, nm: 93.9, nmRpm: 7750, cc: 900, cyl: "双缸 V型", cmp: "13.1:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "单体铝合金车架",
+      seat: 830, wb: 1572.5, tank: 20, weight: 199,
+      suspF: "φ45mm 倒置式 · 行程 170mm（压缩/回弹可调）",
+      suspR: "后减震 · 行程 170mm（铝合金双摇臂）",
+      brkF: "双 φ320mm 半浮动盘 · Brembo 径向单体四活塞", brkR: "φ265mm 单盘 · Brembo 双活塞浮动卡钳",
+      tireF: "120/70-ZR19", tireR: "170/60-ZR17",
+      abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "标配双向", cruise: "标配", tpms: "标配",
+      keyless: "无", dash: "5 英寸全彩 TFT 仪表",
+      src: "https://www.58moto.com/good/18543/configuration.html"
+    },
+    "川崎|Z500": {
+      variant: "2026款 Z500", price: "39,800",
+      kw: 38.3, kwRpm: 10000, nm: 42.6, nmRpm: 7500, cc: 450, cyl: "双缸 直列", cmp: "11.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "高强度钢网格车架",
+      lwh: "1995x800x1055", seat: 785, wb: 1375, tank: 14, weight: 167, clearance: 145,
+      suspF: "φ41mm 伸缩式前叉 · 行程 120mm",
+      suspR: "Uni-Trak 中置多连杆 · 行程 130mm（预载可调）",
+      brkF: "φ310mm 单半浮动盘 · 单向平衡双活塞卡钳", brkR: "φ220mm 单盘 · 双活塞卡钳",
+      tireF: "110/70-R17", tireR: "150/60-R17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "全液晶仪表",
+      src: "https://www.58moto.com/good/21031/configuration.html"
+    },
+    "钱江|闪400": {
+      variant: "2026款 闪400", price: "19,999",
+      kw: 26, kwRpm: 8000, nm: 36, nmRpm: 4500, cc: 400, cyl: "双缸 V型", cmp: "11.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "钢管摇篮车架",
+      lwh: "2220x830x1100", seat: 720, wb: 1520, tank: 16, weight: 173, clearance: 160,
+      suspF: "倒置式前减震", suspR: "可调弹簧式后减震",
+      brkF: "φ300mm 单盘 · 径向四活塞卡钳", brkR: "φ240mm 单盘 · 单活塞卡钳",
+      tireF: "130/90-16", tireR: "150/80-16",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "彩色液晶仪表",
+      src: "https://www.58moto.com/good/21425/configuration.html"
     }
   }
 };
