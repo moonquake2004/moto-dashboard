@@ -2293,6 +2293,47 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "4 英寸模拟转速表 + LCD（挡位显示）",
       src: "https://www.58moto.com/good/18640/configuration.html"
+    },
+    "川崎|NINJA ZX-4R": {
+      variant: "2026款 NINJA ZX-4R", price: "59,800",
+      kw: 57, kwRpm: 14000, nm: 39.6, nmRpm: 13200, cc: 401, cyl: "四缸 直列 DOHC 四气门（冲压进气）", cmp: "12.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "高强度钢管网格式车架",
+      lwh: "1990x765x1110", seat: 800, wb: 1380, tank: 15, weight: 188, clearance: 135,
+      suspF: "φ37mm SFF-BP 倒置前叉（Top-out 型弹簧）", suspR: "水平多连杆后悬挂（预载可调）",
+      brkF: "双 290mm 半浮动盘 · 径向对置四活塞卡钳", brkR: "单 220mm 盘 · 单活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 仪表（电子油门 / 挡位显示 / 不可调风挡）",
+      src: "https://www.58moto.com/good/20484/configuration.html"
+    },
+    "凯旋|SPEED 400": {
+      variant: "2026款 Speed 400 幻影黑", price: "29,900",
+      kw: 29.4, kwRpm: 8000, nm: 37.5, nmRpm: 6500, cc: 398, cyl: "单缸 DOHC 四气门", cmp: "12:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "混合脊柱/周边管状钢车架 + 螺栓固定式后副车架（双面铸铝合金摇臂）",
+      seat: 790, wb: 1377, tank: 13, weight: 170,
+      suspF: "φ43mm 倒置大活塞前叉 · 行程 140mm", suspR: "气体单震 RSU（外置储气罐 / 预载可调）· 行程 130mm",
+      brkF: "单 300mm 固定盘 · 四活塞径向卡钳", brkR: "单 230mm 固定盘 · 浮动卡钳",
+      tireF: "110/70-R17", tireR: "150/60-R17（象牌）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "机械指针 + 液晶（电子油门 / USB）",
+      src: "https://www.58moto.com/good/21073/configuration.html"
+    },
+    "凯旋|TIGER 900": {
+      variant: "2026款 Tiger 900 GT", price: "99,900",
+      kw: 79.5, kwRpm: 9500, nm: 90, nmRpm: 6850, cc: 888, cyl: "三缸 直列 DOHC 四气门", cmp: "13:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架 + 铝合金后副车架（铝合金双摇臂）",
+      seat: 820, wb: 1556, tank: 20, weight: 219, clearance: 181,
+      suspF: "Marzocchi φ45mm 倒置多片阀控前叉（预载/压缩/回弹可调）· 行程 180mm",
+      suspR: "Marzocchi 中置多连杆减震（预载/回弹可调）· 行程 170mm",
+      brkF: "双 320mm 浮动盘 · Brembo Stylema 四活塞一体成型卡钳",
+      brkR: "单 255mm 制动盘 · Brembo 单活塞滑动卡钳",
+      tireF: "100/90-19（铝合金铸造轮）", tireR: "150/70-R17（米其林）",
+      abs: "标配前后（弯道 ABS / 可关闭）", tcs: "标配", qs: "无", cruise: "标配", tpms: "标配", keyless: "无",
+      dash: "7 寸 TFT（电子油门 / 定速巡航 / 导航投屏）",
+      src: "https://www.58moto.com/good/18580/configuration.html"
     }
   }
 };
