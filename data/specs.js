@@ -2524,6 +2524,31 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "LCD 液晶仪表",
       src: "https://www.58moto.com/good/5587/configuration.html"
+    },
+    "雅马哈|MT-07": {
+      variant: "2025款 MT-07", price: "69,800",
+      kw: 54, kwRpm: 8750, nm: 68, nmRpm: 6500, cc: 689, cyl: "双缸 直列 DOHC 四气门（80x68.6）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      lwh: "2065x780x1110", seat: 805, wb: 1395, tank: 13.7, weight: 184, clearance: 150,
+      suspF: "φ41mm 正立式伸缩前叉", suspR: "中置多连杆单避震",
+      brkF: "双 282mm 盘 · 对向四活塞卡钳", brkR: "单 245mm 盘 · 单向单活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17（邓禄普）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "负显多功能液晶（电子油门 / 蓝牙 / 挡位显示）",
+      src: "https://www.58moto.com/good/5082/configuration.html"
+    },
+    "雅马哈|YZF-R7": {
+      variant: "2024款 YZF-R7", price: "109,800",
+      kw: 54, kwRpm: 8750, nm: 67, nmRpm: 6500, cc: 689, cyl: "双缸 直列 DOHC 四气门（80x68.6）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "高强度钢管车架",
+      lwh: "2070x705x1160", seat: 835, wb: 1395, tank: 13, weight: 188, clearance: 135,
+      suspF: "φ41mm 倒立式前减震", suspR: "水平多连杆式后减震器",
+      brkF: "单 298mm 碟刹", brkR: "单 245mm 碟刹",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 多功能液晶（挡位显示 / 不可调风挡）",
+      src: "https://www.58moto.com/good/19705/configuration.html"
     }
   }
 };
