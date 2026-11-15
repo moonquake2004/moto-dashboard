@@ -266,6 +266,54 @@ window.MOTO_SPECS = {
       frame: "钢管车架",
       lwh: "2265x940x1360", seat: 810, wb: 1450, tank: 18, weight: 216, clearance: 200,
       src: "https://www.58moto.com/good/20040/configuration.html"
+    },
+    "凯越|800X": {
+      variant: "2026款 800X 硬汉", price: "42,800",
+      kw: 71, kwRpm: 9000, nm: 80, nmRpm: 7500, cc: 800, cyl: "双缸 直列", cmp: "13:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钻石双翼梁一体式车架",
+      lwh: "2270x940x1380", seat: 875, wb: 1540, tank: 20, weight: 194, clearance: 265,
+      suspF: "KYB 倒置式 φ48mm · 行程 240mm（预载/压缩/回弹可调）",
+      suspR: "KYB 中置多连杆 · 行程 230mm（预载/压缩/回弹可调）",
+      brkF: "双浮动碟 · 对置四活塞卡钳（泰斯克）", brkR: "单碟 · 单活塞卡钳（泰斯克）",
+      tireF: "90/90-21", tireR: "150/70-R18",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "标配双向", cruise: "标配", tpms: "标配",
+      dash: "竖屏 TFT 仪表",
+      src: "https://www.58moto.com/good/19587/configuration.html"
+    },
+    "本田|CB650R": {
+      variant: "2024款 CB650R E-Clutch", price: "76,800",
+      kw: 56, kwRpm: 9000, nm: 60, nmRpm: 9000, cc: 650, cyl: "四缸 直列", cmp: "11.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合（E-Clutch 电子离合）", drive: "链条传动",
+      lwh: "2130x780x1075", seat: 810, wb: 1450, tank: 15.4, weight: 207, clearance: 150,
+      suspF: "Showa SFF-BP 倒置式", suspR: "中置单筒",
+      brkF: "液压双碟", brkR: "液压单碟",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶显示屏",
+      src: "https://www.58moto.com/good/6541/configuration.html"
+    },
+    "本田|NC750X": {
+      variant: "2025款 NC750X DCT", price: "91,800",
+      kw: 43.1, kwRpm: 6750, nm: 69, nmRpm: 4750, cc: 750, cyl: "双缸 直列", cmp: "10.7:1",
+      cool: "水冷", gear: "DCT 6 速自动挡", clutch: "湿式多片离合", drive: "链条传动",
+      lwh: "2210x846x1330", seat: 802, wb: 1530, tank: 14.1, weight: 226, clearance: 145,
+      suspF: "41mm 伸缩式前叉",
+      brkF: "双碟刹", brkR: "240mm 单碟",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      src: "https://www.58moto.com/good/5556/configuration.html"
+    },
+    "本田|CB750": {
+      variant: "2023款 CB750 Hornet", price: "68,800",
+      kw: 51, nm: 69, cc: 750, cyl: "双缸 直列", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2090x780x1085", seat: 795, wb: 1420, tank: 15.2, weight: 190, clearance: 140,
+      suspF: "SFF-BP 倒立式前叉", suspR: "单减震 · Pro-Link 多连杆摇臂",
+      brkF: "双碟刹", brkR: "单碟刹",
+      tireF: "120/70-17", tireR: "160/60-17",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "5 英寸 TFT 全彩液晶仪表",
+      src: "https://www.58moto.com/good/20569/configuration.html"
     }
   }
 };
