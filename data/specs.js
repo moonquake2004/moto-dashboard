@@ -1119,6 +1119,31 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "指针 + 数码负显 LCD",
       src: "https://www.58moto.com/good/5696/configuration.html"
+    },
+    "三阳|CRUISYM 400 巡弋400（含25款/26款旗舰版）": {
+      variant: "2026款 巡弋 Cruisym400 旗舰版", price: "36,980",
+      kw: 25, kwRpm: 6750, nm: 37, nmRpm: 5000, cc: 400, cyl: "单缸 四气门",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      lwh: "2230x820x1360", seat: 785, wb: 1552, tank: 14.5, weight: 222, clearance: 140,
+      suspR: "五段可调双后避震",
+      brkF: "φ288mm 碟刹", brkR: "φ275mm 碟刹",
+      tireF: "120/70-15", tireR: "160/60-14",
+      abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "无", cruise: "无",
+      tpms: "标配", keyless: "标配", dash: "7 寸 TFT（导航投屏 + 前后行车记录仪 + T-BOX）",
+      src: "https://www.58moto.com/good/21051/configuration.html"
+    },
+    "力帆|KPR250": {
+      variant: "2024款 KPR250", price: "12,999",
+      kw: 21, kwRpm: 9500, nm: 23.5, nmRpm: 7500, cc: 250, cyl: "单缸 SOHC 四气门", cmp: "11.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "刚性脊梁式车架（双摇臂）",
+      lwh: "2060x790x1115", seat: 770, wb: 1335, tank: 14, weight: 159, clearance: 158,
+      suspF: "正置减震", suspR: "单减震",
+      brkF: "φ300mm 碟刹", brkR: "φ220mm 碟刹",
+      tireF: "100/80-17", tireR: "130/70-17",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "无",
+      keyless: "无", dash: "智能数码仪表（蓝牙连接）",
+      src: "https://www.58moto.com/good/20922/configuration.html"
     }
   }
 };
