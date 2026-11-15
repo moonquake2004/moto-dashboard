@@ -1227,6 +1227,49 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "5 寸 TFT 彩色显示屏",
       src: "https://www.58moto.com/good/6398/configuration.html"
+    },
+    "本田|CB1000 SP Honda HORNET": {
+      variant: "2025款 CB1000 SP Honda HORNET", price: "128,800",
+      kw: 67, kwRpm: 7000, nm: 91, nmRpm: 7000, cc: 1000, cyl: "四缸 直列 DOHC", cmp: "11.7:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2150x790x1085", seat: 809, wb: 1450, tank: 17, weight: 211, clearance: 135,
+      suspF: "Showa SFF-BP 倒置 · 行程 130mm",
+      suspR: "Öhlins TTX36 中置单减震 · 行程 140mm",
+      brkF: "双碟 · Brembo Stylema 卡钳", brkR: "碟刹",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后", tcs: "标配（可关闭）", qs: "标配双向", cruise: "无", tpms: "无",
+      keyless: "无", dash: "5 英寸 TFT 全彩仪表（标准/运动/雨天/自定义 4 模式）",
+      src: "https://www.58moto.com/good/22004/configuration.html"
+    },
+    "哈雷戴维森|Fat Boy®": {
+      variant: "2026款 Fat Boy 台球雾灰", price: "255,800",
+      kw: 77, kwRpm: 5020, nm: 168, nmRpm: 3000, cc: 1923,
+      cyl: "V型双缸（Milwaukee-Eight® 117 Custom）", cmp: "10.3:1", cool: "风冷",
+      gear: "国际6挡", clutch: "湿式多片离合", drive: "皮带传动",
+      frame: "低碳钢管式车架（矩形截面主车架 / 冲压 X 型横梁摇臂）",
+      lwh: "2365x965x1120", seat: 675, wb: 1650, tank: 18.9, weight: 315, clearance: 125,
+      suspF: "φ49mm 伸缩式双弯阀门前叉（双刚性系数弹簧）",
+      suspR: "隐藏式自由活塞单减震 · 43mm 行程（免工具液压预载调节）",
+      brkF: "四活塞固定卡钳", brkR: "双活塞浮动卡钳",
+      tireF: "160/60-R18", tireR: "240/40-R18",
+      abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "无", cruise: "标配", tpms: "标配",
+      keyless: "无", dash: "5 英寸模拟显示屏",
+      src: "https://www.58moto.com/good/7074/configuration.html"
+    },
+    "阿普利亚|RSV4": {
+      variant: "2026款 RSV4 Factory", price: "209,000",
+      kw: 164, kwRpm: 13000, nm: 127, nmRpm: 10800, cc: 1100, cyl: "V型四缸 DOHC", cmp: "13.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金双翼梁车架（倒置双支撑铝制摇臂）",
+      lwh: "2055x750x1165", seat: 840, wb: 1435, tank: 18, weight: 204,
+      suspF: "Öhlins NIX φ43mm 倒置（Smart EC 2.0 电子，预载/压缩/回弹可调）· 行程 125mm",
+      suspR: "Öhlins TTX 中置多连杆（Smart EC 2.0 电子可调）· 行程 115mm",
+      brkF: "φ330mm 双浮动碟 · Brembo Stylema 径向单体四活塞",
+      brkR: "φ220mm 单碟 · Brembo 双活塞",
+      tireF: "120/70-ZR17", tireR: "200/55-ZR17",
+      abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "标配双向", cruise: "标配", tpms: "无",
+      keyless: "无", dash: "5 寸 TFT 彩色显示屏（街道/运动/自定义/竞技/赛道1/赛道2 6 模式）",
+      src: "https://www.58moto.com/good/5562/configuration.html"
     }
   }
 };
