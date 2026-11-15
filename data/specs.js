@@ -2077,6 +2077,45 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "LED 仪表（USB / 挡位显示）",
       src: "https://www.58moto.com/good/20573/configuration.html"
+    },
+    "奔达|金吉拉355": {
+      variant: "2026款 金吉拉355 长轴距版", price: "19,980",
+      kw: 26, kwRpm: 9000, nm: 32, nmRpm: 6000, cc: 343, cyl: "双缸 V型", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "摇篮式钢管车架",
+      lwh: "2220x850x1088", seat: 690, wb: 1525, tank: 16, weight: 190, clearance: 125,
+      suspF: "正置式", suspR: "边置式双减震",
+      brkF: "碟刹 · 对向四活塞卡钳", brkR: "碟刹 · 对向双活塞卡钳",
+      tireF: "120/80-16", tireR: "150/80-15（正新）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "LCD 全贴合显示屏（USB / 手机 App / 单前行车记录仪 / BCD 智能车联网 + APP 解锁）",
+      src: "https://www.58moto.com/good/22884/configuration.html"
+    },
+    "奔达|黑旗600": {
+      variant: "2026款 黑旗600 Pro", price: "32,800",
+      kw: 52, kwRpm: 10500, nm: 55, nmRpm: 8000, cc: 600, cyl: "四缸 V型", cmp: "12:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "双翼摇篮车架",
+      lwh: "2310x907x1108", seat: 700, wb: 1588, tank: 16, weight: 240, clearance: 130,
+      suspF: "正置式", suspR: "边置式双减震（自适应电子悬挂）",
+      brkF: "双碟刹 · 西互对置四活塞卡钳", brkR: "单碟刹 · 双活塞卡钳",
+      tireF: "130/90-R16", tireR: "180/65-R16",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "TFT 全彩仪表 + 油箱 TFT 副仪表（电子油门 / USB / 行车记录仪 / BCD 智能车联网）",
+      src: "https://www.58moto.com/good/22279/configuration.html"
+    },
+    "奔达|拿破仑250": {
+      variant: "2024款 拿破仑250", price: "18,380",
+      kw: 19, kwRpm: 9000, nm: 25, nmRpm: 5500, cc: 249, cyl: "双缸 V型 四气门", cmp: "11.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管摇篮车架",
+      lwh: "2333x838x1038", seat: 748, wb: 1545, tank: 9.5, weight: 182, clearance: 120,
+      suspF: "弹簧-液力阻尼式", suspR: "弹簧减震",
+      brkF: "对向四活塞碟刹", brkR: "对向双活塞碟刹",
+      tireF: "130/80-18", tireR: "160/70-18",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 仪表（挡位显示）",
+      src: "https://www.58moto.com/good/21249/configuration.html"
     }
   }
 };
