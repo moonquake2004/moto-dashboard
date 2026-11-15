@@ -3010,5 +3010,18 @@ window.MOTO_SPECS = {
       dash: "5 寸 TFT（电子油门 / 标准·雨天·赛道模式 / 转向阻尼器 / 导航投屏 / 手机连接 / OTA / USB / 风挡 / 6 轴 IMU / T-BOX）",
       src: "https://www.58moto.com/good/20430/configuration.html"
     }
+,
+    "钱江|追921": {
+      variant: "2026款 追921", price: "66,999",
+      kw: 95, cc: 921, cyl: "四缸 直列 每缸四气门",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合（液压）", drive: "链条传动",
+      lwh: "2130x930x1130", wb: 1425, weight: 215,
+      suspF: "Marzocchi 倒置前叉（压缩/回弹多段可调）", suspR: "中置式多连杆减震（外置气囊）",
+      brkF: "双 Brembo 碟刹", brkR: "单碟刹",
+      tireF: "120/70-ZR17（倍耐力 Diablo Rosso IV）", tireR: "190/50-ZR17（倍耐力 Diablo Rosso IV）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "双向快排", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "TFT 仪表（电子油门 / 转向阻尼器 / 挡位显示 / 电加热手把 / 前座加热 / 行车记录仪 / 双闪）",
+      src: "https://www.58moto.com/good/22122/configuration.html"
+    }
   }
 };
