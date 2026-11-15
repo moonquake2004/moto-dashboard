@@ -647,6 +647,96 @@ window.MOTO_SPECS = {
       abs: "标配前后（可关闭，弯道 ABS 标配）", tcs: "标配", qs: "无", cruise: "标配",
       tpms: "无", keyless: "无", dash: "5 英寸 TFT 彩色仪表",
       src: "https://www.58moto.com/good/19910/configuration.html"
+    },
+    "川崎|Z1000": {
+      variant: "2022款 Z1000", price: "154,000",
+      kw: 100.9, kwRpm: 9800, nm: 109, nmRpm: 7300, cc: 1000, cyl: "四缸 直列", cmp: "11.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金双翼梁车架",
+      lwh: "2050x790x1055", seat: 815, wb: 1440, tank: 17, weight: 221, clearance: 125,
+      suspF: "SHOWA φ41mm 倒置前叉（回弹/预载可调）", suspR: "多连杆中置后减（预载可调）",
+      brkF: "φ310mm 双碟 · Brembo M50 对向四活塞放射卡钳",
+      brkR: "φ250mm 单浮动碟 · 单活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "190/50-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "电子仪表",
+      src: "https://www.58moto.com/good/5084/configuration.html"
+    },
+    "杜卡迪|Scrambler 1100": {
+      variant: "2021款 Scrambler 1100", price: "138,000",
+      kw: 63, kwRpm: 7500, nm: 88, nmRpm: 4750, cc: 1100, cyl: "双缸 L型 2气门", cmp: "11:1",
+      cool: "油冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "Trellis 管状钢质车架",
+      lwh: "2190x895x1330", seat: 810, wb: 1514, tank: 15, weight: 206,
+      suspF: "Marzocchi φ45mm 倒立式（全可调）", suspR: "Kayaba 单筒避震（预载/回弹可调）",
+      brkF: "2×φ320mm 半浮动盘 · Brembo M4.32 单体四活塞", brkR: "φ245mm 单盘 · 单活塞浮动卡钳",
+      tireF: "120/70-ZR18", tireR: "180/55-ZR17",
+      abs: "标配前后（Bosch 弯道 ABS）", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      src: "https://www.58moto.com/good/6557/configuration.html"
+    },
+    "雅马哈|MT-10SP": {
+      variant: "2022款 MT-10 SP", price: "219,800",
+      kw: 122, kwRpm: 11500, nm: 112, nmRpm: 9000, cc: 1000, cyl: "四缸 直列", cmp: "12:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2100x800x1165", seat: 835, wb: 1405, tank: 17, weight: 214, clearance: 135,
+      suspF: "电子控制倒立前叉（Öhlins ERS）", suspR: "电子控制后减震（Öhlins ERS）",
+      brkF: "φ320mm 双碟盘", brkR: "φ220mm 单碟盘",
+      tireF: "120/70-ZR17", tireR: "190/55-ZR17",
+      abs: "标配前后（弯道 ABS 标配）", tcs: "标配", cruise: "标配", qs: "无", tpms: "无",
+      keyless: "无", dash: "4.2 英寸全彩 TFT 仪表",
+      src: "https://www.58moto.com/good/5795/configuration.html"
+    },
+    "雅马哈|NIKEN GT": {
+      variant: "2020款 Niken GT", price: "258,000",
+      kw: 84.6, kwRpm: 10000, nm: 87.5, nmRpm: 8500, cc: 850, cyl: "三缸 直列", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢铝混合车架（三轮回转前悬挂）",
+      lwh: "2150x885x1425", seat: 835, wb: 1510, tank: 18, weight: 267, clearance: 150,
+      brkF: "2×φ298mm 浮动碟 · 双子星对向四活塞", brkR: "φ282mm 碟盘 · NISSIN 单活塞",
+      tireF: "120/70-R15", tireR: "190/55-R17",
+      abs: "标配前后", tcs: "标配", qs: "标配双向", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "液晶仪表",
+      src: "https://www.58moto.com/good/6820/configuration.html"
+    },
+    "川崎|Z650RS": {
+      variant: "2023款 Z650RS", price: "84,900",
+      kw: 46, kwRpm: 7000, nm: 63, nmRpm: 6500, cc: 650, cyl: "双缸 直列", cmp: "10.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "高强度钢管网格式车架",
+      lwh: "2065x800x1115", seat: 800, wb: 1405, tank: 12, weight: 187,
+      suspF: "φ41mm 套筒式前叉", suspR: "水平单筒多连杆（预载可调）",
+      brkF: "φ300mm 双半浮动碟 · 双活塞卡钳", brkR: "φ220mm 单碟 · 单活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "机械指针 + 液晶仪表",
+      src: "https://www.58moto.com/good/19852/configuration.html"
+    },
+    "川崎|NINJA 1000SX": {
+      variant: "2023款 Ninja 1000SX", price: "179,200",
+      kw: 104.5, kwRpm: 10000, nm: 111, nmRpm: 8000, cc: 1000, cyl: "四缸 直列", cmp: "11.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金双翼梁车架",
+      lwh: "2100x825x1225", seat: 835, wb: 1440, tank: 19, weight: 235, clearance: 135,
+      suspF: "φ41mm 倒置前叉（压缩/回弹/预载可调）", suspR: "水平多连杆后减震（带气瓶，回弹/预载可调）",
+      brkF: "φ300mm 双浮动浪花碟 · 对向四活塞卡钳", brkR: "φ250mm 单碟 · 单活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "190/50-ZR17",
+      abs: "标配前后", tcs: "标配", qs: "标配双向", cruise: "标配", tpms: "标配",
+      keyless: "无", dash: "TFT 彩色仪表（支持手机连接）",
+      src: "https://www.58moto.com/good/18393/configuration.html"
+    },
+    "川崎|Z1100": {
+      variant: "2026款 Z1100 SE", price: "149,800",
+      kw: 100, kwRpm: 9000, nm: 113, nmRpm: 7600, cc: 1100, cyl: "四缸 直列",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "双管铝合金车架",
+      lwh: "2055x825x1085", seat: 815, wb: 1440, tank: 17, weight: 221, clearance: 125,
+      suspF: "φ41mm 倒置前叉 · 行程 120mm（预载/压缩/回弹全可调）",
+      suspR: "Öhlins S46 中置多连杆 · 行程 136mm（预载/回弹可调）",
+      brkF: "φ310mm 双半浮动盘 · Brembo M4.32 径向四活塞", brkR: "φ260mm 单碟 · 单活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "190/50-ZR17",
+      abs: "标配前后（6 轴 IMU）", tcs: "标配", qs: "无", cruise: "标配", tpms: "无",
+      keyless: "无", dash: "LCD 仪表",
+      src: "https://www.58moto.com/good/22355/configuration.html"
     }
   }
 };
