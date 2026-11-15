@@ -481,6 +481,30 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "标配双向", cruise: "无", tpms: "无",
       keyless: "无", dash: "5 英寸 TFT 彩色显示屏",
       src: "https://www.58moto.com/good/19970/configuration.html"
+    },
+    "赛科龙|RT250E": {
+      variant: "2026款 RT250E 摩登版", price: "14,999",
+      kw: 19.5, kwRpm: 8500, nm: 24.5, nmRpm: 6500, cc: 250, cyl: "单缸", cool: "水冷",
+      gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      lwh: "2010x770x1145", seat: 750, wb: 1410, tank: 10, weight: 162, clearance: 120,
+      suspF: "正置式前叉", suspR: "边置式双减震（预载可调）",
+      brkF: "盘式", brkR: "盘式",
+      tireF: "120/70-12", tireR: "130/70-12",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      src: "https://www.58moto.com/good/22618/configuration.html"
+    },
+    "雅马哈|XS 900 R": {
+      variant: "2022款 XS900R", price: "132,800",
+      kw: 87.5, kwRpm: 10000, nm: 93, nmRpm: 7000, cc: 900, cyl: "三缸 直列", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "轻量化铝合金车架",
+      lwh: "2155x860x1155", seat: 810, wb: 1495, tank: 14, weight: 193, clearance: 140,
+      suspF: "伸缩套筒式前叉", suspR: "摇臂式后悬挂",
+      brkF: "298mm 碟 + 三活塞卡钳", brkR: "245mm 单碟",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后", tcs: "标配", qs: "标配双向", cruise: "标配", tpms: "无",
+      keyless: "无", dash: "3.5 寸全彩 TFT 仪表",
+      src: "https://www.58moto.com/good/6073/configuration.html"
     }
   }
 };
