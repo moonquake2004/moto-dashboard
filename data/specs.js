@@ -2689,6 +2689,32 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "标配", tpms: "标配", keyless: "标配",
       dash: "7 寸 TFT 全彩（电子悬挂 / 3 年不限里程质保）",
       src: "https://www.58moto.com/good/15545/configuration.html"
+    },
+    "凯旋|BONNEVILLE SPEEDMASTER": {
+      variant: "2026款 Speedmaster", price: "128,900",
+      kw: 57.5, kwRpm: 6100, nm: 106, nmRpm: 4000, cc: 1200, cyl: "双缸 直列 SOHC 四气门（97.6x80）", cmp: "10:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管摇篮结构车架（双边钢管摇臂）",
+      seat: 705, wb: 1500, tank: 14, weight: 263,
+      suspF: "Showa φ47mm 前叉", suspR: "连杆式独立后减震单元",
+      brkF: "双 310mm 盘 · Brembo 双活塞卡钳", brkR: "单 255mm 盘 · Nissin 单活塞卡钳",
+      tireF: "MT90-B16（铝合金辐条轮）", tireR: "150/80-R16",
+      abs: "标配前后（弯道 ABS）", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "指针式仪表 + LCD 多功能显示屏（电子油门 / 挡位显示）",
+      src: "https://www.58moto.com/good/6391/configuration.html"
+    },
+    "凯旋|SCRAMBLER 1200": {
+      variant: "2026款 Scrambler 1200 X 曜石黑", price: "108,900",
+      kw: 66.2, kwRpm: 7000, nm: 110, nmRpm: 4500, cc: 1200, cyl: "双缸 直列 SOHC 四气门（97.6x80）", cmp: "11.0:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管结构车架（铝合金双摇臂）",
+      lwh: "2286x834x1185", seat: 820, wb: 1525, tank: 15, weight: 228,
+      suspF: "倒置式前叉 · 行程 170mm", suspR: "边置式双减震 · 行程 170mm",
+      brkF: "双 310mm 盘 · 双活塞 Nissin 轴向卡钳", brkR: "单 255mm 盘 · 单活塞浮动 Nissin 卡钳",
+      tireF: "90/90-21（铝合金辐条轮）", tireR: "150/70-R17",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 彩色液晶（电子油门）",
+      src: "https://www.58moto.com/good/15633/configuration.html"
     }
   }
 };
