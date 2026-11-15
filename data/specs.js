@@ -2038,6 +2038,45 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "7 寸竖式 TFT（蓝牙 + 导航投屏 / USB / 不可调风挡）",
       src: "https://www.58moto.com/good/19587/configuration.html"
+    },
+    "奔达|金吉拉500": {
+      variant: "2025款 金吉拉500", price: "23,980",
+      kw: 39, kwRpm: 9300, nm: 48, nmRpm: 6000, cc: 476, cyl: "双缸 V型 水冷", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "摇篮式车架",
+      lwh: "2260x846x1135", seat: 705, wb: 1545, tank: 16, weight: 212, clearance: 170,
+      suspF: "倒置液压减震", suspR: "液压减震",
+      brkF: "对向四活塞卡钳（西互）", brkR: "对向双活塞碟刹",
+      tireF: "150/80-16", tireR: "180/65-16",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 全彩仪表（USB / 挡位显示 / 奔达 BCD 智能车联网 + APP 解锁）",
+      src: "https://www.58moto.com/good/21484/configuration.html"
+    },
+    "奔达|灰石250": {
+      variant: "2026款 灰石250", price: "16,980",
+      kw: 20.2, kwRpm: 9000, nm: 23, nmRpm: 7000, cc: 250, cyl: "双缸 V型", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "摇篮式钢管车架",
+      lwh: "2258x860x1113", seat: 715, wb: 1529, tank: 15.5, weight: 182, clearance: 172,
+      suspF: "倒置式", suspR: "边置式双减震",
+      brkF: "对向四活塞卡钳", brkR: "对向双活塞卡钳",
+      tireF: "130/90-16", tireR: "150/80-16",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "手机蓝牙钥匙",
+      dash: "LCD 全贴合仪表（USB / 手机 App 远程 / 前置行车记录仪）",
+      src: "https://www.58moto.com/good/21135/configuration.html"
+    },
+    "奔达|拿破仑450": {
+      variant: "2023款 拿破仑450", price: "26,900",
+      kw: 37, kwRpm: 8500, nm: 45, nmRpm: 7000, cc: 448, cyl: "双缸 V型", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "摇篮式钢管车架（铝合金平叉）",
+      lwh: "2260x846x1183", seat: 695, wb: 1545, tank: 16, weight: 196, clearance: 150,
+      suspF: "正置减震", suspR: "液压减震",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "150/80-16", tireR: "180/65-16",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LED 仪表（USB / 挡位显示）",
+      src: "https://www.58moto.com/good/20573/configuration.html"
     }
   }
 };
