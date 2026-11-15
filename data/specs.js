@@ -998,6 +998,33 @@ window.MOTO_SPECS = {
       abs: "标配前后（可关闭）", tcs: "标配", qs: "标配双向", cruise: "标配", tpms: "标配",
       keyless: "无", dash: "TFT 仪表（导航投屏 + T-BOX）",
       src: "https://www.58moto.com/good/19722/configuration.html"
+    },
+    "钱江|赛800": {
+      variant: "2026款 赛800RC", price: "49,999",
+      kw: 92, kwRpm: 12000, nm: 78, nmRpm: 10000, cc: 800, cyl: "四缸 直列 冲压进气", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "全铝一体双翼梁车架（铝合金双摇臂）",
+      lwh: "2085x800x1215", seat: 830, wb: 1410, tank: 16, weight: 205,
+      suspF: "Marzocchi 倒置式（预载/压缩/回弹可调）",
+      suspR: "Marzocchi 中置多连杆（压缩/回弹可调）",
+      brkF: "φ320mm 碟刹 · Brembo 卡钳", brkR: "φ260mm 碟刹 · Brembo 卡钳",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后（弯道 ABS + 可关闭）", tcs: "标配", qs: "标配双向", cruise: "标配",
+      tpms: "标配", keyless: "无", dash: "TFT 仪表（转向阻尼器标配）",
+      src: "https://www.58moto.com/good/20600/configuration.html"
+    },
+    "贝纳利|TRK702": {
+      variant: "2025款 TRK702 公路款", price: "36,800",
+      kw: 56, kwRpm: 8500, nm: 68.2, nmRpm: 6250, cc: 700, cyl: "双缸 直列", cmp: "11.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管编织车架（铝制双摇臂）",
+      lwh: "2330x940x1395", seat: 795, wb: 1500, tank: 20, weight: 220, clearance: 190,
+      suspF: "马祖奇倒置式（预载/压缩/回弹可调）",
+      brkF: "φ320mm 双碟 Sunstar · Brembo 卡钳", brkR: "φ260mm 双碟 Sunstar · Brembo 卡钳",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      abs: "标配前后", tcs: "标配（可关闭）", qs: "无", cruise: "标配", tpms: "无",
+      keyless: "无", dash: "7 寸 TFT 仪表（导航投屏 + 行车记录仪）",
+      src: "https://www.58moto.com/good/19927/configuration.html"
     }
   }
 };
