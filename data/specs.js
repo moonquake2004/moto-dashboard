@@ -1725,6 +1725,19 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
       dash: "彩色液晶仪表（USB 充电 / 侧支架熄火）",
       src: "https://www.58moto.com/good/21859/configuration.html"
+    },
+    "光阳|赛艇250（含2025款）": {
+      variant: "2025款 赛艇 250", price: "20,800",
+      kw: 16, kwRpm: 7500, nm: 22, nmRpm: 6500, cc: 250, cyl: "单缸 SOHC 两气门", cool: "水冷",
+      gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "双龙骨高强度车架",
+      lwh: "2250x800x1280", seat: 780, wb: 1540, tank: 13, weight: 199, clearance: 150,
+      suspF: "正置式 φ37mm（内管）", suspR: "边置式双减 · 预载 5 段可调",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/80-14", tireR: "150/70-13",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "液晶仪表 + 机械指针（USB 充电 / 标配行车记录仪 / 不可调风挡）",
+      src: "https://www.58moto.com/good/5526/configuration.html"
     }
   }
 };
