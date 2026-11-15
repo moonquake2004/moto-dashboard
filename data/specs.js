@@ -442,6 +442,45 @@ window.MOTO_SPECS = {
       tireF: "130/90-16", tireR: "150/80-16",
       abs: "标配前后", tcs: "标配", tpms: "无", keyless: "无", dash: "LCD 仪表",
       src: "https://www.58moto.com/good/22873/configuration.html"
+    },
+    "雅马哈|MT-03": {
+      variant: "2025款 MT-03", price: "39,800",
+      kw: 30.4, kwRpm: 10750, nm: 29.2, nmRpm: 9000, cc: 320, cyl: "双缸 直列", cmp: "11.2:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "钻石型车架",
+      lwh: "2090x755x1075", seat: 780, wb: 1380, tank: 14, weight: 167, clearance: 160,
+      suspF: "KYB 37mm 倒立式前叉", suspR: "整体摆动式",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "110/70-R17", tireR: "140/70-R17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "全液晶多功能仪表",
+      src: "https://www.58moto.com/good/5647/configuration.html"
+    },
+    "凯越|625V": {
+      variant: "2025款 625V 枪骑兵", price: "24,980",
+      kw: 45, kwRpm: 8500, nm: 60, nmRpm: 5500, cc: 600, cyl: "双缸 V型", cmp: "12:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      lwh: "2220x800x1115", seat: 700, wb: 1490, tank: 20, weight: 200, clearance: 160,
+      suspF: "倒置式", suspR: "边置式双减震",
+      brkF: "单浮动盘 + 泰斯克对置四活塞卡钳", brkR: "固定平盘 + 泰斯克对置双活塞卡钳",
+      tireF: "120/70-R18", tireR: "160/60-R16",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "无",
+      keyless: "无", dash: "TFT 仪表",
+      src: "https://www.58moto.com/good/21732/configuration.html"
+    },
+    "杜卡迪|Streetfighter V2": {
+      variant: "2026款 Street Fighter V2", price: "119,000",
+      kw: 88, kwRpm: 10750, nm: 93.3, nmRpm: 8250, cc: 900, cyl: "双缸 V型", cmp: "13.1:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "单体式铝合金车架",
+      seat: 838, wb: 1493, tank: 15, weight: 178,
+      suspF: "Marzocchi φ43mm 倒置式 · 行程 120mm（预载/压缩/回弹可调）",
+      suspR: "Kayaba 中置多连杆 · 行程 160mm（预载/压缩/回弹可调）",
+      brkF: "双 φ320mm 半浮动盘 · Brembo Monobloc M50 径向卡钳", brkR: "φ245mm 单碟 · 双活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "190/55-ZR17",
+      abs: "标配前后", tcs: "标配", qs: "标配双向", cruise: "无", tpms: "无",
+      keyless: "无", dash: "5 英寸 TFT 彩色显示屏",
+      src: "https://www.58moto.com/good/19970/configuration.html"
     }
   }
 };
