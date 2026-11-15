@@ -1650,6 +1650,32 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "3.6 寸彩色 LCD（USB 充电 / T-BOX）",
       src: "https://www.58moto.com/good/21345/configuration.html"
+    },
+    "贝纳利|哈伦252": {
+      variant: "2024款 哈伦252", price: "17,800",
+      kw: 20.7, kwRpm: 9000, nm: 23.5, nmRpm: 8000, cc: 250, cyl: "V型双缸", cmp: "10.3:1", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      lwh: "2100x800x1090", seat: 700, wb: 1400, tank: 15, weight: 164,
+      suspF: "倒置减震", suspR: "双后减震器",
+      brkF: "φ280mm 单碟", brkR: "φ240mm 单碟",
+      tireF: "120/80-16", tireR: "150/80-15",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "3.6 寸彩色 LCD（USB 充电 / T-BOX）",
+      src: "https://www.58moto.com/good/21419/configuration.html"
+    },
+    "贝纳利|TRK902": {
+      variant: "2026款 TRK902 公路款（含三箱）", price: "44,800",
+      kw: 77, kwRpm: 9000, nm: 90, nmRpm: 6500, cc: 900, cyl: "双缸 直列 DOHC", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "编织式钢管车架（铝合金双摇臂）",
+      lwh: "2370x960x1500", seat: 815, wb: 1540, tank: 20, weight: 249, clearance: 190,
+      suspF: "Marzocchi 倒置式（压缩/回弹多段可调）", suspR: "中置式多连杆（预载/回弹多段可调）",
+      brkF: "Sunstar 双圆盘 · Brembo 四活塞", brkR: "单圆盘 · Brembo 卡钳",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后（弯道 ABS + 可关闭）", tcs: "标配", qs: "双向快排", cruise: "标配",
+      tpms: "标配", keyless: "无",
+      dash: "7 寸 TFT 液晶仪表（蓝牙 + 导航投屏 / 电子油门 / 电动风挡 / 加热手把·座垫 / 6 轴 IMU / 盲区监测）",
+      src: "https://www.58moto.com/good/21279/configuration.html"
     }
   }
 };
