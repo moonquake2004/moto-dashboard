@@ -18,6 +18,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -404,6 +405,15 @@ def build(out_dir, ver=None):
     (out / "robots.txt").write_text(
         "User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n" % SITE_URL, encoding="utf-8"
     )
+
+    # 参数键一致性：specs.js 的「品牌|车型」必须能在 dashboard.js 里找到，否则参数永不显示
+    if shutil.which("node"):
+        chk = ROOT / "tools" / "check_specs.js"
+        if chk.exists():
+            r = subprocess.run(["node", str(chk)], capture_output=True, text=True)
+            print(r.stdout.strip())
+            if r.returncode != 0:
+                raise SystemExit("参数键校验失败：\n" + r.stderr.strip())
 
     files = sorted(p for p in out.rglob("*") if p.is_file())
     total = sum(p.stat().st_size for p in files)

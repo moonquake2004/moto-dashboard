@@ -422,16 +422,6 @@ window.MOTO_SPECS = {
       suspF: "φ43mm Showa SFF-BP 可调倒置前叉 · 行程 134mm",
       src: "https://www.58moto.com/good/19929/configuration.html"
     },
-    "本田|CM300": {
-      variant: "2026款 CM300 智享版", price: "20,980",
-      kw: 20.4, kwRpm: 8000, nm: 25.1, nmRpm: 7500, cc: 300, cyl: "单缸", cmp: "10.7:1",
-      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
-      lwh: "2206x841x1107", seat: 690, wb: 1490, tank: 11.2, weight: 170, clearance: 149,
-      brkF: "碟刹", brkR: "碟刹",
-      tireF: "130/90-16", tireR: "150/80-16",
-      abs: "标配前后", tcs: "无",
-      src: "https://www.58moto.com/good/13998/configuration.html"
-    },
     "赛科龙|AQS600": {
       variant: "2026款 AQS600", price: "23,988",
       kw: 43.5, kwRpm: 8500, nm: 55, cc: 560, cyl: "双缸 直列", cool: "水冷",
@@ -505,6 +495,56 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "标配双向", cruise: "标配", tpms: "无",
       keyless: "无", dash: "3.5 寸全彩 TFT 仪表",
       src: "https://www.58moto.com/good/6073/configuration.html"
+    },
+    "本田|CM500": {
+      variant: "CM500 电控离合版",
+      kw: 33.6, kwRpm: 8500, nm: 43.3, nmRpm: 5750, cc: 500, cyl: "双缸 直列", cmp: "10.7:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合 + 电子离合（E-Clutch）", drive: "链条传动",
+      frame: "钢管式车架",
+      lwh: "2205x810x1090", seat: 690, wb: 1490, tank: 11.2, weight: 191, clearance: 125,
+      suspF: "正置式前叉", suspR: "边置式双减震",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "130/90-16", tireR: "150/80-16",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶仪表",
+      src: "https://www.58moto.com/good/22964/configuration.html"
+    },
+    "本田|CM1100": {
+      variant: "2025款 CM1100 DCT", price: "122,800",
+      kw: 60, kwRpm: 7250, nm: 95, nmRpm: 4750, cc: 1100, cyl: "双缸 直列", cmp: "10.5:1",
+      cool: "水冷", gear: "DCT 6 速自动挡", clutch: "湿式多片离合", drive: "链条传动",
+      lwh: "2240x835x1125", seat: 710, wb: 1520, tank: 13.6, weight: 236, clearance: 120,
+      suspF: "φ43mm 前叉 · 弹簧预紧力可调", suspR: "分离加压背负式后减震 · 预载可调",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "130/70-B18", tireR: "180/65-B16",
+      abs: "标配前后", tcs: "标配", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "5 英寸 TFT 液晶仪表",
+      src: "https://www.58moto.com/good/18777/configuration.html"
+    },
+    "川崎|VERSYS-X 300": {
+      variant: "2023款 Versys-X 300", price: "47,500",
+      kw: 21.8, kwRpm: 10000, nm: 24.8, nmRpm: 7000, cc: 300, cyl: "双缸 直列", cmp: "10.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "高强度钢管网格式车架",
+      lwh: "2170x860x1390", seat: 815, wb: 1450, tank: 17, weight: 175, clearance: 180,
+      suspF: "φ41mm 正置前叉 · 行程 130mm", suspR: "连杆单筒后减震 · 预载可调",
+      brkF: "290mm 单碟 · 双活塞卡钳", brkR: "220mm 单碟 · 双活塞卡钳",
+      tireF: "100/90-ZR19", tireR: "130/80-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "机械指针 + 液晶组合仪表",
+      src: "https://www.58moto.com/good/5546/configuration.html"
+    },
+    "赛科龙|RA1000": {
+      variant: "2026款 RA1000", price: "45,988",
+      kw: 78.5, kwRpm: 9000, nm: 95, nmRpm: 6500, cc: 1000, cyl: "双缸 V型", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2300x825x1150", seat: 780, wb: 1600, tank: 18, weight: 225, clearance: 135,
+      suspF: "KYB 倒置式前叉", suspR: "KYB 边置式单减震（铝合金单摇臂）",
+      brkF: "碟刹 · 西互卡钳", brkR: "碟刹 · 西互卡钳",
+      tireF: "120/70-ZR17", tireR: "240/45-ZR17",
+      abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "无", cruise: "无", tpms: "标配",
+      keyless: "标配", dash: "TFT 仪表",
+      src: "https://www.58moto.com/good/19881/configuration.html"
     }
   }
 };
