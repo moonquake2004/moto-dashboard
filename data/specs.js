@@ -1200,6 +1200,33 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "LCD 液晶显示屏",
       src: "https://www.58moto.com/good/20107/configuration.html"
+    },
+    "铃木|V-STROM 800": {
+      variant: "2026款 V-Strom 800", price: "99,800",
+      kw: 60, kwRpm: 8500, nm: 76, nmRpm: 6800, cc: 800, cyl: "双缸 直列 DOHC", cmp: "12.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2255x905x1355", seat: 825, wb: 1570, tank: 20, weight: 223, clearance: 185,
+      suspF: "倒置伸缩式（螺旋弹簧/油阻尼）", suspR: "连杆式（螺旋弹簧/油阻尼）",
+      brkF: "双盘式", brkR: "盘式",
+      tireF: "110/80-R19", tireR: "150/70-R17",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "标配双向", cruise: "无", tpms: "无",
+      keyless: "无", dash: "5 英寸彩色 TFT LCD 多功能仪表",
+      src: "https://www.58moto.com/good/20937/configuration.html"
+    },
+    "凯旋|SPEED TRIPLE 1200 RS": {
+      variant: "2025款 Speed Triple 1200 RS", price: "198,900",
+      kw: 134.6, kwRpm: 10750, nm: 125, nmRpm: 9000, cc: 1200, cyl: "三缸 直列 DOHC", cmp: "13.2:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝制双梁车架（螺栓固定铝制后副车架 / 铝合金单摇臂）",
+      seat: 830, wb: 1445, tank: 15.5, weight: 199,
+      suspF: "Öhlins NIX30 φ43mm 倒置（预载可调）· 行程 120mm",
+      suspR: "Öhlins TTX36 双管单减震（预载/回弹可调）· 行程 120mm",
+      brkF: "φ320mm 双浮动碟 · Brembo Stylema 单体四活塞",
+      brkR: "φ220mm 单碟 · Brembo 双活塞",
+      tireF: "120/70-ZR17", tireR: "190/55-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "5 寸 TFT 彩色显示屏",
+      src: "https://www.58moto.com/good/6398/configuration.html"
     }
   }
 };
