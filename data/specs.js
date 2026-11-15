@@ -2846,5 +2846,30 @@ window.MOTO_SPECS = {
       dash: "6.5 寸 TFT 彩色屏（雨天·公路模式 / 手机连接 / 挡位显示 / 电加热手把 / 风挡 / 双闪）",
       src: "https://www.58moto.com/good/21087/configuration.html"
     }
+,
+    "杜卡迪|Monster": {
+      variant: "2026款 Monster", price: "89,900",
+      kw: 81.6, kwRpm: 9000, nm: 91.1, nmRpm: 7250, cc: 890, cyl: "双缸 V型 90° DOHC 四气门（96x61.5）", cmp: "13.1:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合（液压）", drive: "链条传动",
+      frame: "铝合金单体壳车架（铝合金双摇臂）",
+      seat: 815, wb: 1492, tank: 14, weight: 175,
+      suspF: "φ43mm 倒置式前叉 · 行程 130mm", suspR: "Showa 中置式单减震（预载多段可调）· 行程 145mm",
+      brkF: "双 φ320mm 盘 · Brembo M4.32 四活塞径向卡钳", brkR: "单 φ245mm 盘 · 双活塞卡钳",
+      tireF: "120/70-ZR17（倍耐力）", tireR: "180/55-ZR17（倍耐力）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "双向快排", cruise: "无", tpms: "无", keyless: "无",
+      dash: "5 寸彩色 TFT（挡位显示）",
+      src: "https://www.58moto.com/good/19843/configuration.html"
+    },
+    "杜卡迪|XDiavel V4": {
+      variant: "2026款 XDiavel V4", price: "229,900",
+      kw: 123.6, kwRpm: 10750, nm: 125.7, nmRpm: 8750, cc: 1158, cyl: "四缸 V型 DOHC 四气门", cool: "水冷", gear: "国际6挡", drive: "链条传动",
+      frame: "铝合金承载式车架（铝制单摇臂）",
+      seat: 770, tank: 20, weight: 229,
+      brkF: "双 φ330mm 半浮动盘 · Brembo Stylema 单体四活塞径向卡钳", brkR: "单 φ265mm 盘 · Brembo 双活塞浮动卡钳",
+      tireF: "120/70 ZR17 M/C（倍耐力）", tireR: "240/45 ZR17 M/C（倍耐力）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "6.9 寸 TFT 彩色屏（骑行模式 / 动力模式 / 挡位显示）",
+      src: "https://www.58moto.com/good/22746/configuration.html"
+    }
   }
 };
