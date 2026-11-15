@@ -3036,5 +3036,20 @@ window.MOTO_SPECS = {
       dash: "6.5 寸 TFT 彩色触控屏（电子油门 / 手机连接 / 导航投屏 / 挡位显示）",
       src: "https://www.58moto.com/good/5555/configuration.html"
     }
+,
+    "川崎|NINJA ZX-10R": {
+      variant: "2026款 Ninja ZX-10R", price: "199,800",
+      kw: 154.4, kwRpm: 13200, nm: 111, nmRpm: 11400, cc: 998, cyl: "四缸 直列 DOHC 四气门（76x55 · 冲压进气）", cmp: "13.0:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "铝合金双翼梁车架",
+      lwh: "2085x750x1185", seat: 835, wb: 1445, tank: 17, weight: 207, clearance: 135,
+      suspF: "SHOWA BFF φ43mm 倒置前叉（外置气瓶 · 压缩/回弹/预载可调）",
+      suspR: "SHOWA BFRC-lite 水平多连杆单筒（压缩/回弹/预载可调）",
+      brkF: "半浮动 φ330mm 双碟 · Brembo M50 辐射径向对四卡钳", brkR: "单 φ220mm 碟 · 单活塞卡钳",
+      tireF: "120/70-ZR17（普利司通）", tireR: "190/55-ZR17（普利司通）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "双向快排", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "TFT 彩色仪表（电子油门 / 转向阻尼器 / 手机连接 / 挡位显示 / 风挡 / 双闪 / 前倾角25° 拖曳距105mm）",
+      src: "https://www.58moto.com/good/14418/configuration.html"
+    }
   }
 };
