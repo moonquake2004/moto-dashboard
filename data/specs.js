@@ -1573,6 +1573,19 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "TFT 全彩仪表",
       src: "https://www.58moto.com/good/21400/configuration.html"
+    },
+    "力帆|KP350": {
+      variant: "2023款 KP350 30周年纪念版", price: "19,999",
+      kw: 21, kwRpm: 8500, nm: 28.5, nmRpm: 5500, cc: 350, cyl: "双缸 直列 SOHC", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "整体式车架（双摇臂）",
+      lwh: "2055x765x1190", seat: 790, wb: 1410, tank: 15, weight: 187, clearance: 160,
+      suspF: "倒置减震", suspR: "后置单减",
+      brkF: "盘式", brkR: "盘式",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 液晶显示屏",
+      src: "https://www.58moto.com/good/6903/configuration.html"
     }
   }
 };
