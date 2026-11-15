@@ -358,6 +358,47 @@ window.MOTO_SPECS = {
       lwh: "2115x740x1145", seat: 790, wb: 1410, tank: 15, weight: 193, clearance: 130,
       suspF: "φ41mm 套筒式前叉", suspR: "中置多连杆减震",
       src: "https://www.58moto.com/good/4863/configuration.html"
+    },
+    "本田|XL750 TRANSALP": {
+      variant: "2024款 XL750 Transalp", price: "88,800",
+      kw: 51, nm: 69, cc: 750, cyl: "双缸 直列", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "轻质钢框架",
+      lwh: "2325x838x1370", seat: 855, wb: 1560, tank: 16.9, weight: 208, clearance: 210,
+      suspF: "Showa SFF-CA 倒立式 φ43mm · 行程 200mm",
+      suspR: "Showa Pro-Link 减震 · 行程 190mm",
+      brkF: "φ310mm 双盘 · 四活塞卡钳", brkR: "φ256mm 单盘 · 单活塞卡钳",
+      tireF: "90/90-21", tireR: "150/70-R18",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "无",
+      keyless: "无", dash: "5 英寸全彩液晶显示屏",
+      src: "https://www.58moto.com/good/21146/configuration.html"
+    },
+    "赛科龙|RX600": {
+      variant: "2025款 RX600 探索版", price: "27,988",
+      kw: 43.5, kwRpm: 8500, nm: 55, nmRpm: 6500, cc: 560, cyl: "双缸 直列",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "编织车架",
+      lwh: "2180x870x1399", seat: "790/820", wb: 1425, tank: 19.5, weight: 219, clearance: 180,
+      suspF: "KYB 倒置式", suspR: "KYB 后减震",
+      brkF: "碟刹 · 西互制动", brkR: "碟刹 · 西互制动",
+      tireF: "110/80-R19", tireR: "150/70-R17",
+      abs: "标配前后（可关闭）", tcs: "标配可关闭", qs: "无", cruise: "无", tpms: "标配",
+      keyless: "无", dash: "TFT 投屏仪表",
+      src: "https://www.58moto.com/good/20286/configuration.html"
+    },
+    "升仕|703R": {
+      variant: "2026款 703R NISSIN 刹车版", price: "35,800",
+      kw: 75, kwRpm: 11200, nm: 74.5, nmRpm: 8500, cc: 700, cyl: "三缸 直列", cmp: "13:1",
+      cool: "水冷+油冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金双翼梁车架",
+      lwh: "2065x800x1130", seat: 820, wb: 1450, tank: 16, weight: 191, clearance: 145,
+      suspF: "马祖奇倒置式（预载/压缩/回弹全可调）",
+      suspR: "马祖奇中置多连杆（预载/压缩/回弹全可调）",
+      brkF: "双浮动碟 · 日信对向四活塞辐射式卡钳 + 直推上泵", brkR: "碟刹",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后", tcs: "标配", qs: "标配双向", cruise: "无", tpms: "标配",
+      keyless: "标配", dash: "6.75 寸 TFT 全彩液晶屏",
+      src: "https://www.58moto.com/good/21360/configuration.html"
     }
   }
 };
