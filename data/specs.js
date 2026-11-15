@@ -2819,5 +2819,32 @@ window.MOTO_SPECS = {
       dash: "指针 + LCD（电子油门 / 挡位显示 / 转向阻尼器）",
       src: "https://www.58moto.com/good/12736/configuration.html"
     }
+,
+    "宝马|F 900 GS": {
+      variant: "2025款 F 900 GS 舒适版", price: "125,900",
+      kw: 66, kwRpm: 8500, nm: 93, nmRpm: 6750, cc: 895, cyl: "双缸 直列 DOHC 四气门（86x77）", cmp: "13.1:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "桥式框架（钢壳结构）+ 铸铝双摆臂",
+      lwh: "2270x943x1393", seat: 870, wb: 1590, tank: 14.5, weight: 219,
+      suspF: "φ43mm 倒置减震（预载手动可调、回弹与压缩可调）· 行程 230mm", suspR: "中央减震 · 行程 215mm",
+      brkF: "双 φ305mm 浮动盘 · 双活塞浮动卡钳", brkR: "单 φ265mm 盘 · 单活塞浮动卡钳",
+      tireF: "90/90-R21（铝合金辐条轮）", tireR: "150/70-R17（铝合金辐条轮）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "6.5 寸 TFT 彩色屏（雨天·公路模式 / 手机连接 / 挡位显示 / 风挡 / 双闪）",
+      src: "https://www.58moto.com/good/21087/configuration.html"
+    },
+    "宝马|F 900 GS Adventure": {
+      variant: "2025款 F 900 GS Adventure 舒适版", price: "149,900",
+      kw: 66, kwRpm: 8500, nm: 93, nmRpm: 6750, cc: 895, cyl: "双缸 直列 DOHC 四气门（86x77）", cmp: "13.1:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "桥式框架（钢壳结构）+ 铸铝双摆臂",
+      lwh: "2307x940x1424", seat: 875, wb: 1590, tank: 23, weight: 246,
+      suspF: "φ43mm 倒置减震（预载手动可调、回弹与压缩可调）· 行程 230mm", suspR: "中央减震 · 行程 215mm",
+      brkF: "双 φ305mm 浮动盘 · 双活塞浮动卡钳", brkR: "单 φ265mm 盘 · 单活塞浮动卡钳",
+      tireF: "90/90-R21（铝合金辐条轮）", tireR: "150/70-R17（铝合金辐条轮）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "6.5 寸 TFT 彩色屏（雨天·公路模式 / 手机连接 / 挡位显示 / 电加热手把 / 风挡 / 双闪）",
+      src: "https://www.58moto.com/good/21087/configuration.html"
+    }
   }
 };
