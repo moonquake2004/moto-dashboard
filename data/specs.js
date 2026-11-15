@@ -2141,6 +2141,18 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS）", tcs: "标配 可关闭", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "标配",
       dash: "TFT 彩色显示屏（电子油门 / 雨天·道路·运动·赛道模式 / USB / 加热手把 / 转向阻尼器 / 电子悬挂）",
       src: "https://www.58moto.com/good/5469/configuration.html"
+    },
+    "赛科龙|睿途 RT3": {
+      variant: "2025款 RT3 智慧版", price: "18,999",
+      kw: 19.5, kwRpm: 8000, nm: 24.5, nmRpm: 6500, cc: 247, cyl: "单缸 DOHC 四气门", cmp: "10.7:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      lwh: "2205x767x1395", seat: 755, wb: 1545, tank: 17, weight: 194, clearance: 155,
+      suspF: "正置式前减震", suspR: "后弹簧式减震",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/70-15", tireR: "140/60-14",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "TFT 投屏仪表（毫米波雷达）",
+      src: "https://www.58moto.com/good/5664/configuration.html"
     }
   }
 };
