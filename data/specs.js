@@ -2913,5 +2913,19 @@ window.MOTO_SPECS = {
       dash: "TFT 彩色液晶（电子油门）",
       src: "https://www.58moto.com/good/5774/configuration.html"
     }
+,
+    "杜卡迪|Hypermotard 950": {
+      variant: "2021款 Hypermotard 950", price: "124,000",
+      kw: 82.5, kwRpm: 9000, nm: 93.5, nmRpm: 7250, cc: 937, cyl: "双缸 L型 DOHC 每缸四气门（94x67.5）", cmp: "13.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "Trellis 管式钢制编织车架（铝合金单摇臂）",
+      seat: 870, wb: 1493, tank: 14, weight: 205,
+      suspF: "Marzocchi 铝制 45mm 全调校式倒置前叉", suspR: "渐进式连杆 + Sachs 单体避震（预载与回弹可调）· 铝合金单摇臂",
+      brkF: "双 320mm 半浮动盘 · Brembo 单体四活塞径向卡钳（弯道 ABS）", brkR: "单 245mm 盘 · 双活塞卡钳",
+      tireF: "120/70-ZR17（倍耐力 Diablo Rosso Corsa）", tireR: "180/55-ZR17（倍耐力 Diablo Rosso Corsa）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶显示屏（电子油门 / 挡位显示 / USB）",
+      src: "https://www.58moto.com/good/6784/configuration.html"
+    }
   }
 };
