@@ -2371,6 +2371,43 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS / 可关）", tcs: "标配", qs: "标配", cruise: "无", tpms: "无", keyless: "无",
       dash: "5 寸 TFT（电子油门 / 多模式）",
       src: "https://www.58moto.com/good/5619/configuration.html"
+    },
+    "胡斯瓦纳|Svartpilen 401": {
+      variant: "2021款 黑箭 401", price: "31,000",
+      kw: 32, kwRpm: 9000, nm: 37, nmRpm: 7000, cc: 373, cyl: "单缸 DOHC 四气门", cmp: "12.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "编制钢管车架（粉末涂层）",
+      seat: 810, wb: 1357, tank: 9.5, weight: 159, clearance: 120,
+      suspF: "WP APEX φ43mm 倒置减震（压缩/回弹可调）· 行程 120mm", suspR: "WP APEX Monoshock（预载可调）· 行程 120mm",
+      brkF: "单 320mm 盘 · ByBre 径向对向四活塞卡钳", brkR: "单 240mm 盘 · ByBre 浮动单活塞卡钳",
+      tireF: "110/70-R17", tireR: "150/60-R17",
+      abs: "标配前后", tcs: "无", qs: "双向", cruise: "无", tpms: "无", keyless: "无",
+      dash: "5 寸 TFT（挡位显示）",
+      src: "https://www.58moto.com/good/14199/configuration.html"
+    },
+    "比亚乔 / Vespa|Vespa GTS 300": {
+      variant: "2024款 GTS 300", price: "44,800",
+      kw: 17.5, kwRpm: 8250, nm: 26, nmRpm: 5250, cc: 278, cyl: "单缸 四气门", cmp: "12:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "一体式钢制承载式车身",
+      lwh: "1950x755x1375", seat: 790, wb: 1375, tank: 8.5,
+      suspF: "单摇臂液压弹簧前减震", suspR: "四段预载可调双液压减震器",
+      tireF: "120/70-12", tireR: "130/70-12",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "液晶仪表（TFT 可选 / USB）",
+      src: "https://www.58moto.com/good/17367/configuration.html"
+    },
+    "比亚乔 / Vespa|Vespa GTS 310": {
+      variant: "2026款 GTS 310", price: "45,800",
+      kw: 18.4, kwRpm: 6500, nm: 28.9, nmRpm: 5250, cc: 310, cyl: "单缸 四气门（75x70.1）", cmp: "12:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "一体式钢制承载式车身",
+      seat: 790, wb: 1380, tank: 8.5,
+      suspF: "单摇臂液压弹簧前减震", suspR: "四段预载可调双液压减震器",
+      tireF: "120/70-12", tireR: "130/70-12",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "液晶仪表（USB）",
+      src: "https://www.58moto.com/good/17367/configuration.html"
     }
   }
 };
