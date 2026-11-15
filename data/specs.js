@@ -1964,6 +1964,32 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "彩段 LCD 仪表",
       src: "https://www.58moto.com/good/19561/configuration.html"
+    },
+    "钱江|追800": {
+      variant: "2025款 追800", price: "47,999",
+      kw: 75, kwRpm: 10000, nm: 78, nmRpm: 8500, cc: 800, cyl: "四缸 直列 DOHC", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金车架（铝合金双摇臂）",
+      lwh: "2085x805x1110", seat: 815, wb: 1450, tank: 17.5, weight: 198,
+      suspF: "Marzocchi 倒置（预载/压缩/回弹多段可调）", suspR: "Marzocchi（预载/回弹多段可调）",
+      brkF: "φ320mm SUNSTAR 双碟 · Brembo 对向四活塞", brkR: "φ260mm 单碟 · Brembo 对向双活塞",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17（玛吉斯）",
+      abs: "标配前后", tcs: "标配", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "无",
+      dash: "5 寸 TFT（蓝牙 + 导航投屏 / 电子油门 / 雨天·标准·运动模式 / T-BOX）",
+      src: "https://www.58moto.com/good/21592/configuration.html"
+    },
+    "钱江|SRT450": {
+      variant: "2026款 SRT450", price: "27,980",
+      kw: 39, kwRpm: 9500, nm: 44, nmRpm: 6750, cc: 450, cyl: "双缸 直列 DOHC", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "编织式钢管车架（铝合金双摇臂）",
+      lwh: "2240x935x1390", seat: 830, wb: 1510, tank: 18, weight: 184, clearance: 204,
+      suspF: "马祖奇倒置 · 行程 200mm（预载/压缩/回弹多段可调）", suspR: "中置式多连杆（预载/压缩/回弹多段可调）",
+      brkF: "碟刹 · 布雷博卡钳", brkR: "碟刹 · 布雷博卡钳",
+      tireF: "90/90-21", tireR: "140/70-R18（CST 辐条轮）",
+      abs: "标配前后（可关闭）", tcs: "标配 可关闭", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "5 英寸 TFT 竖屏（蓝牙 + 导航投屏 / USB / 加热手把·前座垫 / 手动多段可调风挡 / 辅助灯 / T-BOX）",
+      src: "https://www.58moto.com/good/22120/configuration.html"
     }
   }
 };
