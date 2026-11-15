@@ -2116,6 +2116,31 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "TFT 仪表（挡位显示）",
       src: "https://www.58moto.com/good/21249/configuration.html"
+    },
+    "宝马|R 1300 GS": {
+      variant: "2024款 R 1300 GS 舒适版", price: "225,900",
+      kw: 107, kwRpm: 7750, nm: 149, nmRpm: 6500, cc: 1300, cyl: "双缸 水平对置 DOHC", cmp: "13.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "轴传动",
+      frame: "带承重式驱动单元车架 + 铝合金后车架",
+      lwh: "2268x1000x1459", seat: 800, tank: 19, weight: 237,
+      suspF: "中央减振支柱（螺旋弹簧）· 行程 90mm", suspR: "中央减振支柱 · 回弹/预载可调 · 行程 200mm",
+      brkF: "液压双盘 · 四活塞径向整体卡钳 + 浮动盘", brkR: "液压单盘 · 双活塞浮动卡钳 + 固定盘",
+      tireF: "120/70-R19", tireR: "170/60-R17（象牌）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      src: "https://www.58moto.com/good/20960/configuration.html"
+    },
+    "宝马|S 1000 RR": {
+      variant: "2026款 S 1000 RR 运动版", price: "249,900",
+      kw: 154, kwRpm: 13750, nm: 113, nmRpm: 11000, cc: 1000, cyl: "四缸 直列 DOHC", cmp: "13.3:1",
+      cool: "水冷+油冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝复合桥架（发动机承重）",
+      lwh: "2073x765x1205", seat: 824, tank: 16.5, weight: 197,
+      suspF: "倒置伸缩叉 · 行程 120mm（电子动态阻尼）", suspR: "中央减振支柱 · 行程 117mm（电子动态阻尼）",
+      brkF: "液压双盘 · 四活塞径向整体卡钳 + 浮动盘", brkR: "液压单盘 · 双活塞浮动卡钳 + 固定盘",
+      tireF: "120/70-ZR17", tireR: "190/55-ZR17（普利司通）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配 可关闭", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "标配",
+      dash: "TFT 彩色显示屏（电子油门 / 雨天·道路·运动·赛道模式 / USB / 加热手把 / 转向阻尼器 / 电子悬挂）",
+      src: "https://www.58moto.com/good/5469/configuration.html"
     }
   }
 };
