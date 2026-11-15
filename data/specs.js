@@ -2359,20 +2359,6 @@ window.MOTO_SPECS = {
       dash: "12.3 寸 TFT 触控屏（Skyline OS / 导航）",
       src: "https://www.58moto.com/good/5780/configuration.html"
     },
-    "阿普利亚|RS 660": {
-      variant: "2023款 RS 660", price: "119,900",
-      kw: 73.5, kwRpm: 10500, nm: 67, nmRpm: 8500, cc: 659, cyl: "双缸 直列 DOHC 四气门", cmp: "13.5:1",
-      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
-      frame: "可调节复合结构铝合金双翼梁车架（非对称铝制摇臂）",
-      lwh: "1995x745x1150", seat: 820, wb: 1370, tank: 11,
-      weight: 183,
-      suspF: "KYB φ41mm 倒置前叉 · 行程 120mm", suspR: "单避震（弹簧预载 / 长度 / 回弹可调）· 行程 130mm",
-      brkF: "双 320mm 碟 · Brembo 径向四活塞卡钳", brkR: "单 220mm 碟 · Brembo 独立双活塞卡钳",
-      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
-      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "双向", cruise: "标配", tpms: "无", keyless: "无",
-      dash: "TFT 彩色屏（电子油门 / 5 种骑行模式）",
-      src: "https://www.58moto.com/good/6595/configuration.html"
-    },
     "KTM|390 Duke": {
       variant: "2024款 390 Duke", price: "39,800",
       kw: 33, kwRpm: 8500, nm: 39, nmRpm: 7000, cc: 398.7, cyl: "单缸 DOHC 四气门", cmp: "12.6:1",
