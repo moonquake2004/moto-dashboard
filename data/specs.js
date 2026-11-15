@@ -1625,6 +1625,31 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
       dash: "TFT 彩色显示屏（蓝牙 + 导航投屏 / 手动多段可调风挡）",
       src: "https://www.58moto.com/good/16995/configuration.html"
+    },
+    "贝纳利|BKX250": {
+      variant: "2025款 BKX250 越野版", price: "16,980",
+      kw: 20.5, kwRpm: 9500, nm: 22.5, nmRpm: 7250, cc: 250, cyl: "单缸", cool: "水冷",
+      gear: "国际6挡", drive: "链条传动",
+      lwh: "2100x910x1230", seat: 870, wb: 1430, tank: 12, weight: 149, clearance: 250,
+      suspF: "倒置式 φ41mm · 行程 180mm", suspR: "后减行程 85.4mm",
+      brkF: "φ300mm 碟刹 · 双活塞卡钳", brkR: "φ240mm 碟刹 · 浮动单活塞卡钳",
+      tireF: "100/90-19", tireR: "130/80-17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶显示屏（USB 充电 / 辐条轮 + 非真空胎）",
+      src: "https://www.58moto.com/good/21883/configuration.html"
+    },
+    "贝纳利|哈伦402": {
+      variant: "2024款 哈伦402", price: "19,800",
+      kw: 26, kwRpm: 8000, nm: 36, nmRpm: 4500, cc: 400, cyl: "V型双缸", cmp: "11.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "摇篮式车架（双摆臂）",
+      lwh: "2170x800x1090", seat: 720, wb: 1520, tank: 15, weight: 170,
+      suspF: "倒立式前叉", suspR: "双后弹簧减震",
+      brkF: "单碟 φ320mm", brkR: "单碟 φ240mm",
+      tireF: "130/90-R16", tireR: "150/80-R16",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "3.6 寸彩色 LCD（USB 充电 / T-BOX）",
+      src: "https://www.58moto.com/good/21345/configuration.html"
     }
   }
 };
