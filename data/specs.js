@@ -2996,5 +2996,19 @@ window.MOTO_SPECS = {
       dash: "7 寸 TFT 仪液晶表（双拉线油门 / 挡位显示 / USB / 电加热手把 / 前座加热 / 手动 2 段风挡 / 双闪）",
       src: "https://www.58moto.com/good/20150/configuration.html"
     }
+,
+    "钱江|赛921": {
+      variant: "2026款 赛921 Pro", price: "71,999",
+      kw: 95, kwRpm: 10000, nm: 93, nmRpm: 8000, cc: 921, cyl: "四缸 直列 DOHC 四气门（73x55 · 冲压进气）", cmp: "13:1",
+      cool: "水冷+油冷", gear: "国际6挡", clutch: "湿式多片滑动离合（液压）", drive: "链条传动",
+      frame: "钢管编织式车架 + 铝车架 / 铝合金单摇臂",
+      lwh: "2085x790x1130", seat: 835, wb: 1425, tank: 16, weight: 215,
+      suspF: "Marzocchi 倒置前叉（预载多段可调）", suspR: "中置式单减震（外置气囊 · 预载多段可调）",
+      brkF: "双 φ320mm 碟 · Brembo 四活塞卡钳", brkR: "单 φ260mm 碟 · Brembo 双活塞卡钳",
+      tireF: "120/70-ZR17（倍耐力 恶魔4）", tireR: "190/50-ZR17（倍耐力 恶魔4）",
+      abs: "标配前后（弯道 ABS / 可关闭）", tcs: "标配", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "无",
+      dash: "5 寸 TFT（电子油门 / 标准·雨天·赛道模式 / 转向阻尼器 / 导航投屏 / 手机连接 / OTA / USB / 风挡 / 6 轴 IMU / T-BOX）",
+      src: "https://www.58moto.com/good/20430/configuration.html"
+    }
   }
 };
