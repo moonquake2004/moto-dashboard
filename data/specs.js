@@ -1312,6 +1312,31 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "标配（仅升挡）", cruise: "无", tpms: "无",
       keyless: "无", dash: "6.2 寸 TFT 仪表（蓝牙 + 导航投屏 / 转向阻尼器标配 / 弹射模式）",
       src: "https://www.58moto.com/good/21381/configuration.html"
+    },
+    "升仕|350D": {
+      variant: "2023款 350D", price: "28,800",
+      kw: 27, kwRpm: 7500, nm: 38, nmRpm: 6000, cc: 350, cyl: "单缸 SOHC 四气门", cmp: "11.8:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "钢管车架",
+      lwh: "2025x780x1305", seat: 760, wb: 1405, tank: 12, weight: 189, clearance: 150,
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/70-15", tireR: "140/70-14",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "标配",
+      keyless: "标配", dash: "TFT 液晶仪表（蓝牙 + 导航投屏 / 电动 2 段可调风挡 / 经济·运动模式）",
+      src: "https://www.58moto.com/good/20062/configuration.html"
+    },
+    "升仕|350E": {
+      variant: "2022款 350E", price: "30,800",
+      kw: 27, kwRpm: 7500, nm: 38, nmRpm: 6000, cc: 350, cyl: "单缸 SOHC 四气门", cmp: "11.8:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "钢管车架",
+      lwh: "2195x795x1395", seat: 770, wb: 1565, tank: 16, weight: 203, clearance: 155,
+      suspF: "φ37mm 前减震", suspR: "双减震",
+      brkF: "浮动碟刹 · 西互辐射式对向四活塞", brkR: "碟刹",
+      tireF: "120/70-15", tireR: "140/70-14",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "标配",
+      keyless: "标配", dash: "TFT 全彩仪表（蓝牙 + 导航投屏 / 电动风挡 / 加热手把标配）",
+      src: "https://www.58moto.com/good/20187/configuration.html"
     }
   }
 };
