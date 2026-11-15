@@ -2927,5 +2927,19 @@ window.MOTO_SPECS = {
       dash: "液晶显示屏（电子油门 / 挡位显示 / USB）",
       src: "https://www.58moto.com/good/6784/configuration.html"
     }
+,
+    "杜卡迪|Scrambler 800": {
+      variant: "2026款 Scrambler Nightshift", price: "105,900",
+      kw: 53.8, kwRpm: 8250, nm: 65.2, nmRpm: 7000, cc: 803, cyl: "双缸 L型 DOHC 每缸两气门（88x66）", cmp: "11:1",
+      cool: "风冷", gear: "国际6挡", clutch: "湿式多片离合（液压）", drive: "链条传动",
+      frame: "Trellis 钢管编织车架",
+      lwh: "2100x855x1150", seat: 795, wb: 1445, tank: 14.5, weight: 182,
+      suspF: "KYB φ41mm 倒置前叉", suspR: "KYB 后减震（弹簧预载可调）",
+      brkF: "单 330mm 盘 · 辐射式四活塞卡钳", brkR: "单 245mm 盘 · 单活塞浮动卡钳",
+      tireF: "110/80-18（倍耐力 MT60）", tireR: "180/55-17（倍耐力 MT60）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "选配双向", cruise: "无", tpms: "无", keyless: "无",
+      dash: "4.3 寸 TFT（电子油门 / 公路·湿地模式 / 挡位显示 / USB / 双闪 / 自动大灯）",
+      src: "https://www.58moto.com/good/7094/configuration.html"
+    }
   }
 };
