@@ -932,6 +932,72 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS + 可关闭）", tcs: "标配", qs: "选配双向", cruise: "选配",
       tpms: "无", keyless: "无", dash: "5 英寸 TFT 显示屏",
       src: "https://www.58moto.com/good/18750/configuration.html"
+    },
+    "张雪机车|500F 27款": {
+      variant: "2027款 500F", price: "30,580",
+      kw: 54, kwRpm: 11000, nm: 48, nmRpm: 9500, cc: 500, cyl: "四缸 直列", cmp: "12:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "双翼梁钢管编织车架（铝合金双摇臂）",
+      lwh: "2015x800x1060", seat: 795, wb: 1395, tank: 15.5, weight: 175, clearance: 150,
+      suspF: "倒置式（压缩/回弹可调）", suspR: "中置单减（预载/回弹可调）",
+      brkF: "φ300mm 双浮动盘 · 对向四活塞卡钳", brkR: "φ220mm 单固定盘 · 单活塞浮动卡钳",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "标配", cruise: "标配", tpms: "标配",
+      keyless: "无", dash: "机械指针 + 中置 LCD",
+      src: "https://www.58moto.com/good/21490/configuration.html"
+    },
+    "奔达|金吉拉250": {
+      variant: "2025款 金吉拉250", price: "16,499",
+      kw: 19, kwRpm: 9000, nm: 25, nmRpm: 5500, cc: 250, cyl: "双缸 V型", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "钢管摇篮式车架",
+      lwh: "2124x788x1097", seat: 690, wb: 1415, tank: 12, weight: 188,
+      suspF: "倒置式前减", suspR: "边置式双减震",
+      brkF: "对向四活塞卡钳", brkR: "对向双活塞卡钳",
+      tireF: "120/80-16", tireR: "150/80-15",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "全贴合 LCD 仪表",
+      src: "https://www.58moto.com/good/21809/configuration.html"
+    },
+    "奔达|灰石707": {
+      variant: "2026款 灰石707", price: "25,900",
+      kw: 54, kwRpm: 9000, nm: 68, nmRpm: 6500, cc: 700, cyl: "双缸 V型", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "摇篮式钢管车架",
+      lwh: "2256x855x1181", seat: 705, wb: 1545, tank: 16, weight: 218, clearance: 150,
+      suspF: "倒置式前减", suspR: "边置式双减震",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "150/80-16", tireR: "180/65-16",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 仪表",
+      src: "https://www.58moto.com/good/22002/configuration.html"
+    },
+    "升仕|703RR": {
+      variant: "2026款 703RR 西互刹车版", price: "37,800",
+      kw: 75, kwRpm: 11200, nm: 74.5, nmRpm: 8500, cc: 700, cyl: "三缸 直列 冲压进气", cmp: "13:1",
+      cool: "水冷 + 油冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金双翼梁车架（铝合金镂空双摇臂）",
+      lwh: "2065x745x1145", seat: 795, wb: 1450, tank: 16, weight: 195, clearance: 145,
+      suspF: "马祖奇倒置减震（预载/压缩/回弹可调）",
+      suspR: "锻造多连杆后悬挂（预载/回弹可调）",
+      brkF: "双浮动碟 · 西互对向四活塞辐射卡钳", brkR: "碟刹 · 西互卡钳",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后（弯道 ABS 标配）", tcs: "标配", qs: "标配双向", cruise: "标配",
+      tpms: "标配", keyless: "标配", dash: "6.75 寸 TFT 全彩仪表（导航投屏 + 6 轴 IMU）",
+      src: "https://www.58moto.com/good/19803/configuration.html"
+    },
+    "钱江|赛550": {
+      variant: "2026款 赛550ES", price: "24,999",
+      kw: 45, kwRpm: 8500, nm: 55, nmRpm: 6000, cc: 550, cyl: "双缸 直列 270°曲轴", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢制海鸥式摇臂",
+      lwh: "2090x770x1155", seat: 810, wb: 1420, tank: 16.5, weight: 187,
+      suspF: "Marzocchi 倒置式（预载可调）", suspR: "弹簧可调式中置减震",
+      brkF: "φ320mm Sunstar 双碟 · Brembo 四活塞", brkR: "φ260mm 单碟 · Brembo 双活塞",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "标配双向", cruise: "标配", tpms: "标配",
+      keyless: "无", dash: "TFT 仪表（导航投屏 + T-BOX）",
+      src: "https://www.58moto.com/good/19722/configuration.html"
     }
   }
 };
