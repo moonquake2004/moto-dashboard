@@ -869,6 +869,30 @@ window.MOTO_SPECS = {
       abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "标配",
       keyless: "无", dash: "5 英寸曲面 TFT 仪表（导航投屏）",
       src: "https://www.58moto.com/good/21536/configuration.html"
+    },
+    "本田|CB500 SUPER FOUR": {
+      variant: "2026款 CB500 Super Four", price: "42,980",
+      kw: 52.8, kwRpm: 11000, nm: 47.1, nmRpm: 10000, cc: 500, cyl: "四缸 直列", cmp: "12.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合（E-Clutch 电子离合）", drive: "链条传动",
+      lwh: "2103x775x1083", wb: 1412, tank: 14.7, weight: 188, clearance: 135,
+      suspR: "中置式多连杆减震（铝合金双摇臂）",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "5 英寸 TFT 中文仪表",
+      src: "https://www.58moto.com/good/22274/configuration.html"
+    },
+    "本田|CBR500R FOUR": {
+      variant: "2026款 CBR500R Four", price: "44,980",
+      kw: 52.8, kwRpm: 11000, nm: 47.1, nmRpm: 10000, cc: 500, cyl: "四缸 直列 冲压进气", cmp: "12.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合（E-Clutch 电子离合）", drive: "链条传动",
+      lwh: "2060x769x1124", wb: 1412, tank: 14.2, weight: 189,
+      suspF: "倒置式前叉", suspR: "中置式多连杆减震（铝合金双摇臂）",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 仪表",
+      src: "https://www.58moto.com/good/22278/configuration.html"
     }
   }
 };
