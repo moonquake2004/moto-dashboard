@@ -2430,6 +2430,44 @@ window.MOTO_SPECS = {
       tireF: "120/70-ZR17", tireR: "200/50-ZR17",
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       src: "https://www.58moto.com/good/5830/configuration.html"
+    },
+    "川崎|NINJA 650": {
+      variant: "2026款 Ninja 650", price: "69,800",
+      kw: 45.5, kwRpm: 7200, nm: 62.1, nmRpm: 6700, cc: 649, cyl: "双缸 直列 DOHC 四气门", cmp: "10.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "高强度钢管网格式车架",
+      lwh: "2115x740x1145", seat: 790, wb: 1410, tank: 15, weight: 193, clearance: 130,
+      suspF: "φ41mm 套筒式正置前叉", suspR: "中置式多连杆减震（预载多段可调）",
+      brkF: "双 300mm 盘 · 双活塞卡钳", brkR: "单 220mm 盘 · 单活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17（邓禄普 Sportmax Roadsport 2）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      src: "https://www.58moto.com/good/4863/configuration.html"
+    },
+    "川崎|Z400": {
+      variant: "2024款 Z400", price: "47,800",
+      kw: 35, kwRpm: 10000, nm: 37, nmRpm: 8000, cc: 399, cyl: "双缸 直列 DOHC 四气门", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "高强度钢管网格式车架（铝合金后摇臂）",
+      lwh: "1990x800x1055", seat: 785, wb: 1370, tank: 14, weight: 167, clearance: 145,
+      suspF: "φ41mm 套筒式正置前叉", suspR: "Uni Trak 多连杆结构（多段预载可调）",
+      brkF: "半浮动 φ310mm 单盘 · 单向双活塞卡钳", brkR: "单 220mm 盘 · 单向双活塞卡钳（日信）",
+      tireF: "110/70-R17", tireR: "150/60-R17（邓禄普）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "模拟式转速表 + LCD（挡位显示）",
+      src: "https://www.58moto.com/good/6526/configuration.html"
+    },
+    "川崎|VERSYS 650": {
+      variant: "2026款 Versys 650", price: "79,800",
+      kw: 47.7, kwRpm: 8000, nm: 61.4, nmRpm: 7000, cc: 649, cyl: "双缸 直列 DOHC 四气门", cmp: "10.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "高强度钢管网格式车架",
+      lwh: "2165x840x1360", seat: 845, wb: 1415, tank: 21, weight: 218, clearance: 170,
+      suspF: "φ41mm 倒置套筒前叉（预载/回弹阻尼可调）", suspR: "侧置卧式单筒减震（多段预载快调）",
+      brkF: "双 300mm 浪花盘 · 双活塞卡钳", brkR: "单 250mm 浪花盘 · 单活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17（邓禄普）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 液晶仪表（风挡可调 / 21L 大油箱）",
+      src: "https://www.58moto.com/good/5188/configuration.html"
     }
   }
 };
