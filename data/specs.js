@@ -1850,6 +1850,45 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
       dash: "7 寸 TFT 智能仪表（蓝牙 + 导航投屏 / USB / 加热手把 / 电动无级风挡 / OTA / 前后行车记录仪）",
       src: "https://www.58moto.com/good/21328/configuration.html"
+    },
+    "春风|800MT-X": {
+      variant: "2024款 800MT-X 标准版", price: "53,680",
+      kw: 70, kwRpm: 8500, nm: 87, nmRpm: 6750, cc: 800, cyl: "双缸 直列 DOHC", cmp: "12.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铬钼钢超轻车架（铝合金双边摇臂）",
+      lwh: "2288x945x1390", seat: 830, wb: 1525, tank: 22.5, weight: 214, clearance: 200,
+      suspF: "φ48mm 倒置 · 全段可调 190mm", suspR: "全段可调 · 190mm",
+      brkF: "φ320mm 双碟 · 西互四活塞辐射卡钳", brkR: "φ260mm 单碟 · 西互双活塞浮动卡钳",
+      tireF: "90/90-21", tireR: "150/70-R18",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "无",
+      dash: "7 寸竖屏拉力仪表（4 段角度可调 / 蓝牙 + 导航投屏 / 电子油门 / 手动多段可调风挡 / 转向阻尼器 / 三种模式 / T-BOX）",
+      src: "https://www.58moto.com/good/21035/configuration.html"
+    },
+    "春风|750SR-S": {
+      variant: "2025款 750SR-S", price: "44,980",
+      kw: 82, kwRpm: 10250, nm: 80, nmRpm: 9000, cc: 750, cyl: "四缸 直列 DOHC", cmp: "12.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管编织车架（铝合金单摇臂）",
+      lwh: "2039x745x1133", seat: 805, wb: 1419, tank: 17, weight: 213, clearance: 150,
+      suspF: "KYB 倒置 φ43mm（预载/压缩/回弹多段可调）", suspR: "KYB 中置多连杆（外置气囊 / 预载/压缩/回弹多段可调）",
+      brkF: "φ320mm 双碟 · Brembo 对向四活塞", brkR: "φ240mm 单碟 · Brembo 双活塞",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "仅升挡", cruise: "无", tpms: "标配", keyless: "标配",
+      dash: "6.2 英寸 TFT（蓝牙 + 导航投屏 / OTA / USB / 转向阻尼器 / 6 轴 IMU / ESS 紧急刹车灯）",
+      src: "https://www.58moto.com/good/21728/configuration.html"
+    },
+    "春风|1250TR-G": {
+      variant: "2023款 1250TR-G", price: "109,980",
+      kw: 105, kwRpm: 8500, nm: 120, nmRpm: 7000, cc: 1250, cyl: "V型双缸 DOHC", cmp: "12.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合（液压）", drive: "链条传动",
+      frame: "桁架式车架（铝合金后平叉）",
+      lwh: "2271x982x1516", seat: 820, wb: 1482, tank: 23, weight: 304, clearance: 140,
+      suspF: "马祖奇倒置 · 全段可调 130mm", suspR: "马祖奇中置 · 全段可调 128mm",
+      brkF: "φ320mm 双浮动碟 · Brembo 对向四活塞", brkR: "φ270mm 单碟 · Brembo 对向双活塞",
+      tireF: "120/70-ZR17", tireR: "190/55-ZR17",
+      abs: "标配前后（弯道 ABS）", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "标配",
+      dash: "12.3 英寸 LTPS 高清屏（导航投屏 / 电子油门 / 加热手把·前后座垫 / 电动无级风挡带记忆 / 转向阻尼器 / 四种模式 / 坡道辅助 / 盲区监测 · 变道辅助 · 后碰撞预警）",
+      src: "https://www.58moto.com/good/18731/configuration.html"
     }
   }
 };
