@@ -1362,6 +1362,42 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配",
       keyless: "标配", dash: "TFT 全彩仪表（蓝牙 + 导航投屏 / 舒适·运动模式）",
       src: "https://www.58moto.com/good/20347/configuration.html"
+    },
+    "升仕|350T": {
+      variant: "2022款 350T 铝轮版", price: "22,800",
+      kw: 29, kwRpm: 9500, nm: 32.8, nmRpm: 7500, cc: 350, cyl: "单缸 DOHC 四气门", cmp: "12.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架",
+      lwh: "2085x850x1320", seat: 795, wb: 1380, tank: 19, weight: 196, clearance: 150,
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配",
+      keyless: "标配", dash: "TFT 全彩液晶仪表（蓝牙 + 导航投屏 / 电动无级可调风挡 / 节油·运动模式）",
+      src: "https://www.58moto.com/good/20071/configuration.html"
+    },
+    "升仕|350V": {
+      variant: "2022款 350V1", price: "23,800",
+      kw: 29, kwRpm: 9500, nm: 32.8, nmRpm: 7500, cc: 350, cyl: "单缸 DOHC 四气门", cmp: "12.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "单摇臂车架",
+      lwh: "2080x860x1150", seat: 765, wb: 1430, tank: 15, weight: 188, clearance: 170,
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配",
+      keyless: "标配", dash: "TFT 全彩液晶仪表（蓝牙 + 导航投屏 / 节油·运动模式）",
+      src: "https://www.58moto.com/good/20072/configuration.html"
+    },
+    "升仕|350X": {
+      variant: "2022款 350X", price: "22,800",
+      kw: 29, kwRpm: 9500, nm: 32.8, nmRpm: 7500, cc: 350, cyl: "单缸 DOHC 四气门", cmp: "12.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架",
+      lwh: "2055x795x1330", seat: 795, wb: 1380, tank: 19, weight: 185, clearance: 150,
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配",
+      keyless: "标配", dash: "TFT 全彩液晶仪表（蓝牙 + 导航投屏 / 电动无级可调风挡 / 运动·节油模式）",
+      src: "https://www.58moto.com/good/20084/configuration.html"
     }
   }
 };
