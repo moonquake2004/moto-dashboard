@@ -2116,10 +2116,10 @@ var empties=D.brands.filter(function(b){return b.modelCount===0}).map(function(b
 $("emptyBrands").textContent=empties.length?empties.join("、")+"（共 "+empties.length+" 个，均已在详情中说明原因）":"无";
 
 /* SECTION: nav state & reveal & top */
-var secIds=["market","charts","garage","explorer","about"];
+var secIds=Array.prototype.map.call(document.querySelectorAll("#navLinks a"),function(a){return a.dataset.sec});
 function updateNav(){
   var pos=window.scrollY+90,current="";
-  secIds.forEach(function(id){var el=$(id);if(el&&el.offsetTop<=pos)current=id});
+  secIds.forEach(function(id){var el=$(id);if(el&&el.getBoundingClientRect().top+window.scrollY<=pos)current=id});
   document.querySelectorAll(".nav-links a").forEach(function(a){a.classList.toggle("on",a.dataset.sec===current)});
   $("toTop").classList.toggle("show",window.scrollY>600);
 }
