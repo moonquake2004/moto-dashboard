@@ -1298,6 +1298,20 @@ window.MOTO_SPECS = {
       abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "标配",
       keyless: "标配", dash: "6.75 寸 TFT 曲面屏（角度可调 / 蓝牙 + 导航投屏 / 后向雷达）",
       src: "https://www.58moto.com/good/21829/configuration.html"
+    },
+    "钱江|赛421": {
+      variant: "2026款 赛421S 活力版", price: "28,999",
+      kw: 57, kwRpm: 14000, nm: 39, nmRpm: 13000, cc: 421, cyl: "四缸 直列 DOHC（冲压进气）", cmp: "12.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管编织 + 铝车架（铝合金双摇臂）",
+      lwh: "2010x765x1150", seat: 790, wb: 1375, tank: 16, weight: 177,
+      suspF: "Marzocchi 倒置（预载/压缩/回弹全可调）",
+      suspR: "中置多连杆减震（预载多段可调）",
+      brkF: "φ300mm 双碟 · 钱江四活塞卡钳", brkR: "φ240mm 单碟 · 钱江卡钳",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      abs: "标配前后", tcs: "标配", qs: "标配（仅升挡）", cruise: "无", tpms: "无",
+      keyless: "无", dash: "6.2 寸 TFT 仪表（蓝牙 + 导航投屏 / 转向阻尼器标配 / 弹射模式）",
+      src: "https://www.58moto.com/good/21381/configuration.html"
     }
   }
 };
