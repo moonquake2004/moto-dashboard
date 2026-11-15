@@ -1337,6 +1337,31 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "标配",
       keyless: "标配", dash: "TFT 全彩仪表（蓝牙 + 导航投屏 / 电动风挡 / 加热手把标配）",
       src: "https://www.58moto.com/good/20187/configuration.html"
+    },
+    "升仕|350M": {
+      variant: "2023款 350M", price: "28,800",
+      kw: 27, kwRpm: 7500, nm: 38, nmRpm: 6000, cc: 350, cyl: "单缸 SOHC 四气门", cmp: "11.8:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "钢管车架",
+      lwh: "2025x790x1305", seat: 760, wb: 1405, tank: 12, weight: 187, clearance: 150,
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/70-15", tireR: "140/70-14",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "标配",
+      keyless: "标配", dash: "TFT 全彩仪表（蓝牙 + 导航投屏 / 电动 2 段可调风挡 / 节油·运动模式）",
+      src: "https://www.58moto.com/good/20188/configuration.html"
+    },
+    "升仕|350S": {
+      variant: "2022款 350S", price: "23,800",
+      kw: 29, kwRpm: 9500, nm: 32.8, nmRpm: 7500, cc: 350, cyl: "单缸 DOHC", cmp: "12.3:1",
+      cool: "水冷 + 油冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架（铝合金单摇臂）",
+      lwh: "2080x860x1150", seat: 750, wb: 1430, tank: 16, weight: 188, clearance: 170,
+      suspF: "φ43mm 倒立式前叉", suspR: "带连杆系统的中央减震",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配",
+      keyless: "标配", dash: "TFT 全彩仪表（蓝牙 + 导航投屏 / 舒适·运动模式）",
+      src: "https://www.58moto.com/good/20347/configuration.html"
     }
   }
 };
