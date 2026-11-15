@@ -2218,6 +2218,30 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "全液晶仪表（蓝牙 / 挡位 / 风挡标配）",
       src: "https://www.58moto.com/good/21029/configuration.html"
+    },
+    "本田|CB400F": {
+      variant: "2025款 CB400F", price: "27,980",
+      kw: 33, kwRpm: 9000, nm: 37, nmRpm: 7500, cc: 399, cyl: "双缸 直列 DOHC 四气门", cmp: "11:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2080x800x1060", seat: 789, wb: 1416, tank: 16.1, weight: 190, clearance: 156,
+      suspF: "φ41mm 倒立式前叉", suspR: "中置多连杆后减震（预载可调）",
+      brkF: "双盘", brkR: "盘式",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17（CST）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "全彩 5 英寸 TFT 显示屏",
+      src: "https://www.58moto.com/good/19611/configuration.html"
+    },
+    "本田|CL500": {
+      variant: "2023款 CL500", price: "58,800",
+      kw: 32.7, kwRpm: 8500, nm: 42.4, nmRpm: 6000, cc: 471, cyl: "双缸 直列 DOHC 四气门", cmp: "10.7:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2175x830x1135", seat: 790, wb: 1490, tank: 12, weight: 192, clearance: 155,
+      suspF: "正置前叉", suspR: "双后减震",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "110/80-R19", tireR: "150/70-R17（邓禄普）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "负显 LCD 仪表",
+      src: "https://www.58moto.com/good/20382/configuration.html"
     }
   }
 };
