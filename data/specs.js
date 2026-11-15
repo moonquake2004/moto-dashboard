@@ -2015,6 +2015,29 @@ window.MOTO_SPECS = {
       abs: "标配前后（可关闭）", tcs: "标配", qs: "仅升挡", cruise: "无", tpms: "无", keyless: "无",
       dash: "TFT 仪表（蓝牙 + 导航投屏 / USB / 运动·经济·弹射起步模式）",
       src: "https://www.58moto.com/good/19823/configuration.html"
+    },
+    "凯越|525F": {
+      variant: "2023款 525F", price: "33,980",
+      kw: 39.6, kwRpm: 8500, nm: 50.5, nmRpm: 7000, cc: 500, cyl: "双缸 直列 DOHC", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2156x850x1177", seat: 790, wb: 1460, tank: 18, weight: 191, clearance: 180,
+      suspF: "KYB 倒置式 · 行程 155mm", suspR: "KYB 内置气囊 · 行程 165mm（单摇臂）",
+      brkF: "298mm 双浮动盘 · 双活塞卡钳", brkR: "240mm 单盘 · 双活塞卡钳",
+      tireF: "110/80-R18", tireR: "160/60-R17（倍耐力 MT60RS 铝合金辐条轮）",
+      abs: "标配前后（可关闭）", tcs: "无", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "智能互联仪表（蓝牙 + 导航投屏 / 经济·运动模式 / 自动大灯）",
+      src: "https://www.58moto.com/good/20101/configuration.html"
+    },
+    "凯越|800 RALLY": {
+      variant: "2024款 800X Rally", price: "49,800",
+      kw: 71, kwRpm: 9000, nm: 80, nmRpm: 7500, cc: 800, cyl: "双缸 直列 DOHC", cmp: "13:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2267x810x1395", seat: 890, wb: 1545, tank: 20, weight: 176, clearance: 293,
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "90/90-21", tireR: "140/80-18（辐条轮 · 非真空胎）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "7 寸竖式 TFT（蓝牙 + 导航投屏 / USB / 不可调风挡）",
+      src: "https://www.58moto.com/good/19587/configuration.html"
     }
   }
 };
