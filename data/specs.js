@@ -2715,6 +2715,32 @@ window.MOTO_SPECS = {
       abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "TFT 彩色液晶（电子油门）",
       src: "https://www.58moto.com/good/15633/configuration.html"
+    },
+    "凯旋|TIGER SPORT 660": {
+      variant: "2022款 Tiger Sport 660", price: "78,900",
+      kw: 59.7, kwRpm: 10250, nm: 65, nmRpm: 8000, cc: 660, cyl: "三缸 直列 DOHC 四气门（74x51.1）", cmp: "11.95:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架（结构钢摇臂）",
+      seat: 835, wb: 1418, tank: 17.2, weight: 206,
+      suspF: "Showa φ41mm 倒置式前叉 · 行程 150mm", suspR: "Showa 后减震 · 行程 150mm",
+      brkF: "双 310mm 盘 · Nissin 双活塞卡钳", brkR: "单 255mm 盘 · Nissin 单活塞卡钳",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 液晶（电子油门 / 道路·雨天模式 / 风挡）",
+      src: "https://www.58moto.com/good/19822/configuration.html"
+    },
+    "凯旋|SCRAMBLER 400 X": {
+      variant: "2026款 Scrambler 400 X 幻影黑", price: "33,900",
+      kw: 29.4, kwRpm: 8000, nm: 37.9, nmRpm: 6500, cc: 398.15, cyl: "单缸 DOHC 四气门（89x64）", cmp: "12:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "混合脊柱/周边管状钢车架 + 螺栓固定式后副车架（双面铸铝摇臂）",
+      seat: 835, wb: 1418, tank: 13, weight: 179,
+      suspF: "φ43mm 倒置大活塞前叉 · 行程 150mm", suspR: "带外部储气罐气体单震 RSU（10 级预载可调）· 行程 150mm",
+      brkF: "单 320mm 固定盘 · 四活塞径向卡钳", brkR: "单 230mm 固定盘 · ByBre 单活塞浮动卡钳",
+      tireF: "100/90-19（象牌）", tireR: "140/80-17（象牌）",
+      abs: "标配前后", tcs: "标配（可关）", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 液晶（挡位显示）",
+      src: "https://www.58moto.com/good/21074/configuration.html"
     }
   }
 };
