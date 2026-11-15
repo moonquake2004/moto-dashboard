@@ -1837,6 +1837,19 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
       dash: "7 寸全彩 TFT（蓝牙 + 导航投屏 / USB / 行车记录仪 / 手机互联 / 风挡标配）",
       src: "https://www.58moto.com/good/22104/configuration.html"
+    },
+    "光阳|赛艇X350尊享版": {
+      variant: "2025款 赛艇 X350 尊享版", price: "33,980",
+      kw: 21.5, kwRpm: 7500, nm: 30.5, nmRpm: 5250, cc: 350, cyl: "单缸 SOHC 四气门", cmp: "10.8:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "双层环抱式车架",
+      lwh: "2200x876x1400", seat: 790, wb: 1563, tank: 14, weight: 195, clearance: 145,
+      suspF: "双联板前悬 · φ37mm 倒立式前叉", suspR: "边置式双减震",
+      brkF: "φ260mm 碟盘 · 三活塞卡钳", brkR: "φ240mm 碟盘 · 双活塞卡钳",
+      tireF: "120/70-15", tireR: "140/70-14",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "7 寸 TFT 智能仪表（蓝牙 + 导航投屏 / USB / 加热手把 / 电动无级风挡 / OTA / 前后行车记录仪）",
+      src: "https://www.58moto.com/good/21328/configuration.html"
     }
   }
 };
