@@ -2792,30 +2792,5 @@ window.MOTO_SPECS = {
       dash: "5 寸全彩 TFT（双拉线油门 / 挡位显示 / 风挡 / 双闪）",
       src: "https://www.58moto.com/good/21047/configuration.html"
     },
-    "本田|CB750": {
-      variant: "2023款 CB750 Hornet", price: "68,800",
-      kw: 51, kwRpm: 7000, nm: 69, nmRpm: 6500, cc: 755, cyl: "双缸 直列 OHC 四气门（87x63.5）", cmp: "11:1",
-      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
-      lwh: "2090x780x1085", seat: 795, wb: 1420, tank: 15.2, weight: 190, clearance: 140,
-      suspF: "Showa SFF-BP 倒立式前叉", suspR: "单减震器 + Pro-Link 多连杆摇臂",
-      brkF: "双碟刹", brkR: "单碟刹",
-      tireF: "120/70-17", tireR: "160/60-17",
-      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
-      dash: "5 寸 TFT 全彩（电子油门 / 标准·雨天·运动·自定义模式 / 转向灯自动回位）",
-      src: "https://www.58moto.com/good/20569/configuration.html"
-    },
-    "本田|CB500 SUPER FOUR": {
-      variant: "2026款 CB500 Super Four", price: "42,980",
-      kw: 52.8, kwRpm: 11000, nm: 47.1, nmRpm: 10000, cc: 502, cyl: "四缸 直列 DOHC 四气门（60x44.4）", cmp: "12.3:1",
-      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合 + 电子离合", drive: "链条传动",
-      frame: "铝合金双摇臂",
-      lwh: "2103x775x1083", wb: 1412, tank: 14.7, weight: 188, clearance: 135,
-      suspF: "倒置式前叉", suspR: "中置式多连杆减震",
-      brkF: "碟刹", brkR: "碟刹",
-      tireF: "120/70-ZR17（CST）", tireR: "160/60-ZR17（CST）",
-      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
-      dash: "5 寸 TFT 中文液晶（电子油门 / 电子离合 / 挡位显示）",
-      src: "https://www.58moto.com/good/22274/configuration.html"
-    }
   }
 };
