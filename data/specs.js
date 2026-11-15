@@ -3051,5 +3051,20 @@ window.MOTO_SPECS = {
       dash: "TFT 彩色仪表（电子油门 / 转向阻尼器 / 手机连接 / 挡位显示 / 风挡 / 双闪 / 前倾角25° 拖曳距105mm）",
       src: "https://www.58moto.com/good/14418/configuration.html"
     }
+,
+    "川崎|NINJA H2": {
+      variant: "2026款 Ninja H2 Carbon", price: "442,000",
+      kw: 178.5, kwRpm: 11500, nm: 141.7, nmRpm: 11000, cc: 998, cyl: "四缸 直列 DOHC 四气门（76x55 · 机械增压）", cmp: "8.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "网格式高拉力钢车架",
+      lwh: "2085x770x1125", seat: 825, wb: 1455, tank: 17, weight: 238, clearance: 130,
+      suspF: "KYB AOS-II φ43mm 倒置前叉（阻尼及预载多段可调）",
+      suspR: "Öhlins TTX36 新型 Uni-Trak 单筒（预载/回弹可调）",
+      brkF: "双半浮动 φ330mm 浪花盘 · Brembo Stylema 径向对置四活塞", brkR: "单 φ250mm 盘 · 对置双活塞",
+      tireF: "120/70-ZR17", tireR: "200/55-ZR17",
+      abs: "标配前后", tcs: "标配", qs: "双向快排", cruise: "无", tpms: "无", keyless: "无",
+      dash: "电子仪表（电子油门 / 转向阻尼器 / 挡位显示 / 风挡 / 双闪 / 前倾角24.5° 拖曳距103mm）",
+      src: "https://www.58moto.com/good/5767/configuration.html"
+    }
   }
 };
