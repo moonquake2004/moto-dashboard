@@ -1486,6 +1486,44 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配", keyless: "标配",
       dash: "TFT 彩色显示屏（蓝牙 + 导航投屏 / 加热手把标配）",
       src: "https://www.58moto.com/good/20446/configuration.html"
+    },
+    "香帅机车|旅行者525": {
+      variant: "2024款 旅行者525", price: "26,980",
+      kw: 39.6, nm: 50.2, cc: 500, cyl: "双缸 直列 四气门", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "皮带传动",
+      lwh: "2210x830x1343", seat: 698, wb: 1505, tank: 14, weight: 210, clearance: 160,
+      suspF: "正置阻尼减震", suspR: "正置气囊减震",
+      brkF: "单卡钳 · 对向四活塞", brkR: "单卡钳 · 对向四活塞",
+      tireF: "130/90-16", tireR: "150/80-16",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 仪表（蓝牙 + 导航投屏）",
+      src: "https://www.58moto.com/good/21390/configuration.html"
+    },
+    "香帅机车|猛龙 JSX900i": {
+      variant: "2021款 猛龙 JSX900i", price: "52,800",
+      kw: 45, nm: 72, nmRpm: 5500, cc: 900, cyl: "V型双缸 SOHC", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片离合", drive: "皮带传动",
+      frame: "分体摇篮式车架",
+      lwh: "2390x830x1070", seat: 720, wb: 1600, tank: 20, weight: 260, clearance: 137,
+      suspF: "可调倒置前减震", suspR: "可调液压式后减震",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "140/70-R17", tireR: "200/55-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "有",
+      dash: "TFT 液晶仪表",
+      src: "https://www.58moto.com/good/19567/configuration.html"
+    },
+    "香帅机车|突破800": {
+      variant: "2024款 突破800", price: "39,800",
+      kw: 45, nm: 72, cc: 800, cyl: "V型双缸 SOHC", cmp: "10.3:1", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "摇篮式车架",
+      lwh: "2155x870x1160", seat: 695, wb: 1510, tank: 13, weight: 254, clearance: 160,
+      suspF: "正置阻尼减震", suspR: "弹簧阻尼减震",
+      brkF: "φ300mm 单盘 · 对向四活塞", brkR: "φ260mm 单盘 · 对向四活塞",
+      tireF: "130/70-19", tireR: "240/45-17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 仪表",
+      src: "https://www.58moto.com/good/21389/configuration.html"
     }
   }
 };
