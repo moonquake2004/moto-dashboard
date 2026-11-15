@@ -1600,5 +1600,31 @@ window.MOTO_SPECS = {
       dash: "TFT 彩色显示屏（蓝牙 + 导航投屏 / 手动多段可调风挡 / 1080P 行车记录仪）",
       src: "https://www.58moto.com/good/20371/configuration.html"
     },
+    "力帆|V400": {
+      variant: "2026款 V400 三灯版", price: "21,280",
+      kw: 29, kwRpm: 8500, nm: 37, nmRpm: 6000, cc: 400, cyl: "V型双缸 DOHC", cmp: "11.2:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "环抱式车架（双摇臂）",
+      lwh: "2340x980x1090", seat: 690, wb: 1560, tank: 16, weight: 216, clearance: 145,
+      suspF: "正置式前减", suspR: "边置式双减震",
+      brkF: "φ320mm 碟刹", brkR: "φ260mm 碟刹",
+      tireF: "120/80-18", tireR: "180/70-15",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "数码液晶显示屏（USB 充电）",
+      src: "https://www.58moto.com/good/21386/configuration.html"
+    },
+    "力帆|KPT400": {
+      variant: "2022款 KPT400 智享版（含原厂三箱）", price: "29,980",
+      kw: 31.5, kwRpm: 9500, nm: 35, nmRpm: 7500, cc: 400, cyl: "双缸 直列 SOHC", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "环抱式车架（铝合金后双摇臂）",
+      lwh: "2105x845x1420", seat: 800, wb: 1416, tank: 18.5, weight: 211, clearance: 160,
+      suspF: "倒置可调双减", suspR: "中置可调单减",
+      brkF: "双盘式 · 四活塞卡钳", brkR: "盘式 · 双活塞卡钳",
+      tireF: "110/70-R17", tireR: "160/60-R17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "TFT 彩色显示屏（蓝牙 + 导航投屏 / 手动多段可调风挡）",
+      src: "https://www.58moto.com/good/16995/configuration.html"
+    }
   }
 };
