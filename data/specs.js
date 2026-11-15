@@ -1676,6 +1676,32 @@ window.MOTO_SPECS = {
       tpms: "标配", keyless: "无",
       dash: "7 寸 TFT 液晶仪表（蓝牙 + 导航投屏 / 电子油门 / 电动风挡 / 加热手把·座垫 / 6 轴 IMU / 盲区监测）",
       src: "https://www.58moto.com/good/21279/configuration.html"
+    },
+    "贝纳利|幼狮 Leoncino 800": {
+      variant: "2024款 幼狮 Leoncino 800", price: "39,800",
+      kw: 71, kwRpm: 9000, nm: 79, nmRpm: 7700, cc: 800, cyl: "双缸 直列", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "编织式钢管前后分段车架（钢管后摇臂）",
+      lwh: "2140x855x1170", seat: 800, wb: 1460, tank: 15, weight: 217, clearance: 160,
+      suspF: "倒置液力阻尼式 · 130mm", suspR: "中置液压弹簧式 · 45mm",
+      brkF: "Brembo 对向四活塞 · 320mm 浮动双碟", brkR: "Brembo · 260mm 固定单碟",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "5 寸 TFT 方屏（T-BOX / 辐条轮）",
+      src: "https://www.58moto.com/good/6729/configuration.html"
+    },
+    "贝纳利|902S": {
+      variant: "2024款 902S", price: "39,800",
+      kw: 77, kwRpm: 9000, nm: 90, nmRpm: 6500, cc: 900, cyl: "双缸 直列", cool: "水冷",
+      gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管编织高强度车架",
+      lwh: "2130x800x1110", seat: 810, wb: 1460, tank: 14.5, weight: 220,
+      suspF: "马祖奇倒置预载可调减震", suspR: "中置减震",
+      brkF: "φ320mm 双碟盘", brkR: "单碟 φ260mm",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "TFT 仪表（USB 充电）",
+      src: "https://www.58moto.com/good/21096/configuration.html"
     }
   }
 };
