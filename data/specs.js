@@ -2498,6 +2498,32 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
       dash: "10.25 寸 TFT 液晶（三年不限里程质保）",
       src: "https://www.58moto.com/good/6538/configuration.html"
+    },
+    "宝马|R 12 nineT": {
+      variant: "2025款 R 12 NineT 舒适版", price: "189,900",
+      kw: 80, kwRpm: 7000, nm: 115, nmRpm: 6500, cc: 1170, cyl: "双缸 水平对置 DOHC 四气门（101x73）", cmp: "12:1",
+      cool: "油冷", gear: "国际6挡", clutch: "干式单片离合", drive: "轴传动",
+      frame: "带承重驱动单元的网格车架",
+      lwh: "2130x870x1070", seat: 795, tank: 16, weight: 220,
+      suspF: "倒置式前叉 · 行程 120mm", suspR: "中置式单减震（预载多段可调）· 行程 120mm",
+      brkF: "液压双盘 · 四活塞径向整体卡钳（浮动盘）", brkR: "液压单盘 · 双活塞浮动卡钳（固定盘）",
+      tireF: "120/70-ZR17（米其林）", tireR: "180/55-ZR17（米其林）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "双圆表 + 电子油门 / 转向阻尼器标配",
+      src: "https://www.58moto.com/good/21825/configuration.html"
+    },
+    "宝马|G 310 R": {
+      variant: "2023款 G 310 R 舒适版", price: "49,900",
+      kw: 25, kwRpm: 9250, nm: 28, nmRpm: 7500, cc: 313, cyl: "单缸 DOHC 四气门（80x62.1）", cmp: "10.9:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "网格框架（铸铝摇臂）",
+      lwh: "2005x849x1080", seat: 785, wb: 1374, tank: 11, weight: 159,
+      suspF: "φ41mm 倒立式前叉", suspR: "直接铰接单减震器（预载可调）",
+      brkF: "单 300mm 盘 · 四活塞径向固定卡钳", brkR: "单 240mm 盘 · 单活塞浮动卡钳",
+      tireF: "110/70-R17", tireR: "150/60-R17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 液晶仪表",
+      src: "https://www.58moto.com/good/5587/configuration.html"
     }
   }
 };
