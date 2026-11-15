@@ -1423,6 +1423,31 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "电子仪表",
       src: "https://www.58moto.com/good/5600/configuration.html"
+    },
+    "香帅机车|650N": {
+      variant: "2022款 650N", price: "36,800",
+      kw: 39, kwRpm: 7000, nm: 58, nmRpm: 5500, cc: 650, cyl: "V型双缸 DOHC", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "皮带传动",
+      frame: "双摇篮式车架（方管式后摇臂）",
+      lwh: "2220x805x1160", seat: 720, wb: 1520, tank: 13, weight: 226, clearance: 160,
+      suspF: "内置阻尼液压减震", suspR: "内置阻尼液压减震",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "100/90-19", tireR: "150/80-16",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 彩色仪表",
+      src: "https://www.58moto.com/good/19785/configuration.html"
+    },
+    "香帅机车|欧若拉400T": {
+      variant: "2023款 欧若拉400T", price: "26,800",
+      kw: 22.6, kwRpm: 6500, nm: 33.1, nmRpm: 5500, cc: 350, cyl: "单缸 SOHC 四气门", cmp: "10.5:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "摇篮式车架（铝合金一体后摇臂）",
+      lwh: "2227x786x1320", seat: 780, wb: 1617, tank: 13, weight: 193, clearance: 120,
+      brkF: "碟刹（航特）", brkR: "碟刹（航特）",
+      tireF: "120/70-15", tireR: "140/60-14",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "TFT 液晶显示屏（加热手把标配 / 不可调风挡）",
+      src: "https://www.58moto.com/good/20505/configuration.html"
     }
   }
 };
