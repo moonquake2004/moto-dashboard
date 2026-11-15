@@ -2153,6 +2153,32 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
       dash: "TFT 投屏仪表（毫米波雷达）",
       src: "https://www.58moto.com/good/5664/configuration.html"
+    },
+    "凯旋|SPEED TWIN 1200": {
+      variant: "2025款 Speed Twin 1200 RS", price: "150,900",
+      kw: 73.6, kwRpm: 7250, nm: 112, nmRpm: 4250, cc: 1200, cyl: "双缸 直列 SOHC 四气门", cmp: "12.1:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管摇篮结构车架（双边铝制摇臂）",
+      seat: 810, wb: 1414, tank: 14.5, weight: 216,
+      suspF: "Marzocchi φ43mm 倒置 · 行程 120mm（预载/压缩/回弹多段可调）", suspR: "Öhlins 边置式双减 · 外置气囊（预载/压缩/回弹多段可调）",
+      brkF: "双 320mm 制动盘 · Brembo Stylema M4.30 径向卡钳", brkR: "单 220mm 制动盘 · Nissin 双活塞浮动卡钳",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "选配", tpms: "选配", keyless: "无",
+      dash: "TFT + LCD 仪表（电子油门 / 公路·雨天·运动模式）",
+      src: "https://www.58moto.com/good/6712/configuration.html"
+    },
+    "钱江|骁700S": {
+      variant: "2024款 骁700S 公路款", price: "37,999",
+      kw: 56, kwRpm: 8750, nm: 68.2, nmRpm: 6250, cc: 700, cyl: "双缸 直列 DOHC", cmp: "11.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管编织式车架（铝摆臂）",
+      lwh: "2330x940x1395", seat: 795, wb: 1500, tank: 19.5, weight: 238, clearance: 165,
+      suspF: "Marzocchi 倒置减震", suspR: "Marzocchi 中置减震",
+      brkF: "320mm 双盘 · Brembo 卡钳", brkR: "260mm 单盘 · Brembo 卡钳",
+      tireF: "120/70-R17", tireR: "160/60-R17（倍耐力）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "7 寸 TFT（蓝牙 + 导航投屏 / USB / 加热手把·前座垫 / 行车记录仪 / T-BOX）",
+      src: "https://www.58moto.com/good/20508/configuration.html"
     }
   }
 };
