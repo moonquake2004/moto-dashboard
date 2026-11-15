@@ -1448,6 +1448,44 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
       dash: "TFT 液晶显示屏（加热手把标配 / 不可调风挡）",
       src: "https://www.58moto.com/good/20505/configuration.html"
+    },
+    "香帅机车|翔龙 JSX500i": {
+      variant: "2021款 翔龙 JSX500i ABS版", price: "28,800",
+      kw: 33, kwRpm: 8500, nm: 41, nmRpm: 6500, cc: 500, cyl: "双缸 直列 SOHC", cmp: "10.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "铝合金后平叉",
+      lwh: "2160x760x1110", seat: 780, wb: 1460, tank: 16, weight: 198, clearance: 158,
+      suspF: "液力阻尼式前减", suspR: "阻尼弹簧式后减",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "110/80-ZR17", tireR: "150/70-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶屏",
+      src: "https://www.58moto.com/good/18284/configuration.html"
+    },
+    "香帅机车|神龙 JSX700i": {
+      variant: "2021款 神龙 JSX700i 链条版", price: "43,800",
+      kw: 36, kwRpm: 7000, nm: 56, nmRpm: 5500, cc: 700, cyl: "V型双缸 SOHC", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      lwh: "2390x830x1070", seat: 720, wb: 1600, tank: 18, weight: 260, clearance: 137,
+      suspF: "可调倒置式前减", suspR: "可调液压式后减",
+      brkF: "双碟刹", brkR: "碟刹",
+      tireF: "140/75-ZR17", tireR: "200/50-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 液晶屏",
+      src: "https://www.58moto.com/good/18285/configuration.html"
+    },
+    "香帅机车|路霸 800": {
+      variant: "2023款 路霸 800S", price: "49,800",
+      kw: 45, kwRpm: 7000, nm: 72, nmRpm: 5500, cc: 800, cyl: "V型双缸 DOHC", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "皮带传动",
+      frame: "双摇篮式车架（方管式铝合金后摇臂）",
+      lwh: "2390x870x1300", seat: 720, wb: 1600, tank: 18, weight: 271, clearance: 130,
+      suspF: "七段阻尼可调液压倒置减震", suspR: "七段阻尼可调液压减震",
+      brkF: "双碟刹", brkR: "碟刹",
+      tireF: "140/70-17", tireR: "200/50-17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配", keyless: "标配",
+      dash: "TFT 彩色显示屏（蓝牙 + 导航投屏 / 加热手把标配）",
+      src: "https://www.58moto.com/good/20446/configuration.html"
     }
   }
 };
