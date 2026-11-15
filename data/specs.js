@@ -2871,5 +2871,19 @@ window.MOTO_SPECS = {
       dash: "6.9 寸 TFT 彩色屏（骑行模式 / 动力模式 / 挡位显示）",
       src: "https://www.58moto.com/good/22746/configuration.html"
     }
+,
+    "杜卡迪|Diavel V4": {
+      variant: "2023款 Diavel V4 杜卡迪红", price: "228,000",
+      kw: 123.6, kwRpm: 10750, nm: 124, nmRpm: 8750, cc: 1158, cyl: "四缸 V型 每缸四气门",
+      cool: "水冷", gear: "国际6挡", clutch: "液压离合", drive: "链条传动",
+      frame: "铝质单体横造车架（铝铸单摇臂）",
+      seat: 790, tank: 20, weight: 223,
+      suspF: "50mm 全段可调式前叉", suspR: "全段可调单筒避震",
+      brkF: "双 330mm 半浮动盘 · Brembo Stylema 单体四活塞径向卡钳", brkR: "单 265mm 盘 · Brembo 双活塞卡钳",
+      tireF: "120/70-17（倍耐力 Diablo Rosso III）", tireR: "240/45-17（倍耐力 Diablo Rosso III）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "双向快排", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "5 寸 TFT 彩色屏（电子油门 / 挡位显示 / USB）",
+      src: "https://www.58moto.com/good/20568/configuration.html"
+    }
   }
 };
