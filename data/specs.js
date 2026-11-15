@@ -1776,6 +1776,42 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
       dash: "LCD 液晶 + 机械指针（USB 充电 / 前置行车记录仪 / 不可调风挡）",
       src: "https://www.58moto.com/good/6694/configuration.html"
+    },
+    "三阳|剑齿虎 ADXTG 400": {
+      variant: "2025款 剑齿虎 ADXTG", price: "46,980",
+      kw: 26, kwRpm: 7000, nm: 37.2, nmRpm: 5500, cc: 400, cyl: "单缸 SOHC 四气门", cool: "水冷",
+      gear: "CVT 无级变速", clutch: "湿式多片双离合", drive: "链条传动",
+      lwh: "2180x920x1370", seat: 795, wb: 1535, tank: 13, weight: 213, clearance: 160,
+      suspF: "φ41mm 倒立式前叉", suspR: "中置式多连杆减震",
+      brkF: "φ275mm 碟刹", brkR: "φ233mm 碟刹",
+      tireF: "120/70-15", tireR: "150/70-14",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "彩色液晶仪表（USB 充电 / 手动 2 段可调风挡）",
+      src: "https://www.58moto.com/good/21440/configuration.html"
+    },
+    "三阳|Joymax Z 300": {
+      variant: "2023款 Joymax Z Plus 300", price: "25,980",
+      kw: 19, kwRpm: 8000, nm: 26, nmRpm: 6000, cc: 300, cyl: "单缸 四气门", cool: "水冷",
+      gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      lwh: "2210x775x1400", seat: 747, wb: 1535, tank: 12, weight: 191,
+      suspR: "五段可调双后减震",
+      brkF: "φ260mm 碟刹", brkR: "φ240mm 碟刹",
+      tireF: "120/70-14", tireR: "140/60-13",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "TFT 智能互联液晶仪表（蓝牙 + 导航投屏 / USB 充电）",
+      src: "https://www.58moto.com/good/7043/configuration.html"
+    },
+    "三阳|MaxSym 400": {
+      variant: "2021款 MaxSym 400", price: "54,800",
+      kw: 25, kwRpm: 6750, nm: 39.5, nmRpm: 5250, cc: 400, cyl: "单缸 SOHC 四气门", cool: "水冷",
+      gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      lwh: "2232x820x1400", seat: 800, wb: 1555, tank: 13, weight: 215,
+      suspR: "五段可调式双避震",
+      brkF: "φ275mm 双碟", brkR: "φ275mm 单盘",
+      tireF: "120/70-15", tireR: "160/60-14",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "机械指针 + 液晶仪表（USB 充电 / 手动 2 段可调风挡）",
+      src: "https://www.58moto.com/good/5282/configuration.html"
     }
   }
 };
