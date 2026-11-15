@@ -2982,5 +2982,19 @@ window.MOTO_SPECS = {
       dash: "彩色 LCD 仪表（双拉线油门 / 挡位显示 / USB / 双闪）",
       src: "https://www.58moto.com/good/20238/configuration.html"
     }
+,
+    "钱江|骁650": {
+      variant: "2025款 骁650 公路版", price: "41,999",
+      kw: 56, kwRpm: 9000, nm: 65, nmRpm: 8000, cc: 645, cyl: "双缸 V型 DOHC 四气门（81x62.6）", cmp: "11.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢制管式车架 + 铝合金双摇臂",
+      lwh: "2270x950x1380", seat: 800, wb: 1520, tank: 20, weight: 219, clearance: 170,
+      suspF: "倒立式前叉", suspR: "中置后避震",
+      brkF: "双 φ320mm 碟刹", brkR: "单 φ260mm 碟刹",
+      tireF: "110/80-R19（真空胎）", tireR: "150/70-R17（真空胎）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "7 寸 TFT 仪液晶表（双拉线油门 / 挡位显示 / USB / 电加热手把 / 前座加热 / 手动 2 段风挡 / 双闪）",
+      src: "https://www.58moto.com/good/20150/configuration.html"
+    }
   }
 };
