@@ -2791,6 +2791,33 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "5 寸全彩 TFT（双拉线油门 / 挡位显示 / 风挡 / 双闪）",
       src: "https://www.58moto.com/good/21047/configuration.html"
+    }
+,
+    "宝马|R 1300 GS Adventure": {
+      variant: "2025款 R 1300 GS Adventure 舒适版", price: "273,900",
+      kw: 107, kwRpm: 7750, nm: 149, nmRpm: 6500, cc: 1300, cyl: "双缸 水平对置 DOHC 四气门（106.5x73）", cmp: "13.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "轴传动",
+      frame: "带承重式驱动单元的车架 + 铝合金后车架",
+      lwh: "2280x1012x1544", seat: 870, tank: 30, weight: 271,
+      suspF: "带螺旋弹簧的中央减振支柱 · 行程 90mm（自适应电子悬挂）", suspR: "中央减振支柱（拉伸级与预载可调）· 行程 200mm",
+      brkF: "液压双盘 · 四活塞径向整体卡钳 + 浮动盘", brkR: "液压单盘 · 双活塞浮动卡钳 + 固定盘",
+      tireF: "120/70-R19（象牌）", tireR: "170/60-R17（象牌）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配可关闭", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "标配",
+      dash: "TFT 全彩（电子油门 / ECO·RAIN·ROAD·Dynamic·DYNAMIC PRO·ENDURO·ENDURO PRO 模式 / 前后向毫米波雷达）",
+      src: "https://www.58moto.com/good/20960/configuration.html"
     },
+    "宝马|R 12": {
+      variant: "2025款 R 12 舒适版", price: "137,900",
+      kw: 70, kwRpm: 6500, nm: 110, nmRpm: 6000, cc: 1170, cyl: "双缸 水平对置（101x73）", cmp: "12:1",
+      cool: "油冷", gear: "国际6挡", clutch: "干式单片离合", drive: "轴传动",
+      frame: "带承重驱动单元的网格架",
+      lwh: "2200x830x1110", seat: 754, tank: 14, weight: 227,
+      suspF: "倒置式前叉 · 行程 90mm", suspR: "中置式单减震（预载多段可调）· 行程 90mm",
+      brkF: "液压双盘 · 四活塞径向整体卡钳 + 浮动盘", brkR: "液压单盘 · 双活塞浮动卡钳 + 固定盘",
+      tireF: "100/90-19 M/C 57V", tireR: "150/80-16 M/C 71H",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "指针 + LCD（电子油门 / 挡位显示 / 转向阻尼器）",
+      src: "https://www.58moto.com/good/12736/configuration.html"
+    }
   }
 };
