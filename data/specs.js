@@ -1561,6 +1561,18 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
       dash: "7 寸 TFT 液晶显示屏（加热手把标配 / 不可调风挡）",
       src: "https://www.58moto.com/good/20069/configuration.html"
+    },
+    "香帅机车|独狼800": {
+      variant: "2024款 独狼800", price: "59,800",
+      kw: 42, nm: 68, cc: 800, cyl: "V型双缸 每缸四气门", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", drive: "皮带传动",
+      lwh: "2420x890x1130", seat: 750, wb: 1650, tank: 22, weight: 288, clearance: 160,
+      suspF: "倒置 7 段阻尼可调", suspR: "空气悬挂（电子）",
+      brkF: "对向四活塞双卡钳", brkR: "对向双活塞单卡钳",
+      tireF: "140/70-17", tireR: "310/35-18",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 全彩仪表",
+      src: "https://www.58moto.com/good/21400/configuration.html"
     }
   }
 };
