@@ -1025,6 +1025,33 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配（可关闭）", qs: "无", cruise: "标配", tpms: "无",
       keyless: "无", dash: "7 寸 TFT 仪表（导航投屏 + 行车记录仪）",
       src: "https://www.58moto.com/good/19927/configuration.html"
+    },
+    "奔达|燎700Pro": {
+      variant: "2024款 LFC700 燎 Pro版", price: "46,800",
+      kw: 69, kwRpm: 11000, nm: 63, nmRpm: 8500, cc: 700, cyl: "四缸 直列 冲压进气", cmp: "11.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金车架（铝合金平叉）",
+      lwh: "2430x880x1110", seat: "650-730", wb: 1720, tank: 20, weight: 235, clearance: 140,
+      suspF: "KYB 可调倒置减震", suspR: "云驰双腔空气气囊减震",
+      brkF: "Brembo 卡钳", brkR: "碟刹",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 仪表",
+      src: "https://www.58moto.com/good/18735/configuration.html"
+    },
+    "凯旋|STREET TRIPLE 765 RS": {
+      variant: "2026款 Street Triple 765 RS", price: "117,895",
+      kw: 95.6, kwRpm: 12000, nm: 80, nmRpm: 9500, cc: 765, cyl: "三缸 直列", cmp: "13.25:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝制双翼梁车架（铸铝合金双边摇臂）",
+      seat: 836, wb: 1399, tank: 15, weight: 188,
+      suspF: "Showa φ41mm SFF-BP 倒置（压缩/回弹/预载可调）· 115mm 行程",
+      suspR: "Öhlins STX40 背负式气瓶单减（压缩/回弹/预载可调）· 131.2mm 行程",
+      brkF: "φ310mm 双浮动碟 · Brembo Stylema 一体成型四活塞 + MCS 直推上泵",
+      brkR: "φ220mm 单碟 · Brembo 单活塞",
+      tireF: "120/70-ZR17", tireR: "180/55-ZR17",
+      abs: "标配前后（弯道 ABS + 可关闭）", tcs: "标配", qs: "标配双向", cruise: "无",
+      tpms: "无", keyless: "无", dash: "5 英寸全彩 TFT（导航投屏 + 5 种骑行模式）",
+      src: "https://www.58moto.com/good/6417/configuration.html"
     }
   }
 };
