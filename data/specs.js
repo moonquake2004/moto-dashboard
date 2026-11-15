@@ -2766,6 +2766,31 @@ window.MOTO_SPECS = {
       abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
       dash: "5 寸全彩 TFT（双拉线油门 / 挡位显示 / 风挡 / 双闪）",
       src: "https://www.58moto.com/good/19718/configuration.html"
+    },
+    "凯旋|TRACKER 400": {
+      variant: "2026款 Tracker 400 幻影黑", price: "33,900",
+      kw: 30.89, kwRpm: 9000, nm: 37.5, nmRpm: 7500, cc: 398, cyl: "单缸 DOHC 四气门（89x64）", cmp: "12:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架（铝合金双摇臂）",
+      seat: 805, wb: 1371, tank: 13, weight: 173,
+      suspF: "φ43mm 倒置式前叉 · 行程 140mm", suspR: "中置式单减震（预载多段可调）· 行程 130mm",
+      brkF: "单 φ300mm 盘 · 四活塞径向卡钳", brkR: "单 φ230mm 盘 · 单活塞浮动卡钳",
+      tireF: "110/70-R17（倍耐力 MT60 RS）", tireR: "150/60-R17（倍耐力 MT60 RS）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "指针式仪表 + 多功能 LCD 屏（电子油门）",
+      src: "https://www.58moto.com/good/22848/configuration.html"
+    },
+    "本田|NX400": {
+      variant: "2025款 NX400", price: "29,980",
+      kw: 33, kwRpm: 9000, nm: 37, nmRpm: 7500, cc: 399, cyl: "双缸 直列 DOHC 四气门（67x56.6）", cmp: "11:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2145x830x1390", seat: 802, wb: 1440, tank: 16.5, weight: 197, clearance: 160,
+      suspF: "φ41mm 倒立式前叉", suspR: "中置多连杆后减震（预载可调）",
+      brkF: "双盘式", brkR: "单盘式",
+      tireF: "110/80-R19（CST）", tireR: "160/60-R17（CST）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "5 寸全彩 TFT（双拉线油门 / 挡位显示 / 风挡 / 双闪）",
+      src: "https://www.58moto.com/good/21047/configuration.html"
     }
   }
 };
