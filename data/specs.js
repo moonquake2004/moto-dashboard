@@ -4265,5 +4265,73 @@ window.MOTO_SPECS = {
       dash: "前倾 25° 拖曳距 106",
       src: "https://www.58moto.com/good/15157/configuration.html"
     }
+,
+    "雅马哈|YZF-R3": {
+      variant: "2026款 YZF-R3", price: "43,800",
+      kw: 30.4, kwRpm: 10750, nm: 29.2, nmRpm: 9000, cc: 321, cyl: "双缸 直列 DOHC 每缸四气门（68x44.1）", cmp: "11.2:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2090x735x1140", seat: 780, wb: 1380, tank: 14, weight: 170, clearance: 160,
+      suspF: "KYB φ37mm 倒置式前叉", suspR: "摇臂式后减震",
+      brkF: "φ298mm 浮动式碟刹", brkR: "φ220mm 浮动式碟刹",
+      tireF: "110/70-R17（铝铸 · 真空）", tireR: "140/70-R17（铝铸 · 真空）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      src: "https://www.58moto.com/good/16162/configuration.html"
+    }
+,
+    "雅马哈|MT-09": {
+      variant: "2022款 MT-09", price: "129,800",
+      kw: 87.5, kwRpm: 10000, nm: 93, nmRpm: 7000, cc: 890, cyl: "三缸 直列 DOHC 每缸四气门（78x62.1）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝质车架",
+      lwh: "2090x795x1190", seat: 825, wb: 1440, tank: 14, weight: 189, clearance: 140,
+      suspF: "φ41mm 倒置式前叉（KYB）", suspR: "Öhlins 中置后悬架",
+      brkF: "298mm 双碟盘", brkR: "245mm 单碟盘",
+      tireF: "120/70-ZR17（铝铸 · 真空）", tireR: "180/55-ZR17（铝铸 · 真空）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "前倾 25° 拖曳距 108",
+      src: "https://www.58moto.com/good/5648/configuration.html"
+    }
+,
+    "雅马哈|MT-09 SP": {
+      variant: "2025款 MT-09 SP", price: "139,800",
+      kw: 87.5, kwRpm: 10000, nm: 93, nmRpm: 7000, cc: 890, cyl: "三缸 直列 DOHC 每缸四气门（78x62.1 · N718E）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝质车架",
+      lwh: "2090x820x1145", seat: 825, wb: 1430, tank: 14, weight: 194, clearance: 140,
+      suspF: "KYB φ41mm 倒置式前叉", suspR: "Öhlins 中置多连杆减震",
+      brkF: "298mm 双碟盘", brkR: "245mm 单碟盘",
+      tireF: "120/70-ZR17（铝铸 · 真空）", tireR: "180/55-ZR17（铝铸 · 真空）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "前倾 25° 拖曳距 108",
+      src: "https://www.58moto.com/good/5648/configuration.html"
+    }
+,
+    "雅马哈|XMAX 300": {
+      variant: "2026款 XMAX 300", price: "49,800",
+      kw: 20.5, kwRpm: 7250, nm: 28.9, nmRpm: 5750, cc: 292, cyl: "单缸 SOHC 每缸四气门（70.0x75.9 · H345E）", cmp: "10.9:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "高刚性钢管车架",
+      lwh: "2180x795x1355", seat: 795, wb: 1540, tank: 13, weight: 183, clearance: 135,
+      suspF: "伸缩套筒式前叉", suspR: "边置式双后减震",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/70-15（邓禄普 ScootSmart · 铝铸）", tireR: "140/70-14（邓禄普 ScootSmart · 铝铸）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "双拉线油门（58moto 该款未列仪表明细）",
+      src: "https://www.58moto.com/good/16094/configuration.html"
+    }
+,
+    "雅马哈|TRACER 9GT+ Y-AMT": {
+      variant: "2025款 Tracer 9GT+ Y-AMT版", price: "169,800",
+      kw: 87.5, kwRpm: 10000, nm: 93, nmRpm: 7000, cc: 890, cyl: "三缸 直列 DOHC 每缸四气门（78x62.1）", cmp: "11.5:1",
+      cool: "水冷", gear: "AMT 6 速自动挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钻石型车架 + 铝合金后摇臂",
+      lwh: "2175x900x1530", seat: 845, wb: 1500, tank: 19, weight: 232, clearance: 135,
+      suspF: "KYB φ41mm 倒立式前叉（电子可调 / 预载可调）", suspR: "KYB 中置多连杆单避震（电子可调 / 预载可调）",
+      brkF: "298mm 双碟盘 · 对向四活塞辐射式卡钳", brkR: "245mm 单碟 · 单向单活塞",
+      tireF: "120/70-ZR17（铝铸 · 真空）", tireR: "180/55-ZR17（铝铸 · 真空）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "标配", tpms: "标配", keyless: "无",
+      dash: "7 英寸 TFT（定速巡航 / 毫米波雷达 / 电动风挡 / USB / 电加热手把 / 电子悬挂）",
+      src: "https://www.58moto.com/good/15765/configuration.html"
+    }
   }
 };
