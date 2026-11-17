@@ -225,10 +225,6 @@ select{height:42px;border:1px solid var(--line);border-radius:10px;background:va
 .a-tag button{border:none;background:transparent;color:inherit;cursor:pointer;font-size:13px;line-height:1;padding:0 2px}
 .link-btn{border:none;background:transparent;color:var(--muted);font-size:12px;cursor:pointer;text-decoration:underline dotted}
 .link-btn:hover{color:var(--accent)}
-.f-toggle{display:none;align-items:center;gap:6px;font-size:12.5px;font-weight:700;padding:8px 13px;border-radius:9px;
-  border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;white-space:nowrap}
-.f-toggle b{display:none;min-width:18px;height:18px;line-height:18px;text-align:center;border-radius:9px;background:var(--accent);color:#fff;font-size:11px}
-.f-toggle.has b{display:inline-block}
 .view-toggle{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden}
 .view-toggle button{border:none;background:var(--surface);color:var(--muted);padding:8px 13px;font-size:12px;font-weight:700;cursor:pointer}
 .view-toggle button.on{background:var(--ink);color:var(--bg)}
@@ -594,23 +590,9 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
   .charts{grid-template-columns:minmax(0,1fr)}
   .leaders-grid,.foot-grid{grid-template-columns:minmax(0,1fr)}
   .garage-grid{grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}
-  .explorer-bar{padding:9px 10px}
-  .search{min-width:0;flex:1 1 auto}
-  .f-toggle{display:inline-flex}
-  .explorer-bar.adv-off #fBucket,.explorer-bar.adv-off #fType,.explorer-bar.adv-off #fSort{display:none}
-  .explorer-bar.adv-off .f-adv{display:none}
-  .explorer-bar.adv-off .f-row{gap:7px}
-  select{flex:1;min-width:calc(50% - 5px);font-size:14px;padding:8px 10px}
-  .view-toggle button{padding:8px 10px}
-  .chips-row{flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;margin-top:8px;padding-bottom:2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-  .chips-row::-webkit-scrollbar{display:none}
-  .chips-row>*{flex:0 0 auto}
-  .chips-row .ch-lbl{position:sticky;left:0;z-index:2;background:color-mix(in srgb,var(--bg) 92%,transparent);padding-right:8px}
-  .chip-tab{font-size:12px;padding:6px 12px}
-  .price-row .chip-tab{padding:6px 10px}
-  .f-foot{margin-top:8px;gap:8px;row-gap:6px}
-  .result-line{font-size:12px;flex:1 1 100%}
-  .active-tags{flex:1 1 100%}
+  .explorer-bar{padding:10px}
+  .search{min-width:100%}
+  select{flex:1;min-width:calc(50% - 5px);font-size:16px}
   .drawer{width:100vw}
   .kpi .k-val{font-size:24px}
 }
@@ -763,7 +745,6 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
     <div class="explorer-bar">
       <div class="f-row">
         <div class="search"><span class="ico">⌕</span><input id="q" type="search" placeholder="搜索品牌 / 型号，空格分隔多个词，如「春风 450」" autocomplete="off" aria-label="搜索品牌或型号"></div>
-        <button class="f-toggle" id="fToggle" type="button" aria-expanded="false" aria-controls="fAdv">筛选<b id="fCount">0</b></button>
         <select id="fBucket" aria-label="排量段筛选"></select>
         <select id="fType" aria-label="车型类别筛选"></select>
         <select id="fSort" aria-label="排序方式">
@@ -780,7 +761,6 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
           <button id="viewModels" type="button">型号表</button>
         </div>
       </div>
-      <div class="f-adv" id="fAdv">
       <div class="chips-row price-row" id="priceChips" role="group" aria-label="价格区间筛选"></div>
       <div class="chips-row" id="catChips"></div>
       <div class="f-foot">
@@ -788,7 +768,6 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
         <div class="active-tags" id="activeTags"></div>
         <button class="link-btn" id="csvBtn" type="button" title="把当前筛选结果导出为 CSV">导出 CSV</button>
         <button class="link-btn" id="resetBtn" type="button">重置全部筛选</button>
-      </div>
       </div>
     </div>
     <div id="explorerBody"></div>
@@ -1220,27 +1199,7 @@ function syncControls(){
   $("catChips").querySelectorAll(".chip-tab").forEach(function(x){x.classList.toggle("on",x.dataset.cat===state.cat)});
   $("viewBrands").classList.toggle("on",state.view==="brands");
   $("viewModels").classList.toggle("on",state.view==="models");
-  /* 移动端「筛选」按钮上显示生效中的筛选项数量 */
-  var n=(state.q?1:0)+(state.bucket?1:0)+(state.type?1:0)+(state.price?1:0)+(state.cat&&state.cat!=="全部"?1:0)+(state.officialOnly?1:0);
-  var t=$("fToggle");if(t){t.classList.toggle("has",n>0);var c=$("fCount");if(c)c.textContent=n;}
 }
-
-/* 移动端窄屏：型号浏览器的筛选面板默认折叠，只留 搜索 + 筛选 + 品牌/型号切换 一行，避免挡住下方品牌卡片 */
-var fBar=document.querySelector(".explorer-bar");
-function fIsMobile(){return window.matchMedia("(max-width:760px)").matches}
-function fSetCollapsed(collapsed){
-  if(!fBar)return;
-  fBar.classList.toggle("adv-off",collapsed);
-  var t=$("fToggle");if(t)t.setAttribute("aria-expanded",collapsed?"false":"true");
-}
-if(fBar&&fIsMobile())fSetCollapsed(true);
-if($("fToggle"))$("fToggle").addEventListener("click",function(){fSetCollapsed(!fBar.classList.contains("adv-off"))});
-/* 旋转屏幕/改窗口宽度时同步：回到宽屏强制展开，进入窄屏只在用户没手动展开过时折叠 */
-var fUserOpen=false;
-$("fToggle")&&$("fToggle").addEventListener("click",function(){fUserOpen=!fBar.classList.contains("adv-off")});
-var fMq=window.matchMedia("(max-width:760px)");
-function fOnMq(){if(!fBar)return;if(!fMq.matches){fBar.classList.remove("adv-off")}else if(!fUserOpen){fBar.classList.add("adv-off")}}
-if(fMq.addEventListener)fMq.addEventListener("change",fOnMq);else if(fMq.addListener)fMq.addListener(fOnMq);
 var qTimer=null;
 $("q").addEventListener("input",function(e){clearTimeout(qTimer);var v=e.target.value;qTimer=setTimeout(function(){state.q=v;render()},120)});
 bucketSel.addEventListener("change",function(e){state.bucket=e.target.value;render()});

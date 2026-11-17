@@ -3080,5 +3080,1041 @@ window.MOTO_SPECS = {
       dash: "手机连接 / 挡位显示 / USB / 双闪（前倾角30° 拖曳距121mm）",
       src: "https://www.58moto.com/good/21289/configuration.html"
     }
+,
+    "川崎|W800": {
+      variant: "2026款 W800", price: "99,800",
+      kw: 35, kwRpm: 6000, nm: 62.9, nmRpm: 4800, cc: 773, cyl: "双缸 直列 SOHC 四气门（77x83）", cmp: "8.4:1",
+      cool: "风冷", gear: "国际5挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "双摇篮车架",
+      lwh: "2190x790x1075", seat: 790, wb: 1465, tank: 15, weight: 226, clearance: 125,
+      suspF: "φ41mm 伸缩式前叉", suspR: "双侧预载可调弹簧避震",
+      brkF: "单 φ320mm 碟刹", brkR: "单 φ250mm 碟刹",
+      tireF: "100/90-R19（邓禄普 K300F GP · 辐条非真空）", tireR: "130/80-R18（邓禄普 K300F GP · 辐条非真空）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "机械仪表（双拉线油门 / 挡位显示 / 电加热手把 / LED 灯 / 前倾角27° 拖曳距108mm）",
+      src: "https://www.58moto.com/good/4857/configuration.html"
+    }
+,
+    "凯越|525X": {
+      variant: "2024款 525X 达喀尔纪念版", price: "34,299",
+      kw: 39.6, kwRpm: 8500, nm: 50.5, nmRpm: 7000, cc: 494, cyl: "双缸 直列 DOHC 四气门（68x68 · Z268MR）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金后摇臂",
+      lwh: "2260x945x1390", seat: 820, wb: 1470, tank: 20, weight: 205, clearance: 210,
+      suspF: "KYB 前叉（预载/阻尼可调 · 行程 195mm）", suspR: "KYB 后减震（预载/阻尼可调 · 行程 200mm）",
+      brkF: "双碟 + 布雷博双活塞卡钳", brkR: "单碟 + 单活塞卡钳",
+      tireF: "110/80-R19（倍耐力蝎子 · 铝辐条）", tireR: "150/70-R17（倍耐力蝎子 · 铝辐条）",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "TFT 仪表（双拉线油门 / 经济·运动模式 / 手机连接 / 导航投屏 / 挡位显示 / 前倾角25.5° 拖曳距105mm）",
+      src: "https://www.58moto.com/good/6565/configuration.html"
+    }
+,
+    "凯越|321新玩家": {
+      variant: "2023款 321新玩家", price: "22,980",
+      kw: 29, kwRpm: 11000, nm: 28, nmRpm: 9000, cc: 322, cyl: "双缸 直列 DOHC 四气门（68x44.2 · Z268MN）", cmp: "11.2:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "1975x743x1100", seat: 760, wb: 1370, tank: 13, weight: 151, clearance: 110,
+      suspF: "渝安 φ37mm 倒置前叉（行程 98mm）", suspR: "渝安 单筒油压后避震（行程 38mm）",
+      brkF: "单 φ320mm 固定盘 · 四活塞卡钳（航特）", brkR: "单 φ240mm 碟 · 双活塞卡钳",
+      tireF: "110/70-R17（赫璐）", tireR: "150/60-R17（赫璐）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶 VA 仪表（双拉线油门 / 经济·运动模式 / 前倾角24.5° 拖曳距95mm）",
+      src: "https://www.58moto.com/good/19823/configuration.html"
+    },
+    "凯越|321RR": {
+      variant: "2022款 321RR", price: "25,980",
+      kw: 29, kwRpm: 10500, nm: 28, nmRpm: 9000, cc: 322, cyl: "双缸 直列 DOHC 四气门（68x44.2 · Z268MN）",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "1975x743x1100", seat: 790, wb: 1370, tank: 13, weight: 151, clearance: 135,
+      suspF: "阻尼全可调倒置式前叉", suspR: "复原阻尼可调内置气囊后避震",
+      brkF: "单 φ320mm 浮动盘 · 四活塞放射式卡钳", brkR: "单 φ240mm 碟",
+      tireF: "110/70-R17（真空胎）", tireR: "150/60-R17（真空胎）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 仪表（双拉线油门 / 经济·弹射·运动模式 / 前倾角24.5°）",
+      src: "https://www.58moto.com/good/19823/configuration.html"
+    }
+,
+    "凯越|450新玩家": {
+      variant: "2024款 450RR 新玩家", price: "30,980",
+      kw: 52, kwRpm: 13000, nm: 39, nmRpm: 10500, cc: 443, cyl: "四缸 直列 DOHC 四气门（59x40.5 · 冲压进气）", cmp: "12.9:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "HC500+Q355B 编织车架 + 钢制双摇臂",
+      lwh: "2015x740x1090", seat: 785, wb: 1385, tank: 15, weight: 165, clearance: 118,
+      suspF: "渝安 φ41mm 倒置前叉", suspR: "渝安 内置气囊中心独立后减震",
+      brkF: "双 φ300mm 固定盘 · 双活塞浮动卡钳（泰斯克）", brkR: "单 φ220mm 碟 · 单活塞卡钳（泰斯克）",
+      tireF: "120/70-ZR17（CST）", tireR: "160/60-ZR17（CST）",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶仪表（双拉线油门 / 经济·运动模式 / 挡位显示 / USB / 风挡 / 双闪 / 自动大灯 / 倾倒熄火保护）",
+      src: "https://www.58moto.com/good/19844/configuration.html"
+    }
+,
+    "凯越|250RR": {
+      variant: "2024款 250RR 刺鸟", price: "18,880",
+      kw: 24, kwRpm: 11500, nm: 22.5, nmRpm: 9000, cc: 249.98, cyl: "双缸 直列 DOHC 四气门（62x41.4 · Z262MM）", cmp: "12.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "轻量化钻石菱形一体式车架",
+      lwh: "1975x743x1100", seat: 760, wb: 1370, tank: 13, weight: 147, clearance: 110,
+      suspF: "倒置前减震 φ37mm 叉管（行程 98mm）", suspR: "单筒油压后减震（行程 38mm）",
+      brkF: "单 φ320mm 固定盘 · 泰斯克双活塞卡钳", brkR: "单 φ220mm 固定盘 · 单活塞卡钳",
+      tireF: "110/70-R17（正新 S1）", tireR: "140/60-R17（正新 S1）",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶仪表（双拉线油门 / ECO·运动模式 / 挡位显示 / USB / 风挡 / 双闪 / 自动大灯 / 边撑熄火）",
+      src: "https://www.58moto.com/good/21256/configuration.html"
+    }
+,
+    "凯越|321R": {
+      variant: "2023款 Cobra 321R", price: "24,800",
+      kw: 29, kwRpm: 10500, nm: 28, nmRpm: 9000, cc: 322, cyl: "双缸 直列 DOHC 四气门（68x44.2 · Z268MN）", cmp: "11.2:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "铝合金单摇臂",
+      lwh: "1940x825x1075", seat: 790, wb: 1370, tank: 13, weight: 149, clearance: 150,
+      suspF: "全倒置式前减震（行程 125mm）", suspR: "单筒油压后避震",
+      brkF: "单 φ320mm 碟 · 对向四活塞径向卡钳", brkR: "单 φ240mm 碟 · 双活塞卡钳",
+      tireF: "110/70-ZR17（正新 S1）", tireR: "150/60-ZR17（正新 S1）",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶仪表（挡位显示 / 双闪 / 前倾角24.5°）",
+      src: "https://www.58moto.com/good/18721/configuration.html"
+    },
+    "无极|RR660S": {
+      variant: "2027款 RR660S E-Clutch版", price: "35,980",
+      kw: 74, kwRpm: 11500, nm: 64, nmRpm: 10000, cc: 662.8, cyl: "四缸 直列 DOHC 四气门（LX467MT · 冲压进气）", cmp: "11.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合（电子离合）", drive: "链条传动",
+      frame: "双翼梁车架 + 铝合金双臂",
+      lwh: "2090x750x1210", seat: "780/810/830", wb: 1450, tank: 15.5, weight: 218, clearance: 130,
+      suspF: "倒置式前叉", suspR: "中置式单减震（预载多段可调）",
+      brkF: "双碟 · Brembo 径向四活塞卡钳", brkR: "单碟 · Nissin 单活塞卡钳",
+      tireF: "120/70-ZR17（正新）", tireR: "180/55-ZR17（正新）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "5 寸 TFT（双拉线油门 / 普通·运动模式 / 手机连接 / 导航投屏 / 挡位显示 / USB / 风挡 / 双闪 / 可变阀门排气 / 蠕行模式 / 弹射起步）",
+      src: "https://www.58moto.com/good/20503/configuration.html"
+    }
+,
+    "无极|DS900X": {
+      variant: "2025款 DS900X 标准版", price: "54,980",
+      kw: 71, kwRpm: 8250, nm: 95, nmRpm: 6000, cc: 895, cyl: "双缸 直列 DOHC 四气门（86x77 · LX286MX）", cmp: "13.1:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "管板式车架 + 铝合金双臂",
+      lwh: "2325x940x1420", seat: 835, wb: 1580, tank: 17, weight: 234, clearance: 210,
+      suspF: "KYB 倒置前叉（预载/压缩/回弹可调 · 行程 194mm）", suspR: "KYB 中置多连杆减震（外置气囊 · 全可调 · 行程 198mm）",
+      brkF: "双盘 · Brembo 双活塞卡钳", brkR: "单盘 · Brembo 单活塞卡钳",
+      tireF: "90/90-21（倍耐力 · 铝辐条）", tireR: "150/70-R17（倍耐力 · 铝辐条）",
+      abs: "标配前后（弯道 ABS / 可关闭）", tcs: "标配", qs: "双向快排", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "电子油门 / 道路·雨天·运动·越野模式 / 转向阻尼器 / 前向毫米波雷达",
+      src: "https://www.58moto.com/good/20030/configuration.html"
+    }
+,
+    "无极|DS625X": {
+      variant: "2026款 DS625X", price: "31,980",
+      kw: 47, kwRpm: 9000, nm: 57, nmRpm: 6500, cc: 581, cyl: "双缸 直列 DOHC 四气门（76x64 · LX276MS）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "双翼梁车架 + 异形双臂",
+      lwh: "2230x930x1395", seat: 830, wb: 1465, tank: 21, weight: 219, clearance: 220,
+      suspF: "KYB 倒置前叉（压缩/回弹可调）", suspR: "KYB 中置多连杆减震（预载/压缩/回弹可调）",
+      brkF: "双 φ298mm 盘 · Nissin 双活塞卡钳", brkR: "单 φ240mm 盘 · Nissin 单活塞卡钳",
+      tireF: "110/80-R19（象牌 · 铝辐条）", tireR: "150/70-R17（象牌 · 铝辐条）",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "7 寸 TFT 仪表（双拉线油门 / 经济·运动模式 / 手机连接）",
+      src: "https://www.58moto.com/good/21593/configuration.html"
+    },
+    "无极|DS500X": {
+      variant: "2026款 DS500X 标准版", price: "26,999",
+      kw: 41, kwRpm: 9000, nm: 50.5, nmRpm: 7500, cc: 494, cyl: "双缸 直列 DOHC 四气门（68x68 · LX268MR-A）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架 + 钢制异型双摇臂",
+      lwh: "2190x920x1360", seat: 810, wb: 1450, tank: 18, weight: 211, clearance: 200,
+      suspF: "倒置前叉（预载/压缩/回弹可调）", suspR: "中置多连杆减震（预载/压缩/回弹可调）",
+      brkF: "双盘 · 双活塞卡钳", brkR: "单盘 · 单活塞卡钳",
+      tireF: "110/80-R19（CST · 铝辐条）", tireR: "150/70-R17（CST · 铝辐条）",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "7 寸彩色液晶仪表（双拉线油门 / 普通·运动模式 / 手机连接 / 简易导航投屏 / 挡位显示 / USB+DC12V / 手动2段风挡 / 辅助灯 / 护杠）",
+      src: "https://www.58moto.com/good/22627/configuration.html"
+    }
+,
+    "无极|250RR": {
+      variant: "2025款 250RR 快排版", price: "15,499",
+      kw: 21.5, kwRpm: 9750, nm: 23, nmRpm: 7500, cc: 248, cyl: "单缸 SOHC 四气门（72x61 · LX172MM-18）", cmp: "10.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "桁架式车架 + 异型双臂",
+      lwh: "1955x760x1140", seat: "780/790/795/800", wb: 1360, tank: 13, weight: 158, clearance: 150,
+      suspF: "倒置前减震 φ37mm", suspR: "中置多连杆后减震",
+      brkF: "单 φ300mm 盘 · 对向四活塞辐射卡钳", brkR: "单 φ220mm 盘 · 单活塞卡钳",
+      tireF: "110/70-R17（赫璐）", tireR: "150/60-R17（赫璐）",
+      abs: "标配前后", tcs: "标配", qs: "仅升挡快排", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LED 数字 + LCD 负显液晶仪表（双拉线油门 / 挡位显示 / USB / 风挡 / 双闪）",
+      src: "https://www.58moto.com/good/19825/configuration.html"
+    }
+,
+    "无极|RR500S": {
+      variant: "2025款 RR500S 标准版", price: "28,980",
+      kw: 57, kwRpm: 12500, nm: 47, nmRpm: 11000, cc: 475, cyl: "四缸 直列 DOHC 四气门（LX460MR · 冲压进气）", cmp: "12:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管编织车架 + 铝合金双臂",
+      lwh: "2005x760x1110", seat: 795, wb: 1385, tank: 15.1, weight: 192, clearance: 135,
+      suspF: "倒置式前叉", suspR: "中置式多连杆减震",
+      brkF: "双碟 · Nissin 四活塞卡钳", brkR: "单碟 · Nissin 单活塞卡钳",
+      tireF: "120/70-ZR17（CST）", tireR: "160/60-ZR17（CST）",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "仅升挡快排", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 彩屏仪表（双拉线油门 / NORMAL·Sport 模式 / 手机连接 / 导航投屏 / 挡位显示 / USB / 风挡 / 双闪 / 弹射起步 / 可变阀门排气）",
+      src: "https://www.58moto.com/good/21596/configuration.html"
+    }
+,
+    "无极|SR4 Max": {
+      variant: "2026款 SR4 Max Pro版", price: "31,766",
+      kw: 25, kwRpm: 7500, nm: 35, nmRpm: 6000, cc: 349.8, cyl: "单缸 SOHC 四气门（80x69.6 · LX1P80MP）", cmp: "11.5:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "钢桥框架",
+      lwh: "2185x805x1390", seat: 761, wb: 1565, tank: 12.8, weight: 214, clearance: 167,
+      suspF: "KYB 正置式前叉", suspR: "KYB 边置式双后减震",
+      brkF: "双碟盘 · 对向四活塞卡钳（西互）", brkR: "单盘 · 单活塞浮动卡钳（西互）",
+      tireF: "120/70-15（倍耐力）", tireR: "150/70-14（倍耐力）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "7 寸 TFT 可投屏仪表（双拉线油门 / 最小转弯半径 2.5m / 前倾角26.4° / 5年或8万公里质保）",
+      src: "https://www.58moto.com/good/18746/configuration.html"
+    }
+,
+    "钱江|追900": {
+      variant: "2025款 追900", price: "44,999",
+      kw: 77, kwRpm: 9000, nm: 90, nmRpm: 6500, cc: 904, cyl: "双缸 直列（QJ292MX-D）",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管编织车架",
+      lwh: "2100x840x1170", seat: 800, wb: 1460, tank: 17.8, weight: 216,
+      suspF: "Marzocchi 倒置前叉（预载多段可调）", suspR: "Marzocchi 后减震",
+      brkF: "Sunstar 双碟 · Brembo 卡钳", brkR: "Sunstar 双碟 · Brembo 卡钳",
+      tireF: "120/70-ZR17（玛吉斯）", tireR: "180/55-ZR17（玛吉斯）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "无",
+      dash: "7 寸 TFT（电子油门 / 雨天·标准·运动模式 / 手机连接 / 挡位显示 / USB / 转向阻尼器 / 双闪）",
+      src: "https://www.58moto.com/good/21321/configuration.html"
+    }
+,
+    "钱江|骁800": {
+      variant: "2023款 骁800 公路款", price: "49,999",
+      kw: 71, kwRpm: 9000, nm: 79, nmRpm: 7700, cc: 799, cyl: "双缸 直列 DOHC 四气门（88x65.7 · QJ288MW-3D）", cmp: "12.7:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "钢管编织车架",
+      lwh: "2260x950x1395", seat: 815, wb: 1540, tank: 24, weight: 247, clearance: 180,
+      suspF: "KYB 倒置前叉", suspR: "KYB 中央后减震",
+      brkF: "双碟 · 径向 Brembo 卡钳", brkR: "单碟 · 对向单活塞 Brembo 卡钳",
+      tireF: "120/70-R17（倍耐力 · 铝铸）", tireR: "180/55-R17（倍耐力 · 铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "7 寸 TFT（手机连接 / 导航投屏 / 挡位显示 / USB / 风挡 / 双闪）",
+      src: "https://www.58moto.com/good/20112/configuration.html"
+    }
+,
+    "钱江|闪350": {
+      variant: "2023款 闪350", price: "24,999",
+      kw: 24, kwRpm: 8500, nm: 30, nmRpm: 6500, cc: 343, cyl: "双缸 V型（QJ2V58MP-D）",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      lwh: "2225x830x1105", seat: 720, wb: 1520, tank: 16, weight: 168, clearance: 170,
+      suspF: "倒置前减震", suspR: "可调弹簧式后减震",
+      brkF: "单 φ300mm 液压盘式", brkR: "单 φ240mm 液压盘式",
+      tireF: "130/90-16", tireR: "150/80-16",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 彩色仪表（双拉线油门 / 挡位显示 / USB / 双闪）",
+      src: "https://www.58moto.com/good/20235/configuration.html"
+    }
+,
+    "钱江|逸550": {
+      variant: "2021款 逸550", price: "33,999",
+      kw: 37.5, kwRpm: 7500, nm: 51, nmRpm: 5500, cc: 549, cyl: "双缸 直列",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2100x880x1160", seat: 785, wb: 1440, tank: 16, weight: 193,
+      suspF: "倒置双减", suspR: "中置单减",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LED 液晶仪表（双拉线油门 / 挡位显示 / USB / 双闪）",
+      src: "https://www.58moto.com/good/19865/configuration.html"
+    }
+,
+    "钱江|鸿250": {
+      variant: "2026款 鸿250 Breaker", price: "16,999",
+      kw: 18.5, kwRpm: 8000, nm: 24, nmRpm: 6500, cc: 249, cyl: "单缸 SOHC 四气门（QJ1P70MM-D）",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "龙骨车架",
+      lwh: "2180x805x1280", seat: 780, wb: 1513, weight: 185,
+      suspF: "正置式前减震", suspR: "边置式双减震",
+      brkF: "单碟 · 三活塞卡钳", brkR: "单碟",
+      tireF: "120/70-13（正新）", tireR: "150/70-13（正新）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      src: "https://www.58moto.com/good/20151/configuration.html"
+    }
+,
+    "钱江|鸿350GS": {
+      variant: "2025款 鸿350GS", price: "25,999",
+      kw: 22, kwRpm: 7500, nm: 33.5, nmRpm: 5500, cc: 350, cyl: "单缸（QJ1P77MP-D）",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "龙骨车架",
+      lwh: "2190x750x1395", seat: 790, wb: 1500, tank: 11.7, weight: 186,
+      suspF: "正置式前减震", suspR: "边置式双后减震",
+      brkF: "单碟 · 浮动钳双活塞", brkR: "单碟 · 浮动钳双活塞",
+      tireF: "120/70-15（正新）", tireR: "140/70-14（正新）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "标配",
+      dash: "7 寸 TFT 仪表（双拉线油门 / 手机连接 / USB / 电动多段可调风挡 / 双闪）",
+      src: "https://www.58moto.com/good/19892/configuration.html"
+    }
+,
+    "钱江|Super921": {
+      variant: "2025款 Super921", price: "69,999",
+      kw: 95, kwRpm: 10000, nm: 93, nmRpm: 8000, cc: 921, cyl: "四缸 直列 DOHC 四气门（QJ473MX-D · 冲压进气）", cmp: "13:1",
+      cool: "水冷+油冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管编织 + 铝车架 + 铝合金单摇臂",
+      lwh: "2090x790x1100", seat: 835, wb: 1425, tank: 15, weight: 208,
+      suspF: "Marzocchi 倒置前叉（预载/压缩/回弹全可调）", suspR: "中置多连杆减震（预载/压缩/回弹全可调）",
+      brkF: "双 φ320mm 盘 · Brembo 径向四活塞卡钳", brkR: "单 φ260mm 盘 · Brembo 对向双活塞卡钳",
+      tireF: "120/70-ZR17（倍耐力 恶魔4）", tireR: "190/50-ZR17（倍耐力 恶魔4）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "5 寸 TFT 仪表（双拉线油门 / 标准·运动模式 / 手机连接 / 导航投屏 / 挡位显示 / USB / 风挡 / 转向阻尼器 / 双闪）",
+      src: "https://www.58moto.com/good/21482/configuration.html"
+    }
+,
+    "哈雷戴维森|Sportster® S": {
+      variant: "2026款 Sportster S", price: "105,800",
+      kw: 90, kwRpm: 7500, nm: 126, nmRpm: 6000, cc: 1252, cyl: "双缸 V型 DOHC 四气门（105x72.3 · Revolution Max 1250T）", cmp: "12:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "承载式高强度低合金钢管格架车架",
+      lwh: "2270x840x1085", seat: 765, wb: 1520, tank: 11.7, weight: 228, clearance: 90,
+      suspF: "φ43mm 倒置前叉（压缩/回弹/预载可调）", suspR: "连杆安装背负式单减震（压缩/回弹/液压预载可调）",
+      brkF: "单碟 · 径向四活塞卡钳", brkR: "单碟 · 浮动式单活塞卡钳",
+      tireF: "160/70-R17（邓禄普 · 铝铸）", tireR: "180/70-R16（邓禄普 · 铝铸）",
+      abs: "标配前后",
+      src: "https://www.58moto.com/good/19775/configuration.html"
+    }
+,
+    "哈雷戴维森|Street Glide® Limited": {
+      variant: "2026款 大道滑翔 Street Glide Limited 暗黑饰面/台球雾灰", price: "434,980",
+      kw: 80, kwRpm: 5020, nm: 175, nmRpm: 3750, cc: 1923, cyl: "双缸 V型 Milwaukee-Eight VVT 117（每缸四气门）", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      lwh: "2270x960x1335", seat: 740, wb: 1625, tank: 22.7, weight: 405,
+      brkF: "双悬浮盘 · 4 活塞固定卡钳", brkR: "单固定盘 · 4 活塞固定卡钳",
+      tireF: "130/60-B19（邓禄普 哈雷戴维森系列）", tireR: "180/55-B18（邓禄普 哈雷戴维森系列）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配",
+      dash: "12.3 英寸 TFT 触屏（Skyline OS / 导航投屏 / 定速巡航）",
+      src: "https://www.58moto.com/good/5780/configuration.html"
+    },
+    "哈雷戴维森|CVO™ Street Glide® ST": {
+      variant: "2026款 大道滑翔 CVO Street Glide ST", price: "518,800",
+      kw: 94, kwRpm: 5020, nm: 193, nmRpm: 3750, cc: 1923, cyl: "双缸 V型 Milwaukee-Eight 121 高功率版（1977cc）", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      lwh: "2270x960x1335", seat: 740, wb: 1625, tank: 22.7, weight: 370,
+      brkF: "双悬浮盘 · 4 活塞固定卡钳", brkR: "单固定盘 · 4 活塞固定卡钳",
+      tireF: "130/60-B19（邓禄普 哈雷戴维森系列）", tireR: "180/55-B18（邓禄普 哈雷戴维森系列）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配",
+      dash: "12.3 英寸 TFT 触屏（Skyline OS / 导航投屏 / 定速巡航）",
+      src: "https://www.58moto.com/good/5780/configuration.html"
+    },
+    "哈雷戴维森|CVO™ Street Glide®": {
+      variant: "2026款 大道滑翔 CVO Street Glide", price: "558,800",
+      kw: 94, kwRpm: 5020, nm: 193, nmRpm: 3750, cc: 1923, cyl: "双缸 V型 Milwaukee-Eight 121 高功率版（1977cc）", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      lwh: "2270x960x1335", seat: 740, wb: 1625, tank: 22.7, weight: 370,
+      brkF: "双悬浮盘 · 4 活塞固定卡钳", brkR: "单固定盘 · 4 活塞固定卡钳",
+      tireF: "130/60-B19（邓禄普 哈雷戴维森系列）", tireR: "180/55-B18（邓禄普 哈雷戴维森系列）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配",
+      dash: "12.3 英寸 TFT 触屏（Skyline OS / 导航投屏 / 定速巡航）",
+      src: "https://www.58moto.com/good/5780/configuration.html"
+    },
+    "哈雷戴维森|CVO™ Street Glide® Limited": {
+      variant: "2026款 大道滑翔 CVO Street Glide Limited", price: "538,800",
+      kw: 94, kwRpm: 5020, nm: 193, nmRpm: 3750, cc: 1923, cyl: "双缸 V型 Milwaukee-Eight 121 高功率版（1977cc）", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      lwh: "2270x960x1335", seat: 740, wb: 1625, tank: 22.7, weight: 370,
+      brkF: "双悬浮盘 · 4 活塞固定卡钳", brkR: "单固定盘 · 4 活塞固定卡钳",
+      tireF: "130/60-B19（邓禄普 哈雷戴维森系列）", tireR: "180/55-B18（邓禄普 哈雷戴维森系列）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配",
+      dash: "12.3 英寸 TFT 触屏（Skyline OS / 导航投屏 / 定速巡航）",
+      src: "https://www.58moto.com/good/5780/configuration.html"
+    },
+    "哈雷戴维森|Road Glide®": {
+      variant: "2026款 公路滑翔 Road Glide 镀铬饰面/台球雾灰", price: "418,800",
+      kw: 78, kwRpm: 5020, nm: 175, nmRpm: 3750, cc: 1923, cyl: "双缸 V型 Milwaukee-Eight™ 117（1923cc）", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      lwh: "2415x960x1330", seat: 720, wb: 1625, tank: 22.7, weight: 380,
+      brkF: "双悬浮盘 · 4 活塞固定卡钳", brkR: "单固定盘 · 4 活塞固定卡钳",
+      tireF: "130/60-B19（邓禄普 哈雷戴维森系列）", tireR: "180/55-B18（邓禄普 哈雷戴维森系列）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配",
+      dash: "12.3 英寸 TFT 触屏（Skyline OS / 导航投屏 / 定速巡航）",
+      src: "https://www.58moto.com/good/5782/configuration.html"
+    },
+    "哈雷戴维森|Road Glide® Limited": {
+      variant: "2026款 公路滑翔 Road Glide Limited 镀铬饰面/台球雾灰", price: "449,800",
+      kw: 80, kwRpm: 5020, nm: 175, nmRpm: 3750, cc: 1923, cyl: "双缸 V型 Milwaukee-Eight VVT 117（每缸四气门）", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      lwh: "2415x960x1330", seat: 740, wb: 1625, tank: 22.7, weight: 417,
+      brkF: "双悬浮盘 · 4 活塞固定卡钳", brkR: "单固定盘 · 4 活塞固定卡钳",
+      tireF: "130/60-B19（邓禄普 哈雷戴维森系列）", tireR: "180/55-B18（邓禄普 哈雷戴维森系列）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配",
+      dash: "12.3 英寸 TFT 触屏（Skyline OS / 导航投屏 / 定速巡航）",
+      src: "https://www.58moto.com/good/5782/configuration.html"
+    },
+    "哈雷戴维森|CVO™ Road Glide® ST": {
+      variant: "2026款 公路滑翔 CVO Road Glide ST", price: "528,800",
+      kw: 94, kwRpm: 5020, nm: 193, nmRpm: 3750, cc: 1923, cyl: "双缸 V型 Milwaukee-Eight 121 高功率版（1977cc）", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      lwh: "2415x960x1330", seat: 720, wb: 1625, tank: 22.7, weight: 380,
+      brkF: "双悬浮盘 · 4 活塞固定卡钳", brkR: "单固定盘 · 4 活塞固定卡钳",
+      tireF: "130/60-B19（邓禄普 哈雷戴维森系列）", tireR: "180/55-B18（邓禄普 哈雷戴维森系列）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配",
+      dash: "12.3 英寸 TFT 触屏（Skyline OS / 导航投屏 / 定速巡航）",
+      src: "https://www.58moto.com/good/5782/configuration.html"
+    },
+    "哈雷戴维森|Street Glide® 3 Limited": {
+      variant: "2026款 Street Glide 3 Limited 镀铬饰面/台球雾灰", price: "668,800",
+      kw: 78, kwRpm: 5020, nm: 170, nmRpm: 3250, cc: 1923, cyl: "双缸 V型 Milwaukee-Eight VVT 117 每缸四气门（103.5x114.3 · 三轮）", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      abs: "标配前后", tcs: "标配",
+      dash: "12.3 英寸 TFT 触屏（Skyline OS / 导航投屏 / 需要 D 证三轮）",
+      src: "https://www.58moto.com/good/8344/configuration.html"
+    }
+,
+    "春风|450MT": {
+      variant: "2026款 450MT 标准版", price: "30,580",
+      kw: 32.5, kwRpm: 8500, nm: 44, nmRpm: 6250, cc: 449.5, cyl: "双缸 直列 DOHC 四气门（72x55.2 · 272MQ-B）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "分体式摇篮车架 + 铝合金一体式双摇臂",
+      lwh: "2210x870x1390", seat: 820, wb: 1505, tank: 17.5, weight: 185, clearance: 220,
+      suspF: "KYB 倒置前叉（φ41mm 内管 / 行程 200mm / 预载·压缩·回弹可调）", suspR: "KYB 中置多连杆减震（行程 200mm / 回弹可调）",
+      brkF: "单 φ320mm 盘 · 西互对置四活塞辐射卡钳", brkR: "单 φ240mm 盘 · 西互浮动卡钳",
+      tireF: "90/90-R21（CST · 铝辐条）", tireR: "140/70-R18（CST · 铝辐条）",
+      abs: "标配前后（后轮可关闭）", tcs: "标配（可关闭）", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "双拉线油门 / 转向阻尼器（选配）",
+      src: "https://www.58moto.com/good/20989/configuration.html"
+    }
+,
+    "春风|250SR": {
+      variant: "2025款 250SR 单摇臂版", price: "18,580",
+      kw: 21.5, kwRpm: 9750, nm: 22.5, nmRpm: 7250, cc: 249, cyl: "单缸 DOHC 四气门（72x61.2 · 172MM-2A）", cmp: "11.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金单摇臂",
+      lwh: "2010x750x1100", seat: 780, wb: 1365, tank: 12, weight: 155,
+      suspF: "倒置前叉", suspR: "中置后减震",
+      brkF: "单 φ300mm 盘 · 对置四活塞卡钳", brkR: "单 φ240mm 盘 · 双活塞卡钳",
+      tireF: "110/70-R17", tireR: "140/60-R17",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      src: "https://www.58moto.com/good/12315/configuration.html"
+    }
+,
+    "春风|800MT-ES": {
+      variant: "2026款 800MT-ES", price: "53,980",
+      kw: 70, kwRpm: 9000, nm: 77, nmRpm: 7500, cc: 799, cyl: "双缸 直列 DOHC 四气门（88x65.7 · 288MW）", cmp: "12.7:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架 + 铝合金后摇臂",
+      lwh: "2231x849x1322", seat: 825, wb: 1531, tank: 19, weight: 234, clearance: 190,
+      suspF: "倒置前叉（电子悬挂 · 标配）", suspR: "中置多连杆减震（电子悬挂 · 标配）",
+      brkF: "双 φ320mm 盘 · 西互辐射式卡钳", brkR: "单 φ260mm 盘 · 西互浮动卡钳",
+      tireF: "110/80-ZR19（米其林 Anakee Adventure · 铝辐条）", tireR: "150/70-ZR17（米其林 Anakee Adventure · 铝辐条）",
+      abs: "标配前后（弯道 ABS / 可关闭）", tcs: "标配", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "无",
+      dash: "8 寸犀灵智能交互中枢（电子油门 / 运动·雨天·越野·全地形模式 / 导航投屏 / USB+DC12V / 加热手把·前座 / 手动无级风挡 / RDS 毫米波雷达 / 转向阻尼器 / OTA）",
+      src: "https://www.58moto.com/good/18760/configuration.html"
+    }
+,
+    "升仕|368G": {
+      variant: "2026款 368G 全新升级版", price: "33,800",
+      kw: 28.5, kwRpm: 7500, nm: 40, nmRpm: 6000, cc: 368, cyl: "单缸 SOHC 四气门（79x75 · ZT1P79MP-A）", cmp: "11.8:1",
+      cool: "水冷+油冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "钢管车架",
+      lwh: "2230x925x1370", seat: 795, wb: 1560, tank: 17.5, weight: 192, clearance: 180,
+      suspF: "玛卓科倒置前叉（φ41mm 内管 / 压缩与回弹可调）", suspR: "边置式双后减震（预载 5 段可调）",
+      brkF: "单碟 · 西互对向四活塞辐射式卡钳", brkR: "单碟",
+      tireF: "110/70-17（正新 · 铝辐条）", tireR: "150/70-14（正新 · 铝辐条）",
+      abs: "标配前后（后轮可关闭）", tcs: "标配", qs: "无", cruise: "标配", tpms: "标配", keyless: "标配",
+      dash: "TFT 全彩液晶仪表（电子油门 / 运动·休旅模式 / 手机连接 / 导航投屏 / USB / 加热手把·前后座 / 手动5段风挡 / OTA / 行车记录仪 / 辅助灯）",
+      src: "https://www.58moto.com/good/21316/configuration.html"
+    }
+,
+    "升仕|703F": {
+      variant: "2026款 703F 全新升级版(21寸)", price: "43,800",
+      kw: 71.5, kwRpm: 10000, nm: 76, nmRpm: 7500, cc: 699, cyl: "三缸 直列 DOHC 四气门（70x60.6 · ZT370MU）", cmp: "13:1",
+      cool: "水冷+油冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金双翼梁车架 + 铝合金双摇臂",
+      lwh: "2355x960x1395", seat: 845, wb: 1565, tank: 22, weight: 237, clearance: 205,
+      suspF: "Marzocchi 倒置前叉（预载/复原/压缩全段可调）", suspR: "Marzocchi 后减震（锻造多连杆）",
+      brkF: "双 φ310mm 浮动盘 · Brembo 卡钳", brkR: "Brembo 卡钳",
+      tireF: "90/90-R21（米其林 · 铝辐条）", tireR: "150/70-R18（米其林 · 铝辐条）",
+      abs: "标配前后（弯道 ABS / 可关闭）", tcs: "标配", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "无",
+      dash: "6.75 寸 TFT 全彩仪表（电子油门 / ROAD·Sport·RAIN·OFFROAD·Rider 模式 / 手机连接 / 导航投屏 / 挡位显示）",
+      src: "https://www.58moto.com/good/19804/configuration.html"
+    }
+,
+    "升仕|703T": {
+      variant: "2026款 703T 布雷博卡钳版", price: "41,300",
+      kw: 75, kwRpm: 11200, nm: 74.5, nmRpm: 8500, cc: 699, cyl: "三缸 直列 DOHC 四气门（70x60.6 · ZT370MU · 冲压进气）", cmp: "13:1",
+      cool: "水冷+油冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金双翼梁车架 + 铝合金双摇臂",
+      lwh: "2095x880x1280", seat: 805, wb: 1480, tank: 20, weight: 206, clearance: 160,
+      suspF: "马祖奇倒置前叉（预载/压缩/回弹可调）", suspR: "中置多连杆减震（预载/回弹可调）",
+      brkF: "单碟 · 布雷博卡钳", brkR: "单碟",
+      tireF: "120/70-ZR17（米其林 Road 6）", tireR: "180/55-ZR17（米其林 Road 6）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "标配",
+      dash: "8 寸 TFT 仪表（电子油门 / 手机连接 / 导航投屏 / 挡位显示 / USB / 加热手把·前座 / 电动风挡 / App 远程控制 / 行车记录仪 / 6轴 IMU）",
+      src: "https://www.58moto.com/good/21361/configuration.html"
+    }
+,
+    "升仕|368K": {
+      variant: "2026款 368K 全新升级版", price: "30,800",
+      kw: 28.5, kwRpm: 7500, nm: 40, nmRpm: 6000, cc: 368, cyl: "单缸 SOHC 四气门（79x75 · ZT1P79MP-A）", cmp: "11.8:1",
+      cool: "水冷+油冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "钢管车架",
+      lwh: "2195x815x1395", seat: 770, wb: 1570, tank: 17, weight: 186, clearance: 150,
+      suspF: "玛卓科倒置前叉（φ41mm 内管 / 压缩与回弹可调）", suspR: "边置式双后减震（预载 5 段可调）",
+      brkF: "单碟 · 西互对向四活塞辐射式卡钳", brkR: "单碟",
+      tireF: "120/70-15（CST · 铝铸）", tireR: "140/70-14（CST · 铝铸）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "标配", tpms: "标配", keyless: "标配",
+      dash: "6.75 寸 TFT 全彩仪表（电子油门 / 运动·休旅·节能模式 / 手机连接 / 导航投屏 / USB / 加热手把·前座 / 电动风挡 / 行车记录仪）",
+      src: "https://www.58moto.com/good/21314/configuration.html"
+    }
+,
+    "升仕|GK350": {
+      variant: "2022款 GK350", price: "22,800",
+      kw: 29, kwRpm: 9500, nm: 32.8, nmRpm: 7500, cc: 348, cyl: "单缸 DOHC 四气门（84.5x62 · ZT184MP）", cmp: "12.3:1",
+      cool: "水冷+油冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管车架 + 铝合金后平叉",
+      lwh: "2070x845x1120", seat: 795, wb: 1390, tank: 17, weight: 188, clearance: 170,
+      suspF: "φ43mm 倒置前叉", suspR: "高压氮气中央后减震器",
+      brkF: "单 φ320mm 盘 · 西互对向四活塞卡钳", brkR: "单 φ265mm 盘 · 对向单活塞卡钳",
+      tireF: "120/70-ZR17（CST · 铝辐条）", tireR: "160/60-ZR17（CST · 铝辐条）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配", keyless: "标配",
+      dash: "TFT 全彩液晶仪表（节油·运动模式 / 手机连接 / 导航投屏 / 挡位显示 / USB）",
+      src: "https://www.58moto.com/good/19607/configuration.html"
+    }
+,
+    "升仕|250R": {
+      variant: "2019款 250R", price: "17,800",
+      kw: 18, kwRpm: 8000, nm: 23, nmRpm: 6500, cc: 249, cyl: "单缸 DOHC 四气门（73x59.5）", cmp: "10.4:1",
+      cool: "油冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "钢管车架",
+      lwh: "1976x773x1052", seat: 780, wb: 1384, tank: 13, weight: 157, clearance: 188,
+      brkF: "单碟", brkR: "单碟",
+      tireF: "110/70-R17（铝铸）", tireR: "150/60-R17（铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      src: "https://www.58moto.com/good/5748/configuration.html"
+    }
+,
+    "赛科龙|RC250": {
+      variant: "2025款 RC250 单摇臂版", price: "15,988",
+      kw: 21.5, kwRpm: 9500, nm: 23, nmRpm: 7500, cc: 249, cyl: "单缸 四气门（72x61.2 · ZS172MM-P）", cmp: "11:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金单摇臂",
+      lwh: "2018x765x1125", seat: 780, wb: 1376, tank: 13, weight: 150, clearance: 140,
+      suspF: "倒置前减震", suspR: "中置后减震",
+      brkF: "单碟", brkR: "单碟",
+      tireF: "110/70-R17（铝铸）", tireR: "140/60-R17（铝铸）",
+      abs: "标配前后", tcs: "标配", qs: "仅升挡快排", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶仪表（双拉线油门 / 挡位显示 / USB / 风挡）",
+      src: "https://www.58moto.com/good/20284/configuration.html"
+    },
+    "赛科龙|RT250": {
+      variant: "2026款 RT250 MSC版", price: "18,599",
+      kw: 19.5, kwRpm: 8500, nm: 24.5, nmRpm: 6500, cc: 247, cyl: "单缸 DOHC 四气门（ZS1P73MM-A）", cmp: "10.7:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "Q235 高强度框架编织车架",
+      lwh: "2100x790x1398", seat: 750, wb: 1400, tank: 12.6, weight: 171, clearance: 135,
+      suspF: "正置前叉", suspR: "边置式双后减震",
+      brkF: "单 φ270mm 盘", brkR: "单 φ220mm 盘",
+      tireF: "110/80-14（铝铸）", tireR: "140/60-13（铝铸）",
+      abs: "标配前后（弯道 ABS / CBS）", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "标配",
+      dash: "TFT 仪表（手机连接 / 导航投屏 / USB / 加热手把·前座 / 手动无级风挡 / App 远程控制 / 行车记录仪 / 毫米波雷达盲区监测 / MSC 车身稳定 / AVH 自动驻车 / HHC 坡道辅助 / HDC 陡坡缓降，最小转弯半径 2.25m）",
+      src: "https://www.58moto.com/good/22228/configuration.html"
+    }
+,
+    "赛科龙|RT2": {
+      variant: "2025款 RT2 都市版", price: "15,988",
+      kw: 18, kwRpm: 7500, nm: 24.5, nmRpm: 6500, cc: 246.8, cyl: "单缸 DOHC 四气门（ZS1P73MM-S）",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "Q235 高强度框架编织车架",
+      lwh: "2085x785x1280", seat: 750, wb: 1400, tank: 12.6, weight: 175, clearance: 135,
+      suspF: "φ35mm 正置液压弹簧伸缩式前减震（行程 120mm）", suspR: "5 段可调后减震（行程 80mm）",
+      brkF: "单 φ270mm 盘", brkR: "单 φ220mm 盘",
+      tireF: "110/80-14（铝铸）", tireR: "140/60-13（铝铸）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "液晶仪表（双拉线油门 / USB / 手动无级风挡 / 最小转弯半径 2.25m）",
+      src: "https://www.58moto.com/good/19878/configuration.html"
+    },
+    "赛科龙|RX250": {
+      variant: "2024款 RX250 探索版", price: "14,988",
+      kw: 20.5, kwRpm: 9000, nm: 22, nmRpm: 7000, cc: 249.2, cyl: "单缸 四气门（ZS172MM-P）", cmp: "11:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "一体式摇篮车架",
+      lwh: "2078x825x1275", seat: 785, wb: 1390, tank: 13.5, weight: 173,
+      suspF: "倒置式前减", suspR: "多连杆中央后减震",
+      brkF: "单碟", brkR: "单碟",
+      tireF: "100/80-17（正新 · 铝铸）", tireR: "130/70-17（正新 · 铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LED 仪表（双拉线油门 / 挡位显示 / USB / 风挡）",
+      src: "https://www.58moto.com/good/20554/configuration.html"
+    }
+,
+    "奔达|金吉拉350CVT": {
+      variant: "2025款 金吉拉350 Neo版", price: "21,980",
+      kw: 25, kwRpm: 8700, nm: 31, nmRpm: 6500, cc: 343, cyl: "双缸 V型 每缸四气门（58x65 · BD2V58MP）", cmp: "11.5:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "摇篮式钢管车架 + 铝合金后平叉",
+      lwh: "2175x843x1070", seat: 690, wb: 1485, tank: 16, weight: 195, clearance: 125,
+      suspF: "倒置前叉", suspR: "边置式双后减震",
+      brkF: "单碟 · 对向四活塞卡钳", brkR: "单碟 · 对向双活塞卡钳",
+      tireF: "120/80-16（CST · 铝铸）", tireR: "150/80-15（CST · 铝铸）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 全贴合显示屏（双拉线油门 / 挡位显示 / USB / 自动大灯 / 奔达 BCD 智能车联网 APP 解锁 / 边撑熄火）",
+      src: "https://www.58moto.com/good/21416/configuration.html"
+    }
+,
+    "奔达|黑旗500": {
+      variant: "2024款 黑旗500 Commander Ultra版", price: "36,800",
+      kw: 40, kwRpm: 10000, nm: 42, nmRpm: 7500, cc: 496, cyl: "四缸 V型 DOHC 四气门（53.5x55.2 · BD4V53MR）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "摇篮式钢管车架 + 铝合金平叉",
+      lwh: "2330x907x1100", seat: 685, wb: 1575, tank: 16, weight: 241, clearance: 150,
+      suspF: "倒置前减震", suspR: "电子空气气囊悬挂",
+      brkF: "单碟 · Brembo 卡钳", brkR: "单碟 · 对向双活塞卡钳",
+      tireF: "130/90-16（铝铸）", tireR: "150/80-16（铝铸）",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "TFT 仪表（电子油门 / 挡位显示 / USB / 边撑熄火 / 座高 670-700mm 可调）",
+      src: "https://www.58moto.com/good/20268/configuration.html"
+    }
+,
+    "奔达|灰石250CVT": {
+      variant: "2026款 灰石250 CVT版", price: "18,980",
+      kw: 19, kwRpm: 9000, nm: 25, nmRpm: 5500, cc: 249, cyl: "双缸 V型（53.5x55.4 · BD2V53MM）",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      frame: "双摇篮车架",
+      lwh: "2285x864x1113", seat: 718, wb: 1525, tank: 15.5, weight: 206, clearance: 155,
+      suspF: "倒置前叉", suspR: "边置式双后减震",
+      brkF: "单碟 · 对向四活塞卡钳", brkR: "单碟 · 对向双活塞卡钳",
+      tireF: "130/90-16（铝铸）", tireR: "150/80-16（铝铸）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 仪表（双拉线油门 / USB）",
+      src: "https://www.58moto.com/good/21135/configuration.html"
+    }
+,
+    "奔达|黑旗950": {
+      variant: "2025款 黑旗950", price: "43,800",
+      kw: 80, kwRpm: 10000, nm: 85, nmRpm: 8000, cc: 948, cyl: "四缸 V型（67x67.2 · BD4V67MX）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "钢管式摇篮车架 + 铝合金后平叉",
+      lwh: "2330x907x1168", seat: 690, wb: 1588, tank: 16, weight: 242, clearance: 130,
+      suspF: "正置前减震", suspR: "液压弹簧后减震",
+      brkF: "双碟 · Brembo 对向四活塞卡钳", brkR: "单碟 · Brembo 对向双活塞卡钳",
+      tireF: "130/90-R16（铝铸）", tireR: "180/65-R16（铝铸）",
+      abs: "标配前后（可关闭）", tcs: "可关闭", qs: "无", cruise: "标配", tpms: "无", keyless: "标配",
+      dash: "TFT 全彩仪表（电子油门 / 挡位显示 / USB / 奔达 BCD 智能车联网 APP 解锁 / 边撑熄火）",
+      src: "https://www.58moto.com/good/21495/configuration.html"
+    }
+,
+    "力帆|K29": {
+      variant: "2024款 K29", price: "13,980",
+      kw: 20.5, kwRpm: 9000, nm: 23.5, nmRpm: 7000, cc: 249.6, cyl: "单缸 SOHC 四气门（77x53.6 · 177MM-B）", cmp: "12.2:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "环抱式车架 + 后双摇臂",
+      lwh: "2230x850x1090", seat: 710, wb: 1500, tank: 14, weight: 165, clearance: 145,
+      suspF: "正置前减震", suspR: "双减震",
+      brkF: "单 φ320mm 盘", brkR: "单碟",
+      tireF: "110/90-ZR16（铝铸）", tireR: "130/90-ZR15（铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶+机械组合式仪表（单拉线油门 / 挡位显示 / 前倾角 34° / 最小转弯半径 2.435m）",
+      src: "https://www.58moto.com/good/21262/configuration.html"
+    }
+,
+    "力帆|KPS250": {
+      variant: "2021款 KPS250", price: "15,680",
+      kw: 19, kwRpm: 9000, nm: 22, nmRpm: 7000, cc: 249, cyl: "单缸 四气门（77x53.6 · 17MM-S）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      lwh: "2000x760x1070", seat: 790, wb: 1405, tank: 14, weight: 154, clearance: 165,
+      brkF: "单碟", brkR: "单碟",
+      tireF: "110/70-17（铝铸）", tireR: "140/70-17（铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "挡位显示 / USB（选装）",
+      src: "https://www.58moto.com/good/4726/configuration.html"
+    }
+,
+    "力帆|V16": {
+      variant: "2026款 V16 Pro(型标PLUS)", price: "16,280",
+      kw: 14, kwRpm: 8000, nm: 18, nmRpm: 6500, cc: 249, cyl: "双缸 V型 SOHC（49x66 · 2V49FMM-R2）", cmp: "10:1",
+      cool: "风冷", gear: "国际5挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "环抱式车架",
+      lwh: "2300x1000x1100", seat: 680, wb: 1540, tank: 17, weight: 178, clearance: 160,
+      suspF: "正置双减震", suspR: "双后减震",
+      brkF: "单碟", brkR: "单碟",
+      tireF: "110/90-18（铝铸）", tireR: "130/90-15（铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶+机械组合仪表（单拉线油门 / 前倾角 35.5° / 最小转弯半径 2.4m / 最大有效载荷 150kg）",
+      src: "https://www.58moto.com/good/17731/configuration.html"
+    }
+,
+    "力帆|K19": {
+      variant: "2026款 K19 青春版", price: "10,800",
+      kw: 10, kwRpm: 8500, nm: 12.8, nmRpm: 6500, cc: 149, cyl: "单缸 SOHC 两气门（58.5x55.6 · 158MJ-L）", cmp: "11.4:1",
+      cool: "水冷", gear: "循环5挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "环抱式车架 + 双摇臂",
+      lwh: "2230x910x1090", seat: 710, wb: 1500, tank: 14, weight: 160, clearance: 145,
+      suspF: "正置前叉", suspR: "边置式双后减震",
+      tireF: "110/90-16", tireR: "130/90-15",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      src: "https://www.58moto.com/good/18602/configuration.html"
+    }
+,
+    "贝纳利|TRK552": {
+      variant: "2026款 TRK552 公路款", price: "29,880",
+      kw: 45, kwRpm: 8500, nm: 55, nmRpm: 6000, cc: 548.9, cyl: "双缸 直列（70.5x70.3 · BJ270MR-D）",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢制编织网车架 + 铝合金后摇臂",
+      lwh: "2300x960x1380", seat: 795, wb: 1500, tank: 20, weight: 246, clearance: 200,
+      suspF: "Marzocchi 倒置前叉", suspR: "中置多连杆减震",
+      brkF: "双 φ320mm 盘 · 西互对向四活塞放射卡钳", brkR: "单 φ260mm 盘 · 西互对向双活塞卡钳",
+      tireF: "120/70-ZR17（倍耐力 · 铝铸）", tireR: "160/60-ZR17（倍耐力 · 铝铸）",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      src: "https://www.58moto.com/good/20912/configuration.html"
+    }
+,
+    "贝纳利|TNT600i": {
+      variant: "2024款 TNT600i", price: "37,800",
+      kw: 60, kwRpm: 11000, nm: 55, nmRpm: 8000, cc: 600, cyl: "四缸 直列 DOHC 四气门（65x45.2 · BJ465MS-D）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢管编织高强度车架 + 铝合金后摇臂",
+      lwh: "2140x800x1100", seat: 800, wb: 1480, tank: 15, weight: 233, clearance: 170,
+      suspF: "液力阻尼式前减震", suspR: "液压弹簧式后减震",
+      brkF: "双 φ320mm 盘 · Brembo 对向四活塞卡钳", brkR: "单 φ260mm 盘 · Brembo 对向双活塞卡钳",
+      tireF: "120/70-ZR17（倍耐力 · 铝铸）", tireR: "180/55-ZR17（倍耐力 · 铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "5 寸 TFT 仪表（双拉线油门）",
+      src: "https://www.58moto.com/good/5611/configuration.html"
+    }
+,
+    "香帅机车|金刚狼800": {
+      variant: "2021款 金刚狼800S", price: "69,800",
+      kw: 37.8, kwRpm: 7000, nm: 59, nmRpm: 5500, cc: 800, cyl: "双缸 V型 DOHC 四气门（91x61.5 · JY2V91MW）", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "皮带传动",
+      frame: "分体式铝合金车架",
+      lwh: "2420x890x1130", seat: 720, wb: 1650, tank: 20, weight: 288, clearance: 110,
+      suspF: "液压倒置前减震（7 段阻尼可调）",
+      brkF: "单碟", brkR: "单碟",
+      tireF: "140/70-ZR17（正新 · 铝铸）", tireR: "360/30-R18（正新 · 铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "机械指针 + LCD 液晶显示屏（手机连接 / 挡位显示 / USB / 加热手把 / 整车质保 1 年或 1 万公里）",
+      src: "https://www.58moto.com/good/20445/configuration.html"
+    }
+,
+    "香帅机车|Joy250": {
+      variant: "2025款 Joy250 运动版", price: "14,980",
+      kw: 20.95, nm: 25, nmRpm: 7000, cc: 248, cyl: "双缸 直列 SOHC 每缸两气门（53.5x55.2）",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2213x841x1200", seat: 698, wb: 1505, tank: 14, weight: 193,
+      suspF: "正置阻尼前减震", suspR: "双边弹簧后减震",
+      brkF: "碟刹 · 单向双活塞卡钳 + 浮动盘", brkR: "碟刹 · 单活塞卡钳",
+      tireF: "130/90-16（建大 · 铝铸）", tireR: "150/80-16（建大 · 铝铸）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "压块式液晶仪表（T-BOX 车联网）",
+      src: "https://www.58moto.com/good/21145/configuration.html"
+    },
+    "香帅机车|Joy315": {
+      variant: "2025款 Joy315 时尚版", price: "16,880",
+      kw: 22.6, kwRpm: 8500, nm: 27.8, nmRpm: 6500, cc: 298, cyl: "双缸 直列（57.3x57.8）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      lwh: "2213x840x1200", wb: 1505, tank: 14, weight: 179, clearance: 186,
+      suspF: "正置式前减震", suspR: "可调双后减震",
+      brkF: "碟刹", brkR: "碟刹",
+      tireF: "130/90-16（铝铸）", tireR: "150/80-16（铝铸）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LED 仪表（T-BOX 车联网）",
+      src: "https://www.58moto.com/good/21145/configuration.html"
+    }
+,
+    "香帅机车|睿龙 JSX900i": {
+      variant: "2021款 睿龙 JSX900i", price: "53,800",
+      kw: 45, kwRpm: 6500, nm: 72, nmRpm: 5500, cc: 900, cyl: "双缸 V型 SOHC", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "皮带传动",
+      frame: "分体摇篮式车架",
+      lwh: "2390x830x1070", seat: 720, wb: 1600, tank: 20, weight: 260, clearance: 137,
+      suspF: "可调倒置前减震", suspR: "可调液压后减震",
+      brkF: "单碟", brkR: "单碟",
+      tireF: "140/70-R17（铝铸）", tireR: "200/50-ZR17（铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "TFT 液晶显示屏（挡位显示 / 无钥匙启动 / 德尔福电喷）",
+      src: "https://www.58moto.com/good/19619/configuration.html"
+    }
+,
+    "香帅机车|硬汉 宽胎": {
+      variant: "2023款 硬汉800N", price: "43,800",
+      kw: 45, kwRpm: 7000, nm: 72, nmRpm: 5500, cc: 800, cyl: "双缸 V型 DOHC 四气门（91x61.5 · JY2V82MT）", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "皮带传动",
+      frame: "双摇篮式车架 + 方管式后摇臂",
+      lwh: "2155x870x1160", seat: 695, wb: 1510, tank: 13, weight: 254, clearance: 140,
+      suspF: "内置阻尼液压前减震", suspR: "内置阻尼液压后减震",
+      brkF: "对称四活塞卡钳 + 浮动碟", brkR: "对称四活塞卡钳 + 碟刹",
+      tireF: "130/70-19（正新 · 铝铸）", tireR: "240/45-17（正新 · 铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 液晶显示屏（双拉线油门 / 挡位显示 / USB / 整车质保 1 年或 1 万公里）",
+      src: "https://www.58moto.com/good/20005/configuration.html"
+    }
+,
+    "香帅机车|YES418": {
+      variant: "2025款 YES 软尾 418 尊享版", price: "20,980",
+      kw: 29, kwRpm: 8500, nm: 39, nmRpm: 5000, cc: 384.5, cyl: "双缸 V型 每缸四气门（60x68 · JY2V60MQ）", cmp: "11.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      lwh: "2250x855x1090", seat: 690, wb: 1550, tank: 16, weight: 170, clearance: 150,
+      suspF: "渝安倒置前叉（φ37mm 内管 / 行程 119.3mm）", suspR: "渝安中置单减震（行程 45mm / 预载可调）",
+      brkF: "单 φ300mm 固定盘 · 日信/力邦 浮动卡钳", brkR: "单 φ240mm 固定盘 · 日信/力邦 卡钳",
+      tireF: "130/60-19（铝铸）", tireR: "180/55-17（铝铸）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "挡位显示 / USB / 无钥匙启动（前倾角 32° / 拖曳距 197mm / 最大有效载荷 150kg）",
+      src: "https://www.58moto.com/good/21737/configuration.html"
+    }
+,
+    "豪爵|TR300": {
+      variant: "2024款 TR300 Plus 城市版", price: "21,980",
+      kw: 21.5, kwRpm: 8500, nm: 27.8, nmRpm: 6500, cc: 298, cyl: "双缸 直列（57.3x57.8 · 257MN）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2300x845x1145", seat: 730, wb: 1520, tank: 16, weight: 189, clearance: 180,
+      tireF: "130/90-16（CST · 铝铸）", tireR: "150/80-16（CST · 铝铸）",
+      abs: "标配前后（博世双通道）", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      src: "https://www.58moto.com/good/19782/configuration.html"
+    }
+,
+    "豪爵铃木|DL250（含DL250-A无三箱/DL250-C三箱）": {
+      variant: "2024款 DL250 标准版", price: "19,880",
+      kw: 18.4, kwRpm: 8000, nm: 23.4, nmRpm: 6500, cc: 248, cyl: "双缸 直列 SOHC 每缸两气门（53.5x55.2 · J517）",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "交叉摇篮式车架",
+      lwh: "2150x880x1295", seat: 795, wb: 1430, tank: 17.3, weight: 188, clearance: 155,
+      suspF: "正立伸缩筒式前叉", suspR: "七段可调中央减振",
+      brkF: "单 φ290mm 盘式", brkR: "单 φ240mm 盘式",
+      tireF: "110/80-17（IRC · 铝铸）", tireR: "140/70-17（IRC · 铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "双拉线油门（极速 125km/h）",
+      src: "https://www.58moto.com/good/6657/configuration.html"
+    }
+,
+    "豪爵铃木|GSX250R（含GSX250R-A/GSX250R-F）": {
+      variant: "2026款 GSX250R-F", price: "18,980",
+      kw: 21.5, kwRpm: 9500, nm: 23.6, nmRpm: 5500, cc: 248, cyl: "双缸 直列 每缸四气门 · VVL 可变气门升程（53.5x55.2 · EJB1）", cmp: "11.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2085x740x1110", seat: 790, wb: 1430, tank: 14.5, weight: 178, clearance: 160,
+      suspF: "正立伸缩筒式前叉", suspR: "七段可调中央减震",
+      brkF: "单 φ290mm 盘式", brkR: "单 φ240mm 盘式",
+      tireF: "110/80-17（铝铸）", tireR: "140/70-17（铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配",
+      dash: "高清 TFT 仪表（蓝牙 / 导航投屏 / 挡位显示 / USB）",
+      src: "https://www.58moto.com/good/4376/configuration.html"
+    }
+,
+    "大阳|V锐250T": {
+      variant: "2026款 V锐 250T", price: "15,980",
+      kw: 17, kwRpm: 7000, nm: 23.5, nmRpm: 6000, cc: 249, cyl: "单缸 水冷",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      lwh: "2166x770x1366", seat: 738, wb: 1548, tank: 13.5, weight: 200,
+      suspF: "正置式前减震",
+      brkF: "单碟", brkR: "单碟",
+      tireF: "120/70-14（铝铸）", tireR: "150/70-13（铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "5 寸 TFT + 双筒指针仪表（极速 122km/h / 质保 2 年或 2 万公里）",
+      src: "https://www.58moto.com/good/18668/configuration.html"
+    },
+    "长江摩托|Bobbie 700": {
+      variant: "2026款 Bobbie III 700i", price: "47,777",
+      kw: 55, kwRpm: 8500, nm: 68, nmRpm: 6500, cc: 700, cyl: "双缸 直列 DOHC（83x64）", cmp: "11.6:1",
+      cool: "水冷", gear: "前进 4 挡 + 1 倒挡", clutch: "湿式多片离合", drive: "链条传动",
+      lwh: "2260x1730x1065", seat: 760, wb: 1510, tank: 15, weight: 330, clearance: 140,
+      suspF: "φ41mm 正置式液压前减震", suspR: "5 段可调式液压弹簧减震",
+      brkF: "单 φ320mm 液压碟刹", brkR: "单 φ256mm 液压碟刹",
+      tireF: "2.75x17（铝合金）", tireR: "120/80-17（铝合金）",
+      abs: "无", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "三轮侉子（需 D 证 · 前倾角 29° · 极速 118km/h）",
+      src: "https://www.58moto.com/good/19922/configuration.html"
+    }
+,
+    "长江摩托|CJ650": {
+      variant: "2019款 CJ650 两轮版 网轮", price: "39,800",
+      kw: 45, kwRpm: 8500, nm: 52, nmRpm: 7000, cc: 649.3, cyl: "双缸 直列 DOHC 每缸四气门（83x60）", cmp: "11.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      lwh: "—", seat: 780, wb: 1445, tank: 20, clearance: 135,
+      suspF: "KYB φ40mm 正置液压前减震",
+      brkF: "单向两活塞碟刹", brkR: "单向两活塞碟刹",
+      tireF: "4.1-R18（铝合金辐条）", tireR: "4.1-R18（铝合金辐条）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LED 灯具（停产车型）",
+      src: "https://www.58moto.com/good/18544/configuration.html"
+    },
+    "宗申|250R": {
+      variant: "2021款 250R", price: "14,800",
+      kw: 14, kwRpm: 8000, nm: 18, nmRpm: 6000, cc: 249.9, cyl: "单缸（PR250）", cmp: "9.2:1",
+      cool: "油冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "管式焊接车架",
+      lwh: "2025x800x1070", seat: 775, wb: 1355, tank: 13, weight: 150, clearance: 160,
+      suspF: "液压阻尼倒置前减震", suspR: "中央可调减震",
+      brkF: "单碟", brkR: "单碟",
+      tireF: "100/80-17（正新 · 铝铸）", tireR: "140/70-17（正新 · 铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LED 液晶仪表（双拉线油门 / 挡位显示 / USB / 官方 0-100 6.8s 极速 115）",
+      src: "https://www.58moto.com/good/19659/configuration.html"
+    }
+,
+    "宗申|M250R（毒液）": {
+      variant: "2023款 M250R", price: "18,800",
+      kw: 20.5, kwRpm: 9000, nm: 22, nmRpm: 7000, cc: 249, cyl: "单缸 每缸四气门（ZS172MM-P）", cmp: "11:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2050x825x1145", seat: 805, wb: 1360, weight: 150,
+      brkF: "单碟", brkR: "单碟",
+      tireF: "110/70-17（铝铸）", tireR: "140/70-17（铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LED 灯具（极速 125km/h）",
+      src: "https://www.58moto.com/good/19886/configuration.html"
+    }
+,
+    "宗申|250X（沙漠飞狐250X）": {
+      variant: "2023款 250X 尊享版", price: "13,680",
+      kw: 14, kwRpm: 8000, nm: 18, nmRpm: 6500, cc: 249.2, cyl: "单缸（ZS172YMM-2A）", cmp: "9.25:1",
+      cool: "油冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "管式焊接 + 摇篮式车架",
+      lwh: "2115x880x1220", seat: 850, wb: 1350, tank: 12, weight: 145, clearance: 262,
+      suspF: "倒置前减（行程 150mm）", suspR: "液压阻尼弹簧式中心后减",
+      brkF: "单 φ267mm 盘式", brkR: "单 φ220mm 盘式",
+      tireF: "80/100-21（铝合金辐条 · 非真空）", tireR: "120/90-18（铝合金辐条 · 非真空）",
+      abs: "标配前后（可关闭）", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "液晶显示屏（单拉线油门 / 挡位显示 / 前倾角 26° / 官方油耗 3.5 极速 110）",
+      src: "https://www.58moto.com/good/19884/configuration.html"
+    }
+,
+    "鑫源|骓1200": {
+      variant: "2025款 骓1200 旅行版", price: "49,900",
+      kw: 45, kwRpm: 5500, nm: 91, nmRpm: 4000, cc: 1200, cyl: "双缸 V型 风冷（2V89FMYL）", cmp: "10:1",
+      cool: "风冷", gear: "国际5挡", clutch: "湿式多片滑动离合", drive: "皮带传动",
+      frame: "双下管摇篮式车架 + 精铸件矩管一体式后摇臂",
+      lwh: "2245x910x1295", seat: 720, wb: 1535, tank: 14, weight: 261, clearance: 110,
+      suspF: "正置式前减震", suspR: "边置式双后减震",
+      brkF: "单碟", brkR: "单碟",
+      tireF: "90/90-21（赫璐 · 钢制辐条）", tireR: "150/80-16（赫璐 · 钢制辐条）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 仪表（双拉线油门 / 极速 165km/h）",
+      src: "https://www.58moto.com/good/20397/configuration.html"
+    }
+,
+    "鑫源|飓风525": {
+      variant: "2025款 飓风525", price: "49,990",
+      kw: 39.6, kwRpm: 8500, nm: 50.5, nmRpm: 7000, cc: 494, cyl: "双缸 直列（268MR-2）",
+      cool: "水冷", drive: "轴传动",
+      lwh: "2285x1660x1360", wb: 1525, tank: 18, weight: 396, clearance: 190,
+      brkF: "单 φ276mm 盘 · 三活塞卡钳", brkR: "单 φ260mm 盘 · 双活塞卡钳",
+      tireF: "4.6-18（钢制辐条）", tireR: "5.1-18（钢制辐条）",
+      abs: "无", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "三轮侉子 · 轴传动（需 D 证 · 最大有效载荷 225kg / 极速 110km/h）",
+      src: "https://www.58moto.com/good/21881/configuration.html"
+    }
+,
+    "鑫源|525X": {
+      variant: "2026款 525X 传奇版", price: "27,999",
+      kw: 37, kwRpm: 8500, nm: 45, nmRpm: 7000, cc: 494, cyl: "双缸 直列 DOHC 每缸四气门（268MR）",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2227x975x1304", seat: 815, wb: 1447, tank: 19, weight: 221, clearance: 195,
+      suspF: "KYB 倒置前叉（压缩/回弹多段可调）", suspR: "KYB 中置多连杆减震",
+      brkF: "西互对向四活塞卡钳", brkR: "西互卡钳",
+      tireF: "110/80-R19（铝合金辐条）", tireR: "150/70-R17（铝合金辐条）",
+      abs: "标配前后（可关闭）", tcs: "标配（可关闭）", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "7 寸 TFT 彩屏（蓝牙 / 导航投屏 / USB+DC12V / 毫米波雷达盲区监测 / 变道辅助 / T-BOX / 行车记录仪 / 手动 2 段风挡 / 极速 160）",
+      src: "https://www.58moto.com/good/22849/configuration.html"
+    }
+,
+    "鑫源|龙卷风520 梦想版": {
+      variant: "2023款 龙卷风520 梦想版", price: "48,000",
+      kw: 39.6, kwRpm: 8500, nm: 50.5, nmRpm: 7000, cc: 494, cyl: "双缸 直列 DOHC 每缸四气门（68x68 · 268MR-2）", cmp: "11.5:1",
+      cool: "水冷", gear: "前进 5 挡 + 1 倒挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "一体式摇篮车架",
+      lwh: "2290x1640x1170", seat: 800, wb: 1520, tank: 18, weight: 358, clearance: 180,
+      suspF: "摇架式前悬",
+      brkF: "单碟", brkR: "单碟",
+      tireF: "4.6-18（腾森 · 钢制辐条）", tireR: "5.1-18（腾森 · 钢制辐条）",
+      abs: "无（CBS 联动）", tcs: "无", qs: "无", cruise: "无", tpms: "标配", keyless: "无",
+      dash: "仿彩液晶仪表（双拉线油门 / 挡位显示 / 三轮需 D 证 / 最大有效载荷 225kg / 极速 110）",
+      src: "https://www.58moto.com/good/20547/configuration.html"
+    }
+,
+    "长城灵魂|S2000": {
+      variant: "2026款 S2000ST 墨砚两箱版", price: "218,800",
+      kw: 113, kwRpm: 6500, nm: 190, nmRpm: 4500, cc: 1999, cyl: "八缸 水平对置 DOHC 每缸四气门（68.0x68.8 · GW8P68MYL）", cmp: "11:1",
+      cool: "水冷", gear: "DCT 8 速自动挡", clutch: "湿式多片双离合", drive: "轴传动",
+      frame: "一体式车架",
+      lwh: "2660x950x1540", seat: 740, wb: 1810, tank: 26.2, weight: 450, clearance: 130,
+      suspF: "三层平行连杆前悬", suspR: "中央减震",
+      abs: "标配前后", tcs: "标配",
+      dash: "官方油耗 5.9L / 拖曳距 110mm / 极速 210km/h",
+      src: "https://www.58moto.com/good/21292/configuration.html"
+    }
+,
+    "张雪机车|820RR": {
+      variant: "2026款 820RR", price: "43,800",
+      kw: 99, kwRpm: 12000, nm: 80, nmRpm: 9500, cc: 818.8, cyl: "三缸 直列 DOHC 每缸四气门 冲压进气（80x54.3 · ZX380MW-A）", cmp: "13:1",
+      cool: "水冷 + 油冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "全铝合金铸造车架 + 铝合金双摇臂",
+      lwh: "2050x745x1160", seat: 825, wb: 1420, tank: 18, weight: 193,
+      suspF: "渝安倒置前叉（预载/压缩/回弹多段可调）", suspR: "中置多连杆减震（外置气囊）",
+      brkF: "双 φ320mm 浮动盘 · 泰斯克双子星四活塞径向卡钳", brkR: "φ220mm 盘 · 泰斯克小螃蟹卡钳",
+      tireF: "120/70-ZR17（CST S7 · 铝铸）", tireR: "190/55-ZR17（CST S7 · 铝铸）",
+      abs: "标配前后（弯道 ABS / 可关闭）", tcs: "标配（可关闭）", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "标配",
+      dash: "6.2 寸 TFT 仪表（电子油门 / 液压离合 / 6 轴 IMU / T-BOX / 多驾驶模式含弹射起步 / T 扣盘 / 官方 0-100 2.81s 极速 280）",
+      src: "https://www.58moto.com/good/21489/configuration.html"
+    }
+,
+    "张雪机车|820RR-RS": {
+      variant: "2027款 820RR-RS", price: "138,000",
+      kw: 110, kwRpm: 13500, nm: 86, nmRpm: 10000, cc: 818.8, cyl: "三缸 直列 DOHC 每缸四气门 冲压进气（80x54.3 · ZX380MW-A）", cmp: "14:1",
+      cool: "水冷 + 油冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金铸造车架 + 镁合金副车架",
+      lwh: "2050x745x1160", seat: 825, wb: 1420, tank: 16, weight: 182,
+      suspF: "KYB 倒置前叉 φ43mm（预载/压缩/回弹多段可调）", suspR: "KYB 中置多连杆减震（外置气囊 / 预载/压缩/回弹可调）",
+      brkF: "双 φ330mm 浮动盘 · Brembo Pro1 四活塞径向卡钳", brkR: "φ220mm 浮动盘 · Brembo P34 双活塞卡钳",
+      tireF: "120/70-ZR17（倍耐力 V4 SP · 锻造铝轮）", tireR: "200/55-ZR17（倍耐力 V4 SP · 锻造铝轮）",
+      abs: "标配前后（弯道 ABS / 可关闭）", tcs: "标配（可关闭）", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "标配",
+      dash: "6.2 寸 TFT 仪表（电子油门 / 液压离合 / 转向阻尼器 / 6 轴 IMU / T-BOX / 全碳纤维覆盖件 / 弹射起步 / 极速 290）",
+      src: "https://www.58moto.com/good/21489/configuration.html"
+    }
+,
+    "张雪机车|820RR-RC": {
+      variant: "2027款 820RR-RC 赛道版", price: "128,000",
+      kw: 110, kwRpm: 13500, nm: 86, nmRpm: 10000, cc: 818.8, cyl: "三缸 直列 DOHC 每缸四气门 冲压进气（80x54.3 · ZX380MW-A）", cmp: "14:1",
+      cool: "水冷 + 油冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金铸造车架 + 镁合金副车架",
+      lwh: "2050x745x1160", seat: 825, wb: 1420, tank: 16, weight: 175,
+      suspF: "KYB 倒置前叉 φ43mm（预载/压缩/回弹多段可调）", suspR: "KYB 中置多连杆减震（外置气囊 / 预载/压缩/回弹可调）",
+      brkF: "双 φ330mm 浮动盘 · Brembo Pro1 四活塞径向卡钳", brkR: "φ220mm 浮动盘 · Brembo P34 双活塞卡钳",
+      tireF: "120/70-ZR17（CST CM-SR10Ⅱ · 锻造铝轮）", tireR: "180/60-ZR17（CST CM-SR10Ⅱ · 锻造铝轮）",
+      abs: "标配前后（弯道 ABS / 可关闭）", tcs: "标配（可关闭）", qs: "双向快排", cruise: "标配", tpms: "标配", keyless: "标配",
+      dash: "6.2 寸 TFT 赛道仪表（电子油门 / 液压离合 / 转向阻尼器 / 6 轴 IMU / T-BOX / 弹射起步）",
+      src: "https://www.58moto.com/good/21489/configuration.html"
+    }
+,
+    "嘉陵|JH600B（600侉子）": {
+      variant: "2024款 JH600B-2 标准版", price: "55,800",
+      kw: 26, kwRpm: 6000, nm: 46, nmRpm: 4500, cc: 589.9, cyl: "单缸 SOHC 每缸两气门（94x85 · 194MS-4）", cmp: "9.7:1",
+      cool: "油冷", gear: "前进 4 挡 + 1 倒挡", clutch: "湿式多片离合", drive: "链条传动",
+      lwh: "2280x1560x1329", seat: 950, wb: 1540, tank: 19, weight: 355, clearance: 150,
+      brkF: "单碟", brkR: "单碟",
+      tireF: "4.10-18（建大 · 钢制辐条 · 非真空）", tireR: "4.10-18（建大 · 钢制辐条 · 非真空）",
+      abs: "无", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LCD 液晶显示屏（边轮转向 / 单拉线油门 / 挡位显示 / USB / 三轮需 D 证 / 干重 350kg / 极速 110）",
+      src: "https://www.58moto.com/good/6184/configuration.html"
+    }
+,
+    "大阳|ADV250": {
+      variant: "2026款 ADV250 标准版", price: "17,980",
+      kw: 17, kwRpm: 7000, nm: 23.5, nmRpm: 6000, cc: 249, cyl: "单缸 SOHC 每缸四气门（72x61.2 · DY172MM）", cmp: "11:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      lwh: "2200x820x1335", seat: 775, wb: 1548, tank: 13.1, weight: 208, clearance: 165,
+      suspF: "正置式前减震", suspR: "边置式双后减震（外置气囊 / 预载 5 段可调）",
+      brkF: "单碟", brkR: "单碟",
+      tireF: "120/70-14（铝铸）", tireR: "150/70-13（铝铸）",
+      abs: "标配前后", tcs: "标配（可关闭）", qs: "无", cruise: "无", tpms: "无", keyless: "标配",
+      dash: "7 寸 TFT 彩色液晶仪表（蓝牙 / 导航投屏 / USB / 手动 2 段风挡 / ESS 紧急刹车灯 / 侧支架熄火 / 极速 122）",
+      src: "https://www.58moto.com/good/22642/configuration.html"
+    }
+,
+    "豪爵|TVL350": {
+      variant: "2026款 旅行者 TVL350 扶手版", price: "28,980",
+      kw: 22, kwRpm: 7500, nm: 32.2, nmRpm: 5500, cc: 339, cyl: "单缸 SOHC 每缸四气门（78x71 · 1P78MP）", cmp: "10.6:1",
+      cool: "水冷", gear: "CVT 无级变速", clutch: "干式离心式离合", drive: "皮带传动",
+      lwh: "2155x765x1380", seat: 780, wb: 1500, tank: 12.3, weight: 196, clearance: 145,
+      suspF: "正置式前减震", suspR: "边置式双后减震",
+      brkF: "盘式", brkR: "盘式",
+      tireF: "120/70-15（赫璐 · 铝铸）", tireR: "150/70-14（赫璐 · 铝铸）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "无", tpms: "标配", keyless: "标配",
+      dash: "7 英寸 TFT 仪表（蓝牙 / 导航投屏 / USB / 电动无级风挡 / 辅助灯 / IMU / T-BOX / 紧急制动爆闪 / 加热手把与记录仪选配 / 实测 0-100 9.5s 实测油耗 2.51 极速 138）",
+      src: "https://www.58moto.com/good/22766/configuration.html"
+    }
   }
 };
