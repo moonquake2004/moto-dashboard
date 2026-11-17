@@ -4,7 +4,7 @@
    未抓到的字段一律缺省（前端显示「—」），不做估算填充。 */
 window.MOTO_SPECS = {
   meta: {
-    asOf: "2026-11-14",
+    asOf: "2026-11-17",
     source: "摩托范（58moto）参数配置页",
     sourceNote: "逐款抓取，标注 variant 为实际取值版本；同款多配置时取官方指导价对应版本",
     totalModels: 438
