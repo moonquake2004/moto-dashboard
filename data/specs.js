@@ -4116,5 +4116,88 @@ window.MOTO_SPECS = {
       dash: "7 英寸 TFT 仪表（蓝牙 / 导航投屏 / USB / 电动无级风挡 / 辅助灯 / IMU / T-BOX / 紧急制动爆闪 / 加热手把与记录仪选配 / 实测 0-100 9.5s 实测油耗 2.51 极速 138）",
       src: "https://www.58moto.com/good/22766/configuration.html"
     }
+,
+    "川崎|NINJA ZX-4RR": {
+      variant: "2026款 ZX-4RR", price: "64,800",
+      kw: 57, kwRpm: 14000, nm: 39.6, nmRpm: 13200, cc: 401, cyl: "四缸 直列 DOHC 每缸四气门 冲压进气（57x39.3 · ZX400PE）", cmp: "12.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "高强度钢管网格式车架",
+      lwh: "1990x765x1110", seat: 800, wb: 1380, tank: 15, weight: 188, clearance: 135,
+      suspF: "ø37mm 倒置前叉（SFF-BP / Top-out 型弹簧）", suspR: "水平 BRFC-lite 多连杆单筒（压缩/回弹/预载可调）",
+      brkF: "半浮动 ø290mm 双碟 · 对四活塞辐射卡钳", brkR: "ø220mm 单碟 · 单活塞",
+      tireF: "120/70-ZR17（铝铸 · 真空）", tireR: "160/60-ZR17（铝铸 · 真空）",
+      abs: "标配前后", tcs: "标配", qs: "双向快排", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 仪表（电子油门 / 挡位显示 / 不可调风挡 / 前倾 23.5° 拖曳距 97 / 实测油耗 5.9）",
+      src: "https://www.58moto.com/good/20484/configuration.html"
+    }
+,
+    "川崎|Z650": {
+      variant: "2025款 Z650", price: "64,800",
+      kw: 45.5, kwRpm: 7200, nm: 62.1, nmRpm: 6700, cc: 649, cyl: "双缸 直列 DOHC 每缸四气门（83.0x60.0）", cmp: "10.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "高强度钢管网格式车架 + 铝合金后摇臂",
+      lwh: "2115x765x1065", seat: 790, wb: 1410, tank: 15, weight: 188, clearance: 130,
+      suspF: "ø41mm 套筒式前叉", suspR: "水平单筒多连杆（预载可调）",
+      brkF: "300mm 半浮动双碟 · 双活塞", brkR: "220mm 单碟 · 单活塞",
+      tireF: "120/70-ZR17（邓禄普 Sportmax Roadsport 2）", tireR: "160/60-ZR17（邓禄普 Sportmax Roadsport 2）",
+      abs: "标配前后", tcs: "标配（可关闭）", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "双拉线油门 / 前倾 24° 拖曳距 100 / 干重 173kg / 官方 0-100 3.88s 官方油耗 4.5 极速 210",
+      src: "https://www.58moto.com/good/14358/configuration.html"
+    }
+,
+    "川崎|VERSYS 1000": {
+      variant: "2023款 Versys 1000", price: "159,000",
+      kw: 83.8, kwRpm: 8900, nm: 99.9, nmRpm: 6500, cc: 1043, cyl: "四缸 直列 DOHC 每缸四气门（77.0x56.0）", cmp: "10.3:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝制钻石型车架",
+      lwh: "2270x895x1465/1400", seat: 820, wb: 1520, tank: 21, weight: 250, clearance: 150,
+      suspF: "SHOWA ø43mm 全可调倒置前叉", suspR: "SHOWA 氮气多连杆（预载/回弹可调）",
+      brkF: "310mm 双碟 · 辐射对四活塞", brkR: "250mm 单碟 · 双活塞",
+      tireF: "120/70-ZR17（普利司通 · 铝铸）", tireR: "180/55-ZR17（普利司通 · 铝铸）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "无", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "组合仪表（电子油门 / 动力模式 / 挡位显示 / DC12V / 手动无级风挡 / 前倾 27° 拖曳距 106）",
+      src: "https://www.58moto.com/good/5545/configuration.html"
+    }
+,
+    "川崎|VULCAN S": {
+      variant: "2026款 Vulcan S", price: "69,800",
+      kw: 45, kwRpm: 7500, nm: 63, nmRpm: 6600, cc: 649, cyl: "双缸 直列 DOHC 每缸四气门（83.0x60.0 · ER650AE）", cmp: "10.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "高强度菱形钢制车架",
+      lwh: "2310x880x1100", seat: 705, wb: 1575, tank: 14, weight: 229, clearance: 130,
+      suspF: "ø41mm 正立式前叉", suspR: "边置式单减震（预载多段可调）",
+      brkF: "φ300mm 单碟", brkR: "φ250mm 单碟",
+      tireF: "120/70-R18（邓禄普 · 铝铸）", tireR: "160/60-R17（邓禄普 · 铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      src: "https://www.58moto.com/good/5190/configuration.html"
+    }
+,
+    "川崎|VERSYS 1100": {
+      variant: "2026款 Versys 1100", price: "159,000",
+      kw: 99, kwRpm: 9000, nm: 112, nmRpm: 7800, cc: 1099, cyl: "四缸 直列 DOHC 每缸四气门（77x59）", cmp: "11.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金双翼梁车架",
+      lwh: "2270x895x1465", seat: 820, wb: 1520, tank: 21, weight: 230, clearance: 150,
+      suspF: "φ43mm 倒置前叉（预载/回弹可调）", suspR: "中置多连杆减震（预载/回弹可调）",
+      brkF: "310mm 半浮动双碟 · 径向对置四活塞辐射卡钳", brkR: "260mm 单碟 · 单活塞",
+      tireF: "120/70-ZR17（铝铸 · 真空）", tireR: "180/55-ZR17（铝铸 · 真空）",
+      abs: "标配前后", tcs: "标配（可关闭）", qs: "无", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "机械指针+液晶仪表（电子油门 / 挡位显示 / USB+DC12V / 手动无级风挡 / 官方标注干重 230kg 未给整备 / 前倾 27° 拖曳距 106）",
+      src: "https://www.58moto.com/good/22245/configuration.html"
+    }
+,
+    "川崎|NINJA 1100SX SE": {
+      variant: "2025款 Ninja 1100SX SE", price: "189,200",
+      kw: 100, kwRpm: 9000, nm: 113, nmRpm: 7600, cc: 1099, cyl: "四缸 直列 DOHC 每缸四气门（77x59 · ZXT10HE）", cmp: "11.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金双翼梁车架",
+      lwh: "2100x805x1190", seat: 835, wb: 1440, tank: 19, weight: 234, clearance: 135,
+      suspF: "φ41mm 倒置前叉（预载/压缩/回弹可调）", suspR: "Öhlins S46 中置多连杆（预载/回弹可调）",
+      brkF: "半浮动 φ300mm Brembo 双碟 · Brembo M4.32 双辐射对四活塞", brkR: "φ260mm 单碟 · 单活塞",
+      tireF: "120/70-ZR17（普利司通 · 铝铸）", tireR: "190/50-ZR17（普利司通 · 铝铸）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配", qs: "双向快排", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "4.3 英寸全数字 TFT（蓝牙 / USB / 电加热手把 / 4 种模式 / IMU / 干重 213kg / 前倾 24° 拖曳距 98）",
+      src: "https://www.58moto.com/good/21827/configuration.html"
+    }
   }
 };
