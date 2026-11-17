@@ -4199,5 +4199,71 @@ window.MOTO_SPECS = {
       dash: "4.3 英寸全数字 TFT（蓝牙 / USB / 电加热手把 / 4 种模式 / IMU / 干重 213kg / 前倾 24° 拖曳距 98）",
       src: "https://www.58moto.com/good/21827/configuration.html"
     }
+,
+    "铃木|GSX-8R": {
+      variant: "2026款 GSX-8R", price: "99,800",
+      kw: 60, kwRpm: 8500, nm: 76, nmRpm: 6800, cc: 776, cyl: "双缸 直列 DOHC 每缸四气门（84x70）", cmp: "12.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2155x770x1135", seat: 810, wb: 1465, tank: 14, weight: 205, clearance: 145,
+      suspF: "倒置伸缩式（螺旋弹簧 / 油阻尼）", suspR: "连杆式中置减震（螺旋弹簧 / 油阻尼）",
+      brkF: "双盘式", brkR: "盘式",
+      tireF: "120/70-ZR17（铝铸 · 真空）", tireR: "180/55-ZR17（铝铸 · 真空）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "挡位显示 / 风挡 / 官方油耗 4.2 / 前倾 25° 拖曳距 104",
+      src: "https://www.58moto.com/good/21012/configuration.html"
+    }
+,
+    "铃木|GSX-8T": {
+      variant: "2026款 GSX-8T", price: "95,800",
+      kw: 60, kwRpm: 8500, nm: 76, nmRpm: 6800, cc: 776, cyl: "双缸 直列 DOHC 每缸四气门（84x70）", cmp: "12.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铝合金双摇臂",
+      lwh: "2115x775x1105", seat: 815, wb: 1465, tank: 16.5, weight: 201,
+      suspF: "KYB 倒置前叉（行程 130mm）", suspR: "KYB 中置多连杆减震",
+      tireF: "120/70-ZR17（邓禄普 Sportmax Roadsport 2 · 铝铸）", tireR: "180/55-ZR17（邓禄普 Sportmax Roadsport 2 · 铝铸）",
+      abs: "标配前后", tcs: "标配", qs: "双向快排", cruise: "无", tpms: "无", keyless: "无",
+      dash: "5 英寸彩色 TFT（电子油门 / 运动·标准·舒适三种模式 / USB / 官方标注干重 201kg 未给整备 / 官方油耗 4.2 / 前倾 25° 拖曳距 104）",
+      src: "https://www.58moto.com/good/22704/configuration.html"
+    }
+,
+    "铃木|V-STROM 800DE": {
+      variant: "2026款 V-Strom 800DE", price: "105,800",
+      kw: 60, kwRpm: 8500, nm: 76, nmRpm: 6800, cc: 776, cyl: "双缸 直列 DOHC 每缸四气门（84x70 · FRA1）", cmp: "12.8:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      lwh: "2345x975x1570", seat: 855, wb: 1570, tank: 20, weight: 230, clearance: 220,
+      suspF: "倒置伸缩式（螺旋弹簧 / 油阻尼）", suspR: "连杆式（螺旋弹簧 / 油阻尼）",
+      brkF: "双盘式", brkR: "盘式",
+      tireF: "90/90-21（邓禄普 · 铝辐条 · 非真空）", tireR: "150/70-R17（邓禄普 · 铝辐条）",
+      abs: "标配前后（可关闭）", tcs: "标配", qs: "双向快排", cruise: "无", tpms: "无", keyless: "无",
+      dash: "电子油门 / 前倾 28° 拖曳距 114 / 最小转弯半径 2.7m",
+      src: "https://www.58moto.com/good/20937/configuration.html"
+    }
+,
+    "铃木|Hayabusa 隼 GSX1300R": {
+      variant: "2022款 GSX 1300R Hayabusa", price: "暂无报价",
+      kw: 140, kwRpm: 9700, nm: 150, nmRpm: 7000, cc: 1340, cyl: "四缸 直列 DOHC 每缸四气门（81.0x65.0）", cmp: "12.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      frame: "铝合金双翼梁 + 铝合金后摇臂",
+      lwh: "2180x735x1165", seat: 800, wb: 1480, tank: 20, weight: 264, clearance: 125,
+      suspF: "KYB 倒置前叉", suspR: "KYB 多连杆后减震",
+      brkF: "320mm 双碟 · Brembo 四活塞", brkR: "单碟 · Nissin 单活塞",
+      tireF: "120/70-ZR17（铝铸 · 真空）", tireR: "190/50-ZR17（铝铸 · 真空）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "LED 前/后灯（58moto 该款未列仪表与电控明细）",
+      src: "https://www.58moto.com/good/5551/configuration.html"
+    }
+,
+    "铃木|SV650X": {
+      variant: "2022款 SV650X", price: "92,800",
+      kw: 51.7, kwRpm: 8500, nm: 59.9, nmRpm: 8100, cc: 645, cyl: "V 型双缸 DOHC 每缸四气门（81x62.6）", cmp: "11.2:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片离合", drive: "链条传动",
+      lwh: "2140x730x1090", seat: 790, wb: 1445, tank: 14.5, weight: 200, clearance: 135,
+      suspF: "41mm 伸缩式前叉（行程 125mm）", suspR: "7 级预载可调（行程 130mm）",
+      brkF: "290mm 双碟 · 双活塞", brkR: "240mm 单碟 · 单活塞",
+      tireF: "120/70-ZR17（铝铸 · 真空）", tireR: "160/60-ZR17（铝铸 · 真空）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "前倾 25° 拖曳距 106",
+      src: "https://www.58moto.com/good/15157/configuration.html"
+    }
   }
 };
