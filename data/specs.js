@@ -4333,5 +4333,187 @@ window.MOTO_SPECS = {
       dash: "7 英寸 TFT（定速巡航 / 毫米波雷达 / 电动风挡 / USB / 电加热手把 / 电子悬挂）",
       src: "https://www.58moto.com/good/15765/configuration.html"
     }
+,
+    "KTM|790 Duke": {
+      variant: "2027款 790 Duke", price: "59,800",
+      kw: 77, kwRpm: 9000, nm: 87, nmRpm: 8000, cc: 799, cyl: "双缸 直列 DOHC 每缸四气门（88x65.7 · 288MW）", cmp: "12.7:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "双摇篮铬钼钢主车架 + 铝合金副车架",
+      lwh: "2095x835x1116", seat: 825, wb: 1476, tank: 13.5, weight: 185, dry: 166, clearance: 186,
+      suspF: "WP APEX φ43mm 倒置式前叉（行程 140mm · 压缩/回弹 5 段可调）", suspR: "WP APEX 中置单减震（行程 150mm · 预载/回弹 5 段可调）",
+      brkF: "300mm 双碟 · WP 四活塞辐射式卡钳", brkR: "240mm 单碟 · WP 单活塞活动式卡钳",
+      tireF: "120/70-ZR17（倍耐力 Diablo Rosso IV · 铝铸）", tireR: "180/55-ZR17（倍耐力 Diablo Rosso IV · 铝铸）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "前倾 24° 拖曳距 98（官方油耗 4.4L/100km · 最高车速 215）",
+      src: "https://www.58moto.com/good/5593/configuration.html"
+    }
+,
+    "KTM|890 Duke": {
+      variant: "2022款 890 Duke R", price: "102,500",
+      kw: 89, kwRpm: 9250, nm: 99, nmRpm: 7750, cc: 889, cyl: "双缸 直列 DOHC 每缸四气门（90.7x68.8 · 636）", cmp: "13.5:1",
+      cool: "水冷+油冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铬钼钢管车架（发动机作为受力元件）",
+      lwh: "2137x810x1117", seat: 834, tank: 14, weight: 166, clearance: 206,
+      suspF: "WP APEX 43 倒置式（压缩/回弹可调 · 行程 140mm）", suspR: "WP APEX Monoshock（回弹/液压预载可调 · 行程 150mm）",
+      brkF: "320mm 双碟 · Brembo Stylema 四活塞卡钳", brkR: "240mm 单碟 · Brembo 单活塞浮动卡钳",
+      tireF: "120/70-ZR17（米其林 Power Cup · 铝铸）", tireR: "180/55-ZR17（米其林 Power Cup · 铝铸）",
+      abs: "标配前后（弯道 ABS · 可关闭）", tcs: "标配", qs: "标配双向（页面标注选配）", cruise: "选配", tpms: "选配", keyless: "无",
+      dash: "TFT 液晶屏 · 拖曳距 99.7 · 模式：运动/雨天/街道/经济",
+      src: "https://www.58moto.com/good/18389/configuration.html"
+    }
+,
+    "KTM|RC 390": {
+      variant: "2022款 RC 390", price: "51,980",
+      kw: 32, kwRpm: 9000, nm: 36, nmRpm: 7000, cc: 373, cyl: "单缸 DOHC 每缸四气门（89x60 · 938）", cmp: "12.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "网格车架（粉末喷涂）",
+      seat: 824, wb: 1343, tank: 13.7, weight: 164, clearance: 160,
+      suspF: "WP APEX φ43mm 倒置式前叉", suspR: "WP 中置后减震（5 段回弹阻尼可调）",
+      brkF: "碟刹（页面对该款未细分规格）", brkR: "碟刹（页面对该款未细分规格）",
+      tireF: "110/70-R17（马牌 · 铝铸）", tireR: "150/60-R17（马牌 · 铝铸）",
+      abs: "标配前后", tcs: "无", qs: "选配（双向）", cruise: "无", tpms: "无", keyless: "无",
+      dash: "电子油门 · 拖曳距 84 · 官方油耗 3.46L/100km",
+      src: "https://www.58moto.com/good/5800/configuration.html"
+    }
+,
+    "KTM|690 Duke": {
+      variant: "2012款 690 Duke", price: "93,800",
+      kw: 50, kwRpm: 7500, nm: 70, nmRpm: 5500, cc: 690, cmp: "12.5:1",
+      cyl: "单缸（102x84.5）",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片", drive: "链条传动",
+      seat: 835, wb: 1466, tank: 14, weight: 150, clearance: 192,
+      suspF: "倒置式前叉（页面未列品牌/直径）", suspR: "中置后减震（页面未列规格）",
+      brkF: "碟刹（页面未列直径）", brkR: "碟刹（页面未列直径）",
+      tireF: "120/70-ZR17", tireR: "160/60-ZR17",
+      abs: "无（页面未标注）", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "最高车速 208 · 官方油耗 5.5L/100km（该款 2012 年数据，仅作历史参考）",
+      src: "https://www.58moto.com/good/5544/configuration.html"
+    }
+,
+    "KTM|1290 Super Duke": {
+      variant: "2023款 1290 Super Duke R", price: "159,000",
+      kw: 132, kwRpm: 9500, nm: 140, nmRpm: 8000, cc: 1301, cyl: "V 型双缸 DOHC 每缸四气门（108x71 · 617）", cmp: "13.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合（液压）", drive: "链条传动",
+      frame: "铬钼合金编织车架",
+      lwh: "2120x844x1119", seat: 835, wb: 1497, tank: 16, weight: 189, clearance: 160,
+      suspF: "WP APEX 48 倒置式前叉（可调 · 行程 125mm）", suspR: "WP APEX Monoshock 中置后减震（可调 · 行程 140mm）",
+      brkF: "320mm 双碟 · Brembo 四活塞辐射式卡钳", brkR: "240mm 单碟 · Brembo 双活塞固定卡钳",
+      tireF: "120/70-ZR17（铝铸 · 真空）", tireR: "200/55-ZR17（铝铸 · 真空）",
+      abs: "标配前后（弯道 ABS · 可关闭）", tcs: "标配", qs: "无", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "电子油门 · 前倾 64.8° 拖曳距 106 · 官方油耗 5.6L/100km",
+      src: "https://www.58moto.com/good/5772/configuration.html"
+    }
+,
+    "KTM|790 Adventure": {
+      variant: "2025款 790 Adventure", price: "69,800",
+      kw: 70, kwRpm: 8250, nm: 87, nmRpm: 6500, cc: 799, cyl: "双缸 直列 DOHC 每缸四气门（88x65.7 · 288MW）", cmp: "12.7:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铬钼钢车架（发动机作为受力元件）+ 铝合金后摇臂",
+      lwh: "2119x890x1255", seat: "860/840", wb: 1509, tank: 20, weight: 203, clearance: 233,
+      suspF: "WP APEX φ43mm 倒置式前叉（行程 200mm · 压缩/回弹可调）", suspR: "WP APEX Monoshock 后减震（行程 200mm · 预载/回弹可调）",
+      brkF: "320mm 双浮动碟 · 四活塞辐射式卡钳", brkR: "260mm 单碟 · 双活塞浮动卡钳",
+      tireF: "90/90-21（倍耐力 Scorpion Rally STR · 辐条轮）", tireR: "150/70-R18（倍耐力 Scorpion Rally STR · 辐条轮）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "前倾 64.1° 拖曳距 104 · 官方油耗 4.19L/100km · 最高车速 200",
+      src: "https://www.58moto.com/good/6556/configuration.html"
+    }
+,
+    "KTM|250 Duke": {
+      variant: "2022款 250 Duke", price: "25,000",
+      kw: 23, kwRpm: 9000, nm: 25, nmRpm: 7000, cc: 249, cyl: "单缸 DOHC 每缸四气门（72x61.1 · 937）", cmp: "12.5:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "钢制格子车架（粉末涂层）+ 铝合金碳涂层凸轮摇臂",
+      seat: 805, wb: 1357, tank: 13.4, weight: 162, clearance: 175,
+      suspF: "WP APEX φ43mm 倒置式前叉（行程 142mm）", suspR: "WP APEX Monoshock 中置后减震（行程 150mm · 10 级可调）",
+      brkF: "300mm 单碟 · BYBRE 四活塞放射式卡钳", brkR: "230mm 单碟 · 单活塞浮动卡钳",
+      tireF: "110/70-R17（铝铸 · 真空）", tireR: "150/60-R17（铝铸 · 真空）",
+      abs: "标配前后", tcs: "无", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "5 英寸 TFT（蓝牙连接 / 挡位显示）",
+      src: "https://www.58moto.com/good/5750/configuration.html"
+    }
+,
+    "KTM|390 Adventure": {
+      variant: "2023款 390 Adventure", price: "38,900",
+      kw: 32, kwRpm: 9000, nm: 37, nmRpm: 7000, cc: 373, cyl: "单缸 DOHC 每缸四气门（89x60）", cmp: "12.6:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "粉末涂层钢管编织车架 + 铝合金后摇臂",
+      lwh: "2080x928x1270", seat: 830, wb: 1430, tank: 14.5, weight: 158, clearance: 160,
+      suspF: "WP APEX 倒置式前叉（压缩/回弹可调 · 行程 170mm）", suspR: "WP APEX 中央后减震（预载/回弹可调 · 行程 177mm）",
+      brkF: "320mm 单碟 · 四活塞径向卡钳", brkR: "230mm 单碟 · 单活塞浮动卡钳",
+      tireF: "100/90-19（辐条轮 · 真空）", tireR: "130/80-17（辐条轮）",
+      abs: "标配前后（弯道 ABS · 可关闭）", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "TFT 彩色显示屏 · 前倾 63.5° 拖曳距 98 · 电子油门",
+      src: "https://www.58moto.com/good/6961/configuration.html"
+    }
+,
+    "KTM|1290 Super Duke GT": {
+      variant: "2022款 1290 Super Duke GT", price: "221,800",
+      kw: 130, kwRpm: 9500, nm: 141, nmRpm: 7000, cc: 1301, cyl: "V 型双缸 DOHC 每缸四气门（108x71）", cmp: "13.1:1",
+      cool: "水冷", gear: "国际6挡", clutch: "湿式多片滑动离合", drive: "链条传动",
+      frame: "铬钼合金管式立体车架（粉末涂层）",
+      seat: 835, wb: 1482, tank: 23, weight: 231, dry: 209, clearance: 141,
+      suspF: "WP 半主动 USD φ48mm 前叉（行程 125mm）", suspR: "WP SAT 半主动后减震（行程 156mm）",
+      brkF: "320mm 双碟 · Brembo 四活塞径向卡钳", brkR: "240mm 单碟 · Brembo 双活塞固定卡钳",
+      tireF: "120/70-ZR17（倍耐力 Angel GT · 铝铸 · 真空）", tireR: "190/55-ZR17（倍耐力 Angel GT · 铝铸 · 真空）",
+      abs: "标配前后（弯道 ABS · 可关闭）", tcs: "标配", qs: "选配（双向）", cruise: "标配", tpms: "标配", keyless: "无",
+      dash: "7 英寸 TFT · 电子油门 · 前倾 65.1° 拖曳距 107 · 官方油耗 5.99L/100km",
+      src: "https://www.58moto.com/good/5771/configuration.html"
+    }
+,
+    "宝马|R 1300 RT": {
+      variant: "2026款 R 1300 RT", price: "319,900",
+      kw: 107, kwRpm: 7750, nm: 149, nmRpm: 6500, cc: 1300, cyl: "水平对置双缸（106.5x73 · A75B13A）", cmp: "13.3:1",
+      cool: "水冷", gear: "AMT 6 速自动挡", clutch: "湿式多片离合", drive: "轴传动",
+      frame: "带承重式驱动单元的车架 + 铝合金后车架",
+      lwh: "2229x886x1570", seat: 820, wb: 1499, tank: 24, weight: 283,
+      suspF: "BMW Motorrad EVO-Telelever（行程 149mm）", suspR: "BMW Motorrad EVO-Paralever（行程 158mm）",
+      brkF: "φ310mm 双盘 · 四活塞径向卡钳", brkR: "φ285mm 单盘 · 双活塞浮动卡钳",
+      tireF: "120/70-ZR17（铝铸 · 真空）", tireR: "190/55-ZR17（铝铸 · 真空）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "标配", tpms: "无", keyless: "标配",
+      dash: "电动无级风挡 / 电加热手把 / USB / 变道辅助 LCW / 模式：DYNAMIC·ROAD·ECO·RAIN / 电子油门",
+      src: "https://www.58moto.com/good/21981/configuration.html"
+    }
+,
+    "宝马|R 12 S": {
+      variant: "2026款 R 12 S", price: "219,900",
+      kw: 80, kwRpm: 7000, nm: 115, nmRpm: 6500, cc: 1170, cyl: "水平对置双缸 DOHC 每缸四气门（101x73 · A72B12B）", cmp: "12:1",
+      cool: "油冷", gear: "国际6挡", clutch: "干式单片离合", drive: "轴传动",
+      frame: "带承重驱动单元的网格架",
+      lwh: "2130x870x1070", seat: 795, tank: 16, weight: 220,
+      suspF: "倒置式前叉", suspR: "中置式多连杆减震",
+      brkF: "双浮动盘 · 四活塞径向卡钳", brkR: "单固定盘 · 双活塞卡钳",
+      tireF: "120/70-ZR17（米其林 · 辐条铝轮 · 真空）", tireR: "180/55-ZR17（米其林 · 辐条铝轮 · 真空）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "电子油门 / 挡位显示 / 电加热手把 / USB",
+      src: "https://www.58moto.com/good/22879/configuration.html"
+    }
+,
+    "宝马|R 12 G/S": {
+      variant: "2026款 R 12 G/S 拉力版", price: "179,900",
+      kw: 80, kwRpm: 7000, nm: 115, nmRpm: 6500, cc: 1170, cyl: "水平对置双缸（101x73）", cmp: "12:1",
+      cool: "油冷", gear: "国际6挡", clutch: "干式单片离合", drive: "轴传动",
+      frame: "带承重驱动单元的网格架",
+      lwh: "2255x900x1250", seat: 860, tank: 15.5, weight: 229, clearance: 240,
+      suspF: "倒置式前叉（行程 210mm）", suspR: "中置式多连杆减震（行程 200mm）",
+      brkF: "310mm 双碟 · 双活塞卡钳", brkR: "265mm 单碟 · 双活塞卡钳",
+      tireF: "90/90-21 M/C 54V（辐条铝轮 · 真空）", tireR: "150/70R17 M/C 69V（辐条铝轮 · 真空）",
+      abs: "标配前后（弯道 ABS）", tcs: "标配可关闭", qs: "标配双向", cruise: "标配", tpms: "无", keyless: "无",
+      dash: "模式：雨天/道路/越野（Pro 版加专业模式）/ 挡位显示 / 电加热手把",
+      src: "https://www.58moto.com/good/22761/configuration.html"
+    }
+,
+    "宝马|R 18": {
+      variant: "2022款 R 18 传承者", price: "229,800",
+      kw: 67, kwRpm: 4750, nm: 158, nmRpm: 3000, cc: 1802, cyl: "水平对置双缸 DOHC 每缸四气门（107.1x100）", cmp: "9.6:1",
+      cool: "油冷", gear: "国际6挡", clutch: "干式单片离合", drive: "轴传动",
+      frame: "双摇篮钢制车架 + 钢制双摇臂",
+      lwh: "2440x949x1126", seat: 710, wb: 1731, tank: 16, weight: 345,
+      suspF: "伸缩套筒式前叉", suspR: "中置单避震（回弹阻尼/弹簧预压可调）",
+      brkF: "300mm 双碟 · 四活塞卡钳", brkR: "300mm 单碟 · 四活塞卡钳",
+      tireF: "120/70-B19(60H)（辐条铝轮）", tireR: "180/65-B16(81H)（辐条铝轮）",
+      abs: "标配前后", tcs: "标配", qs: "无", cruise: "无", tpms: "无", keyless: "无",
+      dash: "前倾 57.3° 拖曳距 150 · 模式：雨天/Rock/Roll · 官方油耗 5.46L/100km",
+      src: "https://www.58moto.com/good/12319/configuration.html"
+    }
   }
 };
