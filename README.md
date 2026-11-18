@@ -6,7 +6,9 @@
 
 「结构洞察」区把同一份数据换三种角度看：各车身类别的型号数 TOP3 品牌（渠道密度）、各价格带的型号数 TOP5 品牌（价格带覆盖）、类别 × 价格档矩阵（11 行 × 6 列，格内为该组合型号数、底色按数量深浅）。点榜上品牌或矩阵里非空格子，直接带着「类别 + 价格档」跳到型号浏览器；矩阵格相加 = 424，与统计口径一致。矩阵末行是各价格档合计、最右是各类别合计，点行合计只看类别、点列合计只看价格档、点右下角 424 清空；悬停任意一格会列出撑起这一格的品牌与款数。图表区下方还有一排 11 个车身类别图块，点一下直接筛过去。价格档是横向标签，数量直接标在标签上（1 / 47 / 80 / 82 / 182 / 46），再点一次即取消。搜索按空格分词、多词 AND，命中处全部高亮。筛选到零结果时不只报「没有」，会实时算出「清空搜索 / 去掉类别 / 去掉价格档 / 去掉排量段 / 含平行进口」各自能出多少车，点一下即放宽。
 
-型号表首列是勾选框：攒 2–3 款后底部出现对比浮条，点「开始对比」并排看指导价、价格性质（指导价 / 起售价）、排量、车身类别、价格档、渠道口径、品牌圈层与逐条来源；最低价与最大排量标绿并打 tag，选第 4 款会被拒绝。表头在容器内固定，横向滚动时勾选列与品牌列也固定，438 行下滚到哪儿都看得见列名。品牌车库上方有 A-Z 索引（按英文名首字母，带各字母品牌数，点选即筛、再点取消）。
+**技术参数层**：`data/specs.js`（`window.MOTO_SPECS`）按「品牌|车型」逐款对齐，现覆盖 **438 / 438 款（100%）**，每款约 30 个字段——动力与传动（功率/功率转速/扭矩/扭矩转速/缸径×行程/压缩比/冷却/变速器/离合器/传动方式）、尺寸与重量（长宽高/座高/轴距/油箱/干重/整备质量/离地间隙/车架）、底盘与制动（前后悬挂规格与行程/制动盘与卡钳/前后轮胎与轮辋）、电控与配置（ABS/弯道 ABS/TCS/快排/定速/胎压/无钥匙/仪表/极速/油耗）。对比弹层与单车型弹层共用同一套 `SPEC_GROUPS`，推重比（功率÷整备质量）现算，功率/扭矩/油箱取最大、整备质量取最小自动标「最优」，并列第一不标；未收录字段显示「—」，不做估算。
+
+型号表首列是勾选框：攒 2–3 款后底部出现对比浮条，点「开始对比」并排看指导价、价格性质（指导价 / 起售价）、排量、车身类别、价格档、渠道口径、品牌圈层与逐条来源（有参数时上方再加四组技术参数表）；最低价与最大排量标绿并打 tag，选第 4 款会被拒绝。表头在容器内固定，横向滚动时勾选列与品牌列也固定，438 行下滚到哪儿都看得见列名。品牌车库上方有 A-Z 索引（按英文名首字母，带各字母品牌数，点选即筛、再点取消）。
 
 每个品牌还有一张独立静态页 `brand/<id>.html`（零 JS、深色主题），含型号表、价格区间、排量区间、存疑说明、同类别品牌内链与逐条来源，并带 `Brand + ItemList(Product, offers) + BreadcrumbList` 结构化数据；首页带 `WebSite + Dataset`，口径区末尾是 44 个品牌页的静态内链目录。`sitemap.xml` 覆盖首页与 44 张品牌页。
 
@@ -24,6 +26,7 @@ data/brands_a~d.json    人工维护的原始数据（唯一的事实来源，�
 data/dashboard.js       构建产物，前端直接加载（window.MOTO_DATA）
 data/dashboard.json     构建产物，同内容，供人/脚本查看
 data/market_monthly.js  月度产销序列（scripts/fetch_monthly.py 生成，含逐月来源链接）
+data/specs.js          技术参数库（window.MOTO_SPECS，438 款全覆盖）
 data/logos.json         Logo 获取情况清单
 assets/logos/           本地化的品牌官方 Logo
 assets/favicon.svg      站点图标
@@ -59,6 +62,8 @@ python3 build_data.py
 ## 数据字段
 
 品牌：`id` `name` `nameEn` `company` `category` `subCategory` `group` `marketStatus` `website` `logo` `logoDark` `models` `modelCount` `uncertain` `sources` `note`
+
+技术参数（`data/specs.js` 的 `models["品牌|车型"]`）：`variant`（实际取值年款/版本）`price` `kw` `kwRpm` `nm` `nmRpm` `cc` `cyl` `cmp` `cool` `gear` `clutch` `drive` `frame` `lwh` `seat` `wb` `tank` `dry` `weight` `clearance` `suspF` `suspR` `brkF` `brkR` `tireF` `tireR` `abs` `tcs` `qs` `cruise` `tpms` `keyless` `dash` `src`；键必须与 `dashboard.js` 的「品牌名|车型名」精确一致，构建时由 `tools/check_specs.js` 校验。
 
 型号：`name` `cc` `type` `price`（原样展示文本）`priceMin` `priceMax` `priceFrom`（是否"起"）`priceUnit`（元/万元）`source` `bucket`
 

@@ -200,6 +200,7 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
   backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
   border:1px solid var(--line);border-radius:14px;padding:13px 14px;margin-bottom:16px;box-shadow:var(--shadow)}
 .f-row{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.f-toggle{display:none}
 .search{flex:1;min-width:220px;position:relative}
 .search input{width:100%;height:42px;border:1px solid var(--line);border-radius:10px;padding:0 12px 0 36px;
   font-size:16px;background:var(--surface);color:var(--ink);outline:none;font-family:inherit}
@@ -590,7 +591,14 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
   .charts{grid-template-columns:minmax(0,1fr)}
   .leaders-grid,.foot-grid{grid-template-columns:minmax(0,1fr)}
   .garage-grid{grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}
-  .explorer-bar{padding:10px}
+  .explorer-bar{padding:10px;position:static}
+  .explorer-bar.f-open{position:sticky}
+  .f-toggle{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;height:38px;
+    margin-top:8px;padding:0 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);
+    color:var(--ink);font:700 13px/1 inherit;cursor:pointer}
+  .f-toggle #fSum{color:var(--muted);font-weight:600;font-size:12px;max-width:62%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .explorer-bar:not(.f-open) #fSel,.explorer-bar:not(.f-open) #priceChips,.explorer-bar:not(.f-open) #catChips{display:none}
+  .explorer-bar.f-open #fAdv{display:block}
   .search{min-width:100%}
   select{flex:1;min-width:calc(50% - 5px);font-size:16px}
   .drawer{width:100vw}
@@ -745,6 +753,7 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
     <div class="explorer-bar">
       <div class="f-row">
         <div class="search"><span class="ico">⌕</span><input id="q" type="search" placeholder="搜索品牌 / 型号，空格分隔多个词，如「春风 450」" autocomplete="off" aria-label="搜索品牌或型号"></div>
+        <div id="fSel">
         <select id="fBucket" aria-label="排量段筛选"></select>
         <select id="fType" aria-label="车型类别筛选"></select>
         <select id="fSort" aria-label="排序方式">
@@ -760,7 +769,11 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
           <button id="viewBrands" class="on" type="button">品牌</button>
           <button id="viewModels" type="button">型号表</button>
         </div>
+        </div>
       </div>
+      <button class="f-toggle" id="fToggle" type="button" aria-expanded="false" aria-controls="priceChips">
+        <span>筛选 · 排量 / 类别 / 价格</span><span id="fSum">全部</span>
+      </button>
       <div class="chips-row price-row" id="priceChips" role="group" aria-label="价格区间筛选"></div>
       <div class="chips-row" id="catChips"></div>
       <div class="f-foot">
@@ -1207,6 +1220,7 @@ typeSel.addEventListener("change",function(e){state.type=e.target.value;render()
 $("fSort").addEventListener("change",function(e){state.sort=e.target.value;render()});
 $("viewBrands").addEventListener("click",function(){state.view="brands";syncControls();render()});
 $("viewModels").addEventListener("click",function(){state.view="models";syncControls();render()});
+$("fToggle").addEventListener("click",function(){document.querySelector(".explorer-bar").classList.toggle("f-open");syncFilterToggle()});
 $("resetBtn").addEventListener("click",function(){
   state.q="";state.cat="全部";state.bucket="";state.type="";state.price="";state.officialOnly=false;state.sort="default";
   syncControls();render();toast("已重置全部筛选");
@@ -1638,6 +1652,19 @@ function computeItems(){
   });
   return {toks:toks,items:items,shownModels:items.reduce(function(a,x){return a+x.models.length},0)};
 }
+/* 移动端筛选折叠：默认收起，只留搜索 + 结果行；点开才展开排量/类别/价格并吸顶 */
+function syncFilterToggle(){
+  var bar=document.querySelector(".explorer-bar"),tg=$("fToggle");
+  if(!bar||!tg)return;
+  var n=0;
+  if(state.bucket)n++;
+  if(state.type)n++;
+  if(state.price)n++;
+  if(state.cat!=="全部")n++;
+  if(state.officialOnly)n++;
+  $("fSum").textContent=n?n+" 项条件生效":"全部";
+  tg.setAttribute("aria-expanded",bar.classList.contains("f-open")?"true":"false");
+}
 function render(){
   var r=computeItems(),toks=r.toks,items=r.items,shownModels=r.shownModels;
   var hasFilter=!!state.bucket||!!state.type||!!state.price;
@@ -1664,6 +1691,7 @@ function render(){
     (filtered?' <span style="color:var(--faint)">（全库 '+s.brandCount+' 品牌 / '+(s.modelCountAll||s.modelCount)+' 型号）</span>':'');
   renderActiveTags(toks);
   writeUrlState();
+  syncFilterToggle();
 }
 /* 当前筛选写回地址栏（replaceState 不新增历史记录，锚点保留） */
 function writeUrlState(){
@@ -1787,7 +1815,7 @@ function renderBrands(items,toks){
 function renderModels(items,toks){
   var body=$("explorerBody");
   var rows=[];
-  items.forEach(function(x){x.models.forEach(function(m,i){rows.push({b:x.b,m:m,mi:i})})});
+  items.forEach(function(x){x.models.forEach(function(m){rows.push({b:x.b,m:m,mi:x.b.models.indexOf(m)})})});
   if(state.sort==="price-asc")rows.sort(function(a,b){var x=priceVal(a.m),y=priceVal(b.m);return (x==null?Infinity:x)-(y==null?Infinity:y)});
   else if(state.sort==="price-desc")rows.sort(function(a,b){var x=priceVal(a.m),y=priceVal(b.m);return (y==null?-1:y)-(x==null?-1:x)});
   else if(state.sort==="cc-asc")rows.sort(function(a,b){return (a.m.cc||0)-(b.m.cc||0)});
