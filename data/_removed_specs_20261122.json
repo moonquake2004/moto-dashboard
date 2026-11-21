@@ -1,0 +1,30 @@
+{
+  "钱江|追600": {
+    "reason": "参数实为追600RS（680cc/74.5kW/201kg），需按追600（600cc/60kW/229kg）重抓",
+    "raw": "\"钱江|追600\": {\n      variant: \"2025款 追600RS 圆灯版\", price: \"36,999\", kw: 74.5, kwRpm: 11500, nm: 68, nmRpm: 9000,\n      cc: 680, cyl: \"四缸 直列 DOHC\", cool: \"水冷\", gear: \"国际6挡\", clutch: \"湿式多片滑动离合\", drive: \"链条传动\",\n      frame: \"双翼梁车架（铝合金双摇臂）\", lwh: \"2085x805x1110\", seat: 815, wb: 1450, tank: 17.5, weight: 201,\n      suspF: \"Marzocchi 倒置（预载/压缩/回弹多段可调）\", suspR: \"Marzocchi 中置单减（预载/压缩/回弹多段可调）\",\n      brkF: \"φ320mm 双碟 SUNSTAR · Brembo 对向四活塞\", brkR: \"φ260mm 单碟 · Brembo 对向双活塞\",\n      tireF: \"120/70-ZR17\", tireR: \"180/55-ZR17（玛吉斯）\", abs: \"标配前后\", tcs: \"标配\", qs: \"仅升挡\",\n      cruise: \"无\", tpms: \"标配\", keyless: \"无\", dash: \"5 寸 TFT（蓝牙 + 导航投屏 / 运动·标准模式 / T-BOX / 边撑熄火）\",\n      src: \"https://www.58moto.com/good/18639/configuration.html\"\n    },"
+  },
+  "力帆|K19": {
+    "reason": "参数为 150cc 青春版",
+    "raw": "\"力帆|K19\": {\n      variant: \"2026款 K19 青春版\", price: \"10,800\", kw: 10, kwRpm: 8500, nm: 12.8, nmRpm: 6500,\n      cc: 149, cyl: \"单缸 SOHC 两气门（58.5x55.6 · 158MJ-L）\", cmp: \"11.4:1\", cool: \"水冷\", gear: \"循环5挡\",\n      clutch: \"湿式多片离合\", drive: \"链条传动\", frame: \"环抱式车架 + 双摇臂\", lwh: \"2230x910x1090\", seat: 710,\n      wb: 1500, tank: 14, weight: 160, clearance: 145, suspF: \"正置前叉\", suspR: \"边置式双后减震\",\n      tireF: \"110/90-16\", tireR: \"130/90-15\", abs: \"标配前后\", tcs: \"无\", qs: \"无\", cruise: \"无\",\n      tpms: \"无\", keyless: \"无\", src: \"https://www.58moto.com/good/18602/configuration.html\"\n    },"
+  },
+  "赛科龙|RT450": {
+    "reason": "车型移入存疑",
+    "raw": "\"赛科龙|RT450\": {\n      variant: \"2027款 RT450\", price: \"32,980\", kw: 31.5, kwRpm: 8100, nm: 44.2, nmRpm: 5600,\n      cc: 400, cyl: \"双缸\", cmp: \"11:1\", cool: \"水冷\", gear: \"CVT 无级变速\", clutch: \"干式离心式离合\",\n      drive: \"皮带传动\", frame: \"双摇篮车架\", lwh: \"2230x770x1395\", seat: 780, wb: 1525, tank: 18,\n      weight: 210, clearance: 135, suspF: \"正置式\", suspR: \"边置式双减震（外置气囊 · 预载可调）\", brkF: \"盘式 · 西互卡钳\",\n      brkR: \"盘式 · 日清卡钳\", tireF: \"120/70-15\", tireR: \"140/70-14\", abs: \"标配前后\", tcs: \"标配\", qs: \"无\",\n      cruise: \"无\", tpms: \"标配\", keyless: \"标配 NFC/RFID\", dash: \"TFT 仪表\",\n      src: \"https://www.58moto.com/good/22897/configuration.html\"\n    },"
+  },
+  "香帅机车|欧若拉400T": {
+    "reason": "车型移入存疑",
+    "raw": "\"香帅机车|欧若拉400T\": {\n      variant: \"2023款 欧若拉400T\", price: \"26,800\", kw: 22.6, kwRpm: 6500, nm: 33.1, nmRpm: 5500,\n      cc: 350, cyl: \"单缸 SOHC 四气门\", cmp: \"10.5:1\", cool: \"水冷\", gear: \"CVT 无级变速\",\n      clutch: \"干式离心式离合\", drive: \"皮带传动\", frame: \"摇篮式车架（铝合金一体后摇臂）\", lwh: \"2227x786x1320\",\n      seat: 780, wb: 1617, tank: 13, weight: 193, clearance: 120, brkF: \"碟刹（航特）\", brkR: \"碟刹（航特）\",\n      tireF: \"120/70-15\", tireR: \"140/60-14\", abs: \"标配前后\", tcs: \"无\", qs: \"无\", cruise: \"无\",\n      tpms: \"无\", keyless: \"标配\", dash: \"TFT 液晶显示屏（加热手把标配 / 不可调风挡）\",\n      src: \"https://www.58moto.com/good/20505/configuration.html\"\n    },"
+  },
+  "钱江|鸿350GS": {
+    "reason": "参数排量 350cc，官网实为 330cc，需重抓",
+    "raw": "\"钱江|鸿350GS\": {\n      variant: \"2025款 鸿350GS\", price: \"25,999\", kw: 22, kwRpm: 7500, nm: 33.5, nmRpm: 5500,\n      cc: 350, cyl: \"单缸（QJ1P77MP-D）\", cool: \"水冷\", gear: \"CVT 无级变速\", clutch: \"干式离心式离合\",\n      drive: \"皮带传动\", frame: \"龙骨车架\", lwh: \"2190x750x1395\", seat: 790, wb: 1500, tank: 11.7,\n      weight: 186, suspF: \"正置式前减震\", suspR: \"边置式双后减震\", brkF: \"单碟 · 浮动钳双活塞\", brkR: \"单碟 · 浮动钳双活塞\",\n      tireF: \"120/70-15（正新）\", tireR: \"140/70-14（正新）\", abs: \"标配前后\", tcs: \"标配\", qs: \"无\",\n      cruise: \"无\", tpms: \"标配\", keyless: \"标配\",\n      dash: \"7 寸 TFT 仪表（双拉线油门 / 手机连接 / USB / 电动多段可调风挡 / 双闪）\",\n      src: \"https://www.58moto.com/good/19892/configuration.html\"\n    },"
+  },
+  "钱江|SRT450": {
+    "reason": "车型移入存疑",
+    "raw": "\"钱江|SRT450\": {\n      variant: \"2026款 SRT450\", price: \"27,980\", kw: 39, kwRpm: 9500, nm: 44, nmRpm: 6750,\n      cc: 450, cyl: \"双缸 直列 DOHC\", cmp: \"11.5:1\", cool: \"水冷\", gear: \"国际6挡\", clutch: \"湿式多片离合\",\n      drive: \"链条传动\", frame: \"编织式钢管车架（铝合金双摇臂）\", lwh: \"2240x935x1390\", seat: 830, wb: 1510,\n      tank: 18, weight: 184, clearance: 204, suspF: \"马祖奇倒置 · 行程 200mm（预载/压缩/回弹多段可调）\",\n      suspR: \"中置式多连杆（预载/压缩/回弹多段可调）\", brkF: \"碟刹 · 布雷博卡钳\", brkR: \"碟刹 · 布雷博卡钳\", tireF: \"90/90-21\",\n      tireR: \"140/70-R18（CST 辐条轮）\", abs: \"标配前后（可关闭）\", tcs: \"标配 可关闭\", qs: \"无\", cruise: \"无\",\n      tpms: \"标配\", keyless: \"无\",\n      dash: \"5 英寸 TFT 竖屏（蓝牙 + 导航投屏 / USB / 加热手把·前座垫 / 手动多段可调风挡 / 辅助灯 / T-BOX）\",\n      src: \"https://www.58moto.com/good/22120/configuration.html\"\n    },"
+  },
+  "长江摩托|长江750 CJ750": {
+    "reason": "参数为经典复刻水平对置 749cc 版本；收录车型为春风 650cc 并列双缸版，需重抓",
+    "raw": "\"长江摩托|长江750 CJ750\": {\n      variant: \"长江750 边三轮（经典复刻）\", price: \"—\", kw: 17.6, kwRpm: 5500, nm: 49, nmRpm: 3500,\n      cc: 749, cyl: \"双缸 水平对置 风冷（翻砂工艺）\", cmp: \"—\", cool: \"风冷\", gear: \"前进4挡（可选倒挡）\",\n      clutch: \"湿式多片离合\", drive: \"轴传动\", lwh: \"2400x1600x1100\", seat: 760, wb: 1450, tank: 18,\n      weight: 340, suspF: \"套筒式前叉（摇架）\", suspR: \"双筒减震\", brkF: \"鼓刹\", brkR: \"鼓刹\",\n      tireF: \"3.75-19（辐条轮）\", tireR: \"3.75-19（辐条轮）\", abs: \"无\", tcs: \"无\", qs: \"无\", cruise: \"无\",\n      tpms: \"无\", keyless: \"无\", dash: \"军旅复古边三轮 / 鱼眼大灯 / 马蹄声水平对置 / 24 马力\",\n      src: \"https://m.58moto.com/brand/296\"\n    },"
+  }
+}

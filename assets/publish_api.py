@@ -65,6 +65,13 @@ def main():
         return 2
     print("AUTH_OK login=%s" % who.get("login"), flush=True)
 
+    # 推的是工作区文件，不是某个 commit：有未提交改动时中止，避免把半成品发上去
+    dirty = subprocess.run(["git", "status", "--porcelain"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
+    if dirty and os.environ.get("ALLOW_DIRTY", "") != "1":
+        print("ABORT: 工作区有未提交改动（确认要连同这些改动一起发布请设 ALLOW_DIRTY=1）：")
+        print("\n".join("   " + l for l in dirty.splitlines()[:20]))
+        return 10
+
     files = subprocess.run(["git", "ls-files"], cwd=ROOT, capture_output=True, text=True)
     paths = [p for p in files.stdout.splitlines() if p.strip()]
     print("TRACKED_FILES: %d" % len(paths), flush=True)
@@ -78,8 +85,16 @@ def main():
 
     # 整树替换前先确认不会误删远端独有的文件
     st, remote = api("GET", "/repos/%s/git/trees/%s?recursive=1" % (REPO, base_sha), token=token)
-    if st == 200:
-        remote_paths = {t["path"] for t in remote.get("tree", []) if t.get("type") == "blob"}
+    # 拿不到远端树就无法判断会不会误删，必须中止，而不是跳过检查继续推
+    if st != 200:
+        print("GET_TREE_FAILED:", st, remote.get("message"))
+        return 9
+    if remote.get("truncated"):
+        print("ABORT: 远端树过大被截断，无法完整比对删除清单")
+        return 9
+    remote_modes = {t["path"]: t.get("mode") for t in remote.get("tree", []) if t.get("type") == "blob"}
+    if True:
+        remote_paths = set(remote_modes)
         missing = sorted(remote_paths - set(paths))
         if missing and os.environ.get("ALLOW_DELETE", "") != "1":
             print("ABORT: 本地缺少以下远端文件，整树替换会把它们删掉（确认删除请设 ALLOW_DELETE=1）：")
@@ -93,7 +108,10 @@ def main():
         full = os.path.join(ROOT, rel)
         if not os.path.isfile(full):
             continue
-        raw = open(full, "rb").read()
+        with open(full, "rb") as fh:
+            raw = fh.read()
+        # 保留可执行位：本地有 x 位或远端原来就是 100755，都按 100755 提交
+        mode = "100755" if (os.stat(full).st_mode & 0o111 or remote_modes.get(rel) == "100755") else "100644"
         st, blob = api("POST", "/repos/%s/git/blobs" % REPO, {
             "content": base64.b64encode(raw).decode(),
             "encoding": "base64",
@@ -101,7 +119,7 @@ def main():
         if st not in (201, 200) or not blob.get("sha"):
             print("BLOB_FAILED:", rel, st, blob.get("message"))
             return 4
-        tree.append({"path": rel.replace("\\", "/"), "mode": "100644",
+        tree.append({"path": rel.replace("\\", "/"), "mode": mode,
                      "type": "blob", "sha": blob["sha"]})
         if i % 15 == 0 or i == len(paths):
             print("  blob %d/%d" % (i, len(paths)), flush=True)

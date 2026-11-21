@@ -662,13 +662,6 @@
           "type": "拉力ADV",
           "price": "29980~32980元",
           "source": "https://www.58moto.com/merchant/car/265147?id=17"
-        },
-        {
-          "name": "K19",
-          "cc": 250,
-          "type": "巡航",
-          "price": "13980元",
-          "source": "https://www.58moto.com/merchant/car/265147?id=17"
         }
       ],
       "uncertain": [
@@ -687,6 +680,14 @@
           "price": null,
           "source": "https://motor.lifan.com/cpzt/pkxl/",
           "reason": "力帆中文官网KP系列列有LF350T，未核实到官方指导价与是否仍在国内在售"
+        },
+        {
+          "name": "K19",
+          "cc": 250,
+          "type": "巡航",
+          "price": "13980元",
+          "source": "https://www.58moto.com/merchant/car/265147?id=17",
+          "reason": "力帆官网仅有 LF150-14P（K19 青春版，150cc）；250cc 车型为 K29（LF250-14M）。待确认原记录应为 K29 还是应删除。"
         }
       ],
       "sources": [
@@ -1187,13 +1188,6 @@
           "source": "https://www.58moto.com/brand/A-466.html"
         },
         {
-          "name": "欧若拉400T",
-          "cc": 400,
-          "type": "巡航",
-          "price": "26800元",
-          "source": "https://www.58moto.com/brand/A-466.html"
-        },
-        {
           "name": "旅行者525",
           "cc": 525,
           "type": "巡航",
@@ -1302,6 +1296,14 @@
           "price": null,
           "source": "https://www.58moto.com/brand/A-466.html",
           "reason": "型号名中数字为系列代号，未逐一核实精确排量；上述cc按型号名标称整数记，属估算口径"
+        },
+        {
+          "name": "欧若拉400T",
+          "cc": 400,
+          "type": "巡航",
+          "price": "26800元",
+          "source": "https://www.58moto.com/brand/A-466.html",
+          "reason": "摩托范参数页标 350cc 单缸，与型号名 400 不符；无官网可核，待人工确认排量。"
         }
       ],
       "sources": [

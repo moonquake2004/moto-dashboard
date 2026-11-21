@@ -13,6 +13,7 @@
      brand/<id>.html（44 个独立品牌页）· sitemap.xml · robots.txt · .nojekyll
 """
 import argparse
+import hashlib
 import html
 import json
 import os
@@ -20,7 +21,6 @@ import re
 import shutil
 import subprocess
 import sys
-import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -31,6 +31,12 @@ INDEX = ROOT / "index.html"
 
 def esc(s):
     return html.escape("" if s is None else str(s), quote=True)
+
+
+def ld_json(obj):
+    """JSON-LD 内嵌进 <script>：转义 </ 与 <!--，防止数据里的字符串提前闭合脚本块。"""
+    s = json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
+    return s.replace("</", "<\\/").replace("<!--", "<\\!--")
 
 
 def read_data():
@@ -68,7 +74,7 @@ def uncertain_li(u):
         return "<li>%s</li>" % esc(u)
     bits = [esc(u.get("name"))]
     meta = "，".join(
-        x for x in (("排量 %s" % u["cc"]) if u.get("cc") else "", u.get("type") or "", u.get("price") or "") if x
+        esc(x) for x in (("排量 %s" % u["cc"]) if u.get("cc") else "", u.get("type") or "", u.get("price") or "") if x
     )
     if meta:
         bits.append("（%s）" % meta)
@@ -79,10 +85,10 @@ def uncertain_li(u):
 
 BRAND_CSS = """
 :root{--bg:#0B0D11;--surface:#141922;--surface2:#1B212D;--line:#242C3A;--line2:#2F3949;
- --ink:#EDF1F7;--muted:#9AA5B5;--faint:#69748A;--accent:#FF4A1F;--amber:#FFB020;--mint:#2FD9A6;--dom:#FF4A1F;--jv:#4C8DFF;--imp:#A66BFF;
+ --ink:#EDF1F7;--muted:#9AA5B5;--faint:#7D889C;--accent:#FF4A1F;--amber:#FFB020;--mint:#2FD9A6;--dom:#FF4A1F;--jv:#4C8DFF;--imp:#A66BFF;
  --logo-bg:#F2F4F8;--shadow:0 10px 30px rgba(0,0,0,.35)}
 :root[data-theme=light]{--bg:#F4F6FA;--surface:#FFFFFF;--surface2:#EEF2F8;--line:#DCE3ED;--line2:#C6D0DE;
- --ink:#141A22;--muted:#5A6678;--faint:#8B96A6;--logo-bg:#FFFFFF;--shadow:0 8px 24px rgba(16,24,40,.08)}
+ --ink:#141A22;--muted:#5A6678;--faint:#626D82;--accent:#CC330C;--amber:#9D5E00;--logo-bg:#FFFFFF;--shadow:0 8px 24px rgba(16,24,40,.08)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);
  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
@@ -242,7 +248,7 @@ def brand_page(b, d, siblings):
     logo_html = (
         '<div class="logo"><img src="../%s" alt="%s Logo" loading="lazy"></div>'
         % (esc(b["logo"]["file"]), esc(name))
-        if b.get("logo", {}).get("status") == "ok"
+        if (b.get("logo") or {}).get("file")
         else '<div class="logo"><span class="fb">%s</span></div>' % esc(name)
     )
 
@@ -261,12 +267,13 @@ def brand_page(b, d, siblings):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
-<link rel="canonical" href="{url}">
+<link rel="canonical" href="{url}">{robots}
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{url}">
+<script>try{{var t=JSON.parse(localStorage.getItem("moto-theme"));if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}}catch(e){{}}</script>
 <style>{css}</style>
 <script type="application/ld+json">{ld}</script>
 </head>
@@ -297,7 +304,7 @@ def brand_page(b, d, siblings):
   {src_block}
 </main>
 <footer><div class="wrap">
-  数据更新 {upd} ｜ 口径：中国市场在售 · 排量 ≥250cc ｜ 全库 {tot_b} 品牌 / {tot_m} 型号<br>
+  数据更新 {upd} ｜ 口径：中国市场在售 · 排量 ≥250cc ｜ 全库 {tot_b} 品牌 / {tot_m} 款在售型号（不含平行进口）<br>
   <a href="../index.html#about">数据口径与完整性说明</a> ·
   <a href="../index.html">返回看板</a> · <a href="../index.html#explorer">在型号浏览器中筛选</a>
 </div></footer>
@@ -308,7 +315,7 @@ def brand_page(b, d, siblings):
         desc=esc(desc),
         url=url,
         css=BRAND_CSS,
-        ld=json.dumps(ld, ensure_ascii=False, separators=(",", ":")),
+        ld=ld_json(ld),
         brands=stats["brandCount"],
         cat=esc(cat),
         logo=logo_html,
@@ -325,15 +332,70 @@ def brand_page(b, d, siblings):
         sib_block=sib_block,
         src_block=src_block,
         upd=esc(upd),
+        robots='\n<meta name="robots" content="noindex,follow">' if not models else "",
         tot_b=stats["brandCount"],
-        tot_m=stats["modelCountAll"],
+        tot_m=stats["modelCount"],
     )
 
 
-def build(out_dir, ver=None):
+DATA_FILES = ("dashboard.js", "market_monthly.js", "specs.js")
+
+
+def content_version():
+    """数据文件内容哈希：数据不变 → 版本号不变 → 用户缓存不失效。"""
+    h = hashlib.sha1()
+    for name in DATA_FILES:
+        h.update((ROOT / "data" / name).read_bytes())
+    return h.hexdigest()[:10]
+
+
+def load_js_object(path, var):
+    """解析 window.X = {...}; 形式的数据文件（允许注释、裸键、尾逗号）。"""
+    text = Path(path).read_text(encoding="utf-8")
+    text = re.sub(r"/\*.*?\*/", "", text, flags=re.S)
+    m = re.search(r"window\.%s\s*=\s*" % re.escape(var), text)
+    if not m:
+        sys.exit("%s 里找不到 window.%s" % (path, var))
+    body = text[m.end():].strip().rstrip(";")
+    try:
+        return json.loads(body)
+    except ValueError:
+        body = re.sub(r'([{,]\s*)([A-Za-z_]\w*)\s*:', r'\1"\2":', body)
+        body = re.sub(r",(\s*[}\]])", r"\1", body)
+        return json.loads(body)
+
+
+def check_monthly():
+    """逐月校验：数字字段必须是有限数值、月份连续不重复，否则首页趋势图会整段报错。"""
+    import math
+    M = load_js_object(ROOT / "data" / "market_monthly.js", "MOTO_MONTHLY")
+    rows = M.get("series") or []
+    if len(rows) < 6:
+        sys.exit("market_monthly.js 只有 %d 个月，趋势面板会太空，发布中止" % len(rows))
+    bad, months = [], []
+    for r in rows:
+        mo = r.get("month") or ""
+        if not re.fullmatch(r"\d{4}-\d{2}", mo):
+            bad.append("month 格式错误 %r" % mo)
+        months.append(mo)
+        for k in ("prod", "sales", "yoyProd", "yoySales"):
+            v = r.get(k)
+            if not isinstance(v, (int, float)) or isinstance(v, bool) or not math.isfinite(v):
+                bad.append("%s 的 %s 不是数值：%r" % (mo, k, v))
+        if not str(r.get("url") or "").startswith("https://"):
+            bad.append("%s 缺 https 来源 url" % mo)
+    if len(set(months)) != len(months):
+        bad.append("月份重复：%s" % sorted(m for m in set(months) if months.count(m) > 1))
+    if months != sorted(months):
+        bad.append("月份未按时间排序")
+    if bad:
+        sys.exit("market_monthly.js 校验失败，发布中止：\n  " + "\n  ".join(bad))
+    return len(rows)
+
+
+def build(out_dir, ver=None, require_node=False):
     d = read_data()
-    sites = sorted([b for b in d["brands"] if b["marketStatus"] != "parallel"], key=lambda b: -b["modelCount"])
-    ver = ver or time.strftime("%Y%m%d%H%M", time.gmtime())
+    ver = ver or content_version()
 
     out = Path(out_dir)
     if out.exists():
@@ -359,14 +421,8 @@ def build(out_dir, ver=None):
         sys.exit("index.html 里没找到 data/specs.js 的 script 标签，发布中止")
     if 'data/market_monthly.js?v=' not in idx2:
         sys.exit("index.html 里没找到 data/market_monthly.js 的 script 标签，发布中止")
-    # 月度序列是手抓落库的，序列太短或字段缺失都会让首页趋势面板变空白，构建时先拦一道
-    monthly = (ROOT / "data" / "market_monthly.js").read_text(encoding="utf-8")
-    n_month = monthly.count('"month"')
-    if n_month < 6:
-        sys.exit("data/market_monthly.js 只有 %d 个月，趋势面板会太空，发布中止" % n_month)
-    for k in ("prod", "sales", "yoySales", "url"):
-        if '"%s"' % k not in monthly:
-            sys.exit("data/market_monthly.js 缺字段 %s，发布中止" % k)
+    # 月度序列是手抓落库的：真正解析后逐行校验，缺一个值都会让首页趋势面板崩掉
+    check_monthly()
     (out / "index.html").write_text(idx2, encoding="utf-8")
 
     shutil.copy(ROOT / "data" / "dashboard.js", out / "data" / "dashboard.js")
@@ -391,6 +447,8 @@ def build(out_dir, ver=None):
     upd = d["meta"]["updated"]
     urls = ['<url><loc>%s/</loc><lastmod>%s</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>' % (SITE_URL, upd)]
     for b in d["brands"]:
+        if not b["modelCount"]:
+            continue  # 空品牌页已 noindex，不进 sitemap
         pr = "0.8" if b["modelCount"] >= 10 else "0.6"
         urls.append(
             '<url><loc>%s/brand/%s.html</loc><lastmod>%s</lastmod><changefreq>monthly</changefreq><priority>%s</priority></url>'
@@ -407,13 +465,17 @@ def build(out_dir, ver=None):
     )
 
     # 参数键一致性：specs.js 的「品牌|车型」必须能在 dashboard.js 里找到，否则参数永不显示
-    if shutil.which("node"):
-        chk = ROOT / "tools" / "check_specs.js"
-        if chk.exists():
+    chk = ROOT / "tools" / "check_specs.js"
+    if chk.exists():
+        if shutil.which("node"):
             r = subprocess.run(["node", str(chk)], capture_output=True, text=True)
             print(r.stdout.strip())
             if r.returncode != 0:
                 raise SystemExit("参数键校验失败：\n" + r.stderr.strip())
+        elif require_node:
+            raise SystemExit("找不到 node，无法执行参数键校验（CI 下请先 setup-node，或去掉 --require-node）")
+        else:
+            print("[warn] 未安装 node，跳过参数键校验")
 
     files = sorted(p for p in out.rglob("*") if p.is_file())
     total = sum(p.stat().st_size for p in files)
@@ -428,9 +490,10 @@ def build(out_dir, ver=None):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(ROOT / "_site"))
-    ap.add_argument("--ver", default=None, help="数据文件版本号，默认取当前 UTC 时间 YYYYmmddHHMM")
+    ap.add_argument("--ver", default=None, help="数据文件版本号，默认取数据文件内容哈希")
+    ap.add_argument("--require-node", action="store_true", help="没有 node 时报错而不是跳过参数键校验（CI 用）")
     a = ap.parse_args()
-    build(a.out, a.ver)
+    build(a.out, a.ver, a.require_node)
 
 
 if __name__ == "__main__":

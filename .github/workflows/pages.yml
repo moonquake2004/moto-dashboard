@@ -3,6 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  pull_request:            # PR 只做校验，不部署
   workflow_dispatch:
 
 permissions:
@@ -11,39 +12,44 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false   # Pages 部署中途被取消可能留下半套产物
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4      # tools/check_specs.js 需要 node，否则会被跳过
+        with: { node-version: 20 }
+
+      - name: Validate data
+        run: python build_data.py --check
+
+      - name: Build static site
+        run: |
+          set -e
+          python build_site.py --require-node
+          test -f _site/index.html
+          test -f _site/sitemap.xml
+          test "$(ls _site/brand | wc -l)" -ge 40
+          # 版本号现为内容哈希（十六进制），必须至少 1 位，否则说明注入失败
+          grep -Eo 'data/dashboard\.js\?v=[0-9a-f]+' _site/index.html
+
+      - if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with: { path: _site }
+
   deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-
-      # 发布前先跑一遍数据校验：缺 cc、价格解析不了、型号重名、来源缺失都会让构建失败
-      - name: Validate data
-        run: python3 build_data.py --check
-
-      # 组装 _site：index.html（注入数据版本号）/ 仪表数据 / 官方 Logo /
-      # 44 个独立品牌页 / sitemap.xml / robots.txt。
-      # 原始调研 JSON（brands_*.json）、dashboard.json 和采集脚本不随站点公开。
-      # 这一步原来是一段 shell，加品牌页之后收进 build_site.py，本地可复现：
-      #   python3 build_site.py
-      - name: Prepare static site
-        run: |
-          set -e
-          python3 build_site.py
-          test -f _site/index.html
-          test -f _site/sitemap.xml
-          test -d _site/brand && test "$(ls _site/brand | wc -l)" -ge 40
-          grep -o 'data/dashboard.js?v=[0-9]*' _site/index.html
-
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
