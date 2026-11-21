@@ -76,6 +76,20 @@ def list_reports(pages: int = 4) -> list[dict]:
     return out
 
 
+_CN_NUM = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9, "十": 10, "十一": 11, "十二": 12}
+
+
+def title_month(title: str) -> int | None:
+    """从「9 月摩托车行业…」「一季度…」等标题里取单月月份；累计（1-2 月）、季度稿返回 None。"""
+    if re.search(r"\d+\s*[-—~～至]\s*\d+\s*月|季度|上半年|全年", title):
+        return None
+    m = re.search(r"(?<![\d年])(1[0-2]|[1-9])\s*月", title) or re.search(r"(十[一二]?|[一二三四五六七八九])月", title)
+    if not m:
+        return None
+    v = m.group(1)
+    return int(v) if v.isdigit() else _CN_NUM.get(v)
+
+
 def parse_date(s: str) -> datetime | None:
     for fmt in ("%Y-%m-%d", "%Y年%m月%d日"):
         try:
@@ -116,11 +130,26 @@ def parse_report(url: str) -> dict | None:
     return None
 
 
+def next_month(ym: str) -> str:
+    y, m = int(ym[:4]), int(ym[5:])
+    return "%04d-%02d" % ((y + 1, 1) if m == 12 else (y, m + 1))
+
+
+def gaps(months: list[str]) -> list[str]:
+    out = []
+    for a, b in zip(months, months[1:]):
+        x = next_month(a)
+        while x < b:
+            out.append(x); x = next_month(x)
+    return out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true", help="只校验，不写文件")
     ap.add_argument("--pages", type=int, default=4, help="翻几页列表（一页 20 条，4 页够覆盖两年）")
     ap.add_argument("--years", type=int, default=1, help="保留最近几年，默认只留当年（跨年对照见 README 的取舍说明）")
+    ap.add_argument("--force", action="store_true", help="自检有问题也照样写文件（默认拒写，保留旧数据）")
     args = ap.parse_args()
 
     reports = list_reports(pages=args.pages)
@@ -132,6 +161,11 @@ def main() -> int:
         if not dt:
             continue
         ym = (dt.year - 1, 12) if dt.month == 1 else (dt.year, dt.month - 1)
+        # 标题里写了月份就以标题为准（商会偶尔延期到下下个月才发），并记录与推算值不一致的情况
+        tm = title_month(r["title"])
+        if tm and tm != ym[1]:
+            print("月份以标题为准：%s 发布日 %s 推算 %d 月，标题写 %d 月" % (r["url"], r["date"], ym[1], tm), file=sys.stderr)
+            ym = (ym[0] - 1 if tm > ym[1] + 6 else ym[0], tm)
         key = "%04d-%02d" % ym
         if key in picked:
             continue
@@ -183,12 +217,14 @@ def main() -> int:
     }
 
     problems = []
-    for row in series[1:]:
-        prev = series[series.index(row) - 1]
-        if prev["sales"] and row["month"] == prev["month"][:4] + "-%02d" % (int(prev["month"][5:]) % 12 + 1):
+    for prev, row in zip(series, series[1:]):
+        if prev["sales"] and row["month"] == next_month(prev["month"]):
             calc = (row["sales"] / prev["sales"] - 1) * 100
             if abs(calc) > 80:
                 problems.append("%s 环比 %.1f%%，疑似解析串行" % (row["month"], calc))
+    missing = gaps([r["month"] for r in series])
+    if missing:
+        problems.append("缺月份：%s（列表页翻页不够或该月稿件未解析出来）" % "、".join(missing))
     newest_year = years[-1]
     if yearly[str(newest_year)]["months"] < 6:
         problems.append("%d 年只有 %d 个月，序列太短" % (newest_year, yearly[str(newest_year)]["months"]))
@@ -215,14 +251,28 @@ def main() -> int:
         print("自检通过：月份连续、环比幅度合理、与看板年度口径不冲突")
 
     if args.check:
-        return 0
+        return 1 if problems else 0
+    if problems and not args.force:
+        print("\n自检未通过，数据文件保持不变（确认无误可加 --force 强制写入）", file=sys.stderr)
+        return 1
+    # 新序列比旧文件短（比如商会站点抽风只抓到一半）时同样拒写，避免把好数据覆盖成残缺数据
+    if OUT.exists() and not args.force:
+        try:
+            old_n = OUT.read_text(encoding="utf-8").count('"month"')
+            if len(series) < old_n:
+                print("\n新序列 %d 个月少于现有 %d 个月，数据文件保持不变（确认可加 --force）" % (len(series), old_n), file=sys.stderr)
+                return 1
+        except OSError:
+            pass
 
     body = json.dumps(payload, ensure_ascii=False, indent=1)
-    OUT.write_text(
+    tmp = OUT.with_suffix(".js.tmp")
+    tmp.write_text(
         "/* 月度产销序列，由 scripts/fetch_monthly.py 生成，请勿手改 */\n"
         "window.MOTO_MONTHLY = " + body + ";\n",
         encoding="utf-8",
     )
+    tmp.replace(OUT)   # 原子替换，写一半不会截断旧文件
     print("\n已写入 %s（%d 字节）" % (OUT, OUT.stat().st_size))
     return 0
 

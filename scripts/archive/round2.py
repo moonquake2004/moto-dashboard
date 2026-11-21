@@ -7,6 +7,12 @@ run2: 全球官网 / 移动端 / 备用页面（供未成功品牌二次尝试�
 结果: assets/_probe/round2/ok/ 下为通过【文件头+Pillow】基础校验的候选，
       并写 manifest.json 记录 URL/尺寸/主色，供人工 ViewImage 目视复核。
 """
+# ---- 已归档：此脚本已执行过，数据已落库。重跑可能覆盖之后的人工修改。----
+# 原用途：8 品牌 Logo 补抓第二轮（文档里路径写成了 assets/round2.py）
+import os as _os, sys as _sys
+if _os.environ.get("RUN_ARCHIVED") != "1":
+    _sys.exit("已归档的一次性脚本，默认不执行；确需重跑请设 RUN_ARCHIVED=1")
+# ---------------------------------------------------------------------
 import os, re, sys, json, subprocess, urllib.parse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from collections import Counter

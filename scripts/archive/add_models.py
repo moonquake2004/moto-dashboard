@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
 """方案A：批量补已确认的型号缺口（P0+P1），跳过已有重复项。"""
+# ---- 已归档：此脚本已执行过，数据已落库。重跑可能覆盖之后的人工修改。----
+# 原用途：方案A：批量补型号缺口（P0+P1）
+import os as _os, sys as _sys
+if _os.environ.get("RUN_ARCHIVED") != "1":
+    _sys.exit("已归档的一次性脚本，默认不执行；确需重跑请设 RUN_ARCHIVED=1")
+# ---------------------------------------------------------------------
 import json, os
 
 from _jsonio import save as _save_json

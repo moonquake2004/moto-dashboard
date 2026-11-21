@@ -2,6 +2,12 @@
 """方案A补完后的 P2 待核实品牌核查补全：kymco/bmw/shineray/ducati/husqvarna + loncin 定论。
 仅追加经官方/摩托范/懂车帝核实的当前在售 >=250cc 缺口；自动跳过已存在重名；不新建品牌。
 """
+# ---- 已归档：此脚本已执行过，数据已落库。重跑可能覆盖之后的人工修改。----
+# 原用途：P2 待核实品牌补全
+import os as _os, sys as _sys
+if _os.environ.get("RUN_ARCHIVED") != "1":
+    _sys.exit("已归档的一次性脚本，默认不执行；确需重跑请设 RUN_ARCHIVED=1")
+# ---------------------------------------------------------------------
 import json, glob, os
 
 from _jsonio import save as _save_json

@@ -10,17 +10,27 @@ moto-dashboard 访问统计后端（Flask + SQLite）
 设计要点：
   * 纯静态 GitHub Pages 无法记录访客，本服务承担"服务端存储"。
   * 同一 IP 60s 内只落一条记录（既防刷，也让 PV 接近真实访问数）。
+  * 入库的 IP 默认截断；UV 按带盐哈希去重，明细按 RETAIN_DAYS 自动清理。
   * 归属地为**异步补写**：/api/visit 先落库立即返回，再由后台线程查
     ip-api.com（免费版只支持 http，且限速 45 次/分钟，故带 6 小时缓存）。
   * 默认不开 CORS，必须显式设置 ALLOW_ORIGIN 才会输出跨域头。
-  * /admin 必须设置 ADMIN_TOKEN 环境变量，否则服务拒绝启动。
+  * /admin 必须设置 ADMIN_TOKEN 环境变量，否则服务拒绝启动；口令只认 X-Admin-Token 请求头。
 
 部署（CloudStudio / 任意能跑 Python 的机器）：
-  pip install -r requirements.txt
-  ADMIN_TOKEN=$(openssl rand -hex 16) PORT=5000 \
-  ALLOW_ORIGIN=https://moonquake2004.github.io python stats_server.py
+  pip install -r requirements.txt gunicorn
+  export ADMIN_TOKEN=$(openssl rand -hex 16) IP_SALT=$(openssl rand -hex 16)
+  export ALLOW_ORIGIN=https://moonquake2004.github.io
+  gunicorn -w 2 --threads 4 -b 0.0.0.0:5000 --access-logfile - stats_server:app
+  # 放在 nginx 等反代后面时加 TRUST_PROXY=1；本地调试可直接 python stats_server.py（只监听 127.0.0.1）
+
+隐私相关环境变量：
+  IP_MODE=truncate|hash|full   默认 truncate（IPv4 抹最后一段 / IPv6 留 /48）
+  IP_SALT                      UV 去重用的哈希盐，默认复用 ADMIN_TOKEN；生产建议单独设置
+  RETAIN_DAYS=180              明细保留天数，0 = 不清理
+  ALLOW_TOKEN_QUERY=1          允许 /admin?token= 方式（默认关闭，只认 X-Admin-Token 头）
 """
 import datetime
+import hashlib
 import hmac
 import ipaddress
 import json
@@ -29,8 +39,9 @@ import sqlite3
 import threading
 import time
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 
-from flask import Flask, Response, abort, jsonify, request
+from flask import Flask, Response, abort, jsonify, render_template_string, request
 
 try:
     from user_agents import parse as ua_parse
@@ -54,6 +65,14 @@ GEO_TIMEOUT = 2          # 归属地查询超时（秒），失败就当没查�
 GEO_TTL = 6 * 3600       # 同一 IP 的归属地缓存时间
 RATE_WINDOW = 60         # 同一 IP 的落库间隔（秒）
 PORT = int(os.environ.get("PORT", "5000"))
+# 隐私：默认只存截断后的 IP（IPv4 抹最后一段、IPv6 只留 /48），UV 用加盐哈希去重
+IP_MODE = os.environ.get("IP_MODE", "truncate").strip()        # truncate | hash | full
+IP_SALT = os.environ.get("IP_SALT", "").strip() or ADMIN_TOKEN   # 换盐 = 历史 UV 不再可关联
+RETAIN_DAYS = int(os.environ.get("RETAIN_DAYS", "180"))          # 访问明细保留天数，0 = 不清理
+ALLOW_TOKEN_QUERY = os.environ.get("ALLOW_TOKEN_QUERY", "").strip() in ("1", "true", "yes")
+DISPLAY_TZ = datetime.timezone(datetime.timedelta(hours=8))      # 后台按北京时间显示
+GEO_POOL = ThreadPoolExecutor(max_workers=int(os.environ.get("GEO_WORKERS", "2")), thread_name_prefix="geo")
+_geo_pending = threading.BoundedSemaphore(int(os.environ.get("GEO_QUEUE", "200")))
 
 DEVICE_CN = {"mobile": "手机", "tablet": "平板", "desktop": "电脑", "unknown": "未知"}
 
@@ -70,6 +89,11 @@ def init_db():
         ua TEXT, referer TEXT, path TEXT, ts TEXT)""")
     c.execute("CREATE INDEX IF NOT EXISTS idx_visits_ts ON visits(ts)")
     c.execute("CREATE INDEX IF NOT EXISTS idx_visits_ip ON visits(ip)")
+    cols = {r[1] for r in c.execute("PRAGMA table_info(visits)")}
+    if "ip_hash" not in cols:      # 旧库平滑升级：老数据用原 ip 字段兜底去重
+        c.execute("ALTER TABLE visits ADD COLUMN ip_hash TEXT")
+        c.execute("UPDATE visits SET ip_hash = ip WHERE ip_hash IS NULL")
+    c.execute("CREATE INDEX IF NOT EXISTS idx_visits_iph ON visits(ip_hash)")
     conn.commit()
     conn.close()
 
@@ -106,6 +130,24 @@ def get_client_ip():
         if _safe_ip(first):
             return first
     return peer
+
+
+def mask_ip(ip):
+    """按 IP_MODE 处理入库的 IP：truncate 抹掉主机位，hash 只存哈希，full 原样（需自行承担合规）。"""
+    addr = _safe_ip(ip)
+    if addr is None:
+        return "unknown"
+    if IP_MODE == "full":
+        return str(addr)
+    if IP_MODE == "hash":
+        return "h:" + ip_hash(ip)[:16]
+    net = ipaddress.ip_network("%s/%d" % (addr, 24 if addr.version == 4 else 48), strict=False)
+    return str(net.network_address) + ("/24" if addr.version == 4 else "/48")
+
+
+def ip_hash(ip):
+    """带盐 HMAC：同一访客稳定、不可逆；只用来数 UV，不用于展示。"""
+    return hmac.new(IP_SALT.encode(), str(ip).encode(), hashlib.sha256).hexdigest()
 
 
 def parse_ua(ua_str):
@@ -155,6 +197,13 @@ def geo_lookup(ip):
 
 
 def _enrich(row_id, ip):
+    try:
+        _enrich_inner(row_id, ip)
+    finally:
+        _geo_pending.release()
+
+
+def _enrich_inner(row_id, ip):
     country, region, city = geo_lookup(ip)
     if not (country or region or city):
         return
@@ -199,6 +248,8 @@ def add_headers(resp):
         resp.headers["Vary"] = "Origin"
     resp.headers.setdefault("X-Content-Type-Options", "nosniff")
     resp.headers.setdefault("Referrer-Policy", "no-referrer")
+    if request.path.startswith("/api/"):
+        resp.headers.setdefault("Cache-Control", "no-store")
     if request.path.startswith("/admin"):
         resp.headers["X-Frame-Options"] = "DENY"
         resp.headers["Cache-Control"] = "no-store"
@@ -210,6 +261,7 @@ def visit():
     if request.method == "OPTIONS":
         return "", 204
     ip = get_client_ip()
+    purge_old()
     if rate_limited(ip):
         return jsonify({"ok": True, "skipped": "rate"}), 200
 
@@ -218,51 +270,83 @@ def visit():
     ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
     data = request.get_json(silent=True) or {}
     path = str(data.get("path") or request.path)[:200]
-    referer = (request.referrer or data.get("referer") or "")[:300]
+    # 来源只留 scheme+host+path，丢掉 query（里面常带搜索词、token 等个人信息）
+    referer = str(request.referrer or data.get("referer") or "")
+    referer = referer.split("?", 1)[0].split("#", 1)[0][:300]
 
     try:
         conn = connect()
         c = conn.cursor()
-        c.execute("INSERT INTO visits(ip,country,region,city,device,os,browser,ua,referer,path,ts)"
-                  " VALUES(?,?,?,?,?,?,?,?,?,?,?)",
-                  (ip, "", "", "", device, os_name, browser, ua_str, referer, path, ts))
+        c.execute("INSERT INTO visits(ip,ip_hash,country,region,city,device,os,browser,ua,referer,path,ts)"
+                  " VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",
+                  (mask_ip(ip), ip_hash(ip), "", "", "", device, os_name, browser, ua_str, referer, path, ts))
         row_id = c.lastrowid
         conn.commit()
         conn.close()
-    except Exception as e:
-        return jsonify({"ok": False, "error": str(e)}), 500
+    except Exception:
+        app.logger.exception("visit insert failed")
+        return jsonify({"ok": False}), 500   # 不把异常文本回给客户端
 
-    # 归属地异步补写：不让一次性请求卡在第三方接口上（原来这里要等 5–6 秒）
-    threading.Thread(target=_enrich, args=(row_id, ip), daemon=True).start()
+    # 归属地异步补写走固定大小线程池；队列满就放弃这次补写，避免被刷时线程数暴涨
+    if GEO_ENABLE and not is_private(ip) and _geo_pending.acquire(blocking=False):
+        try:
+            GEO_POOL.submit(_enrich, row_id, ip)
+        except RuntimeError:
+            _geo_pending.release()
     return jsonify({"ok": True}), 200
 
 
-def _counters():
-    conn = connect()
+def _counters(conn=None):
+    own = conn is None
+    conn = conn or connect()
     c = conn.cursor()
     c.execute("SELECT COUNT(*) FROM visits")
     pv = c.fetchone()[0]
     window = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=24)).strftime("%Y-%m-%d %H:%M:%S")
-    c.execute("SELECT COUNT(DISTINCT ip) FROM visits WHERE ts >= ?", (window,))
+    c.execute("SELECT COUNT(DISTINCT ip_hash) FROM visits WHERE ts >= ?", (window,))
     uv24 = c.fetchone()[0]
-    c.execute("SELECT COUNT(DISTINCT ip) FROM visits")
+    c.execute("SELECT COUNT(DISTINCT ip_hash) FROM visits")
     uv_all = c.fetchone()[0]
-    conn.close()
+    if own:
+        conn.close()
     return pv, uv24, uv_all
+
+
+_last_purge = [0.0]
+
+
+def purge_old():
+    """按 RETAIN_DAYS 清理明细，最多每小时跑一次。"""
+    if RETAIN_DAYS <= 0 or time.time() - _last_purge[0] < 3600:
+        return
+    _last_purge[0] = time.time()
+    cut = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=RETAIN_DAYS)).strftime("%Y-%m-%d %H:%M:%S")
+    try:
+        conn = connect()
+        conn.execute("DELETE FROM visits WHERE ts < ?", (cut,))
+        conn.commit()
+        conn.close()
+    except Exception:
+        app.logger.exception("purge failed")
 
 
 @app.route("/api/stats")
 def stats():
     try:
         pv, uv24, uv_all = _counters()
-    except Exception as e:
-        return jsonify({"pv": 0, "uv24": 0, "uv_all": 0, "error": str(e)}), 503
+    except Exception:
+        app.logger.exception("stats failed")
+        return jsonify({"pv": 0, "uv24": 0, "uv_all": 0}), 503
     return jsonify({"pv": pv, "uv24": uv24, "uv_all": uv_all})
 
 
 def admin_ok():
-    tok = request.headers.get("X-Admin-Token") or request.args.get("token") or ""
-    return hmac.compare_digest(tok, ADMIN_TOKEN)
+    """口令只认请求头：放在 URL 里会进浏览器历史、代理与服务器访问日志。
+    确实需要用浏览器直接打开时，可设 ALLOW_TOKEN_QUERY=1 临时放开。"""
+    tok = request.headers.get("X-Admin-Token") or ""
+    if not tok and ALLOW_TOKEN_QUERY:
+        tok = request.args.get("token") or ""
+    return hmac.compare_digest(tok.encode(), ADMIN_TOKEN.encode())
 
 
 ADMIN_HTML = """<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
@@ -283,12 +367,12 @@ tr:hover td{background:#f8fafc}
 </style></head><body>
 <h1>访问统计后台</h1>
 <div class="cards">
-  <div class="card"><b>{{pv}}</b><span>累计访问（按 IP 去重）</span></div>
+  <div class="card"><b>{{pv}}</b><span>累计访问（同一访客 60 秒内只计一次）</span></div>
   <div class="card"><b>{{uv24}}</b><span>近 24h 独立访客</span></div>
   <div class="card"><b>{{uv_all}}</b><span>累计独立访客</span></div>
 </div>
 <table><thead><tr>
-  <th>#</th><th>IP</th><th>地区</th><th>设备</th><th>系统</th><th>浏览器</th><th>来源</th><th>路径</th><th>时间(UTC)</th>
+  <th>#</th><th>IP（已脱敏）</th><th>地区</th><th>设备</th><th>系统</th><th>浏览器</th><th>来源</th><th>路径</th><th>时间(北京)</th>
 </tr></thead><tbody>
 {% for r in rows %}
 <tr><td>{{loop.index}}</td><td>{{r[0]}}</td>
@@ -300,6 +384,14 @@ tr:hover td{background:#f8fafc}
 </body></html>"""
 
 
+def to_local(ts):
+    try:
+        t = datetime.datetime.strptime(ts, "%Y-%m-%d %H:%M:%S").replace(tzinfo=datetime.timezone.utc)
+        return t.astimezone(DISPLAY_TZ).strftime("%Y-%m-%d %H:%M:%S")
+    except (TypeError, ValueError):
+        return ts
+
+
 @app.route("/admin")
 def admin():
     if not admin_ok():
@@ -308,24 +400,12 @@ def admin():
     c = conn.cursor()
     c.execute("SELECT ip,country,region,city,device,os,browser,path,referer,ts FROM visits ORDER BY id DESC LIMIT 200")
     rows = [list(r) for r in c.fetchall()]
-    c.execute("SELECT COUNT(*) FROM visits")
-    pv = c.fetchone()[0]
-    window = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=24)).strftime("%Y-%m-%d %H:%M:%S")
-    c.execute("SELECT COUNT(DISTINCT ip) FROM visits WHERE ts >= ?", (window,))
-    uv24 = c.fetchone()[0]
-    c.execute("SELECT COUNT(DISTINCT ip) FROM visits")
-    uv_all = c.fetchone()[0]
+    pv, uv24, uv_all = _counters(conn)
     conn.close()
     for r in rows:
         r[4] = DEVICE_CN.get(r[4], r[4])
-    try:
-        from flask import render_template_string
-        return render_template_string(ADMIN_HTML, rows=rows, pv=pv, uv24=uv24, uv_all=uv_all)
-    except Exception:
-        txt = "PV=%s UV24=%s UVall=%s\n" % (pv, uv24, uv_all)
-        for r in rows:
-            txt += " | ".join(str(x) for x in r) + "\n"
-        return Response(txt, mimetype="text/plain; charset=utf-8")
+        r[9] = to_local(r[9])
+    return render_template_string(ADMIN_HTML, rows=rows, pv=pv, uv24=uv24, uv_all=uv_all)
 
 
 @app.route("/")
@@ -341,5 +421,5 @@ if __name__ == "__main__":
         print("[warn] 未设置 ALLOW_ORIGIN，前端跨域上报会被浏览器拦截")
     if GEO_ENABLE:
         print("[warn] 归属地走 ip-api.com（http 明文、第三方），不希望外发可设 GEO_ENABLE=0")
-    print("stats_server listening on :%d" % PORT)
-    app.run(host="0.0.0.0", port=PORT, debug=False)
+    print("stats_server listening on :%d（开发服务器，仅供本地调试；生产请用 gunicorn，见文件头）" % PORT)
+    app.run(host=os.environ.get("HOST", "127.0.0.1"), port=PORT, debug=False)

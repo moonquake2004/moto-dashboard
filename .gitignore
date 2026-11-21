@@ -12,3 +12,10 @@ assets/_probe/
 
 # Pages 构建产物
 _site/
+
+# 本地数据工作台（不进仓库）
+admin/
+.venv/
+
+# 系统文件
+.DS_Store

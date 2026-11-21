@@ -197,7 +197,7 @@
         },
         {
           "name": "CU530",
-          "cc": 530,
+          "cc": 500,
           "type": "巡航",
           "price": "21980元起",
           "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
@@ -225,7 +225,7 @@
         },
         {
           "name": "DS625X",
-          "cc": 625,
+          "cc": 581,
           "type": "拉力ADV",
           "price": "31980元起",
           "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
@@ -362,185 +362,192 @@
       "models": [
         {
           "name": "赛250",
-          "cc": 250,
+          "cc": 249,
           "type": "仿赛",
           "price": "15999元",
-          "source": "https://m.58moto.com/brand/449"
+          "source": "https://www.qjmotor.com/car.html?id=57"
         },
         {
           "name": "赛421",
           "cc": 421,
           "type": "仿赛",
           "price": "28999元起",
-          "source": "https://m.58moto.com/brand/449"
+          "source": "https://www.qjmotor.com/car.html?id=107"
         },
         {
           "name": "赛450",
-          "cc": 450,
+          "cc": 449,
           "type": "仿赛",
-          "price": "26999元",
-          "source": "https://m.58moto.com/brand/449"
+          "price": "23999元",
+          "source": "https://www.qjmotor.com/car.html?id=50"
         },
         {
           "name": "赛550",
-          "cc": 550,
+          "cc": 554,
           "type": "仿赛",
           "price": "24999元",
-          "source": "https://m.58moto.com/brand/449"
+          "source": "https://www.qjmotor.com/car.html?id=128"
         },
         {
           "name": "赛600",
-          "cc": 600,
+          "cc": 680,
           "type": "仿赛",
-          "price": "29999元起",
-          "source": "https://m.58moto.com/brand/449"
+          "price": "34999元",
+          "source": "https://www.qjmotor.com/car.html?id=153"
         },
         {
           "name": "赛800",
-          "cc": 800,
+          "cc": 778,
           "type": "仿赛",
-          "price": "42999元起",
-          "source": "https://m.58moto.com/brand/449"
+          "price": "42999~49999元",
+          "source": "https://www.qjmotor.com/car.html?id=112"
         },
         {
           "name": "赛921",
           "cc": 921,
           "type": "仿赛",
           "price": "69999元",
-          "source": "https://m.58moto.com/brand/449"
+          "source": "https://www.qjmotor.com/car.html?id=75"
         },
         {
           "name": "Super921",
           "cc": 921,
           "type": "仿赛",
           "price": "69999元",
-          "source": "https://m.58moto.com/brand/449"
+          "source": "https://www.qjmotor.com/car.html?id=109"
         },
         {
           "name": "闪250",
-          "cc": 250,
+          "cc": 249,
           "type": "巡航",
           "price": "16999元起",
-          "source": "https://www.58moto.com/merchant/car/300187?id=449"
+          "source": "https://www.qjmotor.com/car.html?id=93"
         },
         {
           "name": "闪300",
-          "cc": 300,
+          "cc": 296,
           "type": "巡航",
           "price": "20999元起",
-          "source": "https://m.58moto.com/brand/449"
+          "source": "https://www.qjmotor.com/car.html?id=46"
         },
         {
           "name": "闪350",
-          "cc": 350,
+          "cc": 343,
           "type": "巡航",
-          "price": null,
-          "source": "https://www.qjmotor.com/"
+          "price": "24999元",
+          "source": "https://www.qjmotor.com/car.html?id=47"
         },
         {
           "name": "闪400",
           "cc": 400,
           "type": "巡航",
           "price": "19999元起",
-          "source": "https://m.58moto.com/brand/449"
+          "source": "https://www.qjmotor.com/car.html?id=148"
         },
         {
           "name": "闪600",
           "cc": 600,
           "type": "巡航",
-          "price": "24999元起",
-          "source": "https://m.58moto.com/brand/449"
+          "price": "35999元",
+          "source": "https://www.qjmotor.com/car.html?id=63"
+        },
+        {
+          "name": "闪600 V2 Classic",
+          "cc": 550,
+          "type": "巡航",
+          "price": "24999元",
+          "source": "https://www.qjmotor.com/car.html?id=125"
+        },
+        {
+          "name": "闪600 V4",
+          "cc": 560,
+          "type": "巡航",
+          "price": "31999~32999元",
+          "source": "https://www.qjmotor.com/car.html?id=129"
         },
         {
           "name": "骁600",
-          "cc": 600,
+          "cc": 554,
           "type": "拉力ADV",
           "price": "29999元起",
-          "source": "https://www.58moto.com/merchant/car/300187?id=449"
+          "source": "https://www.qjmotor.com/car.html?id=79"
         },
         {
           "name": "骁650",
-          "cc": 650,
+          "cc": 645,
           "type": "拉力ADV",
-          "price": null,
-          "source": "https://www.qjmotor.com/"
+          "price": "46999元起",
+          "source": "https://www.qjmotor.com/car.html?id=29"
         },
         {
           "name": "骁700S",
-          "cc": 700,
+          "cc": 698,
           "type": "拉力ADV",
-          "price": null,
-          "source": "https://www.qjmotor.com/"
+          "price": "37999元起",
+          "source": "https://www.qjmotor.com/car.html?id=90"
         },
         {
           "name": "骁800",
-          "cc": 800,
+          "cc": 799,
           "type": "拉力ADV",
-          "price": null,
-          "source": "https://www.qjmotor.com/"
+          "price": "49999元起",
+          "source": "https://www.qjmotor.com/car.html?id=31"
         },
         {
           "name": "追550",
-          "cc": 550,
+          "cc": 549,
           "type": "街车",
           "price": "26999元",
-          "source": "https://www.58moto.com/merchant/car/300187?id=449"
+          "source": "https://www.qjmotor.com/car.html?id=77"
         },
         {
           "name": "追600",
           "cc": 600,
           "type": "街车",
           "price": "36999元",
-          "source": "https://www.58moto.com/merchant/car/300187?id=449"
+          "source": "https://www.qjmotor.com/car.html?id=41"
         },
         {
           "name": "追800",
-          "cc": 800,
+          "cc": 778,
           "type": "街车",
-          "price": null,
-          "source": "https://www.qjmotor.com/"
+          "price": "47999元",
+          "source": "https://www.qjmotor.com/car.html?id=113"
         },
         {
           "name": "追900",
-          "cc": 900,
+          "cc": 904,
           "type": "街车",
           "price": "44999元",
-          "source": "https://www.58moto.com/merchant/car/300187?id=449"
+          "source": "https://www.qjmotor.com/car.html?id=114"
         },
         {
           "name": "追921",
           "cc": 921,
           "type": "街车",
           "price": "66999元",
-          "source": "https://www.58moto.com/merchant/car/300187?id=449"
+          "source": "https://www.qjmotor.com/car.html?id=126"
         },
         {
           "name": "逸550",
-          "cc": 550,
+          "cc": 549,
           "type": "复古",
-          "price": null,
-          "source": "https://www.qjmotor.com/"
+          "price": "33999元",
+          "source": "https://www.qjmotor.com/car.html?id=43"
         },
         {
           "name": "鸿250",
-          "cc": 250,
+          "cc": 249,
           "type": "踏板",
           "price": "15999元起",
-          "source": "https://m.58moto.com/brand/449"
+          "source": "https://www.qjmotor.com/car.html?id=98"
         },
         {
           "name": "鸿350GS",
-          "cc": 350,
+          "cc": 330,
           "type": "踏板",
           "price": "25999元",
-          "source": "https://www.lianglunshijie.com/brand/607/"
-        },
-        {
-          "name": "SRT450",
-          "cc": 450,
-          "type": "拉力ADV",
-          "price": "27980元",
-          "source": "https://www.58moto.com/article/114/12524891.html"
+          "source": "https://www.qjmotor.com/car.html?id=122"
         }
       ],
       "uncertain": [
@@ -775,13 +782,6 @@
           "source": "https://m.58moto.com/brand/382"
         },
         {
-          "name": "RT450",
-          "cc": 450,
-          "type": "踏板",
-          "price": "32980元",
-          "source": "https://m.58moto.com/brand/382"
-        },
-        {
           "name": "AQS250",
           "cc": 250,
           "type": "巡航",
@@ -797,14 +797,14 @@
         },
         {
           "name": "AQS600",
-          "cc": 600,
+          "cc": 560,
           "type": "巡航",
           "price": "23988元",
           "source": "https://m.58moto.com/brand/382"
         },
         {
           "name": "RA600",
-          "cc": 600,
+          "cc": 560,
           "type": "巡航",
           "price": "23988元起",
           "source": "https://m.58moto.com/brand/382"
@@ -825,7 +825,7 @@
         },
         {
           "name": "RX600",
-          "cc": 600,
+          "cc": 560,
           "type": "拉力ADV",
           "price": "27988元起",
           "source": "https://m.58moto.com/brand/382"
@@ -871,6 +871,14 @@
           "price": null,
           "source": "https://m.58moto.com/brand/382",
           "reason": "摩托范标注「即将上市、暂无报价」，尚未正式在售"
+        },
+        {
+          "name": "RT450",
+          "cc": 450,
+          "type": "踏板",
+          "price": "32980元",
+          "source": "https://m.58moto.com/brand/382",
+          "reason": "赛科龙官网产品菜单（2026-11-22）未列 RT450，仅有 RT250/RT150S/RT150E；在售状态待确认。"
         }
       ],
       "sources": [

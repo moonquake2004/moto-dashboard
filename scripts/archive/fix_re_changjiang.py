@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
 """修正 royal-enfield 误导note（未官方入华，价格维持占位）；细化 changjiang Bobbie 变体 uncertain。"""
+# ---- 已归档：此脚本已执行过，数据已落库。重跑可能覆盖之后的人工修改。----
+# 原用途：royal-enfield note 更正 + changjiang 存疑细化（重跑会覆盖 changjiang.uncertain）
+import os as _os, sys as _sys
+if _os.environ.get("RUN_ARCHIVED") != "1":
+    _sys.exit("已归档的一次性脚本，默认不执行；确需重跑请设 RUN_ARCHIVED=1")
+# ---------------------------------------------------------------------
 import json, glob, os
 
 from _jsonio import save as _save_json

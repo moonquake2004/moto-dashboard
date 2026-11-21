@@ -33,10 +33,12 @@
 :root{
   --bg:#0B0D11; --bg2:#0E1116; --surface:#141922; --surface2:#1B212D; --overlay:#222A38;
   --line:#242C3A; --line2:#2F3949;
-  --ink:#EDF1F7; --muted:#9AA5B5; --faint:#69748A;
-  --accent:#FF4A1F; --accent-soft:rgba(255,74,31,.13);
+  --ink:#EDF1F7; --muted:#9AA5B5; --faint:#7D889C;
+  --accent:#FF4A1F; --accent-soft:rgba(255,74,31,.13); --accent-fill:#E42C00;
   --blue:#4D9FFF; --amber:#FFB224; --mint:#2FD6A3; --red:#FF5C5C;
-  --dom:#FF4A1F; --jv:#4D9FFF; --imp:#B78CFF;
+  --dom:#FF4A1F; --jv:#4D9FFF; --imp:#B78CFF; --on-cat:#0B0D11;
+  /* 图表调色板（深色主题原色，对深底均 ≥4.8:1） */
+  --pc-2fd6a3:#2FD6A3; --pc-4d9fff:#4D9FFF; --pc-59c2e6:#59C2E6; --pc-8bd450:#8BD450; --pc-9aa5b5:#9AA5B5; --pc-b78cff:#B78CFF; --pc-c9a26b:#C9A26B; --pc-f2789f:#F2789F; --pc-ff4a1f:#FF4A1F; --pc-ff5c5c:#FF5C5C; --pc-ffb224:#FFB224;
   --logo-bg:#F2F4F7; --scrim:rgba(4,6,10,.62);
   --shadow:0 10px 30px rgba(0,0,0,.35);
   --nav-h:60px;
@@ -44,10 +46,12 @@
 [data-theme="light"]{
   --bg:#F3F5F8; --bg2:#ECEFF4; --surface:#FFFFFF; --surface2:#F6F8FB; --overlay:#FFFFFF;
   --line:#E2E7EF; --line2:#D3DAE6;
-  --ink:#151A22; --muted:#5A6577; --faint:#8B95A7;
-  --accent:#E83A0E; --accent-soft:rgba(232,58,14,.10);
-  --blue:#1F6FEB; --amber:#C77700; --mint:#0E9F77; --red:#D64545;
-  --dom:#E83A0E; --jv:#1F6FEB; --imp:#7B4FD8;
+  --ink:#151A22; --muted:#5A6577; --faint:#626D82;
+  --accent:#CC330C; --accent-soft:rgba(204,51,12,.10); --accent-fill:#CC330C;
+  --blue:#1466E3; --amber:#9D5E00; --mint:#0B7B5C; --red:#CE2D2D;
+  --dom:#CC330C; --jv:#1466E3; --imp:#7B4FD8; --on-cat:#FFFFFF;
+  /* 图表调色板（浅色主题：同色相压暗到对浅底 ≥3:1，WCAG 1.4.11 图形对比度） */
+  --pc-2fd6a3:#1F9F78; --pc-4d9fff:#2B8CFF; --pc-59c2e6:#1D97C1; --pc-8bd450:#5B9D27; --pc-9aa5b5:#808DA2; --pc-b78cff:#A56EFF; --pc-c9a26b:#B38441; --pc-f2789f:#EF5486; --pc-ff4a1f:#FF4A1F; --pc-ff5c5c:#FF4949; --pc-ffb224:#C27E00;
   --logo-bg:#FFFFFF; --scrim:rgba(15,20,30,.4);
   --shadow:0 8px 24px rgba(20,30,50,.08);
 }
@@ -106,7 +110,7 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .hero-cta{display:flex;gap:10px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 20px;border-radius:10px;
   font-size:13.5px;font-weight:700;cursor:pointer;border:1px solid transparent;transition:.18s}
-.btn-primary{background:var(--accent);color:#fff;box-shadow:0 6px 20px rgba(255,74,31,.3)}
+.btn-primary{background:var(--accent-fill);color:#fff;box-shadow:0 6px 20px rgba(255,74,31,.3)}
 .btn-primary:hover{transform:translateY(-1px);filter:brightness(1.06)}
 .btn-ghost{background:var(--surface);border-color:var(--line);color:var(--ink)}
 .btn-ghost:hover{border-color:var(--line2)}
@@ -159,7 +163,7 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .lead-row:last-child{border-bottom:none}
 .lead-rank{width:22px;height:22px;flex:none;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;
   font-size:11.5px;font-weight:800;background:var(--surface2);color:var(--muted)}
-.lead-row:first-child .lead-rank{background:var(--accent);color:#fff}
+.lead-row:first-child .lead-rank{background:var(--accent-fill);color:#fff}
 .lead-row:nth-child(2) .lead-rank{background:var(--accent-soft);color:var(--accent)}
 .src-note{font-size:11px;color:var(--faint);margin-top:10px;line-height:1.6}
 /* SECTION: charts */
@@ -213,9 +217,9 @@ select{height:42px;border:1px solid var(--line);border-radius:10px;background:va
   background:var(--surface);color:var(--muted);cursor:pointer;transition:.15s}
 .chip-tab:hover{color:var(--ink);border-color:var(--line2)}
 .chip-tab.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
-.chip-tab.on.cat-dom{background:var(--dom);border-color:var(--dom);color:#fff}
-.chip-tab.on.cat-jv{background:var(--jv);border-color:var(--jv);color:#fff}
-.chip-tab.on.cat-imp{background:var(--imp);border-color:var(--imp);color:#fff}
+.chip-tab.on.cat-dom{background:var(--dom);border-color:var(--dom);color:var(--on-cat)}
+.chip-tab.on.cat-jv{background:var(--jv);border-color:var(--jv);color:var(--on-cat)}
+.chip-tab.on.cat-imp{background:var(--imp);border-color:var(--imp);color:var(--on-cat)}
 .chip-tab.on.cat-fav{background:var(--amber);border-color:var(--amber);color:#1A1205}
 .f-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px}
 .result-line{font-size:12.5px;color:var(--muted)}
@@ -294,7 +298,7 @@ mark{background:var(--accent-soft);color:var(--accent);border-radius:3px;padding
 .rk:hover{border-color:var(--accent);color:var(--accent)}
 .rk .no{width:15px;height:15px;flex:none;border-radius:4px;display:inline-flex;align-items:center;justify-content:center;
   font-size:9.5px;font-weight:800;background:var(--line2);color:var(--muted)}
-.rk.p1 .no{background:var(--accent);color:#fff}
+.rk.p1 .no{background:var(--accent-fill);color:#fff}
 .rk.p2 .no{background:var(--amber);color:#1A1205}
 .rk.p3 .no{background:var(--mint);color:#06231B}
 .rk.p4 .no,.rk.p5 .no{background:var(--line2);color:var(--muted)}
@@ -334,7 +338,7 @@ table.models tbody tr:hover td.c-brand{background:var(--surface2)}
   color:var(--muted);cursor:pointer;font-size:11px;line-height:1;padding:0;font-family:inherit;display:inline-flex;
   align-items:center;justify-content:center;transition:.13s}
 .cmp-box:hover{border-color:var(--accent);color:var(--accent)}
-.cmp-box.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.cmp-box.on{background:var(--accent-fill);border-color:var(--accent-fill);color:#fff}
 .cmp-bar{position:fixed;left:50%;transform:translateX(-50%) translateY(140%);bottom:16px;z-index:70;display:flex;align-items:center;
   gap:10px;max-width:min(760px,94vw);background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(14px);
   -webkit-backdrop-filter:blur(14px);border:1px solid var(--line2);border-radius:13px;padding:10px 12px;box-shadow:var(--shadow);
@@ -347,7 +351,7 @@ table.models tbody tr:hover td.c-brand{background:var(--surface2)}
 .cmp-chip span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .cmp-chip button{border:none;background:transparent;color:var(--faint);cursor:pointer;font-size:12px;line-height:1;padding:0}
 .cmp-chip button:hover{color:var(--accent)}
-.cmp-bar .cb-go{flex:none;border:none;border-radius:9px;background:var(--accent);color:#fff;font-weight:800;font-size:12.5px;
+.cmp-bar .cb-go{flex:none;border:none;border-radius:9px;background:var(--accent-fill);color:#fff;font-weight:800;font-size:12.5px;
   padding:9px 15px;cursor:pointer;font-family:inherit}
 .cmp-bar .cb-go:disabled{opacity:.45;cursor:not-allowed}
 .cmp-bar .cb-x{flex:none;border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:9px;
@@ -423,9 +427,9 @@ table.cmp .spec-sub{display:block;font-size:10.5px;color:var(--faint);margin-top
 .trend-kpis .tk b.neg{color:var(--warn,#FF6B6B)}
 .trend-body{position:relative}
 .trend-body svg{display:block;width:100%;height:auto}
-.trend-body .bar-g{fill:rgba(77,159,255,.55);stroke:rgba(77,159,255,.9);stroke-width:1;cursor:default}
-.trend-body .bar-s{fill:rgba(255,74,31,.78);stroke:rgba(255,74,31,1);stroke-width:1;cursor:default}
-.trend-body .ax{stroke:var(--line);stroke-width:1}
+.trend-body .bar-g{fill:var(--jv);fill-opacity:.72;stroke:var(--jv);stroke-width:1;cursor:default}
+.trend-body .bar-s{fill:var(--dom);fill-opacity:.9;stroke:var(--dom);stroke-width:1;cursor:default}
+.trend-body .ax{stroke:var(--faint);stroke-width:1}
 .trend-body .gx{stroke:var(--line2);stroke-width:1;stroke-dasharray:3 4;opacity:.55}
 .trend-body .lbl{fill:var(--faint);font-size:10px}
 .trend-body .vl{fill:var(--ink);font-size:10.5px;font-weight:700;font-variant-numeric:tabular-nums}
@@ -443,7 +447,7 @@ table.cmp .spec-sub{display:block;font-size:10.5px;color:var(--faint);margin-top
 .tn:hover{border-color:var(--accent);transform:translateY(-1px)}
 .tn.on{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--surface2))}
 .tn .ic{width:24px;height:24px;flex:none;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;
-  font-size:11px;font-weight:800;color:#fff;background:var(--tc,var(--accent))}
+  font-size:11px;font-weight:800;color:#0B0D11;background:var(--tc,var(--accent))}
 .tn .tx{min-width:0}
 .tn .tt{display:block;font-size:12px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tn .tc{display:block;font-size:10.5px;color:var(--faint);font-variant-numeric:tabular-nums}
@@ -465,7 +469,7 @@ table.cmp .spec-sub{display:block;font-size:10.5px;color:var(--faint);margin-top
 #scatter svg{display:block;width:100%;height:auto}
 #scatter .dot{cursor:pointer;transition:opacity .12s}
 #scatter .dot:hover{stroke:var(--ink);stroke-width:1.4}
-#scatter .ax{stroke:var(--line);stroke-width:1}
+#scatter .ax{stroke:var(--faint);stroke-width:1}
 #scatter .gx{stroke:var(--line2);stroke-width:1;stroke-dasharray:3 4;opacity:.5}
 #scatter .lbl{fill:var(--faint);font-size:10px}
 #scatter .nm{fill:var(--ink);font-size:9.5px;font-weight:600;pointer-events:none;paint-order:stroke;stroke:rgba(8,10,14,.85);stroke-width:2.6px}
@@ -608,9 +612,18 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
   *{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
 }
+
+/* SECTION: a11y */
+.skip{position:absolute;left:12px;top:-60px;z-index:200;background:var(--accent-fill);color:#fff;padding:8px 14px;border-radius:8px;font-weight:700;text-decoration:none}
+.skip:focus{top:12px}
+.mx td[data-r]:focus-visible,.mx [data-rt]:focus-visible,.mx [data-ct]:focus-visible,.mx [data-all]:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+.dot:focus{outline:none}
+.dot:focus-visible circle{stroke:var(--ink);stroke-width:3}
+.drawer[hidden]{display:flex;visibility:hidden}
 </style>
 </head>
 <body>
+<a class="skip" href="#explorer">跳到型号浏览器</a>
 <!-- SECTION: nav -->
 <header class="nav">
   <div class="nav-in">
@@ -704,11 +717,11 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
       <h3>交叉透视</h3>
       <div class="cs">三组维度任选：换一个十字，就看另一条市场结构 · 底色越深越集中，点格子直接筛</div>
       <div class="mx-tabs" id="mxTabs" role="tablist">
-        <button class="chip-tab on" type="button" data-mx="type-price">类别 × 价格档</button>
-        <button class="chip-tab" type="button" data-mx="type-bucket">类别 × 排量段</button>
-        <button class="chip-tab" type="button" data-mx="price-bucket">价格档 × 排量段</button>
+        <button class="chip-tab on" type="button" role="tab" aria-selected="true" aria-controls="matrix" data-mx="type-price">类别 × 价格档</button>
+        <button class="chip-tab" type="button" role="tab" aria-selected="false" aria-controls="matrix" tabindex="-1" data-mx="type-bucket">类别 × 排量段</button>
+        <button class="chip-tab" type="button" role="tab" aria-selected="false" aria-controls="matrix" tabindex="-1" data-mx="price-bucket">价格档 × 排量段</button>
       </div>
-      <div id="matrix"></div>
+      <div id="matrix" role="tabpanel"></div>
     </div>
     <div class="panel rk-card reveal" style="margin-top:14px">
       <div class="sc-head">
@@ -777,7 +790,7 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
       <div class="chips-row price-row" id="priceChips" role="group" aria-label="价格区间筛选"></div>
       <div class="chips-row" id="catChips"></div>
       <div class="f-foot">
-        <div class="result-line" id="resultLine"></div>
+        <div class="result-line" id="resultLine" role="status" aria-live="polite" aria-atomic="true"></div>
         <div class="active-tags" id="activeTags"></div>
         <button class="link-btn" id="csvBtn" type="button" title="把当前筛选结果导出为 CSV">导出 CSV</button>
         <button class="link-btn" id="resetBtn" type="button">重置全部筛选</button>
@@ -817,18 +830,18 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
   <button class="cb-x" id="cmpClear" type="button" aria-label="清空对比">✕</button>
 </div>
 <div id="tip" role="tooltip" aria-hidden="true"></div>
-<div class="cmp-modal" id="cmpModal" role="dialog" aria-modal="true" aria-label="车型参数对比">
-  <div class="cm-scrim" id="cmpScrim"></div>
+<div class="cmp-modal" id="cmpModal" role="dialog" aria-modal="true" aria-labelledby="cmpTitle">
+  <div class="cm-scrim" id="cmpScrim" aria-hidden="true"></div>
   <div class="cm-box">
-    <div class="cm-head"><h3>车型参数对比</h3><button class="cm-x" id="cmpClose" type="button">关闭 (ESC)</button></div>
+    <div class="cm-head"><h3 id="cmpTitle">车型参数对比</h3><button class="cm-x" id="cmpClose" type="button">关闭 (ESC)</button></div>
     <div class="cm-specbar" id="cmpSpecBar"></div>
     <div id="cmpBody"></div>
     <div class="cm-foot">价格与参数均来自品牌官方渠道或权威车型库，逐条可核实；绿色标记为该行最优值（最低价 / 最大功率 / 最轻整备质量等）。参数未收录的车型显示「—」，不做估算填充。</div>
   </div>
 </div>
 
-<div class="cmp-modal" id="modelModal" role="dialog" aria-modal="true" aria-label="单款车型技术参数">
-  <div class="cm-scrim" id="mmScrim"></div>
+<div class="cmp-modal" id="modelModal" role="dialog" aria-modal="true" aria-labelledby="mmTitle">
+  <div class="cm-scrim" id="mmScrim" aria-hidden="true"></div>
   <div class="cm-box">
     <div class="cm-head"><h3 id="mmTitle">车型技术参数</h3><button class="cm-x" id="mmClose" type="button">关闭 (ESC)</button></div>
     <div class="cm-specbar" id="mmBar"></div>
@@ -838,8 +851,8 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
 </div>
 
 <!-- SECTION: drawer -->
-<div class="scrim" id="scrim"></div>
-<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="品牌详情">
+<div class="scrim" id="scrim" aria-hidden="true"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dName" hidden>
   <div class="d-head">
     <button class="icon-btn d-close" id="drawerClose" aria-label="关闭详情">✕</button>
     <div class="d-top">
@@ -881,12 +894,14 @@ if(!window.MOTO_DATA||!window.MOTO_DATA.brands){
 (function(){
 "use strict";
 var D = window.MOTO_DATA, LOGO = window.LOGO_URLS || {};
+/* 数据文件没加载（路径错 / 断网）时只显示顶部提示条，不再让整段脚本抛错 */
+if(!D||!D.brands)return;
 var CATS = ["国产自主","合资及台系","进口大贸"];
 var CAT_KEY = {"国产自主":"dom","合资及台系":"jv","进口大贸":"imp"};
 var CAT_COLOR = {"国产自主":"var(--dom)","合资及台系":"var(--jv)","进口大贸":"var(--imp)"};
 var BUCKETS = ["250-399cc","400-699cc","700-999cc","1000cc以上","未标注"];
-var BUCKET_COLOR = ["#FF4A1F","#FFB224","#2FD6A3","#4D9FFF","#B78CFF"];
-var TYPE_COLOR = {"巡航":"#FF4A1F","街车":"#4D9FFF","拉力ADV":"#2FD6A3","仿赛":"#FF5C5C","踏板":"#FFB224","复古":"#B78CFF","旅行":"#59C2E6","越野":"#8BD450","边三轮":"#F2789F","倒三轮":"#C9A26B","其他":"#9AA5B5"};
+var BUCKET_COLOR = ["var(--pc-ff4a1f)","var(--pc-ffb224)","var(--pc-2fd6a3)","var(--pc-4d9fff)","var(--pc-b78cff)"];  /* 色值在 CSS --pc-*，按主题切换 */
+var TYPE_COLOR = {"巡航":"var(--pc-ff4a1f)","街车":"var(--pc-4d9fff)","拉力ADV":"var(--pc-2fd6a3)","仿赛":"var(--pc-ff5c5c)","踏板":"var(--pc-ffb224)","复古":"var(--pc-b78cff)","旅行":"var(--pc-59c2e6)","越野":"var(--pc-8bd450)","边三轮":"var(--pc-f2789f)","倒三轮":"var(--pc-c9a26b)","其他":"var(--pc-9aa5b5)"};
 var $ = function(id){return document.getElementById(id)};
 var esc = function(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})};
 var pad = function(n){return n<10?"0"+n:String(n)};
@@ -903,9 +918,53 @@ var isFav = function(id){return state.favs.indexOf(id)>=0};
 
 /* SECTION: theme */
 var theme = store.get("moto-theme", null) || (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light":"dark");
-function applyTheme(t){document.documentElement.dataset.theme=t;$("themeBtn").textContent=t==="dark"?"☾":"☀";store.set("moto-theme",t)}
+function applyTheme(t){document.documentElement.dataset.theme=t;var b=$("themeBtn");b.textContent=t==="dark"?"☾":"☀";b.setAttribute("aria-label",t==="dark"?"当前深色主题，切换到浅色":"当前浅色主题，切换到深色");store.set("moto-theme",t)}
 applyTheme(theme);
 $("themeBtn").addEventListener("click",function(){applyTheme(document.documentElement.dataset.theme==="dark"?"light":"dark")});
+
+/* SECTION: a11y —— 弹层焦点管理：打开时焦点困在层内、背景 inert；关闭时还原 */
+var A11Y_LAYERS=[];
+var FOCUSABLE='a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea,[tabindex]:not([tabindex="-1"])';
+var REDUCED=!!(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+/* 背景刚被设为 inert 时浏览器会把焦点踢回 body，稍等再聚焦到弹层内 */
+function focusSoon(el){setTimeout(function(){if(el&&el.focus)el.focus()},50)}
+function smoothTo(el){if(el)el.scrollIntoView({behavior:REDUCED?"auto":"smooth"})}
+function bgNodes(){return Array.prototype.filter.call(document.body.children,function(n){
+  return n.tagName!=="SCRIPT"&&A11Y_LAYERS.indexOf(n)<0&&n.id!=="toast"&&n.id!=="tip"&&n.id!=="scrim";
+})}
+function layerOpen(el){
+  if(A11Y_LAYERS.indexOf(el)<0)A11Y_LAYERS.push(el);
+  el.hidden=false;el.inert=false;
+  bgNodes().forEach(function(n){if(!n.hasAttribute("data-a11y-inert")){n.setAttribute("data-a11y-inert","");n.inert=true}});
+  A11Y_LAYERS.forEach(function(l){if(l!==el)l.inert=true});
+}
+function layerClose(el){
+  var i=A11Y_LAYERS.indexOf(el);if(i>=0)A11Y_LAYERS.splice(i,1);
+  if(el.id==="drawer")setTimeout(function(){if(!el.classList.contains("show"))el.hidden=true},REDUCED?0:320);
+  var top=A11Y_LAYERS[A11Y_LAYERS.length-1];
+  if(top){top.inert=false;return}
+  document.querySelectorAll("[data-a11y-inert]").forEach(function(n){n.inert=false;n.removeAttribute("data-a11y-inert")});
+}
+document.addEventListener("keydown",function(e){
+  if(e.key!=="Tab"||!A11Y_LAYERS.length)return;
+  var top=A11Y_LAYERS[A11Y_LAYERS.length-1];
+  /* 收起的 <details> 里的链接 getClientRects 不为空但无法聚焦，要排除（summary 本身保留） */
+  var f=Array.prototype.filter.call(top.querySelectorAll(FOCUSABLE+",summary"),function(x){
+    if(!x.getClientRects().length)return false;
+    var d=x.closest("details");return !d||d.open||x.tagName==="SUMMARY"&&x.parentNode===d;
+  });
+  if(!f.length){e.preventDefault();return}
+  var first=f[0],last=f[f.length-1];
+  if(!top.contains(document.activeElement)){e.preventDefault();first.focus();return}
+  if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
+  else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
+});
+/* 矩阵格 / 合计 / 散点：Enter 与空格等同点击 */
+document.addEventListener("keydown",function(e){
+  if(e.key!==" "&&e.key!=="Enter")return;
+  var t=e.target;if(!t||!t.matches)return;
+  if(t.matches('td[data-r],th[data-rt],td[data-ct],th[data-all],g.dot')){e.preventDefault();t.dispatchEvent(new MouseEvent("click",{bubbles:true}))}
+});
 
 /* SECTION: toast */
 var toastTimer=null;
@@ -942,6 +1001,13 @@ document.addEventListener("mouseout",function(e){
   if(el&&!(e.relatedTarget&&el.contains(e.relatedTarget))){clearTimeout(tipTimer);tipHide()}
 });
 window.addEventListener("scroll",tipHide,{passive:true});
+/* 键盘用户：聚焦到带 data-tip 的元素也显示信息层 */
+document.addEventListener("focusin",function(e){
+  var el=e.target.closest?e.target.closest("[data-tip]"):null;if(!el)return;
+  var r=el.getBoundingClientRect();tipShow(el.dataset.tip,r.left+r.width/2,r.bottom-8);
+});
+document.addEventListener("focusout",function(e){if(e.target.closest&&e.target.closest("[data-tip]"))tipHide()});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")tipHide()});
 
 /* SECTION: logo helper */
 function fillLogo(box,b,fbClass){
@@ -991,7 +1057,10 @@ $("marketSrc").textContent="来源："+mk.leadersSource+"；"+mk.source;
 (function buildTrend(){
   var M=window.MOTO_MONTHLY,panel=$("trendPanel");
   if(!M||!M.series||!M.series.length){if(panel)panel.style.display="none";return}
-  var rows=M.series;
+  /* 容错：任何一个月缺值都会让 toFixed 抛错、拖垮后面所有模块 */
+  var rows=M.series.filter(function(r){return r&&r.month&&isFinite(r.prod)&&isFinite(r.sales)});
+  rows.forEach(function(r){r.yoyProd=+r.yoyProd||0;r.yoySales=+r.yoySales||0});
+  if(!rows.length){if(panel)panel.style.display="none";return}
   var max=Math.max.apply(null,rows.map(function(r){return Math.max(r.prod,r.sales)}))||1;
   max=Math.ceil(max*1.18);
   var W=760,H=230,padL=34,padR=8,padT=22,padB=26;
@@ -1021,7 +1090,7 @@ $("marketSrc").textContent="来源："+mk.leadersSource+"；"+mk.source;
   $("trendChart").innerHTML='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="2026 年 1-'+rows.length+' 月 250cc+ 产量与销量">'+
     grid.join("")+marks+'<line class="ax" x1="'+padL+'" x2="'+(W-padR)+'" y1="'+(padT+ih)+'" y2="'+(padT+ih)+'"/>'+
     '<line class="ax" x1="'+padL+'" x2="'+padL+'" y1="'+padT+'" y2="'+(padT+ih)+'"/></svg>'+
-    '<div class="trend-note"><span><i style="background:#4D9FFF"></i>产量</span><span><i style="background:#FF4A1F"></i>销量</span>'+
+    '<div class="trend-note"><span><i style="background:var(--jv)"></i>产量</span><span><i style="background:var(--dom)"></i>销量</span>'+
     '<span style="color:var(--faint)">单位：万辆 · 悬停看当月同比</span></div>';
   var first=rows[0],last=rows[rows.length-1];
   var sumP=rows.reduce(function(a,r){return a+r.prod},0),sumS=rows.reduce(function(a,r){return a+r.sales},0);
@@ -1065,7 +1134,7 @@ document.addEventListener("click",function(e){
   else if(kind==="type"){state.type=key;state.officialOnly=true}
   else if(kind==="cat"){state.cat=key;state.officialOnly=true}
   syncControls();render();
-  $("explorer").scrollIntoView({behavior:"smooth"});
+  smoothTo($("explorer"));
   toast("已按「"+key+"」筛选");
 });
 document.addEventListener("keydown",function(e){
@@ -1077,7 +1146,7 @@ function garageCard(b){
   var el=document.createElement("div");
   el.className="g-card"+(isFav(b.id)?" faved":"");
   el.tabIndex=0;el.setAttribute("role","button");el.dataset.id=b.id;
-  el.innerHTML='<button class="g-fav" aria-label="收藏品牌">'+(isFav(b.id)?"★":"☆")+'</button><div class="g-logo"></div><div class="g-name"></div><div class="g-meta"><span class="dot" style="background:'+CAT_COLOR[b.category]+'"></span><span class="g-cnt"></span></div>';
+  el.innerHTML='<button class="g-fav" type="button" aria-pressed="'+isFav(b.id)+'" aria-label="收藏'+esc(b.name)+'">'+(isFav(b.id)?"★":"☆")+'</button><div class="g-logo"></div><div class="g-name"></div><div class="g-meta"><span class="dot" style="background:'+CAT_COLOR[b.category]+'"></span><span class="g-cnt"></span></div>';
   el.querySelector(".g-name").textContent=b.name;
   el.querySelector(".g-cnt").textContent=b.modelCount+" 款在售";
   fillLogo(el.querySelector(".g-logo"),b,"g-fb");
@@ -1127,20 +1196,20 @@ function toggleFav(id){
 function refreshFavUI(){
   document.querySelectorAll(".g-card").forEach(function(c){
     var on=isFav(c.dataset.id);c.classList.toggle("faved",on);
-    c.querySelector(".g-fav").textContent=on?"★":"☆";
+    var gf=c.querySelector(".g-fav");gf.textContent=on?"★":"☆";gf.setAttribute("aria-pressed",String(on));
   });
   document.querySelectorAll(".b-card").forEach(function(c){
     var on=isFav(c.dataset.id);c.classList.toggle("faved",on);
-    var f=c.querySelector(".b-fav");if(f)f.textContent=on?"★":"☆";
+    var f=c.querySelector(".b-fav");if(f){f.textContent=on?"★":"☆";f.setAttribute("aria-pressed",String(on))}
   });
   var df=$("dFav");
-  if(df&&df.dataset.id){var on=isFav(df.dataset.id);df.classList.toggle("on",on);df.textContent=on?"★ 已收藏":"☆ 收藏品牌"}
+  if(df&&df.dataset.id){var on=isFav(df.dataset.id);df.classList.toggle("on",on);df.textContent=on?"★ 已收藏":"☆ 收藏品牌";df.setAttribute("aria-pressed",String(on))}
   var favChip=document.querySelector('.chip-tab[data-cat="收藏"]');
   if(favChip)favChip.textContent="★ 收藏 "+state.favs.length;
 }
 $("favNavBtn").addEventListener("click",function(){
   state.cat="收藏";syncControls();render();
-  $("explorer").scrollIntoView({behavior:"smooth"});
+  smoothTo($("explorer"));
 });
 
 /* SECTION: explorer filters */
@@ -1208,10 +1277,11 @@ $("catChips").addEventListener("click",function(e){
 });
 function syncControls(){
   $("q").value=state.q;bucketSel.value=state.bucket;typeSel.value=state.type;$("fSort").value=state.sort;
-  priceChips.querySelectorAll("[data-price]").forEach(function(x){x.classList.toggle("on",(x.dataset.price||"")===state.price)});
-  $("catChips").querySelectorAll(".chip-tab").forEach(function(x){x.classList.toggle("on",x.dataset.cat===state.cat)});
-  $("viewBrands").classList.toggle("on",state.view==="brands");
-  $("viewModels").classList.toggle("on",state.view==="models");
+  priceChips.querySelectorAll("[data-price]").forEach(function(x){var on=(x.dataset.price||"")===state.price;x.classList.toggle("on",on);x.setAttribute("aria-pressed",String(on))});
+  $("catChips").querySelectorAll(".chip-tab").forEach(function(x){var on=x.dataset.cat===state.cat;x.classList.toggle("on",on);x.setAttribute("aria-pressed",String(on))});
+  $("viewBrands").classList.toggle("on",state.view==="brands");$("viewBrands").setAttribute("aria-pressed",String(state.view==="brands"));
+  $("viewModels").classList.toggle("on",state.view==="models");$("viewModels").setAttribute("aria-pressed",String(state.view==="models"));
+  document.querySelectorAll("#typeNav .tn").forEach(function(x){var on=x.dataset.tn===state.type;x.classList.toggle("on",on);x.setAttribute("aria-pressed",String(on))});
 }
 var qTimer=null;
 $("q").addEventListener("input",function(e){clearTimeout(qTimer);var v=e.target.value;qTimer=setTimeout(function(){state.q=v;render()},120)});
@@ -1272,12 +1342,11 @@ function rkButtons(list,kind,key){
   }).join("");
 })();
 /* 类别图块导航：11 个车身类别铺成网格，点一下直接筛到型号浏览器 */
-/* 类别图块导航：11 个车身类别铺成网格，点一下直接筛到型号浏览器 */
 (function buildTypeNav(){
   var el=$("typeNav");if(!el)return;
   el.innerHTML=TYPES_ORDER.map(function(t){
     var c=(s.byType||{})[t]||0;
-    return '<button class="tn" data-tn="'+esc(t)+'" type="button" style="--tc:'+(TYPE_COLOR[t]||"#8892A4")+'" data-tip="<div class=\'th\'>'+esc(t)+'</div><div class=\'tb\'><b>'+c+'</b> 款在售车型</div>">'+
+    return '<button class="tn" data-tn="'+esc(t)+'" type="button" style="--tc:'+(TYPE_COLOR[t]||"var(--pc-9aa5b5)")+'" data-tip="<div class=\'th\'>'+esc(t)+'</div><div class=\'tb\'><b>'+c+'</b> 款在售车型</div>">'+
       '<span class="ic">'+esc(t.slice(0,1))+'</span><span class="tx"><span class="tt">'+esc(t)+'</span><span class="tc">'+c+' 款</span></span></button>';
   }).join("");
   el.addEventListener("click",function(e){
@@ -1285,8 +1354,7 @@ function rkButtons(list,kind,key){
     var t=b.dataset.tn;
     if(state.type===t){state.type=""}else{state.type=t}
     state.officialOnly=true;syncControls();render();
-    el.querySelectorAll(".tn").forEach(function(x){x.classList.toggle("on",x.dataset.tn===state.type)});
-    $("explorer").scrollIntoView({behavior:"smooth"});
+    smoothTo($("explorer"));
     toast(state.type?"已按「"+t+"」筛选":"已取消类别筛选");
   });
 })();
@@ -1296,7 +1364,7 @@ document.addEventListener("click",function(e){
   if(b.dataset.kind==="type")state.type=b.dataset.key;
   else if(b.dataset.kind==="price")state.price=b.dataset.key;
   state.officialOnly=true;syncControls();render();
-  $("explorer").scrollIntoView({behavior:"smooth"});
+  smoothTo($("explorer"));
   toast("已按「"+(b.dataset.kind==="type"?b.dataset.key:((RANGE_BY_KEY[b.dataset.key]||{}).label||""))+"」筛选");
 });
 /* 通用交叉透视：任意两维组合，行列合计 + 点格子筛选，数据全部按统计口径（424 款）聚合 */
@@ -1362,17 +1430,17 @@ document.addEventListener("click",function(e){
           '<div class=\'tb\'><b>'+c+'</b> 款 · '+tops.length+' 个品牌</div>'+
           tops.slice(0,3).map(function(x){return '<div class=\'trow\'><span>'+esc(x.name)+'</span><span>'+x.n+' 款</span></div>'}).join("")+
           (R.values.length*C.values.length?'<div class=\'tb\' style=\'color:var(--faint);margin-top:4px\'>点一下按此组合筛选</div>':'');
-        return '<td data-r="'+esc(rv)+'" data-c="'+esc(cv)+'" style="background:rgba(255,74,31,'+a+')" data-tip="'+esc(tip)+'">'+c+'</td>';
+        return '<td tabindex="0" role="button" data-r="'+esc(rv)+'" data-c="'+esc(cv)+'" style="background:rgba(255,74,31,'+a+')" data-tip="'+esc(tip)+'">'+c+'</td>';
       }).join("");
-      return '<tr><th class="rowh">'+esc(R.desc(rv))+'</th>'+cells+'<th class="rt" data-rt="'+esc(rv)+'" data-tip="'+esc(rowTip)+'">'+tot+'</th></tr>';
+      return '<tr><th class="rowh">'+esc(R.desc(rv))+'</th>'+cells+'<th class="rt" tabindex="0" role="button" data-rt="'+esc(rv)+'" data-tip="'+esc(rowTip)+'">'+tot+'</th></tr>';
     }).join("");
     var foot='<tr class="tot"><th class="rowh">合计</th>'+
       C.values.map(function(cv){
         var c=colSum[cv];
         var tip='<div class=\'th\'>'+esc(C.desc(cv))+'</div><div class=\'tb\'><b>'+c+'</b> 款'+(c?' · 占全库 '+(c/s.modelCount*100).toFixed(1)+'%':'')+'</div><div class=\'tb\' style=\'color:var(--faint)\'>点一下只看这个'+esc(C.label)+'</div>';
-        return '<td class="tot" data-ct="'+esc(cv)+'" data-tip="'+esc(tip)+'">'+(c||"·")+'</td>';
+        return '<td class="tot" tabindex="0" role="button" data-ct="'+esc(cv)+'" data-tip="'+esc(tip)+'">'+(c||"·")+'</td>';
       }).join("")+
-      '<th class="tot" data-all="1" data-tip="'+esc('<div class=\'th\'>全库合计</div><div class=\'tb\'><b>'+grand+'</b> 款 · '+R.values.length+' 个'+R.label+' × '+C.values.length+' 个'+C.label+'</div><div class=\'tb\' style=\'color:var(--faint)\'>点一下清空筛选</div>')+'">'+grand+'</th></tr>';
+      '<th class="tot" tabindex="0" role="button" data-all="1" data-tip="'+esc('<div class=\'th\'>全库合计</div><div class=\'tb\'><b>'+grand+'</b> 款 · '+R.values.length+' 个'+R.label+' × '+C.values.length+' 个'+C.label+'</div><div class=\'tb\' style=\'color:var(--faint)\'>点一下清空筛选</div>')+'">'+grand+'</th></tr>';
     el.innerHTML='<div class="mx-wrap"><table class="mx">'+head+body+foot+'</table></div>'+
       '<div class="mx-legend">按 '+s.modelCount+' 款在售车型统计，不含 '+s.parallelModelCount+' 款平行进口；行合计 = 该'+R.label+'的型号数，末行合计 = 各'+C.label+'的型号数，右下角 = 全库 '+s.modelCount+'。悬停看这一格由哪些品牌撑起来；点格子 → '+R.label+' + '+C.label+'，点行合计 → 只看'+R.label+'，点列合计 → 只看'+C.label+'。</div>';
   }
@@ -1381,36 +1449,41 @@ document.addEventListener("click",function(e){
     tabs.addEventListener("click",function(e){
       var b=e.target.closest("[data-mx]");if(!b)return;
       cur=b.dataset.mx;
-      tabs.querySelectorAll("[data-mx]").forEach(function(x){x.classList.toggle("on",x.dataset.mx===cur)});
+      tabs.querySelectorAll("[data-mx]").forEach(function(x){var on=x.dataset.mx===cur;x.classList.toggle("on",on);x.setAttribute("aria-selected",String(on));x.tabIndex=on?0:-1});
       draw(cur);
     });
   }
+  if(tabs)tabs.addEventListener("keydown",function(e){
+    if(e.key!=="ArrowRight"&&e.key!=="ArrowLeft")return;
+    var bs=Array.prototype.slice.call(tabs.querySelectorAll("[data-mx]")),i=bs.indexOf(document.activeElement);if(i<0)return;
+    var n=bs[(i+(e.key==="ArrowRight"?1:bs.length-1))%bs.length];n.focus();n.click();e.preventDefault();
+  });
   el.addEventListener("click",function(e){
     var all=e.target.closest("[data-all]");
     if(all){
       state.type="";state.price="";state.bucket="";state.officialOnly=true;
-      syncControls();render();$("explorer").scrollIntoView({behavior:"smooth"});
+      syncControls();render();smoothTo($("explorer"));
       toast("已清空类别、价格与排量筛选");return;
     }
     var cell=e.target.closest("td[data-r]");
     if(cell){
       var pair=PAIRS[cur],R=DIMS[pair[0]],C=DIMS[pair[1]];
       R.set(cell.dataset.r);C.set(cell.dataset.c);
-      syncControls();render();$("explorer").scrollIntoView({behavior:"smooth"});
+      syncControls();render();smoothTo($("explorer"));
       toast("已按「"+R.desc(cell.dataset.r)+" · "+C.desc(cell.dataset.c)+"」筛选");return;
     }
     var rt=e.target.closest("th.rt[data-rt]");
     if(rt){
       var pair2=PAIRS[cur],R2=DIMS[pair2[0]];
       R2.set(rt.dataset.rt);
-      syncControls();render();$("explorer").scrollIntoView({behavior:"smooth"});
+      syncControls();render();smoothTo($("explorer"));
       toast("已按「"+R2.desc(rt.dataset.rt)+"」筛选（全部"+DIMS[PAIRS[cur][1]].label+"）");return;
     }
     var ct=e.target.closest("td.tot[data-ct]");
     if(ct){
       var pair3=PAIRS[cur],C3=DIMS[pair3[1]];
       C3.set(ct.dataset.ct);
-      syncControls();render();$("explorer").scrollIntoView({behavior:"smooth"});
+      syncControls();render();smoothTo($("explorer"));
       toast("已按「"+C3.desc(ct.dataset.ct)+"」筛选（全部"+DIMS[PAIRS[cur][0]].label+"）");
     }
   });
@@ -1421,7 +1494,7 @@ document.addEventListener("click",function(e){
    价格横跨 1–17 万、排量 250–2458cc，线性轴会挤成两坨，所以两轴都走对数刻度 */
 (function buildScatter(){
   var el=$("scatter");if(!el)return;
-  var CAT_C={"国产自主":"#FF4A1F","合资及台系":"#4D9FFF","进口大贸":"#B78CFF"};
+  var CAT_C={"国产自主":"var(--dom)","合资及台系":"var(--jv)","进口大贸":"var(--imp)"};
   var pts=[];
   OFFICIAL_BRANDS.forEach(function(b){
     var ps=[],ccs=[];
@@ -1494,9 +1567,9 @@ document.addEventListener("click",function(e){
       '<div class=\'tb\'><b>'+p.n+'</b> 款在售 · 排量 '+p.ccLo+'–'+p.cc+'cc'+clip+'</div>'+
       '<div class=\'trow\'><span>起售价区间</span><span>'+p.lp.toFixed(2)+'–'+p.hp.toFixed(2)+' 万</span></div>'+
       '<div class=\'tb\' style=\'color:var(--faint)\'>点一下打开品牌详情</div>';
-    var c=CAT_C[p.b.category]||"#8892A4";
-    return '<g class="dot" data-bd="'+esc(p.b.id)+'" data-tip="'+esc(tip)+'">'+
-      '<circle cx="'+cx.toFixed(1)+'" cy="'+cy.toFixed(1)+'" r="'+r.toFixed(1)+'" fill="'+c+'" fill-opacity=".7" stroke="'+c+'" stroke-opacity=".95" stroke-width="1"/>'+
+    var c=CAT_C[p.b.category]||"var(--pc-9aa5b5)";
+    return '<g class="dot" tabindex="0" role="button" aria-label="'+esc(p.b.name+'，'+p.n+' 款，起售 '+p.lp.toFixed(2)+' 万，最大 '+p.cc+'cc，打开品牌详情')+'" data-bd="'+esc(p.b.id)+'" data-tip="'+esc(tip)+'">'+
+      '<circle cx="'+cx.toFixed(1)+'" cy="'+cy.toFixed(1)+'" r="'+r.toFixed(1)+'" style="fill:'+c+';stroke:'+c+'" fill-opacity=".78" stroke-width="1.5"/>'+
       (labelFor[p.b.id]?'<text class="nm" x="'+labelFor[p.b.id].x+'" y="'+labelFor[p.b.id].y+'" text-anchor="'+labelFor[p.b.id].anchor+'">'+esc(p.b.name)+'</text>':'')+
       '</g>';
   }).join("");
@@ -1514,13 +1587,13 @@ document.addEventListener("click",function(e){
 (function budget(){
   var minEl=$("bdMin"),maxEl=$("bdMax"),listEl=$("bdList"),sumEl=$("bdSummary");
   if(!minEl||!listEl)return;
-  var PRESETS=[{lo:0,hi:1,label:"1 万以下"},{lo:2,hi:3,label:"2–3 万"},{lo:3,hi:5,label:"3–5 万"},{lo:5,hi:8,label:"5–8 万"},{lo:8,hi:0,label:"8 万以上"}];
+  var PRESETS=[{lo:0,hi:1,label:"1 万以下"},{lo:1,hi:2,label:"1–2 万"},{lo:2,hi:3,label:"2–3 万"},{lo:3,hi:5,label:"3–5 万"},{lo:5,hi:8,label:"5–8 万"},{lo:8,hi:0,label:"8 万以上"}];
   $("bdPresets").innerHTML=PRESETS.map(function(p){
     return '<button class="chip-tab" type="button" data-lo="'+p.lo+'" data-hi="'+p.hi+'">'+esc(p.label)+'</button>';
   }).join("");
   function rows(){
-    var lo=parseFloat(minEl.value);if(isNaN(lo))lo=0;
-    var hi=parseFloat(maxEl.value);if(isNaN(hi)||(!hi&&lo))hi=lo;
+    var lo=parseFloat(minEl.value);if(isNaN(lo)||lo<0)lo=0;
+    var hi=parseFloat(maxEl.value);if(isNaN(hi)||hi<=0)hi=0;   /* 0 = 不设上限 */
     if(hi&&hi<lo){var t=lo;lo=hi;hi=t}
     var out=[];
     D.brands.forEach(function(b){
@@ -1541,7 +1614,7 @@ document.addEventListener("click",function(e){
     var rangeTxt=(r.hi?r.lo+"–"+r.hi:"≥"+r.lo)+" 万元";
     if(!r.items.length){
       sumEl.innerHTML='预算 '+esc(rangeTxt)+' 内没有车型，换个区间试试。';
-      listEl.innerHTML='<div class="cs">可选区间参考：1–2 万 / 2–3 万 / 3–5 万 / 5–8 万 / 8 万以上</div>';
+      listEl.innerHTML='<div class="cs">可选区间参考：1 万以下 / 1–2 万 / 2–3 万 / 3–5 万 / 5–8 万 / 8 万以上</div>';
       return;
     }
     var top=r.items[0];
@@ -1585,6 +1658,7 @@ document.addEventListener("click",function(e){
     });
     syncCmpBoxes();renderCmpBar();draw();
     if(added)toast("已把这一档排量最大的 "+added+" 款加入对比");
+    else toast(state.cmp.length>=3?"对比栏已满 3 款，先移出一款再加":"这几款已经在对比中");
   });
   draw();
 })();
@@ -1607,13 +1681,6 @@ function modelsOf(b,rest){
     return true;
   });
 }
-function hl(text,q){
-  var t=String(text==null?"":text);
-  if(!q)return esc(t);
-  var idx=t.toLowerCase().indexOf(q);
-  if(idx<0)return esc(t);
-  return esc(t.slice(0,idx))+"<mark>"+esc(t.slice(idx,idx+q.length))+"</mark>"+esc(t.slice(idx+q.length));
-}
 function hlAll(text,toks){
   var t=String(text==null?"":text);
   if(!toks||!toks.length)return esc(t);
@@ -1635,6 +1702,13 @@ function hlAll(text,toks){
 }
 function priceVal(m){return m.priceMin!=null?m.priceMin:null}
 
+/* 缺值（null）始终沉底，不受升降序影响 */
+function cmpNullLast(x,y,dir){
+  if(x==null&&y==null)return 0;
+  if(x==null)return 1;
+  if(y==null)return -1;
+  return dir*(x-y);
+}
 /* SECTION: render */
 function computeItems(){
   var toks=tokenize(state.q);
@@ -1673,12 +1747,12 @@ function render(){
     else if(state.sort==="name")items.sort(function(a,b){return a.b.name.localeCompare(b.b.name,"zh")});
     else if(state.sort==="price-asc"||state.sort==="price-desc"){
       var dir=state.sort==="price-asc"?1:-1;
-      var minP=function(x){var v=x.models.map(priceVal).filter(function(n){return n!=null});return v.length?Math.min.apply(null,v):Infinity};
-      items.sort(function(a,b){return dir*(minP(a)-minP(b))});
+      var minP=function(x){var v=x.models.map(priceVal).filter(function(n){return n!=null});return v.length?Math.min.apply(null,v):null};
+      items.sort(function(a,b){return cmpNullLast(minP(a),minP(b),dir)});
     }else if(state.sort==="cc-asc"||state.sort==="cc-desc"){
       var dir2=state.sort==="cc-asc"?1:-1;
-      var maxC=function(x){var v=x.models.map(function(m){return m.cc}).filter(function(n){return n!=null});return v.length?Math.max.apply(null,v):-1};
-      items.sort(function(a,b){return dir2*(maxC(a)-maxC(b))});
+      var maxC=function(x){var v=x.models.map(function(m){return m.cc}).filter(function(n){return n!=null});return v.length?Math.max.apply(null,v):null};
+      items.sort(function(a,b){return cmpNullLast(maxC(a),maxC(b),dir2)});
     }
     renderBrands(items,toks);
   }else{
@@ -1796,7 +1870,7 @@ function renderBrands(items,toks){
   body.innerHTML='<div class="brand-list">'+items.map(function(x){
     var b=x.b;
     return '<div class="b-card'+(isFav(b.id)?" faved":"")+'" tabindex="0" role="button" data-id="'+esc(b.id)+'" style="--cat-c:'+CAT_COLOR[b.category]+'">'+
-      '<button class="b-fav" aria-label="收藏品牌">'+(isFav(b.id)?"★":"☆")+'</button>'+
+      '<button class="b-fav" type="button" aria-pressed="'+isFav(b.id)+'" aria-label="收藏'+esc(b.name)+'">'+(isFav(b.id)?"★":"☆")+'</button>'+
       '<div class="b-logo"></div><div class="b-info"><div class="b-name"><strong>'+hlAll(b.name,toks)+'</strong><span class="en">'+esc(b.nameEn)+'</span></div>'+
       '<div class="b-company">'+esc(b.company||"—")+'</div><div class="b-tags"><span class="tag cat">'+esc(b.subCategory||b.category)+'</span>'+
       (b.marketStatus==="parallel"?'<span class="tag">平行进口 · 未计入统计</span>':'')+
@@ -1816,10 +1890,10 @@ function renderModels(items,toks){
   var body=$("explorerBody");
   var rows=[];
   items.forEach(function(x){x.models.forEach(function(m){rows.push({b:x.b,m:m,mi:x.b.models.indexOf(m)})})});
-  if(state.sort==="price-asc")rows.sort(function(a,b){var x=priceVal(a.m),y=priceVal(b.m);return (x==null?Infinity:x)-(y==null?Infinity:y)});
-  else if(state.sort==="price-desc")rows.sort(function(a,b){var x=priceVal(a.m),y=priceVal(b.m);return (y==null?-1:y)-(x==null?-1:x)});
-  else if(state.sort==="cc-asc")rows.sort(function(a,b){return (a.m.cc||0)-(b.m.cc||0)});
-  else if(state.sort==="cc-desc")rows.sort(function(a,b){return (b.m.cc||0)-(a.m.cc||0)});
+  if(state.sort==="price-asc")rows.sort(function(a,b){return cmpNullLast(priceVal(a.m),priceVal(b.m),1)});
+  else if(state.sort==="price-desc")rows.sort(function(a,b){return cmpNullLast(priceVal(a.m),priceVal(b.m),-1)});
+  else if(state.sort==="cc-asc")rows.sort(function(a,b){return cmpNullLast(a.m.cc,b.m.cc,1)});
+  else if(state.sort==="cc-desc")rows.sort(function(a,b){return cmpNullLast(a.m.cc,b.m.cc,-1)});
   else if(state.sort==="name")rows.sort(function(a,b){return a.m.name.localeCompare(b.m.name,"zh")});
   else if(state.sort==="count"){
     var cnt={};items.forEach(function(x){cnt[x.b.id]=x.models.length});
@@ -1844,6 +1918,13 @@ function renderModels(items,toks){
   });
 }
 
+/* 只要还有任一层（抽屉 / 对比弹层 / 参数弹层）开着就保持锁滚动 */
+function syncScrollLock(){
+  var open=$("drawer").classList.contains("show")||
+           $("cmpModal").classList.contains("show")||
+           $("modelModal").classList.contains("show");
+  document.body.style.overflow=open?"hidden":"";
+}
 /* SECTION: compare —— 型号对比：勾 2–3 款并排看参数，最优值标绿 */
 function cmpKey(bid,mi){return bid+"/"+mi}
 function cmpHas(k){
@@ -2011,7 +2092,7 @@ function openCompare(){
   var prices=items.map(function(x){return priceVal(x.m)}).filter(function(n){return n!=null});
   var minP=prices.length?Math.min.apply(null,prices):null;
   var modal=$("cmpModal");
-  if(!modal.classList.contains("show"))modal.classList.add("show");
+  if(!modal.classList.contains("show")){cmpLastFocus=document.activeElement;modal.classList.add("show");layerOpen(modal)}
   document.body.style.overflow="hidden";
   var nameRow='<tr><th class="rowh">车型</th>'+items.map(function(x){
     return '<th><span class="cn">'+esc(x.m.name)+'</span><span class="csub">'+esc(x.b.name)+' · '+esc(x.m.type||"")+'</span></th>';
@@ -2055,8 +2136,10 @@ function openCompare(){
   renderSpecBar(items);
   $("cmpBody").innerHTML='<table class="cmp"><thead>'+nameRow+'</thead><tbody>'+
     rPrice+rFrom+rCc+rType+compareSpecHTML(items)+rBand+rChan+rCat+rSrc+'</tbody></table>';
+  if(!modal.contains(document.activeElement))focusSoon($("cmpClose"));
 }
-function closeCompare(){var m=$("cmpModal");m.classList.remove("show");document.body.style.overflow=""}
+var cmpLastFocus=null;
+function closeCompare(){var m=$("cmpModal");if(!m.classList.contains("show"))return;m.classList.remove("show");layerClose(m);syncScrollLock();if(cmpLastFocus&&cmpLastFocus.isConnected&&cmpLastFocus.focus)cmpLastFocus.focus();else $("cmpGo").focus()}
 $("cmpGo").addEventListener("click",openCompare);
 
 /* 单款车型参数弹层：从品牌抽屉 / 型号浏览器点车型直接看全表 */
@@ -2102,19 +2185,24 @@ function openModelSpec(bid,mi){
   if(s&&s.src)foot.push('<a class="more" href="'+esc(s.src)+'" target="_blank" rel="noopener">摩托范参数页 ↗</a>');
   if(m.source)foot.push('<a class="more" href="'+esc(m.source)+'" target="_blank" rel="noopener">核实来源 ↗</a>');
   foot.push('<a class="more" href="brand/'+esc(b.id)+'.html">品牌页 ↗</a>');
-  foot.push('<a class="more" href="#" id="mmAdd" data-cmp="'+esc(cmpKey(b.id,mi))+'">'+(cmpHas(cmpKey(b.id,mi))?'✓ 已在对比中':'+ 加入对比')+'</a>');
+  var mk0=cmpKey(b.id,mi);
+  foot.push('<a class="more" href="#" id="mmAdd" data-mm-cmp="'+esc(mk0)+'">'+(cmpHas(mk0)?'✓ 已在对比中':'+ 加入对比')+'</a>');
   $("mmFoot").innerHTML=foot.join(' · ');
+  /* 用独立的 data-mm-cmp：避免冒泡到全局 [data-cmp] 处理器被二次 toggle 掉 */
   $("mmAdd").addEventListener("click",function(e){
     e.preventDefault();
-    var k=this.dataset.cmp;
-    if(!cmpHas(k)){if(state.cmp.length>=3){toast("最多同时对比 3 款");return}
-      state.cmp.push({b:b.id,m:mi});renderCmpBar();this.textContent="✓ 已在对比中";toast("已加入对比："+b.name+" "+m.name)}
+    var k=this.dataset.mmCmp;
+    if(cmpHas(k)){toast("已在对比中");return}
+    if(state.cmp.length>=3){toast("最多同时对比 3 款");return}
+    toggleCmp(k);
+    this.textContent="✓ 已在对比中";
+    toast("已加入对比："+b.name+" "+m.name);
   });
-  $("modelModal").classList.add("show");
+  $("modelModal").classList.add("show");layerOpen($("modelModal"));
   document.body.style.overflow="hidden";
-  $("mmClose").focus();
+  focusSoon($("mmClose"));
 }
-function closeModelSpec(){ $("modelModal").classList.remove("show"); document.body.style.overflow=""; if(mmLastFocus&&mmLastFocus.focus)mmLastFocus.focus(); }
+function closeModelSpec(){ $("modelModal").classList.remove("show"); layerClose($("modelModal")); syncScrollLock(); if(mmLastFocus&&mmLastFocus.focus)mmLastFocus.focus(); }
 $("mmClose").addEventListener("click",closeModelSpec);
 $("mmScrim").addEventListener("click",closeModelSpec);
 
@@ -2148,7 +2236,7 @@ function openDrawer(id){
   if(b.website)links+='<a href="'+esc(b.website)+'" target="_blank" rel="noopener">品牌官网 ↗</a>';
   links+='<a href="brand/'+esc(b.id)+'.html">完整品牌页 ↗</a>';
   if(b.logo.source)links+='<a href="'+esc(b.logo.source)+'" target="_blank" rel="noopener">Logo 来源 ↗</a>';
-  links+='<button class="d-fav'+(isFav(b.id)?" on":"")+'" id="dFav" data-id="'+esc(b.id)+'">'+(isFav(b.id)?"★ 已收藏":"☆ 收藏品牌")+'</button>';
+  links+='<button class="d-fav'+(isFav(b.id)?" on":"")+'" id="dFav" type="button" aria-pressed="'+isFav(b.id)+'" data-id="'+esc(b.id)+'">'+(isFav(b.id)?"★ 已收藏":"☆ 收藏品牌")+'</button>';
   $("dLinks").innerHTML=links;
   $("dFav").addEventListener("click",function(){toggleFav(b.id)});
   var prices=b.models.map(priceVal).filter(function(n){return n!=null});
@@ -2183,13 +2271,15 @@ function openDrawer(id){
     el.addEventListener("click",function(e){if(e.target.closest("a"))return;openModelSpec(el.dataset.bid,+el.dataset.mi)});
     el.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();openModelSpec(el.dataset.bid,+el.dataset.mi)}});
   });
+  $("drawer").hidden=false;layerOpen($("drawer"));
   $("scrim").classList.add("show");$("drawer").classList.add("show");
   document.body.style.overflow="hidden";
-  $("drawerClose").focus();
+  focusSoon($("drawerClose"));
 }
 function closeDrawer(){
   $("scrim").classList.remove("show");$("drawer").classList.remove("show");
-  document.body.style.overflow="";
+  layerClose($("drawer"));
+  syncScrollLock();
   if(lastFocus&&lastFocus.focus)lastFocus.focus();
 }
 $("drawerClose").addEventListener("click",closeDrawer);
