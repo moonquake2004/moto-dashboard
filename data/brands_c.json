@@ -47,18 +47,20 @@
       "logoUrl": "https://cdn.haojue.com/bocweb//web/img/logo.png?v=v49",
       "models": [
         {
-          "name": "DL250（含DL250-A无三箱/DL250-C三箱）",
-          "cc": 250,
+          "name": "DL250",
+          "cc": 248,
           "type": "拉力ADV",
           "price": "19880~20980元",
-          "source": "https://www.haojue.com/products.html"
+          "source": "https://www.haojue.com/DL250/canshu.html",
+          "note": "含 DL250-A（无三箱）/ DL250-C（三箱）"
         },
         {
-          "name": "GSX250R（含GSX250R-A/GSX250R-F）",
-          "cc": 250,
+          "name": "GSX250R",
+          "cc": 248,
           "type": "仿赛",
           "price": "18980~19980元",
-          "source": "https://www.haojue.com/products.html"
+          "source": "https://www.haojue.com/GSX250R/canshu.html",
+          "note": "含 GSX250R-A / GSX250R-F"
         }
       ],
       "uncertain": [
@@ -146,7 +148,7 @@
       "models": [
         {
           "name": "飞致YS250（飞致双碟版，国四）",
-          "cc": 250,
+          "cc": 249,
           "type": "街车",
           "price": null,
           "source": "https://www.jym.com.cn/product/detail_qs_ys250_sta4.html"
@@ -197,32 +199,36 @@
           "source": "https://www.kymco.com.cn/join.html"
         },
         {
-          "name": "赛艇250（含2025款）",
+          "name": "赛艇250",
           "cc": 250,
           "type": "踏板",
           "price": "20800元",
-          "source": "https://www.kymco.com.cn/join.html"
+          "source": "https://www.kymco.com.cn/join.html",
+          "note": "含 2025 款"
         },
         {
-          "name": "赛艇ST250（含豪华版/纪念版）",
+          "name": "赛艇ST250",
           "cc": 250,
           "type": "踏板",
           "price": "21999~26999元",
-          "source": "https://www.kymco.com.cn/join.html"
+          "source": "https://www.kymco.com.cn/join.html",
+          "note": "含豪华版 / 纪念版"
         },
         {
-          "name": "赛艇CT250（含2025款）",
+          "name": "赛艇CT250",
           "cc": 250,
           "type": "踏板",
           "price": "19980元",
-          "source": "https://www.kymco.com.cn/join.html"
+          "source": "https://www.kymco.com.cn/join.html",
+          "note": "含 2025 款"
         },
         {
-          "name": "赛艇S350（含黑武士）",
+          "name": "赛艇S350",
           "cc": 350,
           "type": "踏板",
           "price": "31980~34980元",
-          "source": "https://www.kymco.com.cn/join.html"
+          "source": "https://www.kymco.com.cn/join.html",
+          "note": "含黑武士版"
         },
         {
           "name": "赛艇X350尊享版",
@@ -232,11 +238,12 @@
           "source": "https://www.kymco.com.cn/join.html"
         },
         {
-          "name": "AK550（含AK550 II代/AK575 PREMIUM）",
+          "name": "AK550",
           "cc": 550,
           "type": "踏板",
           "price": "88800~89800元",
-          "source": "https://www.kymco.com.cn/join.html"
+          "source": "https://www.kymco.com.cn/join.html",
+          "note": "含 AK550 II 代 / AK575 PREMIUM"
         },
         {
           "name": "CV3",
@@ -293,32 +300,34 @@
       "logoUrl": "https://www.xsmt.com/public/images/logo.png",
       "models": [
         {
-          "name": "CRUISYM 400 巡弋400（含25款/26款旗舰版）",
-          "cc": 400,
+          "name": "CRUISYM 400 巡弋400",
+          "cc": 399,
           "type": "踏板",
           "price": "36980元",
-          "source": "https://www.xsmt.com/product/show-13055.html"
+          "source": "https://www.xsmt.com/product/show-13055.html",
+          "note": "含 25 款 / 26 款旗舰版"
         },
         {
           "name": "JOYRIDE 300 行者300（25款）",
-          "cc": 300,
+          "cc": 278,
           "type": "踏板",
           "price": "23980元",
           "source": "https://www.xsmt.com/product/param/show-8887.html"
         },
         {
           "name": "Jepardo 300 猎豹300",
-          "cc": 300,
+          "cc": 278,
           "type": "踏板",
           "price": "24980元",
-          "source": "https://www.xsmt.com/product/show-24067.html"
+          "source": "https://www.xsmt.com/product/param/show-24067.html"
         },
         {
-          "name": "HUSKY ADV 300 哈士奇（含26款旗舰款/弯道版）",
+          "name": "HUSKY ADV 300 哈士奇",
           "cc": 278,
           "type": "踏板",
           "price": "24980~26980元",
-          "source": "https://www.xsmt.com/product/show-4357.html"
+          "source": "https://www.xsmt.com/product/show-4357.html",
+          "note": "含 26 款旗舰款 / 弯道版"
         },
         {
           "name": "CRUISYM 250 (巡弋250)",
@@ -408,18 +417,19 @@
       "logoUrl": "https://www.peugeot-motocycles.com.cn/application/portal/view/public/images/logo.png",
       "models": [
         {
-          "name": "XP400（含ALLURE/GT/PRO版本）",
+          "name": "XP400",
           "cc": 400,
           "type": "踏板",
           "price": "42800~45800元",
-          "source": "https://www.peugeot-motocycles.com.cn/"
+          "source": "https://www.peugeot-motocycles.com.cn/portal/product/detail?id=1382",
+          "note": "含 ALLURE / GT / PRO 版本"
         },
         {
           "name": "PEUGEOT METROPOLIS（Metropolis 400 倒三轮）",
           "cc": 400,
           "type": "踏板",
-          "price": null,
-          "source": "https://www.peugeot-motocycles.com.cn/"
+          "price": "98800元",
+          "source": "https://www.peugeot-motocycles.com.cn/portal/product/detail?id=1135"
         }
       ],
       "uncertain": [

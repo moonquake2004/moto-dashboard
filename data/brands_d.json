@@ -15,160 +15,192 @@
           "cc": 502,
           "type": "复古",
           "price": "42980~43480元",
-          "source": "https://www.honda.com.cn/motorcycle.html"
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=76"
         },
         {
           "name": "CBR500R FOUR",
           "cc": 502,
           "type": "仿赛",
-          "price": null,
-          "source": "https://www.honda.com.cn/motorcycle.html"
+          "price": "44980元",
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=77"
         },
         {
           "name": "CBR650R",
           "cc": 649,
           "type": "仿赛",
           "price": "82800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list"
-        },
-        {
-          "name": "CB650R",
-          "cc": 649,
-          "type": "街车",
-          "price": "76800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list"
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=6"
         },
         {
           "name": "CB750",
           "cc": 755,
           "type": "街车",
           "price": "68800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list"
-        },
-        {
-          "name": "CB1000 SP Honda HORNET",
-          "cc": 1000,
-          "type": "街车",
-          "price": "128800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list"
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=66"
         },
         {
           "name": "CB1300",
           "cc": 1284,
           "type": "复古",
           "price": "152800~175800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list"
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=8"
         },
         {
           "name": "CBR400R",
           "cc": 399,
           "type": "仿赛",
           "price": "30980元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list"
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=70"
         },
         {
           "name": "CB400F",
           "cc": 399,
           "type": "街车",
           "price": "27980元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list"
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=71"
         },
         {
           "name": "NX400",
           "cc": 399,
           "type": "拉力ADV",
           "price": "29980~35980元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list"
-        },
-        {
-          "name": "NC750X",
-          "cc": 745,
-          "type": "拉力ADV",
-          "price": "91800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list"
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=69"
         },
         {
           "name": "XL750 TRANSALP",
           "cc": 755,
           "type": "拉力ADV",
           "price": "88800元",
-          "source": "https://www.honda.com.cn/motorcycle.html"
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=65"
         },
         {
           "name": "CRF1100L Africa Twin",
           "cc": 1084,
           "type": "拉力ADV",
           "price": "150800~185800元",
-          "source": "https://www.honda-motorcycles.com.cn/"
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=2"
         },
         {
           "name": "CM500",
           "cc": 471,
           "type": "巡航",
           "price": "59800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list"
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=12"
         },
         {
           "name": "CM1100",
           "cc": 1084,
           "type": "巡航",
           "price": "122800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list"
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=14"
         },
         {
           "name": "NT1100",
           "cc": 1084,
           "type": "旅行",
           "price": "153800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list"
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=54"
         },
         {
           "name": "NSS350",
           "cc": 330,
           "type": "踏板",
-          "price": "40880元",
-          "source": "https://www.honda.com.cn/motorcycle.html"
+          "price": "40980元",
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=72"
         },
         {
           "name": "ADV350",
           "cc": 330,
           "type": "踏板",
-          "price": "42380元",
-          "source": "https://www.honda.com.cn/motorcycle.html"
+          "price": "42480元",
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=74"
         },
         {
           "name": "NSS750",
           "cc": 745,
           "type": "踏板",
           "price": "126800元",
-          "source": "https://www.honda.com.cn/motorcycle.html?type=list"
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=15"
         },
         {
           "name": "X-ADV",
           "cc": 745,
           "type": "踏板",
           "price": "129800元",
-          "source": "https://www.honda.com.cn/motorcycle.html"
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=1"
         },
         {
           "name": "GL1800 Gold Wing",
           "cc": 1833,
           "type": "旅行",
           "price": "342800~408800元",
-          "source": "https://www.honda.com.cn/motorcycle.html"
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=67"
+        },
+        {
+          "name": "CM300",
+          "cc": 286,
+          "price": "21680元起",
+          "type": "巡航",
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=68"
+        },
+        {
+          "name": "NX500",
+          "cc": 471,
+          "price": "31480元",
+          "type": "拉力ADV",
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=78"
+        },
+        {
+          "name": "CBR500R",
+          "cc": 471,
+          "price": "32480元",
+          "type": "仿赛",
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=5"
+        },
+        {
+          "name": "CB500F",
+          "cc": 471,
+          "price": "29480元",
+          "type": "街车",
+          "source": "https://www.honda-motorcycles.com.cn/product/detail?id=11"
+        }
+      ],
+      "uncertain": [
+        "CM300(286cc)、CL300、CL500、CB500F、CB500X、CBR500R、CB1000R、CB1100 等在摩托范本田在售页有报价，但未出现在 honda.com.cn 当前「全部车型」列表，按宁可少列未计入",
+        "CBR400R / CB400F / NX400 属 Honda Dream 渠道（挂 HONDA 标、本田中国销售体系），由五羊本田代工但不在五羊/新大洲合资品牌官网在售列表中；合资组已在 brands_c.json 说明并移交本组，故在此收录",
+        "CB500 SUPER FOUR / CBR500R FOUR 为 2026 新四缸车型，官网静态页未公示精确排量，cc 记 null；GL1800 Gold Wing Tour 50周年纪念版并入主型号",
+        {
+          "name": "CB650R",
+          "cc": 649,
+          "type": "街车",
+          "price": "76800元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "reason": "2026-11-23 官网核对：本田摩托官网车型列表已无此车，车型页（id=7）建议零售价为空；疑似国内停售，不计入在售统计"
+        },
+        {
+          "name": "CB1000 SP Honda HORNET",
+          "cc": 1000,
+          "type": "街车",
+          "price": "128800元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "reason": "2026-11-23 官网核对：本田摩托官网车型列表已无此车，车型页（id=75）建议零售价为空；疑似国内停售，不计入在售统计"
+        },
+        {
+          "name": "NC750X",
+          "cc": 745,
+          "type": "拉力ADV",
+          "price": "91800元",
+          "source": "https://www.honda.com.cn/motorcycle.html?type=list",
+          "reason": "2026-11-23 官网核对：本田摩托官网车型列表已无此车，车型页（id=3）建议零售价为空；疑似国内停售，不计入在售统计"
         },
         {
           "name": "CL500",
           "cc": 471,
           "type": "复古",
           "price": "58800元",
-          "source": "https://m.58moto.com/news/10692442?share=1"
+          "source": "https://m.58moto.com/news/10692442?share=1",
+          "reason": "2026-11-23 官网核对：本田摩托官网车型列表及车型页均未找到；疑似国内停售，不计入在售统计"
         }
-      ],
-      "uncertain": [
-        "CM300(286cc)、CL300、CL500、CB500F、CB500X、CBR500R、CB1000R、CB1100 等在摩托范本田在售页有报价，但未出现在 honda.com.cn 当前「全部车型」列表，按宁可少列未计入",
-        "CBR400R / CB400F / NX400 属 Honda Dream 渠道（挂 HONDA 标、本田中国销售体系），由五羊本田代工但不在五羊/新大洲合资品牌官网在售列表中；合资组已在 brands_c.json 说明并移交本组，故在此收录",
-        "CB500 SUPER FOUR / CBR500R FOUR 为 2026 新四缸车型，官网静态页未公示精确排量，cc 记 null；GL1800 Gold Wing Tour 50周年纪念版并入主型号"
       ],
       "sources": [
         "https://www.honda.com.cn/motorcycle.html",
@@ -202,13 +234,6 @@
           "type": "仿赛",
           "price": "43800元起",
           "source": "https://www.yamaha-motor.com.cn/mc/products/r3/"
-        },
-        {
-          "name": "YZF-R7",
-          "cc": 689,
-          "type": "仿赛",
-          "price": "109800元",
-          "source": "https://m.58moto.com/brand/208"
         },
         {
           "name": "YZF-R9",
@@ -264,28 +289,28 @@
           "cc": 890,
           "type": "旅行",
           "price": "169800元",
-          "source": "https://m.58moto.com/brand/208"
+          "source": "https://www.yamaha-motor.com.cn/mc/products/tracer9gt+/"
         },
         {
           "name": "TENERE 700",
           "cc": 689,
           "type": "拉力ADV",
           "price": "109800元",
-          "source": "https://m.58moto.com/brand/208"
+          "source": "https://www.yamaha-motor.com.cn/mc/products/tenere-700/"
         },
         {
           "name": "XS 900 R",
           "cc": 890,
           "type": "复古",
           "price": "132800元",
-          "source": "https://m.58moto.com/brand/208"
+          "source": "https://www.yamaha-motor.com.cn/mc/products/xs900r/"
         },
         {
           "name": "NIKEN GT",
           "cc": 847,
           "type": "旅行",
           "price": "258000元",
-          "source": "https://m.58moto.com/brand/208"
+          "source": "https://www.yamaha-motor.com.cn/mc/products/nikengt/"
         },
         {
           "name": "MT-09 SP",
@@ -298,7 +323,15 @@
       "uncertain": [
         "YZF-R1M(299800元)、YZF-R1/R9 70周年纪念版、MT-09SP、MT-10SP、XMAX TECH MAX / TECH MAX+ / 25周年纪念版、TMAX 560 TECH MAX 25周年纪念版、NMAX TECH MAX 等版本/纪念版按规则合并入主型号，未单列",
         "TRACER 9GT+ / TENERE 700 / XS 900 R / NIKEN GT 型号名取自官网产品一览，指导价取自摩托范雅马哈品牌在售页（官网该几款未公示静态价）",
-        "NMAX155、AEROSPORTS X(155cc)、巧格/赛鹰/福颖/旭鹰/天剑等 125~155cc 车型 <250cc 排除；建设雅马哈合资线由另一组负责"
+        "NMAX155、AEROSPORTS X(155cc)、巧格/赛鹰/福颖/旭鹰/天剑等 125~155cc 车型 <250cc 排除；建设雅马哈合资线由另一组负责",
+        {
+          "name": "YZF-R7",
+          "cc": 689,
+          "type": "仿赛",
+          "price": "109800元",
+          "source": "https://m.58moto.com/brand/208",
+          "reason": "2026-11-23 官网核对：雅马哈中国官网产品列表已无此车，车型页 /mc/products/r7/ 跳回首页；疑似国内停售，不计入在售统计"
+        }
       ],
       "sources": [
         "https://www.yamaha-motor.com.cn/mc/products",
@@ -322,133 +355,133 @@
           "cc": 998,
           "type": "仿赛",
           "price": "442000元",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/ninja/hypersport/ninja-h2"
         },
         {
           "name": "NINJA H2 SX",
           "cc": 998,
           "type": "旅行",
           "price": "328800元",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/ninja/hypersport/ninja-h2-sx"
         },
         {
           "name": "NINJA ZX-4R",
           "cc": 401,
           "type": "仿赛",
           "price": "69800元起",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/ninja/supersport/ninja-zx-4r"
         },
         {
           "name": "NINJA ZX-10R",
           "cc": 998,
           "type": "仿赛",
           "price": "256800元起",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/ninja/supersport/ninja-zx-10r"
         },
         {
           "name": "NINJA 400",
           "cc": 399,
           "type": "仿赛",
           "price": "49800元",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/ninja/sport/ninja-400"
         },
         {
           "name": "NINJA 650",
           "cc": 649,
           "type": "仿赛",
           "price": "74800元",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/ninja/sport/ninja-650"
         },
         {
           "name": "NINJA 1000SX",
           "cc": 1043,
           "type": "旅行",
           "price": "179200元起",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/ninja/sport/ninja-1000sx"
         },
         {
           "name": "Z H2",
           "cc": 998,
           "type": "街车",
           "price": "239000元起",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/z/z-hypersport/z-h2"
         },
         {
           "name": "Z400",
           "cc": 399,
           "type": "街车",
           "price": "47800元",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/z/supernaked/z400"
         },
         {
           "name": "Z650",
           "cc": 649,
           "type": "街车",
           "price": "70800元",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/z/supernaked/z650"
         },
         {
           "name": "Z900",
           "cc": 948,
           "type": "街车",
           "price": "107900元起",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/z/supernaked/z900"
         },
         {
           "name": "Z1000",
           "cc": 1043,
           "type": "街车",
           "price": "154000元起",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/z/supernaked/z1000"
         },
         {
           "name": "Z650RS",
           "cc": 649,
           "type": "复古",
           "price": "84900元起",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/z/retro-sport/z650rs"
         },
         {
           "name": "Z900RS",
           "cc": 948,
           "type": "复古",
           "price": "139000元起",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/z/retro-sport/z900rs"
         },
         {
           "name": "VERSYS-X 300",
           "cc": 296,
           "type": "拉力ADV",
           "price": "47500元起",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/versys/adventure-touring/versys-x-300"
         },
         {
           "name": "VERSYS 650",
           "cc": 649,
           "type": "拉力ADV",
           "price": "79800元",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/versys/adventure-touring/versys-650"
         },
         {
           "name": "VERSYS 1000",
           "cc": 1043,
           "type": "拉力ADV",
           "price": "159000元",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/versys/adventure-touring/versys-1000"
         },
         {
           "name": "W800",
           "cc": 773,
           "type": "复古",
           "price": "108900元起",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/w/retro-classic/w800"
         },
         {
           "name": "VULCAN S",
           "cc": 649,
           "type": "巡航",
           "price": "78800元",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/vulcan/sport-cruiser/vulcan-s"
         },
         {
           "name": "Z1100",
@@ -490,7 +523,7 @@
           "cc": 399,
           "type": "仿赛",
           "price": "76800元",
-          "source": "https://www.kawasaki-motors.cn/"
+          "source": "https://www.kawasaki-motors.cn/zh-cn/motorcycle/ninja/supersport/ninja-zx-4r/2024-ninja-zx-4rr"
         },
         {
           "name": "ELIMINATOR 500",
@@ -626,168 +659,171 @@
           "cc": 1300,
           "type": "拉力ADV",
           "price": "235900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/adventure/r1300gs.html"
         },
         {
           "name": "R 1300 GS Adventure",
           "cc": 1300,
           "type": "拉力ADV",
           "price": "273900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/adventure/r1300gs-adventure.html"
         },
         {
           "name": "F 900 GS",
           "cc": 895,
           "type": "拉力ADV",
           "price": "125900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/adventure/f900gs.html"
         },
         {
           "name": "F 900 GS Adventure",
           "cc": 895,
           "type": "拉力ADV",
           "price": "149900元",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/adventure/f900gs-adventure.html"
         },
         {
           "name": "F 800 GS",
           "cc": 895,
           "type": "拉力ADV",
           "price": "99900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/adventure/f800gs.html"
         },
         {
           "name": "K 1600 GTL",
           "cc": 1649,
           "type": "旅行",
           "price": "423900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/tour/k1600gtl.html"
         },
         {
           "name": "R 1300 RT",
           "cc": 1300,
           "type": "旅行",
           "price": "319900元",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/tour/r1300rt.html"
         },
         {
           "name": "R 12",
           "cc": 1170,
           "type": "巡航",
           "price": "137900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/heritage/r12.html"
         },
         {
           "name": "R 12 nineT",
           "cc": 1170,
           "type": "复古",
           "price": "189900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/heritage/r12-ninet.html"
         },
         {
           "name": "R 12 S",
           "cc": 1170,
           "type": "复古",
           "price": "219900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/heritage/r12-ninet/r12s.html"
         },
         {
           "name": "R 12 G/S",
           "cc": 1170,
           "type": "复古",
           "price": "179900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/heritage/r12gs.html"
         },
         {
           "name": "R 18",
           "cc": 1802,
           "type": "巡航",
           "price": "159900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/heritage/r18dream.html"
         },
         {
           "name": "G 310 R",
           "cc": 313,
           "type": "街车",
           "price": "49900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/roadster/g310r.html"
         },
         {
           "name": "F 900 R",
           "cc": 895,
           "type": "街车",
           "price": "118900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/roadster/f900r.html"
         },
         {
           "name": "S 1000 R",
           "cc": 999,
           "type": "街车",
           "price": "199900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/roadster/s1000r.html"
         },
         {
           "name": "S 1000 RR",
           "cc": 999,
           "type": "仿赛",
           "price": "231900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/sport/s1000rr.html"
         },
         {
           "name": "M 1000 R",
           "cc": 999,
           "type": "街车",
           "price": "239900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/m/m1000r.html"
         },
         {
           "name": "M 1000 XR",
           "cc": 999,
           "type": "旅行",
           "price": "250900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/m/m1000xr.html"
         },
         {
           "name": "C 400 X",
           "cc": 350,
           "type": "踏板",
           "price": "61900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/urban_mobility/c400x.html"
         },
         {
           "name": "C 400 GT",
           "cc": 350,
           "type": "踏板",
           "price": "81900元起",
-          "source": "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html"
-        },
-        {
-          "name": "G 310 GS",
-          "cc": 310,
-          "type": "拉力ADV",
-          "price": "52900~53900元",
-          "source": "https://www.58moto.com/good/5621.html"
-        },
-        {
-          "name": "F 900 XR",
-          "cc": 895,
-          "type": "旅行",
-          "price": "126900~139900元",
-          "source": "https://m.58moto.com/brand/24"
-        },
-        {
-          "name": "S 1000 XR",
-          "cc": 1000,
-          "type": "旅行",
-          "price": "233900~269900元",
-          "source": "https://www.58moto.com/good/5522/configuration.html"
+          "source": "https://www.bmw-motorrad.com.cn/zh/models/urban_mobility/c400gt.html"
         }
       ],
       "uncertain": [
         "R 18 造梦者/拳击手/传承者/泰坦/游侠/洲际旅行家等版本按规则合并为 R 18 主型号，价格取最低 159900 元",
         "CE 02 为电动摩托车、无排量，排除",
         "cc 为 BMW 各系列官方标称排量，车型总览页仅列型号名与价格、未逐一列出排量；如需逐车型参数页核验见 sources",
-        "bmw-motorrad.cn 无法访问（curl 000），实际中国官网为 bmw-motorrad.com.cn；百度百科所引 S 1000 RR 249900 元与官网现行 231900 元起不同，采用官网价"
+        "bmw-motorrad.cn 无法访问（curl 000），实际中国官网为 bmw-motorrad.com.cn；百度百科所引 S 1000 RR 249900 元与官网现行 231900 元起不同，采用官网价",
+        {
+          "name": "G 310 GS",
+          "cc": 310,
+          "type": "拉力ADV",
+          "price": "52900~53900元",
+          "source": "https://www.58moto.com/good/5621.html",
+          "reason": "2026-11-23 官网核对：宝马摩托车中国官网「全部车型」已无此车，车型页报错；疑似国内停售，不计入在售统计"
+        },
+        {
+          "name": "F 900 XR",
+          "cc": 895,
+          "type": "旅行",
+          "price": "126900~139900元",
+          "source": "https://m.58moto.com/brand/24",
+          "reason": "2026-11-23 官网核对：宝马摩托车中国官网「全部车型」已无此车，车型页报错；疑似国内停售，不计入在售统计"
+        },
+        {
+          "name": "S 1000 XR",
+          "cc": 1000,
+          "type": "旅行",
+          "price": "233900~269900元",
+          "source": "https://www.58moto.com/good/5522/configuration.html",
+          "reason": "2026-11-23 官网核对：宝马摩托车中国官网「全部车型」已无此车，车型页报错；疑似国内停售，不计入在售统计"
+        }
       ],
       "sources": [
         "https://www.bmw-motorrad.com.cn/zh/models/modeloverview.html",
@@ -954,14 +990,14 @@
           "cc": 799,
           "type": "街车",
           "price": "59800元",
-          "source": "https://www.58moto.com/brand/H-254.html"
+          "source": "https://www.ktm.com/zh-cn/models/naked-bike/2027-ktm-790-duke.html"
         },
         {
           "name": "890 Duke",
           "cc": 889,
           "type": "街车",
           "price": "102500元",
-          "source": "https://www.58moto.com/brand/H-254.html"
+          "source": "https://www.ktm.com/zh-cn/models/naked-bike/ktm-890-duke-r-2022.html"
         },
         {
           "name": "690 Duke",
@@ -975,35 +1011,35 @@
           "cc": 1301,
           "type": "街车",
           "price": "159000元起",
-          "source": "https://www.58moto.com/brand/H-254.html"
+          "source": "https://www.ktm.com/zh-cn/models/naked-bike/ktm-1290-super-duker2022.html"
         },
         {
           "name": "RC 390",
           "cc": 373,
           "type": "仿赛",
           "price": "39980元起",
-          "source": "https://www.58moto.com/brand/H-254.html"
+          "source": "https://www.ktm.com/zh-cn/models/supersport/2022-ktm-rc-390.html"
         },
         {
           "name": "790 Adventure",
           "cc": 799,
           "type": "拉力ADV",
           "price": "81800元起",
-          "source": "https://www.58moto.com/brand/H-254.html"
+          "source": "https://www.ktm.com/zh-cn/models/adventure/ktm-790-adventure2022.html"
         },
         {
           "name": "890 Adventure",
           "cc": 889,
           "type": "拉力ADV",
           "price": "129800元",
-          "source": "https://www.58moto.com/brand/H-254.html"
+          "source": "https://www.ktm.com/zh-cn/models/adventure/ktm-890-adventurer2023.html"
         },
         {
           "name": "1290 Super Adventure",
           "cc": 1301,
           "type": "拉力ADV",
           "price": "161800元起",
-          "source": "https://www.58moto.com/brand/H-254.html"
+          "source": "https://www.ktm.com/zh-cn/models/adventure/ktm-1290-super-adventures2022.html"
         },
         {
           "name": "1290 Super Duke GT",
@@ -1375,49 +1411,52 @@
           "cc": 457,
           "type": "仿赛",
           "price": "49800元",
-          "source": "https://m.58moto.com/brand/8"
+          "source": "https://www.aprilia.cn/models/rs-457"
         },
         {
           "name": "RS 660",
           "cc": 659,
           "type": "仿赛",
           "price": "119900元起",
-          "source": "https://m.58moto.com/brand/8"
+          "source": "https://m.58moto.com/brand/8",
+          "note": "中国官网（aprilia.cn）车型列表已无此车，海外仍在售；国内是否在售请以经销商为准（2026-11-23 核对）"
         },
         {
           "name": "RSV4",
           "cc": 1099,
           "type": "仿赛",
           "price": "209000元",
-          "source": "https://m.58moto.com/brand/8"
+          "source": "https://www.aprilia.cn/models/rsv4-26/"
         },
         {
           "name": "Shiver 900",
           "cc": 896,
           "type": "街车",
           "price": "68800元",
-          "source": "https://m.58moto.com/brand/8"
+          "source": "https://www.aprilia.cn/models/shiver-900/"
         },
         {
           "name": "Tuono 660",
           "cc": 659,
           "type": "街车",
           "price": "118800元起",
-          "source": "https://m.58moto.com/brand/8"
+          "source": "https://m.58moto.com/brand/8",
+          "note": "中国官网首页仍有推荐，但官网车型页暂时打不开，价格以第三方在售页为准（2026-11-23 核对）"
         },
         {
           "name": "Tuono V4",
           "cc": 1077,
           "type": "街车",
           "price": "158000元",
-          "source": "https://m.58moto.com/brand/8"
+          "source": "https://m.58moto.com/brand/8",
+          "note": "中国官网（aprilia.cn）车型列表已无此车，海外仍在售；国内是否在售请以经销商为准（2026-11-23 核对）"
         },
         {
           "name": "Tuareg 660",
           "cc": 659,
           "type": "拉力ADV",
           "price": "119900元起",
-          "source": "https://m.58moto.com/brand/8"
+          "source": "https://www.aprilia.cn/models/tuareg-660/"
         }
       ],
       "uncertain": [
@@ -1790,98 +1829,98 @@
           "cc": 349,
           "type": "复古",
           "price": null,
-          "source": "https://www.royalenfield.com/"
+          "source": "https://www.royalenfield.com/in/en/motorcycles/classic-350/"
         },
         {
           "name": "Meteor 350",
           "cc": 349,
           "type": "巡航",
           "price": null,
-          "source": "https://www.royalenfield.com/"
+          "source": "https://www.royalenfield.com/in/en/motorcycles/meteor/"
         },
         {
           "name": "Hunter 350",
           "cc": 349,
           "type": "街车",
           "price": null,
-          "source": "https://www.royalenfield.com/"
+          "source": "https://www.royalenfield.com/in/en/motorcycles/hunter-350/"
         },
         {
           "name": "Bullet 350",
           "cc": 349,
           "type": "复古",
           "price": null,
-          "source": "https://www.royalenfield.com/"
+          "source": "https://www.royalenfield.com/in/en/motorcycles/bullet-350/"
         },
         {
           "name": "Goan Classic 350",
           "cc": 349,
           "type": "复古",
           "price": null,
-          "source": "https://www.royalenfield.com/"
+          "source": "https://www.royalenfield.com/in/en/motorcycles/goan-classic-350/"
         },
         {
           "name": "Himalayan 450",
           "cc": 452,
           "type": "拉力ADV",
           "price": null,
-          "source": "https://www.royalenfield.com/"
+          "source": "https://www.royalenfield.com/in/en/motorcycles/new-himalayan/"
         },
         {
           "name": "Guerrilla 450",
           "cc": 452,
           "type": "街车",
           "price": null,
-          "source": "https://www.royalenfield.com/"
+          "source": "https://www.royalenfield.com/in/en/motorcycles/guerrilla-450/"
         },
         {
           "name": "Interceptor 650",
           "cc": 648,
           "type": "街车",
           "price": null,
-          "source": "https://www.royalenfield.com/"
+          "source": "https://www.royalenfield.com/in/en/motorcycles/interceptor/"
         },
         {
           "name": "Continental GT 650",
           "cc": 648,
           "type": "复古",
           "price": null,
-          "source": "https://www.royalenfield.com/"
+          "source": "https://www.royalenfield.com/in/en/motorcycles/continental-gt/"
         },
         {
           "name": "Super Meteor 650",
           "cc": 648,
           "type": "巡航",
           "price": null,
-          "source": "https://www.royalenfield.com/"
+          "source": "https://www.royalenfield.com/in/en/motorcycles/super-meteor-650/"
         },
         {
           "name": "Shotgun 650",
           "cc": 648,
           "type": "巡航",
           "price": null,
-          "source": "https://www.royalenfield.com/"
+          "source": "https://www.royalenfield.com/in/en/motorcycles/shotgun-650/"
         },
         {
           "name": "Bear 650",
           "cc": 648,
           "type": "复古",
           "price": null,
-          "source": "https://www.royalenfield.com/"
+          "source": "https://www.royalenfield.com/in/en/motorcycles/bear-650/"
         },
         {
           "name": "Classic 650",
           "cc": 648,
           "type": "复古",
           "price": null,
-          "source": "https://www.royalenfield.com/"
+          "source": "https://www.royalenfield.com/in/en/motorcycles/classic-650/"
         },
         {
           "name": "Bullet 650",
           "cc": 648,
           "type": "复古",
           "price": null,
-          "source": "https://www.royalenfield.com/"
+          "source": "https://www.royalenfield.com/in/en/motorcycles/bullet-650/"
         }
       ],
       "uncertain": [],

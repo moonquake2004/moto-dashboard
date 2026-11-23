@@ -12,10 +12,10 @@
       "models": [
         {
           "name": "250SR",
-          "cc": 250,
+          "cc": 249,
           "type": "仿赛",
           "price": "15980元起",
-          "source": "https://m.58moto.com/brand/18"
+          "source": "https://cn.cfmoto.com/motorcycles/250sr"
         },
         {
           "name": "450SR",
@@ -28,26 +28,26 @@
           "name": "500SR",
           "cc": 500,
           "type": "仿赛",
-          "price": "28580元起",
-          "source": "https://m.58moto.com/brand/18"
+          "price": "28980元起",
+          "source": "https://cn.cfmoto.com/motorcycles/500sr"
         },
         {
           "name": "675SR-R",
-          "cc": 675,
+          "cc": 674,
           "type": "仿赛",
           "price": "39580元",
-          "source": "https://m.58moto.com/brand/18"
+          "source": "https://cn.cfmoto.com/motorcycles/675SR-R"
         },
         {
           "name": "750SR-S",
-          "cc": 750,
+          "cc": 749,
           "type": "仿赛",
           "price": "44980元",
-          "source": "https://m.58moto.com/brand/18"
+          "source": "https://cn.cfmoto.com/motorcycles/750SR-S"
         },
         {
           "name": "250CL-C",
-          "cc": 250,
+          "cc": 249,
           "type": "巡航",
           "price": "14980元",
           "source": "https://cn.cfmoto.com/motorcycles/250CL-C"
@@ -57,14 +57,14 @@
           "cc": 450,
           "type": "巡航",
           "price": "21980元起",
-          "source": "https://m.58moto.com/brand/18"
+          "source": "https://cn.cfmoto.com/motorcycles/450CL-C"
         },
         {
           "name": "550CL-C",
-          "cc": 550,
+          "cc": 526,
           "type": "巡航",
-          "price": "25080元",
-          "source": "https://m.58moto.com/brand/18"
+          "price": "25880元",
+          "source": "https://cn.cfmoto.com/motorcycles/550cl-c"
         },
         {
           "name": "450NK",
@@ -75,66 +75,66 @@
         },
         {
           "name": "675NK",
-          "cc": 675,
+          "cc": 674,
           "type": "街车",
           "price": "35980元",
-          "source": "https://m.58moto.com/brand/18"
+          "source": "https://cn.cfmoto.com/motorcycles/675NK"
         },
         {
           "name": "800NK",
-          "cc": 800,
+          "cc": 799,
           "type": "街车",
           "price": "42580元",
-          "source": "https://m.58moto.com/brand/18"
+          "source": "https://cn.cfmoto.com/motorcycles/800NK"
         },
         {
           "name": "450MT",
           "cc": 450,
           "type": "拉力ADV",
           "price": "30580元起",
-          "source": "https://m.58moto.com/brand/18"
+          "source": "https://cn.cfmoto.com/motorcycles/450MT"
         },
         {
           "name": "700MT",
-          "cc": 700,
+          "cc": 693,
           "type": "拉力ADV",
           "price": "29980元起",
-          "source": "https://m.58moto.com/brand/18"
+          "source": "https://cn.cfmoto.com/motorcycles/700MT"
         },
         {
           "name": "800MT",
-          "cc": 800,
+          "cc": 799,
           "type": "拉力ADV",
           "price": "53980元",
           "source": "https://cn.cfmoto.com/motorcycles/800mt-explore"
         },
         {
           "name": "800MT-X",
-          "cc": 800,
+          "cc": 799,
           "type": "拉力ADV",
           "price": "53680元",
-          "source": "https://m.58moto.com/brand/18"
+          "source": "https://cn.cfmoto.com/motorcycles/800MT-X"
         },
         {
           "name": "800MT-ES",
-          "cc": 800,
+          "cc": 799,
           "type": "拉力ADV",
-          "price": null,
-          "source": "https://www.cfmoto.com/motorcycle.html"
+          "price": "53980元",
+          "source": "https://cn.cfmoto.com/motorcycles/800mt-es"
         },
         {
           "name": "1000MT-X",
-          "cc": 1000,
+          "cc": 946,
           "type": "拉力ADV",
           "price": "59680元",
-          "source": "https://m.58moto.com/brand/18"
+          "source": "https://cn.cfmoto.com/motorcycles/1000mt-x"
         },
         {
           "name": "1250TR-G",
-          "cc": 1250,
+          "cc": 1279,
           "type": "旅行",
-          "price": null,
-          "source": "https://www.cfmoto.com/motorcycle.html"
+          "price": "109980元",
+          "source": "https://cn.cfmoto.com/motorcycles/1250TR-G"
         }
       ],
       "uncertain": [],
@@ -162,108 +162,101 @@
       "models": [
         {
           "name": "250RR",
-          "cc": 250,
+          "cc": 248,
           "type": "仿赛",
           "price": "15499元",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+          "source": "https://vogemotor.com/motorbike-details?id=1"
         },
         {
           "name": "RR500S",
-          "cc": 500,
+          "cc": 475,
           "type": "仿赛",
           "price": "28980元起",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+          "source": "https://vogemotor.com/motorbike-details?id=38"
         },
         {
           "name": "RR660S",
-          "cc": 660,
+          "cc": 663,
           "type": "仿赛",
           "price": "35980元",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+          "source": "https://vogemotor.com/motorbike-details?id=32"
         },
         {
           "name": "CU250",
           "cc": 250,
           "type": "巡航",
           "price": "16480元起",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+          "source": "https://vogemotor.com/motorbike-details?id=31"
         },
         {
           "name": "CU525",
-          "cc": 525,
+          "cc": 494,
           "type": "巡航",
           "price": "21980元起",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+          "source": "https://vogemotor.com/motorbike-details?id=40"
         },
         {
           "name": "CU530",
           "cc": 500,
           "type": "巡航",
           "price": "21980元起",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+          "source": "https://vogemotor.com/motorbike-details?id=45"
         },
         {
           "name": "CU625",
-          "cc": 625,
+          "cc": 578,
           "type": "巡航",
-          "price": "25980元起",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+          "price": "26666元起",
+          "source": "https://vogemotor.com/motorbike-details?id=35"
         },
         {
           "name": "DS500X",
-          "cc": 500,
+          "cc": 494,
           "type": "拉力ADV",
           "price": "26999元起",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+          "source": "https://vogemotor.com/motorbike-details?id=42"
         },
         {
           "name": "DS525",
-          "cc": 525,
+          "cc": 494,
           "type": "拉力ADV",
-          "price": "31766元起",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+          "price": null,
+          "source": "https://vogemotor.com/motorbike-details?id=10"
         },
         {
           "name": "DS625X",
           "cc": 581,
           "type": "拉力ADV",
           "price": "31980元起",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+          "source": "https://vogemotor.com/motorbike-details?id=34"
         },
         {
           "name": "DS800X",
-          "cc": 800,
+          "cc": 798,
           "type": "拉力ADV",
           "price": "39980元起",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+          "source": "https://vogemotor.com/motorbike-details?id=44"
         },
         {
           "name": "DS900X",
-          "cc": 900,
+          "cc": 895,
           "type": "拉力ADV",
           "price": "54980元起",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
-        },
-        {
-          "name": "SR250GT",
-          "cc": 250,
-          "type": "踏板",
-          "price": "15980元起",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+          "source": "https://vogemotor.com/motorbike-details?id=29"
         },
         {
           "name": "SR4 Max",
           "cc": 350,
           "type": "踏板",
-          "price": "29999元起",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+          "price": "31766元",
+          "source": "https://vogemotor.com/motorbike-details?id=36"
         },
         {
           "name": "SR450X",
-          "cc": 450,
+          "cc": 398,
           "type": "踏板",
           "price": "34980元",
-          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589"
+          "source": "https://vogemotor.com/motorbike-details?id=46"
         }
       ],
       "uncertain": [
@@ -338,6 +331,14 @@
           "price": null,
           "source": "https://baike.baidu.com/item/无极 机车",
           "reason": "冒险休旅系列老款，未在 2026 在售车型库核实到"
+        },
+        {
+          "name": "SR250GT",
+          "cc": 244,
+          "type": "踏板",
+          "price": "15980元起",
+          "source": "https://m.58moto.com/garage/dealer/dealer-salecar/296589",
+          "reason": "2026-11-22 无极官网核对：官网参数表排量 244.3ml，低于 ≥250cc 收录口径（250 整按 246–249 收录），不计入在售统计"
         }
       ],
       "sources": [
@@ -622,21 +623,21 @@
         },
         {
           "name": "TRK552",
-          "cc": 552,
+          "cc": 554,
           "type": "拉力ADV",
           "price": "29880元起",
           "source": "https://m.58moto.com/brand/45"
         },
         {
           "name": "TRK702",
-          "cc": 702,
+          "cc": 698,
           "type": "拉力ADV",
           "price": "36800元起",
           "source": "https://m.58moto.com/brand/45"
         },
         {
           "name": "TRK902",
-          "cc": 902,
+          "cc": 904,
           "type": "拉力ADV",
           "price": "44800元起",
           "source": "https://m.58moto.com/brand/45"
@@ -671,7 +672,7 @@
         },
         {
           "name": "幼狮 Leoncino 800",
-          "cc": 800,
+          "cc": 754,
           "type": "复古",
           "price": "39800元",
           "source": "https://m.58moto.com/brand/45"
@@ -744,21 +745,21 @@
           "cc": 250,
           "type": "仿赛",
           "price": "15988元",
-          "source": "https://m.58moto.com/brand/382"
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/11"
         },
         {
           "name": "RT250",
-          "cc": 250,
+          "cc": 247,
           "type": "踏板",
           "price": "14999元起",
-          "source": "https://m.58moto.com/brand/382"
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/186"
         },
         {
           "name": "RT250E",
-          "cc": 250,
+          "cc": 247,
           "type": "踏板",
           "price": "14999元起",
-          "source": "https://m.58moto.com/brand/382"
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/196"
         },
         {
           "name": "RT2",
@@ -769,10 +770,10 @@
         },
         {
           "name": "睿途 RT3",
-          "cc": 250,
+          "cc": 247,
           "type": "踏板",
           "price": "17999元起",
-          "source": "https://m.58moto.com/brand/382"
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/19"
         },
         {
           "name": "RT5",
@@ -786,42 +787,42 @@
           "cc": 250,
           "type": "巡航",
           "price": "15999元起",
-          "source": "https://m.58moto.com/brand/382"
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/204"
         },
         {
           "name": "AQS401",
           "cc": 400,
           "type": "巡航",
           "price": "21988元起",
-          "source": "https://m.58moto.com/brand/382"
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/173"
         },
         {
           "name": "AQS600",
           "cc": 560,
           "type": "巡航",
           "price": "23988元",
-          "source": "https://m.58moto.com/brand/382"
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/208"
         },
         {
           "name": "RA600",
           "cc": 560,
           "type": "巡航",
           "price": "23988元起",
-          "source": "https://m.58moto.com/brand/382"
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/171"
         },
         {
           "name": "RA1000",
-          "cc": 1000,
+          "cc": 996,
           "type": "巡航",
           "price": "45988元",
-          "source": "https://m.58moto.com/brand/382"
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/206"
         },
         {
           "name": "RX250",
-          "cc": 250,
+          "cc": 249,
           "type": "拉力ADV",
           "price": "14988元起",
-          "source": "https://m.58moto.com/brand/382"
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/170"
         },
         {
           "name": "RX600",
@@ -829,6 +830,55 @@
           "type": "拉力ADV",
           "price": "27988元起",
           "source": "https://m.58moto.com/brand/382"
+        },
+        {
+          "name": "RT450",
+          "cc": 398,
+          "type": "踏板",
+          "price": "32980元",
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/209"
+        },
+        {
+          "name": "RX650",
+          "cc": 650,
+          "type": "拉力ADV",
+          "price": "39988元",
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/8"
+        },
+        {
+          "name": "RC401",
+          "cc": 401,
+          "type": "仿赛",
+          "price": "22988~23988元",
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/10"
+        },
+        {
+          "name": "RE600",
+          "cc": 550,
+          "type": "复古",
+          "price": "29988元",
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/14"
+        },
+        {
+          "name": "RA401",
+          "cc": 401,
+          "type": "巡航",
+          "price": "21980~23988元",
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/25"
+        },
+        {
+          "name": "RA250",
+          "cc": 249,
+          "type": "巡航",
+          "price": "13988元",
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/26"
+        },
+        {
+          "name": "RG401",
+          "cc": 401,
+          "type": "旅行",
+          "price": "30800元",
+          "source": "https://www.cyclonemoto.com/pages/detail/car_model_id/23"
         }
       ],
       "uncertain": [
@@ -871,14 +921,6 @@
           "price": null,
           "source": "https://m.58moto.com/brand/382",
           "reason": "摩托范标注「即将上市、暂无报价」，尚未正式在售"
-        },
-        {
-          "name": "RT450",
-          "cc": 450,
-          "type": "踏板",
-          "price": "32980元",
-          "source": "https://m.58moto.com/brand/382",
-          "reason": "赛科龙官网产品菜单（2026-11-22）未列 RT450，仅有 RT250/RT150S/RT150E；在售状态待确认。"
         }
       ],
       "sources": [
@@ -905,14 +947,14 @@
       "models": [
         {
           "name": "TR300",
-          "cc": 300,
+          "cc": 298,
           "type": "巡航",
           "price": "21980元起",
-          "source": "https://www.haojue.com/TR300/jiage.html"
+          "source": "https://www.haojue.com/TR300/canshu.html"
         },
         {
           "name": "TVL350",
-          "cc": 350,
+          "cc": 339,
           "type": "踏板",
           "price": "28980元起",
           "source": "https://www.haojue.com/TVL350/canshu.html"
