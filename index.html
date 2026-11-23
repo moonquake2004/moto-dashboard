@@ -2186,7 +2186,7 @@ function openModelSpec(bid,mi){
     '<span>来源：'+esc((S&&S.meta&&S.meta.source)||"车型库")+'</span>';
   $("mmBody").innerHTML=(m.note?'<p class="mm-note" role="note"><b>备注</b>'+esc(m.note)+'</p>':'')+modelSpecHTML(b,m,s);
   var foot=[];
-  if(s&&s.src)foot.push('<a class="more" href="'+esc(s.src)+'" target="_blank" rel="noopener">摩托范参数页 ↗</a>');
+  if(s&&s.src)foot.push('<a class="more" href="'+esc(s.src)+'" target="_blank" rel="noopener">'+(/58moto\.com/.test(s.src)?'摩托范参数页':'官网参数页')+' ↗</a>');
   if(m.source)foot.push('<a class="more" href="'+esc(m.source)+'" target="_blank" rel="noopener">核实来源 ↗</a>');
   foot.push('<a class="more" href="brand/'+esc(b.id)+'.html">品牌页 ↗</a>');
   var mk0=cmpKey(b.id,mi);
