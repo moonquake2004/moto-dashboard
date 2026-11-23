@@ -6,7 +6,7 @@
 <title>国内 250cc+ 摩托车厂商品牌全景看板</title>
 <meta name="description" content="收录中国市场在售的 250cc 以上摩托车品牌与在售车型，逐条附核实来源、官方指导价与排量参数；未核实的参数一律留空，不做估算。">
 <meta property="og:title" content="国内 250cc+ 摩托车厂商品牌全景看板">
-<meta property="og:description" content="44 个品牌 / 424 款在售车型，逐条附核实来源与官方指导价。">
+<meta property="og:description" content="44 个品牌 / 404 款在售车型，逐条附核实来源与官方指导价。">
 <meta property="og:type" content="website">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://moonquake2004.github.io/moto-dashboard/">
@@ -18,7 +18,7 @@
   "description":"收录中国市场在售的 250cc 以上摩托车品牌与在售车型，逐条附核实来源、官方指导价与排量参数。",
   "inLanguage":"zh-CN"},
  {"@type":"Dataset","name":"中国 250cc+ 摩托车品牌与在售车型数据","alternateName":"MOTO GRID Dataset",
-  "description":"44 个品牌 / 424 款 ≥250cc 在售车型（另 14 款平行进口单列），含官方指导价、排量、车身类别、圈层归属与逐条核实来源。",
+  "description":"44 个品牌 / 404 款 ≥250cc 在售车型（另 14 款平行进口单列），含官方指导价、排量、车身类别、圈层归属与逐条核实来源。",
   "url":"https://moonquake2004.github.io/moto-dashboard/",
   "keywords":["摩托车","250cc","车型库","官方指导价","中国市场","品牌看板"],
   "spatialCoverage":{"@type":"Place","name":"中国"},
@@ -544,6 +544,9 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
 .d-model .dm-meta .tag{font-size:10px}
 .d-model .dm-src{margin-left:auto;color:var(--faint)}
 .d-model .dm-src:hover{color:var(--accent)}
+.d-model .dm-note{grid-column:1/-1;font-size:11px;line-height:1.5;color:var(--muted);border-left:2px solid var(--amber);padding-left:8px}
+.mm-note{margin:0 0 12px;padding:8px 12px;font-size:12.5px;line-height:1.6;color:var(--ink);background:color-mix(in srgb,var(--amber) 10%,transparent);border-left:3px solid var(--amber);border-radius:4px}
+.mm-note b{margin-right:8px;color:var(--amber)}
 .d-model.act{cursor:pointer;transition:.15s}
 .d-model.act:hover,.d-model.act:focus-visible{border-color:var(--accent);outline:none}
 .d-model .dm-more{margin-left:auto;font-size:10.5px;color:var(--faint);border:1px solid var(--line);border-radius:6px;padding:1px 6px;white-space:nowrap}
@@ -708,7 +711,7 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
 <!-- SECTION: rank -->
 <section class="sec" id="rank">
   <div class="wrap">
-    <div class="sec-head reveal"><h2>结构洞察 · 品牌榜</h2><div class="desc">按 <b>424</b> 款在售车型聚合（不含平行进口）· 点任意品牌或格子即筛选</div></div>
+    <div class="sec-head reveal"><h2>结构洞察 · 品牌榜</h2><div class="desc">按 <b id="aggCount">404</b> 款在售车型聚合（不含平行进口）· 点任意品牌或格子即筛选</div></div>
     <div class="rk-grid reveal">
       <div class="panel rk-card"><h3>各车身类别 · 型号数 TOP3 品牌</h3><div class="cs">谁在这个类别里铺得最密</div><div id="rankType"></div></div>
       <div class="panel rk-card"><h3>各价格带 · 型号数 TOP5 品牌</h3><div class="cs">谁的价格带覆盖最宽</div><div id="rankPrice"></div></div>
@@ -1121,6 +1124,7 @@ bars("chartBucket",s.byBucket,BUCKETS,BUCKET_COLOR,"bucket");
 bars("chartType",s.byType,null,TYPE_COLOR,"type");
 bars("chartCat",s.byCategoryModels,CATS,CAT_COLOR,"cat");
 $("chartTotal").textContent=s.modelCount;
+if($("aggCount"))$("aggCount").textContent=s.modelCount;
 
 function animateBars(root){
   (root||document).querySelectorAll(".bar-fill").forEach(function(f){
@@ -1296,7 +1300,7 @@ $("resetBtn").addEventListener("click",function(){
   syncControls();render();toast("已重置全部筛选");
 });
 
-/* SECTION: rank & matrix —— 类别 TOP3 / 价格带 TOP5 / 类别×价格 矩阵，全部按统计口径（424 款）聚合 */
+/* SECTION: rank & matrix —— 类别 TOP3 / 价格带 TOP5 / 类别×价格 矩阵，全部按统计口径（stats.modelCount 款）聚合 */
 var OFFICIAL_BRANDS=D.brands.filter(function(b){return b.marketStatus!=="parallel"});
 var TYPES_ORDER=Object.keys(s.byType||{}).sort(function(a,b){return (s.byType[b]||0)-(s.byType[a]||0)});
 var BANDS=PRICE_RANGES.filter(function(r){return r.k!=="none"});
@@ -1367,7 +1371,7 @@ document.addEventListener("click",function(e){
   smoothTo($("explorer"));
   toast("已按「"+(b.dataset.kind==="type"?b.dataset.key:((RANGE_BY_KEY[b.dataset.key]||{}).label||""))+"」筛选");
 });
-/* 通用交叉透视：任意两维组合，行列合计 + 点格子筛选，数据全部按统计口径（424 款）聚合 */
+/* 通用交叉透视：任意两维组合，行列合计 + 点格子筛选，数据全部按统计口径（stats.modelCount 款）聚合 */
 (function buildPivot(){
   var el=$("matrix"),tabs=$("mxTabs");if(!el)return;
   var BUCKET_ORDER=Object.keys(s.byBucket||{}).sort(function(a,b){return a.localeCompare(b,"en",{numeric:true})});
@@ -2180,7 +2184,7 @@ function openModelSpec(bid,mi){
   $("mmBar").innerHTML=(s?'<span><i class="dot"></i>参数版本：<b>'+esc(s.variant||"未标注")+'</b></span>':'<span><i class="dot"></i>该车型参数尚未收录</span>')+
     '<span>全站参数覆盖 <b>'+cov+'/'+total+'</b> 款</span>'+
     '<span>来源：'+esc((S&&S.meta&&S.meta.source)||"车型库")+'</span>';
-  $("mmBody").innerHTML=modelSpecHTML(b,m,s);
+  $("mmBody").innerHTML=(m.note?'<p class="mm-note" role="note"><b>备注</b>'+esc(m.note)+'</p>':'')+modelSpecHTML(b,m,s);
   var foot=[];
   if(s&&s.src)foot.push('<a class="more" href="'+esc(s.src)+'" target="_blank" rel="noopener">摩托范参数页 ↗</a>');
   if(m.source)foot.push('<a class="more" href="'+esc(m.source)+'" target="_blank" rel="noopener">核实来源 ↗</a>');
@@ -2255,7 +2259,8 @@ function openDrawer(id){
         '<div class="dm-price num'+(m.price?'':' na')+'">'+(m.price?esc(m.price):'—')+'</div>'+
         '<div class="dm-meta"><span class="tag">'+esc(m.type)+'</span><span>'+(m.cc!=null?m.cc+' cc':'排量未标注')+'</span>'+
         '<span class="dm-more">'+(hasSpec?'参数 →':'参数待补')+'</span>'+
-        (m.source?'<a class="dm-src" href="'+esc(m.source)+'" target="_blank" rel="noopener">核实来源 ↗</a>':'')+'</div></div>';
+        (m.source?'<a class="dm-src" href="'+esc(m.source)+'" target="_blank" rel="noopener">核实来源 ↗</a>':'')+'</div>'+
+        (m.note?'<div class="dm-note">'+esc(m.note)+'</div>':'')+'</div>';
     }).join("");
   }else{
     html+='<div class="d-note">'+esc(b.note||"经官网与车型库核查，该品牌当前在中国市场暂无符合口径的 ≥250cc 在售型号。")+'</div>';

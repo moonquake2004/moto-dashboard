@@ -252,6 +252,7 @@ def main():
                     "priceUnit": price["unit"] if price else None,
                     "source": m.get("source") or None,
                     "bucket": bucket(cc),
+                    "note": (m.get("note") or "").strip() or None,
                 })
 
             lg = logos.get(bid, {})

@@ -12,14 +12,14 @@
       "models": [
         {
           "name": "金吉拉250",
-          "cc": 250,
+          "cc": 249,
           "type": "巡航",
           "price": "16499~17980元",
           "source": "https://www.bendamotor.cn/Product3/39"
         },
         {
           "name": "金吉拉350CVT",
-          "cc": 350,
+          "cc": 343,
           "type": "巡航",
           "price": "21980~23980元",
           "source": "https://www.bendamotor.cn/Product3/38"
@@ -33,7 +33,7 @@
         },
         {
           "name": "金吉拉500",
-          "cc": 500,
+          "cc": 476,
           "type": "巡航",
           "price": "23980元",
           "source": "https://www.bendamotor.cn/Product3/37"
@@ -47,7 +47,7 @@
         },
         {
           "name": "黑旗950",
-          "cc": 950,
+          "cc": 948,
           "type": "巡航",
           "price": "43800元",
           "source": "https://www.bendamotor.cn/Product3/40"
@@ -68,21 +68,21 @@
         },
         {
           "name": "燎700Pro",
-          "cc": 700,
+          "cc": 680,
           "type": "巡航",
           "price": "46800元",
           "source": "https://www.bendamotor.cn/Product3/35"
         },
         {
           "name": "拿破仑250",
-          "cc": 250,
+          "cc": 249,
           "type": "复古",
           "price": "18380元",
           "source": "https://www.bendamotor.cn/Product3/30"
         },
         {
           "name": "拿破仑450",
-          "cc": 450,
+          "cc": 448,
           "type": "复古",
           "price": "26900元",
           "source": "https://www.bendamotor.cn/Product3/24"
@@ -92,7 +92,7 @@
           "cc": 249,
           "type": "巡航",
           "price": "18980元",
-          "source": "https://www.bendamotor.cn/Seek/page/9"
+          "source": "https://www.bendamotor.cn/Product3/42"
         },
         {
           "name": "黑旗500",
@@ -154,90 +154,6 @@
       "website": "https://www.zontes.com/ch/",
       "logoUrl": null,
       "models": [
-        {
-          "name": "250S",
-          "cc": 250,
-          "type": "街车",
-          "price": "15800~17800元",
-          "source": "https://www.58moto.com/brand/H-283.html"
-        },
-        {
-          "name": "250R",
-          "cc": 250,
-          "type": "街车",
-          "price": "17800元",
-          "source": "https://www.58moto.com/brand/H-283.html"
-        },
-        {
-          "name": "350D",
-          "cc": 350,
-          "type": "踏板",
-          "price": "28800元",
-          "source": "https://www.58moto.com/brand/H-283.html"
-        },
-        {
-          "name": "350E",
-          "cc": 350,
-          "type": "踏板",
-          "price": "30800元",
-          "source": "https://www.58moto.com/brand/H-283.html"
-        },
-        {
-          "name": "350M",
-          "cc": 350,
-          "type": "踏板",
-          "price": "28800元",
-          "source": "https://www.58moto.com/brand/H-283.html"
-        },
-        {
-          "name": "350R",
-          "cc": 350,
-          "type": "街车",
-          "price": "21800~22800元",
-          "source": "https://www.58moto.com/brand/H-283.html"
-        },
-        {
-          "name": "350S",
-          "cc": 350,
-          "type": "街车",
-          "price": "23800元",
-          "source": "https://www.58moto.com/brand/H-283.html"
-        },
-        {
-          "name": "350T",
-          "cc": 350,
-          "type": "踏板",
-          "price": "22800~23800元",
-          "source": "https://www.58moto.com/brand/H-283.html"
-        },
-        {
-          "name": "350V",
-          "cc": 350,
-          "type": "巡航",
-          "price": "23800元",
-          "source": "https://www.58moto.com/brand/H-283.html"
-        },
-        {
-          "name": "350VX",
-          "cc": 350,
-          "type": "复古",
-          "price": "24800元",
-          "source": "https://www.58moto.com/brand/H-283.html"
-        },
-        {
-          "name": "350X",
-          "cc": 350,
-          "type": "拉力ADV",
-          "price": "22800~23800元",
-          "source": "https://www.58moto.com/brand/H-283.html"
-        },
-        {
-          "name": "GK350",
-          "cc": 350,
-          "type": "复古",
-          "price": "22800元",
-          "source": "https://www.58moto.com/brand/H-283.html"
-        },
         {
           "name": "368D",
           "cc": 368,
@@ -318,6 +234,102 @@
           "price": null,
           "source": "https://www.58moto.com/brand/H-283.html",
           "reason": "摩托范标注「暂无报价」，官网与官方公众号未核实到国内正式上市，判断为公告/未上市车型"
+        },
+        {
+          "name": "250S",
+          "cc": 250,
+          "type": "街车",
+          "price": "15800~17800元",
+          "source": "https://www.58moto.com/brand/H-283.html",
+          "reason": "2026-11-22 升仕官网核对：官网产品列表已无此型号；经销商可能仍有库存，不计入在售统计"
+        },
+        {
+          "name": "250R",
+          "cc": 250,
+          "type": "街车",
+          "price": "17800元",
+          "source": "https://www.58moto.com/brand/H-283.html",
+          "reason": "2026-11-22 升仕官网核对：官网产品列表已无此型号；经销商可能仍有库存，不计入在售统计"
+        },
+        {
+          "name": "350D",
+          "cc": 350,
+          "type": "踏板",
+          "price": "28800元",
+          "source": "https://www.58moto.com/brand/H-283.html",
+          "reason": "2026-11-22 升仕官网核对：官网标「已下架」（最新 2023 款），已由 368D 替代；经销商可能仍有库存，不计入在售统计"
+        },
+        {
+          "name": "350E",
+          "cc": 350,
+          "type": "踏板",
+          "price": "30800元",
+          "source": "https://www.58moto.com/brand/H-283.html",
+          "reason": "2026-11-22 升仕官网核对：官网标「已下架」（2022 款），已由 368E 替代；经销商可能仍有库存，不计入在售统计"
+        },
+        {
+          "name": "350M",
+          "cc": 350,
+          "type": "踏板",
+          "price": "28800元",
+          "source": "https://www.58moto.com/brand/H-283.html",
+          "reason": "2026-11-22 升仕官网核对：官网标「已下架」（最新 2023 款），已由 368M 替代；经销商可能仍有库存，不计入在售统计"
+        },
+        {
+          "name": "350R",
+          "cc": 350,
+          "type": "街车",
+          "price": "21800~22800元",
+          "source": "https://www.58moto.com/brand/H-283.html",
+          "reason": "2026-11-22 升仕官网核对：官网标「已下架」（2022 款）；经销商可能仍有库存，不计入在售统计"
+        },
+        {
+          "name": "350S",
+          "cc": 350,
+          "type": "街车",
+          "price": "23800元",
+          "source": "https://www.58moto.com/brand/H-283.html",
+          "reason": "2026-11-22 升仕官网核对：官网标「已下架」（2022 款）；经销商可能仍有库存，不计入在售统计"
+        },
+        {
+          "name": "350T",
+          "cc": 350,
+          "type": "踏板",
+          "price": "22800~23800元",
+          "source": "https://www.58moto.com/brand/H-283.html",
+          "reason": "2026-11-22 升仕官网核对：官网产品列表已无此型号；经销商可能仍有库存，不计入在售统计"
+        },
+        {
+          "name": "350V",
+          "cc": 350,
+          "type": "巡航",
+          "price": "23800元",
+          "source": "https://www.58moto.com/brand/H-283.html",
+          "reason": "2026-11-22 升仕官网核对：官网标「已下架」（2022 款）；经销商可能仍有库存，不计入在售统计"
+        },
+        {
+          "name": "350VX",
+          "cc": 350,
+          "type": "复古",
+          "price": "24800元",
+          "source": "https://www.58moto.com/brand/H-283.html",
+          "reason": "2026-11-22 升仕官网核对：官网标「已下架」（2022 款）；经销商可能仍有库存，不计入在售统计"
+        },
+        {
+          "name": "350X",
+          "cc": 350,
+          "type": "拉力ADV",
+          "price": "22800~23800元",
+          "source": "https://www.58moto.com/brand/H-283.html",
+          "reason": "2026-11-22 升仕官网核对：官网标「已下架」（2022 款）；经销商可能仍有库存，不计入在售统计"
+        },
+        {
+          "name": "GK350",
+          "cc": 350,
+          "type": "复古",
+          "price": "22800元",
+          "source": "https://www.58moto.com/brand/H-283.html",
+          "reason": "2026-11-22 升仕官网核对：官网产品列表已无此型号；经销商可能仍有库存，不计入在售统计"
         }
       ],
       "sources": [
@@ -340,129 +352,94 @@
       "models": [
         {
           "name": "250RR",
-          "cc": 250,
+          "cc": 249,
           "type": "仿赛",
           "price": "18880元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3514"
-        },
-        {
-          "name": "321RR",
-          "cc": 321,
-          "type": "仿赛",
-          "price": "25980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3206"
-        },
-        {
-          "name": "321RR-S",
-          "cc": 321,
-          "type": "仿赛",
-          "price": "27980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3183"
+          "source": "https://www.kovemoto.com.cn/kove-250rr"
         },
         {
           "name": "321R",
-          "cc": 321,
+          "cc": 322,
           "type": "街车",
           "price": "24880元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3205"
-        },
-        {
-          "name": "321新玩家",
-          "cc": 321,
-          "type": "街车",
-          "price": "22980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3241"
+          "source": "https://www.kovemoto.com.cn/kove-321r"
         },
         {
           "name": "350RR",
-          "cc": 350,
+          "cc": 344,
           "type": "仿赛",
           "price": "23980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3525"
+          "source": "https://www.kovemoto.com.cn/kove-350rr%e8%b5%ab%e9%9b%b7%e5%85%b9"
         },
         {
           "name": "450RR",
-          "cc": 450,
+          "cc": 443,
           "type": "仿赛",
           "price": "29980~35800元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3244"
-        },
-        {
-          "name": "450新玩家",
-          "cc": 450,
-          "type": "仿赛",
-          "price": "29980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3520"
+          "source": "https://www.kovemoto.com.cn/kove-450rr%e6%9b%bc%e5%b2%9b%e2%85%b1"
         },
         {
           "name": "450R",
-          "cc": 450,
+          "cc": 443,
           "type": "街车",
           "price": "28800元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3516"
+          "source": "https://www.kovemoto.com.cn/kove-450r"
         },
         {
           "name": "450RALLY（民用版）",
-          "cc": 450,
+          "cc": 449,
           "type": "越野",
           "price": "43800元起",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3195"
+          "source": "https://www.kovemoto.com.cn/kove-450-rally"
         },
         {
           "name": "MX250",
-          "cc": 250,
+          "cc": 249,
           "type": "越野",
           "price": "26980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3240"
+          "source": "https://www.kovemoto.com.cn/kove-mx250"
         },
         {
           "name": "525X",
           "cc": 494,
           "type": "拉力ADV",
           "price": "33900~36900元",
-          "source": "https://cn.kovemoto.com/index.php?s=product&c=search&catid=2"
-        },
-        {
-          "name": "525F",
-          "cc": 494,
-          "type": "复古",
-          "price": "33980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3215"
+          "source": "https://www.kovemoto.com.cn/kove-525x"
         },
         {
           "name": "625V",
-          "cc": 625,
+          "cc": 578,
           "type": "巡航",
           "price": "24980元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3524"
+          "source": "https://www.kovemoto.com.cn/kove-625v"
         },
         {
           "name": "800X",
           "cc": 799,
           "type": "拉力ADV",
           "price": "45800~46800元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3246"
+          "source": "https://www.kovemoto.com.cn/kove-800x-%e7%a1%ac%e6%b1%89"
         },
         {
           "name": "800 RALLY",
           "cc": 799,
           "type": "越野",
           "price": "49800元",
-          "source": "https://cn.kovemoto.com/index.php?c=show&id=3521"
+          "source": "https://www.kovemoto.com.cn/kove-800x-rally"
         },
         {
           "name": "625X",
           "cc": 581,
           "type": "拉力ADV",
           "price": "31777元",
-          "source": "https://m.58moto.com/brand/206"
+          "source": "https://www.kovemoto.com.cn/kove-625x"
         },
         {
           "name": "650RR",
-          "cc": 650,
+          "cc": 645,
           "type": "仿赛",
           "price": "33977元",
-          "source": "https://m.58moto.com/brand/206"
+          "source": "https://www.kovemoto.com.cn/kove-650rr"
         }
       ],
       "uncertain": [
@@ -489,6 +466,46 @@
           "price": null,
           "source": "http://kovemoto.com/index.php?c=show&id=87",
           "reason": "仅见于KOVE国际站(kovemoto.com)出口车型页，国内官网未列，未核实国内在售"
+        },
+        {
+          "name": "321RR",
+          "cc": 321,
+          "type": "仿赛",
+          "price": "25980元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3206",
+          "reason": "2026-11-22 凯越官网核对：新官网 kovemoto.com.cn 车型列表未列出，旧链接已失效；可能已停售，不计入在售统计"
+        },
+        {
+          "name": "321RR-S",
+          "cc": 321,
+          "type": "仿赛",
+          "price": "27980元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3183",
+          "reason": "2026-11-22 凯越官网核对：新官网 kovemoto.com.cn 车型列表未列出，旧链接已失效；可能已停售，不计入在售统计"
+        },
+        {
+          "name": "321新玩家",
+          "cc": 321,
+          "type": "街车",
+          "price": "22980元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3241",
+          "reason": "2026-11-22 凯越官网核对：新官网 kovemoto.com.cn 车型列表未列出，旧链接已失效；可能已停售，不计入在售统计"
+        },
+        {
+          "name": "450新玩家",
+          "cc": 450,
+          "type": "仿赛",
+          "price": "29980元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3520",
+          "reason": "2026-11-22 凯越官网核对：新官网 kovemoto.com.cn 车型列表未列出，旧链接已失效；可能已停售，不计入在售统计"
+        },
+        {
+          "name": "525F",
+          "cc": 494,
+          "type": "复古",
+          "price": "33980元",
+          "source": "https://cn.kovemoto.com/index.php?c=show&id=3215",
+          "reason": "2026-11-22 凯越官网核对：新官网 kovemoto.com.cn 车型列表未列出，旧链接已失效；可能已停售，不计入在售统计"
         }
       ],
       "sources": [
@@ -615,20 +632,6 @@
           "source": "https://motor.lifan.com/cpzt/xptj/2024-05-17/297.html"
         },
         {
-          "name": "KPR250",
-          "cc": 250,
-          "type": "街车",
-          "price": "12999元",
-          "source": "https://www.58moto.com/merchant/car/265147?id=17"
-        },
-        {
-          "name": "KPS250",
-          "cc": 250,
-          "type": "街车",
-          "price": "15680元",
-          "source": "https://www.58moto.com/merchant/car/265147?id=17"
-        },
-        {
           "name": "皇马250",
           "cc": 250,
           "type": "复古",
@@ -641,13 +644,6 @@
           "type": "巡航",
           "price": "19980~21680元",
           "source": "https://motor.lifan.com/cpzt/xptj/"
-        },
-        {
-          "name": "KPV350",
-          "cc": 350,
-          "type": "踏板",
-          "price": "22999~24999元",
-          "source": "https://www.58moto.com/merchant/car/265147?id=17"
         },
         {
           "name": "V400",
@@ -688,6 +684,30 @@
           "price": "13980元",
           "source": "https://www.58moto.com/merchant/car/265147?id=17",
           "reason": "力帆官网仅有 LF150-14P（K19 青春版，150cc）；250cc 车型为 K29（LF250-14M）。待确认原记录应为 K29 还是应删除。"
+        },
+        {
+          "name": "KPR250",
+          "cc": 250,
+          "type": "街车",
+          "price": "12999元",
+          "source": "https://www.58moto.com/merchant/car/265147?id=17",
+          "reason": "2026-11-23 力帆官网核对：力帆官网 KP 系列只有 KPR150（LF150-10P），无 250 版；原来源为摩托范商家页，疑似 150cc 车型误录，不计入在售统计"
+        },
+        {
+          "name": "KPS250",
+          "cc": 250,
+          "type": "街车",
+          "price": "15680元",
+          "source": "https://www.58moto.com/merchant/car/265147?id=17",
+          "reason": "2026-11-23 力帆官网核对：力帆官网 KP 系列只有 KPS150（LF150-10T），无 250 版；原来源为摩托范商家页，疑似 150cc 车型误录，不计入在售统计"
+        },
+        {
+          "name": "KPV350",
+          "cc": 350,
+          "type": "踏板",
+          "price": "22999~24999元",
+          "source": "https://www.58moto.com/merchant/car/265147?id=17",
+          "reason": "2026-11-23 力帆官网核对：力帆官网只有 KPV 越野版（LF150T-8，150cc），无 350 版；原来源为摩托范商家页，疑似 150cc 车型误录，不计入在售统计"
         }
       ],
       "sources": [
@@ -892,7 +912,7 @@
           "name": "骓1200",
           "cc": 1200,
           "type": "巡航",
-          "price": null,
+          "price": "46800元",
           "source": "https://www.shineraymotor.com.cn/product/detail/76"
         },
         {

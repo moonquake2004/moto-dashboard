@@ -128,6 +128,7 @@ td.p{color:var(--amber);font-weight:700;white-space:nowrap}
 td.p.na{color:var(--faint);font-weight:400}
 td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
 a.src{color:var(--faint);text-decoration:none;font-size:13px}
+.mnote{margin-top:3px;font-size:11.5px;line-height:1.5;color:var(--muted);font-weight:400}
 a.src:hover{color:var(--accent)}
 details{margin-top:12px;background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:11px 14px}
 summary{cursor:pointer;font-size:12.5px;font-weight:700;color:var(--muted)}
@@ -163,7 +164,7 @@ def brand_page(b, d, siblings):
         rows.append(
             "<tr><td>%s</td><td class=\"n\">%s</td><td>%s</td><td class=\"p%s\">%s</td><td>%s</td></tr>"
             % (
-                esc(m.get("name")),
+                esc(m.get("name")) + ('<div class="mnote">%s</div>' % esc(m["note"]) if m.get("note") else ""),
                 ("%d cc" % m["cc"]) if m.get("cc") else "—",
                 esc(m.get("type")),
                 "" if m.get("price") else " na",
